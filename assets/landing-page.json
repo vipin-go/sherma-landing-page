@@ -1,0 +1,285 @@
+{
+  "schemaVersion": 2,
+  "resourceKey": "landing_page.sherma",
+  "runtimeDataPolicy": "definitions_only",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#2e45e8",
+            "userBubble": "#2e45e8"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8ea0ff",
+            "userBubble": "#2e45e8"
+          }
+        },
+        "typography": {
+          "body": { "source": "google", "family": "Inter" },
+          "display": { "source": "google", "family": "Fraunces" },
+          "label": { "source": "google", "family": "JetBrains Mono" }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        { "label": "Simulation", "target": "about" },
+        { "label": "How it works", "target": "how-it-works" },
+        { "label": "Use cases", "target": "use-cases" },
+        { "label": "Control", "target": "trust" },
+        { "label": "Contact", "target": "contact" }
+      ],
+      "ctaLabel": "Meet Sherma"
+    },
+    "badge": "SIMULATION-FIRST FORM AUTOMATION",
+    "headline": "An agent that fills your highest-stakes forms, and shows its work first.",
+    "subheadline": "Sherma reads the form, rehearses the fill against a twin of it, asks only what it does not already know, and shows you exactly what will be submitted. Nothing reaches the real form until you say so.",
+    "ctaLabel": "Meet Sherma",
+    "secondaryCtaLabel": "See how it works",
+    "featureTags": [
+      "Rehearsed before it is real",
+      "What you approve is what goes in",
+      "A record of every field"
+    ],
+    "demoConversation": [
+      { "role": "assistant", "text": "Hi, I’m Sherma. Send me a form and I will rehearse the whole fill against a twin before anything is real." },
+      { "role": "user", "text": "Show me what you found." }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · simulation sandbox",
+      "inputPlaceholder": "Ask Sherma about a form…",
+      "suggestedPrompts": [
+        "Show missing fields",
+        "Preview the twin",
+        "How does approval work?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "contact": {
+      "heading": "Bring one form you already fill.",
+      "body": "Run Sherma against a real form from your own work and compare the twin with what your team produced.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "THE NEXT FORM",
+      "heading": "Bring one form you already fill.",
+      "body": "Run Sherma against a real form from your own work and compare the twin with what your team produced.",
+      "ctaLabel": "Talk to Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "SAMPLE DEMO",
+        "demoNote": "Illustrative simulation only · No real portal or personal data is used",
+        "openingReply": "I read the form, built a twin, and filled 26 of 30 fields from your approved record. Four questions remain. Nothing has touched the real form.",
+        "reviewReply": "Here is the twin. It is complete, checked, and still separate from the live form. What you approve here is what executes, field for field.",
+        "approvedReply": "Approved in the demo. The exact approved twin is ready to execute and every field retains its source.",
+        "escalatedReply": "Sent back safely. No filing occurred.",
+        "fallbackReply": "I only ask for information that is genuinely missing. Ask me to show missing fields or preview the twin.",
+        "trace": {
+          "label": "SHERMA · SESSION TRACE",
+          "status": "ACTIVE",
+          "steps": [
+            { "state": "done", "title": "Form read", "detail": "30 fields, 4 documents, 2 conditional sections" },
+            { "state": "done", "title": "Twin built", "detail": "A working copy filled and checked off the live one" },
+            { "state": "done", "title": "Filled from your record", "detail": "26 of 30 · each answer carries its source" },
+            { "state": "active", "title": "Gaps asked, not guessed", "detail": "4 questions answered by chat" },
+            { "state": "pending", "title": "Twin ready for review", "detail": "Nothing has touched the real form" }
+          ],
+          "reviewLabel": "Review the twin"
+        },
+        "review": {
+          "label": "YOUR APPROVAL",
+          "status": "REVIEW",
+          "fields": [
+            { "label": "Legal entity", "value": "Sample Client B.V.", "sourceLabel": "SOURCED" },
+            { "label": "Tax identifier", "value": "NL•••••••B01", "sourceLabel": "SOURCED" },
+            { "label": "Payment terms", "value": "30 days", "sourceLabel": "CONFIRMED" },
+            { "label": "Authorized signer", "value": "Finance Director", "sourceLabel": "CONFIRMED" }
+          ],
+          "approveLabel": "Approve the twin",
+          "sendBackLabel": "Send back"
+        },
+        "results": {
+          "approvedTitle": "Twin approved",
+          "approvedBody": "The approved twin is ready to execute · every source retained",
+          "escalatedTitle": "Safely sent back",
+          "escalatedBody": "The run is paused for human input · nothing was filed"
+        }
+      },
+      "proofItems": [
+        { "number": "01", "title": "Intake", "detail": "Exact form scoped" },
+        { "number": "02", "title": "Simulate", "detail": "Sandbox rehearsal" },
+        { "number": "03", "title": "Approve", "detail": "Human control" },
+        { "number": "04", "title": "File & prove", "detail": "Recorded receipt" }
+      ],
+      "principle": {
+        "kicker": "THE PRINCIPLE",
+        "heading": "Built to be trusted.\nGoverned by simulation.",
+        "body": "Every form gets rehearsed before it gets filled. Sherma builds a twin of the real form, works the whole fill against that twin, and shows it to you complete. The twin you approve is the one that executes: the same fields, the same values, in the same order.",
+        "traceLabel": "ACTIVE WORKFLOW TRACE",
+        "traceId": "ID: SH-4471-FORM",
+        "traceBody": "Built for filings that cannot afford to be wrong, not demo theatre.",
+        "traceSteps": [
+          { "number": "01", "title": "Intake", "status": "FORM SCOPED" },
+          { "number": "02", "title": "Simulate", "status": "SANDBOX" },
+          { "number": "03", "title": "Questionnaire", "status": "GAPS ONLY" },
+          { "number": "04", "title": "Digital twin", "status": "REVIEWABLE" },
+          { "number": "05", "title": "Approve", "status": "HUMAN YES" },
+          { "number": "06", "title": "Execute", "status": "RECORD KEPT" }
+        ],
+        "guaranteesKicker": "HOW SHERMA BEHAVES",
+        "guaranteesHeading": "Six things that stay true on every form.",
+        "guarantees": [
+          { "icon": "shield-check", "title": "Scoped to the form it was given", "body": "Sherma touches the form and the records you assigned to it. Nothing else in your systems is in scope." },
+          { "icon": "sparkles", "title": "Rehearsed before it is real", "body": "The whole fill happens on a twin first. The live form is touched once, with an answer already known to be complete." },
+          { "icon": "users", "title": "Human approval at the point of no return", "body": "Everything reversible runs automatically. Anything that cannot be undone waits for a person." },
+          { "icon": "check", "title": "The twin is the plan", "body": "What you approve is byte for byte what gets submitted. If the form changes underneath, the approval is void and it comes back to you." },
+          { "icon": "search", "title": "Every answer has a source", "body": "Which document, which colleague, which date. If anyone queries a figure later, you can show where it came from." },
+          { "icon": "question-mark", "title": "Escalation, never silent failure", "body": "Missing data does not get guessed. Sherma finds who knows and asks, by chat or by call, and tells you if it is stuck." }
+        ]
+      },
+      "impact": {
+        "kicker": "WHAT CHANGES",
+        "heading": "Move the filing off your desk, not off\nyour radar.",
+        "body": "The work stops being something a person does and becomes something a person approves. That is the whole difference.",
+        "items": [
+          { "icon": "sparkles", "title": "Answer once, reuse everywhere", "body": "What you confirm becomes part of your record. The next structurally similar form starts mostly answered.", "metric": { "label": "FIELDS FILLED WITHOUT ASKING YOU", "values": [54, 78, 91], "note": "First form, fifth form, twentieth form. Illustrative." } },
+          { "icon": "calendar", "title": "Deadlines stop being a scramble", "body": "Sherma works overnight and at weekends. The last forty-eight hours are for reviewing, not assembling." },
+          { "icon": "lock", "title": "Control is kept, not traded away", "body": "Simulation, an explicit approval, and a record of every action. Nothing fires without you." }
+        ]
+      },
+      "process": {
+        "kicker": "THE PROCESS",
+        "heading": "How Sherma fills a form, start to finish.",
+        "body": "Six steps. Sherma runs four of them without asking. The two marked for a person are the two where the decision cannot be handed over.",
+        "steps": [
+          { "number": "01", "actor": "persona", "icon": "sparkles", "title": "Intake", "body": "A form URL, a forwarded email, or a portal Sherma watches. It picks the form up and opens it.", "output": "Form located" },
+          { "number": "02", "actor": "persona", "icon": "shield-check", "title": "Simulate", "body": "Sherma builds a twin of the form and works the entire fill against it. Field rules, conditional sections and document requirements all surface here, not at the deadline.", "output": "Twin built" },
+          { "number": "03", "actor": "persona", "icon": "search", "title": "Fill from what it knows", "body": "Your record answers most of it. Every value carries its source, so you can see where a figure came from and when it was last confirmed.", "output": "Most fields done" },
+          { "number": "04", "actor": "persona", "icon": "chat", "title": "Ask for the gaps", "body": "Only what it genuinely does not know. By chat, or by call if it is urgent and nobody has replied. It chases until it has the answer.", "output": "Gaps closed" },
+          { "number": "05", "actor": "human", "icon": "users", "title": "Confirm the twin", "body": "The completed form as it will be submitted. Change anything you want, then approve it. This is the point of no return, so it is yours.", "output": "Approved twin" },
+          { "number": "06", "actor": "persona", "icon": "check", "title": "Execute and record", "body": "Sherma fills the real form with the approved twin and returns a record of every field. Where a portal needs a personal login, it hands the finished form to you to send.", "output": "Filed, on record" }
+        ]
+      },
+      "useCases": {
+        "kicker": "WHERE IT APPLIES",
+        "heading": "Built for the forms that\ncannot afford to be wrong.",
+        "body": "Same agent, same principle. What changes is the record it draws from and the portal it works against.",
+        "items": [
+          { "number": "01", "status": "live", "title": "Tax & VAT returns", "body": "The same return, every quarter, for every client. Sherma opens the job from the filing calendar, builds the return from the bookkeeping record, and shows it as a twin before anything is filed.", "steps": ["Job opened from the filing calendar", "Return built from the ledger", "Questionnaire, gaps only", "Twin confirmed, return ready to file"], "connections": ["Bookkeeping and ledger data", "Filing calendar per entity", "Prepared return, ready to submit"], "note": "Tax portals require a personal government credential such as eHerkenning. Sherma prepares the return in full and the accountant files it under their own login. It will not sign as you." },
+          { "number": "02", "status": "live", "title": "Tenders & qualification", "body": "Selection questionnaires, qualification packs and tender responses that repeat the same company evidence while every deadline remains final.", "steps": ["Notice matched to your profile", "Every question extracted, none skimmed", "Qualification sections answered from record", "Pack assembled, win themes left to you"], "connections": ["Tender and framework portals", "Accounts, insurances, certifications", "Policy and reference library"] },
+          { "number": "03", "status": "live", "title": "Supplier onboarding & registration", "body": "Every large customer invites you into their own portal. The same company details, certificates and policies, entered from scratch for each one.", "steps": ["Portal invitation received", "Registration reused from prior fills", "Expired documents flagged and refreshed", "Registration completed, confirmation kept"], "connections": ["Buyer procurement portals", "Registration, VAT and bank details", "Insurance and policy evidence"] },
+          { "number": "04", "status": "live", "title": "Partner & channel claims", "body": "Marketing funds and co-op claims with proof of performance, one vendor format at a time, where missing the window means losing the allocation.", "steps": ["Fund notice picked up from the inbox", "Proof of performance assembled", "Claim matched to that vendor’s format", "Claim ready before the window closes"], "connections": ["Vendor partner portals", "Receipts and campaign evidence", "Allocation and expiry tracking"] },
+          { "number": "05", "status": "next", "title": "Grants & subsidies", "body": "Funding applications where organisational evidence repeats, eligibility must be proven, and project-specific questions still need the right person.", "steps": ["Call matched to eligibility", "Organisational sections pre-filled", "Project-specific questions routed out", "Application ready ahead of the close"], "connections": ["Funder application portals", "Entity and financial records", "Prior applications and outcomes"] },
+          { "number": "06", "status": "next", "title": "Certification & insurance renewals", "body": "Annual renewals that are predictable, evidence-heavy, and mostly unchanged from the last approved submission.", "steps": ["Renewal notice picked up", "Last year’s answers loaded", "Only the changes queried", "Renewal ready, record updated"], "connections": ["Certification body portals", "Broker renewal questionnaires", "Prior-year submission history"] },
+          { "number": "07", "status": "custom", "title": "Your use case", "body": "Do not see your workflow? Describe the form, portal, or filing and we will scope a custom Sherma run around it.", "steps": [], "connections": [] }
+        ],
+        "customIntake": {
+          "heading": "CUSTOM WORKFLOW INTAKE",
+          "body": "Share the recurring form or portal that is slowing your team down. This demo keeps the brief in your browser and prepares an email handoff.",
+          "ctaLabel": "Prepare my Sherma brief",
+          "note": "Sample intake only · nothing is transmitted from this page",
+          "successHeading": "Your Sherma brief is ready.",
+          "successBody": "Open your email client to send the pre-filled brief when you are ready.",
+          "editLabel": "Edit the use case",
+          "emailSubject": "Meet Sherma: custom use case"
+        }
+      },
+      "workedExample": {
+        "kicker": "A WORKED EXAMPLE",
+        "heading": "Filing a quarterly return without the re-entry.",
+        "body": "The same principle, applied to the most repeated form there is. One template, one entity at a time, four times a year, forever.",
+        "before": "Someone gathers the figures, re-keys them into the return, checks them against the ledger, and files before the deadline. Every quarter, for every client, with nothing carried forward except a spreadsheet.",
+        "after": "Sherma opens the job from the filing calendar, builds the return from the ledger, asks only about the figures it cannot derive, and presents the completed return as a twin. The accountant checks it and files it under their own credential.",
+        "linkLabel": "Talk through your filing calendar",
+        "emailSubject": "Sherma quarterly filing workflow",
+        "card": {
+          "label": "QUARTERLY RETURN",
+          "period": "Q3 2026",
+          "status": "RETURN READY FOR REVIEW",
+          "rows": [
+            { "label": "Entity", "value": "Client B.V." },
+            { "label": "Period", "value": "Q3 2026" },
+            { "label": "Deadline", "value": "31 Oct" },
+            { "label": "Ledger entries reconciled", "value": "41 of 44" },
+            { "label": "Figures needing confirmation", "value": "3", "highlight": true },
+            { "label": "Every value sourced", "value": "Yes" }
+          ],
+          "summaryLabel": "Return ready for review",
+          "summary": "Confirm three figures, then file it under your own credential.",
+          "actionLabel": "Review the twin",
+          "actionNote": "You file, not Sherma",
+          "note": "Illustrative figures. Your own ratio is measured on the first return."
+        }
+      },
+      "control": {
+        "kicker": "CONTROLLED AUTONOMY",
+        "heading": "Autonomy without losing accountability.",
+        "body": "AI first at every step. A person enters at the one moment that cannot be undone, and only then.",
+        "points": [
+          { "icon": "sparkles", "title": "Everything reversible is automatic", "body": "Reading, simulating, filling, chasing, assembling. No approval is needed for work that can simply be redone." },
+          { "icon": "lock", "title": "Everything irreversible stops", "body": "Submission is the point of no return, so it waits for you. Where a portal needs a personal credential, you hold it, not Sherma." },
+          { "icon": "check", "title": "The twin you approve is the one that runs", "body": "If the live form changes after you approve, the approval is void and it comes back to you rather than executing anyway." },
+          { "icon": "question-mark", "title": "Stuck is a state, not a silence", "body": "If Sherma cannot finish something, it tells you which field and why, with time left to act on it." }
+        ],
+        "boundary": {
+          "label": "SHERMA JOB BOUNDARY",
+          "badges": ["Scoped fields", "Approved tools"],
+          "steps": [
+            { "label": "RECEIVE", "title": "Form received" },
+            { "label": "SIMULATE", "title": "Rehearse against a twin" },
+            { "label": "FILL", "title": "Record applied, gaps asked" },
+            { "label": "VERIFY", "title": "Twin complete and checked" }
+          ],
+          "approvalLabel": "Approve or escalate",
+          "executionLabel": "Execute and record",
+          "sourceNote": "Source recorded for every field",
+          "guarantee": "Approved twin = what executes"
+        }
+      },
+      "leadCapture": {
+        "kicker": "THE NEXT FORM",
+        "heading": "Bring one form you already fill.",
+        "body": "Thirty minutes. We run Sherma against a real form from your own work and you compare the twin with what your team produced. No slides.",
+        "ctaLabel": "Prepare my Sherma brief",
+        "successHeading": "Your brief is ready.",
+        "successBody": "Open your email client to send it when you are ready.",
+        "emailLabel": "Send the brief by email",
+        "privacyNote": "Your brief stays in this browser until you choose to email it.",
+        "emailSubject": "Run Sherma on one form"
+      },
+      "footer": {
+        "tagline": "Think in simulation. Act with precision. Gabriel builds AI personas that rehearse before they act.",
+        "poweredBy": "Powered by Gabriel Operator under the hood.",
+        "groups": [
+          { "label": "Capabilities", "links": [{ "label": "Form intake", "target": "meet" }, { "label": "Simulation", "target": "about" }, { "label": "Approval & record", "target": "trust" }] },
+          { "label": "Company", "links": [{ "label": "Use cases", "target": "use-cases" }, { "label": "Contact", "target": "contact" }] },
+          { "label": "Get started", "links": [{ "label": "Meet Sherma", "target": "contact" }] }
+        ],
+        "copyright": "Copyright 2026 Gabriel Ventures B.V. · Utrecht, Netherlands · KvK 94732191",
+        "closingStatement": "The twin you approve is the one that executes."
+      }
+    }
+  }
+}
