@@ -96,6 +96,23 @@
         "approvedReply": "Approved in the demo. The exact approved twin is ready to execute and every field retains its source.",
         "escalatedReply": "Sent back safely. No filing occurred.",
         "fallbackReply": "I only ask for information that is genuinely missing. Ask me to show missing fields or preview the twin.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Upload form screenshots",
+          "uploadHint": "JPEG, PNG or WebP · up to 6 images",
+          "analyzingLabel": "Reading the form and extracting its questions…",
+          "questionnaireHeading": "Your extracted questionnaire",
+          "questionnaireBody": "Sherma found the real questions in your form. Answer here, by restricted chat, or in one five-minute voice session.",
+          "answerPlaceholder": "Answer the next form question…",
+          "voiceLabel": "Answer by voice · 5 min",
+          "reviewLabel": "Review answers",
+          "generateLabel": "Review and generate",
+          "signInHeading": "Sign in to generate filled copies",
+          "signInBody": "Your images, answers, and preview will move into one private Sherma session after sign-in.",
+          "expiryCopy": "Unclaimed previews expire after one hour.",
+          "errorCopy": "Sherma could not read this image safely. Try a clearer JPEG, PNG, or WebP screenshot."
+        },
         "trace": {
           "label": "SHERMA · SESSION TRACE",
           "status": "ACTIVE",
@@ -136,7 +153,7 @@
       "principle": {
         "kicker": "THE PRINCIPLE",
         "heading": "Built to be trusted.\nGoverned by simulation.",
-        "body": "Every form gets rehearsed before it gets filled. Sherma builds a twin of the real form, works the whole fill against that twin, and shows it to you complete. The twin you approve is the one that executes: the same fields, the same values, in the same order.",
+        "body": "Sherma rehearses the full fill on a twin of the real form. What you approve is what executes.",
         "traceLabel": "ACTIVE WORKFLOW TRACE",
         "traceId": "ID: SH-4471-FORM",
         "traceBody": "Built for filings that cannot afford to be wrong, not demo theatre.",
@@ -270,15 +287,13 @@
         "emailSubject": "Run Sherma on one form"
       },
       "footer": {
-        "tagline": "Think in simulation. Act with precision. Gabriel builds AI personas that rehearse before they act.",
-        "poweredBy": "Powered by Gabriel Operator under the hood.",
+        "tagline": "Sherma reads recurring forms, finds the real gaps, and rehearses every fill for human approval before anything is generated or submitted.",
         "groups": [
           { "label": "Capabilities", "links": [{ "label": "Form intake", "target": "meet" }, { "label": "Simulation", "target": "about" }, { "label": "Approval & record", "target": "trust" }] },
           { "label": "Company", "links": [{ "label": "Use cases", "target": "use-cases" }, { "label": "Contact", "target": "contact" }] },
           { "label": "Get started", "links": [{ "label": "Meet Sherma", "target": "contact" }] }
         ],
-        "copyright": "Copyright 2026 Gabriel Ventures B.V. · Utrecht, Netherlands · KvK 94732191",
-        "closingStatement": "The twin you approve is the one that executes."
+        "copyright": "© 2026 Sherma"
       }
     }
   }
