@@ -21,16 +21,16 @@
             "surface": "#ffffff",
             "sidebar": "#0f1220",
             "text": "#12131c",
-            "accent": "#2e45e8",
-            "userBubble": "#2e45e8"
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
           },
           "dark": {
             "canvas": "#0b0d16",
             "surface": "#141827",
             "sidebar": "#0f1220",
             "text": "#f4f5fb",
-            "accent": "#8ea0ff",
-            "userBubble": "#2e45e8"
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
           }
         },
         "typography": {
@@ -76,6 +76,10 @@
       ]
     },
     "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
     "contact": {
       "heading": "Bring one form you already fill.",
       "body": "Run Sherma against a real form from your own work and compare the twin with what your team produced.",
@@ -92,6 +96,8 @@
         "sampleLabel": "SAMPLE DEMO",
         "demoNote": "Illustrative simulation only · No real portal or personal data is used",
         "openingReply": "I read the form, built a twin, and filled 26 of 30 fields from your approved record. Four questions remain. Nothing has touched the real form.",
+        "greetingReply": "Hi, I'm Sherma. I read a form, rehearse the fill against a twin of it, and show you exactly what would be submitted. Nothing reaches the real form until you say so.",
+        "instructionReply": "To get started, upload screenshots of the form you want filled. JPEG, PNG, or WebP · up to 6 images. I'll extract the questions and tell you what I still need.",
         "reviewReply": "Here is the twin. It is complete, checked, and still separate from the live form. What you approve here is what executes, field for field.",
         "approvedReply": "Approved in the demo. The exact approved twin is ready to execute and every field retains its source.",
         "escalatedReply": "Sent back safely. No filing occurred.",
@@ -154,17 +160,23 @@
         "kicker": "THE PRINCIPLE",
         "heading": "Built to be trusted.\nGoverned by simulation.",
         "body": "Every form gets rehearsed before it gets filled. Sherma builds a twin of the real form, works the whole fill against that twin, and shows it to you complete.\n\nThe twin you approve is the one that executes. Not a summary of it, not a description of it. The same fields, the same values, in the same order.",
-        "traceLabel": "ACTIVE WORKFLOW TRACE",
-        "traceId": "ID: SH-4471-FORM",
+        "traceLabel": "Sherma Session Trace",
+        "traceId": "SH-2291",
+        "traceMeta": "Session #SH-2291 · 12s elapsed",
+        "traceStatus": "ACTIVE",
         "traceBody": "Built for filings that cannot afford to be wrong, not demo theatre.",
         "traceSteps": [
-          { "number": "01", "title": "Intake", "status": "FORM SCOPED" },
-          { "number": "02", "title": "Simulate", "status": "SANDBOX" },
-          { "number": "03", "title": "Questionnaire", "status": "GAPS ONLY" },
-          { "number": "04", "title": "Digital twin", "status": "REVIEWABLE" },
-          { "number": "05", "title": "Approve", "status": "HUMAN" },
-          { "number": "06", "title": "Execute", "status": "RECORD KEPT" }
+          { "number": "01", "title": "Form detected", "status": "done", "detail": "BTW-aangifte, Q3 2026 — client entity matched.", "state": "done" },
+          { "number": "02", "title": "Questionnaire generated", "status": "done", "detail": "26 fields pre-filled from invoices. 4 need your input.", "state": "done" },
+          { "number": "03", "title": "Answers confirmed", "status": "done", "detail": "Collected by chat in under 3 minutes.", "state": "done" },
+          { "number": "04", "title": "Simulation complete", "status": "active", "detail": "Dry run against the portal — 0 errors found.", "state": "active" }
         ],
+        "traceAction": {
+          "title": "Ready to file",
+          "body": "The digital twin is ready for review before anything is submitted.",
+          "approveLabel": "Review & approve",
+          "escalateLabel": "Escalate"
+        },
         "guaranteesKicker": "HOW SHERMA BEHAVES",
         "guaranteesHeading": "Six things that stay true on every form.",
         "guarantees": [

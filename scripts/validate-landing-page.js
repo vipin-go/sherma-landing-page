@@ -83,7 +83,8 @@ function validateFormOperations(landingPage) {
     return value;
   };
   [
-    'heroDemo.sampleLabel', 'heroDemo.demoNote', 'heroDemo.openingReply', 'heroDemo.reviewReply',
+    'heroDemo.sampleLabel', 'heroDemo.demoNote', 'heroDemo.openingReply',
+    'heroDemo.greetingReply', 'heroDemo.instructionReply', 'heroDemo.reviewReply',
     'heroDemo.approvedReply', 'heroDemo.escalatedReply', 'heroDemo.fallbackReply',
     'heroDemo.trace.label', 'heroDemo.trace.status', 'heroDemo.trace.reviewLabel',
     'heroDemo.review.label', 'heroDemo.review.status', 'heroDemo.review.approveLabel', 'heroDemo.review.sendBackLabel',
@@ -124,7 +125,11 @@ function validateFormOperations(landingPage) {
       if (!field?.[key] || !String(field[key]).trim()) fail(`landingPage.formOperations.heroDemo.review.fields[${index}].${key} is required`);
     }
   });
-  requireArray('principle.traceSteps');
+  requireArray('principle.traceSteps').forEach((step, index) => {
+    if (step?.state && !['done', 'active', 'pending'].includes(step.state)) {
+      fail(`landingPage.formOperations.principle.traceSteps[${index}].state must be done, active, or pending`);
+    }
+  });
   requireArray('principle.guarantees', 6).forEach((item, index) => validateIcon(item?.icon, `landingPage.formOperations.principle.guarantees[${index}].icon`, true));
   requireArray('impact.items').forEach((item, index) => {
     validateIcon(item?.icon, `landingPage.formOperations.impact.items[${index}].icon`, true);
