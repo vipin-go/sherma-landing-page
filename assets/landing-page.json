@@ -145,15 +145,15 @@
         }
       },
       "proofItems": [
-        { "number": "01", "title": "Intake", "detail": "Exact form scoped" },
-        { "number": "02", "title": "Simulate", "detail": "Sandbox rehearsal" },
-        { "number": "03", "title": "Approve", "detail": "Human control" },
-        { "number": "04", "title": "File & prove", "detail": "Recorded receipt" }
+        { "number": "01", "title": "Intake", "detail": "Form picked up" },
+        { "number": "02", "title": "Simulate", "detail": "Practice fill first" },
+        { "number": "03", "title": "Approve", "detail": "You say yes" },
+        { "number": "04", "title": "File & prove", "detail": "Proof is kept" }
       ],
       "principle": {
         "kicker": "THE PRINCIPLE",
         "heading": "Built to be trusted.\nGoverned by simulation.",
-        "body": "Sherma rehearses the full fill on a twin of the real form. What you approve is what executes.",
+        "body": "Every form gets rehearsed before it gets filled. Sherma builds a twin of the real form, works the whole fill against that twin, and shows it to you complete.\n\nThe twin you approve is the one that executes. Not a summary of it, not a description of it. The same fields, the same values, in the same order.",
         "traceLabel": "ACTIVE WORKFLOW TRACE",
         "traceId": "ID: SH-4471-FORM",
         "traceBody": "Built for filings that cannot afford to be wrong, not demo theatre.",
@@ -162,7 +162,7 @@
           { "number": "02", "title": "Simulate", "status": "SANDBOX" },
           { "number": "03", "title": "Questionnaire", "status": "GAPS ONLY" },
           { "number": "04", "title": "Digital twin", "status": "REVIEWABLE" },
-          { "number": "05", "title": "Approve", "status": "HUMAN YES" },
+          { "number": "05", "title": "Approve", "status": "HUMAN" },
           { "number": "06", "title": "Execute", "status": "RECORD KEPT" }
         ],
         "guaranteesKicker": "HOW SHERMA BEHAVES",
@@ -201,15 +201,15 @@
       },
       "useCases": {
         "kicker": "WHERE IT APPLIES",
-        "heading": "Built for the forms that\ncannot afford to be wrong.",
+        "heading": "Built for the forms that can't afford to be wrong.",
         "body": "Same agent, same principle. What changes is the record it draws from and the portal it works against.",
         "items": [
-          { "number": "01", "status": "live", "title": "Tax & VAT returns", "body": "The same return, every quarter, for every client. Sherma opens the job from the filing calendar, builds the return from the bookkeeping record, and shows it as a twin before anything is filed.", "steps": ["Job opened from the filing calendar", "Return built from the ledger", "Questionnaire, gaps only", "Twin confirmed, return ready to file"], "connections": ["Bookkeeping and ledger data", "Filing calendar per entity", "Prepared return, ready to submit"], "note": "Tax portals require a personal government credential such as eHerkenning. Sherma prepares the return in full and the accountant files it under their own login. It will not sign as you." },
-          { "number": "02", "status": "live", "title": "Tenders & qualification", "body": "Selection questionnaires, qualification packs and tender responses that repeat the same company evidence while every deadline remains final.", "steps": ["Notice matched to your profile", "Every question extracted, none skimmed", "Qualification sections answered from record", "Pack assembled, win themes left to you"], "connections": ["Tender and framework portals", "Accounts, insurances, certifications", "Policy and reference library"] },
-          { "number": "03", "status": "live", "title": "Supplier onboarding & registration", "body": "Every large customer invites you into their own portal. The same company details, certificates and policies, entered from scratch for each one.", "steps": ["Portal invitation received", "Registration reused from prior fills", "Expired documents flagged and refreshed", "Registration completed, confirmation kept"], "connections": ["Buyer procurement portals", "Registration, VAT and bank details", "Insurance and policy evidence"] },
+          { "number": "01", "status": "live", "title": "Tax & VAT filing", "body": "Quarterly BTW/GST/VAT returns, filed from the invoices already sitting in the inbox — the same form, every quarter, for every client.", "steps": ["Filing job opened from deadline", "Invoices matched, VAT calculated", "Questionnaire — gaps only", "Return filed, digital twin confirmed"], "connections": ["Filing portal (BTW / GST / VAT)", "Invoice inbox", "Bookkeeping software"], "note": "Tax portals require a personal government credential such as eHerkenning. Sherma prepares the return in full and the accountant files it under their own login. It will not sign as you." },
+          { "number": "02", "status": "live", "title": "Vendor & carrier onboarding", "body": "Every buyer and carrier has their own portal. The same company details, certificates and policies, entered from scratch for each one.", "steps": ["Portal invitation received", "Registration reused from prior fills", "Expired documents flagged and refreshed", "Onboarding completed, confirmation kept"], "connections": ["Buyer and carrier portals", "Registration, VAT and bank details", "Insurance and policy evidence"] },
+          { "number": "03", "status": "live", "title": "Security questionnaires", "body": "Customer security reviews that repeat the same controls, policies and evidence while every deadline remains final.", "steps": ["Questionnaire received from the customer", "Controls matched to the approved record", "Questionnaire — gaps only", "Pack assembled, twin confirmed"], "connections": ["Customer security portals", "Policy and control library", "Certificates and audit evidence"] },
           { "number": "04", "status": "live", "title": "Partner & channel claims", "body": "Marketing funds and co-op claims with proof of performance, one vendor format at a time, where missing the window means losing the allocation.", "steps": ["Fund notice picked up from the inbox", "Proof of performance assembled", "Claim matched to that vendor’s format", "Claim ready before the window closes"], "connections": ["Vendor partner portals", "Receipts and campaign evidence", "Allocation and expiry tracking"] },
-          { "number": "05", "status": "next", "title": "Grants & subsidies", "body": "Funding applications where organisational evidence repeats, eligibility must be proven, and project-specific questions still need the right person.", "steps": ["Call matched to eligibility", "Organisational sections pre-filled", "Project-specific questions routed out", "Application ready ahead of the close"], "connections": ["Funder application portals", "Entity and financial records", "Prior applications and outcomes"] },
-          { "number": "06", "status": "next", "title": "Certification & insurance renewals", "body": "Annual renewals that are predictable, evidence-heavy, and mostly unchanged from the last approved submission.", "steps": ["Renewal notice picked up", "Last year’s answers loaded", "Only the changes queried", "Renewal ready, record updated"], "connections": ["Certification body portals", "Broker renewal questionnaires", "Prior-year submission history"] },
+          { "number": "05", "status": "next", "title": "Insurance forms", "body": "Renewals and placements that are predictable, evidence-heavy, and mostly unchanged from the last approved submission.", "steps": ["Renewal notice picked up", "Last year’s answers loaded", "Only the changes queried", "Form ready, record updated"], "connections": ["Broker and insurer portals", "Policy schedules and evidence", "Prior-year submission history"] },
+          { "number": "06", "status": "next", "title": "Tenders, grants & filings", "body": "Selection questionnaires, funding applications and filings that repeat organisational evidence while every deadline remains final.", "steps": ["Notice matched to your profile", "Every question extracted, none skimmed", "Organisational sections answered from record", "Pack assembled, twin confirmed"], "connections": ["Tender and funder portals", "Accounts, insurances, certifications", "Policy and reference library"] },
           { "number": "07", "status": "custom", "title": "Your use case", "body": "Do not see your workflow? Describe the form, portal, or filing and we will scope a custom Sherma run around it.", "steps": [], "connections": [] }
         ],
         "customIntake": {
@@ -225,28 +225,26 @@
       },
       "workedExample": {
         "kicker": "A WORKED EXAMPLE",
-        "heading": "Filing a quarterly return without the re-entry.",
+        "heading": "Filing BTW returns without the manual re-entry.",
         "body": "The same principle, applied to the most repeated form there is. One template, one entity at a time, four times a year, forever.",
         "before": "Someone gathers the figures, re-keys them into the return, checks them against the ledger, and files before the deadline. Every quarter, for every client, with nothing carried forward except a spreadsheet.",
-        "after": "Sherma opens the job from the filing calendar, builds the return from the ledger, asks only about the figures it cannot derive, and presents the completed return as a twin. The accountant checks it and files it under their own credential.",
+        "after": "Sherma opens the job from the filing calendar, builds the return from the invoices already in the inbox, asks only about the figures it cannot derive, and presents the completed return as a twin.",
         "linkLabel": "Talk through your filing calendar",
         "emailSubject": "Sherma quarterly filing workflow",
         "card": {
-          "label": "QUARTERLY RETURN",
+          "label": "BTW Return",
           "period": "Q3 2026",
-          "status": "RETURN READY FOR REVIEW",
+          "status": "Prepared by Sherma",
           "rows": [
             { "label": "Entity", "value": "Client B.V." },
             { "label": "Period", "value": "Q3 2026" },
-            { "label": "Deadline", "value": "31 Oct" },
-            { "label": "Ledger entries reconciled", "value": "41 of 44" },
-            { "label": "Figures needing confirmation", "value": "3", "highlight": true },
-            { "label": "Every value sourced", "value": "Yes" }
+            { "label": "Invoices matched", "value": "41 / 44" },
+            { "label": "Missing figures", "value": "3 — flagged", "highlight": true }
           ],
-          "summaryLabel": "Return ready for review",
-          "summary": "Confirm three figures, then file it under your own credential.",
-          "actionLabel": "Review the twin",
-          "actionNote": "You file, not Sherma",
+          "summaryLabel": "Return ready",
+          "summary": "3 figures need your confirmation before filing.",
+          "actionLabel": "Review & file",
+          "actionNote": "Human control required",
           "note": "Illustrative figures. Your own ratio is measured on the first return."
         }
       },
@@ -276,18 +274,20 @@
         }
       },
       "leadCapture": {
-        "kicker": "THE NEXT FORM",
-        "heading": "Bring one form you already fill.",
-        "body": "Thirty minutes. We run Sherma against a real form from your own work and you compare the twin with what your team produced. No slides.",
+        "kicker": "AT SCALE",
+        "heading": "White-label Sherma at scale.",
+        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow — a thousand forms at a time, not a one-off filing.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Where should Sherma run, and roughly how many forms?",
         "ctaLabel": "Prepare my Sherma brief",
         "successHeading": "Your brief is ready.",
         "successBody": "Open your email client to send it when you are ready.",
         "emailLabel": "Send the brief by email",
         "privacyNote": "Your brief stays in this browser until you choose to email it.",
-        "emailSubject": "Run Sherma on one form"
+        "emailSubject": "White-label Sherma at scale"
       },
       "footer": {
-        "tagline": "Sherma reads recurring forms, finds the real gaps, and rehearses every fill for human approval before anything is generated or submitted.",
+        "tagline": "Think in simulation. Act with precision. Sherma rehearses every fill before anything is real.",
         "groups": [
           { "label": "Capabilities", "links": [{ "label": "Form intake", "target": "meet" }, { "label": "Simulation", "target": "about" }, { "label": "Approval & record", "target": "trust" }] },
           { "label": "Company", "links": [{ "label": "Use cases", "target": "use-cases" }, { "label": "Contact", "target": "contact" }] },
