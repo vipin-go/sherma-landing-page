@@ -120,6 +120,10 @@ button instead of two, a generic opening line in the hero mockup).
       "src": "https://raw.githubusercontent.com/<owner>/<this-repo>/main/assets/media/background.jpg",
       "alt": ""
     },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/<owner>/<this-repo>/main/assets/media/seo-banner.jpg",
+      "alt": "A share preview of the persona"
+    },
     "closing": { "kicker": "Ready when you are", "heading": "An authored closing line.", "ctaLabel": "Talk to the persona" }
   },
   "commitMessage": "Update landing page content"
@@ -185,6 +189,7 @@ button instead of two, a generic opening line in the hero mockup).
   - `body` (optional, string) — one or two sentences.
   - `email` (optional, string) — rendered as a `mailto:` button next to the chat CTA. Omit to show only the chat CTA.
 - `landingPage.backgroundImage` (optional, object) — a static hero background. `src` is required and `alt` is optional; use an empty `alt` for a purely decorative image. Use this when the opening visual should remain fixed instead of moving with scroll.
+- `landingPage.seoImage` (optional, object) — Open Graph / SEO share image for the public landing page only. `src` is required and `alt` is optional. Commit the file under `assets/media/` and use a public URL, the same way as `backgroundImage`. Chat and embed keep using the persona banner; omit this field to fall back to that banner (then the landing hero background, then other share candidates). Do not reuse this image as the chat embed banner.
 - `landingPage.backgroundVideo` (optional, object) — a full-page video background whose current frame tracks scroll position (scrubbed, never autoplayed/looped — it only moves when the visitor scrolls). Omit entirely for the plain page background.
   - `src` (required, string) — a direct video URL. Commit the actual video file to this repo under `assets/media/` and reference it via `https://raw.githubusercontent.com/<owner>/<this-repo>/<branch>/assets/media/<file>.mp4` — **this only works if the repo is public**; a private repo's raw URL 404s/403s for anonymous visitors. If the repo must stay private, host the video elsewhere (e.g. through the platform's own media upload) and put that URL here instead.
   - `poster` (optional, string) — an image URL shown before the video has loaded enough to scrub. Same public-URL requirement as `src` if hosted in this repo.

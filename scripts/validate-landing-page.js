@@ -637,6 +637,15 @@ function validate(filePath) {
     }
   }
 
+  if (landingPage.seoImage !== undefined) {
+    const seoImage = landingPage.seoImage;
+    if (!seoImage || typeof seoImage !== 'object') fail('landingPage.seoImage must be an object');
+    if (!seoImage.src || !String(seoImage.src).trim()) fail('landingPage.seoImage.src is required');
+    if (seoImage.alt !== undefined && typeof seoImage.alt !== 'string') {
+      fail('landingPage.seoImage.alt must be a string');
+    }
+  }
+
   if (landingPage.backgroundVideo !== undefined && landingPage.backgroundImage !== undefined) {
     fail('landingPage must use either backgroundVideo or backgroundImage, not both');
   }
