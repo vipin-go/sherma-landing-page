@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "countryCode": "TW",
+  "countryName": "Taiwan",
+  "locale": "zh-TW",
+  "sourceLanguage": "zh",
+  "defaultLanguage": "zh",
+  "basePageRevision": "dfb2b72f6289f1e253ff43c4f09b1e79f775cf200cb3cc918f1daf093707c5ce",
+  "contextRevision": "dfcac2c397c565b29ea874b7a925d1febc7b889f0048af6dcec8558a39e137f6",
+  "glossary": [
+    {
+      "concept": "indirect tax",
+      "term": "營業稅",
+      "preserve": true,
+      "sourceIds": [
+        "tw-official-tax-source"
+      ]
+    },
+    {
+      "concept": "tax return",
+      "term": "營業稅申報書",
+      "preserve": true,
+      "sourceIds": [
+        "tw-official-tax-source"
+      ]
+    },
+    {
+      "concept": "official filing portal",
+      "term": "財政部電子申報繳稅服務網",
+      "preserve": true,
+      "sourceIds": [
+        "tw-official-tax-source"
+      ]
+    },
+    {
+      "concept": "filing credential",
+      "term": "工商憑證或帳號密碼",
+      "preserve": true,
+      "sourceIds": [
+        "tw-official-tax-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tw-official-tax-source",
+      "title": "Filing Business Tax Returns",
+      "publisher": "Ministry of Finance, R.O.C.",
+      "url": "https://www.ntbt.gov.tw/English/multiplehtml/15cbee1cdc0b471587f07cec2a480f37",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "adaptationIndex": [
+    {
+      "path": [
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "detail"
+      ],
+      "baseText": "營業稅申報書, 2026年7–8月 — client entity matched.",
+      "sourceHash": "0fba45c7a72ca93aa91597017f7645affe09ff32ae362cb55c7f647ce5baf0cc",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "title"
+      ],
+      "baseText": "營業稅 return filing",
+      "sourceHash": "60b5708e6eae816e19b3969f1a50a18d08600c38c87bd6ae6bd67ba13efed519",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "body"
+      ],
+      "baseText": "Recurring 營業稅申報書 filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+      "sourceHash": "3f3025e0c4e291e24acad9e7435dc44f84072b7a726c4d9586159c56ada7d443",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        1
+      ],
+      "baseText": "Invoices matched, 營業稅 calculated",
+      "sourceHash": "d93c34d5422c2ec0c3d91267f6bdabace4581ad9377519f85869ff3f7a96d61c",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        0
+      ],
+      "baseText": "財政部電子申報繳稅服務網 (營業稅)",
+      "sourceHash": "b5145d9bc4cd4c85aee67f505a04fd3b12b999c6b12264e7ea1bf65ddd3b7771",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "note"
+      ],
+      "baseText": "財政部電子申報繳稅服務網 may require 工商憑證或帳號密碼. Sherma prepares the 營業稅申報書 in full and the authorised person files it under their own login. It will not sign as you.",
+      "sourceHash": "b0bacb303d7421a55d7ee53aad4001113371de4d28c739b262a84056889603af",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        1
+      ],
+      "baseText": "Registration, 營業稅 and bank details",
+      "sourceHash": "8e00e8f3806c5b1066f64b82db790914c0ad1949de609f22443f8fea8ff9db68",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "heading"
+      ],
+      "baseText": "Preparing a 營業稅申報書 without the manual re-entry.",
+      "sourceHash": "9740b1c7cf29f9efc2f5de121b9ae673fbaa964e997c628b4891d46df265d567",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "label"
+      ],
+      "baseText": "營業稅申報書",
+      "sourceHash": "391e53bf1c19dd186abd6340eb831de56fe59a37451e91bc396a99a4fbf2378f",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "period"
+      ],
+      "baseText": "2026年7–8月",
+      "sourceHash": "86ecd2836c1765f1b074b03adc557ea8692073e7ea5e6ce2a24a1a821834769f",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "value"
+      ],
+      "baseText": "NT$4,820,000",
+      "sourceHash": "06e643a3d6496a0c6f87bff0abd76d2f289fd83487cdf406578e1caf8c4c89c8",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "value"
+      ],
+      "baseText": "2026年7–8月",
+      "sourceHash": "86ecd2836c1765f1b074b03adc557ea8692073e7ea5e6ce2a24a1a821834769f",
+      "mode": "market-copy"
+    }
+  ],
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "模擬",
+          "target": "about"
+        },
+        {
+          "label": "運作方式",
+          "target": "how-it-works"
+        },
+        {
+          "label": "使用情境",
+          "target": "use-cases"
+        },
+        {
+          "label": "控管",
+          "target": "trust"
+        },
+        {
+          "label": "聯絡我們",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "認識 Sherma"
+    },
+    "badge": "以模擬優先的表單自動化",
+    "headline": "一位會先展示工作內容，再代您填寫最關鍵表單的代理。",
+    "subheadline": "Sherma 會讀取表單，在其複本上演練填寫，只詢問它尚未掌握的資訊，並向您精確呈現即將送出的內容。在您親口確認之前，絕不會送進真實表單。",
+    "ctaLabel": "認識 Sherma",
+    "secondaryCtaLabel": "查看運作方式",
+    "featureTags": [
+      "先演練，後送件",
+      "核准內容即為實際送件內容",
+      "每個欄位皆留有紀錄"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "您好，我是 Sherma。請把表單傳給我，我會在送進真實表單前，先在複本上完成整份填寫的演練。"
+      },
+      {
+        "role": "user",
+        "text": "請讓我看看您發現了什麼。"
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "線上 · 模擬沙盒",
+      "inputPlaceholder": "向 Sherma 詢問表單問題…",
+      "suggestedPrompts": [
+        "顯示缺漏欄位",
+        "預覽複本",
+        "核准流程如何運作？"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma 在她的辦公室"
+    },
+    "contact": {
+      "heading": "請提供一份您平時已在使用的表單。",
+      "body": "以您工作中的真實表單執行 Sherma，並將其複本與您團隊先前產出的版本進行比對。",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "下一份表單",
+      "heading": "請提供一份您平時已在使用的表單。",
+      "body": "以您工作中的真實表單執行 Sherma，並將其複本與您團隊先前產出的版本進行比對。",
+      "ctaLabel": "與 Sherma 對話"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "示範範例",
+        "demoNote": "僅供示意模擬 · 未使用任何真實入口網站或個人資料",
+        "openingReply": "我已讀取表單、建立複本，並依您核可的紀錄填妥 30 個欄位中的 26 個。仍有 4 個問題待釐清。尚未動到真實表單。",
+        "greetingReply": "您好，我是 Sherma。我會讀取表單，在其複本上演練填寫，並向您精確呈現即將送出的內容。在您親口確認之前，絕不會送進真實表單。",
+        "instructionReply": "首先，請上傳您要填寫的表單截圖。支援 JPEG、PNG 或 WebP · 最多 6 張。我會擷取其中的問題，並告訴您還缺哪些資訊。",
+        "reviewReply": "這就是複本。它已填寫完成並通過檢核，但仍與正式表單保持分離。您在此核准的內容，將逐欄位執行送件。",
+        "approvedReply": "已於示範中核准。經核准的複本已準備就緒可執行，每個欄位皆保留其資料來源。",
+        "escalatedReply": "已安全退回。並未進行任何送件。",
+        "fallbackReply": "我只會詢問真正缺漏的資訊。請叫我顯示缺漏欄位，或預覽複本。",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "上傳表單截圖",
+          "uploadHint": "JPEG、PNG 或 WebP · 最多 6 張",
+          "analyzingLabel": "正在讀取表單並擷取其問題…",
+          "questionnaireHeading": "您擷取出的問卷",
+          "questionnaireBody": "Sherma 已從您的表單中找出真實問題。您可在此作答、透過受限的對話作答，或用一次五分鐘的語音對談作答。",
+          "answerPlaceholder": "請回答下一題表單問題…",
+          "voiceLabel": "以語音作答 · 5 分鐘",
+          "reviewLabel": "檢視作答",
+          "generateLabel": "檢視並產出",
+          "signInHeading": "登入以產出填寫完成的副本",
+          "signInBody": "您的圖片、作答與預覽將於登入後移入一個專屬的 Sherma 工作階段。",
+          "expiryCopy": "未認領的預覽將於一小時後失效。",
+          "errorCopy": "Sherma 無法安全讀取此圖片。請改用更清晰的 JPEG、PNG 或 WebP 截圖。"
+        },
+        "trace": {
+          "label": "SHERMA · 工作階段追蹤紀錄",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "表單已讀取",
+              "detail": "30 個欄位、4 份文件、2 個條件式區段"
+            },
+            {
+              "state": "done",
+              "title": "複本已建立",
+              "detail": "一份已填寫並通過檢核的工作複本，獨立於正式表單之外"
+            },
+            {
+              "state": "done",
+              "title": "已自您的紀錄填入",
+              "detail": "30 欄中 26 欄 · 每個答案皆附資料來源"
+            },
+            {
+              "state": "active",
+              "title": "只詢問缺漏之處，不擅自臆測",
+              "detail": "4 個問題已透過對話作答"
+            },
+            {
+              "state": "pending",
+              "title": "複本已備妥待您檢視",
+              "detail": "尚未動到真實表單"
+            }
+          ],
+          "reviewLabel": "檢視複本"
+        },
+        "review": {
+          "label": "您的核准",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "法人主體",
+              "value": "Sample Client B.V.",
+              "sourceLabel": "已建立來源"
+            },
+            {
+              "label": "稅務識別碼",
+              "value": "NL•••••••B01",
+              "sourceLabel": "已建立來源"
+            },
+            {
+              "label": "付款條件",
+              "value": "30 天",
+              "sourceLabel": "已確認"
+            },
+            {
+              "label": "授權簽署人",
+              "value": "財務長",
+              "sourceLabel": "已確認"
+            }
+          ],
+          "approveLabel": "核准複本",
+          "sendBackLabel": "退回"
+        },
+        "results": {
+          "approvedTitle": "複本已核准",
+          "approvedBody": "經核准的複本已準備就緒可執行 · 每個資料來源皆已保留",
+          "escalatedTitle": "已安全退回",
+          "escalatedBody": "流程已暫停以等待人工輸入 · 目前未送出任何申報"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "進件",
+          "detail": "已取得表單"
+        },
+        {
+          "number": "02",
+          "title": "模擬",
+          "detail": "先試填練習"
+        },
+        {
+          "number": "03",
+          "title": "核准",
+          "detail": "由您核准確認"
+        },
+        {
+          "number": "04",
+          "title": "送件並留存憑證",
+          "detail": "已留存送件憑證"
+        }
+      ],
+      "principle": {
+        "kicker": "核心原則",
+        "heading": "以信任為基石打造。\n以模擬為治理機制。",
+        "body": "每張表單在填寫前都會先進行演練。Sherma 會建立真實表單的數位分身,在分身上完成整份填寫,再將填寫完成的結果完整呈現給您。\n\n您所核准的分身,就是實際執行的內容。不是摘要,不是說明,而是相同的欄位、相同的數值、完全一致的填寫順序。",
+        "traceLabel": "Sherma 工作階段紀錄",
+        "traceId": "SH-2291",
+        "traceMeta": "工作階段 #SH-2291 · 已執行 12 秒",
+        "traceStatus": "執行中",
+        "traceBody": "專為不容出錯的申報作業而打造,並非展示用的樣板。",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "已偵測表單",
+            "status": "done",
+            "detail": "營業稅申報書，2026年7–8月 — 客戶實體已媒合。",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "已產生問卷",
+            "status": "done",
+            "detail": "依發票預先填入 26 個欄位,另有 4 個欄位需由您提供。",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "回覆已確認",
+            "status": "done",
+            "detail": "透過對話在 3 分鐘內完成蒐集。",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "模擬作業完成",
+            "status": "active",
+            "detail": "於財政部電子申報繳稅服務網進行試填演練 — 未發現任何錯誤。",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "已可送件",
+          "body": "在實際送出前,數位分身已備妥,等待您進行覆核。",
+          "approveLabel": "覆核並核准",
+          "escalateLabel": "升級處理"
+        },
+        "guaranteesKicker": "SHERMA 的運作準則",
+        "guaranteesHeading": "在任何表單上始終遵循的六項原則。",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "僅限處理所指派的表單",
+            "body": "Sherma 僅會接觸您所指派的表單與相關紀錄,系統中的其他內容均不在處理範圍內。"
+          },
+          {
+            "icon": "sparkles",
+            "title": "先演練，後送件",
+            "body": "所有填寫動作都先在分身上完成。真實表單僅於確認填寫內容無誤後接觸一次。"
+          },
+          {
+            "icon": "users",
+            "title": "在不可逆的關鍵節點設有人工核准",
+            "body": "所有可復原的作業會自動執行;任何無法撤銷的動作,則一律留待人員決定。"
+          },
+          {
+            "icon": "check",
+            "title": "分身即為執行計畫",
+            "body": "您所核准的內容,將逐字元地實際送交。若表單於過程中變動,該核准即告失效,並退回給您重新處理。"
+          },
+          {
+            "icon": "search",
+            "title": "每個答案皆有來源",
+            "body": "來自哪份文件、由哪位同仁提供、於哪一天填入。日後若有人質疑任一數字,皆可出示其來源依據。"
+          },
+          {
+            "icon": "question-mark",
+            "title": "升級處理,絕不靜默失敗",
+            "body": "資料不足時不會自行猜測。Sherma 會透過對話或電話找出負責人員並主動詢問,並在卡關時通知您。"
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "帶來的改變",
+        "heading": "將申報作業從您的桌面移轉出去,卻不讓它離開您的掌握。",
+        "body": "申報工作不再由人員親自執行,而是改為由人員核准確認。這就是唯一的差別。",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "回答一次,各處皆可沿用",
+            "body": "您所確認的內容會納入您的紀錄,下一份結構相似的表單將可大幅沿用已填欄位。",
+            "metric": {
+              "label": "無需詢問即自動填入的欄位",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "第一份、第五份、第二十份表單。為示意性數據。"
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "不再為截止日期手忙腳亂",
+            "body": "Sherma 可在夜間與週末持續作業。倒數最後四十八小時留給覆核,不再用於拼湊資料。"
+          },
+          {
+            "icon": "lock",
+            "title": "保有主導權,而非拱手讓出",
+            "body": "透過模擬、明確的核准機制,以及完整的操作紀錄,所有動作皆須經您同意才會執行。"
+          }
+        ]
+      },
+      "process": {
+        "kicker": "作業流程",
+        "heading": "Sherma 從頭到尾填寫一份表單的方式。",
+        "body": "共六個步驟。Sherma 可在其中四個步驟自動執行,不需詢問。標示給人員處理的兩個步驟,正是決策無法委由他人代勞的關鍵節點。",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "進件",
+            "body": "無論是表單網址、轉寄的電子郵件,或是 Sherma 所監看的入口網站,皆會自動擷取並開啟表單。",
+            "output": "已定位表單"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "模擬",
+            "body": "Sherma 會建立表單的分身,並在分身上完成整份填寫。欄位規則、條件式段落與應附文件等需求,皆於此階段浮現,而非等到截止日前才發現。",
+            "output": "複本已建立"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "依既有資料填寫",
+            "body": "您紀錄中的資料可回答大多數欄位。每個數值皆標示其來源,讓您能清楚看見數據出處與最近一次確認時間。",
+            "output": "大部分欄位已完成"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "針對缺漏之處進行詢問",
+            "body": "僅詢問確實未知的部分。透過對話進行,若情況緊急且未獲回覆,則改以電話聯繫,並會持續追蹤直到取得答案。",
+            "output": "缺漏欄位已補齊"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "確認分身內容",
+            "body": "呈現與送出資訊一致的完整表單。您可依需求修改任何內容,接著進行核准。此為不可逆的關鍵節點,因此由您親自決定。",
+            "output": "分身已核准"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "執行並留存紀錄",
+            "body": "Sherma 會以核准後的分身填寫真實表單,並回傳每個欄位的紀錄。若入口網站需透過個人帳號登入操作,則會將填寫完成的表單交由您親自送出。",
+            "output": "已送件並留存紀錄"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "適用範圍",
+        "heading": "專為不容出錯的表單作業而打造。",
+        "body": "採用相同的代理機制與一致的原則。差異僅在於所引用的紀錄來源,以及所對接的入口網站。",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "營業稅 退稅申報",
+            "body": "例行性的 營業稅申報書 申報，直接從收件匣中既有的發票準備——每個申報期間與每位客戶皆使用相同的受控流程。",
+            "steps": [
+              "因應截止日期而啟動的申報作業",
+              "發票已媒合，營業稅 已計算",
+              "問卷 —— 僅處理缺漏之處",
+              "申報書已送件，數位分身已驗證"
+            ],
+            "connections": [
+              "財政部電子申報繳稅服務網（營業稅）",
+              "發票收件匣",
+              "記帳軟體"
+            ],
+            "note": "財政部電子申報繳稅服務網 可能需要 工商憑證或帳號密碼。Sherma 會完整準備 營業稅申報書，並由授權人以其自身的登入身分上傳申報。系統不會代替您進行簽章。"
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "供應商與承運商建檔",
+            "body": "每個買家與承運商都有各自的平台。同樣的公司資料、憑證與政策，每家都要從頭輸入一次。",
+            "steps": [
+              "收到平台邀請",
+              "沿用先前填寫的註冊資料",
+              "已標示並更新過期的文件",
+              "建檔完成，已留存確認紀錄"
+            ],
+            "connections": [
+              "買家與承運商平台",
+              "營業登記、營業稅 與銀行帳戶資料",
+              "保險與保單證明"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "資安問卷",
+            "body": "客戶資安審核一再重複問同樣的控管措施、政策與證明文件，每個期限卻都是死線。",
+            "steps": [
+              "收到客戶寄來的問卷",
+              "依據已核准的紀錄比對控管措施",
+              "問卷 —— 僅處理缺漏之處",
+              "資料包已備齊，分身已驗證"
+            ],
+            "connections": [
+              "客戶資安審核平台",
+              "政策與控管措施資料庫",
+              "憑證與稽核證據"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "夥伴與通路補助請款",
+            "body": "行銷資金與合作補助的請款需附上執行證明，而且每家供應商格式不同，一旦錯過申請窗口，補助配額就會落空。",
+            "steps": [
+              "自收件匣中取得補助通知",
+              "彙整執行證明",
+              "依該供應商格式套版請款",
+              "於截止前備妥請款資料"
+            ],
+            "connections": [
+              "供應商夥伴平台",
+              "收據與活動成效證據",
+              "配額與效期追蹤"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "保險表單",
+            "body": "續保與新保安排，流程固定、需要大量佐證，且與上次核准的送件內容大致相同。",
+            "steps": [
+              "收到續保通知",
+              "載入去年的作答內容",
+              "僅就變動部分進行詢問",
+              "表單就緒，紀錄已更新"
+            ],
+            "connections": [
+              "經紀人與保險公司平台",
+              "保單排程與佐證資料",
+              "歷年送件紀錄"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "標案、補助與申報",
+            "body": "遴選問卷、補助申請與申報作業一再重複組織佐證資料，而每個期限同樣都是死線。",
+            "steps": [
+              "通知已與您的資料比對",
+              "每個題目皆完整擷取，不草率略過",
+              "組織類題目自資料庫作答",
+              "資料包已備齊，分身已驗證"
+            ],
+            "connections": [
+              "標案與補助平台",
+              "財務報表、保險與認證",
+              "政策與參考資料庫"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "您的使用情境",
+            "body": "找不到對應的工作流程嗎？請描述表單、平台或申報項目，我們將為您量身規劃專屬的 Sherma 執行流程。",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "客製化工作流程需求",
+          "body": "請分享拖慢團隊速度的常態性表單或平台。本示範頁面僅將需求草稿保留於您的瀏覽器中，並備妥電子郵件交接內容。",
+          "ctaLabel": "準備我的 Sherma 需求草稿",
+          "note": "僅為示範用途 · 本頁面不會傳送任何資料",
+          "successHeading": "您的 Sherma 需求草稿已備妥。",
+          "successBody": "準備就緒後，請開啟您的電子郵件軟體以寄送預先填好的需求草稿。",
+          "editLabel": "編輯使用情境",
+          "emailSubject": "認識 Sherma：客製化使用情境"
+        }
+      },
+      "workedExample": {
+        "kicker": "實作範例",
+        "heading": "在不需人工重新輸入的情況下準備 營業稅申報書。",
+        "body": "相同的原則套用於最常重複的表單。同一份範本、同一個主體，每季一次，年復一年。",
+        "before": "有人彙整數字、將其重新輸入申報書、與帳簿核對，再於期限內送件。每季、每個客戶皆是如此，除了那份電子試算表之外，沒有任何資料可供沿用。",
+        "after": "Sherma 自申報行事曆開立工作，根據收件匣中已收到的發票建構營業稅申報書，僅就無法推算的數字提出詢問，並將完成的營業稅申報書以分身形式呈現。",
+        "linkLabel": "討論您的申報行事曆",
+        "emailSubject": "Sherma 季度申報工作流程",
+        "card": {
+          "label": "營業稅申報書",
+          "period": "2026年7–8月",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "主體",
+              "value": "NT$4,820,000"
+            },
+            {
+              "label": "期間",
+              "value": "2026年7–8月"
+            },
+            {
+              "label": "已媒合發票",
+              "value": "41 / 44"
+            },
+            {
+              "label": "缺漏數字",
+              "value": "3 筆 — 已標示",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "申報書就緒",
+          "summary": "申報前有 3 項數字需要您確認。",
+          "actionLabel": "檢視並申報",
+          "actionNote": "需要人工控管",
+          "note": "以上數字僅供參考。您自身的比率將於首次申報時測量。"
+        }
+      },
+      "control": {
+        "kicker": "受控自主",
+        "heading": "保有自主權，不失問責機制。",
+        "body": "每個步驟皆由 AI 優先執行。僅在無法撤銷的關鍵時刻，才由人介入。",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "可還原的作業一律自動執行",
+            "body": "讀取、模擬、填寫、追蹤、彙整——凡可重來的工作，皆無需人工核准。"
+          },
+          {
+            "icon": "lock",
+            "title": "不可逆的作業一律暫停",
+            "body": "送出即為不可逆的時刻，因此將由您親自把關。當申報平台需要個人憑證時，由您持有，而非 Sherma。"
+          },
+          {
+            "icon": "check",
+            "title": "您核准的模擬版本才是實際執行版本",
+            "body": "若您核准後，實際表單內容有所變更，該核准將自動失效，並送回給您重新確認，而非照原案執行。"
+          },
+          {
+            "icon": "question-mark",
+            "title": "「卡住」是一種狀態，而非沉默",
+            "body": "若 Sherma 無法完成某項作業，會明確告知是哪個欄位、原因為何，並保留您處理的時間。"
+          }
+        ],
+        "boundary": {
+          "label": "SHERMA 工作範圍",
+          "badges": [
+            "授權欄位",
+            "核可工具"
+          ],
+          "steps": [
+            {
+              "label": "接收",
+              "title": "表單已接收"
+            },
+            {
+              "label": "模擬",
+              "title": "於模擬環境演練"
+            },
+            {
+              "label": "填寫",
+              "title": "資料套用，缺漏提問"
+            },
+            {
+              "label": "驗證",
+              "title": "模擬版本完成並已核對"
+            }
+          ],
+          "approvalLabel": "核准或升級處理",
+          "executionLabel": "執行並留存紀錄",
+          "sourceNote": "每個欄位皆記錄資料來源",
+          "guarantee": "經核准的模擬版本＝實際執行版本"
+        }
+      },
+      "leadCapture": {
+        "kicker": "規模化",
+        "heading": "將 Sherma 規模化地白牌導入。",
+        "body": "本說明適用於希望將 Sherma 以自有品牌導入其內部流程的組織——一次處理上千張表單，而非單次申報。",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Sherma 應在哪裡執行？預估處理量約為多少？",
+        "ctaLabel": "準備我的 Sherma 需求草稿",
+        "successHeading": "您的需求說明已準備就緒。",
+        "successBody": "準備好時，請開啟您的電子郵件軟體以寄出。",
+        "emailLabel": "以電子郵件寄出需求說明",
+        "privacyNote": "您的需求說明會保留在瀏覽器中，直到您主動選擇以電子郵件寄出。",
+        "emailSubject": "將 Sherma 規模化地白牌導入"
+      },
+      "footer": {
+        "tagline": "Sherma 會依據您既有的檔案資料填寫表單，並在送出前先向您展示完成版本。",
+        "groups": [
+          {
+            "label": "功能項目",
+            "links": [
+              {
+                "label": "表單接收",
+                "target": "meet"
+              },
+              {
+                "label": "模擬",
+                "target": "about"
+              },
+              {
+                "label": "核准與紀錄",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "公司資訊",
+            "links": [
+              {
+                "label": "使用情境",
+                "target": "use-cases"
+              },
+              {
+                "label": "聯絡我們",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "開始使用",
+            "links": [
+              {
+                "label": "認識 Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  }
+}

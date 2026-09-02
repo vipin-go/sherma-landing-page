@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "countryCode": "CN",
+  "countryName": "China",
+  "locale": "zh-CN",
+  "sourceLanguage": "zh",
+  "defaultLanguage": "zh",
+  "basePageRevision": "dfb2b72f6289f1e253ff43c4f09b1e79f775cf200cb3cc918f1daf093707c5ce",
+  "contextRevision": "64c6bd3bd97808080ed049817e7cd580c4495ba49cf4899d7ae6805bd05a3b39",
+  "glossary": [
+    {
+      "concept": "indirect tax",
+      "term": "增值税",
+      "preserve": true,
+      "sourceIds": [
+        "cn-official-tax-source"
+      ]
+    },
+    {
+      "concept": "tax return",
+      "term": "增值税申报表",
+      "preserve": true,
+      "sourceIds": [
+        "cn-official-tax-source"
+      ]
+    },
+    {
+      "concept": "official filing portal",
+      "term": "电子税务局",
+      "preserve": true,
+      "sourceIds": [
+        "cn-official-tax-source"
+      ]
+    },
+    {
+      "concept": "filing credential",
+      "term": "电子税务局账户",
+      "preserve": true,
+      "sourceIds": [
+        "cn-official-tax-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "cn-official-tax-source",
+      "title": "Value-added tax filing information",
+      "publisher": "State Taxation Administration",
+      "url": "https://www.chinatax.gov.cn/eng/c101276/c101278/c5099656/content.html",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "adaptationIndex": [
+    {
+      "path": [
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "detail"
+      ],
+      "baseText": "增值税申报表, 2026年第3季度 — client entity matched.",
+      "sourceHash": "9bc41069d3b58a6080bba1b1f33d70541266ac7f068be6e35f757ac1e66a5a15",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "title"
+      ],
+      "baseText": "增值税 return filing",
+      "sourceHash": "bfbec3fca762c87a0914468719d2837afced5b9ce62226182f3aa447cab49973",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "body"
+      ],
+      "baseText": "Recurring 增值税申报表 filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+      "sourceHash": "a7de1d157fca2d4b90861c6e71bdaa09c6e6ba38a1e609dc9ef7c04101bfff18",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        1
+      ],
+      "baseText": "Invoices matched, 增值税 calculated",
+      "sourceHash": "14bfccfdeaf17271a3816e733f7e22dc3352e0c0b08d55fd76f81f7f661dd510",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        0
+      ],
+      "baseText": "电子税务局 (增值税)",
+      "sourceHash": "42bd2087fa0403cbfc2e2b52f56313bd2af84d2d0611bc093b2d7620811b8a42",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "note"
+      ],
+      "baseText": "电子税务局 may require 电子税务局账户. Sherma prepares the 增值税申报表 in full and the authorised person files it under their own login. It will not sign as you.",
+      "sourceHash": "caf2162d1fb2cfa0ffb9dab74b54d69c45c7601c0e61fa063b3d8840aed0316d",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        1
+      ],
+      "baseText": "Registration, 增值税 and bank details",
+      "sourceHash": "2b4d74d401e8a892244e3e5fce894c614ab3ef7825aee22c1c92b89d7c572c58",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "heading"
+      ],
+      "baseText": "Preparing a 增值税申报表 without the manual re-entry.",
+      "sourceHash": "a99c21ac9ad4a6d7aa127d05cfa12dc8f1694072f84635c026a457bb4cdc66ab",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "label"
+      ],
+      "baseText": "增值税申报表",
+      "sourceHash": "399a451a3ddf3f9082150dab0357c224c12d76f1cad2c52e5b3b69b9c8c6cc67",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "period"
+      ],
+      "baseText": "2026年第3季度",
+      "sourceHash": "a6401ca39405666dfc61a3a1b1658bf95c0cd211c06fafda83ff2b55bd5ed270",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "value"
+      ],
+      "baseText": "¥898,000.00",
+      "sourceHash": "6fef44bea05fb4e19d36149f03755a80ec1343995583335fd380eebee76a6851",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "value"
+      ],
+      "baseText": "2026年第3季度",
+      "sourceHash": "a6401ca39405666dfc61a3a1b1658bf95c0cd211c06fafda83ff2b55bd5ed270",
+      "mode": "market-copy"
+    }
+  ],
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "模拟",
+          "target": "about"
+        },
+        {
+          "label": "这个怎么运作",
+          "target": "how-it-works"
+        },
+        {
+          "label": "用例",
+          "target": "use-cases"
+        },
+        {
+          "label": "控制",
+          "target": "trust"
+        },
+        {
+          "label": "联系",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "认识谢尔玛"
+    },
+    "badge": "仿真第一表单自动化",
+    "headline": "一个代理人，填写您的最高风险表格，并首先展示其工作。",
+    "subheadline": "Sherma 阅读表格，排练对双胞胎的填充物，只询问它不知道的内容，并准确地向您展示将提交的内容。 在你这么说之前，没有什么能达到真实的形式。",
+    "ctaLabel": "认识谢尔玛",
+    "secondaryCtaLabel": "看看它是如何工作的",
+    "featureTags": [
+      "在它是真实的之前排练过",
+      "你赞成的是进去",
+      "每个领域的记录"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "嗨，我是谢尔玛。 给我发一份表格，我会在任何事情是真实的情况下排练整个双胞胎的填充物。"
+      },
+      {
+        "role": "user",
+        "text": "告诉我你发现了什么。"
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "在线 · 仿真沙箱",
+      "inputPlaceholder": "向 Sherma 询问一份表格……",
+      "suggestedPrompts": [
+        "显示缺少的字段",
+        "预览双胞胎",
+        "审批如何运作？"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "谢尔玛在她的办公室"
+    },
+    "contact": {
+      "heading": "带上一张你已经填写的表格。",
+      "body": "将 Sherma 与您自己作品中的真实形式进行比较，并将双胞胎与您的团队产生的内容进行比较。",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "下一个表格",
+      "heading": "带上一张你已经填写的表格。",
+      "body": "将 Sherma 与您自己作品中的真实形式进行比较，并将双胞胎与您的团队产生的内容进行比较。",
+      "ctaLabel": "与谢尔玛交谈"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "示例演示",
+        "demoNote": "仅说明性模拟 · 不使用真实门户或个人数据",
+        "openingReply": "我阅读了表格，建立了双胞胎，并从您批准的记录中填写了 30 个字段中的 26 个字段。 还有四个问题。 没有什么能触及真实的形式。",
+        "greetingReply": "嗨，我是谢尔玛。 我阅读了一份表格，排练了它对双胞胎的填充，并向您展示了将提交的确切内容。 在你这么说之前，没有什么能达到真实的形式。",
+        "instructionReply": "首先，上传您想要填写的表格的屏幕截图。 JPEG、PNG 或 WebP · 最多 6 张图像。 我将提取问题并告诉您我仍然需要什么。",
+        "reviewReply": "这是双胞胎。 它是完整的，经过检查的，并且仍然与实时表单分开。 您在这里批准的是执行的字段，字段。",
+        "approvedReply": "在演示中批准。 完全批准的双胞胎已准备好执行，每个字段都保留其源头。",
+        "escalatedReply": "安全返回。 没有提交任何文件。",
+        "fallbackReply": "我只要求真正缺少的信息。 让我显示缺少的字段或预览双胞胎。",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "上传表单屏幕截图",
+          "uploadHint": "JPEG、PNG 或 WebP · 最多 6 张图片",
+          "analyzingLabel": "阅读表格并提取其问题……",
+          "questionnaireHeading": "您提取的问卷",
+          "questionnaireBody": "谢尔马在你的表格中找到了真正的问题。 在此处回答受限聊天或在五分钟的语音会话中进行回答。",
+          "answerPlaceholder": "回答下一个表格问题…",
+          "voiceLabel": "通过语音回答 · 5 分钟",
+          "reviewLabel": "复习答案",
+          "generateLabel": "审查和生成",
+          "signInHeading": "登录以生成已填好的副本",
+          "signInBody": "您的图像、答案和预览将在登录后进入一个私人 Sherma 会话。",
+          "expiryCopy": "一小时后无人认领的预览过期。",
+          "errorCopy": "谢尔玛无法安全地阅读此图像。 尝试更清晰的 JPEG、PNG 或 WebP 屏幕截图。"
+        },
+        "trace": {
+          "label": "谢尔马·会话追踪",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "表单阅读",
+              "detail": "30个字段，4个文档，2个条件部分"
+            },
+            {
+              "state": "done",
+              "title": "双建",
+              "detail": "一份工作副本填写并检查了现场"
+            },
+            {
+              "state": "done",
+              "title": "从您的记录中填写",
+              "detail": "26 of 30 · 每个答案都有其来源"
+            },
+            {
+              "state": "active",
+              "title": "问差距，不猜测",
+              "detail": "聊天回答的 4 个问题"
+            },
+            {
+              "state": "pending",
+              "title": "双胞胎准备审查",
+              "detail": "没有什么能触动真实的形式"
+            }
+          ],
+          "reviewLabel": "复习双胞胎"
+        },
+        "review": {
+          "label": "您的批准",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "法人实体",
+              "value": "示例客户端 B.V.",
+              "sourceLabel": "来源"
+            },
+            {
+              "label": "税号",
+              "value": "nl••••••••B01",
+              "sourceLabel": "来源"
+            },
+            {
+              "label": "付款条件",
+              "value": "30天",
+              "sourceLabel": "确认"
+            },
+            {
+              "label": "授权签名者",
+              "value": "财务总监",
+              "sourceLabel": "确认"
+            }
+          ],
+          "approveLabel": "批准双胞胎",
+          "sendBackLabel": "送回去"
+        },
+        "results": {
+          "approvedTitle": "双胞胎批准",
+          "approvedBody": "批准的双胞胎已准备好执行 · 保留的每个来源",
+          "escalatedTitle": "安全退回",
+          "escalatedBody": "人工输入暂停运行 · 没有提交任何文件"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "摄入量",
+          "detail": "表格捡起"
+        },
+        {
+          "number": "02",
+          "title": "模拟",
+          "detail": "练习先填充"
+        },
+        {
+          "number": "03",
+          "title": "批准",
+          "detail": "你说是的"
+        },
+        {
+          "number": "04",
+          "title": "归档和证明",
+          "detail": "证据被保留"
+        }
+      ],
+      "principle": {
+        "kicker": "原则",
+        "heading": "为值得信赖而生。 由仿真控制。",
+        "body": "每张表格在填写之前都会排练。 Sherma 建立了一个真实形式的双胞胎，将整个填充物与那个双胞胎相结合，并向您展示完整的内容。 你批准的双胞胎是执行的双胞胎。 不是它的总结，不是对它的描述。 相同的字段，相同的值，以相同的顺序。",
+        "traceLabel": "谢尔马会话跟踪",
+        "traceId": "SH-2291",
+        "traceMeta": "会议 #SH-2291 · 12S",
+        "traceStatus": "活性",
+        "traceBody": "专为不能出错的文件而建，而不是演示剧院。",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "检测到表单",
+            "status": "done",
+            "detail": "增值税申报表, 2026年第3季度 — client entity matched.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "生成的问卷",
+            "status": "done",
+            "detail": "从发票中预先填写的 26 个字段。 4 需要您的意见。",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "已确认答案",
+            "status": "done",
+            "detail": "3分钟内通过聊天收集。",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "模拟完成",
+            "status": "active",
+            "detail": "针对门户的试运行 — 发现 0 个错误。",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "准备归档",
+          "body": "在提交任何内容之前，Digital Twin 已准备好进行审查。",
+          "approveLabel": "审查和批准",
+          "escalateLabel": "升级"
+        },
+        "guaranteesKicker": "谢尔玛的行为方式",
+        "guaranteesHeading": "在每种形式上保持真实的六件事。",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "范围与它给出的形式",
+            "body": "Sherma 触及表单和您分配给它的记录。 您的系统中没有其他任何内容在范围内。"
+          },
+          {
+            "icon": "sparkles",
+            "title": "在它是真实的之前排练过",
+            "body": "整个填充首先发生在双胞胎上。 现场表单被触摸一次，答案已经知道是完整的。"
+          },
+          {
+            "icon": "users",
+            "title": "在不归路时的人为批准",
+            "body": "一切可逆运行自动运行。 任何无法撤消的事情都会等待一个人。"
+          },
+          {
+            "icon": "check",
+            "title": "双胞胎是计划",
+            "body": "您批准的是字节的字节，提交的内容。 如果表格下方更改，批准无效，它会返回给您。"
+          },
+          {
+            "icon": "search",
+            "title": "每个答案都有一个来源",
+            "body": "哪个文件，哪个同事，哪个日期。 如果有人稍后查询数字，您可以显示它的来源。"
+          },
+          {
+            "icon": "question-mark",
+            "title": "升级，永不沉默失败",
+            "body": "缺少数据不会被猜测。 谢尔玛通过聊天或电话找到知道和询问的人，并告诉您它是否卡住了。"
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "有什么变化",
+        "heading": "将文件从您的办公桌上移开，而不是离开您的雷达。",
+        "body": "工作不再是一个人所做的事情，而是成为一个人认可的东西。 这就是全部的区别。",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "回答一次，到处重复使用",
+            "body": "您确认的内容将成为您记录的一部分。 下一个结构相似的形式开始大多回答。",
+            "metric": {
+              "label": "不问你就填满了字段",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "第一种形式，第五种形式，第二十种形式。 说明性的。"
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "截止日期不再是争夺战",
+            "body": "谢尔马在一夜之间和周末工作。 过去的四十八小时是用于复习，而不是组装。"
+          },
+          {
+            "icon": "lock",
+            "title": "控制权被保留，而不是被交易",
+            "body": "模拟、明确的批准和每个动作的记录。 没有你，什么都不会火。"
+          }
+        ]
+      },
+      "process": {
+        "kicker": "过程",
+        "heading": "谢尔玛如何填写表格，从头到尾。",
+        "body": "六步。 谢尔马没有问就跑了四个。 标记为一个人的两个是不能交出决定的两个。",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "摄入量",
+            "body": "表单 URL、转发电子邮件或门户 Sherma 监视。 它拿起表格并打开它。",
+            "output": "表格位于"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "模拟",
+            "body": "Sherma 建立了一个双胞胎，并对它进行了整个填充。 现场规则、条件部分和文件要求全部显示在这里，而不是在截止日期。",
+            "output": "双建"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "从它所知道的填充",
+            "body": "你的记录回答了大部分。 每个值都带有它的来源，因此您可以查看数字的来源以及最后一次确认的时间。",
+            "output": "大多数领域都完成了"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "求差距",
+            "body": "只有它真正不知道的事情。 聊天，或者如果紧急但没有人回复的话，请致电。 它一直在追，直到它有答案。",
+            "output": "间隙关闭"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "确认双胞胎",
+            "body": "将提交的完整表格。 改变你想要的任何东西，然后批准它。 这是不归路，所以它是你的。",
+            "output": "批准的双胞胎"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "执行和记录",
+            "body": "Sherma 用批准的双胞胎填写真实表格，并返回每个领域的记录。 如果门户需要个人登录，它会将完成的表格交给您发送。",
+            "output": "提交，记录在案"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "它适用的地方",
+        "heading": "专为不能出错的表格而设计。",
+        "body": "相同的代理，相同的原则。 改变的是它所借鉴的记录和它对抗的门户。",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "增值税 return filing",
+            "body": "Recurring 增值税申报表 filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+            "steps": [
+              "从截止日期开始的归档工作",
+              "Invoices matched, 增值税 calculated",
+              "问卷 - 仅限差距",
+              "归档，数字双胞胎确认"
+            ],
+            "connections": [
+              "电子税务局 (增值税)",
+              "发票收件箱",
+              "簿记软件"
+            ],
+            "note": "电子税务局 may require 电子税务局账户. Sherma prepares the 增值税申报表 in full and the authorised person files it under their own login. It will not sign as you."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "供应商和承运人入职",
+            "body": "每个买家和承运人都有自己的门户。 相同的公司详细信息、证书和政策，从头开始输入。",
+            "steps": [
+              "收到门户邀请",
+              "从之前的填充中重复使用注册",
+              "标记和刷新的过期文档",
+              "入职完成，确认"
+            ],
+            "connections": [
+              "买方和承运人门户",
+              "Registration, 增值税 and bank details",
+              "保险和保单证据"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "安全问卷",
+            "body": "在每个截止日期仍然是最后期限的情况下，重复相同的控制、政策和证据的客户安全审查。",
+            "steps": [
+              "从客户收到的问卷",
+              "与批准的记录相匹配的控制",
+              "问卷 - 仅限差距",
+              "包装组装，双胞胎确认"
+            ],
+            "connections": [
+              "客户安全门户",
+              "政策和控制库",
+              "证书和审计证据"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "合作伙伴和渠道索赔",
+            "body": "营销资金和合作社索赔与性能证明，一次一种供应商格式，如果缺少窗口，则意味着失去分配。",
+            "steps": [
+              "从收件箱中收取的基金通知",
+              "组装性能证明",
+              "与该供应商的格式相匹配的索赔",
+              "在窗口关闭之前索赔就绪"
+            ],
+            "connections": [
+              "供应商合作伙伴门户",
+              "收据和活动证据",
+              "分配和到期跟踪"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "保险表格",
+            "body": "可预测的、大量证据的更新和展示位置，并且与上次批准的提交内容大多保持不变。",
+            "steps": [
+              "续订通知",
+              "去年的答案加载",
+              "只有查询的更改",
+              "表单准备好，记录更新"
+            ],
+            "connections": [
+              "经纪人和保险公司门户",
+              "政策时间表和证据",
+              "上一年的提交历史"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "招标、赠款和备案",
+            "body": "选择问卷、资助申请和文件，在每个截止日期仍然是最后期限时重复组织证据。",
+            "steps": [
+              "与您的个人资料相匹配的通知",
+              "提取的每一个问题，都没有略读",
+              "从记录中回答的组织部分",
+              "包装组装，双胞胎确认"
+            ],
+            "connections": [
+              "招标和资助者门户",
+              "账户、保险、认证",
+              "政策和参考库"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "您的用例",
+            "body": "没有看到您的工作流程？ 描述表格、门户或归档，我们将在其周围运行自定义 Sherma。",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "自定义工作流摄入量",
+          "body": "共享使您的团队减慢速度的重复表单或门户。 此演示将简要保存在您的浏览器中，并准备电子邮件切换。",
+          "ctaLabel": "准备我的 Sherma 简介",
+          "note": "仅采样量 · 此页面没有传输任何内容",
+          "successHeading": "您的 Sherma 简介已准备就绪。",
+          "successBody": "打开您的电子邮件客户端以在您准备好时发送预先填写的简报。",
+          "editLabel": "编辑用例",
+          "emailSubject": "满足Sherma：自定义用例"
+        }
+      },
+      "workedExample": {
+        "kicker": "一个工作的例子",
+        "heading": "Preparing a 增值税申报表 without the manual re-entry.",
+        "body": "同样的原理，适用于最重复的形式。 一个模板，一次一个实体，一年四次，永远。",
+        "before": "有人收集数字，将它们重新键入退货，在截止日期前检查它们的分类帐和文件。 每个季度，对于每个客户，除了电子表格外，没有任何结转。",
+        "after": "谢尔玛从备案日历中打开工作，从收件箱中已经存在的发票中建立退货，只询问它无法得出的数字，并将完成的退货显示为双胞胎。",
+        "linkLabel": "讨论您的备案日历",
+        "emailSubject": "谢尔马季度归档工作流程",
+        "card": {
+          "label": "增值税申报表",
+          "period": "2026年第3季度",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "实体",
+              "value": "¥898,000.00"
+            },
+            {
+              "label": "期",
+              "value": "2026年第3季度"
+            },
+            {
+              "label": "发票匹配",
+              "value": "41 / 44"
+            },
+            {
+              "label": "缺少数字",
+              "value": "3 — 标记",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "返回准备好",
+          "summary": "3 个数字在提交前需要确认。",
+          "actionLabel": "审查和归档",
+          "actionNote": "需要人工控制",
+          "note": "说明性数字。 您自己的比率是根据第一个回报来衡量的。"
+        }
+      },
+      "control": {
+        "kicker": "控制自主权",
+        "heading": "不失责任的自主权。",
+        "body": "每一步都AI。 一个人在一个无法撤消的时刻进入，只有那时。",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "一切可逆都是自动的",
+            "body": "阅读、模拟、填充、追逐、组装。 对于可以简单地重做的工作，不需要批准。"
+          },
+          {
+            "icon": "lock",
+            "title": "一切不可逆转",
+            "body": "提交是不归的点，所以它等着你。 在门户网站需要个人凭证的地方，您持有它，而不是谢尔马。"
+          },
+          {
+            "icon": "check",
+            "title": "你批准的双胞胎是运行的双胞胎",
+            "body": "如果在您批准后实时表单发生更改，则批准是无效的，它会返回给您而不是执行。"
+          },
+          {
+            "icon": "question-mark",
+            "title": "卡住是一种状态，而不是沉默",
+            "body": "如果 Sherma 无法完成某件事，它会告诉您哪个领域以及为什么要采取行动。"
+          }
+        ],
+        "boundary": {
+          "label": "谢尔马工作边界",
+          "badges": [
+            "范围字段",
+            "批准的工具"
+          ],
+          "steps": [
+            {
+              "label": "接收",
+              "title": "收到表格"
+            },
+            {
+              "label": "模拟",
+              "title": "对双胞胎进行排练"
+            },
+            {
+              "label": "填",
+              "title": "记录应用，差距要求"
+            },
+            {
+              "label": "校验",
+              "title": "双胞胎完成并检查"
+            }
+          ],
+          "approvalLabel": "批准或升级",
+          "executionLabel": "执行和记录",
+          "sourceNote": "每个字段记录的来源",
+          "guarantee": "批准的双胞胎 = 执行的内容"
+        }
+      },
+      "leadCapture": {
+        "kicker": "规模",
+        "heading": "大规模的白标谢尔马。",
+        "body": "本简介适用于希望将 Sherma White 标记到自己的工作流程中的组织——一次上千个表格，而不是一次性提交。",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "谢尔玛应该在哪里运行，大概有多少种形式？",
+        "ctaLabel": "准备我的 Sherma 简介",
+        "successHeading": "你的简报准备好了。",
+        "successBody": "打开您的电子邮件客户端以在您准备好时发送它。",
+        "emailLabel": "通过电子邮件发送简报",
+        "privacyNote": "您的简报将保留在此浏览器中，直到您选择通过电子邮件发送它。",
+        "emailSubject": "大规模的白标 Sherma"
+      },
+      "footer": {
+        "tagline": "Sherma 会根据您已存档的内容填写您的表格，然后在发送任何内容之前向您显示完整的版本。",
+        "groups": [
+          {
+            "label": "能力",
+            "links": [
+              {
+                "label": "形成摄入",
+                "target": "meet"
+              },
+              {
+                "label": "模拟",
+                "target": "about"
+              },
+              {
+                "label": "批准和记录",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "公司",
+            "links": [
+              {
+                "label": "用例",
+                "target": "use-cases"
+              },
+              {
+                "label": "联系",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "开始",
+            "links": [
+              {
+                "label": "认识谢尔玛",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 谢尔马"
+      }
+    }
+  }
+}

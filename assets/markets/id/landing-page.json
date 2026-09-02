@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "countryCode": "ID",
+  "countryName": "Indonesia",
+  "locale": "id-ID",
+  "sourceLanguage": "id",
+  "defaultLanguage": "id",
+  "basePageRevision": "dfb2b72f6289f1e253ff43c4f09b1e79f775cf200cb3cc918f1daf093707c5ce",
+  "contextRevision": "1d389f24c495c4483861a87d96c588f668e660cf3f365a866896a5f6b7dfcad7",
+  "glossary": [
+    {
+      "concept": "indirect tax",
+      "term": "PPN",
+      "preserve": true,
+      "sourceIds": [
+        "id-official-tax-source"
+      ]
+    },
+    {
+      "concept": "tax return",
+      "term": "SPT Masa PPN",
+      "preserve": true,
+      "sourceIds": [
+        "id-official-tax-source"
+      ]
+    },
+    {
+      "concept": "official filing portal",
+      "term": "Coretax DJP",
+      "preserve": true,
+      "sourceIds": [
+        "id-official-tax-source"
+      ]
+    },
+    {
+      "concept": "filing credential",
+      "term": "akun wajib pajak",
+      "preserve": true,
+      "sourceIds": [
+        "id-official-tax-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "id-official-tax-source",
+      "title": "SPT Masa PPN",
+      "publisher": "Direktorat Jenderal Pajak",
+      "url": "https://www.pajak.go.id/panduan-layanan-pajak/konten/pelaporan/2025/orang-pribadi/spt/spt-masa-ppn",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "adaptationIndex": [
+    {
+      "path": [
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "detail"
+      ],
+      "baseText": "SPT Masa PPN, Juli 2026 — client entity matched.",
+      "sourceHash": "c16ceb268ccfd6c68fe3635fb3ecd9e07863a74e9a5326a640dd32a078b3b0b2",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "title"
+      ],
+      "baseText": "PPN return filing",
+      "sourceHash": "6602b1b5d51aa1b267dc5bb69171df93af04638cf6d6d3eb91b18941a064de4d",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "body"
+      ],
+      "baseText": "Recurring SPT Masa PPN filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+      "sourceHash": "6bbe028686c87fc6f00ba1ffbee54142fa61adb6e814d2c9ae3512cf0d6efe84",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        1
+      ],
+      "baseText": "Invoices matched, PPN calculated",
+      "sourceHash": "c54489be9da8ad048aa1468d2c30c41d0b95338a783a76b6e2691dea886ef020",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        0
+      ],
+      "baseText": "Coretax DJP (PPN)",
+      "sourceHash": "17d46ca5af1468b41f2e8ac29b058796de1df70253b3bd7d58bf77535b1ceb5a",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "note"
+      ],
+      "baseText": "Coretax DJP may require akun wajib pajak. Sherma prepares the SPT Masa PPN in full and the authorised person files it under their own login. It will not sign as you.",
+      "sourceHash": "51bbda80484b5ac1f59ed62726a7a343d8a6911244c9128a08831b5026ecbc8e",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        1
+      ],
+      "baseText": "Registration, PPN and bank details",
+      "sourceHash": "019fbba3476c37fcff31765f0da857189b17133bb31168217a3e9e50fd647584",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "heading"
+      ],
+      "baseText": "Preparing a SPT Masa PPN without the manual re-entry.",
+      "sourceHash": "c7a2d4471078981485188563bd3b034e687115250251f70c51f8acd253ec535b",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "label"
+      ],
+      "baseText": "SPT Masa PPN",
+      "sourceHash": "ff3c11d705da5a7680f822e0c22dffc5b35edf330b30b1f5a6a416561f2827b5",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "period"
+      ],
+      "baseText": "Juli 2026",
+      "sourceHash": "503b579de903421d9d93f9ee0291fc60b7fd3afc6de60c27d08f1514543ce8b0",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "value"
+      ],
+      "baseText": "Rp1.248.200.000",
+      "sourceHash": "42526d47a4a718bd889e9c7e4961a3226a27e3640664372fc185b00a6f31c7d1",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "value"
+      ],
+      "baseText": "Juli 2026",
+      "sourceHash": "503b579de903421d9d93f9ee0291fc60b7fd3afc6de60c27d08f1514543ce8b0",
+      "mode": "market-copy"
+    }
+  ],
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Pekerjaan tiruan",
+          "target": "about"
+        },
+        {
+          "label": "Bagaimana itu bekerja",
+          "target": "how-it-works"
+        },
+        {
+          "label": "kasus penggunaan",
+          "target": "use-cases"
+        },
+        {
+          "label": "Kontrol",
+          "target": "trust"
+        },
+        {
+          "label": "Kontak",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "bertemu Sherma"
+    },
+    "badge": "Simulasi-First Form Automation",
+    "headline": "Agen yang mengisi formulir dengan taruhan tertinggi Anda, dan menunjukkan pekerjaannya terlebih dahulu.",
+    "subheadline": "Sherma membaca formulir, melatih isian melawan kembaran itu, hanya menanyakan apa yang belum diketahuinya, dan menunjukkan kepada Anda apa yang akan dikirimkan. Tidak ada yang mencapai bentuk nyata sampai Anda mengatakannya.",
+    "ctaLabel": "bertemu Sherma",
+    "secondaryCtaLabel": "Lihat Cara Kerjanya",
+    "featureTags": [
+      "dilatih sebelum itu nyata",
+      "Apa yang Anda setujui adalah apa yang masuk",
+      "catatan setiap bidang"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Hai, saya Sherma. Kirimi saya formulir dan saya akan melatih seluruh isian melawan kembaran sebelum semuanya nyata."
+      },
+      {
+        "role": "user",
+        "text": "Tunjukkan padaku apa yang kamu temukan."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Simulasi kotak pasir",
+      "inputPlaceholder": "Tanya Sherma tentang formulir…",
+      "suggestedPrompts": [
+        "Tampilkan bidang yang hilang",
+        "Pratinjau si kembar",
+        "Bagaimana cara kerja persetujuan?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma di kantornya"
+    },
+    "contact": {
+      "heading": "Bawalah satu formulir yang sudah Anda isi.",
+      "body": "Jalankan Sherma melawan bentuk nyata dari pekerjaan Anda sendiri dan bandingkan si kembar dengan apa yang dihasilkan tim Anda.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "bentuk berikutnya",
+      "heading": "Bawalah satu formulir yang sudah Anda isi.",
+      "body": "Jalankan Sherma melawan bentuk nyata dari pekerjaan Anda sendiri dan bandingkan si kembar dengan apa yang dihasilkan tim Anda.",
+      "ctaLabel": "berbicara dengan Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "contoh demo",
+        "demoNote": "Hanya simulasi ilustratif · Tidak ada portal nyata atau data pribadi yang digunakan",
+        "openingReply": "Saya membaca formulir, membuat kembaran, dan mengisi 26 dari 30 bidang dari catatan Anda yang disetujui. Ada empat pertanyaan yang tersisa. Tidak ada yang menyentuh bentuk aslinya.",
+        "greetingReply": "Hai, saya Sherma. Saya membaca formulir, melatih isian terhadap kembaran itu, dan menunjukkan kepada Anda apa yang akan dikirimkan. Tidak ada yang mencapai bentuk nyata sampai Anda mengatakannya.",
+        "instructionReply": "Untuk memulai, unggah tangkapan layar dari formulir yang ingin Anda isi. JPEG, PNG, atau WebP · Hingga 6 gambar. Saya akan mengekstrak pertanyaan dan memberi tahu Anda apa yang masih saya butuhkan.",
+        "reviewReply": "Di sini adalah kembaran. Itu lengkap, diperiksa, dan masih terpisah dari formulir langsung. Apa yang Anda setujui di sini adalah apa yang dijalankan, bidang untuk bidang.",
+        "approvedReply": "disetujui dalam demo. Kembar yang disetujui persis siap untuk dieksekusi dan setiap bidang mempertahankan sumbernya.",
+        "escalatedReply": "dikirim kembali dengan selamat. Tidak ada pengajuan yang terjadi.",
+        "fallbackReply": "Saya hanya meminta informasi yang benar-benar hilang. Minta saya untuk menampilkan bidang yang hilang atau melihat pratinjau kembaran.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Unggah tangkapan layar formulir",
+          "uploadHint": "JPEG, PNG atau WebP · Hingga 6 gambar",
+          "analyzingLabel": "Membaca formulir dan mengekstrak pertanyaannya…",
+          "questionnaireHeading": "Kuesioner yang Anda ekstrak",
+          "questionnaireBody": "Sherma menemukan pertanyaan nyata dalam formulir Anda. Jawab di sini, dengan obrolan terbatas, atau dalam satu sesi suara lima menit.",
+          "answerPlaceholder": "Jawab pertanyaan form selanjutnya…",
+          "voiceLabel": "Jawab dengan suara · 5 menit",
+          "reviewLabel": "Tinjau jawaban",
+          "generateLabel": "Tinjau dan Hasilkan",
+          "signInHeading": "Masuk untuk menghasilkan salinan yang terisi",
+          "signInBody": "Gambar, jawaban, dan pratinjau Anda akan beralih ke satu sesi pribadi Sherma setelah masuk.",
+          "expiryCopy": "Pratinjau yang tidak diklaim kedaluwarsa setelah satu jam.",
+          "errorCopy": "Sherma tidak bisa membaca gambar ini dengan aman. Cobalah tangkapan layar JPEG, PNG, atau WebP yang lebih jelas."
+        },
+        "trace": {
+          "label": "Sherma · Jejak Sesi",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Formulir Baca",
+              "detail": "30 bidang, 4 dokumen, 2 bagian bersyarat"
+            },
+            {
+              "state": "done",
+              "title": "Kembar Dibangun",
+              "detail": "Salinan kerja diisi dan dicentang yang langsung"
+            },
+            {
+              "state": "done",
+              "title": "diisi dari catatan Anda",
+              "detail": "26 dari 30 · Setiap jawaban membawa sumbernya"
+            },
+            {
+              "state": "active",
+              "title": "Gaps bertanya, tidak menebak",
+              "detail": "4 pertanyaan dijawab oleh obrolan"
+            },
+            {
+              "state": "pending",
+              "title": "Kembar siap ditinjau",
+              "detail": "Tidak ada yang menyentuh bentuk aslinya"
+            }
+          ],
+          "reviewLabel": "Tinjau si kembar"
+        },
+        "review": {
+          "label": "persetujuan Anda",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "badan hukum",
+              "value": "Contoh Klien B.V.",
+              "sourceLabel": "bersumber"
+            },
+            {
+              "label": "pengenal pajak",
+              "value": "nl•••••••B01",
+              "sourceLabel": "bersumber"
+            },
+            {
+              "label": "Syarat pembayaran",
+              "value": "30 hari",
+              "sourceLabel": "Yg tdk dpt diubah-ubah"
+            },
+            {
+              "label": "penandatangan resmi",
+              "value": "Direktur keuangan",
+              "sourceLabel": "Yg tdk dpt diubah-ubah"
+            }
+          ],
+          "approveLabel": "Menyetujui si kembar",
+          "sendBackLabel": "Mengembalikan"
+        },
+        "results": {
+          "approvedTitle": "Disetujui kembar",
+          "approvedBody": "Si kembar yang disetujui siap dieksekusi · Setiap sumber dipertahankan",
+          "escalatedTitle": "dikirim kembali dengan aman",
+          "escalatedBody": "Lari dijeda untuk masukan manusia · Tidak ada yang diajukan"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Asupan",
+          "detail": "formulir diambil"
+        },
+        {
+          "number": "02",
+          "title": "Pura-pura",
+          "detail": "Latihan Isi dulu"
+        },
+        {
+          "number": "03",
+          "title": "Menyetujui",
+          "detail": "Anda mengatakan ya"
+        },
+        {
+          "number": "04",
+          "title": "File & Buktikan",
+          "detail": "Bukti disimpan"
+        }
+      ],
+      "principle": {
+        "kicker": "Prinsip",
+        "heading": "Dibangun untuk dipercaya. diatur oleh simulasi.",
+        "body": "Setiap formulir dilatih sebelum diisi. Sherma membangun kembaran dari bentuk nyata, mengerjakan seluruh isi melawan kembaran itu, dan menunjukkannya kepada Anda lengkap. Kembar yang Anda setujui adalah yang mengeksekusi. Bukan ringkasannya, bukan deskripsinya. Bidang yang sama, nilai yang sama, dalam urutan yang sama.",
+        "traceLabel": "Jejak Sesi Sherma",
+        "traceId": "SH-2291",
+        "traceMeta": "Sesi #SH-2291 · 12S telah berlalu",
+        "traceStatus": "Aktif",
+        "traceBody": "Dibangun untuk pengajuan yang tidak bisa salah, bukan teater demo.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Formulir terdeteksi",
+            "status": "done",
+            "detail": "SPT Masa PPN, Juli 2026 — entitas klien cocok.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "kuesioner yang dihasilkan",
+            "status": "done",
+            "detail": "26 bidang yang telah diisi sebelumnya dari faktur. 4 Perlu masukan Anda.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Jawaban dikonfirmasi",
+            "status": "done",
+            "detail": "dikumpulkan melalui obrolan dalam waktu kurang dari 3 menit.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulasi selesai",
+            "status": "active",
+            "detail": "Lari kering terhadap portal — 0 kesalahan ditemukan.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Siap untuk mengajukan",
+          "body": "Digital Twin siap untuk ditinjau sebelum apa pun dikirimkan.",
+          "approveLabel": "Tinjau & Setujui",
+          "escalateLabel": "Meningkatkan"
+        },
+        "guaranteesKicker": "Bagaimana Sherma berperilaku",
+        "guaranteesHeading": "Enam hal yang tetap benar di setiap bentuk.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "dicakup sesuai dengan bentuk yang diberikan",
+            "body": "Sherma menyentuh formulir dan catatan yang Anda tetapkan untuk itu. Tidak ada hal lain dalam sistem Anda yang dalam ruang lingkup."
+          },
+          {
+            "icon": "sparkles",
+            "title": "dilatih sebelum itu nyata",
+            "body": "Seluruh isian terjadi pada kembaran terlebih dahulu. Bentuk langsung disentuh sekali, dengan jawaban yang sudah diketahui lengkap."
+          },
+          {
+            "icon": "users",
+            "title": "Persetujuan manusia pada titik tidak dapat kembali",
+            "body": "Semuanya reversibel berjalan secara otomatis. Apa pun yang tidak dapat dibatalkan menunggu seseorang."
+          },
+          {
+            "icon": "check",
+            "title": "Kembar adalah rencananya",
+            "body": "Apa yang Anda setujui adalah byte untuk byte apa yang dikirimkan. Jika formulir berubah di bawahnya, persetujuan itu batal dan kembali kepada Anda."
+          },
+          {
+            "icon": "search",
+            "title": "Setiap jawaban memiliki sumber",
+            "body": "Dokumen mana, rekan mana, tanggal yang mana. Jika ada yang menanyakan angka nanti, Anda dapat menunjukkan dari mana asalnya."
+          },
+          {
+            "icon": "question-mark",
+            "title": "eskalasi, tidak pernah gagal diam",
+            "body": "Data yang hilang tidak dapat ditebak. Sherma menemukan siapa yang tahu dan bertanya, melalui obrolan atau panggilan, dan memberi tahu Anda apakah itu macet."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Apa yang berubah",
+        "heading": "Pindahkan pengarsipan dari meja Anda, bukan dari radar Anda.",
+        "body": "Pekerjaan berhenti menjadi sesuatu yang dilakukan seseorang dan menjadi sesuatu yang disetujui seseorang. Itulah perbedaan keseluruhan.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "jawab sekali, gunakan kembali di mana-mana",
+            "body": "Apa yang Anda konfirmasi menjadi bagian dari catatan Anda. Bentuk struktural berikutnya yang serupa sebagian besar mulai dijawab.",
+            "metric": {
+              "label": "Bidang diisi tanpa bertanya padamu",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Bentuk pertama, bentuk kelima, bentuk kedua puluh. ilustrasi."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Tenggat waktu berhenti menjadi perebutan",
+            "body": "Sherma bekerja semalaman dan di akhir pekan. Empat puluh delapan jam terakhir adalah untuk meninjau, bukan berkumpul."
+          },
+          {
+            "icon": "lock",
+            "title": "Kontrol disimpan, tidak diperdagangkan",
+            "body": "simulasi, persetujuan eksplisit, dan catatan setiap tindakan. Tidak ada yang menyala tanpamu."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "Proses",
+        "heading": "Bagaimana Sherma mengisi formulir, dari awal hingga akhir.",
+        "body": "enam langkah. Sherma menjalankan empat dari mereka tanpa bertanya. Dua yang ditandai untuk seseorang adalah dua di mana keputusan tidak dapat diserahkan.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Asupan",
+            "body": "URL formulir, email yang diteruskan, atau jam tangan Portal Sherma. Ini mengambil formulir dan membukanya.",
+            "output": "Formulir terletak"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Pura-pura",
+            "body": "Sherma membuat kembaran formulir dan mengerjakan seluruh isian melawannya. Aturan lapangan, bagian bersyarat dan persyaratan dokumen semua muncul di sini, bukan pada tenggat waktu.",
+            "output": "Kembar Dibangun"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Isi dari apa yang diketahuinya",
+            "body": "Catatan Anda menjawab sebagian besar. Setiap nilai membawa sumbernya, sehingga Anda dapat melihat dari mana suatu angka berasal dan kapan terakhir kali dikonfirmasi.",
+            "output": "sebagian besar bidang dilakukan"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "minta celahnya",
+            "body": "Hanya apa yang benar-benar tidak tahu. melalui obrolan, atau melalui panggilan jika itu mendesak dan tidak ada yang menjawab. Ia mengejar sampai ia mendapatkan jawabannya.",
+            "output": "Kesenjangan tertutup"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Konfirmasi si kembar",
+            "body": "Formulir yang telah diisi sesuai dengan yang akan dikirimkan. Ubah apa pun yang Anda inginkan, lalu setujui. Ini adalah titik tidak bisa kembali, jadi itu milikmu.",
+            "output": "Kembar yang disetujui"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "mengeksekusi dan merekam",
+            "body": "Sherma mengisi formulir nyata dengan kembaran yang disetujui dan mengembalikan catatan setiap bidang. Di mana portal membutuhkan login pribadi, itu menyerahkan formulir yang sudah jadi kepada Anda untuk dikirim.",
+            "output": "Diarsipkan, tercatat"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "di mana itu berlaku",
+        "heading": "Dibangun untuk bentuk yang tidak bisa salah.",
+        "body": "Agen yang sama, prinsip yang sama. Apa yang berubah adalah catatan yang diambilnya dan portal yang dilawannya.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "PPN pelaporan SPT",
+            "body": "Pengajuan SPT Masa PPN yang berulang, disiapkan dari faktur yang sudah ada di kotak masuk — alur kerja terkendali yang sama untuk setiap periode pelaporan dan klien.",
+            "steps": [
+              "Pekerjaan pengajuan dibuka dari batas waktu",
+              "Faktur dicocokkan, PPN dihitung",
+              "Kuesioner - Kesenjangan saja",
+              "Pengembalian Diarsipkan, Digital Twin Dikonfirmasi"
+            ],
+            "connections": [
+              "Coretax DJP (PPN)",
+              "Kotak Masuk Faktur",
+              "Perangkat lunak pembukuan"
+            ],
+            "note": "Coretax DJP mungkin memerlukan akun wajib pajak. Sherma menyiapkan SPT Masa PPN secara lengkap dan pihak yang berwenang mengajukan SPT tersebut di bawah login mereka sendiri. Sherma tidak akan menandatangani atas nama Anda."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Orientasi Vendor & Operator",
+            "body": "Setiap pembeli dan operator memiliki portal mereka sendiri. Rincian perusahaan yang sama, sertifikat dan kebijakan, dimasukkan dari awal untuk masing-masing.",
+            "steps": [
+              "Undangan Portal Diterima",
+              "Pendaftaran digunakan kembali dari pengisian sebelumnya",
+              "Dokumen yang kedaluwarsa ditandai dan disegarkan",
+              "Onboarding selesai, konfirmasi disimpan"
+            ],
+            "connections": [
+              "Portal pembeli dan operator",
+              "Pendaftaran, PPN dan detail bank",
+              "Bukti asuransi dan polis"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Kuesioner keamanan",
+            "body": "Tinjauan keamanan pelanggan yang mengulangi kontrol, kebijakan, dan bukti yang sama sementara setiap tenggat waktu tetap final.",
+            "steps": [
+              "kuesioner yang diterima dari pelanggan",
+              "Kontrol dicocokkan dengan catatan yang disetujui",
+              "Kuesioner - Kesenjangan saja",
+              "Paket dirakit, kembar dikonfirmasi"
+            ],
+            "connections": [
+              "Portal Keamanan Pelanggan",
+              "Perpustakaan Kebijakan dan Kontrol",
+              "Sertifikat dan bukti audit"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Klaim Mitra & Saluran",
+            "body": "Dana pemasaran dan klaim koperasi dengan bukti kinerja, satu format vendor pada satu waktu, di mana kehilangan jendela berarti kehilangan alokasi.",
+            "steps": [
+              "Pemberitahuan dana diambil dari kotak masuk",
+              "Bukti kinerja dirakit",
+              "Klaim cocok dengan format vendor tersebut",
+              "klaim siap sebelum jendela ditutup"
+            ],
+            "connections": [
+              "Portal Mitra Vendor",
+              "bukti dan bukti kampanye",
+              "Pelacakan Alokasi dan Kedaluwarsa"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Formulir Asuransi",
+            "body": "Pembaruan dan penempatan yang dapat diprediksi, banyak bukti, dan sebagian besar tidak berubah dari pengajuan terakhir yang disetujui.",
+            "steps": [
+              "Pemberitahuan perpanjangan diambil",
+              "Jawaban tahun lalu dimuat",
+              "Hanya perubahan yang ditanyakan",
+              "Formulir siap, catatan diperbarui"
+            ],
+            "connections": [
+              "Portal broker dan perusahaan asuransi",
+              "Jadwal dan bukti kebijakan",
+              "Sejarah Pengajuan Tahun Sebelumnya"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Tender, Hibah & Pengajuan",
+            "body": "Kuesioner seleksi, aplikasi pendanaan dan pengajuan yang mengulangi bukti organisasi sementara setiap tenggat waktu tetap final.",
+            "steps": [
+              "pemberitahuan cocok dengan profil Anda",
+              "Setiap pertanyaan diekstrak, tidak ada",
+              "Bagian organisasi dijawab dari catatan",
+              "Paket dirakit, kembar dikonfirmasi"
+            ],
+            "connections": [
+              "Portal tender dan penyandang dana",
+              "Rekening, asuransi, sertifikasi",
+              "Perpustakaan Kebijakan dan Referensi"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "kasus penggunaan Anda",
+            "body": "Tidak melihat alur kerja Anda? Jelaskan formulir, portal, atau pengarsipan dan kami akan melihat Sherma kustom yang berlari di sekitarnya.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Asupan alur kerja khusus",
+          "body": "Bagikan formulir atau portal berulang yang memperlambat tim Anda. Demo ini membuat briefing di browser Anda dan menyiapkan handoff email.",
+          "ctaLabel": "Persiapkan Sherma Brief saya",
+          "note": "Contoh asupan saja · Tidak ada yang ditransmisikan dari halaman ini",
+          "successHeading": "Sherma Brief Anda sudah siap.",
+          "successBody": "Buka klien email Anda untuk mengirim brief yang sudah diisi sebelumnya saat Anda siap.",
+          "editLabel": "Edit kasus penggunaan",
+          "emailSubject": "Temui Sherma: Kasus Penggunaan Kustom"
+        }
+      },
+      "workedExample": {
+        "kicker": "contoh yang berhasil",
+        "heading": "Menyiapkan SPT Masa PPN tanpa entri ulang secara manual.",
+        "body": "Prinsip yang sama, diterapkan pada bentuk yang paling berulang. Satu template, satu entitas pada satu waktu, empat kali setahun, selamanya.",
+        "before": "Seseorang mengumpulkan angka-angka, memasukkannya kembali ke dalam pengembalian, memeriksanya terhadap buku besar, dan file sebelum batas waktu. Setiap kuartal, untuk setiap klien, tanpa ada yang dibawa ke depan kecuali spreadsheet.",
+        "after": "Sherma membuka pekerjaan dari kalender pengarsipan, membuat pengembalian dari faktur yang sudah ada di kotak masuk, hanya menanyakan tentang angka yang tidak dapat diturunkan, dan menyajikan pengembalian yang telah selesai sebagai kembaran.",
+        "linkLabel": "Bicarakan melalui kalender pengarsipan Anda",
+        "emailSubject": "Alur Kerja Pengarsipan Kuartal Sherma",
+        "card": {
+          "label": "SPT Masa PPN",
+          "period": "Juli 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Kesatuan",
+              "value": "Rp1.248.200.000"
+            },
+            {
+              "label": "Periode",
+              "value": "Juli 2026"
+            },
+            {
+              "label": "Faktur cocok",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Angka yang hilang",
+              "value": "3 — Ditandai",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "kembali siap",
+          "summary": "3 angka perlu konfirmasi Anda sebelum mengajukan.",
+          "actionLabel": "Tinjau & File",
+          "actionNote": "Diperlukan pengendalian manusia",
+          "note": "figur ilustratif. Rasio Anda sendiri diukur pada pengembalian pertama."
+        }
+      },
+      "control": {
+        "kicker": "Otonomi Terkendali",
+        "heading": "otonomi tanpa kehilangan akuntabilitas.",
+        "body": "AI pertama di setiap langkah. Seseorang masuk pada satu saat yang tidak dapat dibatalkan, dan baru kemudian.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Semuanya reversibel adalah otomatis",
+            "body": "Membaca, mensimulasikan, mengisi, mengejar, merakit. Tidak ada persetujuan yang diperlukan untuk pekerjaan yang dapat dengan mudah diulang."
+          },
+          {
+            "icon": "lock",
+            "title": "Semuanya berhenti ireversibel",
+            "body": "Pengajuan adalah titik tidak bisa kembali, jadi itu menunggu Anda. Di mana portal membutuhkan kredensial pribadi, Anda memegangnya, bukan Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "kembaran yang kamu setujui adalah yang berjalan",
+            "body": "Jika formulir langsung berubah setelah Anda menyetujui, persetujuan itu tidak berlaku dan tetap kembali kepada Anda daripada tetap menjalankannya."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Terjebak adalah keadaan, bukan keheningan",
+            "body": "Jika Sherma tidak dapat menyelesaikan sesuatu, itu memberi tahu Anda bidang mana dan mengapa, dengan waktu tersisa untuk bertindak."
+          }
+        ],
+        "boundary": {
+          "label": "Batas Pekerjaan Sherma",
+          "badges": [
+            "Bidang tercakup",
+            "Alat yang disetujui"
+          ],
+          "steps": [
+            {
+              "label": "Menerima",
+              "title": "Formulir Diterima"
+            },
+            {
+              "label": "Pura-pura",
+              "title": "Berlatih melawan kembaran"
+            },
+            {
+              "label": "Mengisi",
+              "title": "catatan diterapkan, kesenjangan bertanya"
+            },
+            {
+              "label": "Memeriksa",
+              "title": "Twin lengkap dan diperiksa"
+            }
+          ],
+          "approvalLabel": "menyetujui atau mengeskalasi",
+          "executionLabel": "mengeksekusi dan merekam",
+          "sourceNote": "Sumber direkam untuk setiap bidang",
+          "guarantee": "Kembar yang disetujui = Apa yang dieksekusi"
+        }
+      },
+      "leadCapture": {
+        "kicker": "pada skala",
+        "heading": "Sherma label putih dalam skala besar.",
+        "body": "Ringkasan ini untuk organisasi yang ingin Sherma diberi label putih ke dalam alur kerja mereka sendiri — seribu bentuk sekaligus, bukan pengarsipan satu kali.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Di mana Sherma harus berlari, dan kira-kira berapa banyak bentuknya?",
+        "ctaLabel": "Persiapkan Sherma Brief saya",
+        "successHeading": "Singkat Anda sudah siap.",
+        "successBody": "Buka klien email Anda untuk mengirimkannya saat Anda siap.",
+        "emailLabel": "Kirim brief melalui email",
+        "privacyNote": "Penjelasan Anda tetap ada di browser ini sampai Anda memilih untuk mengirimkannya melalui email.",
+        "emailSubject": "Sherma berlabel putih dalam skala besar"
+      },
+      "footer": {
+        "tagline": "Sherma mengisi formulir Anda dari apa yang sudah Anda miliki di file, kemudian menunjukkan kepada Anda versi yang sudah selesai sebelum sesuatu dikirim.",
+        "groups": [
+          {
+            "label": "kemampuan",
+            "links": [
+              {
+                "label": "Asupan bentuk",
+                "target": "meet"
+              },
+              {
+                "label": "Pekerjaan tiruan",
+                "target": "about"
+              },
+              {
+                "label": "Persetujuan & Catatan",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Perusahaan",
+            "links": [
+              {
+                "label": "kasus penggunaan",
+                "target": "use-cases"
+              },
+              {
+                "label": "Kontak",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Mulai",
+            "links": [
+              {
+                "label": "bertemu Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  }
+}

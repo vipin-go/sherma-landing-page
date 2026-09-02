@@ -1,0 +1,888 @@
+{
+  "schemaVersion": 1,
+  "countryCode": "TR",
+  "countryName": "Turkey",
+  "locale": "tr-TR",
+  "sourceLanguage": "tr",
+  "defaultLanguage": "tr",
+  "basePageRevision": "dfb2b72f6289f1e253ff43c4f09b1e79f775cf200cb3cc918f1daf093707c5ce",
+  "contextRevision": "267b4f68aa4c7c49ee468caa59082efdb0f4de19297d4f1e445539828ac46ad4",
+  "glossary": [
+    {
+      "concept": "indirect tax",
+      "term": "KDV",
+      "preserve": true,
+      "sourceIds": [
+        "tr-official-tax-source"
+      ]
+    },
+    {
+      "concept": "tax return",
+      "term": "KDV1 Beyannamesi",
+      "preserve": true,
+      "sourceIds": [
+        "tr-official-tax-source"
+      ]
+    },
+    {
+      "concept": "official filing portal",
+      "term": "Dijital Vergi Dairesi",
+      "preserve": true,
+      "sourceIds": [
+        "tr-official-tax-source"
+      ]
+    },
+    {
+      "concept": "filing credential",
+      "term": "İnteraktif Vergi Dairesi şifresi",
+      "preserve": true,
+      "sourceIds": [
+        "tr-official-tax-source"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "tr-official-tax-source",
+      "title": "Beyanname formları ve bildirimler",
+      "publisher": "Gelir İdaresi Başkanlığı",
+      "url": "https://gib.gov.tr/yardim-kaynaklar/beyanname-formlari-ve-bildirimler",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "adaptationIndex": [
+    {
+      "path": [
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "detail"
+      ],
+      "baseText": "KDV1 Beyannamesi, Temmuz 2026 — client entity matched.",
+      "sourceHash": "6fd77a19b233ae3836a0b3c8565b7505b6b757693d843c8430876b5502770453",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "title"
+      ],
+      "baseText": "KDV return filing",
+      "sourceHash": "cefe45341476b4d44adb28475e79a41a0fc8c84d8e8e2d5070ea3fca006cffcb",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "body"
+      ],
+      "baseText": "Recurring KDV1 Beyannamesi filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+      "sourceHash": "37953d27a9513626999211e29d2ef58774e7575fd781437140c66a88d0c8eebd",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        1
+      ],
+      "baseText": "Invoices matched, KDV calculated",
+      "sourceHash": "3875662872433b8465e6cdf09d8b84bfaab38a31eb842af8dfff037e7a352ce1",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        0
+      ],
+      "baseText": "Dijital Vergi Dairesi (KDV)",
+      "sourceHash": "945bf5eb789d40f2214b3364ff8eea0826fa9691d47d0de0f33e8093a9e59b51",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "note"
+      ],
+      "baseText": "Dijital Vergi Dairesi may require İnteraktif Vergi Dairesi şifresi. Sherma prepares the KDV1 Beyannamesi in full and the authorised person files it under their own login. It will not sign as you.",
+      "sourceHash": "5ee80a318c84f7e5c3ea89a3c7385af9218368c138b2c3b777e7ed18ef41664a",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        1
+      ],
+      "baseText": "Registration, KDV and bank details",
+      "sourceHash": "269a17f2c4467c32dee9b2760112c2dfa9981405cc51dd1cc464a370c11716a1",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "heading"
+      ],
+      "baseText": "Preparing a KDV1 Beyannamesi without the manual re-entry.",
+      "sourceHash": "ff6be3595b0c96dee3469b5a49db6891d46232eba19d2ba8ba25c9ac412a8957",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "label"
+      ],
+      "baseText": "KDV1 Beyannamesi",
+      "sourceHash": "381fd02ed4d7d9e4bc8ba0151842046385761986fcdfa392cc4190a2ff2a78f7",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "period"
+      ],
+      "baseText": "Temmuz 2026",
+      "sourceHash": "69694c11fdeb41b383a1f1524a4c0bbb6b38501db5ae8ce0163a44404c4b364b",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "value"
+      ],
+      "baseText": "₺4.820.000,00",
+      "sourceHash": "0f024a2646e07941b7db1978d500be71b938ff50cea9691654fd69fd8c152007",
+      "mode": "market-copy"
+    },
+    {
+      "path": [
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "value"
+      ],
+      "baseText": "Temmuz 2026",
+      "sourceHash": "69694c11fdeb41b383a1f1524a4c0bbb6b38501db5ae8ce0163a44404c4b364b",
+      "mode": "market-copy"
+    }
+  ],
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Taklit",
+          "target": "about"
+        },
+        {
+          "label": "Nasıl çalışır",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Kullanım durumları",
+          "target": "use-cases"
+        },
+        {
+          "label": "Kontrol",
+          "target": "trust"
+        },
+        {
+          "label": "Temas",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Sherma ile tanışın"
+    },
+    "badge": "Simülasyon-ilk form otomasyonu",
+    "headline": "En yüksek bahisli formlarınızı dolduran ve önce çalışmasını gösteren bir aracı.",
+    "subheadline": "Sherma formu okur, bir ikizine karşı dolguyu prova eder, sadece bilmediğini sorar ve tam olarak neyin gönderileceğini size gösterir. Siz söyleyene kadar hiçbir şey gerçek forma ulaşamaz.",
+    "ctaLabel": "Sherma ile tanışın",
+    "secondaryCtaLabel": "Nasıl çalıştığını görün",
+    "featureTags": [
+      "gerçek olmadan önce prova",
+      "Onayladığın şey, içeri giren şeydir",
+      "Her alanın bir kaydı"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Merhaba, ben Sherma. Bana bir form gönder ve her şey gerçek olmadan önce bir ikizin tüm dolgusunu prova edeceğim."
+      },
+      {
+        "role": "user",
+        "text": "Bana ne bulduğunu göster."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Çevrimiçi · Simülasyon Sandbox",
+      "inputPlaceholder": "Bir form hakkında Sherma'ya sorun…",
+      "suggestedPrompts": [
+        "Eksik alanları göster",
+        "İkizi Önizleme",
+        "Onay nasıl çalışır?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "ofisinde Sherma"
+    },
+    "contact": {
+      "heading": "Zaten doldurduğunuz bir formu getirin.",
+      "body": "Sherma'yı kendi işinizden gerçek bir forma karşı çalıştırın ve ikizinizi ekibinizin ürettikleriyle karşılaştırın.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "sonraki form",
+      "heading": "Zaten doldurduğunuz bir formu getirin.",
+      "body": "Sherma'yı kendi işinizden gerçek bir forma karşı çalıştırın ve ikizinizi ekibinizin ürettikleriyle karşılaştırın.",
+      "ctaLabel": "Sherma ile konuş"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Örnek Demo",
+        "demoNote": "Yalnızca açıklayıcı simülasyon · Gerçek portal veya kişisel veri kullanılmaz",
+        "openingReply": "Formu okudum, bir ikiz oluşturdum ve onaylı kaydınızdan 30 alandan 26'sını doldurdum. Dört soru kaldı. Hiçbir şey gerçek forma dokunmadı.",
+        "greetingReply": "Merhaba, ben Sherma. Bir form okudum, ikizine karşı dolguyu prova ediyorum ve size tam olarak ne gönderileceğini gösteriyorum. Siz söyleyene kadar hiçbir şey gerçek forma ulaşamaz.",
+        "instructionReply": "Başlamak için, doldurulmasını istediğiniz formun ekran görüntülerini yükleyin. JPEG, PNG veya WebP · 6 adede kadar resim. Soruları çıkaracağım ve hala ihtiyacım olanı söyleyeceğim.",
+        "reviewReply": "İşte ikiz. Doldurulmuş, kontrol edilmiş ve hala canlı formdan ayrıdır. Burada onayladığınız şey, alan için alan olan şeydir.",
+        "approvedReply": "demoda onaylandı. Tam onaylı ikiz yürütmeye hazırdır ve her alan kaynağını korur.",
+        "escalatedReply": "güvenli bir şekilde geri gönderildi. Dosyalama gerçekleşmedi.",
+        "fallbackReply": "Sadece gerçekten eksik olan bilgileri istiyorum. Benden eksik alanları göstermemi veya ikizin önizlemesini isteyin.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Form ekran görüntülerini yükleyin",
+          "uploadHint": "JPEG, PNG veya WebP · 6 adede kadar resim",
+          "analyzingLabel": "Formu okumak ve sorularını çıkarmak…",
+          "questionnaireHeading": "Çıkarılan Anketiniz",
+          "questionnaireBody": "Sherma gerçek soruları formunuzda buldu. Burada, kısıtlı sohbetle veya beş dakikalık bir sesli oturumla yanıtlayın.",
+          "answerPlaceholder": "Bir sonraki form sorusuna cevap verin…",
+          "voiceLabel": "Sesle cevap · 5 dk",
+          "reviewLabel": "Cevapları İncele",
+          "generateLabel": "gözden geçir ve oluştur",
+          "signInHeading": "Doldurulmuş kopyalar oluşturmak için oturum açın",
+          "signInBody": "Resimleriniz, cevaplarınız ve önizlemeniz, oturum açtıktan sonra tek bir özel Sherma oturumuna taşınacaktır.",
+          "expiryCopy": "Talep edilmemiş önizlemelerin süresi bir saat sonra sona erer.",
+          "errorCopy": "Sherma bu görüntüyü güvenli bir şekilde okuyamadı. Daha net bir JPEG, PNG veya WebP ekran görüntüsü deneyin."
+        },
+        "trace": {
+          "label": "Sherma · Oturum İzi",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Form Okuma",
+              "detail": "30 alan, 4 belge, 2 koşullu bölüm"
+            },
+            {
+              "state": "done",
+              "title": "İkiz inşalı",
+              "detail": "çalışan bir kopya doldurdu ve canlı olanı kontrol etti"
+            },
+            {
+              "state": "done",
+              "title": "senin kaydından doldurulmuş",
+              "detail": "26 / 30 · Her cevap kendi kaynağını taşır"
+            },
+            {
+              "state": "active",
+              "title": "Boşluklar soruldu, tahmin edilmedi",
+              "detail": "Sohbet ile yanıtlanan 4 soru"
+            },
+            {
+              "state": "pending",
+              "title": "İkiz İncelemeye Hazır",
+              "detail": "Hiçbir şey gerçek forma dokunmadı"
+            }
+          ],
+          "reviewLabel": "İkizleri gözden geçirin"
+        },
+        "review": {
+          "label": "onayınız",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "tüzel kişi",
+              "value": "Örnek Müşteri B.V.",
+              "sourceLabel": "kaynaklı"
+            },
+            {
+              "label": "vergi tanımlayıcısı",
+              "value": "nl•••••••B01",
+              "sourceLabel": "kaynaklı"
+            },
+            {
+              "label": "Ödeme şartları",
+              "value": "30 gün",
+              "sourceLabel": "Onaylı"
+            },
+            {
+              "label": "yetkili kimse",
+              "value": "maliye direktörü",
+              "sourceLabel": "Onaylı"
+            }
+          ],
+          "approveLabel": "İkizleri Onaylayın",
+          "sendBackLabel": "Geri göndermek"
+        },
+        "results": {
+          "approvedTitle": "İkiz Onaylı",
+          "approvedBody": "Onaylı ikiz yürütmeye hazırdır · Her kaynak tutulur",
+          "escalatedTitle": "güvenli bir şekilde geri gönderildi",
+          "escalatedBody": "insan girişi için çalıştırma duraklatıldı · hiçbir şey dosyalanmadı"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Giriş",
+          "detail": "Form Alındı"
+        },
+        {
+          "number": "02",
+          "title": "Benzetmek",
+          "detail": "İlk önce doldurun"
+        },
+        {
+          "number": "03",
+          "title": "Onaylamak",
+          "detail": "evet diyorsun"
+        },
+        {
+          "number": "04",
+          "title": "Dosya ve Kanıtlama",
+          "detail": "Kanıt tutulur"
+        }
+      ],
+      "principle": {
+        "kicker": "ilke",
+        "heading": "güvenilecek şekilde inşa edilmiştir. simülasyon tarafından yönetilir.",
+        "body": "Her form doldurulmadan önce prova edilir. Sherma gerçek formda bir ikiz inşa eder, o ikizin tüm dolgusunu yapar ve size tam olarak gösterir. Onayladığınız ikiz, yürüten ikizdir. Bunun bir özeti değil, bir açıklaması değil. Aynı alanlar, aynı değerler, aynı sırada.",
+        "traceLabel": "sherma oturumu izi",
+        "traceId": "SH-2291",
+        "traceMeta": "Oturum #SH-2291 · 12s",
+        "traceStatus": "Aktif",
+        "traceBody": "Demo tiyatro için değil, yanlış olmayı göze alamayan dosyalar için üretilmiştir.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Form algılandı",
+            "status": "done",
+            "detail": "KDV1 Beyannamesi, Temmuz 2026 — müşteri entity eşleştirildi.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "oluşturulan anket",
+            "status": "done",
+            "detail": "Faturalardan önceden doldurulmuş 26 alan. 4 Girişinize ihtiyacınız var.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Cevaplar Onaylandı",
+            "status": "done",
+            "detail": "Sohbet tarafından 3 dakikadan kısa sürede toplanır.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simülasyon Tamamlandı",
+            "status": "active",
+            "detail": "Portala karşı kuru çalışma — 0 hata bulundu.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Dosyaya Hazır",
+          "body": "Dijital ikiz, herhangi bir şey gönderilmeden önce incelemeye hazırdır.",
+          "approveLabel": "İncele ve onayla",
+          "escalateLabel": "Yükselmek"
+        },
+        "guaranteesKicker": "Sherma nasıl davranır?",
+        "guaranteesHeading": "Her formda doğru kalan altı şey.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "Verilen forma göre kapsam",
+            "body": "Sherma forma ve ona atadığınız kayıtlara dokunur. Sistemlerinizde başka hiçbir şey kapsamda değil."
+          },
+          {
+            "icon": "sparkles",
+            "title": "gerçek olmadan önce prova",
+            "body": "Tüm dolgu önce bir ikizde gerçekleşir. Canlı forma bir kez dokunuldu ve zaten eksiksiz olduğu bilinen bir cevap."
+          },
+          {
+            "icon": "users",
+            "title": "Geri dönüşü olmayan noktada insan onayı",
+            "body": "Ters çevrilebilir her şey otomatik olarak çalışır. Geri alınamayan her şey bir insanı bekler."
+          },
+          {
+            "icon": "check",
+            "title": "ikiz plandır",
+            "body": "Onayladığınız şey, gönderilenlerin bayt için bayttır. Form altında değişirse, onay geçersizdir ve size geri döner."
+          },
+          {
+            "icon": "search",
+            "title": "Her cevabın bir kaynağı vardır",
+            "body": "hangi belge, hangi meslektaş, hangi tarih. Birisi daha sonra bir figürü sorgularsa, nereden geldiğini gösterebilirsiniz."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Eskalasyon, asla sessiz başarısızlık",
+            "body": "Eksik veriler tahmin edilmez. Sherma kim bilir ve sorar, sohbet veya telefonla sorar ve sıkışıp sıkışmadığını size söyler."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "ne değişir",
+        "heading": "Dosyayı masanızdan çıkarın, radarınızdan değil.",
+        "body": "İş, bir kişinin yaptığı bir şey olmayı bırakır ve bir kişinin onayladığı bir şey haline gelir. Bütün fark budur.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Bir kez cevap verin, her yerde yeniden kullanın",
+            "body": "Onayladığınız şey, kaydınızın bir parçası olur. Bir sonraki yapısal olarak benzer form çoğunlukla cevaplanır.",
+            "metric": {
+              "label": "size sormadan doldurulmuş alanlar",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Birinci form, beşinci form, yirminci form. açıklayıcı."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Son teslim tarihleri bir kargaşa olmayı bırakıyor",
+            "body": "Sherma gece ve hafta sonları çalışır. Son kırk sekiz saat, bir araya getirmek için değil, gözden geçirmek içindir."
+          },
+          {
+            "icon": "lock",
+            "title": "Kontrol tutulur, takas edilmez",
+            "body": "Simülasyon, açık bir onay ve her eylemin bir kaydı. Sensiz hiçbir şey ateş etmez."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "Süreç",
+        "heading": "Sherma bir formu nasıl doldurur, bitirmeye başlar.",
+        "body": "Altı adım. Sherma sormadan dördünü çalıştırır. Bir kişi için işaretlenmiş ikisi, kararın teslim edilemediği ikisidir.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Giriş",
+            "body": "Bir form URL'si, iletilen bir e-posta veya Sherma saatleri portal. Formu alır ve açar.",
+            "output": "Bulunan Form"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Benzetmek",
+            "body": "Sherma, formun bir ikizini oluşturur ve tüm dolguyu ona karşı çalıştırır. Alan kuralları, koşullu bölümler ve belge gereksinimleri, son tarihte değil, burada ortaya çıkar.",
+            "output": "İkiz inşalı"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "bildiğinden doldur",
+            "body": "Kayıtlarınız çoğunu yanıtlıyor. Her değer kaynağını taşır, böylece bir rakamın nereden geldiğini ve en son ne zaman doğrulandığını görebilirsiniz.",
+            "output": "çoğu alan yapıldı"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "boşlukları iste",
+            "body": "Sadece gerçekten bilmediği şey. Sohbet yoluyla veya acil ise ve kimse cevap vermediyse arayın. Cevabı bulana kadar kovalar.",
+            "output": "boşluklar kapalı"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "İkizi Onaylayın",
+            "body": "Doldurulduğu gibi doldurulmuş form. İstediğiniz her şeyi değiştirin, sonra onaylayın. Bu geri dönüşü olmayan nokta, bu yüzden sizin.",
+            "output": "Onaylı İkiz"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Yürüt ve kaydet",
+            "body": "Sherma gerçek formu onaylı ikizle doldurur ve her alanın bir kaydını döndürür. Bir portalın kişisel bir girişe ihtiyaç duyduğu durumlarda, gönderdiğiniz formu size göndermeniz için verir.",
+            "output": "kayıtlı, dosyalanmış"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "nerede geçerli",
+        "heading": "Yanlış olmayı göze alamayan formlar için üretilmiştir.",
+        "body": "Aynı ajan, aynı prensip. Hangi değişiklik, aldığı kayıt ve karşı çalıştığı portaldır.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "KDV beyanname verilmesi",
+            "body": "KDV1 Beyannamesi beyannamelerinin yinelenen hazırlanışı, zaten gelen kutusundaki faturalardan yola çıkılarak — her raporlama dönemi ve her müşteri için aynı kontrollü iş akışı.",
+            "steps": [
+              "Dosyalama işi son teslim tarihinden itibaren açıldı",
+              "Faturalar eşleştirildi, KDV hesaplandı",
+              "Anket — Sadece Boşluklar",
+              "İade dosyalandı, dijital ikiz onaylandı"
+            ],
+            "connections": [
+              "Dijital Vergi Dairesi (KDV)",
+              "Gelen Kutusu",
+              "muhasebe yazılımı"
+            ],
+            "note": "Dijital Vergi Dairesi için İnteraktif Vergi Dairesi şifresi gerekebilir. Sherma, KDV1 Beyannamesi dosyasını eksiksiz hazırlar ve yetkili kişi kendi oturumuyla onu gönderir. Sizin adınıza imzalamaz."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Satıcı ve Taşıyıcı İşe Alım",
+            "body": "Her alıcı ve taşıyıcının kendi portalı vardır. Her biri için sıfırdan girilen aynı şirket detayları, sertifikalar ve politikalar.",
+            "steps": [
+              "Portal davetiyesi alındı",
+              "Önceki Doldurmalardan Kayıt Yeniden Kullanıldı",
+              "Süresi dolmuş belgeler işaretlendi ve yenilendi",
+              "işe alım tamamlandı, onay tutuldu"
+            ],
+            "connections": [
+              "Alıcı ve Taşıyıcı Portalları",
+              "Kayıt, KDV ve banka bilgileri",
+              "Sigorta ve poliçe kanıtı"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Güvenlik anketleri",
+            "body": "Her son teslim tarihi nihai kalırken aynı kontrolleri, politikaları ve kanıtları tekrarlayan müşteri güvenliği incelemeleri.",
+            "steps": [
+              "Müşteriden alınan anket",
+              "Onaylanmış kayıtla eşleşen kontroller",
+              "Anket — Sadece Boşluklar",
+              "Paket monte edildi, ikiz onaylandı"
+            ],
+            "connections": [
+              "Müşteri Güvenlik Portalları",
+              "Politika ve Kontrol Kütüphanesi",
+              "Sertifikalar ve Denetim Kanıtları"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "İş Ortağı ve Kanal Talepleri",
+            "body": "Pazarlama fonları ve kooperatif iddiaları, her seferinde bir satıcı formatı olan performans kanıtı ile, pencereyi kaçırmak, tahsisi kaybetmek anlamına gelir.",
+            "steps": [
+              "Gelen kutusundan alınan fon bildirimi",
+              "Birleştirilmiş performans kanıtı",
+              "Talep, bu satıcının biçimiyle eşleşti",
+              "Pencere kapanmadan önce talep hazır"
+            ],
+            "connections": [
+              "Satıcı İş Ortağı Portalları",
+              "Makbuzlar ve kampanya kanıtları",
+              "Tahsis ve son kullanma tarihi"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Sigorta Formları",
+            "body": "Öngörülebilir, kanıt ağırlıklı ve çoğunlukla onaylanan son gönderiden sonra değişmeyen yenilemeler ve yerleştirmeler.",
+            "steps": [
+              "Yenileme bildirimi alındı",
+              "Geçen yılki cevaplar yüklendi",
+              "Sadece sorgulanan değişiklikler",
+              "Form hazır, kayıt güncellendi"
+            ],
+            "connections": [
+              "Broker ve sigortacı portalları",
+              "Politika Çizelgeleri ve Kanıtlar",
+              "Önceki yıl başvuru geçmişi"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "İhaleler, Hibeler ve Dosyalar",
+            "body": "Seçim anketleri, finansman başvuruları ve her son teslim tarihi kesin kalırken organizasyonel kanıtları tekrarlayan dosyalamalar.",
+            "steps": [
+              "Profilinizle eşleşen uyarı",
+              "Çıkarılan her soru, hiçbiri göze çarpmadı",
+              "Organizasyon bölümleri kayıttan cevaplandı",
+              "Paket monte edildi, ikiz onaylandı"
+            ],
+            "connections": [
+              "İhale ve fon sağlayıcı portalları",
+              "Hesaplar, Sigortalar, Sertifikalar",
+              "Politika ve Referans Kütüphanesi"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "KULLANIM SİZİN",
+            "body": "İş akışınızı görmüyor musunuz? Formu, portalı veya dosyalamayı tanımlayın ve bunun etrafında özel bir sherma koşusu yapacağız.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Özel iş akışı alımı",
+          "body": "Ekibinizi yavaşlatan yinelenen formu veya portalı paylaşın. Bu demo, özeti tarayıcınızda tutar ve bir e-posta aktarımı hazırlar.",
+          "ctaLabel": "Sherma Özetimi hazırla",
+          "note": "Sadece Örnek Alım · Bu sayfadan hiçbir şey iletilmez",
+          "successHeading": "Sherma özetiniz hazır.",
+          "successBody": "Hazır olduğunuzda önceden doldurulmuş özeti göndermek için e-posta istemcinizi açın.",
+          "editLabel": "Kullanım durumunu düzenleyin",
+          "emailSubject": "Sherma ile tanışın: özel kullanım örneği"
+        }
+      },
+      "workedExample": {
+        "kicker": "Çalışılan bir örnek",
+        "heading": "KDV1 Beyannamesi manuel yeniden giriş olmadan hazırlanması.",
+        "body": "Aynı ilke, en tekrarlanan forma uygulanır. Bir şablon, her seferinde bir varlık, yılda dört kez, sonsuza kadar.",
+        "before": "Birisi rakamları toplar, onları iadeye yeniden anahtarlar, deftere karşı kontrol eder ve son teslim tarihinden önce dosyalar. Her çeyrekte, her müşteri için, bir elektronik tablo dışında hiçbir şey taşınmaz.",
+        "after": "Sherma işi dosyalama takviminden açar, gelen kutusundaki faturalardan iadeyi oluşturur, sadece elde edemediği rakamları sorar ve tamamlanmış iadeyi ikiz olarak sunar.",
+        "linkLabel": "Dosyalama Takviminiz aracılığıyla konuşun",
+        "emailSubject": "Sherma Üç Aylık Dosyalama İş Akışı",
+        "card": {
+          "label": "KDV1 Beyannamesi",
+          "period": "Temmuz 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Varlık",
+              "value": "₺4.820.000,00"
+            },
+            {
+              "label": "Dönem",
+              "value": "Temmuz 2026"
+            },
+            {
+              "label": "Faturalar eşleşti",
+              "value": "41 / 44"
+            },
+            {
+              "label": "eksik rakamlar",
+              "value": "3 - İşaretli",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "hazır",
+          "summary": "3 rakamın dosyalamadan önce onayınıza ihtiyacı var.",
+          "actionLabel": "İnceleme ve Dosya",
+          "actionNote": "İnsan kontrolü gerekli",
+          "note": "açıklayıcı figürler. Kendi oranınız ilk dönüşte ölçülür."
+        }
+      },
+      "control": {
+        "kicker": "kontrol edilen özerklik",
+        "heading": "Sorumluluğu kaybetmeden özerklik.",
+        "body": "Her adımda önce AI. Bir kişi geri alınamayacak bir anda ve ancak o zaman girer.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Geri dönüşümlü her şey otomatiktir",
+            "body": "Okumak, simüle etmek, doldurmak, kovalamak, birleştirmek. Basitçe yeniden yapılabilecek işler için onay gerekmez."
+          },
+          {
+            "icon": "lock",
+            "title": "Geri dönüşü olmayan her şey durur",
+            "body": "Teslimiyet geri dönüşü olmayan noktadır, bu yüzden sizi bekler. Bir portalın kişisel bir kimlik bilgisine ihtiyacı olduğunda, onu Sherma değil, siz tutarsınız."
+          },
+          {
+            "icon": "check",
+            "title": "Onayladığınız ikiz, koşan ikizdir",
+            "body": "Canlı form siz onayladıktan sonra değişirse, onay geçersizdir ve yine de yürütmek yerine size geri döner."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Sıkışmış bir durumdur, bir sessizlik değil",
+            "body": "Sherma bir şeyi bitiremezse, size hangi alanı ve neden üzerinde hareket etmek için zaman kaldığını söyler."
+          }
+        ],
+        "boundary": {
+          "label": "sherma iş sınırı",
+          "badges": [
+            "Kapsamlı Alanlar",
+            "Onaylı Araçlar"
+          ],
+          "steps": [
+            {
+              "label": "Almak",
+              "title": "Alınan Form"
+            },
+            {
+              "label": "Benzetmek",
+              "title": "İkizlere Karşı Prova"
+            },
+            {
+              "label": "Doldurmak",
+              "title": "Kayıt uygulandı, boşluklar soruldu"
+            },
+            {
+              "label": "Doğrulamak",
+              "title": "İkiz tamamlandı ve kontrol edildi"
+            }
+          ],
+          "approvalLabel": "onaylamak veya yükseltmek",
+          "executionLabel": "Yürüt ve kaydet",
+          "sourceNote": "Her alan için kaydedilen kaynak",
+          "guarantee": "Onaylı ikiz = ne yürütür"
+        }
+      },
+      "leadCapture": {
+        "kicker": "ölçülü",
+        "heading": "Ölçekte beyaz etiketli Sherma.",
+        "body": "Bu özet, Sherma'nın kendi iş akışlarında beyaz etiketli olmasını isteyen kuruluşlar içindir - bir seferlik bir dosya değil, bir seferde bin form.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Sherma nereye koşmalı ve kabaca kaç form?",
+        "ctaLabel": "Sherma Özetimi hazırla",
+        "successHeading": "Özetiniz hazır.",
+        "successBody": "Hazır olduğunuzda göndermek için e-posta istemcinizi açın.",
+        "emailLabel": "Özeti e-posta ile gönderin",
+        "privacyNote": "Özetiniz, siz e-posta göndermeyi seçene kadar bu tarayıcıda kalır.",
+        "emailSubject": "Beyaz etiketli Sherma ölçekli"
+      },
+      "footer": {
+        "tagline": "Sherma, formlarınızı dosyada zaten sahip olduğunuzdan doldurur, ardından size herhangi bir şey gönderilmeden önce tamamlanmış sürümü gösterir.",
+        "groups": [
+          {
+            "label": "yetenekler",
+            "links": [
+              {
+                "label": "form alımı",
+                "target": "meet"
+              },
+              {
+                "label": "Taklit",
+                "target": "about"
+              },
+              {
+                "label": "Onay ve Kayıt",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Şirket",
+            "links": [
+              {
+                "label": "Kullanım durumları",
+                "target": "use-cases"
+              },
+              {
+                "label": "Temas",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Başlamak",
+            "links": [
+              {
+                "label": "Sherma ile tanışın",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026"
+      }
+    }
+  }
+}

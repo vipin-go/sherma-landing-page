@@ -1,0 +1,3767 @@
+{
+  "schemaVersion": 2,
+  "language": "pt",
+  "regionKey": "au",
+  "sourceRevision": "0eec88b97b2a000f0fb34ab81912561d3a4aba9ac14ab280e44b3dcfca5ff1c6",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulação",
+          "target": "about"
+        },
+        {
+          "label": "Como funciona",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Casos de uso",
+          "target": "use-cases"
+        },
+        {
+          "label": "Controlar",
+          "target": "trust"
+        },
+        {
+          "label": "Contato",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Conheça Sherma"
+    },
+    "badge": "Automação de primeiro formulário de simulação",
+    "headline": "Um agente que preenche seus formulários mais caros e mostra seu trabalho primeiro.",
+    "subheadline": "Sherma lê o formulário, ensaia o preenchimento contra um gêmeo, pergunta apenas o que ele ainda não sabe e mostra exatamente o que será enviado. Nada atinge a forma real até que você diga.",
+    "ctaLabel": "Conheça Sherma",
+    "secondaryCtaLabel": "Veja como funciona",
+    "featureTags": [
+      "ensaiado antes de ser real",
+      "O que você aprova é o que entra",
+      "Um registro de cada campo"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Olá, sou Sherma. Envie-me um formulário e ensaiarei todo o preenchimento contra um gêmeo antes que qualquer coisa seja real."
+      },
+      {
+        "role": "user",
+        "text": "Mostre-me o que você encontrou."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Sandbox de simulação",
+      "inputPlaceholder": "Pergunte a Sherma sobre um formulário…",
+      "suggestedPrompts": [
+        "Mostrar campos ausentes",
+        "Visualize o gêmeo",
+        "Como funciona a aprovação?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma em seu escritório"
+    },
+    "contact": {
+      "heading": "Traga um formulário que você já preenche.",
+      "body": "Execute Sherma contra uma forma real de seu próprio trabalho e compare o gêmeo com o que sua equipe produziu.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "o próximo formulário",
+      "heading": "Traga um formulário que você já preenche.",
+      "body": "Execute Sherma contra uma forma real de seu próprio trabalho e compare o gêmeo com o que sua equipe produziu.",
+      "ctaLabel": "Fale com Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Exemplo de demonstração",
+        "demoNote": "Simulação ilustrativa apenas · Nenhum portal real ou dados pessoais são usados",
+        "openingReply": "Eu li o formulário, construí um gêmeo e preenchi 26 dos 30 campos do seu registro aprovado. Restam quatro questões. Nada tocou a forma real.",
+        "greetingReply": "Olá, sou Sherma. Eu leio um formulário, ensaizo o preenchimento contra um gêmeo dele e mostro exatamente o que seria enviado. Nada atinge a forma real até que você diga.",
+        "instructionReply": "Para começar, faça upload de capturas de tela do formulário que você deseja preencher. JPEG, PNG ou WebP · Até 6 imagens. Vou extrair as perguntas e dizer o que ainda preciso.",
+        "reviewReply": "Aqui está o gêmeo. Ele está completo, verificado e ainda separado do formulário ao vivo. O que você aprova aqui é o que executa, campo para campo.",
+        "approvedReply": "Aprovado na demonstração. O gêmeo aprovado exato está pronto para ser executado e cada campo retém sua origem.",
+        "escalatedReply": "enviado de volta com segurança. Nenhum arquivamento ocorreu.",
+        "fallbackReply": "Peço apenas informações que estejam realmente faltando. Peça-me para mostrar os campos ausentes ou pré-visualize o gêmeo.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Carregar capturas de tela do formulário",
+          "uploadHint": "JPEG, PNG ou WebP · Até 6 imagens",
+          "analyzingLabel": "Lendo o formulário e extraindo suas perguntas...",
+          "questionnaireHeading": "Seu questionário extraído",
+          "questionnaireBody": "Sherma encontrou as questões reais em seu formulário. Responda aqui, por bate-papo restrito ou em uma sessão de voz de cinco minutos.",
+          "answerPlaceholder": "Responda a próxima pergunta do formulário...",
+          "voiceLabel": "Resposta por voz · 5 min",
+          "reviewLabel": "Revise as respostas",
+          "generateLabel": "Reveja e gere",
+          "signInHeading": "Faça login para gerar cópias preenchidas",
+          "signInBody": "Suas imagens, respostas e pré-visualização serão movidas para uma sessão privada do Sherma após o login.",
+          "expiryCopy": "As visualizações não reclamadas expiram após uma hora.",
+          "errorCopy": "Sherma não conseguia ler esta imagem com segurança. Experimente uma captura de tela JPEG, PNG ou WebP mais clara."
+        },
+        "trace": {
+          "label": "Sherma · Traço da sessão",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Leitura do formulário",
+              "detail": "30 campos, 4 documentos, 2 seções condicionais"
+            },
+            {
+              "state": "done",
+              "title": "gêmeo construído",
+              "detail": "Uma cópia de trabalho preenchida e marcada a live"
+            },
+            {
+              "state": "done",
+              "title": "preenchido a partir do seu registro",
+              "detail": "26 de 30 · Cada resposta carrega sua fonte"
+            },
+            {
+              "state": "active",
+              "title": "As lacunas perguntadas, não adivinhadas",
+              "detail": "4 perguntas respondidas por chat"
+            },
+            {
+              "state": "pending",
+              "title": "Gêmeo pronto para revisão",
+              "detail": "Nada tocou a forma real"
+            }
+          ],
+          "reviewLabel": "Revise o gêmeo"
+        },
+        "review": {
+          "label": "sua aprovação",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Entidade jurídica",
+              "value": "Exemplo de cliente B.V.",
+              "sourceLabel": "Fonte"
+            },
+            {
+              "label": "Identificador fiscal",
+              "value": "NL••••••B01",
+              "sourceLabel": "Fonte"
+            },
+            {
+              "label": "Condições de pagamento",
+              "value": "30 dias",
+              "sourceLabel": "Confirmado"
+            },
+            {
+              "label": "signatário autorizado",
+              "value": "Diretor Financeiro",
+              "sourceLabel": "Confirmado"
+            }
+          ],
+          "approveLabel": "Aprove o gêmeo",
+          "sendBackLabel": "Devolver"
+        },
+        "results": {
+          "approvedTitle": "gêmeo aprovado",
+          "approvedBody": "O gêmeo aprovado está pronto para ser executado · Todas as fontes retidas",
+          "escalatedTitle": "enviado com segurança de volta",
+          "escalatedBody": "A execução é pausada para entrada humana · Nada foi arquivado"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Entrada",
+          "detail": "formulário recolhido"
+        },
+        {
+          "number": "02",
+          "title": "Simular",
+          "detail": "Pratique o preenchimento primeiro"
+        },
+        {
+          "number": "03",
+          "title": "Aprovar",
+          "detail": "Você diz sim"
+        },
+        {
+          "number": "04",
+          "title": "Arquivo e Prove",
+          "detail": "A prova é mantida"
+        }
+      ],
+      "principle": {
+        "kicker": "O princípio",
+        "heading": "Construído para ser confiável. governado por simulação.",
+        "body": "Todos os formulários são ensaiados antes de serem preenchidos. Sherma constrói um gêmeo da forma real, trabalha todo o preenchimento contra aquele gêmeo e mostra-o completo. O gêmeo que você aprova é aquele que executa. Não é um resumo disso, nem uma descrição dele. Os mesmos campos, os mesmos valores, na mesma ordem.",
+        "traceLabel": "Rastreamento da sessão Sherma",
+        "traceId": "SH-2291",
+        "traceMeta": "Sessão #SH-2291 · 12s decorridos",
+        "traceStatus": "Ativo",
+        "traceBody": "Construído para arquivos que não podem ser errados, não o teatro de demonstração.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "formulário detectado",
+            "status": "done",
+            "detail": "business activity statement (BAS) — Declaração de imposto indireto, Q3 2026 — entidade cliente correspondente.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "questionário gerado",
+            "status": "done",
+            "detail": "26 campos pré-preenchidos em faturas. 4 Precisa de sua entrada.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Respostas confirmadas",
+            "status": "done",
+            "detail": "Recolhido por chat em menos de 3 minutos.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulação completa",
+            "status": "active",
+            "detail": "Dry run contra o portal — 0 erros encontrados.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Pronto para arquivar",
+          "body": "O gêmeo digital está pronto para revisão antes de qualquer coisa ser enviada.",
+          "approveLabel": "Revise e aprove",
+          "escalateLabel": "Escalar"
+        },
+        "guaranteesKicker": "Como Sherma se comporta",
+        "guaranteesHeading": "Seis coisas que permanecem verdadeiras em todos os formulários.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "dimensionado para o formulário que foi fornecido",
+            "body": "Sherma toca no formulário e nos registros que você atribuiu a ele. Nada mais em seus sistemas está no escopo."
+          },
+          {
+            "icon": "sparkles",
+            "title": "ensaiado antes de ser real",
+            "body": "Todo o preenchimento acontece em um gêmeo primeiro. A forma ao vivo é tocada uma vez, com uma resposta já conhecida por estar completa."
+          },
+          {
+            "icon": "users",
+            "title": "Aprovação humana no ponto sem retorno",
+            "body": "Tudo reversível é executado automaticamente. Qualquer coisa que não possa ser desfeita espera por uma pessoa."
+          },
+          {
+            "icon": "check",
+            "title": "O gêmeo é o plano",
+            "body": "O que você aprova é byte para byte o que é enviado. Se o formulário mudar por baixo, a aprovação será anulada e voltará para você."
+          },
+          {
+            "icon": "search",
+            "title": "Cada resposta tem uma fonte",
+            "body": "Qual documento, qual colega, qual data. Se alguém consultar uma figura posteriormente, você pode mostrar de onde veio."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Escalonamento, nunca falha silenciosa",
+            "body": "Os dados ausentes não são adivinhados. Sherma encontra quem sabe e pergunta, por bate-papo ou por ligação, e informa se está travado."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "O que muda",
+        "heading": "Mova o arquivo para fora de sua mesa, não fora de seu radar.",
+        "body": "O trabalho deixa de ser algo que uma pessoa faz e se torna algo que uma pessoa aprova. Essa é toda a diferença.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Answer once, reuse everywhere",
+            "body": "O que você confirma se torna parte do seu registro. A próxima forma estruturalmente semelhante começa principalmente respondida.",
+            "metric": {
+              "label": "Campos preenchidos sem perguntar",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Primeira forma, quinta forma, vigésima forma. ilustrativo."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Prazos deixam de ser uma disputa",
+            "body": "Sherma trabalha durante a noite e nos fins de semana. As últimas quarenta e oito horas são para revisão, não para montagem."
+          },
+          {
+            "icon": "lock",
+            "title": "O controle é mantido, não negociado",
+            "body": "Simulação, uma aprovação explícita e um registro de cada ação. Nada dispara sem você."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "o processo",
+        "heading": "Como Sherma preenche um formulário, do início ao fim.",
+        "body": "Seis passos. Sherma administra quatro deles sem perguntar. Os dois marcados para uma pessoa são os dois em que a decisão não pode ser entregue.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Entrada",
+            "body": "Um URL de formulário, um e-mail encaminhado ou um portal Sherma assiste. Ele pega o formulário e o abre.",
+            "output": "formulário localizado"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simular",
+            "body": "Sherma constrói um gêmeo da forma e trabalha todo o preenchimento contra ele. Regras de campo, seções condicionais e requisitos de documentos, tudo aparece aqui, não dentro do prazo.",
+            "output": "gêmeo construído"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Preencha pelo que sabe",
+            "body": "Seu registro responde a maior parte dele. Cada valor carrega sua fonte, então você pode ver de onde veio uma figura e quando foi confirmada pela última vez.",
+            "output": "A maioria dos campos feitos"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Peça as lacunas",
+            "body": "Somente o que realmente não sabe. por chat, ou por ligação, se for urgente e ninguém respondeu. Ele persegue até ter a resposta.",
+            "output": "lacunas fechadas"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Confirme o gêmeo",
+            "body": "O formulário preenchido conforme será enviado. Altere o que quiser e aprove. Este é o ponto sem retorno, então é seu.",
+            "output": "gêmeo aprovado"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Executar e gravar",
+            "body": "Sherma preenche o formulário real com o gêmeo aprovado e retorna um registro de cada campo. Quando um portal precisa de um login pessoal, ele entrega o formulário finalizado para você enviar.",
+            "output": "Arquivado, registrado"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "onde se aplica",
+        "heading": "Construído para os formulários que não podem estar errados.",
+        "body": "Mesmo agente, mesmo princípio. O que muda é o registro do qual ele extrai e o portal contra o qual trabalha.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "GST — Apresentação de declarações de imposto indireto",
+            "body": "business activity statement (BAS) — Declarações de imposto indireto recorrentes, preparadas a partir das faturas já na caixa de entrada — o mesmo fluxo de trabalho controlado para cada período de relatório e cliente.",
+            "steps": [
+              "Trabalho de arquivamento aberto a partir do prazo",
+              "GST — Faturas correspondentes, imposto indireto calculado",
+              "Questionário — apenas lacunas",
+              "Return filed, digital twin confirmed"
+            ],
+            "connections": [
+              "GST · Online services for business — Portal oficial de apresentação fiscal",
+              "Caixa de entrada da fatura",
+              "Software de contabilidade"
+            ],
+            "note": "business activity statement (BAS) · Online services for business · myID — Portais fiscais oficiais podem exigir uma credencial governamental pessoal ou organizacional. Sherma prepara a declaração completa e a pessoa autorizada a apresenta com seus próprios dados de login. Não assinará por você."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Integração de fornecedores e operadoras",
+            "body": "Cada comprador e transportador tem seu próprio portal. Os mesmos detalhes da empresa, certificados e políticas inseridos do zero para cada um.",
+            "steps": [
+              "Convite do portal recebido",
+              "Registro reutilizado de preenchimentos anteriores",
+              "Documentos expirados sinalizados e atualizados",
+              "Integração concluída, a confirmação mantida"
+            ],
+            "connections": [
+              "Portais do comprador e da operadora",
+              "GST — Registro, detalhes fiscais e bancários",
+              "Provas de seguro e seguro"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "questionários de segurança",
+            "body": "As revisões de segurança do cliente que repetem os mesmos controles, políticas e evidências enquanto todos os prazos permanecem finais.",
+            "steps": [
+              "questionário recebido do cliente",
+              "Controles correspondidos ao registro aprovado",
+              "Questionário — apenas lacunas",
+              "Pacote montado, gêmeo confirmado"
+            ],
+            "connections": [
+              "Portais de segurança do cliente",
+              "Biblioteca de política e controle",
+              "Certificados e evidências de auditoria"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Reivindicações para parceiros e canais",
+            "body": "Fundos de marketing e sinistros cooperativos Com o Proof of Performance, um formato de fornecedor de cada vez, onde perder a janela significa perder a alocação.",
+            "steps": [
+              "Aviso de fundo retirado da caixa de entrada",
+              "Prova de desempenho montada",
+              "Reivindicação correspondente ao formato desse fornecedor",
+              "Reivindicação pronta antes que a janela se feche"
+            ],
+            "connections": [
+              "Portais de parceiros de fornecedores",
+              "Recibos e provas de campanha",
+              "Alocação e rastreamento de expiração"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "formulários de seguro",
+            "body": "Renovações e colocações previsíveis, pesadas em evidências e, na maioria das vezes, inalteradas em relação ao último envio aprovado.",
+            "steps": [
+              "Aviso de renovação retirado",
+              "As respostas do ano passado carregadas",
+              "Apenas as alterações consultadas",
+              "Pronto para formulário, registro atualizado"
+            ],
+            "connections": [
+              "Portais de corretor e seguradora",
+              "Cronogramas e evidências de políticas",
+              "Histórico de envios do ano anterior"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Concursos, bolsas e arquivamentos",
+            "body": "Questionários de seleção, pedidos de financiamento e arquivos que repetem as evidências organizacionais enquanto todos os prazos permanecem finais.",
+            "steps": [
+              "Aviso correspondente ao seu perfil",
+              "Todas as perguntas extraídas, nenhuma descumpriu",
+              "Seções organizacionais respondidas a partir do registro",
+              "Pacote montado, gêmeo confirmado"
+            ],
+            "connections": [
+              "Portais de licitação e financiadores",
+              "Contas, seguros, certificações",
+              "Biblioteca de políticas e referências"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Seu caso de uso",
+            "body": "Não vê seu fluxo de trabalho? Descreva o formulário, o portal ou o arquivamento e teremos um escopo de uma execução de Sherma personalizada em torno dele.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Entrada de fluxo de trabalho personalizado",
+          "body": "Compartilhe o formulário ou o portal recorrentes que estão deixando sua equipe mais lenta. Esta demonstração mantém o brief no seu navegador e prepara uma transferência por e-mail.",
+          "ctaLabel": "Prepare meu brief de Sherma",
+          "note": "Somente ingestão de amostra · Nada é transmitido desta página",
+          "successHeading": "Seu Sherma Brief está pronto.",
+          "successBody": "Abra seu cliente de e-mail para enviar o resumo pré-preenchido quando estiver pronto.",
+          "editLabel": "Editar o caso de uso",
+          "emailSubject": "Conheça Sherma: caso de uso personalizado"
+        }
+      },
+      "workedExample": {
+        "kicker": "Um exemplo trabalhado",
+        "heading": "business activity statement (BAS) — Preparando uma declaração de impostos indiretos sem reinserção manual.",
+        "body": "O mesmo princípio, aplicado à forma mais repetida que existe. Um modelo, uma entidade de cada vez, quatro vezes por ano, para sempre.",
+        "before": "Alguém reúne as figuras, os reinsere na devolução, verifica-os no livro-razão e arquivos antes do prazo. Cada trimestre, para cada cliente, sem nada além de uma planilha.",
+        "after": "Sherma abre o trabalho a partir do calendário de arquivamento, cria o retorno das faturas já na caixa de entrada, pergunta apenas sobre os números que não pode derivar e apresenta a devolução concluída como gêmeo.",
+        "linkLabel": "Fale através do seu calendário de arquivamentos",
+        "emailSubject": "Fluxo de trabalho de arquivamento trimestral de Sherma",
+        "card": {
+          "label": "business activity statement (BAS)",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Entidade",
+              "value": "A$124,820.00"
+            },
+            {
+              "label": "Período",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "Faturas correspondidas",
+              "value": "41/44"
+            },
+            {
+              "label": "faltando figuras",
+              "value": "3 — sinalizado",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Retorno pronto",
+          "summary": "3 figuras precisam de sua confirmação antes do arquivamento.",
+          "actionLabel": "Revisão e arquivo",
+          "actionNote": "Controle humano necessário",
+          "note": "Figuras ilustrativas. Sua própria proporção é medida no primeiro retorno."
+        }
+      },
+      "control": {
+        "kicker": "Autonomia controlada",
+        "heading": "Autonomia sem perder a responsabilidade.",
+        "body": "AI primeiro a cada passo. Uma pessoa entra no único momento que não pode ser desfeito, e só então.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "tudo reversível é automático",
+            "body": "Ler, simular, preencher, perseguir, montar. Nenhuma aprovação é necessária para o trabalho que pode simplesmente ser refeito."
+          },
+          {
+            "icon": "lock",
+            "title": "Tudo irreversível para",
+            "body": "A submissão é o ponto sem retorno, por isso espera por você. Quando um portal precisa de uma credencial pessoal, você a mantém, não Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "O gêmeo que você aprova é aquele que corre",
+            "body": "Se o formulário ao vivo mudar após a aprovação, a aprovação será anulada e voltará para você em vez de executar de qualquer maneira."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Stuck é um estado, não um silêncio",
+            "body": "Se Sherma não conseguir terminar algo, ele informa qual campo e por quê, com o tempo restante para agir sobre ele."
+          }
+        ],
+        "boundary": {
+          "label": "Limite de trabalho de Sherma",
+          "badges": [
+            "Campos com escopo",
+            "Ferramentas aprovadas"
+          ],
+          "steps": [
+            {
+              "label": "Receber",
+              "title": "formulário recebido"
+            },
+            {
+              "label": "Simular",
+              "title": "ensaiar contra um gêmeo"
+            },
+            {
+              "label": "Preencher",
+              "title": "Registro aplicado, lacunas solicitadas"
+            },
+            {
+              "label": "Verificar",
+              "title": "Twin completo e verificado"
+            }
+          ],
+          "approvalLabel": "Aprovar ou escalar",
+          "executionLabel": "Executar e gravar",
+          "sourceNote": "Fonte registrada para todos os campos",
+          "guarantee": "Twin aprovado = o que executa"
+        }
+      },
+      "leadCapture": {
+        "kicker": "em escala",
+        "heading": "Sherma de etiqueta branca em escala.",
+        "body": "Este resumo é para organizações que desejam que Sherma seja rotulada em seu próprio fluxo de trabalho – mil formulários de cada vez, não um processo único.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Onde Sherma deve ser executado e aproximadamente quantas formas?",
+        "ctaLabel": "Prepare meu brief de Sherma",
+        "successHeading": "Seu briefing está pronto.",
+        "successBody": "Abra seu cliente de e-mail para enviá-lo quando estiver pronto.",
+        "emailLabel": "Envie o resumo por e-mail",
+        "privacyNote": "Seu briefing permanece neste navegador até que você opte por enviá-lo por e-mail.",
+        "emailSubject": "Sherma de etiqueta branca em escala"
+      },
+      "footer": {
+        "tagline": "Sherma preenche seus formulários a partir do que você já possui em arquivo e mostra a versão concluída antes de qualquer coisa ser enviada.",
+        "groups": [
+          {
+            "label": "capacidades",
+            "links": [
+              {
+                "label": "entrada de formulários",
+                "target": "meet"
+              },
+              {
+                "label": "Simulação",
+                "target": "about"
+              },
+              {
+                "label": "Aprovação e registro",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Companhia",
+            "links": [
+              {
+                "label": "Casos de uso",
+                "target": "use-cases"
+              },
+              {
+                "label": "Contato",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Começar",
+            "links": [
+              {
+                "label": "Conheça Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "translationIndex": [
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        0,
+        "label"
+      ],
+      "sourceHash": "45314e97b0c26a862b5411d0a943d801583e13bb5d104382ed7a2f4773969e66"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        1,
+        "label"
+      ],
+      "sourceHash": "9c870aa6e5e93270170d5a81277ad3e623afe8d4efd186d3e28f3d2b646d52e6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        2,
+        "label"
+      ],
+      "sourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        3,
+        "label"
+      ],
+      "sourceHash": "32d7e82082479b8cb546187ff0af11e4915e4d17bc28e02dca7425288b79badd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        4,
+        "label"
+      ],
+      "sourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "ctaLabel"
+      ],
+      "sourceHash": "6789c5d833547acc3525eb06c75a932e371d4d8979d89b253516332c95baf28b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "badge"
+      ],
+      "sourceHash": "f58e1c59ff5ec917d136fe23badfd924bc6aa9fd5ce4aab676bcad37bb11522e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "headline"
+      ],
+      "sourceHash": "a884d22c86bc2675e46dc9ffd41fca52834dded88969adc5c7d282f7720775c5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "subheadline"
+      ],
+      "sourceHash": "deef9823676621e28d9be4a9ef7e079fbc0c7df823d0a68fa691daa8fa894f63"
+    },
+    {
+      "path": [
+        "landingPage",
+        "ctaLabel"
+      ],
+      "sourceHash": "6789c5d833547acc3525eb06c75a932e371d4d8979d89b253516332c95baf28b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "secondaryCtaLabel"
+      ],
+      "sourceHash": "a105ad29235aa71ee321d02ba00ee1cf7e9273406367343fdf9a721daa38419e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "featureTags",
+        0
+      ],
+      "sourceHash": "80b7666fb2f1ce2b3aabe7b339bfc613d337a5148a6f630ddbf0f82a0fc7d3c6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "featureTags",
+        1
+      ],
+      "sourceHash": "eac4b9d1522fdfd3c785e94c10811847a3c176672f5b36df113cd1c0e4879297"
+    },
+    {
+      "path": [
+        "landingPage",
+        "featureTags",
+        2
+      ],
+      "sourceHash": "cca50352f49d62b68be06aa2be773bbb7db63258ebee171f28b1f022925d384e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "demoConversation",
+        0,
+        "text"
+      ],
+      "sourceHash": "15b578d50f128a05530b956842d43ffcdf6d3d79be2b945c372421cf9fe421f7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "demoConversation",
+        1,
+        "text"
+      ],
+      "sourceHash": "0018cdcb190ef39ae4f889fe907075dc25b518e69ae4cf81ceacae0b6bdafdfa"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "statusLabel"
+      ],
+      "sourceHash": "c489a57dcbacb5059a1a8a3483eb54b4ede2df26d50d9acdfe3b2884d7d097d2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "inputPlaceholder"
+      ],
+      "sourceHash": "ff5470697d4714a4fbddf948626f43b22311c813add9fd87e3b2500b52f8ad4b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "suggestedPrompts",
+        0
+      ],
+      "sourceHash": "4236b0778a45b352f741e0eae61981c70db7ab4a94d425aca1517b250165b798"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "suggestedPrompts",
+        1
+      ],
+      "sourceHash": "b6dfc3e8276d53e95f085e9de4022841ff6e7e0597cd88b9f3fdcfc2539bc514"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "suggestedPrompts",
+        2
+      ],
+      "sourceHash": "2efcd3481dc0c2d07211b2f9c69fa29b0872ed479fe6665b071ab5a6cd8cae67"
+    },
+    {
+      "path": [
+        "landingPage",
+        "seoImage",
+        "alt"
+      ],
+      "sourceHash": "355a4ba7327347a5467fa3f727ec98179e78b6d37bdf6258cb18537a4944c562"
+    },
+    {
+      "path": [
+        "landingPage",
+        "contact",
+        "heading"
+      ],
+      "sourceHash": "6f8c140ce2bb18b8e909ee271015c9c68784eb9973c183460d8ca346b26a277d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "contact",
+        "body"
+      ],
+      "sourceHash": "89087aec6363c21914013d686c93d569b8882544bc25c6289d1527d617cb4e48"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "kicker"
+      ],
+      "sourceHash": "62ee26efcf0fcd84242803206562c2b09280c6b51ef783d990460df09bc23f32"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "heading"
+      ],
+      "sourceHash": "6f8c140ce2bb18b8e909ee271015c9c68784eb9973c183460d8ca346b26a277d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "body"
+      ],
+      "sourceHash": "89087aec6363c21914013d686c93d569b8882544bc25c6289d1527d617cb4e48"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "ctaLabel"
+      ],
+      "sourceHash": "1639e422cc58cea1e388a70e34c6f3bde4df86d2ee85516e95d7e72a02d176a1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "sampleLabel"
+      ],
+      "sourceHash": "72405fbdd3ff0e502cc076ced33cf970f8c39aff47feee9a7fecbdcebc32514f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "demoNote"
+      ],
+      "sourceHash": "3e03a8ca5bac79e87cd7c90cd511973041cfbde78f933784cfd8533202669ccd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "openingReply"
+      ],
+      "sourceHash": "9fec978239f13d339843147b216942d8e07f79df24d670fa0f1790483a8af24c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "greetingReply"
+      ],
+      "sourceHash": "5810550c0813746b1436a8540c03c4b1d55907352a15523fb483546091ef9902"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "instructionReply"
+      ],
+      "sourceHash": "d3bc469892b91dd4996807f347f3fd0358b45a1451634e79cadaa0528c0fb73d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "reviewReply"
+      ],
+      "sourceHash": "da0c8757b84a0d70662829e8ad3a99d38b58f7e2781da12909ed381a84663cdd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "approvedReply"
+      ],
+      "sourceHash": "aa5855da61560118aa0ef0cd6c31671a1971e99f1d0eee4a6106e266d413327f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "escalatedReply"
+      ],
+      "sourceHash": "3ac232f385697d88822ffd4adc6fa41dd1319c44af5ce26189cace9373312fef"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "fallbackReply"
+      ],
+      "sourceHash": "ea014bceba39f314673e38d44c3c8e37ab28b2568c34c563d51f1d7333dcd77c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "uploadLabel"
+      ],
+      "sourceHash": "a24f6f2ce7600e202a827cb0b0c62ba4bad5a4adb670eabf593f73e1d4bdc5d4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "uploadHint"
+      ],
+      "sourceHash": "4e56b28b5d6b2b8b83575a7240003417348df942244099ebc776d4767d4eb1a3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "analyzingLabel"
+      ],
+      "sourceHash": "4f9cdec70f8a19fe52cf47e3822a2d9411886b24aeac60e4e366cd67fc402c38"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "questionnaireHeading"
+      ],
+      "sourceHash": "0db60a15c8a8b42d106b672a3361692d1ade77dc3974955373bedd490f6144f0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "questionnaireBody"
+      ],
+      "sourceHash": "fd3b79c85caad1a4ef17ce875af1e9887e5f7ab3547c1fab4a8821aee7654f0c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "answerPlaceholder"
+      ],
+      "sourceHash": "724df68c0d021027a049eeb4c2186cf6cdabe23de046cd71c9841b98b7137362"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "voiceLabel"
+      ],
+      "sourceHash": "0b3fc9eb8acc2f6c19c046ca365f884098311acba79c3589b6f5a8b7ce7ef15e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "reviewLabel"
+      ],
+      "sourceHash": "decd394b995b6ec517386483dc58aff1e028e38609c9d34d6db712c8e079b63d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "generateLabel"
+      ],
+      "sourceHash": "b8890f28334ba3393a23cc68e8b88e61dc804d27043ecfeef4a59a533bcb188d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "signInHeading"
+      ],
+      "sourceHash": "651c93094608a69ef4fbd6a5a03ce39bc305861cf0b567568bebf779b8509fa5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "signInBody"
+      ],
+      "sourceHash": "28aa0e72b60f36513383aa04ced201d246572596661656a015db100d42ead976"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "expiryCopy"
+      ],
+      "sourceHash": "5382682a0e51aec91a3c5eff8b0ea05a44ec36e55050540f58935e23d727b5a7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "errorCopy"
+      ],
+      "sourceHash": "e312f99faaff30b441d7cde125eec7a947f3f4b11ecf06f4e36a68b2c8c4468c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "label"
+      ],
+      "sourceHash": "3944e96348730a38a673dbbff9b312d94b160a0b992a1f9523ad04f68abd7e68"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        0,
+        "title"
+      ],
+      "sourceHash": "71065da870923654e317d0f77354723bf225255d10bd20b164f290a061117ef9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        0,
+        "detail"
+      ],
+      "sourceHash": "b76e0df99ba54d0a4452dcae05542bb1b20f2f24a5b029581d29e54d66eb0854"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        1,
+        "title"
+      ],
+      "sourceHash": "3efd6767b8789c4d5f2eae946eedbcb217de0d3e98091d682bfdab3b4ad1665f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        1,
+        "detail"
+      ],
+      "sourceHash": "074a6f2e67be7df4c765f19104e7fae5f28fa1a95bc4558997c9fe8c1faa76b5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        2,
+        "title"
+      ],
+      "sourceHash": "5749a97d92752423f3f53a7814df78640df1d61c0bee99c092be16391ea480e5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        2,
+        "detail"
+      ],
+      "sourceHash": "72eafc4b8a174b80dd83a71ce27ac5dbce3033d020d420c9640ad55efc6a77c8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        3,
+        "title"
+      ],
+      "sourceHash": "aee18405619c9b344e4fa89016fac4f216ad205df745478c9d5ee44c5f4ebdf8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        3,
+        "detail"
+      ],
+      "sourceHash": "f95e68a41053d12aee2de58c0f9b77d64f061a7cb46806ebb326eadad86eac89"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        4,
+        "title"
+      ],
+      "sourceHash": "f3db699af7cd2957c476513a119df44ac5f178175abb02d2b37b8219ef0695cf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        4,
+        "detail"
+      ],
+      "sourceHash": "6ee4d3cc4f49b23271abd51123e85042e85386493a1cc4b46ea07df5fec9ada4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "reviewLabel"
+      ],
+      "sourceHash": "ba6b3af096db741e8bde7534ad18a08926364988f0816d09ff2582d8a73ff622"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "label"
+      ],
+      "sourceHash": "8c843d4ef98134dc2cc5b33aad7633ae50c255f44ff886b8f723025159206934"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        0,
+        "label"
+      ],
+      "sourceHash": "93e7491e75a6ced7dd559be0e1c8a5d86aa8c7a00871f7d48812f3750087c0df"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        0,
+        "value"
+      ],
+      "sourceHash": "ad91c64967ee45eb0134d6786811e2b7e60512bdb6e43bac48c621e7ec17f9db"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        0,
+        "sourceLabel"
+      ],
+      "sourceHash": "46b8cc05fee81c2763ff948c5b124bc31dc647b8e741223170fb7934a7e14033"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        1,
+        "label"
+      ],
+      "sourceHash": "696ff8828923dd5f8eaad20ed64e51fa0eff0bd5c4d1c41efef35f19f4936f9c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        1,
+        "value"
+      ],
+      "sourceHash": "a94b866f03ef2116249fb451b9863a66250f6b2c01e3fb95734172922ac27048"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        1,
+        "sourceLabel"
+      ],
+      "sourceHash": "46b8cc05fee81c2763ff948c5b124bc31dc647b8e741223170fb7934a7e14033"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        2,
+        "label"
+      ],
+      "sourceHash": "c81327df9046785e1bd8f1fa7a9e199a4413153c45beba6110eb0cf844e2d3ba"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        2,
+        "value"
+      ],
+      "sourceHash": "ffd7280513ce285e6d9dc8d0b7078c4f39c8fe0e69b0d0a87d8af2965e445d7a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        2,
+        "sourceLabel"
+      ],
+      "sourceHash": "102cf1442cf6e329f9df12a5d987fa046b68b1c5e09c3b839f0d6f27b187238c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        3,
+        "label"
+      ],
+      "sourceHash": "5672b0993fb2d48d38b63b078bac68145dd63a370b01fc15eca01d1614f8f7e2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        3,
+        "value"
+      ],
+      "sourceHash": "9ec5bfe5483abdab63d22d2f0bb04b887c779f679044e0bd1c18c8c2dbbc2a84"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        3,
+        "sourceLabel"
+      ],
+      "sourceHash": "102cf1442cf6e329f9df12a5d987fa046b68b1c5e09c3b839f0d6f27b187238c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "approveLabel"
+      ],
+      "sourceHash": "393c8f0bcaaf5b1d3b2679af6e88df9438858181ff8edf1448e0070da3a80951"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "sendBackLabel"
+      ],
+      "sourceHash": "a7b87f6843ab4ba36739161e71b2be46ee19229d2a051c334593480290409759"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "approvedTitle"
+      ],
+      "sourceHash": "f0c28541401ad387aaa549287a25a214fcbc561120c0c4d88f2baf5408e5a2ee"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "approvedBody"
+      ],
+      "sourceHash": "fa79c8366eaba001a07ff5633c50242482ff072d901355949e1f4aa17ceb5be3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "escalatedTitle"
+      ],
+      "sourceHash": "605f77aac7843d17ce7297500b8a61e05f87be3b4ee9bbf1c7d9a8cef6f707f0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "escalatedBody"
+      ],
+      "sourceHash": "e065835b7fe3987911fe1003f38168081ce6a6a9491c85d9f082d9d8265f51a2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        0,
+        "title"
+      ],
+      "sourceHash": "6b627d1cb766c0d06d9e65c914a60409e5cfee93cb250d39ec6b2e9893a4d1ab"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        0,
+        "detail"
+      ],
+      "sourceHash": "125bfb068d1740bfcdda1dba0b47ffc67462bb6149f53e82f9b4bb13e5d8ad9f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        1,
+        "title"
+      ],
+      "sourceHash": "66154a084145e46916b6f1a3bbdfd73665c9235b74e184a672fee1caaaa34d56"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        1,
+        "detail"
+      ],
+      "sourceHash": "5fdb38cbbe7296885e518ef57e00354d1efc1ce118a45724dea16b6c1e3c337f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        2,
+        "title"
+      ],
+      "sourceHash": "6007acbe30b2cd98703e83350ea665c06009fcd51f26dd73b309294235f45f21"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        2,
+        "detail"
+      ],
+      "sourceHash": "b075d050f2ceabd29a129acb0412ffecb387333a86de14be74702af74227e23f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        3,
+        "title"
+      ],
+      "sourceHash": "65e5a27a03cbf514bb006947f97ff70757adcaf0f09af3038b2a7ddcdf31c1d4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        3,
+        "detail"
+      ],
+      "sourceHash": "fededd9a61a3f4612ba7727dc1b79b0645ecc0ddb015c1a569a78a00bf4b050f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "kicker"
+      ],
+      "sourceHash": "b3925dfd6eb339665886deeec9144456aa66e096e4a335d2c6265c1f89bc804b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "heading"
+      ],
+      "sourceHash": "ac165b2119aab7768cc4da1d72237d755b3f387c513b6cba46ff298eb27229fe"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "body"
+      ],
+      "sourceHash": "5470db6330d5dd18c54b8e4951c1f78a226cda0916cda29454bcfc12f486f386"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceLabel"
+      ],
+      "sourceHash": "a6323f5e8e4986eb02079bf173ff5221b728cb922badc27ba9a59dd6bede9d38"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceMeta"
+      ],
+      "sourceHash": "0f3979849a9dd855142baac33541f6da9dce2705b1c7c7dccf4baa0219f0583f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceStatus"
+      ],
+      "sourceHash": "630c2f1c0ee1b8d7da57cf8936ae7e78274aba0bfd765fe10a20dfe580f9eecc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceBody"
+      ],
+      "sourceHash": "96ed6fa2cc626c3c35e65d5ef3454a95658acc828340a134b3fee9e6ab4afe1c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "title"
+      ],
+      "sourceHash": "c12c9f4d462da8033b717b6bab5ddea84246457f3fe6efed5ebb46146296b15b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "detail"
+      ],
+      "sourceHash": "96e20b8658ca74c8abfa7258de5039406bd564167e22af95f8a91bf68c711a95"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        1,
+        "title"
+      ],
+      "sourceHash": "d31dd2fbd5e5c661b57f540ac44d623d8466dc3fe8cd5487e7fb2b0ddf481232"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        1,
+        "detail"
+      ],
+      "sourceHash": "97feb7e0d36936a661689f381ac120b952eade06d57f5933ce678b8572470512"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        2,
+        "title"
+      ],
+      "sourceHash": "0ea38489a0bc3122375cc92437d886c7e1d95f7419f75cafa10eb2d66d8ba181"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        2,
+        "detail"
+      ],
+      "sourceHash": "55b2d43fbe7df2192606158b1bcc4ac57b342a22bf9513704ee748ac7da56fde"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        3,
+        "title"
+      ],
+      "sourceHash": "671f9e4da2c3428626b0a6dac36d42ad04cb8092de9188a1d4e41c378796e8b9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        3,
+        "detail"
+      ],
+      "sourceHash": "ae3de29548f1bdbee4a6c85ac58bb35b650a74aa2abc3025460222e4d9d0c7e1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "title"
+      ],
+      "sourceHash": "b7cf3dbacd510ba28f59c76caed8ea1ca08a9863ae107eb807dfef5be8198325"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "body"
+      ],
+      "sourceHash": "a60d2ba4d92dccfd4bff05a8239ac38ff660204511a8256b5633fdf8ca856e87"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "approveLabel"
+      ],
+      "sourceHash": "a80aae232ff648d41c2774111936e80c286589322a7b776e6776ad5b3ea04ec2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "escalateLabel"
+      ],
+      "sourceHash": "d563aaf7079b2715de3523f5e76183b41851a9a2b1ee7883fd798b6d82c8ad4f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guaranteesKicker"
+      ],
+      "sourceHash": "1ff87df710610c2803aa8dc0095f3436ed8e912adfe24fb120e7f4e3a9d90364"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guaranteesHeading"
+      ],
+      "sourceHash": "475c3ca071948e6fccd7bb23bacd72174f5f7a14679a2d78c113bf8e7fbf9e31"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        0,
+        "title"
+      ],
+      "sourceHash": "5899092afaddeff479bc72b71a9303f0d143223a632163920d593d5617349233"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        0,
+        "body"
+      ],
+      "sourceHash": "f04002e08a3a8862a625e767146193661547086332c8ab04dcdae1c1dc8bcf68"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        1,
+        "title"
+      ],
+      "sourceHash": "80b7666fb2f1ce2b3aabe7b339bfc613d337a5148a6f630ddbf0f82a0fc7d3c6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        1,
+        "body"
+      ],
+      "sourceHash": "e68660ea4935cb255a40bcbb2ab5051edea698f99d021230261eec738be12be8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        2,
+        "title"
+      ],
+      "sourceHash": "efe568079495959ac07c977fa5ba86e71a960b86db0b9790480918db2ffba43e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        2,
+        "body"
+      ],
+      "sourceHash": "a0802bda5f020e784ec43cda15fb0cbfbbe695423c1b8536858ce7b2cbd38b0e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        3,
+        "title"
+      ],
+      "sourceHash": "65c0686900561a7987cf4f02a1f348f07789c7b00277930f3ae58d540518a483"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        3,
+        "body"
+      ],
+      "sourceHash": "41eab7cff2e88f3db39515452e1029cdac9d32f86ece4d8df01f4b31b8f97169"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        4,
+        "title"
+      ],
+      "sourceHash": "74c353145a3e21dd7007c40169feb35819d58714ba1fcdd217045211a3798d4e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        4,
+        "body"
+      ],
+      "sourceHash": "c230ef2de2da2b2eb1c7d2c738c44eeaaa7f8e81552b6c42143e0844d2d13fa2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        5,
+        "title"
+      ],
+      "sourceHash": "e24c46e525ca6612d6ba8619097c5e327f882a297dc0cb7e16ebaa1693ff480e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        5,
+        "body"
+      ],
+      "sourceHash": "acef4465af4e918cb6a6fc14c92291f35aa7d0d95acfcf13bbc619e66d5592b2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "kicker"
+      ],
+      "sourceHash": "fc58b46b5062dc4bac1a653004b829ae5b8f54c1b656ad62c6214c0c5d65b243"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "heading"
+      ],
+      "sourceHash": "9719237d690ec40b8f8b224a0dfdb71430e5d76cdfe21c5d56b9154d6ee9ca04"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "body"
+      ],
+      "sourceHash": "918bbe28c9e30797a326bf9ed54cc25fd23ac6419f3be2f943156a55775cca35"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "title"
+      ],
+      "sourceHash": "0e0dcd4f344eaa0def781c7a1125f6424b7c31a63a634c6206dc92e63e08da59"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "body"
+      ],
+      "sourceHash": "128d2b8793471eec6c51121f358af05a34fd7c7b4dfc51692be3f47a5e011cb6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "metric",
+        "label"
+      ],
+      "sourceHash": "9a39f4b5b29e9cfec7f6ae6bec5e280a2e33f1cdce9839af75108f7769a5a3be"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "metric",
+        "note"
+      ],
+      "sourceHash": "93ebe85bc9e21ee05c5aad09f64fd15acdb3c772575f67e8b9369776ed25de50"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        1,
+        "title"
+      ],
+      "sourceHash": "041481effa75c895654f6fbedcf33c660f714fbb03e1e3eba317597aa2137a42"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        1,
+        "body"
+      ],
+      "sourceHash": "de7c6a390c127aa53ce66794d7f80418d2c88e06169e4d690bf26ca31cf212d9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        2,
+        "title"
+      ],
+      "sourceHash": "3976b984eef18207a28ba071b9b2c8421f1dc085b274b5780865d5b51a824c8a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        2,
+        "body"
+      ],
+      "sourceHash": "c44212b002ce1e0094710aa59ddec20459de9cee251eb15bf2966818d6dbcd37"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "kicker"
+      ],
+      "sourceHash": "5d1d433d9860199811f8b70ea40f021c9b99e1c58936d19ed56e04c3847c962a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "heading"
+      ],
+      "sourceHash": "33f32a12145001854bc931f0563944f7f5f4e0ac9a779c0a4e5083cc833de461"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "body"
+      ],
+      "sourceHash": "eca8b5b85a94ef6c34be6e4093421686a93d12f88cff0f31f525503c5a3b8318"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        0,
+        "title"
+      ],
+      "sourceHash": "6b627d1cb766c0d06d9e65c914a60409e5cfee93cb250d39ec6b2e9893a4d1ab"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        0,
+        "body"
+      ],
+      "sourceHash": "91b1afb6901d6f181519ff75e5e3fc8d56c9d85a7492530ea526313446fc9224"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        0,
+        "output"
+      ],
+      "sourceHash": "441ad322868f57fc5dbcb7613348d8ef9da4f3ebcd177e0be8f239d930415bea"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        1,
+        "title"
+      ],
+      "sourceHash": "66154a084145e46916b6f1a3bbdfd73665c9235b74e184a672fee1caaaa34d56"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        1,
+        "body"
+      ],
+      "sourceHash": "b6a5bf8a0fd9b113c23fd911bdfd3ac2dd30d58dc61443c074a874cdd19b885b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        1,
+        "output"
+      ],
+      "sourceHash": "3efd6767b8789c4d5f2eae946eedbcb217de0d3e98091d682bfdab3b4ad1665f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        2,
+        "title"
+      ],
+      "sourceHash": "b89925b11721586b04a5cda49aeb0b9538e774dd9df5ac9348f849e07fb4a84d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        2,
+        "body"
+      ],
+      "sourceHash": "bd5cc2be4a8ba3397642c4f28256baf512f068fc6df9405baf605c11e6b85952"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        2,
+        "output"
+      ],
+      "sourceHash": "3d66389deb328418dea816a3c0aafd96d1a04829c015aeb669e6eaa68110b07e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        3,
+        "title"
+      ],
+      "sourceHash": "2c5280de53fb04326ab2e5727efcd4235986da6bc466c40d5494276185362d1d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        3,
+        "body"
+      ],
+      "sourceHash": "7c85ddd5d01cccee09a086d5bfa9a7bcbdd7499a0f3eb1418c38358f2083a492"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        3,
+        "output"
+      ],
+      "sourceHash": "84f75757e1c0dd0dcbbe12ac9876a2572a3bc47b687c6327128ee8055d2fc84c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        4,
+        "title"
+      ],
+      "sourceHash": "ee56b9170d2534456458bf2502500a3474489a4b6252ef2e0533d3904b8079b8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        4,
+        "body"
+      ],
+      "sourceHash": "148f5ee465b7bf06cb8f0c29944d19df515dd78568ac4b9c2481ec67c33c5fad"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        4,
+        "output"
+      ],
+      "sourceHash": "6ab251f5bc066c34f5320bece50e5ef3b06b476bbb7db237f639ea399b01deb0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        5,
+        "title"
+      ],
+      "sourceHash": "7569191355c24657c0ca81ba211cfd0991070cb68e26bf90888c1d7983647a02"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        5,
+        "body"
+      ],
+      "sourceHash": "6fe4797d70d291e112392692600263e0a02f5a44a95bb028b504704999f4e90a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        5,
+        "output"
+      ],
+      "sourceHash": "fa609bad00540d12db393840acfb2e7a1e1e67d99bd3f28cd3f4a929c6995dfb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "kicker"
+      ],
+      "sourceHash": "d50d56a3535487b23b1c1ff342e29467130c9584c642913d74288f110411fafe"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "heading"
+      ],
+      "sourceHash": "8bc3e7b90ee69fc4dbd7c8d379cb8663979519d0ed312ec7334dc1c4e6d8c60b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "body"
+      ],
+      "sourceHash": "d8bccd3df96055e3b4a0ff3ce1e667234caa0f999e2228ec3d16dd327cdcaf37"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "title"
+      ],
+      "sourceHash": "54d780b39238f75e06c050007ff9b17bd66534d4dc1f5e2b1146e1ec76713661"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "body"
+      ],
+      "sourceHash": "117a3632c1a37f153675e10477a8e4485b5346b215eb7ae2050603ff82e4fc5f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        0
+      ],
+      "sourceHash": "7c27dfe1cb89b35c9744f087a85179bc0750a021a993cafdc3ee0ba96d58db63"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        1
+      ],
+      "sourceHash": "7f1e4e1b18c783e1e47c66c7e3c6f60d4c259bf4005e7d113cede54a445f075d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        2
+      ],
+      "sourceHash": "b2fc7bcab3f6006a49e7eaddce887a31b5d71078268933bda56832f90b0bd8cd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        3
+      ],
+      "sourceHash": "666d6b6565845340fb97d26f824edf05b551221a83d44085b669654d3ca0ae48"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        0
+      ],
+      "sourceHash": "718ef6867d9257e8d06f43f06bed748bc655be8105ee0479113c6785a417f2da"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        1
+      ],
+      "sourceHash": "31fe1b5be65227ac3eab712b815e0fa7c9a3494100a8f893d846a30e519f40ea"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        2
+      ],
+      "sourceHash": "a0a1a6877247befad00455412fce31397579427d6d51f837418425b4c4d67927"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "note"
+      ],
+      "sourceHash": "b441753935b7e6538c77fce35cfc20e19df6eef80bbe9a93f832328a3ec1e258"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "title"
+      ],
+      "sourceHash": "59e6615d3f42d17a85fca848a2b9bbecc7798ec335b1c2d85d229df2710943ca"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "body"
+      ],
+      "sourceHash": "89a497ba8679100a8018b5931f08ff5e3f293f73b55ff41bec4a6d111bf0b039"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        0
+      ],
+      "sourceHash": "f2c0915649685fbe1c19be1f5a4371e7013ed045dd90f5decc6db41c1f287b49"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        1
+      ],
+      "sourceHash": "586522047a142cf31ecb1a677ee9616a0ab4d7c8fc902325e95b7ce786e2f7ce"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        2
+      ],
+      "sourceHash": "0b8dafcd8770a0fa88ea58651775bd3d63e8620dbcf8df075234a22caa1bf0c4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        3
+      ],
+      "sourceHash": "28fb30e8c5a87b276dd45cf3efc102bd3eb9487feb6ac61756f8e81331ba7dfd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        0
+      ],
+      "sourceHash": "6aac3d6b6b1134f76050eeffd6cd6bd156f46550f7b46204443420a265c2c32f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        1
+      ],
+      "sourceHash": "f028ee08fd5003cfb8a9ae50d4c764384280ca1b70bccefb34749591d9432673"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        2
+      ],
+      "sourceHash": "80497edaeebba2ff724668bad9c0d194dd7d528fa0b1e22f86ed792f95aaeeab"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "title"
+      ],
+      "sourceHash": "18fdb8cd1abed6770b87d29ce91736c0b94d1935ee3ea552d3aa05d839b11887"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "body"
+      ],
+      "sourceHash": "e57227957e7aaf5a8dddc391f8400662e65e514a7fec9346460334dbdafd7b4c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        0
+      ],
+      "sourceHash": "ae9b755ced00f8a32f45f937e0f5e990fedacbccf76c70d7c7855a0a8088dce6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        1
+      ],
+      "sourceHash": "d56f7f1dbb1a10357bc1e4f1e2504ad6289b6dc91efaafb8ce572826cc3827e3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        2
+      ],
+      "sourceHash": "b2fc7bcab3f6006a49e7eaddce887a31b5d71078268933bda56832f90b0bd8cd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        3
+      ],
+      "sourceHash": "298725841da021a818c56f7e0f1d65a00135b530905a8e14e803cb8887a79786"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "connections",
+        0
+      ],
+      "sourceHash": "fb7c2e84853432be86c1e198a913ac1492aed8d9c841efe686675b968d180134"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "connections",
+        1
+      ],
+      "sourceHash": "58c6842caabb2a0894218887613f751b9fdca142276bf4ff3b07392d7603aa9a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "connections",
+        2
+      ],
+      "sourceHash": "d93971d0840fa7091e43ee334b19a6ef3246dd7ae4454361a4e7e3996473bb69"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "title"
+      ],
+      "sourceHash": "4618d3479eeeca99512f90f674b2ef03d13b1d9e6c7accb45e12669bf24d4f9c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "body"
+      ],
+      "sourceHash": "8112489b02f5e4fec1482b62589d99b89be802e63df75415047eda3f51c65da5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        0
+      ],
+      "sourceHash": "5f1d5d7aaf833ca73bd1a173ac666bcfd58410292c1922ab2e1f4c4d247e2e56"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        1
+      ],
+      "sourceHash": "b7f51a5b8be1a430dc14476ea53aed6012155ae33c5ff45ae6322ad2909192c8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        2
+      ],
+      "sourceHash": "b5bd64041ae0dcd0ea7897065fdc1cc5708e625163a191ab79638963811b8241"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        3
+      ],
+      "sourceHash": "5eab235d25e6be68f061fbee13deacb80ad0172aee840894de326437b11720eb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "connections",
+        0
+      ],
+      "sourceHash": "082ffce1d4a90fd0993792b1a246f6f772f9e2ad39b8f9f4019f52e44ce861f6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "connections",
+        1
+      ],
+      "sourceHash": "b196b6c2c3eef344ff5677ecb13f3177e9abb5782a38298484c535e8add2c339"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "connections",
+        2
+      ],
+      "sourceHash": "a9e62df0722a81405fd2eb0851c0d9174223376b3d0294f0e0d522caf53bcaf4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "title"
+      ],
+      "sourceHash": "2622ecf24d9f2127a9929abd9685fa25e6b656ee66c70dd7afc9ac9024e49ede"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "body"
+      ],
+      "sourceHash": "f6c983b128a69253a201546dbc0977facc9cc204aead07376cd3d3c01dd05529"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        0
+      ],
+      "sourceHash": "8402c8b5a87f57ac7d5c7451a53954af9bcf6f1225df1a213294e4c31d9b0802"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        1
+      ],
+      "sourceHash": "fa0efd0d5a7ee08baa3eca778dfc3ce602389b6f5666380ccde0bfcf14627822"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        2
+      ],
+      "sourceHash": "fe25cef97f399429e9bfc1e203f4e3eaa9bb4924f07cc151b77fdd81b7387f99"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        3
+      ],
+      "sourceHash": "31702eebf8e85d9f5671fc363bd56c47d0e39538fd5941a8b1cf3d48aca5c582"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "connections",
+        0
+      ],
+      "sourceHash": "84ce75ff251f3d6f3366578b2ebf60a0574ef2a5f5fe6466b82a9f85a27fa3ba"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "connections",
+        1
+      ],
+      "sourceHash": "d1c40876d35cadd0cbf826d890e84bea3e82d9a967116b88c7e5e9b461fcd49f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "connections",
+        2
+      ],
+      "sourceHash": "8bcb40ca4dbb40a8f1956a86533e126dc28cf066ee9aa139010df33f6e86a8e2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "title"
+      ],
+      "sourceHash": "09af5a0d1c712c4f192d8b7c8fd6bd2ff6122ff9f9c159b6d00c813e37fe89b7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "body"
+      ],
+      "sourceHash": "0eaf8b26d709fbcebb3d41e5a004784ee67585c6fa0e7bdaf03d2c89b5c6a275"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        0
+      ],
+      "sourceHash": "51ee82832aaa5e4e73b9e11740f3ec9c89c5bb6bc9915c6a1e93ccad9f0e662f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        1
+      ],
+      "sourceHash": "1b996a7a85c0705131588abe840e152128269bb71bdff69d97398310d86cebd1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        2
+      ],
+      "sourceHash": "62f279779df090c10212100694c50cb0af637ec96afc5c289ac668435ec994d4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        3
+      ],
+      "sourceHash": "298725841da021a818c56f7e0f1d65a00135b530905a8e14e803cb8887a79786"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "connections",
+        0
+      ],
+      "sourceHash": "39692595befe8d4cba4d96a2184d3c70d0ea1f1f2c7903efa62bc46aa76cd68d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "connections",
+        1
+      ],
+      "sourceHash": "ab703e7dcb0322ec63052a5d3f1d3f7bd24e7a459fb427b2c7601d3ac4e806f6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "connections",
+        2
+      ],
+      "sourceHash": "82f89ccc1720b04861c72707d0ee6794e9eb65c62adafc82a6462c8474f8e0fd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        6,
+        "title"
+      ],
+      "sourceHash": "76a8fa2d37abfa7d4969734750c6aa3efb08ebed6e6b4b4815f814e6f441ecec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        6,
+        "body"
+      ],
+      "sourceHash": "ab74d0f2f6c05ee3e60e1cfc8b3b70598381293b1d498bd5b64a98ccbe61f106"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "heading"
+      ],
+      "sourceHash": "ee1427966d2c613860ddc0403ef09c9652b2d69b93243700278573af37b5f3d2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "body"
+      ],
+      "sourceHash": "f5e484bbb325c06597843333d6175779164abbec3920b5b3550264fad7a0a92f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "ctaLabel"
+      ],
+      "sourceHash": "f8e2d4bec514f123e98a5f08587b62bbae98e185e5a1cc8b8b3bbb7c0cfce3be"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "note"
+      ],
+      "sourceHash": "2aa48ce0a8ac6d2aa08cd90b9d2973527912a979d988f30160d695f84409402b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "successHeading"
+      ],
+      "sourceHash": "e7d25b0d11bc8db8bb06c75f01c182cd69d9136f9fecb36ec2f731d4ae5ac21b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "successBody"
+      ],
+      "sourceHash": "369a3d6a289bf7f13e84d95abf942fba433263ded0c565dd0cd116391635ce88"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "editLabel"
+      ],
+      "sourceHash": "284b65f2a3f75658d49d127ba77609276696ad1d7b43f0b284bf3c71d2b93a45"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "emailSubject"
+      ],
+      "sourceHash": "381837aaf40d031fd97d8517a23e12cad3c2bf36da9c4811ece7c840ac531414"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "kicker"
+      ],
+      "sourceHash": "1271ae9d588d0bbbd378859c8819022f62b584793214d048fd74078f639de9a6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "heading"
+      ],
+      "sourceHash": "516b67942e3894d117d01c9685815b42586d565db64f0013b9cf66d8ff7072ee"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "body"
+      ],
+      "sourceHash": "a3f838ba2b663f669cf49ab9366cc8f97c56b8ae201b87c4c2c204e3ca2b9cea"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "before"
+      ],
+      "sourceHash": "cb80785c012053b63253b5257f8eece2023714c7cc9b48d57702949a8e716816"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "after"
+      ],
+      "sourceHash": "3b458e6a65194af1274269d474714ab36b3b0d80f5efa32b88c5d26fd096d191"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "linkLabel"
+      ],
+      "sourceHash": "27725cf67535b7e92ece6cebb89595a9f793fad07564a5ac37808bdf6ac785ca"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "emailSubject"
+      ],
+      "sourceHash": "e90181959c794b2808eb2b35d538b8e4006b4827d6de063f335a1199965986c3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "label"
+      ],
+      "sourceHash": "f258675ed0a592d4127f280462dd0fdb469bfdb36d6643af00d0d579857c61d9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "period"
+      ],
+      "sourceHash": "2567dfd3264eec5f6cf92aaedacf735d004cca689f7b8925ddbca4ee46bc9682"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "label"
+      ],
+      "sourceHash": "2ed3bb60c9af04774f0ea421f81bd64e65083c969a43360c5887b6e17d050794"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "value"
+      ],
+      "sourceHash": "f45a2dccf63d08ac0dd45c1fc9acf9040f2e3a16662b1a751bbb97d8d757b07c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "label"
+      ],
+      "sourceHash": "6e795d4d3cc21c5ca8349ab5e917482197aa612d1a218f9e9411467db73242bb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "value"
+      ],
+      "sourceHash": "2567dfd3264eec5f6cf92aaedacf735d004cca689f7b8925ddbca4ee46bc9682"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        2,
+        "label"
+      ],
+      "sourceHash": "4257d79639dab3025cb9070142553eeababacd679fe09f4b845f23f4f6dc77b2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        2,
+        "value"
+      ],
+      "sourceHash": "9d68f009d5957810cdce1afc8c45f9f0e232e3e764fa02996fd897745f7e1f49"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        3,
+        "label"
+      ],
+      "sourceHash": "40f57cacda3d2fa76022f0d17b31d988aace3f9347f24c7adfb27f4dca6e0a61"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        3,
+        "value"
+      ],
+      "sourceHash": "66b770f46aecf2ed83f11b91a3f15f313619f4e758e957622f5128e5f1449e27"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "summaryLabel"
+      ],
+      "sourceHash": "96353fa9ce2beb6b5b2375f674c26c97bf0ac90f67622989e45263fc0c237d80"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "summary"
+      ],
+      "sourceHash": "b81fc0f3a928a88f28b6804ca9c6ba22d041e3996cd0ca5b417c181b355248fd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "actionLabel"
+      ],
+      "sourceHash": "c686ac5c927c4733e445c69e9f1daecb616fcb937cad360d9251a8b05bd406da"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "actionNote"
+      ],
+      "sourceHash": "d0a7de0658ef02b2f735e5e745b9c9577be6da0fc23447cd4de8101de7d759d7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "note"
+      ],
+      "sourceHash": "e24fb7376d7eba9e2dff0d93267644b31278c6687b5e1a27b77bb1d7071884c1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "kicker"
+      ],
+      "sourceHash": "2d2cc54ce66b71afc2c4e68012a2f1b75e3492dc49db4cce55eaf366a9455261"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "heading"
+      ],
+      "sourceHash": "00f99baf8fc59dfa5c06a7064609949f14197132e6f6e511c99cded7c422ec34"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "body"
+      ],
+      "sourceHash": "cc6aab646a253507552aa6f2c40aaafe7f447ebeb7bebd2488d606b7ac172eac"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        0,
+        "title"
+      ],
+      "sourceHash": "a9b2965930e6134b7199b4eabfebfb2348559d8972e4b694ca53e086562e8a25"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        0,
+        "body"
+      ],
+      "sourceHash": "62fe246a97b6c6b495f0caea26bc4ea028da3f6c194506f694f33108929a9454"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        1,
+        "title"
+      ],
+      "sourceHash": "0508c1cfb15c55f2d8d52b8f8328ba69ee24254a3bc912082ce7f1255e0f4237"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        1,
+        "body"
+      ],
+      "sourceHash": "34d18f8e5dc8c95978f0a87710d87d02afcd8c0b81b64ce62e23d8dc915f8bd4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        2,
+        "title"
+      ],
+      "sourceHash": "ba47105ff92f19e9fa44509460cb023f31918d3496d83c16c086bc347c291853"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        2,
+        "body"
+      ],
+      "sourceHash": "a0bb7c062ceb8ab86b162e7f84fa2a8537b66804086c377bcf4d1b28000ea53c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        3,
+        "title"
+      ],
+      "sourceHash": "5852cbe50f2ca82224e1f9bc3283176a8e9af946cfc374e29fdc55cdf9a5ef08"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        3,
+        "body"
+      ],
+      "sourceHash": "f93cd3910e6174a228023a431d365b5b81cee9cbfc540264a79f676080891925"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "label"
+      ],
+      "sourceHash": "6d0dd842e22fd8cca084357ec7bbcdc01bca35195740a9e561f09e66eedd4cf8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "badges",
+        0
+      ],
+      "sourceHash": "6e4c89d84b9b024d645f990edd6c525e8f021c2525e21263c981e7deeea4bb3b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "badges",
+        1
+      ],
+      "sourceHash": "226236b3fc84008b513cdc8e90ee3ad6fbd54399828e1c2f9598942d9e194845"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        0,
+        "label"
+      ],
+      "sourceHash": "4ad88f74405038bb0f99a145b9c916313961f3c10ff9dfd0d9cffddb8ed3a3c0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        0,
+        "title"
+      ],
+      "sourceHash": "8bd41013a562ba49317fee0ea6a2fda5754c8b39f79ec20c278d85e6ad6d600d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        1,
+        "label"
+      ],
+      "sourceHash": "f1c124e5e8fa00b09f788856b3db4a29664b03e18cf6c1e0376670f9260d6aa8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        1,
+        "title"
+      ],
+      "sourceHash": "f0d082b5b12215fdbdd621d0ef4ea3c9b09d2a1a46f7e0b0b670f62bc7146a15"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        2,
+        "label"
+      ],
+      "sourceHash": "391edbf2617c1b7e5feefdf289959ccf8b01c49d4db657aa769acd4fb80818c1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        2,
+        "title"
+      ],
+      "sourceHash": "bcad89e213cd8458c72e8977efd9cdf83210d99d5c5d3fa1b262b1dada9b77a1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        3,
+        "label"
+      ],
+      "sourceHash": "188a5356a091db7465c484a0e8ccd23b6d015b10a956128851591082116a240b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        3,
+        "title"
+      ],
+      "sourceHash": "1645f01db8a7989e1fed43b83e7fb72f9881a43612f1ab1ef26dc5f3fc20d72b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "approvalLabel"
+      ],
+      "sourceHash": "13f9afbbf5b67f8245a3c2f274cce979f5d35b3fd71b21a00a001c7d2fd5dac9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "executionLabel"
+      ],
+      "sourceHash": "7569191355c24657c0ca81ba211cfd0991070cb68e26bf90888c1d7983647a02"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "sourceNote"
+      ],
+      "sourceHash": "6e1454482cdfa7d6394bd451ebcc752a899cf346f9fa67b67f47b0c878cb1566"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "guarantee"
+      ],
+      "sourceHash": "3747dd4776c1969c2c40f90c664a4bfda0c84d1d0188a0f3db84050d87f3a752"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "kicker"
+      ],
+      "sourceHash": "584d8c92a9f1976d7c9c7d544efe67dc8beef3a0788e01a9de8dfd195964c428"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "heading"
+      ],
+      "sourceHash": "182f8d80eb8db7a37cd30ea97adce0b64e73b610d57dd401cdac52c976f3a909"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "body"
+      ],
+      "sourceHash": "6e669c9ee59dfe1a4a95e724e38622a5e0a84c68902b8ca4ea04cd03270d677c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "formLabel"
+      ],
+      "sourceHash": "43c734db332c9e36114bdd02c28682021183337f1a9e7433177312dce642b30d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "ctaLabel"
+      ],
+      "sourceHash": "f8e2d4bec514f123e98a5f08587b62bbae98e185e5a1cc8b8b3bbb7c0cfce3be"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "successHeading"
+      ],
+      "sourceHash": "ccd9811acf4dfa52cd2fa4697a432d06ea65be4346fedefdde1af29ea567714d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "successBody"
+      ],
+      "sourceHash": "3ad230d9bf031d7188206cb62e5d51500dadbc453e28aac25f04247142bc41c0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "emailLabel"
+      ],
+      "sourceHash": "0d21553b687b8bbeab5aec97cea51a4df37218da23bb17f3f4ed3549b9ae18a3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "privacyNote"
+      ],
+      "sourceHash": "86367873310d6c7ee2810d67b9926a16eb5e13e4f59d48fff6fefc4df9c4826a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "emailSubject"
+      ],
+      "sourceHash": "291d1ab9bbe6f1f1dfc10d87e9e8c4486c4ba15ee9f589055c2af812997e4cad"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "tagline"
+      ],
+      "sourceHash": "ac4f7fa27b0e3fb2e877665cf0393a0dddbc72e3a7b9032393b6c76058c0ff1e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "label"
+      ],
+      "sourceHash": "9460f16ac9b5171e7f3d3f2336ec66b547231be8996ea9a0ad25079f84641be4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "links",
+        0,
+        "label"
+      ],
+      "sourceHash": "021c9b2a0e7843d70505db58f80af3323a71945b23dc477079e6b7c6f215db74"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "links",
+        1,
+        "label"
+      ],
+      "sourceHash": "45314e97b0c26a862b5411d0a943d801583e13bb5d104382ed7a2f4773969e66"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "links",
+        2,
+        "label"
+      ],
+      "sourceHash": "bfe919353068f9b55bfeedaaf805a319decc3836d7ead531132869be629058c7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        1,
+        "label"
+      ],
+      "sourceHash": "de4743c879734dc38cb3e270ecefcae077c3c2e626f9298115d5a03c8613f89b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        1,
+        "links",
+        0,
+        "label"
+      ],
+      "sourceHash": "ff27a991e8559d6a53024fb888d0b9f062f31154593bf4db2c6431ace2d7d05a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        1,
+        "links",
+        1,
+        "label"
+      ],
+      "sourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        2,
+        "label"
+      ],
+      "sourceHash": "61e8d44ad423a4a0951b21b9d11440a1c23a881fe79335c367f63be251c64800"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        2,
+        "links",
+        0,
+        "label"
+      ],
+      "sourceHash": "6789c5d833547acc3525eb06c75a932e371d4d8979d89b253516332c95baf28b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "copyright"
+      ],
+      "sourceHash": "a206fbb93a7b73a412f504fbeb51f93e4e2e54fc69fea371b800d29bd607d266"
+    }
+  ],
+  "translationContextRevision": "f384c49ba0ada49dbdf3956086e26c9115459b2c597aa5a39283af689a4a50f0",
+  "generatedAt": "2026-09-02T14:36:29.058Z"
+}
