@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "hu",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Tettetés",
+          "target": "about"
+        },
+        {
+          "label": "Hogyan működik",
+          "target": "how-it-works"
+        },
+        {
+          "label": "használati esetek",
+          "target": "use-cases"
+        },
+        {
+          "label": "Ellenőrzés",
+          "target": "trust"
+        },
+        {
+          "label": "Érintkezés",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Ismerje meg Shermát"
+    },
+    "badge": "szimuláció-első űrlapautomatizálás",
+    "headline": "Egy ügynök, aki kitölti a legnagyobb tétű űrlapokat, és először megmutatja a munkáját.",
+    "subheadline": "Sherma elolvassa az űrlapot, begyakorolja a kitöltést egy iker ellen, csak azt kérdezi, amit még nem tud, és megmutatja, hogy pontosan mit küldenek be. Semmi sem éri el a valódi formát, amíg nem mondod.",
+    "ctaLabel": "Ismerje meg Shermát",
+    "secondaryCtaLabel": "Hogyan működik",
+    "featureTags": [
+      "begyakorolták, mielőtt valóságos lenne",
+      "Amit te helyeselsz, az bekerül",
+      "Minden mező rekordja"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Szia, Sherma vagyok. Küldj egy űrlapot, és elpróbálom az egész kitöltést egy iker ellen, mielőtt bármi is lenne."
+      },
+      {
+        "role": "user",
+        "text": "Mutasd meg, mit találtál."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Szimulációs homokozó",
+      "inputPlaceholder": "Kérdezd meg Shermát egy űrlapról…",
+      "suggestedPrompts": [
+        "hiányzó mezők megjelenítése",
+        "Tekintse meg az iker előnézetét",
+        "Hogyan működik a jóváhagyás?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma az irodájában"
+    },
+    "contact": {
+      "heading": "Hozz magaddal egy űrlapot, amit már kitöltöttél.",
+      "body": "Futtassa Shermát egy valódi formával szemben a saját munkájából, és hasonlítsa össze az ikertestvért azzal, amit a csapata produkált.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "a következő forma",
+      "heading": "Hozz magaddal egy űrlapot, amit már kitöltöttél.",
+      "body": "Futtassa Shermát egy valódi formával szemben a saját munkájából, és hasonlítsa össze az ikertestvért azzal, amit a csapata produkált.",
+      "ctaLabel": "Beszélj Shermával"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "minta bemutató",
+        "demoNote": "Csak szemléltető szimuláció · Nincs valódi portál vagy személyes adat",
+        "openingReply": "Elolvastam az űrlapot, felépítettem egy ikertestvért, és 30 mezőből 26-ot kitöltöttem a jóváhagyott nyilvántartásából. Négy kérdés maradt. Semmi sem érintette meg a valódi formát.",
+        "greetingReply": "Szia, Sherma vagyok. Elolvasok egy űrlapot, bepróbálom a kitöltést egy iker ellen, és megmutatom, hogy pontosan mit küldenek be. Semmi sem éri el a valódi formát, amíg nem mondod.",
+        "instructionReply": "A kezdéshez töltsön fel képernyőképeket a kitölteni kívánt űrlapról. JPEG, PNG vagy WebP · Akár 6 kép. Kivonom a kérdéseket, és elmondom, mire van még szükségem.",
+        "reviewReply": "Itt az iker. Teljes, ellenőrzött, és még mindig elkülönül az élő formától. Amit itt jóváhagysz, az az, ami végrehajtódik, mezőről mezőre.",
+        "approvedReply": "jóváhagyva a demóban. A pontosan jóváhagyott iker készen áll a végrehajtásra, és minden mező megőrzi a forrását.",
+        "escalatedReply": "biztonságosan visszaküldve. Nem történt bejelentés.",
+        "fallbackReply": "Csak olyan információkat kérek, amelyek valóban hiányoznak. Ask me to show missing fields or preview the twin.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Töltsön fel űrlap képernyőképeket",
+          "uploadHint": "jpeg, png vagy webp · akár 6 kép",
+          "analyzingLabel": "Az űrlap elolvasása és kérdéseinek kibontása…",
+          "questionnaireHeading": "A kivont kérdőív",
+          "questionnaireBody": "Sherma megtalálta az igazi kérdéseket az űrlapodban. Válaszoljon itt, korlátozott csevegéssel vagy egy ötperces hangmunkamenetben.",
+          "answerPlaceholder": "Válaszoljon a következő űrlap kérdésére…",
+          "voiceLabel": "Válasz hangon · 5 perc",
+          "reviewLabel": "Tekintse át a válaszokat",
+          "generateLabel": "Tekintse át és generálja",
+          "signInHeading": "Jelentkezzen be a kitöltött másolatok létrehozásához",
+          "signInBody": "Képei, válaszai és előnézetei a bejelentkezés után egyetlen privát Sherma-munkamenetbe kerülnek.",
+          "expiryCopy": "A nem igényelt előnézetek egy óra múlva lejárnak.",
+          "errorCopy": "Sherma nem tudta biztonságosan elolvasni ezt a képet. Próbáljon ki egy tisztább JPEG, PNG vagy WebP képernyőképet."
+        },
+        "trace": {
+          "label": "Sherma · Session Trace",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "űrlap olvas",
+              "detail": "30 mező, 4 dokumentum, 2 feltételes rész"
+            },
+            {
+              "state": "done",
+              "title": "ikerépítésű",
+              "detail": "egy munkamásolat kitöltött és ki van jelölve az élőben"
+            },
+            {
+              "state": "done",
+              "title": "a nyilvántartásodból töltve ki",
+              "detail": "26 / 30 · Minden válasz magában hordozza a forrását"
+            },
+            {
+              "state": "active",
+              "title": "– kérdezte a hiányosságok, nem sejtették",
+              "detail": "4 kérdés válaszol a chattel"
+            },
+            {
+              "state": "pending",
+              "title": "Twin készen áll a felülvizsgálatra",
+              "detail": "Semmi sem érintette a valódi formát"
+            }
+          ],
+          "reviewLabel": "Tekintse át az ikertest"
+        },
+        "review": {
+          "label": "Az Ön jóváhagyása",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Jogalany",
+              "value": "Minta ügyfél B.V.",
+              "sourceLabel": "forrásban lévő"
+            },
+            {
+              "label": "adóazonosító",
+              "value": "nl••••••••B01",
+              "sourceLabel": "forrásban lévő"
+            },
+            {
+              "label": "Fizetési feltételek",
+              "value": "30 nap",
+              "sourceLabel": "Megerősített"
+            },
+            {
+              "label": "Jogosult aláíró",
+              "value": "Gazdasági igazgató",
+              "sourceLabel": "Megerősített"
+            }
+          ],
+          "approveLabel": "Jóváhagyni az ikertestvér",
+          "sendBackLabel": "Visszaküld"
+        },
+        "results": {
+          "approvedTitle": "ikerjóváhagyás",
+          "approvedBody": "A jóváhagyott iker készen áll a végrehajtásra · Minden megmaradt forrás",
+          "escalatedTitle": "Biztonságosan visszaküldve",
+          "escalatedBody": "a futást emberi bevitel miatt szüneteltetjük · Semmit nem adtak be"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Bevitel",
+          "detail": "Az űrlapot felvették"
+        },
+        {
+          "number": "02",
+          "title": "Színlel",
+          "detail": "Practice fill first"
+        },
+        {
+          "number": "03",
+          "title": "Jóváhagy",
+          "detail": "Igent mondasz"
+        },
+        {
+          "number": "04",
+          "title": "Fájl és bizonyítani",
+          "detail": "A bizonyítékot megtartják"
+        }
+      ],
+      "principle": {
+        "kicker": "lényeg",
+        "heading": "Úgy készült, hogy megbízható legyen. szimuláció szabályozza.",
+        "body": "Minden űrlapot begyakorolnak, mielőtt kitöltik. Sherma egy ikertestet épít a valódi formából, az egész kitöltést az iker ellen dolgozik, és megmutatja, hogy teljes. Az általad jóváhagyott iker az, amelyik végrehajt. Nem összefoglalója, nem leírása. Ugyanazok a mezők, ugyanazok az értékek, ugyanabban a sorrendben.",
+        "traceLabel": "Sherma Session Track",
+        "traceId": "SH-2291",
+        "traceMeta": "Munkamenet #SH-2291 · 12 másodperc telt el",
+        "traceStatus": "Aktív",
+        "traceBody": "Olyan bejelentésekre készült, amelyek nem engedhetik meg maguknak, hogy tévedjenek, nem bemutató színház.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "A forma észlelve",
+            "status": "done",
+            "detail": "BTW-AANGIFTE, 2026. 3. negyedév – Az ügyfél entitás egyezik.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Questionnaire generated",
+            "status": "done",
+            "detail": "26 számlákból előre kitöltött mezők. 4 szüksége van a hozzájárulására.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "A válaszok megerősítve",
+            "status": "done",
+            "detail": "3 perc alatt összegyűjtötte chaten.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "szimuláció befejeződött",
+            "status": "active",
+            "detail": "Száraz futás a portál ellen — 0 hibát találtunk.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Fájlra kész",
+          "body": "A Digital Twin készen áll a felülvizsgálatra, mielőtt bármit benyújtana.",
+          "approveLabel": "Tekintse át és hagyja jóvá",
+          "escalateLabel": "Növekszik"
+        },
+        "guaranteesKicker": "Hogyan viselkedik Sherma",
+        "guaranteesHeading": "Hat dolog, ami minden formában igaz.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "hatókörbe a kapott formára",
+            "body": "Sherma megérinti az űrlapot és a hozzá rendelt rekordokat. A rendszereiben semmi más nincs a hatókörben."
+          },
+          {
+            "icon": "sparkles",
+            "title": "begyakorolták, mielőtt valóságos lenne",
+            "body": "Az egész kitöltés először egy ikerre történik. Az élő formát egyszer megérinti, a válasz már ismert."
+          },
+          {
+            "icon": "users",
+            "title": "Emberi jóváhagyás azon a ponton, ahonnan nincs visszatérés",
+            "body": "Minden visszafordítható automatikusan lefut. Bármi, amit nem lehet visszavonni, az emberre vár."
+          },
+          {
+            "icon": "check",
+            "title": "Az iker a terv",
+            "body": "Amit Ön jóváhagy, az a bájt a beküldött bájthoz. Ha az űrlap megváltozik alatta, a jóváhagyás érvénytelen, és visszajön."
+          },
+          {
+            "icon": "search",
+            "title": "Minden válasznak van forrása",
+            "body": "melyik dokumentum, melyik kolléga, melyik dátum. Ha valaki később lekérdez egy ábrát, megmutathatja, honnan jött."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Eszkaláció, soha nem néma kudarc",
+            "body": "A hiányzó adatok nem sejthetők. Sherma megtalálja, aki tud és kérdez, chaten vagy hívással, és közli, hogy elakadt-e."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Mi változik",
+        "heading": "A reszelőt az asztalról távolítsa el, ne a radarról.",
+        "body": "A munka megszűnik olyasvalami lenni, amit egy személy csinál, és olyasvalamivé válik, amit az ember helyesel. Ez az egész különbség.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "válaszolj egyszer, használd újra mindenhol",
+            "body": "Amit megerősít, az a rekord részévé válik. A következő szerkezetileg hasonló forma többnyire megválaszolva kezdődik.",
+            "metric": {
+              "label": "Kérés nélkül megteltek a mezők",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Első forma, ötödik forma, huszadik forma. szemléltető."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "A határidők megszűnnek tülekedésnek lenni",
+            "body": "Sherma éjjel és hétvégén dolgozik. Az utolsó negyvennyolc óra az áttekintésre, nem az összeszerelésre szolgál."
+          },
+          {
+            "icon": "lock",
+            "title": "az irányítást megtartják, nem cserélik el",
+            "body": "Szimuláció, kifejezett jóváhagyás és minden művelet rögzítése. Semmi sem tüzel nélküled."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "A folyamat",
+        "heading": "Hogyan tölt ki Sherma egy űrlapot, az elejétől a végéig.",
+        "body": "hat lépés. Sherma kérés nélkül lefut négyet közülük. A személy számára megjelölt kettő az a kettő, ahol a határozatot nem lehet átadni.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Bevitel",
+            "body": "Egy űrlap URL-je, egy továbbított e-mail vagy egy portál, amelyet Sherma néz. Felveszi a formát és kinyitja.",
+            "output": "űrlap található"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Színlel",
+            "body": "Sherma megépít egy ikerformát a formából, és az egész kitöltést ellene dolgozza fel. A helyszíni szabályok, a feltételes szakaszok és a dokumentumkövetelmények mind itt jelennek meg, nem a határidőben.",
+            "output": "ikerépítésű"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Töltse ki abból, amit tud",
+            "body": "A rekordod a legtöbbre válaszol. Minden érték hordozza a forrását, így láthatja, honnan származik egy szám, és mikor erősítették meg utoljára.",
+            "output": "A legtöbb mező kész"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Kérd a hiányosságokat",
+            "body": "Csak azt, amit valóban nem tud. chattel, vagy hívással, ha sürgős, és senki sem válaszolt. Addig üldöz, amíg meg nem kapja a választ.",
+            "output": "hézagok bezárva"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "erősítse meg az iker",
+            "body": "a kitöltött űrlapot a benyújtott formában. Változtass meg bármit, amit akarsz, majd hagyd jóvá. Ez az a pont, ahonnan nincs visszatérés, tehát a tiéd.",
+            "output": "engedélyezett iker"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Végrehajtás és rögzítés",
+            "body": "Sherma kitölti a valódi űrlapot a jóváhagyott ikerpárral, és minden mezőről visszaküldi a rekordot. Ahol egy portálnak személyes bejelentkezésre van szüksége, átadja a kész űrlapot, hogy elküldje.",
+            "output": "iktatott, nyilvántartva"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "Ahol érvényes",
+        "heading": "Azokra a formákra készült, amelyek nem engedhetik meg maguknak, hogy tévedjenek.",
+        "body": "Ugyanaz az ügynök, ugyanaz az elv. Ami megváltozik, az a rekord, amelyből merít, és az a portál, amely ellen dolgozik.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Adó- és áfabevallás",
+            "body": "Negyedéves BTW/GST/ÁFA-bevallások, a már beérkező levelekből iktatott számlákból – ugyanaz az űrlap, negyedévente, minden ügyfélre.",
+            "steps": [
+              "Az iktatási állás határidőtől megnyílt",
+              "A számlák egyeztetve, az áfa kiszámítása",
+              "Kérdőív – csak hiányosságok",
+              "Visszaküldés, digitális iker megerősítve"
+            ],
+            "connections": [
+              "Nyilvántartási portál (BTW / GST / ÁFA)",
+              "Számlaposta",
+              "Könyvelő szoftver"
+            ],
+            "note": "Az adóportálokhoz személyes kormányzati bizonyítványra van szükség, például Eherkenningre. A Sherma teljes egészében elkészíti a bevallást, és a könyvelő saját bejelentkezési adataival iktatja be. Nem fog úgy aláírni, mint te."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Szállító és fuvarozó beszállás",
+            "body": "Minden vásárlónak és szolgáltatónak saját portálja van. Ugyanazok a cégadatok, tanúsítványok és szabályzatok, mindegyikhez a nulláról beírva.",
+            "steps": [
+              "Portál meghívó érkezett",
+              "A regisztrációt a korábbi kitöltésekből újra felhasználták",
+              "Lejárt dokumentumok megjelölve és frissítve",
+              "A beszállás befejeződött, a visszaigazolás megmaradt"
+            ],
+            "connections": [
+              "Vevő és szolgáltató portálok",
+              "Regisztráció, áfa és banki adatok",
+              "Biztosítási és kötvénybizonyítékok"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "biztonsági kérdőívek",
+            "body": "Ügyfélbiztonsági felülvizsgálatok, amelyek megismétlik ugyanazokat az ellenőrzéseket, irányelveket és bizonyítékokat, miközben minden határidő végleges marad.",
+            "steps": [
+              "Az ügyféltől kapott kérdőív",
+              "a jóváhagyott rekordnak megfelelő vezérlőelemek",
+              "Kérdőív – csak hiányosságok",
+              "csomag összeszerelve, iker megerősítve"
+            ],
+            "connections": [
+              "Ügyfélbiztonsági portálok",
+              "szabályzat és vezérlőkönyvtár",
+              "Tanúsítványok és ellenőrzési bizonyítékok"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Partner és csatorna követelések",
+            "body": "Marketingalapok és szövetkezeti követelések a teljesítmény igazolásával, egy-egy szállítói formátum, ahol az ablak hiánya az allokáció elvesztését jelenti.",
+            "steps": [
+              "A postafiókból felvett alap értesítése",
+              "A teljesítmény igazolása összeszerelve",
+              "Az állítás megfelel az adott szállító formátumának",
+              "Az igény készen áll az ablak bezárása előtt"
+            ],
+            "connections": [
+              "Szállító partnerportálok",
+              "nyugták és kampánybizonyítékok",
+              "kiosztás és lejárati nyomon követés"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "biztosítási formák",
+            "body": "Megújítások és elhelyezések, amelyek megjósolhatóak, bizonyítékokkal gazdagok, és többnyire változatlanok a legutóbbi jóváhagyott beadványhoz képest.",
+            "steps": [
+              "Felvették a megújítási értesítést",
+              "A tavalyi válaszok betöltve",
+              "Csak a lekérdezett változtatások",
+              "Űrlap kész, rekord frissítve"
+            ],
+            "connections": [
+              "bróker és biztosító portálok",
+              "Szabályzati ütemtervek és bizonyítékok",
+              "Előző év beküldési előzményei"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Pályázatok, támogatások és bejelentések",
+            "body": "Kiválasztási kérdőívek, finanszírozási kérelmek és bejelentések, amelyek megismétlik a szervezeti bizonyítékokat, miközben minden határidő végleges marad.",
+            "steps": [
+              "A profilodhoz illő megjegyzés",
+              "Minden kérdés kibontva, egyik sem volt átfutva",
+              "A szervezeti szakaszok nyilvántartásból válaszoltak",
+              "csomag összeszerelve, iker megerősítve"
+            ],
+            "connections": [
+              "pályázati és finanszírozói portálok",
+              "számlák, biztosítások, tanúsítványok",
+              "szabályzat és referenciakönyvtár"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Az Ön használati esete",
+            "body": "Nem látja a munkafolyamatát? Írja le az űrlapot, a portált vagy a bejelentést, és egy egyedi Sherma-t fogunk körbejárni.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Egyedi munkafolyamat-bevitel",
+          "body": "Ossza meg az ismétlődő űrlapot vagy portálot, amely lelassítja csapatát. Ez a demó megtartja a tájékoztatót a böngészőben, és elkészíti az e-mail átadását.",
+          "ctaLabel": "Készítsd elő a Sherma Brief-emet",
+          "note": "Csak mintavétel · Erről az oldalról semmi sem kerül továbbításra",
+          "successHeading": "A Sherma Brief készen áll.",
+          "successBody": "Nyissa meg az e-mail kliensét, hogy elküldje az előre kitöltött tájékoztatót, ha készen áll.",
+          "editLabel": "Edit the use case",
+          "emailSubject": "Ismerje meg Shermát: Egyedi használati eset"
+        }
+      },
+      "workedExample": {
+        "kicker": "egy működő példa",
+        "heading": "BTW-bevallások benyújtása a kézi újrabevitel nélkül.",
+        "body": "Ugyanez az elv, a legtöbbször ismételt formára vonatkozik. Egy sablon, egy entitás egyszerre, évente négyszer, örökké.",
+        "before": "Valaki összegyűjti a számadatokat, újra beírja a visszaküldésbe, ellenőrzi a főkönyvben, és a határidő előtt beadja. Minden negyedévben, minden ügyfélre, egy táblázaton kívül semmi mással.",
+        "after": "Sherma megnyitja a feladatot a bejelentési naptárból, összeállítja a bevallást a már beérkezett számlákból, csak azokról a számadatokról kérdez rá, amelyeket nem tud levezetni, és a kitöltött bevallást ikerként mutatja be.",
+        "linkLabel": "Beszélje meg a bejelentési naptárát",
+        "emailSubject": "Sherma negyedéves irattári munkafolyamat",
+        "card": {
+          "label": "BTW RETURN",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Valóság",
+              "value": "Ügyfél B.V."
+            },
+            {
+              "label": "Időszak",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "A számlák egyeznek",
+              "value": "41/44"
+            },
+            {
+              "label": "hiányzó számok",
+              "value": "3 – Megjelölt",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Return ready",
+          "summary": "3 ábrának megerősítése szükséges a bejelentés előtt.",
+          "actionLabel": "Áttekintés és fájl",
+          "actionNote": "emberi irányítás szükséges",
+          "note": "Szemléltető alakok. A saját mutatóját az első bevalláskor mérjük."
+        }
+      },
+      "control": {
+        "kicker": "irányított autonómia",
+        "heading": "autonómia az elszámoltathatóság elvesztése nélkül.",
+        "body": "AI minden lépésnél az első. Az ember abban a pillanatban lép be, amit nem lehet visszavonni, és csak akkor.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Minden megfordítható automatikus",
+            "body": "Olvasás, szimulálás, kitöltés, üldözés, összeszerelés. Nincs szükség jóváhagyásra az egyszerűen újradolgozható munkához."
+          },
+          {
+            "icon": "lock",
+            "title": "Minden visszafordíthatatlan megáll",
+            "body": "A beküldés az a pont, ahonnan nincs visszatérés, ezért vár rád. Ahol egy portálnak személyes hitelesítő adatra van szüksége, azt te tartod, nem Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "Az általad jóváhagyott iker az, amelyik fut",
+            "body": "Ha az élő űrlap a jóváhagyás után megváltozik, a jóváhagyás érvénytelen, és a végrehajtás helyett visszajön."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Elakadt állapot, nem csend",
+            "body": "Ha Sherma nem tud befejezni valamit, akkor megmondja, melyik mezőt és miért, és van idő, hogy cselekedjen."
+          }
+        ],
+        "boundary": {
+          "label": "Serma munkahatár",
+          "badges": [
+            "körkörös mezők",
+            "jóváhagyott eszközök"
+          ],
+          "steps": [
+            {
+              "label": "Kap",
+              "title": "nyomtatvány érkezett"
+            },
+            {
+              "label": "Színlel",
+              "title": "Próbálj egy iker ellen"
+            },
+            {
+              "label": "Töltse ki",
+              "title": "Feljegyzés alkalmazott, hiányosságok kérdezték"
+            },
+            {
+              "label": "Ellenőriz",
+              "title": "Twin kész és ellenőrizve"
+            }
+          ],
+          "approvalLabel": "Jóváhagyni vagy fokozni",
+          "executionLabel": "Végrehajtás és rögzítés",
+          "sourceNote": "minden mezőhöz rögzített forrás",
+          "guarantee": "Jóváhagyott iker = mit hajt végre"
+        }
+      },
+      "leadCapture": {
+        "kicker": "méret szerint",
+        "heading": "Fehér címkés Sherma méretarányosan.",
+        "body": "Ez a tájékoztató azoknak a szervezeteknek szól, amelyek azt szeretnék, ha a Sherma fehér címkével szerepelne a saját munkafolyamatukba – egyszerre ezer formát, nem pedig egyszeri bejelentést.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Hová futjon Sherma, és nagyjából hány formát?",
+        "ctaLabel": "Készítsd elő a Sherma Brief-emet",
+        "successHeading": "A tájékoztatója készen áll.",
+        "successBody": "Nyissa meg az e-mail klienst, hogy elküldje, ha készen áll.",
+        "emailLabel": "Send the brief by email",
+        "privacyNote": "Rövid ideig ebben a böngészőben marad, amíg úgy dönt, hogy e-mailt küld.",
+        "emailSubject": "fehér címkével ellátott serma"
+      },
+      "footer": {
+        "tagline": "A Sherma kitölti az űrlapokat abból, ami már a fájlban van, majd megmutatja a kitöltött verziót, mielőtt bármit elküldene.",
+        "groups": [
+          {
+            "label": "képességek",
+            "links": [
+              {
+                "label": "formába vétel",
+                "target": "meet"
+              },
+              {
+                "label": "Tettetés",
+                "target": "about"
+              },
+              {
+                "label": "Jóváhagyás és nyilvántartás",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Vállalat",
+            "links": [
+              {
+                "label": "használati esetek",
+                "target": "use-cases"
+              },
+              {
+                "label": "Érintkezés",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Fogj neki",
+            "links": [
+              {
+                "label": "Ismerje meg Shermát",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

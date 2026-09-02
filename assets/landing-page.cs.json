@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "cs",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Napodobení",
+          "target": "about"
+        },
+        {
+          "label": "Jak to funguje",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Případy použití",
+          "target": "use-cases"
+        },
+        {
+          "label": "Řízení",
+          "target": "trust"
+        },
+        {
+          "label": "Kontakt",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Seznamte se se Shermou"
+    },
+    "badge": "Simulace-Form First Form Automation",
+    "headline": "agent, který vyplní vaše formuláře s nejvyššími sázkami a ukáže svou práci jako první.",
+    "subheadline": "Sherma si přečte formulář, nacvičí výplň proti dvojčeti, zeptá se pouze na to, co ještě neví, a ukáže vám, co přesně bude předloženo. Nic nedosáhne skutečné podoby, dokud to neřeknete.",
+    "ctaLabel": "Seznamte se se Shermou",
+    "secondaryCtaLabel": "Podívejte se, jak to funguje",
+    "featureTags": [
+      "nacvičené, než to bude skutečné",
+      "To, co schvalujete, je to, co jde dovnitř",
+      "Záznam každého oboru"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Ahoj, já jsem Sherma. Pošlete mi formulář a já nacvičím celou výplň proti dvojčeti, než bude něco skutečné."
+      },
+      {
+        "role": "user",
+        "text": "Ukaž mi, co jsi našel."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Simulační sandbox",
+      "inputPlaceholder": "Zeptejte se Shermy na formulář…",
+      "suggestedPrompts": [
+        "Zobrazit chybějící pole",
+        "náhled dvojčete",
+        "Jak schvalování funguje?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma ve své kanceláři"
+    },
+    "contact": {
+      "heading": "Přineste jeden formulář, který již vyplníte.",
+      "body": "Spusťte Shermu proti skutečné formě ze své vlastní práce a porovnejte dvojče s tím, co váš tým vytvořil.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "další formulář",
+      "heading": "Přineste jeden formulář, který již vyplníte.",
+      "body": "Spusťte Shermu proti skutečné formě ze své vlastní práce a porovnejte dvojče s tím, co váš tým vytvořil.",
+      "ctaLabel": "Promluvte si se Shermou"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Ukázkové demo",
+        "demoNote": "Pouze ilustrativní simulace · Nejsou použity žádné skutečné portály nebo osobní údaje",
+        "openingReply": "Přečetl jsem si formulář, postavil dvojče a vyplnil 26 z 30 polí z vašeho schváleného záznamu. Zbývají čtyři otázky. Nic se nedotklo skutečné formy.",
+        "greetingReply": "Ahoj, já jsem Sherma. Přečetl jsem si formulář, nacvičil jsem výplň proti jeho dvojčeti a ukážu vám, co přesně by bylo předloženo. Nic nedosáhne skutečné podoby, dokud to neřeknete.",
+        "instructionReply": "Chcete-li začít, nahrajte snímky obrazovky formuláře, který chcete vyplnit. jpeg, png nebo webp · až 6 obrázků. Rozbalím otázky a řeknu vám, co ještě potřebuji.",
+        "reviewReply": "Tady je dvojče. Je kompletní, zkontrolovaný a stále oddělený od živého formuláře. To, co zde schvalujete, je to, co provede, pole pro pole.",
+        "approvedReply": "schváleno v demu. Přesně schválené dvojče je připraveno k provedení a každé pole si ponechává svůj zdroj.",
+        "escalatedReply": "bezpečně odesláno zpět. Nedošlo k žádnému podání.",
+        "fallbackReply": "Žádám pouze o informace, které skutečně chybí. Požádejte mě, abych ukázal chybějící pole nebo si prohlédl dvojče.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Nahrajte snímky obrazovky formuláře",
+          "uploadHint": "jpeg, png nebo webp · až 6 obrázků",
+          "analyzingLabel": "Čtení formuláře a vytahování jeho otázek…",
+          "questionnaireHeading": "Váš extrahovaný dotazník",
+          "questionnaireBody": "Sherma našla skutečné otázky ve vaší podobě. Odpovězte zde, omezeným chatem nebo v jedné pětiminutové hlasové relaci.",
+          "answerPlaceholder": "Odpovězte na další otázku týkající se formuláře…",
+          "voiceLabel": "Odpověď hlasem · 5 min",
+          "reviewLabel": "Zkontrolujte odpovědi",
+          "generateLabel": "Zkontrolujte a vygenerujte",
+          "signInHeading": "Přihlaste se pro generování vyplněných kopií",
+          "signInBody": "Vaše obrázky, odpovědi a náhled se po přihlášení přesunou do jedné soukromé relace Sherma.",
+          "expiryCopy": "Platnost nevyzvednutých náhledů vyprší po jedné hodině.",
+          "errorCopy": "Sherma nemohla tento obrázek číst bezpečně. Vyzkoušejte jasnější snímek obrazovky JPEG, PNG nebo WEBP."
+        },
+        "trace": {
+          "label": "Sherma · Trasování relace",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Formulář Přečíst",
+              "detail": "30 polí, 4 dokumenty, 2 podmíněné části"
+            },
+            {
+              "state": "done",
+              "title": "Twin Built",
+              "detail": "pracovní kopie vyplněná a zaškrtnutá živá"
+            },
+            {
+              "state": "done",
+              "title": "Vyplněno z vašeho záznamu",
+              "detail": "26 z 30 · Každá odpověď nese svůj zdroj"
+            },
+            {
+              "state": "active",
+              "title": "zeptaly se mezery, ne uhodnuty",
+              "detail": "4 otázky zodpovězené chatem"
+            },
+            {
+              "state": "pending",
+              "title": "Twin připraven ke kontrole",
+              "detail": "Nic se nedotklo skutečné formy"
+            }
+          ],
+          "reviewLabel": "Zkontrolujte dvojče"
+        },
+        "review": {
+          "label": "Váš souhlas",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Právnická osoba",
+              "value": "Vzorový klient B.V.",
+              "sourceLabel": "zdroj"
+            },
+            {
+              "label": "Daňový identifikátor",
+              "value": "NL•••••••B01",
+              "sourceLabel": "zdroj"
+            },
+            {
+              "label": "Platební podmínky",
+              "value": "30 dní",
+              "sourceLabel": "Nenapravitelný"
+            },
+            {
+              "label": "Autorizovaný podepisující",
+              "value": "finanční ředitel",
+              "sourceLabel": "Nenapravitelný"
+            }
+          ],
+          "approveLabel": "schválit dvojče",
+          "sendBackLabel": "Poslat zpět"
+        },
+        "results": {
+          "approvedTitle": "Twin schváleno",
+          "approvedBody": "schválené dvojče je připraveno k provedení · každý zachovaný zdroj",
+          "escalatedTitle": "bezpečně odeslán zpět",
+          "escalatedBody": "Běh je pozastaven pro lidský vstup · Nic nebylo podáno"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Přívod",
+          "detail": "Formulář vyzvednut"
+        },
+        {
+          "number": "02",
+          "title": "Simulovat",
+          "detail": "Nejprve cvičte vyplnit"
+        },
+        {
+          "number": "03",
+          "title": "Schvalovat",
+          "detail": "říkáš ano"
+        },
+        {
+          "number": "04",
+          "title": "Soubor a dokázat",
+          "detail": "Důkaz je uchováván"
+        }
+      ],
+      "principle": {
+        "kicker": "princip",
+        "heading": "postavený k důvěryhodnosti. Řídí se simulací.",
+        "body": "Každý formulář se nacvičí, než se vyplní. Sherma postaví dvojče skutečné formy, zpracovává celou výplň proti tomu dvojčeti a ukáže vám to kompletní. Dvojče, které schválíte, je to, které provede. Ne jeho shrnutí, ani jeho popis. stejná pole, stejné hodnoty, ve stejném pořadí.",
+        "traceLabel": "Sherma Session Trace",
+        "traceId": "SH-2291",
+        "traceMeta": "Relace #SH-2291 · Uplynulo 12s",
+        "traceStatus": "Aktivní",
+        "traceBody": "Vyrobeno pro pilníky, které si nemohou dovolit být špatné, ne demo divadlo.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Formulář zjištěn",
+            "status": "done",
+            "detail": "btw-aangifte, Q3 2026 — Klientská entita shodná.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Vygenerovaný dotazník",
+            "status": "done",
+            "detail": "26 Polí předem vyplněných z faktur. 4 Potřebujete váš vstup.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Odpovědi potvrzeny",
+            "status": "done",
+            "detail": "Shromážděno chatem za méně než 3 minuty.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulace dokončena",
+            "status": "active",
+            "detail": "Dry Run proti portálu — nalezeno 0 chyb.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Připraveno k souboru",
+          "body": "Digitální dvojče je připraveno ke kontrole před odesláním čehokoli.",
+          "approveLabel": "Recenze a schválení",
+          "escalateLabel": "Eskalovat"
+        },
+        "guaranteesKicker": "Jak se Sherma chová",
+        "guaranteesHeading": "Šest věcí, které zůstanou pravdivé v každé formě.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "v rozsahu do formy, kterou dostal",
+            "body": "Sherma se dotkne formuláře a záznamů, které jste mu přiřadili. Nic jiného ve vašich systémech není v rozsahu."
+          },
+          {
+            "icon": "sparkles",
+            "title": "nacvičené, než to bude skutečné",
+            "body": "Celá výplň se odehrává na dvojčeti jako první. Živá forma je dotčena jednou, přičemž odpověď je již známá jako úplná."
+          },
+          {
+            "icon": "users",
+            "title": "lidský souhlas v místě, odkud není návratu",
+            "body": "Vše reverzibilní běží automaticky. Cokoli, co nelze vrátit zpět, čeká na člověka."
+          },
+          {
+            "icon": "check",
+            "title": "Dvojče je plán",
+            "body": "To, co schvalujete, je bajt pro bajt, co se odešle. Pokud se formulář změní pod, schválení je neplatné a vrátí se vám."
+          },
+          {
+            "icon": "search",
+            "title": "Každá odpověď má zdroj",
+            "body": "Který dokument, který kolega, který datum. Pokud se někdo později zeptá na obrázek, můžete ukázat, odkud pochází."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Eskalace, nikdy tiché selhání",
+            "body": "Chybějící data nelze odhadnout. Sherma najde, kdo ví, a ptá se, chatem nebo hovorem, a řekne vám, jestli se zasekl."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Co se mění",
+        "heading": "Přesuňte pilník ze svého stolu, nikoli mimo radar.",
+        "body": "Práce přestává být něčím, co člověk dělá, a stává se něčím, co člověk schvaluje. To je celý rozdíl.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Odpovězte jednou, znovu použijte všude",
+            "body": "To, co potvrdíte, se stane součástí vašeho záznamu. Další strukturně podobná forma začíná většinou zodpovězená.",
+            "metric": {
+              "label": "pole vyplněná, aniž by se vás zeptal",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "První forma, pátá forma, dvacátá forma. ilustrativní."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Termíny přestávají být tahanice",
+            "body": "Sherma pracuje přes noc a o víkendech. Posledních čtyřicet osm hodin je na přezkoumání, nikoli na montáž."
+          },
+          {
+            "icon": "lock",
+            "title": "Kontrola je zachována, nikoli vyměněna",
+            "body": "Simulace, výslovné schválení a záznam každé akce. Nic bez vás nestřílí."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "Proces",
+        "heading": "Jak Sherma vyplní formulář, od začátku do konce.",
+        "body": "šest kroků. Sherma je vede čtyři, aniž by se zeptala. Dva označené pro osobu jsou dva, kde nelze rozhodnutí předat.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Přívod",
+            "body": "Adresa URL formuláře, přeposlaný e-mail nebo portálové hodinky Sherma. Zvedne formulář a otevře jej.",
+            "output": "Formulář umístěn"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simulovat",
+            "body": "Sherma postaví dvojče formy a zpracovává proti ní celou výplň. Terénní pravidla, podmíněné sekce a požadavky na dokumenty se zde objevují, nikoli v termínu.",
+            "output": "Twin Built"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "vyplnit z toho, co ví",
+            "body": "Váš záznam odpovídá většině z toho. Každá hodnota nese svůj zdroj, takže můžete vidět, odkud figurka přišla a kdy byla naposledy potvrzena.",
+            "output": "Většina polí hotová"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "požádat o mezery",
+            "body": "jen to, co skutečně neví. chatem nebo volajícím, pokud je to naléhavé a nikdo neodpověděl. Pronásleduje, dokud nemá odpověď.",
+            "output": "mezery uzavřené"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Potvrďte dvojče",
+            "body": "Vyplněný formulář tak, jak bude odeslán. Změňte vše, co chcete, a pak to schvalte. Toto je bod, odkud není návratu, takže je váš.",
+            "output": "Schválené dvojče"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Spustit a zaznamenat",
+            "body": "Sherma vyplní skutečnou formu schváleným dvojčetem a vrátí záznam o každém poli. Tam, kde portál potřebuje osobní přihlášení, předá vám hotový formulář k odeslání.",
+            "output": "zařazeno, v záznamu"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "kde se vztahuje",
+        "heading": "Vytvořeno pro formy, které si nemohou dovolit být špatné.",
+        "body": "Stejný agent, stejný princip. Co se mění, je záznam, ze kterého čerpá, a portál, proti kterému pracuje.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Daň a podání DPH",
+            "body": "Čtvrtletní BTW/GST/VAT přiznání, uložené z faktur, které již jsou v doručené poště – ve stejném formuláři, každé čtvrtletí, pro každého klienta.",
+            "steps": [
+              "Podání úlohy otevřeno od termínu",
+              "faktury shodné, vypočtená DPH",
+              "Dotazník — pouze mezery",
+              "Vrácení podáno, potvrzeno digitální dvojče"
+            ],
+            "connections": [
+              "Podání portálu (BTW / GST / DPH)",
+              "Doručená pošta faktury",
+              "Účetní software"
+            ],
+            "note": "Daňové portály vyžadují osobní vládní pověření, jako je Eherkenning. Sherma připraví vrácení v plném rozsahu a účetní jej podá pod vlastním přihlášením. Nepodepíše se jako vy."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "onboarding prodejce a dopravce",
+            "body": "Každý kupující a dopravce má svůj vlastní portál. Stejné podrobnosti o společnosti, certifikáty a zásady, zadané od nuly pro každou z nich.",
+            "steps": [
+              "Pozvánka na portál přijata",
+              "Registrace znovu použita z předchozích výplní",
+              "Dokumenty, jejichž platnost vypršela, označeny a obnoveny",
+              "onboarding dokončen, potvrzení zachováno"
+            ],
+            "connections": [
+              "Portály kupujících a dopravců",
+              "Registrace, DPH a bankovní údaje",
+              "Pojištění a pojistka"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Bezpečnostní dotazníky",
+            "body": "Kontroly zabezpečení zákazníků, které opakují stejné kontroly, zásady a důkazy, zatímco každý termín zůstává konečný.",
+            "steps": [
+              "dotazník obdržený od zákazníka",
+              "Ovládací prvky odpovídaly schválenému záznamu",
+              "Dotazník — pouze mezery",
+              "balení sestaveno, dvojče potvrzeno"
+            ],
+            "connections": [
+              "Bezpečnostní portály zákazníků",
+              "Policy and control library",
+              "Certifikáty a auditní důkazy"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Nároky partnera a kanálu",
+            "body": "Marketingové fondy a kooperativní nároky s důkazem o výkonu, formátem jednoho dodavatele najednou, kde chybějící okno znamená ztrátu alokace.",
+            "steps": [
+              "Oznámení o fondu vyzvednuté z doručené pošty",
+              "Smontovaný důkaz výkonu",
+              "Nárok odpovídá formátu daného dodavatele",
+              "Před uzavřením okna je připravena reklamace"
+            ],
+            "connections": [
+              "Partnerské portály dodavatele",
+              "účtenky a důkazy kampaně",
+              "Sledování přidělení a vypršení platnosti"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Formuláře pojištění",
+            "body": "Obnovy a umístění, která jsou předvídatelná, náročná na důkazy a většinou se nezměnila od posledního schváleného podání.",
+            "steps": [
+              "Vyzvednuto oznámení o obnovení",
+              "Loňské odpovědi byly načteny",
+              "Pouze dotazované změny",
+              "formulář připraven, záznam aktualizován"
+            ],
+            "connections": [
+              "Portály makléřů a pojistitelů",
+              "Rozpisy zásad a důkazy",
+              "Historie podání z předchozího roku"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Nabídky, granty a podání",
+            "body": "Výběrové dotazníky, žádosti o financování a podání, které opakují organizační důkazy, zatímco každý termín zůstává konečný.",
+            "steps": [
+              "upozornění shodné s vaším profilem",
+              "Každá otázka byla vytažena, žádná neprošlapala",
+              "Organizační sekce zodpovězeny ze záznamu",
+              "balení sestaveno, dvojče potvrzeno"
+            ],
+            "connections": [
+              "Portály výběrového řízení a sponzorů",
+              "Účty, pojištění, certifikace",
+              "Zásady a referenční knihovna"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Váš případ použití",
+            "body": "Nevidíte svůj pracovní postup? Popište formulář, portál nebo archivaci a my se podíváme na vlastní Sherma, který kolem něj proběhne.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Příjem vlastního pracovního postupu",
+          "body": "Sdílejte opakující se formulář nebo portál, který zpomaluje váš tým. Toto demo ponechá stručné informace ve vašem prohlížeči a připraví e-mailové předání.",
+          "ctaLabel": "Připravte můj brief Sherma",
+          "note": "Pouze vzorek příjmu · Z této stránky se nic nepřenáší",
+          "successHeading": "Vaše sherma brief je připravena.",
+          "successBody": "Otevřete svého e-mailového klienta a odešlete předem vyplněný brief, až budete připraveni.",
+          "editLabel": "Upravte případ použití",
+          "emailSubject": "Seznamte se se Shermou: Případ vlastního použití"
+        }
+      },
+      "workedExample": {
+        "kicker": "Zpracovaný příklad",
+        "heading": "Podání btw se vrací bez ručního opětovného vstupu.",
+        "body": "Stejný princip, aplikovaný na nejopakovanější formu, jaká existuje. Jedna šablona, jedna entita po druhé, čtyřikrát ročně, navždy.",
+        "before": "Někdo shromáždí čísla, znovu je zaklíčuje do vrácení, zkontroluje je s účetní knihou a před uzávěrkou založí. Každé čtvrtletí, pro každého klienta, bez nic přeneseného kromě tabulky.",
+        "after": "Sherma otevře úlohu z kalendáře podání, sestaví vrácení z faktur již v doručené poště, zeptá se pouze na čísla, která nemůže odvodit, a prezentuje dokončené přiznání jako dvojče.",
+        "linkLabel": "Promluvte si ve svém kalendáři podání",
+        "emailSubject": "Sherma Quarterly Filing Workflow",
+        "card": {
+          "label": "btw return",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Bytost",
+              "value": "Klient B.V."
+            },
+            {
+              "label": "Období",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "Faktury shodné",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Chybějící čísla",
+              "value": "3 — Označeno",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "vrátit připraveno",
+          "summary": "3 Čísla potřebují před podáním potvrzení.",
+          "actionLabel": "Recenze a soubor",
+          "actionNote": "Vyžaduje se lidská kontrola",
+          "note": "ilustrativní postavy. Váš vlastní poměr se měří při prvním návratu."
+        }
+      },
+      "control": {
+        "kicker": "Řízená autonomie",
+        "heading": "autonomie bez ztráty odpovědnosti.",
+        "body": "AI nejprve na každém kroku. Člověk vstoupí v jediném okamžiku, který nelze vrátit zpět, a teprve potom.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Vše reverzibilní je automatické",
+            "body": "Čtení, simulace, plnění, pronásledování, sestavování. Pro práci, kterou lze jednoduše předělat, není potřeba žádný souhlas."
+          },
+          {
+            "icon": "lock",
+            "title": "Všechno nevratné se zastaví",
+            "body": "Odeslání je bod, odkud není návratu, takže na vás čeká. Tam, kde portál potřebuje osobní pověření, máte ho, ne Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "Dvojče, které schválíte, je to, které běží",
+            "body": "Pokud se po schválení změní živý formulář, schválení je neplatné a vrátí se vám, místo aby se provedl."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Stuck je stav, ne ticho",
+            "body": "Pokud Sherma nemůže něco dokončit, řekne vám, které pole a proč, když zbývá čas, abyste na něj jednali."
+          }
+        ],
+        "boundary": {
+          "label": "Hranice práce Sherma",
+          "badges": [
+            "Rozsahová pole",
+            "Schválené nástroje"
+          ],
+          "steps": [
+            {
+              "label": "Dostávat",
+              "title": "Přijata formulář"
+            },
+            {
+              "label": "Simulovat",
+              "title": "Zkoušet proti dvojčeti"
+            },
+            {
+              "label": "Vyplnit",
+              "title": "záznam použit, zeptaly se mezery"
+            },
+            {
+              "label": "Verifikovat",
+              "title": "Twin dokončen a zkontrolován"
+            }
+          ],
+          "approvalLabel": "Schválit nebo eskalovat",
+          "executionLabel": "Spustit a zaznamenat",
+          "sourceNote": "Zdroj zaznamenaný pro každé pole",
+          "guarantee": "Schválené dvojče = co provádí"
+        }
+      },
+      "leadCapture": {
+        "kicker": "v měřítku",
+        "heading": "Bílá nálepková sherma ve velkém.",
+        "body": "Tento brief je pro organizace, které chtějí, aby Sherma byla označena do svého vlastního pracovního postupu – tisíc formulářů najednou, nikoli jednorázové podání.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Kde by měla Sherma běžet a kolik zhruba forem?",
+        "ctaLabel": "Připravte můj brief Sherma",
+        "successHeading": "Váš brief je připraven.",
+        "successBody": "Otevřete svého e-mailového klienta a odešlete jej, až budete připraveni.",
+        "emailLabel": "Pošlete stručný popis e-mailem",
+        "privacyNote": "Vaše zadání zůstane v tomto prohlížeči, dokud se nerozhodnete jej poslat e-mailem.",
+        "emailSubject": "bíloznačná sherma v měřítku"
+      },
+      "footer": {
+        "tagline": "Sherma vyplní vaše formuláře z toho, co již máte v evidenci, a poté vám ukáže vyplněnou verzi před odesláním čehokoli.",
+        "groups": [
+          {
+            "label": "Talent",
+            "links": [
+              {
+                "label": "Příjem z formuláře",
+                "target": "meet"
+              },
+              {
+                "label": "Napodobení",
+                "target": "about"
+              },
+              {
+                "label": "Schválení a záznam",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Společnost",
+            "links": [
+              {
+                "label": "Případy použití",
+                "target": "use-cases"
+              },
+              {
+                "label": "Kontakt",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Začít",
+            "links": [
+              {
+                "label": "Seznamte se se Shermou",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

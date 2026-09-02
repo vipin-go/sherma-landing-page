@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "lt",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Modeliavimas",
+          "target": "about"
+        },
+        {
+          "label": "Kaip tai veikia",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Naudojimo atvejai",
+          "target": "use-cases"
+        },
+        {
+          "label": "Kontrolė",
+          "target": "trust"
+        },
+        {
+          "label": "Susisiekti",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Susipažinkite su Sherma"
+    },
+    "badge": "Modeliavimo pirmosios formos automatizavimas",
+    "headline": "Agentas, kuris užpildo jūsų aukščiausias formas ir pirmiausia parodo savo darbą.",
+    "subheadline": "Sherma perskaito formą, repetuoja užpildą prieš dvynį, klausia tik to, ko dar nežino, ir tiksliai parodo, kas bus pateikta. Niekas nepasiekia tikrosios formos, kol to nepasakysi.",
+    "ctaLabel": "Susipažinkite su Sherma",
+    "secondaryCtaLabel": "Pažiūrėkite, kaip tai veikia",
+    "featureTags": [
+      "repetuota, kol tai tikra",
+      "Tai, ką jūs patvirtinate, yra tai, kas įeina",
+      "Kiekvieno lauko įrašas"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Sveiki, aš esu Sherma. Atsiųskite man formą ir aš repetuosiu visą užpildymą prieš dvynį, kol kas nors nebus tikra."
+      },
+      {
+        "role": "user",
+        "text": "Parodyk man, ką radai."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · simulation sandbox",
+      "inputPlaceholder": "Paklauskite Shermos apie formą…",
+      "suggestedPrompts": [
+        "Rodyti trūkstamus laukus",
+        "Peržiūrėkite dvynį",
+        "Kaip veikia patvirtinimas?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma savo biure"
+    },
+    "contact": {
+      "heading": "Atsineškite vieną jau užpildytą formą.",
+      "body": "Paleiskite „Sherma“ prieš tikrą formą iš savo darbo ir palyginkite dvynį su tuo, ką sukūrė jūsų komanda.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "Kita forma",
+      "heading": "Atsineškite vieną jau užpildytą formą.",
+      "body": "Paleiskite „Sherma“ prieš tikrą formą iš savo darbo ir palyginkite dvynį su tuo, ką sukūrė jūsų komanda.",
+      "ctaLabel": "Pasikalbėk su Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Demonstracinės versijos pavyzdys",
+        "demoNote": "Tik iliustratyvus modeliavimas · Nenaudojami tikri portalai ar asmens duomenys",
+        "openingReply": "Perskaičiau formą, sukūriau dvynį ir užpildžiau 26 iš 30 laukų iš jūsų patvirtinto įrašo. Liko keturi klausimai. Niekas nepalietė tikrosios formos.",
+        "greetingReply": "Sveiki, aš esu Šerma. Perskaičiau formą, repetuoju prieš dvynį ir tiksliai parodysiu, kas būtų pateikta. Niekas nepasiekia tikrosios formos, kol to nepasakysi.",
+        "instructionReply": "Norėdami pradėti, įkelkite formos, kurią norite užpildyti, ekrano kopijas. JPEG, PNG arba WebP · Iki 6 vaizdų. Ištrauksiu klausimus ir pasakysiu, ko man dar reikia.",
+        "reviewReply": "Čia yra dvynys. Jis pilnas, patikrintas ir vis dar atskirtas nuo tiesioginės formos. Tai, ką čia patvirtinate, yra tai, kas vykdoma, laukas laukui.",
+        "approvedReply": "Patvirtinta demonstracijoje. Tiksliai patvirtintas dvynys yra pasirengęs vykdyti ir kiekvienas laukas išlaiko savo šaltinį.",
+        "escalatedReply": "saugiai išsiųstas atgal. Pateikimo nebuvo.",
+        "fallbackReply": "Prašau tik informacijos, kurios tikrai trūksta. Paprašykite manęs parodyti trūkstamus laukus arba peržiūrėti dvynį.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Įkelti formos ekrano kopijas",
+          "uploadHint": "JPEG, PNG arba WebP · Iki 6 vaizdų",
+          "analyzingLabel": "Formos skaitymas ir jos klausimų ištraukimas…",
+          "questionnaireHeading": "Jūsų ištrauktas klausimynas",
+          "questionnaireBody": "Sherma rado tikrus klausimus jūsų formoje. Atsakykite čia, ribotu pokalbiu arba per vieną penkių minučių balso seansą.",
+          "answerPlaceholder": "Atsakykite į kitą formos klausimą…",
+          "voiceLabel": "Atsakymas balsu · 5 min",
+          "reviewLabel": "Peržiūrėkite atsakymus",
+          "generateLabel": "Peržiūrėkite ir generuokite",
+          "signInHeading": "Prisijunkite, kad sukurtumėte užpildytas kopijas",
+          "signInBody": "Jūsų vaizdai, atsakymai ir peržiūra bus perkelti į vieną privačią Sherma sesiją po prisijungimo.",
+          "expiryCopy": "Nepateisintos peržiūros baigiasi po vienos valandos.",
+          "errorCopy": "Sherma negalėjo saugiai perskaityti šio vaizdo. Išbandykite aiškesnę JPEG, PNG arba WebP ekrano kopiją."
+        },
+        "trace": {
+          "label": "Sherma · Session Trace",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Formos skaitymas",
+              "detail": "30 laukų, 4 dokumentai, 2 sąlyginiai skyriai"
+            },
+            {
+              "state": "done",
+              "title": "Dvyniai pastatytas",
+              "detail": "Užpildyta darbinė kopija ir patikrinta tiesioginė"
+            },
+            {
+              "state": "done",
+              "title": "užpildytas iš jūsų įrašo",
+              "detail": "26 iš 30 · Kiekvienas atsakymas turi savo šaltinį"
+            },
+            {
+              "state": "active",
+              "title": "spragos klausė, neatspėjo",
+              "detail": "4 klausimai, į kuriuos atsakė pokalbis"
+            },
+            {
+              "state": "pending",
+              "title": "Dvynys paruoštas peržiūrai",
+              "detail": "Niekas nepalietė tikrosios formos"
+            }
+          ],
+          "reviewLabel": "Peržiūrėkite dvynį"
+        },
+        "review": {
+          "label": "Jūsų pritarimas",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "juridinis asmuo",
+              "value": "Kliento pavyzdys B.V.",
+              "sourceLabel": "Šaltinis"
+            },
+            {
+              "label": "Mokesčių identifikatorius",
+              "value": "NL•••••••B01",
+              "sourceLabel": "Šaltinis"
+            },
+            {
+              "label": "Mokėjimo sąlygos",
+              "value": "30 dienų",
+              "sourceLabel": "Chroniškas"
+            },
+            {
+              "label": "Įgaliotasis signataras",
+              "value": "Finansų direktorius",
+              "sourceLabel": "Chroniškas"
+            }
+          ],
+          "approveLabel": "Patvirtinkite dvynį",
+          "sendBackLabel": "Siųsti atgal"
+        },
+        "results": {
+          "approvedTitle": "Dvynys patvirtintas",
+          "approvedBody": "Patvirtintas dvynys yra pasirengęs vykdyti · Kiekvienas išsaugotas šaltinis",
+          "escalatedTitle": "Saugiai išsiųstas atgal",
+          "escalatedBody": "Paleidimas pristabdytas žmogaus įvestims · Nieko nebuvo pateikta"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Suvartojimas",
+          "detail": "Paimta forma"
+        },
+        {
+          "number": "02",
+          "title": "Imituoti",
+          "detail": "Praktikos užpildymas pirmiausia"
+        },
+        {
+          "number": "03",
+          "title": "Patvirtinti",
+          "detail": "Tu sakai taip"
+        },
+        {
+          "number": "04",
+          "title": "Failas ir įrodymas",
+          "detail": "Įrodymas saugomas"
+        }
+      ],
+      "principle": {
+        "kicker": "Principas",
+        "heading": "Sukurta taip, kad būtų galima pasitikėti. valdoma modeliavimu.",
+        "body": "Kiekviena forma repetuojama prieš ją užpildant. Sherma sukuria tikrosios formos dvynį, apdirba visą užpildą prieš tą dvynį ir parodo jums užbaigtą. Jūsų patvirtintas dvynys yra tas, kuris vykdo. Ne jo santrauka, ne aprašymas. Tie patys laukai, tos pačios reikšmės, ta pačia tvarka.",
+        "traceLabel": "Sherma seanso pėdsakas",
+        "traceId": "SH-2291",
+        "traceMeta": "Sesija #SH-2291 · Praėjo 12s",
+        "traceStatus": "Aktyvus",
+        "traceBody": "Sukurtas pareiškimams, kurie negali sau leisti klysti, o ne demonstraciniam teatrui.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Aptikta forma",
+            "status": "done",
+            "detail": "BTW-AANGIFTE, Q3 2026 – kliento subjektas suderintas.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Sugeneruotas klausimynas",
+            "status": "done",
+            "detail": "26 laukai, iš anksto užpildyti iš sąskaitų faktūrų. 4 Reikia jūsų įvesties.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Atsakymai patvirtinti",
+            "status": "done",
+            "detail": "Surinkta per mažiau nei 3 minutes.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Modeliavimas baigtas",
+            "status": "active",
+            "detail": "Sausas paleidimas prieš portalą – rasta 0 klaidų.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Paruošta pateikti failą",
+          "body": "Skaitmeninis dvynys yra paruoštas peržiūrėti prieš ką nors pateikiant.",
+          "approveLabel": "Peržiūrėkite ir patvirtinkite",
+          "escalateLabel": "Eskaluoti"
+        },
+        "guaranteesKicker": "Kaip elgiasi Sherma",
+        "guaranteesHeading": "Šeši dalykai, kurie išlieka teisingi kiekvienoje formoje.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "pritaikyta tokiai formai, kokia buvo pateikta",
+            "body": "Sherma paliečia formą ir jums priskirtus įrašus. Nieko kito jūsų sistemose nėra."
+          },
+          {
+            "icon": "sparkles",
+            "title": "repetuota, kol tai tikra",
+            "body": "Visas užpildymas vyksta ant dvynių pirmiausia. Tiesioginė forma paliečiama vieną kartą, o atsakymas jau žinomas kaip baigtas."
+          },
+          {
+            "icon": "users",
+            "title": "Žmogaus pritarimas negrįžimo taške",
+            "body": "Viskas, kas yra grįžtama, veikia automatiškai. Viskas, ko negalima atšaukti, laukia žmogaus."
+          },
+          {
+            "icon": "check",
+            "title": "Dvynys yra planas",
+            "body": "Tai, ką patvirtinate, yra baitas už baitą, kas pateikiama. Jei forma pasikeičia apačioje, patvirtinimas negalioja ir jis grįžta jums."
+          },
+          {
+            "icon": "search",
+            "title": "Kiekvienas atsakymas turi šaltinį",
+            "body": "Kuris dokumentas, kuris kolega, kuri data. Jei kas nors užklausa figūros vėliau, galite parodyti, iš kur ji atsirado."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Eskalacija, niekada tyli nesėkmė",
+            "body": "Trūksta duomenų neatspėjama. Sherma randa, kas žino ir klausia, per pokalbį ar skambutį ir pasako, ar jis įstrigo."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Kas keičiasi",
+        "heading": "Perkelkite dildę nuo stalo, o ne nuo radaro.",
+        "body": "Darbas nustoja būti tuo, ką žmogus daro, ir tampa tuo, ką žmogus patvirtina. Tai yra visas skirtumas.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Atsakykite vieną kartą, naudokite visur",
+            "body": "Tai, ką patvirtinate, tampa jūsų įrašo dalimi. Į kitą struktūriškai panašią formą prasideda dažniausiai atsakoma.",
+            "metric": {
+              "label": "Laukai užpildyti jūsų neklausiant",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Pirmoji forma, penktoji forma, dvidešimtoji forma. Iliustratyvus."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Terminai nustoja būti grumtynės",
+            "body": "Sherma dirba per naktį ir savaitgaliais. Paskutinės keturiasdešimt aštuonios valandos skirtos peržiūrai, o ne surinkimui."
+          },
+          {
+            "icon": "lock",
+            "title": "Kontrolė išlaikoma, o ne prekiaujama",
+            "body": "modeliavimas, aiškus patvirtinimas ir kiekvieno veiksmo įrašas. Be tavęs niekas nedega."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "Procesas",
+        "heading": "Kaip Sherma užpildo formą, nuo pradžios iki pabaigos.",
+        "body": "Šeši žingsniai. Šerma neklausdama valdo keturis iš jų. Asmeniui pažymėtos dvi yra dvi, kuriose sprendimo negalima perduoti.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Suvartojimas",
+            "body": "Formos URL, persiųstas el. laiškas arba portalas „Sherma Watches“. Jis paima formą ir ją atidaro.",
+            "output": "Forma yra"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Imituoti",
+            "body": "Sherma sukuria formos dvynį ir apdirba visą užpildymą prieš jį. Lauko taisyklės, sąlyginiai skyriai ir dokumentų reikalavimai pateikiami čia, o ne pagal terminą.",
+            "output": "Dvyniai pastatytas"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Užpildykite iš to, ką žino",
+            "body": "Jūsų įrašas atsako į didžiąją dalį. Kiekviena reikšmė turi savo šaltinį, todėl galite pamatyti, iš kur atsirado figūra ir kada ji buvo paskutinį kartą patvirtinta.",
+            "output": "Dauguma laukų atlikti"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Paprašykite spragų",
+            "body": "Tik tai, ko ji tikrai nežino. pokalbiu arba skambučiu, jei tai skubu ir niekas neatsakė. Jis persekioja, kol turi atsakymą.",
+            "output": "Tarpai uždaryti"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Patvirtinkite dvynį",
+            "body": "užpildytą formą, kaip ji bus pateikta. Pakeiskite viską, ko norite, tada patvirtinkite. Tai yra negrįžimo taškas, todėl jis yra jūsų.",
+            "output": "Patvirtintas dvynys"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Vykdyti ir įrašyti",
+            "body": "Sherma užpildo tikrąją formą patvirtintu dvyniu ir grąžina kiekvieno lauko įrašą. Jei portalui reikia asmeninio prisijungimo, jis įteikia baigtą formą, kad galėtumėte išsiųsti.",
+            "output": "Pateikta, įrašyta"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "Kur tai taikoma",
+        "heading": "Sukurta formoms, kurios negali sau leisti klysti.",
+        "body": "Same agent, same principle. Kas keičiasi, yra įrašas, iš kurio jis semiamasi, ir portalas, prieš kurį jis veikia.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Mokesčių ir PVM padavimas",
+            "body": "Kas ketvirtį BTW/GST/PVM deklaracijos, pateiktos iš gautuosiuose jau esančių sąskaitų faktūrų – ta pati forma, kas ketvirtį, kiekvienam klientui.",
+            "steps": [
+              "Darbo padavimas atidarytas nuo termino",
+              "Sąskaitos faktūros suderintos, PVM apskaičiuotas",
+              "Klausimynas – tik spragos",
+              "Deklaracija pateikta, skaitmeninis dvynys patvirtintas"
+            ],
+            "connections": [
+              "Paraiškų portalas (btw / gst / PVM)",
+              "Sąskaitų faktūrų pašto dėžutė",
+              "Buhalterinė programinė įranga"
+            ],
+            "note": "Mokesčių portalams reikalingas asmeninis vyriausybės įgaliojimas, pvz., Eherkenning. Sherma parengia visą deklaraciją, o buhalteris ją pateikia pagal savo prisijungimą. Jis nepasirašys kaip tu."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Pardavėjo ir vežėjo įtraukimas",
+            "body": "Kiekvienas pirkėjas ir vežėjas turi savo portalą. Ta pati įmonės informacija, sertifikatai ir politika, įvesta nuo nulio kiekvienam iš jų.",
+            "steps": [
+              "Gautas portalo kvietimas",
+              "Registracija pakartotinai panaudota iš ankstesnių užpildų",
+              "Pasibaigę dokumentai pažymėti ir atnaujinti",
+              "Įlaipinimas baigtas, patvirtinimas išsaugotas"
+            ],
+            "connections": [
+              "Pirkėjų ir vežėjų portalai",
+              "Registracija, PVM ir banko duomenys",
+              "Draudimo ir politikos įrodymai"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Saugumo klausimynai",
+            "body": "Klientų saugos apžvalgos, kuriose kartojasi tie patys valdikliai, politika ir įrodymai, kol kiekvienas terminas lieka galutinis.",
+            "steps": [
+              "Anketa gauta iš kliento",
+              "valdikliai suderinti su patvirtintu įrašu",
+              "Klausimynas – tik spragos",
+              "Pakuotė surinkta, dvynė patvirtinta"
+            ],
+            "connections": [
+              "Klientų apsaugos portalai",
+              "Politikos ir kontrolės biblioteka",
+              "sertifikatus ir audito įrodymus"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Partner & channel claims",
+            "body": "Rinkodaros lėšos ir kooperacijos teiginiai su našumo įrodymu, vienu pardavėjo formatu vienu metu, kai lango praradimas reiškia, kad prarandama paskirstymas.",
+            "steps": [
+              "Fondo pranešimas paimtas iš gautųjų",
+              "Surinkto našumo įrodymas",
+              "pretenzija, atitinkanti to pardavėjo formatą",
+              "Pretenzija paruošta prieš uždarant langą"
+            ],
+            "connections": [
+              "Pardavėjų partnerių portalai",
+              "Kvitai ir kampanijos įrodymai",
+              "paskirstymas ir galiojimo pabaigos stebėjimas"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Draudimo formos",
+            "body": "Atnaujinimai ir paskirties vietos, kurios yra nuspėjamos, turi daug įrodymų ir dažniausiai nepakito, palyginti su paskutiniu patvirtintu pateikimu.",
+            "steps": [
+              "Paimtas pranešimas apie atnaujinimą",
+              "Praėjusių metų atsakymai įkelti",
+              "Užklausė tik pakeitimai",
+              "Forma paruošta, įrašas atnaujintas"
+            ],
+            "connections": [
+              "Brokerių ir draudikų portalai",
+              "Politikos tvarkaraščiai ir įrodymai",
+              "Ankstesnių metų pateikimo istorija"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Pasiūlymai, dotacijos ir paraiškos",
+            "body": "Atrankos klausimynai, finansavimo paraiškos ir paraiškos, kurios kartoja organizacinius įrodymus, kol kiekvienas terminas lieka galutinis.",
+            "steps": [
+              "Pranešimas, suderintas su jūsų profiliu",
+              "Kiekvienas ištrauktas klausimas, nė vienas nenugriebtas",
+              "Organizaciniai skyriai atsakyta iš įrašų",
+              "Pakuotė surinkta, dvynė patvirtinta"
+            ],
+            "connections": [
+              "Konkurso ir finansuotojų portalai",
+              "Sąskaitos, draudimai, sertifikatai",
+              "Politikos ir nuorodų biblioteka"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Jūsų naudojimo atvejis",
+            "body": "Nematote savo darbo eigos? Apibūdinkite formą, portalą arba failą ir mes apžvelgsime tinkintą „Sherma“ bėgimą.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Pasirinktinis darbo eigos priėmimas",
+          "body": "Bendrinkite pasikartojančią formą arba portalą, kuris lėtina jūsų komandą. Ši demonstracinė versija išlaiko trumpą informaciją jūsų naršyklėje ir parengia el. pašto perdavimą.",
+          "ctaLabel": "Paruoškite mano Sherma trumpą",
+          "note": "Tik mėginio paėmimas · Iš šio puslapio nieko neperduodama",
+          "successHeading": "Jūsų Sherma trumpinys yra paruoštas.",
+          "successBody": "Atidarykite savo el. pašto klientą, kad išsiųstumėte iš anksto užpildytą trumpą informaciją, kai būsite pasiruošę.",
+          "editLabel": "Redaguokite naudojimo atvejį",
+          "emailSubject": "Susipažinkite su Sherma: pritaikytas atvejis"
+        }
+      },
+      "workedExample": {
+        "kicker": "Veiktas pavyzdys",
+        "heading": "BTW deklaracijų pateikimas be rankinio pakartotinio įvedimo.",
+        "body": "Tas pats principas, taikomas dažniausiai pasikartojančiai formai. Vienas šablonas, vienas subjektas vienu metu, keturis kartus per metus, amžinai.",
+        "before": "Kažkas surenka skaičius, iš naujo įveda juos į deklaraciją, patikrina juos pagal knygą ir paduoda prieš terminą. Kiekvieną ketvirtį kiekvienam klientui, nieko neperkeliant, išskyrus skaičiuoklę.",
+        "after": "Sherma atidaro darbą iš padavimo kalendoriaus, sukuria deklaraciją iš sąskaitų faktūrų jau gautuosiuose, klausia tik apie skaičius, kurių negali gauti, ir pateikia užbaigtą deklaraciją kaip dvynį.",
+        "linkLabel": "Pasikalbėkite su savo padavimo kalendoriumi",
+        "emailSubject": "Sherma ketvirčio padavimo darbo eiga",
+        "card": {
+          "label": "BTW grąžinimas",
+          "period": "2026 m. 3 ketvirtis",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Esybė",
+              "value": "Klientas B.V."
+            },
+            {
+              "label": "Laikotarpis",
+              "value": "2026 m. 3 ketvirtis"
+            },
+            {
+              "label": "Suderintos sąskaitos faktūros",
+              "value": "41/44"
+            },
+            {
+              "label": "Trūksta skaičių",
+              "value": "3 – pažymėtas",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Grąžinti paruoštą",
+          "summary": "3 Skaičiai turi patvirtinti prieš pateikiant paraišką.",
+          "actionLabel": "Peržiūra ir failas",
+          "actionNote": "Reikalinga žmogaus kontrolė",
+          "note": "Iliustracinės figūros. Jūsų paties santykis matuojamas pirmąja grąža."
+        }
+      },
+      "control": {
+        "kicker": "Kontroliuojama autonomija",
+        "heading": "savarankiškumas neprarandant atskaitomybės.",
+        "body": "AI pirmiausia kiekviename žingsnyje. Žmogus įeina tą akimirką, kurios negalima atšaukti, ir tik tada.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Viskas, kas yra grįžtama, yra automatinė",
+            "body": "Skaitymas, modeliavimas, užpildymas, persekiojimas, surinkimas. Darbams, kuriuos galima tiesiog perdaryti, patvirtinimo nereikia."
+          },
+          {
+            "icon": "lock",
+            "title": "Viskas negrįžtama sustoja",
+            "body": "Pateikimas yra taškas, iš kurio negalima grįžti, todėl jis laukia jūsų. Jei portalui reikia asmeninio kredencialo, jūs jį laikote, o ne Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "Dvynys, kurį patvirtinate, yra tas, kuris veikia",
+            "body": "Jei tiesioginė forma pasikeičia jums patvirtinus, patvirtinimas yra negaliojantis ir jis vis tiek grįžta jums, o ne vykdomas."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Įstrigo būsena, o ne tyla",
+            "body": "Jei Sherma negali ko nors užbaigti, ji nurodo, kuriame lauke ir kodėl, o liko laiko tai veikti."
+          }
+        ],
+        "boundary": {
+          "label": "Sherma darbo riba",
+          "badges": [
+            "Apimti laukai",
+            "Patvirtinti įrankiai"
+          ],
+          "steps": [
+            {
+              "label": "Gauti",
+              "title": "Gauta forma"
+            },
+            {
+              "label": "Imituoti",
+              "title": "repetuoti prieš dvynį"
+            },
+            {
+              "label": "Pildyti",
+              "title": "Taikomas įrašas, klausė spragų"
+            },
+            {
+              "label": "Patikrinti",
+              "title": "Dvynys pilnas ir patikrintas"
+            }
+          ],
+          "approvalLabel": "patvirtinti arba eskaluoti",
+          "executionLabel": "Vykdyti ir įrašyti",
+          "sourceNote": "Šaltinis įrašytas kiekvienam laukui",
+          "guarantee": "patvirtintas dvynys = kas vykdoma"
+        }
+      },
+      "leadCapture": {
+        "kicker": "masteliu",
+        "heading": "Balta etiketė Sherma pagal mastelį.",
+        "body": "Ši santrauka skirta organizacijoms, kurios nori, kad Sherma būtų įtraukta į savo darbo eigą – tūkstantis formų vienu metu, o ne vienkartinis padavimas.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Kur turėtų bėgti Sherma ir kiek formų?",
+        "ctaLabel": "Paruoškite mano Sherma trumpą",
+        "successHeading": "Jūsų trumpas pranešimas yra paruoštas.",
+        "successBody": "Atidarykite savo el. pašto programą, kad išsiųstumėte ją, kai būsite pasiruošę.",
+        "emailLabel": "Siųsti trumpą pranešimą el",
+        "privacyNote": "Jūsų trumpas lieka šioje naršyklėje, kol nuspręsite ją siųsti el. paštu.",
+        "emailSubject": "Balta etiketė Sherma pagal mastelį"
+      },
+      "footer": {
+        "tagline": "Sherma užpildo jūsų formas iš to, ką jau turite faile, tada parodo užpildytą versiją prieš ką nors siunčiant.",
+        "groups": [
+          {
+            "label": "Galimybės",
+            "links": [
+              {
+                "label": "Formos suvartojimas",
+                "target": "meet"
+              },
+              {
+                "label": "Modeliavimas",
+                "target": "about"
+              },
+              {
+                "label": "Patvirtinimas ir įrašymas",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Įmonė",
+            "links": [
+              {
+                "label": "Naudojimo atvejai",
+                "target": "use-cases"
+              },
+              {
+                "label": "Susisiekti",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Pradėti",
+            "links": [
+              {
+                "label": "Susipažinkite su Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "et",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulatsioon",
+          "target": "about"
+        },
+        {
+          "label": "Kuidas see toimib",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Kasutusjuhud",
+          "target": "use-cases"
+        },
+        {
+          "label": "Kontroll",
+          "target": "trust"
+        },
+        {
+          "label": "Kontakt",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Tutvuge Shermaga"
+    },
+    "badge": "SIMULATSIOON-EKST LE VORMIDE AUTOMAATIKA",
+    "headline": "Agent, kes täidab teie kõrgeima riski vormid ja näitab kõigepealt oma tööd.",
+    "subheadline": "Sherma loeb vormi, proovib selle täitmist selle duubli vastu, küsib ainult seda, mida ta veel ei tea, ja näitab teile täpselt, mis esitatakse. Midagi ei jõua päris vormini, kuni te seda ütlete.",
+    "ctaLabel": "Tutvuge Shermaga",
+    "secondaryCtaLabel": "Vaadake, kuidas see toimib",
+    "featureTags": [
+      "Harjutatud enne, kui see päris on",
+      "Mida heaks kiidate, see läheb sisse",
+      "Iga välja kirje"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Tere, olen Sherma. Saatke mulle veidlapa ja ma harjutan kogu täitmist duubli vastu enne, kui midagi päris saab."
+      },
+      {
+        "role": "user",
+        "text": "Näidake mulle, mida leidsite."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Veebis · simulatsiooni liivakast",
+      "inputPlaceholder": "Küsite Shermalt vormist...",
+      "suggestedPrompts": [
+        "Näidake puuduvaid välju",
+        "Kuvage duubli eelvaade",
+        "Kuidas kinnitamine toimib?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma oma kontoris"
+    },
+    "contact": {
+      "heading": "Tooge üks vorm, mida te juba täidate.",
+      "body": "Käitage Shermat omaenda töö päris vormi vastu ja võrrelge duubli sellega, mida teie meeskond tootis.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "JÄRGMINE VORM",
+      "heading": "Tooge üks vorm, mida te juba täidate.",
+      "body": "Käitage Shermat omaenda töö päris vormi vastu ja võrrelge duubli sellega, mida teie meeskond tootis.",
+      "ctaLabel": "Rääkige Shermaga"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "NÄIDIS DEMO",
+        "demoNote": "Ainult illustratiivne simulatsioon · Ühtegi päris portaali ega isikuandmeid ei kasutata",
+        "openingReply": "Lugesin vormi, ehitasin duubli ja täitsin 26 välja 30-st teie heakskiidetud kirjest. Neli küsimust jääb. Midagi ei puudutanud päris vormi.",
+        "greetingReply": "Tere, olen Sherma. Loen veidlapu, harjutan selle täitmist duubli vastu ja näitan teile täpselt, mis esitatakse. Midagi ei jõua päris vormini, kuni te seda ütlete.",
+        "instructionReply": "Alustamiseks laadige üles ekraanipildid vormist, mida soovite täita. JPEG, PNG või WebP · kuni 6 pilti. Ma eraldan küsimused ja ütlen teile, mida mul veel vaja on.",
+        "reviewReply": "Siin on duubel. See on täielik, kontrollitud ja endiselt reaalsest vormist eraldiseisvana. Mida te siin heaks kiidate, see on see, mis täidetakse, väli realt väljale.",
+        "approvedReply": "Demo heakskiidetud. täpne heakskiidetud duubel on käivitamiseks valmis ja iga väli säilitab oma allika.",
+        "escalatedReply": "Ohutult tagasi saadetud. Ühtegi arhiveerimist ei toimunud.",
+        "fallbackReply": "Küsin ainult tegelikult puuduvat teavet. Paluge mul näidata puuduvaid välju või duubli eelvaadet.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Laadige vormi ekraanipildid üles",
+          "uploadHint": "JPEG, PNG või WebP · kuni 6 pilti",
+          "analyzingLabel": "Loen vormi ja eraldan selle küsimused...",
+          "questionnaireHeading": "Teie eraldatud küsimustik",
+          "questionnaireBody": "Sherma leidis teie vormist tõelised küsimused. Vastake siin, piiratud vestluse kaudu või ühes viie minuti häälesessioonis.",
+          "answerPlaceholder": "Vastake järgmisele vormi küsimusele...",
+          "voiceLabel": "Vastake häälega · 5 min",
+          "reviewLabel": "Vaadake vastused üle",
+          "generateLabel": "Vaadake üle ja genereerige",
+          "signInHeading": "Sisselogimine täidetud koopiate genereerimiseks",
+          "signInBody": "Teie pildid, vastused ja eelvaade kolitakse pärast sisselogimist ühte privaatsesse Sherma seanssi.",
+          "expiryCopy": "Taotlemata eelvaated aeguvad tunni pärast.",
+          "errorCopy": "Sherma ei saanud seda pilti turvaliselt lugeda. Proovige selgemat JPEG, PNG või WebP ekraanipilti."
+        },
+        "trace": {
+          "label": "Sherma · Seansi jälg",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Vorm loetud",
+              "detail": "30 välja, 4 dokumenti, 2 tingimuslikku sektsiooni"
+            },
+            {
+              "state": "done",
+              "title": "Kaksik loodud",
+              "detail": "Töökoopia täidetud ja kontrollitud reaalsest versioonist väljaspool"
+            },
+            {
+              "state": "done",
+              "title": "Teie kirjest täidetud",
+              "detail": "26 30-st · iga vastus kannab oma allikat"
+            },
+            {
+              "state": "active",
+              "title": "Lüngad küsitud, mitte aimatud",
+              "detail": "4 küsimust vastatud vestluse kaudu"
+            },
+            {
+              "state": "pending",
+              "title": "Duubel ülevaatuseks valmis",
+              "detail": "Midagi ei puudutanud päris vormi"
+            }
+          ],
+          "reviewLabel": "Vaadake duubli üle"
+        },
+        "review": {
+          "label": "TEIE KINNITUS",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Juriidiline isik",
+              "value": "Sample Client B.V.",
+              "sourceLabel": "ALLIKAST"
+            },
+            {
+              "label": "Maksuidentifikaator",
+              "value": "NL•••••••B01",
+              "sourceLabel": "ALLIKAST"
+            },
+            {
+              "label": "Maksetingimused",
+              "value": "30 päeva",
+              "sourceLabel": "KINNITATUD"
+            },
+            {
+              "label": "Volitatud allakirjutaja",
+              "value": "Finantsdirektor",
+              "sourceLabel": "KINNITATUD"
+            }
+          ],
+          "approveLabel": "Kinnitage digitaalne koopia",
+          "sendBackLabel": "Tagasi saatmine"
+        },
+        "results": {
+          "approvedTitle": "Koopia kinnitatud",
+          "approvedBody": "Kinnitatud koopia on täitmiseks valmis · kõik allikad on säilinud",
+          "escalatedTitle": "Edukalt tagasi saadetud",
+          "escalatedBody": "Käik on peatatud inimese sisendi ootamiseks · midagi ei esitatud"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Vastuvõtt",
+          "detail": "Vorm vastu võetud"
+        },
+        {
+          "number": "02",
+          "title": "Simuleerimine",
+          "detail": "Esmalt harjutuslik täitmine"
+        },
+        {
+          "number": "03",
+          "title": "Kinnita",
+          "detail": "Teie ütlete jah"
+        },
+        {
+          "number": "04",
+          "title": "Esita ja tõesta",
+          "detail": "Tõend on säilitatud"
+        }
+      ],
+      "principle": {
+        "kicker": "PÕHIMÕTE",
+        "heading": "Loodud usaldusväärsuseks.\nJuhitud simulatsiooniga.",
+        "body": "Iga vormi harjutatakse enne täitmist. Sherma loob pärisvormist digitaalse koopia, teeb kogu täitmise sellel koopial ja näitab seda teile täielikuna.\n\nKoopia, mille te kinnitate, on see, mis täidetakse. Mitte selle kokkuvõte ega kirjeldus. Samad väljad, samad väärtused, samas järjekorras.",
+        "traceLabel": "Sherma seansi jälg",
+        "traceId": "SH-2291",
+        "traceMeta": "Seanss #SH-2291 · 12s möödunud",
+        "traceStatus": "AKTIIVNE",
+        "traceBody": "Loodud esitamisteks, mis ei tohi eksida, mitte demoetenduseks.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Vorm tuvastatud",
+            "status": "done",
+            "detail": "BTW-deklaratsioon, Q3 2026 — kliendi üksus sobitatud.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Küsimustik koostatud",
+            "status": "done",
+            "detail": "26 välja eeltäidetud arvetest. 4 välja vajavad teie sisendit.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Vastused kinnitatud",
+            "status": "done",
+            "detail": "Kogutud vestluse teel alla 3 minuti jooksul.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulatsioon lõpetatud",
+            "status": "active",
+            "detail": "Proovisõit portaali vastu — 0 viga leitud.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Valmis esitamiseks",
+          "body": "Digitaalne koopia on enne esitamist ülevaatamiseks valmis.",
+          "approveLabel": "Vaata üle ja kinnita",
+          "escalateLabel": "Escalda"
+        },
+        "guaranteesKicker": "KUIDAS SHERMA KÄITUB",
+        "guaranteesHeading": "Kuus asja, mis kehtivad iga vormi puhul.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "Piiratud sellele vormile, mis talle anti",
+            "body": "Sherma puudutab ainult vormi ja talle määratud kirjeid. Miski muu teie süsteemides ei ole ulatuses."
+          },
+          {
+            "icon": "sparkles",
+            "title": "Harjutatud enne, kui see päris on",
+            "body": "Kogu täitmine toimub esmalt koopial. Pärisvormi puudutatakse ühe korra, vastusega, mille täielikkus on juba teada."
+          },
+          {
+            "icon": "users",
+            "title": "Inimese kinnitus tagasipöördumatuse punktis",
+            "body": "Kõik pööratav toimib automaatselt. Kõik, mida ei saa tagasi võtta, ootab inimest."
+          },
+          {
+            "icon": "check",
+            "title": "Koopia on plaan",
+            "body": "See, mida kinnitate, on bait-haaval see, mis esitatakse. Kui vorm all muutub, kaotab kinnitus kehtivuse ja tuleb teile tagasi."
+          },
+          {
+            "icon": "search",
+            "title": "Igal vastusel on allikas",
+            "body": "Milline dokument, milline kolleeg, milline kuupäev. Kui keegi hiljem numbrit kahtluse alla seab, saate näidata, kust see pärineb."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Eskaleerimine, mitte kunagi vaikne ebaõnnestumine",
+            "body": "Puuduvaid andmeid ei arvata. Sherma leiab, kes teab, ja küsib vestluse või kõne teel, ning annab teada, kui see on kinni jäänud."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "MIS MUUTUB",
+        "heading": "Viige esitamine oma laualt ära, kuid ärge viige seda oma radarilt eemale.",
+        "body": "Töö lakkab olemast midagi, mida inimene teeb, ja muutub millekski, mida inimene kinnitab. See on kogu erinevus.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Vasta kord, kasuta kõikjal",
+            "body": "See, mida kinnitate, muutub osaks teie kirjest. Järgmine struktuurilt sarnane vorm algab enamasti juba vastatuna.",
+            "metric": {
+              "label": "VÄLJAD, MIS TÄIDETI ILMA KÜSIMATA",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Esimene vorm, viies vorm, kahekümnes vorm. Illustratiivne."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Tähtajad ei ole enam segadust",
+            "body": "Sherma töötab öösel ja nädalavahetustel. Viimased nelikümmend kaheksa tundi on mõeldud ülevaatamiseks, mitte kokkupanekuks."
+          },
+          {
+            "icon": "lock",
+            "title": "Kontrolli jääb alles, seda ei loovutata",
+            "body": "Simulatsioon, selgesõnaline kinnitus ja iga toimingu jälg. Miski ei käivitu ilma teieta."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "PROTSESS",
+        "heading": "Kuidas Sherma vormi algusest lõpuni täidab.",
+        "body": "Kuus sammu. Sherma teeb nelja neist küsima. Kahe inimese jaoks märgitud sammu puhul ei saa otsust edasi anda.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Vastuvõtt",
+            "body": "Vormi URL, edastatud e-kiri või portaal, mida Sherma jälgib. See võtab vormi üles ja avab selle.",
+            "output": "Vorm leitud"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simuleerimine",
+            "body": "Sherma loob vormist koopia ja teeb kogu täitmise selle vastu. Väljareeglid, tingimuslikud jaotised ja dokumendinõuded tulevad esile siin, mitte tähtajal.",
+            "output": "Kaksik loodud"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Täida sellest, mida ta teab",
+            "body": "Teie kirje vastab enamikule. Iga väärtus kannab oma allikat, et näeksite, kust number pärineb ja millal viimati kinnitati.",
+            "output": "Enamik välju täidetud"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Küsi lünkade kohta",
+            "body": "Ainult seda, mida ta tõesti ei tea. Vestluse teel või kõne teel, kui see on kiireloomuline ja keegi pole vastanud. Ta jälitab, kuni vastus on käes.",
+            "output": "Lüngad suletud"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Kinnitage koopia",
+            "body": "Täidetud vorm sellisena, nagu see esitatakse. Muutke, mida soovite, ja kinnitage see. See on tagasipöördumatu punkt, seega on see teie.",
+            "output": "Kinnitatud kaksik"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Käivita ja salvesta",
+            "body": "Sherma täidab tegeliku vormi kinnitatud koopiaga ja tagastab iga välja kirje. Kui portaal vajab isiklikku sisselogimist, annab ta valmis vormi teile saatmiseks üle.",
+            "output": "Esitatud, kirjas"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "KUS SEE KEHTIB",
+        "heading": "Mõeldud nendele vormidele, mis ei tohi eksida.",
+        "body": "Sama agent, sama põhimõte. Muutub kirje, millest ta ammutab, ja portaal, millega ta töötab.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Maksu- ja KM-deklaratsioonid",
+            "body": "Kvartali BTW/GST/KM deklaratsioonid, esitatud arvetest, mis juba postkastis ootavad — sama vorm, iga kvartal, iga kliendi jaoks.",
+            "steps": [
+              "Esitamise töö avatud tähtajast",
+              "Arved sobitatud, KM arvutatud",
+              "Küsimustik — ainult lüngad",
+              "Deklaratsioon esitatud, digitaalne koopia kinnitatud"
+            ],
+            "connections": [
+              "Esitamise portaal (BTW / GST / KM)",
+              "Arvete postkast",
+              "Raamatupidamistarkvara"
+            ],
+            "note": "Maksuportaalid nõuavad isiklikku riiklikku volitust, näiteks eHerkenning. Sherma valmistab deklaratsiooni täielikult ette ja raamatupidaja esitab selle oma sisselogimisega. See ei allkirjasta teie eest."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Tarnijate ja vedajate liitmine",
+            "body": "Igal ostjal ja vedajal on oma portaal. Samad ettevõtte andmed, sertifikaadid ja poliitikad sisestatakse igaühe jaoks nullist.",
+            "steps": [
+              "Portaali kutse saadud",
+              "Registreerimine taaskasutatud varasematest täitmistest",
+              "Aegunud dokumendid märgistatud ja värskendatud",
+              "Liitmine lõpetatud, kinnitus säilitatud"
+            ],
+            "connections": [
+              "Ostjate ja vedajate portaalid",
+              "Registreerimis-, KM- ja pangarekvisiidid",
+              "Kindlustuse ja poliitika tõendid"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Turvaküsimustikud",
+            "body": "Klientide turvaküsimustikud, mis kordavad samu kontrolle, poliitikaid ja tõendeid, samas kui iga tähtaeg jääb lõplikuks.",
+            "steps": [
+              "Küsimustik kliendilt saadud",
+              "Kontrollid sobitatud heakskiidetud kirjega",
+              "Küsimustik — ainult lüngad",
+              "Pakk koostatud, koopia kinnitatud"
+            ],
+            "connections": [
+              "Klientide turvaportaalid",
+              "Poliitikate ja kontrollide teek",
+              "Sertifikaadid ja auditi tõendid"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Partnerite ja kanalite nõuded",
+            "body": "Turundusfondid ja koostöö nõuded koos tulemuste tõenditega, üks tarnija vorm korraga, kus akna vahelejätmine tähendab eraldise kaotamist.",
+            "steps": [
+              "Fondi teatis postkastist üles võetud",
+              "Tulemuste tõend koostatud",
+              "Nõue sobitatud selle tarnija vormiga",
+              "Nõue valmis enne akna sulgemist"
+            ],
+            "connections": [
+              "Tarnijate partnerite portaalid",
+              "Kviitungid ja kampaania tõendid",
+              "Eraldise ja aegumise jälgimine"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Kindlustusvormid",
+            "body": "Uuendused ja paigutused, mis on prognoositavad, tõendirohked ja valdavalt muutumatud võrreldes viimase heakskiidetud esitamisega.",
+            "steps": [
+              "Uuenduse teatis üles võetud",
+              "Eelmise aasta vastused laaditud",
+              "Ainult muudatusi küsitud",
+              "Vorm valmis, kirje värskendatud"
+            ],
+            "connections": [
+              "Maakleri ja kindlustusandja portaalid",
+              "Poliitika ajakavad ja tõendid",
+              "Eelmiste aastate esitamise ajalugu"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Pakkumised, toetused ja esitised",
+            "body": "Valikuküsimustikud, rahastustaotlused ja esitised, mis kordavad organisatsiooni tõendeid, samas kui iga tähtaeg jääb lõplikuks.",
+            "steps": [
+              "Teatis sobitatud teie profiiliga",
+              "Iga küsimus välja võetud, ühtegi ei jäetud vahele",
+              "Organisatsioonilised jaotised kirje põhjal vastatud",
+              "Pakk koostatud, koopia kinnitatud"
+            ],
+            "connections": [
+              "Pakkumiste ja rahastajate portaalid",
+              "Kontod, kindlustused, sertifikaadid",
+              "Poliitikate ja viidete teek"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Teie kasutusjuht",
+            "body": "Ei näe oma töövoogu? Kirjeldage vormi, portaali või esitist ja me kavandame kohandatud Sherma jooksu selle ümber.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "KOHandatud TÖÖVOOGU VASTUVÕTT",
+          "body": "Jagage korduvat vormi või portaali, mis teie meeskonda aeglustab. See demo hoiab lühiülevaate teie brauseris ja valmistab ette e-posti edastuse.",
+          "ctaLabel": "Valmista mu Sherma lühiülevaade",
+          "note": "Ainult näidispäring · sellelt lehelt ei edastata midagi",
+          "successHeading": "Teie Sherma lühiülevaade on valmis.",
+          "successBody": "Avage oma e-posti klient, et saata eeltäidetud lühiülevaade, kui olete valmis.",
+          "editLabel": "Muuda kasutusjuhtu",
+          "emailSubject": "Tutvu Shermaga: kohandatud kasutusjuht"
+        }
+      },
+      "workedExample": {
+        "kicker": "NÄIDE TÖÖST",
+        "heading": "BTW deklaratsioonide esitamine ilma käsitsi uuesti sisestamiseta.",
+        "body": "Sama põhimõte, rakendatuna kõige korduvamale vormile. Üks mall, üks üksus korraga, neli korda aastas, igavesti.",
+        "before": "Keegi kogub arvud kokku, sisestab need uuesti deklaratsiooni, kontrollib neid pearaamatu vastu ja esitab enne tähtaega. Iga kvartal, iga kliendi puhul, ilma et midagi edasi kantaks, välja arvatud arvutustabel.",
+        "after": "Sherma avab töö esitamiskalendrist, koostab deklaratsiooni juba postkastis olevatest arvetest, küsib ainult nende arvude kohta, mida ta ei suuda tuletada, ning esitab valmis deklaratsiooni kaksikuna.",
+        "linkLabel": "Arutage oma esitamiskalendrit",
+        "emailSubject": "Sherma kvartaalne esitamise töövoog",
+        "card": {
+          "label": "BTW deklaratsioon",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Üksus",
+              "value": "Client B.V."
+            },
+            {
+              "label": "Periood",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "Vastendatud arved",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Puuduvad arvud",
+              "value": "3 — märgistatud",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Deklaratsioon on valmis",
+          "summary": "3 arvu vajavad enne esitamist teie kinnitust.",
+          "actionLabel": "Vaata üle ja esita",
+          "actionNote": "Vajalik on inimese kontroll",
+          "note": "Näidatud arvud on illustratiivsed. Teie oma suhet mõõdetakse esimese deklaratsiooniga."
+        }
+      },
+      "control": {
+        "kicker": "KONTROLLITUD AUTONOOMIA",
+        "heading": "Autonoomia ilma vastutusest loobumata.",
+        "body": "AI esimesena igal sammul. Inimene astub sisse ainult hetkel, mida ei saa tagasi võtta, ja alles siis.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Kõik, mis on pööratav, on automaatne",
+            "body": "Lugemine, simuleerimine, täitmine, järelkäimine, koostamine. Heakskiitu ei vaja töö, mida saab lihtsalt uuesti teha."
+          },
+          {
+            "icon": "lock",
+            "title": "Kõik, mis on pöördumatu, seiskub",
+            "body": "Esitamine on tagasipöördumatu hetk, seega ootab see teid. Kui portaal vajab isiklikke volitusi, hoiate neid teie, mitte Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "Kaksik, mille te heaks kiidate, on see, mis käivitub",
+            "body": "Kui reaalajas vorm pärast teie heakskiitu muutub, on heakskiit kehtetu ja see tuleb teile tagasi, selle asemel et see ikkagi täidetaks."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Kinnijäämine on olek, mitte vaikimine",
+            "body": "Kui Sherma ei suuda midagi lõpetada, ütleb ta teile, milline väli ja miks, koos järelejäänud tegutsemisajaga."
+          }
+        ],
+        "boundary": {
+          "label": "SHERMA TÖÖ PIIR",
+          "badges": [
+            "Piiritletud väljad",
+            "Heakskiidetud tööriistad"
+          ],
+          "steps": [
+            {
+              "label": "VASTU VÕTTA",
+              "title": "Vorm vastu võetud"
+            },
+            {
+              "label": "SIMULEERI",
+              "title": "Harjuta kaksiku peal"
+            },
+            {
+              "label": "TÄIDA",
+              "title": "Kirje rakendatud, lünkade kohta küsitud"
+            },
+            {
+              "label": "KINNITA",
+              "title": "Kaksik valmis ja kontrollitud"
+            }
+          ],
+          "approvalLabel": "Kinnita või eskaleeri",
+          "executionLabel": "Käivita ja salvesta",
+          "sourceNote": "Iga välja allikas on salvestatud",
+          "guarantee": "Heakskiidetud kaksik = see, mis täidetakse"
+        }
+      },
+      "leadCapture": {
+        "kicker": "MAHUKALT",
+        "heading": "Sherma valgekaubamärgina mahukalt.",
+        "body": "See lühikirjeldus on organisatsioonidele, kes soovivad Shermat oma brändi all oma töövoogu integreerida — tuhat vormi korraga, mitte ühekordne esitamine.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Kus peaks Sherma töötama ja umbes mitu vormi?",
+        "ctaLabel": "Valmista mu Sherma lühiülevaade",
+        "successHeading": "Teie lühikirjeldus on valmis.",
+        "successBody": "Avage e-posti klient, et see valmisolekul saata.",
+        "emailLabel": "Saada lühikirjeldus e-postiga",
+        "privacyNote": "Teie lühikirjeldus püsib selles brauseris, kuni otsustate selle e-postiga saata.",
+        "emailSubject": "Sherma valgekaubamärgina mahukalt"
+      },
+      "footer": {
+        "tagline": "Sherma täidab teie vormid sellega, mis teil juba failis on, ja näitab teile seejärel täidetud versiooni enne, kui midagi saadetakse.",
+        "groups": [
+          {
+            "label": "Võimalused",
+            "links": [
+              {
+                "label": "Vormide vastuvõtt",
+                "target": "meet"
+              },
+              {
+                "label": "Simulatsioon",
+                "target": "about"
+              },
+              {
+                "label": "Kinnitus ja kirje",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Ettevõte",
+            "links": [
+              {
+                "label": "Kasutusjuhud",
+                "target": "use-cases"
+              },
+              {
+                "label": "Kontakt",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Alustage",
+            "links": [
+              {
+                "label": "Tutvuge Shermaga",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

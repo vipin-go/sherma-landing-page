@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "ro",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulare",
+          "target": "about"
+        },
+        {
+          "label": "Cum functioneaza",
+          "target": "how-it-works"
+        },
+        {
+          "label": "cazuri de utilizare",
+          "target": "use-cases"
+        },
+        {
+          "label": "Controla",
+          "target": "trust"
+        },
+        {
+          "label": "Contact",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Faceți cunoștință cu Sherma"
+    },
+    "badge": "Simulare-prima automatizare a formularului",
+    "headline": "Un agent care completează formularele cu cele mai mari mize și își arată mai întâi munca.",
+    "subheadline": "Sherma citește formularul, repetă completarea împotriva unui geamăn, întreabă doar ceea ce nu știe deja și vă arată exact ce va fi trimis. Nimic nu ajunge la forma reală până când nu spui asta.",
+    "ctaLabel": "Faceți cunoștință cu Sherma",
+    "secondaryCtaLabel": "Vezi cum funcționează",
+    "featureTags": [
+      "repetat înainte de a fi real",
+      "Ceea ce aprobi este ceea ce intră",
+      "o înregistrare a fiecărui câmp"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Bună, sunt Sherma. Trimite-mi un formular și voi repeta întreaga umplere împotriva unui geamăn înainte ca ceva să fie real."
+      },
+      {
+        "role": "user",
+        "text": "Arată-mi ce ai găsit."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Simulare Sandbox",
+      "inputPlaceholder": "Întrebați-o pe Sherma despre un formular...",
+      "suggestedPrompts": [
+        "Afișați câmpurile lipsă",
+        "Previzualizează geamănul",
+        "Cum funcționează aprobarea?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma în biroul ei"
+    },
+    "contact": {
+      "heading": "Aduceți un formular pe care îl completați deja.",
+      "body": "Conduceți Sherma cu o formă reală din propria dvs. muncă și comparați geamănul cu ceea ce a produs echipa dvs.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "următoarea formă",
+      "heading": "Aduceți un formular pe care îl completați deja.",
+      "body": "Conduceți Sherma cu o formă reală din propria dvs. muncă și comparați geamănul cu ceea ce a produs echipa dvs.",
+      "ctaLabel": "Vorbește cu Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Exemplu de demonstrație",
+        "demoNote": "Numai simulare ilustrativă · Nu se utilizează portal real sau date personale",
+        "openingReply": "Am citit formularul, am construit un geamăn și am completat 26 din 30 de câmpuri din înregistrarea dvs. aprobată. Rămân patru întrebări. Nimic nu a atins forma reală.",
+        "greetingReply": "Bună, sunt Sherma. Am citit un formular, repet completarea împotriva unui geamăn și vă arăt exact ce ar fi trimis. Nimic nu ajunge la forma reală până când nu spui asta.",
+        "instructionReply": "Pentru a începe, încărcați capturi de ecran ale formularului pe care doriți să îl completați. JPEG, PNG sau WebP · Până la 6 imagini. Voi extrage întrebările și vă voi spune de ce mai am nevoie.",
+        "reviewReply": "Aici este geamănul. Este complet, bifat și încă separat de formularul live. Ceea ce aprobați aici este ceea ce se execută, câmp pentru câmp.",
+        "approvedReply": "Aprobat în demo. Geamănul exact aprobat este gata de executat și fiecare câmp își păstrează sursa.",
+        "escalatedReply": "trimis înapoi în siguranță. Nu a avut loc nicio depunere.",
+        "fallbackReply": "Cer doar informații care lipsesc cu adevărat. Cereți-mi să arăt câmpurile lipsă sau să previzualesc geamănul.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Încărcați capturi de ecran din formular",
+          "uploadHint": "JPEG, PNG sau WebP · Până la 6 imagini",
+          "analyzingLabel": "Citirea formularului și extragerea întrebărilor acestuia...",
+          "questionnaireHeading": "Chestionarul dvs. extras",
+          "questionnaireBody": "Sherma a găsit întrebările adevărate în formularul tău. Răspundeți aici, prin chat restricționat sau într-o sesiune de voce de cinci minute.",
+          "answerPlaceholder": "Răspundeți la următoarea întrebare de formular...",
+          "voiceLabel": "Răspuns prin voce · 5 min",
+          "reviewLabel": "Revizuirea răspunsurilor",
+          "generateLabel": "Examinați și generați",
+          "signInHeading": "Conectați-vă pentru a genera copii completate",
+          "signInBody": "Imaginile, răspunsurile și previzualizarea dvs. se vor muta într-o sesiune privată Sherma după conectare.",
+          "expiryCopy": "Previzualizările nerevendicate expiră după o oră.",
+          "errorCopy": "Sherma nu putea citi această imagine în siguranță. Încercați o captură de ecran mai clară JPEG, PNG sau WebP."
+        },
+        "trace": {
+          "label": "Sherma · Urma sesiunii",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Formular de citire",
+              "detail": "30 de câmpuri, 4 documente, 2 secțiuni condiționate"
+            },
+            {
+              "state": "done",
+              "title": "geamăn construit",
+              "detail": "o copie de lucru completată și bifată pe cea live"
+            },
+            {
+              "state": "done",
+              "title": "completat din dosarul dvs",
+              "detail": "26 din 30 · Fiecare răspuns își poartă sursa"
+            },
+            {
+              "state": "active",
+              "title": "Golurile cerute, nu ghicite",
+              "detail": "4 întrebări la care s-a răspuns prin chat"
+            },
+            {
+              "state": "pending",
+              "title": "Geamăn gata de revizuire",
+              "detail": "Nimic nu a atins forma reală"
+            }
+          ],
+          "reviewLabel": "Revizuiește geamănul"
+        },
+        "review": {
+          "label": "aprobarea ta",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Entitate legala",
+              "value": "Exemplu de client B.V.",
+              "sourceLabel": "sursă"
+            },
+            {
+              "label": "Identificator fiscal",
+              "value": "nl•••••••B01",
+              "sourceLabel": "sursă"
+            },
+            {
+              "label": "Termeni de plată",
+              "value": "30 de zile",
+              "sourceLabel": "Confirmat"
+            },
+            {
+              "label": "semnatar autorizat",
+              "value": "Director Financiar",
+              "sourceLabel": "Confirmat"
+            }
+          ],
+          "approveLabel": "aproba geamănul",
+          "sendBackLabel": "Trimite inapoi"
+        },
+        "results": {
+          "approvedTitle": "Twin Aprobat",
+          "approvedBody": "geamănul aprobat este gata să execute · Fiecare sursă reținută",
+          "escalatedTitle": "trimis înapoi în siguranță",
+          "escalatedBody": "Executarea este întreruptă pentru intrarea umană · Nu a fost depus nimic"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Admisie",
+          "detail": "Formularul preluat"
+        },
+        {
+          "number": "02",
+          "title": "Simula",
+          "detail": "Practicați mai întâi umpleți"
+        },
+        {
+          "number": "03",
+          "title": "Aproba",
+          "detail": "Tu spui da"
+        },
+        {
+          "number": "04",
+          "title": "Fișier și demonstrare",
+          "detail": "dovada este păstrată"
+        }
+      ],
+      "principle": {
+        "kicker": "principiul",
+        "heading": "construit pentru a fi de încredere. guvernat de simulare.",
+        "body": "Fiecare formular este repetat înainte de a fi completat. Sherma construiește un geamăn al formei reale, lucrează întreaga umplere împotriva acelui geamăn și ți-l arată complet. Geamănul pe care îl aprobați este cel care se execută. Nu un rezumat al acestuia, nici o descriere a acestuia. Aceleași câmpuri, aceleași valori, în aceeași ordine.",
+        "traceLabel": "Urmă de sesiune Sherma",
+        "traceId": "SH-2291",
+        "traceMeta": "Sesiunea #SH-2291 · 12s s-au scurs",
+        "traceStatus": "Activ",
+        "traceBody": "Construit pentru dosare care nu își pot permite să fie greșite, nu pentru teatrul demonstrativ.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "formular detectat",
+            "status": "done",
+            "detail": "BTW-Aangifte, Q3 2026 — Entitatea client potrivită.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Chestionar generat",
+            "status": "done",
+            "detail": "26 de câmpuri precompletate din facturi. 4 Aveți nevoie de contribuția dvs.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Răspunsurile confirmate",
+            "status": "done",
+            "detail": "colectate prin chat în mai puțin de 3 minute.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulare finalizată",
+            "status": "active",
+            "detail": "Dry run împotriva portalului - 0 erori găsite.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "gata de depunere",
+          "body": "Digital Twin este gata pentru revizuire înainte de a fi trimis ceva.",
+          "approveLabel": "Examinați și aprobați",
+          "escalateLabel": "Escalada"
+        },
+        "guaranteesKicker": "Cum se comportă Sherma",
+        "guaranteesHeading": "Șase lucruri care rămân adevărate pentru fiecare formă.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "încadrat în forma care i-a fost dată",
+            "body": "Sherma atinge formularul și înregistrările pe care i le-ați atribuit. Nimic altceva în sistemele dumneavoastră nu este în domeniul de aplicare."
+          },
+          {
+            "icon": "sparkles",
+            "title": "repetat înainte de a fi real",
+            "body": "Întreaga umplere are loc mai întâi pe un geamăn. Formularul live este atins o dată, cu un răspuns deja cunoscut a fi complet."
+          },
+          {
+            "icon": "users",
+            "title": "Aprobarea umană în punctul fără întoarcere",
+            "body": "Totul reversibil rulează automat. Orice lucru care nu poate fi anulat așteaptă o persoană."
+          },
+          {
+            "icon": "check",
+            "title": "geamănul este planul",
+            "body": "Ceea ce aprobați este octet pentru octet ceea ce este trimis. Dacă formularul se schimbă dedesubt, aprobarea este nulă și vă revine."
+          },
+          {
+            "icon": "search",
+            "title": "Fiecare răspuns are o sursă",
+            "body": "care document, care coleg, care data. Dacă cineva întreabă o cifră mai târziu, puteți arăta de unde a venit."
+          },
+          {
+            "icon": "question-mark",
+            "title": "escaladare, niciodată eșec tăcut",
+            "body": "Datele lipsă nu sunt ghicite. Sherma găsește cine știe și întreabă, prin chat sau prin apel și îți spune dacă este blocat."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "ce se schimba",
+        "heading": "Mutați pila de pe birou, nu de pe radar.",
+        "body": "Munca încetează să fie ceva ce face o persoană și devine ceva ce o persoană aprobă. Asta este toată diferența.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Răspunde o dată, reutiliza peste tot",
+            "body": "Ceea ce confirmați devine parte din înregistrarea dvs. Următoarea formă similară din punct de vedere structural începe în mare parte răspuns.",
+            "metric": {
+              "label": "câmpuri pline fără să vă întrebe",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Prima formă, a cincea formă, a douăzecea formă. ilustrativ."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "termenele limită nu mai sunt o luptă",
+            "body": "Sherma lucrează peste noapte și în weekend. Ultimele patruzeci și opt de ore sunt pentru revizuire, nu pentru asamblare."
+          },
+          {
+            "icon": "lock",
+            "title": "Controlul este păstrat, nu este schimbat",
+            "body": "simulare, o aprobare explicită și o înregistrare a fiecărei acțiuni. Nimic nu trage fără tine."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "Procesul",
+        "heading": "Cum completează Sherma un formular, de la început până la sfârșit.",
+        "body": "șase pași. Sherma conduce patru dintre ele fără să întrebe. Cele două marcate pentru o persoană sunt cele două în care decizia nu poate fi predată.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Admisie",
+            "body": "un formular URL, un e-mail redirecționat sau un portal ceas Sherma. Preia formularul și îl deschide.",
+            "output": "formular situat"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simula",
+            "body": "Sherma construiește un geamăn al formularului și lucrează întreaga umplere împotriva lui. Regulile de teren, secțiunile condiționate și cerințele documentelor apar aici, nu la termenul limită.",
+            "output": "geamăn construit"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "umple din ceea ce știe",
+            "body": "Dosarul tău răspunde în cea mai mare parte. Fiecare valoare își poartă sursa, astfel încât să puteți vedea de unde provine o figură și când a fost confirmată ultima dată.",
+            "output": "Cele mai multe domenii făcute"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Cereți golurile",
+            "body": "Doar ceea ce nu știe cu adevărat. prin chat, sau prin apel dacă este urgent și nimeni nu a răspuns. Urmărește până când are răspunsul.",
+            "output": "goluri închise"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Confirmați geamănul",
+            "body": "Formularul completat așa cum va fi trimis. Schimbați orice doriți, apoi aprobați-l. Acesta este punctul fără întoarcere, deci este al tău.",
+            "output": "Twin aprobat"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "executa si inregistreaza",
+            "body": "Sherma completează formularul real cu geamănul aprobat și returnează o înregistrare a fiecărui câmp. În cazul în care un portal are nevoie de o autentificare personală, acesta vă înmânează formularul terminat pentru a vă trimite.",
+            "output": "depus, în dosar"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "unde se aplică",
+        "heading": "Construit pentru formele care nu își pot permite să greșească.",
+        "body": "Același agent, același principiu. Ceea ce se schimbă este înregistrarea din care trage și portalul împotriva căruia funcționează.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Depunere de taxe și TVA",
+            "body": "Declarații trimestriale BTW/GST/TVA, depuse din facturile aflate deja în căsuța de e-mail - aceeași formă, în fiecare trimestru, pentru fiecare client.",
+            "steps": [
+              "Locul de muncă deschis de la termenul limită",
+              "facturi potrivite, TVA calculat",
+              "Chestionar — Numai lacune",
+              "Return filed, digital twin confirmed"
+            ],
+            "connections": [
+              "Portal de depunere (BTW / GST / TVA)",
+              "Inbox de factură",
+              "Software de contabilitate"
+            ],
+            "note": "Portalurile fiscale necesită o acreditare guvernamentală personală, cum ar fi Eherkenning. Sherma pregătește declarația integrală, iar contabilul o depune sub propria conectare. nu va semna ca tine."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Integrarea vânzătorului și a transportatorului",
+            "body": "Fiecare cumpărător și transportator are propriul portal. Aceleași detalii de companie, certificate și politici, introduse de la zero pentru fiecare.",
+            "steps": [
+              "Invitație portală primită",
+              "Înregistrarea este reutilizată de la umplerile anterioare",
+              "Documentele expirate semnalate și reîmprospătate",
+              "integrarea finalizată, confirmarea păstrată"
+            ],
+            "connections": [
+              "Portaluri de cumpărători și transportatori",
+              "Înregistrare, TVA și detalii bancare",
+              "Dovezi de asigurare și poliță"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Chestionare de securitate",
+            "body": "Evaluările de securitate ale clienților care repetă aceleași controale, politici și dovezi, în timp ce fiecare termen limită rămâne definitiv.",
+            "steps": [
+              "Chestionar primit de la client",
+              "controalele potrivite cu înregistrarea aprobată",
+              "Chestionar — Numai lacune",
+              "pachet asamblat, geamăn confirmat"
+            ],
+            "connections": [
+              "Portaluri de securitate pentru clienți",
+              "Biblioteca de politici și control",
+              "certificate și probe de audit"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Revendicări pentru parteneri și canal",
+            "body": "Fondurile de marketing și revendicările cooperative cu dovada performanței, un format de furnizor la un moment dat, în care pierderea ferestrei înseamnă pierderea alocației.",
+            "steps": [
+              "Anunțul de fond preluat din căsuța de e-mail",
+              "Dovada performanței asamblată",
+              "revendicare potrivită cu formatul furnizorului respectiv",
+              "Revendicați gata înainte ca fereastra să se închidă"
+            ],
+            "connections": [
+              "Portaluri de parteneri furnizori",
+              "Chitanțe și dovezi ale campaniei",
+              "Alocarea și urmărirea expirării"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Formulare de asigurare",
+            "body": "reînnoiri și plasamente care sunt previzibile, grele de dovezi și în mare parte neschimbate față de ultima depunere aprobată.",
+            "steps": [
+              "Anunțul de reînnoire a fost ridicat",
+              "Răspunsurile de anul trecut au fost încărcate",
+              "Doar modificările au fost interogate",
+              "Formular gata, înregistrare actualizată"
+            ],
+            "connections": [
+              "Portaluri de broker și asigurător",
+              "Programele de politică și dovezile",
+              "Istoricul depunerilor din anul anterior"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Licitații, granturi și dosare",
+            "body": "Chestionare de selecție, cereri de finanțare și dosare care repetă dovezile organizaționale în timp ce fiecare termen limită rămâne definitiv.",
+            "steps": [
+              "Notă potrivită cu profilul dvs",
+              "Fiecare întrebare extrasă, niciuna nu a fost skimmed",
+              "Secțiunile organizaționale au răspuns din înregistrare",
+              "pachet asamblat, geamăn confirmat"
+            ],
+            "connections": [
+              "portaluri de licitație și de finanțare",
+              "Conturi, asigurări, certificări",
+              "Policy and reference library"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "cazul dvs. de utilizare",
+            "body": "Nu vă vedeți fluxul de lucru? Descrieți formularul, portalul sau depunerea și vom găsi o cursă personalizată Sherma în jurul lui.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Admisia fluxului de lucru personalizat",
+          "body": "Partajați forma sau portalul recurent care vă încetinește echipa. Această demonstrație păstrează brief-ul în browser și pregătește un transfer de e-mail.",
+          "ctaLabel": "Pregătește-mi brief-ul Sherma",
+          "note": "Numai aportul eșantionului · Nu se transmite nimic din această pagină",
+          "successHeading": "brief-ul tău Sherma este gata.",
+          "successBody": "Deschideți clientul de e-mail pentru a trimite brief-ul pre-completat când sunteți gata.",
+          "editLabel": "Editați cazul de utilizare",
+          "emailSubject": "Faceți cunoștință cu Sherma: caz de utilizare personalizat"
+        }
+      },
+      "workedExample": {
+        "kicker": "Un exemplu lucrat",
+        "heading": "Depunerea declarațiilor BTW fără reintrarea manuală.",
+        "body": "Același principiu, aplicat formei cele mai repetate care există. Un șablon, o entitate la un moment dat, de patru ori pe an, pentru totdeauna.",
+        "before": "Cineva adună figurile, le re-cheie în retur, le verifică în registru și fișiere înainte de termenul limită. În fiecare trimestru, pentru fiecare client, fără nimic reportat în afară de o foaie de calcul.",
+        "after": "Sherma deschide jobul din calendarul de depunere, construiește returnarea din facturile aflate deja în căsuța de e-mail, întreabă doar despre cifrele pe care nu le poate obține și prezintă declarația completată ca geamănă.",
+        "linkLabel": "Talk through your filing calendar",
+        "emailSubject": "Flux de lucru de depunere trimestrial Sherma",
+        "card": {
+          "label": "BTW Return",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Entitate",
+              "value": "Clientul B.V."
+            },
+            {
+              "label": "Perioadă",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "facturile potrivite",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Cifrele lipsă",
+              "value": "3 — Flagged",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Reveniți gata",
+          "summary": "3 cifre au nevoie de confirmarea dvs. înainte de a depune.",
+          "actionLabel": "Revizuire și fișier",
+          "actionNote": "Controlul uman este necesar",
+          "note": "figuri ilustrative. Propriul raport este măsurat la primul randament."
+        }
+      },
+      "control": {
+        "kicker": "autonomie controlată",
+        "heading": "autonomie fără a pierde responsabilitatea.",
+        "body": "AI mai întâi la fiecare pas. O persoană intră într-un moment care nu poate fi anulată și numai atunci.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Totul reversibil este automat",
+            "body": "Citirea, simularea, umplerea, urmărirea, asamblarea. Nu este nevoie de aprobare pentru lucrări care pot fi pur și simplu refăcute."
+          },
+          {
+            "icon": "lock",
+            "title": "Totul ireversibil se oprește",
+            "body": "Trimiterea este punctul fără întoarcere, așa că te așteaptă. Acolo unde un portal are nevoie de o acreditare personală, tu o ții, nu Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "geamănul pe care îl aprobi este cel care aleargă",
+            "body": "Dacă formularul live se modifică după ce aprobi, aprobarea este nulă și se întoarce la tine, mai degrabă decât la executare oricum."
+          },
+          {
+            "icon": "question-mark",
+            "title": "blocat este o stare, nu o tăcere",
+            "body": "Dacă Sherma nu poate termina ceva, vă spune ce domeniu și de ce, cu timp rămas pentru a acționa asupra lui."
+          }
+        ],
+        "boundary": {
+          "label": "Limita de locuri de muncă Sherma",
+          "badges": [
+            "Câmpuri cu scop",
+            "Instrumente aprobate"
+          ],
+          "steps": [
+            {
+              "label": "A primi",
+              "title": "formular primit"
+            },
+            {
+              "label": "Simula",
+              "title": "repetă împotriva unui geamăn"
+            },
+            {
+              "label": "Umple",
+              "title": "înregistrare aplicată, lacune cerute"
+            },
+            {
+              "label": "Verifica",
+              "title": "Geamăn completă și verificată"
+            }
+          ],
+          "approvalLabel": "aproba sau escaladează",
+          "executionLabel": "executa si inregistreaza",
+          "sourceNote": "Sursă înregistrată pentru fiecare câmp",
+          "guarantee": "Aprobat Twin = Ce se execută"
+        }
+      },
+      "leadCapture": {
+        "kicker": "la scară",
+        "heading": "White-label Sherma la scară.",
+        "body": "Acest brief este pentru organizațiile care doresc ca Sherma să fie etichetată în propriul flux de lucru - o mie de formulare la un moment dat, nu o depunere unică.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Unde ar trebui să alerge Sherma și aproximativ câte forme?",
+        "ctaLabel": "Pregătește-mi brief-ul Sherma",
+        "successHeading": "Brief-ul tău este gata.",
+        "successBody": "Deschideți clientul de e-mail pentru a-l trimite când sunteți gata.",
+        "emailLabel": "Send the brief by email",
+        "privacyNote": "Brief-ul dvs. rămâne în acest browser până când alegeți să-l trimiteți prin e-mail.",
+        "emailSubject": "Sherma cu etichetă albă la scară"
+      },
+      "footer": {
+        "tagline": "Sherma vă completează formularele din ceea ce aveți deja în dosar, apoi vă arată versiunea finalizată înainte de a trimite ceva.",
+        "groups": [
+          {
+            "label": "Capabilitati",
+            "links": [
+              {
+                "label": "admisia formularului",
+                "target": "meet"
+              },
+              {
+                "label": "Simulare",
+                "target": "about"
+              },
+              {
+                "label": "Aprobare și înregistrare",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Companie",
+            "links": [
+              {
+                "label": "cazuri de utilizare",
+                "target": "use-cases"
+              },
+              {
+                "label": "Contact",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Sa incepem",
+            "links": [
+              {
+                "label": "Faceți cunoștință cu Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

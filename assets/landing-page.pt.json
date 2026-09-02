@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "pt",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulação",
+          "target": "about"
+        },
+        {
+          "label": "Como funciona",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Casos de uso",
+          "target": "use-cases"
+        },
+        {
+          "label": "Controlar",
+          "target": "trust"
+        },
+        {
+          "label": "Contato",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Conheça Sherma"
+    },
+    "badge": "Automação de primeiro formulário de simulação",
+    "headline": "Um agente que preenche seus formulários mais caros e mostra seu trabalho primeiro.",
+    "subheadline": "Sherma lê o formulário, ensaia o preenchimento contra um gêmeo, pergunta apenas o que ele ainda não sabe e mostra exatamente o que será enviado. Nada atinge a forma real até que você diga.",
+    "ctaLabel": "Conheça Sherma",
+    "secondaryCtaLabel": "Veja como funciona",
+    "featureTags": [
+      "ensaiado antes de ser real",
+      "O que você aprova é o que entra",
+      "Um registro de cada campo"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Olá, sou Sherma. Envie-me um formulário e ensaiarei todo o preenchimento contra um gêmeo antes que qualquer coisa seja real."
+      },
+      {
+        "role": "user",
+        "text": "Mostre-me o que você encontrou."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Sandbox de simulação",
+      "inputPlaceholder": "Pergunte a Sherma sobre um formulário…",
+      "suggestedPrompts": [
+        "Mostrar campos ausentes",
+        "Visualize o gêmeo",
+        "Como funciona a aprovação?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma em seu escritório"
+    },
+    "contact": {
+      "heading": "Traga um formulário que você já preenche.",
+      "body": "Execute Sherma contra uma forma real de seu próprio trabalho e compare o gêmeo com o que sua equipe produziu.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "o próximo formulário",
+      "heading": "Traga um formulário que você já preenche.",
+      "body": "Execute Sherma contra uma forma real de seu próprio trabalho e compare o gêmeo com o que sua equipe produziu.",
+      "ctaLabel": "Fale com Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Exemplo de demonstração",
+        "demoNote": "Simulação ilustrativa apenas · Nenhum portal real ou dados pessoais são usados",
+        "openingReply": "Eu li o formulário, construí um gêmeo e preenchi 26 dos 30 campos do seu registro aprovado. Restam quatro questões. Nada tocou a forma real.",
+        "greetingReply": "Olá, sou Sherma. Eu leio um formulário, ensaizo o preenchimento contra um gêmeo dele e mostro exatamente o que seria enviado. Nada atinge a forma real até que você diga.",
+        "instructionReply": "Para começar, faça upload de capturas de tela do formulário que você deseja preencher. JPEG, PNG ou WebP · Até 6 imagens. Vou extrair as perguntas e dizer o que ainda preciso.",
+        "reviewReply": "Aqui está o gêmeo. Ele está completo, verificado e ainda separado do formulário ao vivo. O que você aprova aqui é o que executa, campo para campo.",
+        "approvedReply": "Aprovado na demonstração. O gêmeo aprovado exato está pronto para ser executado e cada campo retém sua origem.",
+        "escalatedReply": "enviado de volta com segurança. Nenhum arquivamento ocorreu.",
+        "fallbackReply": "Peço apenas informações que estejam realmente faltando. Peça-me para mostrar os campos ausentes ou pré-visualize o gêmeo.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Carregar capturas de tela do formulário",
+          "uploadHint": "JPEG, PNG ou WebP · Até 6 imagens",
+          "analyzingLabel": "Lendo o formulário e extraindo suas perguntas...",
+          "questionnaireHeading": "Seu questionário extraído",
+          "questionnaireBody": "Sherma encontrou as questões reais em seu formulário. Responda aqui, por bate-papo restrito ou em uma sessão de voz de cinco minutos.",
+          "answerPlaceholder": "Responda a próxima pergunta do formulário...",
+          "voiceLabel": "Resposta por voz · 5 min",
+          "reviewLabel": "Revise as respostas",
+          "generateLabel": "Reveja e gere",
+          "signInHeading": "Faça login para gerar cópias preenchidas",
+          "signInBody": "Suas imagens, respostas e pré-visualização serão movidas para uma sessão privada do Sherma após o login.",
+          "expiryCopy": "As visualizações não reclamadas expiram após uma hora.",
+          "errorCopy": "Sherma não conseguia ler esta imagem com segurança. Experimente uma captura de tela JPEG, PNG ou WebP mais clara."
+        },
+        "trace": {
+          "label": "Sherma · Traço da sessão",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Leitura do formulário",
+              "detail": "30 campos, 4 documentos, 2 seções condicionais"
+            },
+            {
+              "state": "done",
+              "title": "gêmeo construído",
+              "detail": "Uma cópia de trabalho preenchida e marcada a live"
+            },
+            {
+              "state": "done",
+              "title": "preenchido a partir do seu registro",
+              "detail": "26 de 30 · Cada resposta carrega sua fonte"
+            },
+            {
+              "state": "active",
+              "title": "As lacunas perguntadas, não adivinhadas",
+              "detail": "4 perguntas respondidas por chat"
+            },
+            {
+              "state": "pending",
+              "title": "Gêmeo pronto para revisão",
+              "detail": "Nada tocou a forma real"
+            }
+          ],
+          "reviewLabel": "Revise o gêmeo"
+        },
+        "review": {
+          "label": "sua aprovação",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Entidade jurídica",
+              "value": "Exemplo de cliente B.V.",
+              "sourceLabel": "Fonte"
+            },
+            {
+              "label": "Identificador fiscal",
+              "value": "NL••••••B01",
+              "sourceLabel": "Fonte"
+            },
+            {
+              "label": "Condições de pagamento",
+              "value": "30 dias",
+              "sourceLabel": "Confirmado"
+            },
+            {
+              "label": "signatário autorizado",
+              "value": "Diretor Financeiro",
+              "sourceLabel": "Confirmado"
+            }
+          ],
+          "approveLabel": "Aprove o gêmeo",
+          "sendBackLabel": "Devolver"
+        },
+        "results": {
+          "approvedTitle": "gêmeo aprovado",
+          "approvedBody": "O gêmeo aprovado está pronto para ser executado · Todas as fontes retidas",
+          "escalatedTitle": "enviado com segurança de volta",
+          "escalatedBody": "A execução é pausada para entrada humana · Nada foi arquivado"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Entrada",
+          "detail": "formulário recolhido"
+        },
+        {
+          "number": "02",
+          "title": "Simular",
+          "detail": "Pratique o preenchimento primeiro"
+        },
+        {
+          "number": "03",
+          "title": "Aprovar",
+          "detail": "Você diz sim"
+        },
+        {
+          "number": "04",
+          "title": "Arquivo e Prove",
+          "detail": "A prova é mantida"
+        }
+      ],
+      "principle": {
+        "kicker": "O princípio",
+        "heading": "Construído para ser confiável. governado por simulação.",
+        "body": "Todos os formulários são ensaiados antes de serem preenchidos. Sherma constrói um gêmeo da forma real, trabalha todo o preenchimento contra aquele gêmeo e mostra-o completo. O gêmeo que você aprova é aquele que executa. Não é um resumo disso, nem uma descrição dele. Os mesmos campos, os mesmos valores, na mesma ordem.",
+        "traceLabel": "Rastreamento da sessão Sherma",
+        "traceId": "SH-2291",
+        "traceMeta": "Sessão #SH-2291 · 12s decorridos",
+        "traceStatus": "Ativo",
+        "traceBody": "Construído para arquivos que não podem ser errados, não o teatro de demonstração.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "formulário detectado",
+            "status": "done",
+            "detail": "BTW-AANGIFTE, Q3 2026 — Entidade cliente correspondida.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "questionário gerado",
+            "status": "done",
+            "detail": "26 campos pré-preenchidos em faturas. 4 Precisa de sua entrada.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Respostas confirmadas",
+            "status": "done",
+            "detail": "Recolhido por chat em menos de 3 minutos.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulação completa",
+            "status": "active",
+            "detail": "Dry run contra o portal — 0 erros encontrados.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Pronto para arquivar",
+          "body": "O gêmeo digital está pronto para revisão antes de qualquer coisa ser enviada.",
+          "approveLabel": "Revise e aprove",
+          "escalateLabel": "Escalar"
+        },
+        "guaranteesKicker": "Como Sherma se comporta",
+        "guaranteesHeading": "Seis coisas que permanecem verdadeiras em todos os formulários.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "dimensionado para o formulário que foi fornecido",
+            "body": "Sherma toca no formulário e nos registros que você atribuiu a ele. Nada mais em seus sistemas está no escopo."
+          },
+          {
+            "icon": "sparkles",
+            "title": "ensaiado antes de ser real",
+            "body": "Todo o preenchimento acontece em um gêmeo primeiro. A forma ao vivo é tocada uma vez, com uma resposta já conhecida por estar completa."
+          },
+          {
+            "icon": "users",
+            "title": "Aprovação humana no ponto sem retorno",
+            "body": "Tudo reversível é executado automaticamente. Qualquer coisa que não possa ser desfeita espera por uma pessoa."
+          },
+          {
+            "icon": "check",
+            "title": "O gêmeo é o plano",
+            "body": "O que você aprova é byte para byte o que é enviado. Se o formulário mudar por baixo, a aprovação será anulada e voltará para você."
+          },
+          {
+            "icon": "search",
+            "title": "Cada resposta tem uma fonte",
+            "body": "Qual documento, qual colega, qual data. Se alguém consultar uma figura posteriormente, você pode mostrar de onde veio."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Escalonamento, nunca falha silenciosa",
+            "body": "Os dados ausentes não são adivinhados. Sherma encontra quem sabe e pergunta, por bate-papo ou por ligação, e informa se está travado."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "O que muda",
+        "heading": "Mova o arquivo para fora de sua mesa, não fora de seu radar.",
+        "body": "O trabalho deixa de ser algo que uma pessoa faz e se torna algo que uma pessoa aprova. Essa é toda a diferença.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Answer once, reuse everywhere",
+            "body": "O que você confirma se torna parte do seu registro. A próxima forma estruturalmente semelhante começa principalmente respondida.",
+            "metric": {
+              "label": "Campos preenchidos sem perguntar",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Primeira forma, quinta forma, vigésima forma. ilustrativo."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Prazos deixam de ser uma disputa",
+            "body": "Sherma trabalha durante a noite e nos fins de semana. As últimas quarenta e oito horas são para revisão, não para montagem."
+          },
+          {
+            "icon": "lock",
+            "title": "O controle é mantido, não negociado",
+            "body": "Simulação, uma aprovação explícita e um registro de cada ação. Nada dispara sem você."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "o processo",
+        "heading": "Como Sherma preenche um formulário, do início ao fim.",
+        "body": "Seis passos. Sherma administra quatro deles sem perguntar. Os dois marcados para uma pessoa são os dois em que a decisão não pode ser entregue.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Entrada",
+            "body": "Um URL de formulário, um e-mail encaminhado ou um portal Sherma assiste. Ele pega o formulário e o abre.",
+            "output": "formulário localizado"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simular",
+            "body": "Sherma constrói um gêmeo da forma e trabalha todo o preenchimento contra ele. Regras de campo, seções condicionais e requisitos de documentos, tudo aparece aqui, não dentro do prazo.",
+            "output": "gêmeo construído"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Preencha pelo que sabe",
+            "body": "Seu registro responde a maior parte dele. Cada valor carrega sua fonte, então você pode ver de onde veio uma figura e quando foi confirmada pela última vez.",
+            "output": "A maioria dos campos feitos"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Peça as lacunas",
+            "body": "Somente o que realmente não sabe. por chat, ou por ligação, se for urgente e ninguém respondeu. Ele persegue até ter a resposta.",
+            "output": "lacunas fechadas"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Confirme o gêmeo",
+            "body": "O formulário preenchido conforme será enviado. Altere o que quiser e aprove. Este é o ponto sem retorno, então é seu.",
+            "output": "gêmeo aprovado"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Executar e gravar",
+            "body": "Sherma preenche o formulário real com o gêmeo aprovado e retorna um registro de cada campo. Quando um portal precisa de um login pessoal, ele entrega o formulário finalizado para você enviar.",
+            "output": "Arquivado, registrado"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "onde se aplica",
+        "heading": "Construído para os formulários que não podem estar errados.",
+        "body": "Mesmo agente, mesmo princípio. O que muda é o registro do qual ele extrai e o portal contra o qual trabalha.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Arquivamento de impostos e IVA",
+            "body": "Devoluções trimestrais de BTW/GST/VAT, arquivadas a partir das faturas já na caixa de entrada – o mesmo formulário, a cada trimestre, para cada cliente.",
+            "steps": [
+              "Trabalho de arquivamento aberto a partir do prazo",
+              "Faturas correspondidas, IVA calculado",
+              "Questionário — apenas lacunas",
+              "Return filed, digital twin confirmed"
+            ],
+            "connections": [
+              "Portal de arquivamento (BTW / GST / IVA)",
+              "Caixa de entrada da fatura",
+              "Software de contabilidade"
+            ],
+            "note": "Os portais fiscais exigem uma credencial do governo pessoal, como Eherkenning. Sherma prepara a devolução integralmente e o contador o arquiva em seu próprio login. Ele não vai assinar como você."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Integração de fornecedores e operadoras",
+            "body": "Cada comprador e transportador tem seu próprio portal. Os mesmos detalhes da empresa, certificados e políticas inseridos do zero para cada um.",
+            "steps": [
+              "Convite do portal recebido",
+              "Registro reutilizado de preenchimentos anteriores",
+              "Documentos expirados sinalizados e atualizados",
+              "Integração concluída, a confirmação mantida"
+            ],
+            "connections": [
+              "Portais do comprador e da operadora",
+              "Registro, IVA e dados bancários",
+              "Provas de seguro e seguro"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "questionários de segurança",
+            "body": "As revisões de segurança do cliente que repetem os mesmos controles, políticas e evidências enquanto todos os prazos permanecem finais.",
+            "steps": [
+              "questionário recebido do cliente",
+              "Controles correspondidos ao registro aprovado",
+              "Questionário — apenas lacunas",
+              "Pacote montado, gêmeo confirmado"
+            ],
+            "connections": [
+              "Portais de segurança do cliente",
+              "Biblioteca de política e controle",
+              "Certificados e evidências de auditoria"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Reivindicações para parceiros e canais",
+            "body": "Fundos de marketing e sinistros cooperativos Com o Proof of Performance, um formato de fornecedor de cada vez, onde perder a janela significa perder a alocação.",
+            "steps": [
+              "Aviso de fundo retirado da caixa de entrada",
+              "Prova de desempenho montada",
+              "Reivindicação correspondente ao formato desse fornecedor",
+              "Reivindicação pronta antes que a janela se feche"
+            ],
+            "connections": [
+              "Portais de parceiros de fornecedores",
+              "Recibos e provas de campanha",
+              "Alocação e rastreamento de expiração"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "formulários de seguro",
+            "body": "Renovações e colocações previsíveis, pesadas em evidências e, na maioria das vezes, inalteradas em relação ao último envio aprovado.",
+            "steps": [
+              "Aviso de renovação retirado",
+              "As respostas do ano passado carregadas",
+              "Apenas as alterações consultadas",
+              "Pronto para formulário, registro atualizado"
+            ],
+            "connections": [
+              "Portais de corretor e seguradora",
+              "Cronogramas e evidências de políticas",
+              "Histórico de envios do ano anterior"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Concursos, bolsas e arquivamentos",
+            "body": "Questionários de seleção, pedidos de financiamento e arquivos que repetem as evidências organizacionais enquanto todos os prazos permanecem finais.",
+            "steps": [
+              "Aviso correspondente ao seu perfil",
+              "Todas as perguntas extraídas, nenhuma descumpriu",
+              "Seções organizacionais respondidas a partir do registro",
+              "Pacote montado, gêmeo confirmado"
+            ],
+            "connections": [
+              "Portais de licitação e financiadores",
+              "Contas, seguros, certificações",
+              "Biblioteca de políticas e referências"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Seu caso de uso",
+            "body": "Não vê seu fluxo de trabalho? Descreva o formulário, o portal ou o arquivamento e teremos um escopo de uma execução de Sherma personalizada em torno dele.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Entrada de fluxo de trabalho personalizado",
+          "body": "Compartilhe o formulário ou o portal recorrentes que estão deixando sua equipe mais lenta. Esta demonstração mantém o brief no seu navegador e prepara uma transferência por e-mail.",
+          "ctaLabel": "Prepare meu brief de Sherma",
+          "note": "Somente ingestão de amostra · Nada é transmitido desta página",
+          "successHeading": "Seu Sherma Brief está pronto.",
+          "successBody": "Abra seu cliente de e-mail para enviar o resumo pré-preenchido quando estiver pronto.",
+          "editLabel": "Editar o caso de uso",
+          "emailSubject": "Conheça Sherma: caso de uso personalizado"
+        }
+      },
+      "workedExample": {
+        "kicker": "Um exemplo trabalhado",
+        "heading": "O arquivamento de retornos sem a reentrada manual.",
+        "body": "O mesmo princípio, aplicado à forma mais repetida que existe. Um modelo, uma entidade de cada vez, quatro vezes por ano, para sempre.",
+        "before": "Alguém reúne as figuras, os reinsere na devolução, verifica-os no livro-razão e arquivos antes do prazo. Cada trimestre, para cada cliente, sem nada além de uma planilha.",
+        "after": "Sherma abre o trabalho a partir do calendário de arquivamento, cria o retorno das faturas já na caixa de entrada, pergunta apenas sobre os números que não pode derivar e apresenta a devolução concluída como gêmeo.",
+        "linkLabel": "Fale através do seu calendário de arquivamentos",
+        "emailSubject": "Fluxo de trabalho de arquivamento trimestral de Sherma",
+        "card": {
+          "label": "BTW retorno",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Entidade",
+              "value": "Cliente B.V."
+            },
+            {
+              "label": "Período",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "Faturas correspondidas",
+              "value": "41/44"
+            },
+            {
+              "label": "faltando figuras",
+              "value": "3 — sinalizado",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Retorno pronto",
+          "summary": "3 figuras precisam de sua confirmação antes do arquivamento.",
+          "actionLabel": "Revisão e arquivo",
+          "actionNote": "Controle humano necessário",
+          "note": "Figuras ilustrativas. Sua própria proporção é medida no primeiro retorno."
+        }
+      },
+      "control": {
+        "kicker": "Autonomia controlada",
+        "heading": "Autonomia sem perder a responsabilidade.",
+        "body": "AI primeiro a cada passo. Uma pessoa entra no único momento que não pode ser desfeito, e só então.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "tudo reversível é automático",
+            "body": "Ler, simular, preencher, perseguir, montar. Nenhuma aprovação é necessária para o trabalho que pode simplesmente ser refeito."
+          },
+          {
+            "icon": "lock",
+            "title": "Tudo irreversível para",
+            "body": "A submissão é o ponto sem retorno, por isso espera por você. Quando um portal precisa de uma credencial pessoal, você a mantém, não Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "O gêmeo que você aprova é aquele que corre",
+            "body": "Se o formulário ao vivo mudar após a aprovação, a aprovação será anulada e voltará para você em vez de executar de qualquer maneira."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Stuck é um estado, não um silêncio",
+            "body": "Se Sherma não conseguir terminar algo, ele informa qual campo e por quê, com o tempo restante para agir sobre ele."
+          }
+        ],
+        "boundary": {
+          "label": "Limite de trabalho de Sherma",
+          "badges": [
+            "Campos com escopo",
+            "Ferramentas aprovadas"
+          ],
+          "steps": [
+            {
+              "label": "Receber",
+              "title": "formulário recebido"
+            },
+            {
+              "label": "Simular",
+              "title": "ensaiar contra um gêmeo"
+            },
+            {
+              "label": "Preencher",
+              "title": "Registro aplicado, lacunas solicitadas"
+            },
+            {
+              "label": "Verificar",
+              "title": "Twin completo e verificado"
+            }
+          ],
+          "approvalLabel": "Aprovar ou escalar",
+          "executionLabel": "Executar e gravar",
+          "sourceNote": "Fonte registrada para todos os campos",
+          "guarantee": "Twin aprovado = o que executa"
+        }
+      },
+      "leadCapture": {
+        "kicker": "em escala",
+        "heading": "Sherma de etiqueta branca em escala.",
+        "body": "Este resumo é para organizações que desejam que Sherma seja rotulada em seu próprio fluxo de trabalho – mil formulários de cada vez, não um processo único.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Onde Sherma deve ser executado e aproximadamente quantas formas?",
+        "ctaLabel": "Prepare meu brief de Sherma",
+        "successHeading": "Seu briefing está pronto.",
+        "successBody": "Abra seu cliente de e-mail para enviá-lo quando estiver pronto.",
+        "emailLabel": "Envie o resumo por e-mail",
+        "privacyNote": "Seu briefing permanece neste navegador até que você opte por enviá-lo por e-mail.",
+        "emailSubject": "Sherma de etiqueta branca em escala"
+      },
+      "footer": {
+        "tagline": "Sherma preenche seus formulários a partir do que você já possui em arquivo e mostra a versão concluída antes de qualquer coisa ser enviada.",
+        "groups": [
+          {
+            "label": "capacidades",
+            "links": [
+              {
+                "label": "entrada de formulários",
+                "target": "meet"
+              },
+              {
+                "label": "Simulação",
+                "target": "about"
+              },
+              {
+                "label": "Aprovação e registro",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Companhia",
+            "links": [
+              {
+                "label": "Casos de uso",
+                "target": "use-cases"
+              },
+              {
+                "label": "Contato",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Começar",
+            "links": [
+              {
+                "label": "Conheça Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

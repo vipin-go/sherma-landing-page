@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "ca",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulació",
+          "target": "about"
+        },
+        {
+          "label": "Com funciona",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Casos d'ús",
+          "target": "use-cases"
+        },
+        {
+          "label": "Control",
+          "target": "trust"
+        },
+        {
+          "label": "Contacte",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Conegueu Sherma"
+    },
+    "badge": "AUTOMATITZACIÓ DE FORMULARIS SIMULACIÓ-PRIMER",
+    "headline": "Un agent que emplena els vostres formularis de major risc i mostra primer la seva feina.",
+    "subheadline": "Sherma llegeix el formulari, assaja l'emplenament contra un besson, pregunta Només el que encara no sap i us mostra exactament el que s'enviarà. Res arriba al formulari real fins que dieu així.",
+    "ctaLabel": "Conegueu Sherma",
+    "secondaryCtaLabel": "Mira com funciona",
+    "featureTags": [
+      "Assajat abans que sigui real",
+      "El que approveu és el que va dins",
+      "Un registre de cada camp"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Hola, sóc Sherma. Envieu-me un formulari i assajaré tota l'emplenament contra un besson abans que res sigui real."
+      },
+      {
+        "role": "user",
+        "text": "Mostreu-me el que heu trobat."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "En línia · sandbox de simulació",
+      "inputPlaceholder": "Pregunteu a Sherma sobre un formulari...",
+      "suggestedPrompts": [
+        "Mostreu els camps que falten",
+        "Previsualitzeu el besson",
+        "Com funciona l'aprovació?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma al seu despatx"
+    },
+    "contact": {
+      "heading": "Porteu un formulari que ja empleneu.",
+      "body": "Executeu Sherma contra un formulari real del vostre propi treball i compareu el besson amb el que va produir el vostre equip.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "EL SEGÜENT FORMULARI",
+      "heading": "Porteu un formulari que ja empleneu.",
+      "body": "Executeu Sherma contra un formulari real del vostre propi treball i compareu el besson amb el que va produir el vostre equip.",
+      "ctaLabel": "Parleu amb Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "DEMO DE MOSTRA",
+        "demoNote": "Només simulació il·lustrativa · No s'utilitza cap portal real ni dades personals",
+        "openingReply": "He llegit el formulari, he construït un besson i he emplenat 26 de 30 camps del vostre registre aprovat. Queden quatre preguntes. Res ha tocat el formulari real.",
+        "greetingReply": "Hola, sóc Sherma. Llegeixo un formulari, assajo l'emplenament contra un besson i us mostro exactament el que s'enviarà. Res arriba al formulari real fins que dieu així.",
+        "instructionReply": "Per començar, pengeu captures de pantalla del formulari que voleu emplenar. JPEG, PNG o WebP · fins a 6 imatges. Extreuré les preguntes i us diré què encara necessito.",
+        "reviewReply": "Aquí teniu el besson. És complet, verificat i encara separat del formulari en directe. El que approveu aquí és el que s'executa, camp per camp.",
+        "approvedReply": "Aprovat a la demo. El besson exactament aprovat està llest per executar-se i cada camp reté el seu origen.",
+        "escalatedReply": "Retornat de manera segura. No s'ha produït cap arxivament.",
+        "fallbackReply": "Només pregunto per informació que realment falta. Demaneu-me que mostri els camps que falten o previsualitzi el besson.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": " pengeu captures de pantalla del formulari",
+          "uploadHint": "JPEG, PNG o WebP · fins a 6 imatges",
+          "analyzingLabel": "Llegint el formulari i extraient les seves preguntes...",
+          "questionnaireHeading": "El vostre qüestionari extret",
+          "questionnaireBody": "Sherma ha trobat les preguntes reals al vostre formulari. Responeu aquí, per xat restringit o en una sessió de veu de cinc minuts.",
+          "answerPlaceholder": "Responeu a la propera pregunta del formulari...",
+          "voiceLabel": "Responeu per veu · 5 min",
+          "reviewLabel": "Reviseu les respostes",
+          "generateLabel": "Reviseu i genereu",
+          "signInHeading": "Inicieu sessió per generar còpies emplenades",
+          "signInBody": "Les vostres imatges, respostes i previsualització es mouran a una sessió Sherma privada després de l'inici de sessió.",
+          "expiryCopy": "Les vistes prèvies no reclamades caduquen després d'una hora.",
+          "errorCopy": "Sherma no ha pogut llegir aquesta imatge de manera segura. Proveu una captura de pantalla JPEG, PNG o WebP més clara."
+        },
+        "trace": {
+          "label": "Sherma · Traç de sessió",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Formulari llegit",
+              "detail": "30 camps, 4 documents, 2 seccions condicionals"
+            },
+            {
+              "state": "done",
+              "title": "Bessó construït",
+              "detail": "Una còpia de treball emplenada i verificada fora de la versió en directe"
+            },
+            {
+              "state": "done",
+              "title": "Emplenat des del vostre registre",
+              "detail": "26 de 30 · cada resposta porta el seu origen"
+            },
+            {
+              "state": "active",
+              "title": "Les llacunes preguntades, no endevinades",
+              "detail": "4 preguntes respostes per xat"
+            },
+            {
+              "state": "pending",
+              "title": "Besson a punt per revisar",
+              "detail": "Res ha tocat el formulari real"
+            }
+          ],
+          "reviewLabel": "Reviseu el besson"
+        },
+        "review": {
+          "label": "LA TEVA APROVACIÓ",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Entitat jurídica",
+              "value": "Sample Client B.V.",
+              "sourceLabel": "OBTINGUT"
+            },
+            {
+              "label": "Identificador fiscal",
+              "value": "NL•••••••B01",
+              "sourceLabel": "OBTINGUT"
+            },
+            {
+              "label": "Condicions de pagament",
+              "value": "30 dies",
+              "sourceLabel": "CONFIRMAT"
+            },
+            {
+              "label": "Signant autoritzat",
+              "value": "Director financer",
+              "sourceLabel": "CONFIRMAT"
+            }
+          ],
+          "approveLabel": "Aprova el bessó",
+          "sendBackLabel": "Tornar"
+        },
+        "results": {
+          "approvedTitle": "Bessó aprovat",
+          "approvedBody": "El bessó aprovat està a punt per executar-se · totes les fonts conservades",
+          "escalatedTitle": "Tornat de manera segura",
+          "escalatedBody": "L'execució està en pausa per a l'entrada humana · no s'ha presentat res"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Ingrés",
+          "detail": "Formulari recollit"
+        },
+        {
+          "number": "02",
+          "title": "Simulació",
+          "detail": "Emplena't de pràctica primer"
+        },
+        {
+          "number": "03",
+          "title": "Aprova",
+          "detail": "Tu hi dius que sí"
+        },
+        {
+          "number": "04",
+          "title": "Presentar i acreditar",
+          "detail": "La prova es conserva"
+        }
+      ],
+      "principle": {
+        "kicker": "EL PRINCIPI",
+        "heading": "Dissenyat per generar confiança.\nGovernat per simulació.",
+        "body": "Cada formulari s'assaja abans d'omplir-se. Sherma crea un bessó del formulari real, fa tot l'emplenament contra aquest bessó i te'l mostra complet.\n\nEl bessó que aproves és el que s'executa. No un resum, no una descripció. Els mateixos camps, els mateixos valors, en el mateix ordre.",
+        "traceLabel": "Traça de sessió de Sherma",
+        "traceId": "SH-2291",
+        "traceMeta": "Sessió #SH-2291 · 12s transcorreguts",
+        "traceStatus": "ACTIU",
+        "traceBody": "Dissenyat per a tràmits que no poden fallar, no per a teatre de demos.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Formulari detectat",
+            "status": "done",
+            "detail": "Declaració de BTW, Q3 2026 — entitat del client coincideix.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Qüestionari generat",
+            "status": "done",
+            "detail": "26 camps emplenats prèviament des de factures. 4 necessiten la vostra entrada.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Respostes confirmades",
+            "status": "done",
+            "detail": "Recollides per xat en menys de 3 minuts.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulació completada",
+            "status": "active",
+            "detail": "Execució de prova contra el portal — 0 errors trobats.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Llest per presentar",
+          "body": "El bessó digital està a punt per revisar abans de presentar res.",
+          "approveLabel": "Revisa i aprova",
+          "escalateLabel": "Escalar"
+        },
+        "guaranteesKicker": "COM ES COMPORTA SHERMA",
+        "guaranteesHeading": "Sis coses que es mantenen en cada formulari.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "Limitat al formulari que se li ha assignat",
+            "body": "Sherma toca el formulari i els registres que li heu assignat. Res més en els vostres sistemes està en abast."
+          },
+          {
+            "icon": "sparkles",
+            "title": "Assajat abans que sigui real",
+            "body": "Tot l'emplenament passa primer per un bessó. El formulari en viu es toca un sol cop, amb una resposta que ja se sap completa."
+          },
+          {
+            "icon": "users",
+            "title": "Aprovació humana al punt de no retorn",
+            "body": "Tot allò reversible s'executa automàticament. Tot allò que no es pot desfer espera una persona."
+          },
+          {
+            "icon": "check",
+            "title": "El bessó és el pla",
+            "body": "El que aproves és byte per byte el que es presenta. Si el formulari canvia per sota, l'aprovació queda anul·lada i torna a tu."
+          },
+          {
+            "icon": "search",
+            "title": "Cada resposta té una font",
+            "body": "Quin document, quin company, quina data. Si més endavant algú qüestiona una xifra, pots mostrar d'on prové."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Escalada, mai un fracàs silenciós",
+            "body": "Les dades que falten no s'endevinen. Sherma troba qui ho sap i pregunta, per xat o per trucada, i us avisa si queda encallat."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "QUÈ CANVIA",
+        "heading": "Treu el tràmit del teu escriptori, però no del teu radar.",
+        "body": "El treball deixa de ser una cosa que fa una persona i es converteix en una cosa que una persona aprova. Aquesta és tota la diferència.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Respon una vegada, reutilitza arreu",
+            "body": "El que confirmes passa a formar part del teu registre. El proper formulari estructuralment similar comença gairebé respost.",
+            "metric": {
+              "label": "CAMPS OMPLERTS SENSE PREGUNTAR",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Primer formulari, cinquè formulari, vintè formulari. Illustratiu."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Els terminis deixen de ser un daltabaix",
+            "body": "Sherma treballa durant la nit i els caps de setmana. Les últimes quaranta-vuit hores són per revisar, no per muntar."
+          },
+          {
+            "icon": "lock",
+            "title": "El control es conserva, no es cedeix",
+            "body": "Simulació, aprovació explícita i registre de cada acció. Res no s'executa sense tu."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "EL PROCÉS",
+        "heading": "Com Sherma omple un formulari, de principi a fi.",
+        "body": "Sis passes. Sherma'n'en fa quatre sense demanar. Els dos marcats per a una persona són els dos on la decisió no es pot traspassar.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Ingrés",
+            "body": "Una URL de formulari, un correu reenviat o un portal que Sherma vigila. Agafa el formulari i l'obre.",
+            "output": "Formulari localitzat"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simulació",
+            "body": "Sherma construeix un bessó del formulari i fa tot l'emplenament contra ell. Les regles dels camps, les seccions condicionals i els requisits de documentació surten aquí, no en el termini.",
+            "output": "Bessó construït"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Emplena des del que sap",
+            "body": "El teu registre respon la major part. Cada valor porta la seva font, perquè puguis veure d'on ve una xifra i quan es va confirmar per darrera vegada.",
+            "output": "La majoria dels camps fets"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Demana pels buits",
+            "body": "Només allò que realment no sap. Per xat, o per trucada si és urgent i ningú ha respost. Persegueix la resposta fins que la té.",
+            "output": "Buits tancats"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Confirma el bessó",
+            "body": "El formulari completat tal com s'enviarà. Canvia el que vulguis i aprova'l. Aquest és el punt de no retorn, per tant és teu.",
+            "output": "Bessó aprovat"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Executa i registra",
+            "body": "Sherma omple el formulari real amb el bessó aprovat i retorna un registre de cada camp. Quan un portal necessita un inici de sessió personal, et lliura el formulari acabat perquè l'enviïs.",
+            "output": "Registrat, constància"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "ON S'APLIQUA",
+        "heading": "Pensat per als formularis que no es poden permetre errades.",
+        "body": "Mateix agent, mateix principi. El que canvia és el registre del qual s'alimenta i el portal contra el qual treballa.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Presentació d'impostos i IVA",
+            "body": "Declaracions trimestrals de BTW/GST/IVA, presentades a partir de les factures que ja són a la safata d'entrada — el mateix formulari, cada trimestre, per a cada client.",
+            "steps": [
+              "Feina de presentació oberta des del termini",
+              "Factures conciliades, IVA calculat",
+              "Qüestionari — només buits",
+              "Declaració presentada, bessó digital confirmat"
+            ],
+            "connections": [
+              "Portal de presentació (BTW / GST / IVA)",
+              "Safata d'entrada de factures",
+              "Programari de comptabilitat"
+            ],
+            "note": "Els portals fiscals requereixen una credencial governamental personal com ara eHerkenning. Sherma prepara la declaració al complet i el comptable la presenta amb el seu propi inici de sessió. No signarà per tu."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Incorporació de proveïdors i transportistes",
+            "body": "Cada comprador i transportista té el seu propi portal. Les mateixes dades de l'empresa, certificats i polítiques, introduïdes des de zero per a cadascun.",
+            "steps": [
+              "Invitació del portal rebuda",
+              "Registre reutilitzat d'emplenaments anteriors",
+              "Documents caducats marcats i refrescats",
+              "Incorporació completada, confirmació conservada"
+            ],
+            "connections": [
+              "Portals de compradors i transportistes",
+              "Registre, IVA i dades bancàries",
+              "Evidència d'assegurances i polítiques"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Qüestionaris de seguretat",
+            "body": "Revisions de seguretat dels clients que repeteixen els mateixos controls, polítiques i evidència mentre cada termini continua sent definitiu.",
+            "steps": [
+              "Qüestionari rebut del client",
+              "Controls coincidits amb el registre aprovat",
+              "Qüestionari — només buits",
+              "Paquet muntat, bessó confirmat"
+            ],
+            "connections": [
+              "Portals de seguretat dels clients",
+              "Biblioteca de polítiques i controls",
+              "Certificats i evidència d'auditoria"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Reclamacions de socis i canals",
+            "body": "Fons de màrqueting i reclamacions de cooperació amb prova de rendiment, un format de proveïdor a la vegada, on perdre la finestra significa perdre l'assignació.",
+            "steps": [
+              "Avís de fons recollit de la safata d'entrada",
+              "Prova de rendiment muntada",
+              "Reclamació coincidida amb el format d'aquest proveïdor",
+              "Reclamació llesta abans que es tanqui la finestra"
+            ],
+            "connections": [
+              "Portals de socis proveïdors",
+              "Rebuts i evidència de campanya",
+              "Seguiment de l'assignació i la caducitat"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Formularis d'assegurança",
+            "body": "Renovacions i col·locacions que són previsibles, carregades d'evidència i majoritàriament sense canvis respecte a l'última presentació aprovada.",
+            "steps": [
+              "Avís de renovació recollit",
+              "Respostes de l'any passat carregades",
+              "Només els canvis consultats",
+              "Formulari llest, registre actualitzat"
+            ],
+            "connections": [
+              "Portals de corredors i asseguradores",
+              "Programes de pòlisses i evidència",
+              "Historial de presentacions d'anys anteriors"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Licitacions, subvencions i presentacions",
+            "body": "Qüestionaris de selecció, sol·licituds de finançament i presentacions que repeteixen l'evidència organitzativa mentre cada termini continua sent definitiu.",
+            "steps": [
+              "Avís coincidit amb el teu perfil",
+              "Cada pregunta extreta, cap passada per alt",
+              "Seccions organitzatives respostes des del registre",
+              "Paquet muntat, bessó confirmat"
+            ],
+            "connections": [
+              "Portals de licitació i finançadors",
+              "Comptes, assegurances, certificacions",
+              "Biblioteca de polítiques i referències"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "El teu cas d'ús",
+            "body": "No veus el teu flux de treball? Descriu el formulari, portal o presentació i dissenyarem una execució personalitzada de Sherma al voltant.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "INGRÉS DE FLUX DE TREBALL PERSONALITZAT",
+          "body": "Comparteix el formulari o portal recurrent que està frenant el teu equip. Aquesta demo manté el brief al teu navegador i prepara un traspàs per correu.",
+          "ctaLabel": "Prepara el meu brief de Sherma",
+          "note": "Només ingrés de mostra · no es transmet res des d'aquesta pàgina",
+          "successHeading": "El teu brief de Sherma està llest.",
+          "successBody": "Obre el teu client de correu per enviar el brief preomplert quan estiguis llest.",
+          "editLabel": "Edita el cas d'ús",
+          "emailSubject": "Coneix Sherma: cas d'ús personalitzat"
+        }
+      },
+      "workedExample": {
+        "kicker": "UN EXEMPLE TREBALLAT",
+        "heading": "Presentar declaracions de BTW sense la reentrada manual.",
+        "body": "El mateix principi, aplicat al formulari més repetit que existeix. Una plantilla, una entitat a la vegada, quatre vegades l'any, per sempre.",
+        "before": "Algú reuneix les xifres, les torna a introduir a la declaració, les comprova amb el llibre major i les presenta abans del termini. Cada trimestre, per a cada client, sense traslladar res endavant tret d’un full de càlcul.",
+        "after": "Sherma obre la tasca des del calendari de presentació, construeix la declaració a partir de les factures que ja són a la safata d’entrada, només pregunta per les xifres que no pot deduir i presenta la declaració acabada com una bessona.",
+        "linkLabel": "Parleu sobre el vostre calendari de presentació",
+        "emailSubject": "Flux de treball de presentació trimestral de Sherma",
+        "card": {
+          "label": "Declaració BTW",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Entitat",
+              "value": "Client B.V."
+            },
+            {
+              "label": "Període",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "Factures conciliades",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Xifres que falten",
+              "value": "3 — marcat",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Declaració a punt",
+          "summary": "Cal la confirmació de 3 xifres abans de presentar.",
+          "actionLabel": "Revisa i presenta",
+          "actionNote": "Cal control humà",
+          "note": "Les xifres són il·lustratives. La vostra pròpia ràtio es mesura a la primera declaració."
+        }
+      },
+      "control": {
+        "kicker": "AUTONOMIA CONTROLADA",
+        "heading": "Autonomia sense perdre responsabilitat.",
+        "body": "IA primer a cada pas. Una persona intervé en l’únic moment que no es pot desfer, i només aleshores.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Tot allò reversible és automàtic",
+            "body": "Llegir, simular, omplir, perseguir, muntar. No cal aprovació per a feina que simplement es pot refer."
+          },
+          {
+            "icon": "lock",
+            "title": "Tot allò irreversible s’atura",
+            "body": "La presentació és el punt de no retorn, així que us espera. Quan un portal necessita credencials personals, les teniu vosaltres, no pas Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "La bessona que aproveu és la que s’executa",
+            "body": "Si el formulari en viu canvia després que l’aproveu, l’aprovació queda anul·lada i torna a vosaltres en lloc d’executar-se igualment."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Encallar-se és un estat, no un silenci",
+            "body": "Si Sherma no pot acabar alguna cosa, us indica quin camp i per què, amb el temps que queda per actuar."
+          }
+        ],
+        "boundary": {
+          "label": "LÍMIT DE FEINA DE SHERMA",
+          "badges": [
+            "Camps amb abast definit",
+            "Eines aprovades"
+          ],
+          "steps": [
+            {
+              "label": "REBRE",
+              "title": "Formulari rebut"
+            },
+            {
+              "label": "SIMULAR",
+              "title": "Assageu contra un bessó"
+            },
+            {
+              "label": "EMPLENAR",
+              "title": "Registre aplicat, llacunes preguntades"
+            },
+            {
+              "label": "VERIFICAR",
+              "title": "Bessó complet i verificat"
+            }
+          ],
+          "approvalLabel": "Aprova o escala",
+          "executionLabel": "Executa i registra",
+          "sourceNote": "Font registrada per a cada camp",
+          "guarantee": "El bessó aprovat = el que s'executa"
+        }
+      },
+      "leadCapture": {
+        "kicker": "A ESCALA",
+        "heading": "Sherma de marca blanca a escala.",
+        "body": "Aquest breu és per a organitzacions que volen Sherma amb marca blanca integrat al seu flux de treball — milers de formularis alhora, no pas una tramitació puntual.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "On ha de funcionar Sherma, i aproximadament quants formularis?",
+        "ctaLabel": "Prepara el meu brief de Sherma",
+        "successHeading": "El vostre breu està llest.",
+        "successBody": "Obriu el client de correu per enviar-lo quan estigueu llestos.",
+        "emailLabel": "Envieu el breu per correu",
+        "privacyNote": "El vostre breu roman en aquest navegador fins que trieu enviar-lo per correu.",
+        "emailSubject": "Sherma de marca blanca a escala"
+      },
+      "footer": {
+        "tagline": "Sherma omple els vostres formularis amb el que ja teniu a l'expedient i, tot seguit, us mostra la versió emplenada abans que s'enviï res.",
+        "groups": [
+          {
+            "label": "Capacitats",
+            "links": [
+              {
+                "label": "Recepció de formularis",
+                "target": "meet"
+              },
+              {
+                "label": "Simulació",
+                "target": "about"
+              },
+              {
+                "label": "Aprovació i registre",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Empresa",
+            "links": [
+              {
+                "label": "Casos d'ús",
+                "target": "use-cases"
+              },
+              {
+                "label": "Contacte",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Comenceu",
+            "links": [
+              {
+                "label": "Conegueu Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

@@ -9,7 +9,7 @@ description: >
   from within ChatGPT Sites, Claude Design, or any other AI site builder.
 metadata:
   author: gabriel-operator
-  version: "1.0"
+  version: "1.2"
   compatibility: Requires Node.js 16+ for the validation script.
 ---
 
@@ -57,6 +57,16 @@ button instead of two, a generic opening line in the hero mockup).
     "design": {
       "variant": "signature",
       "theme": { "palette": "forest", "primaryColor": "green", "secondaryColor": "teal", "accentColor": "orange" }
+    },
+    "localization": {
+      "translation": {
+        "enabled": true,
+        "sourceLanguage": "en",
+        "defaultLanguage": "en",
+        "autoDetectCountryLanguage": true,
+        "generatedTranslations": []
+      },
+      "regionalPages": []
     },
     "header": {
       "brandMark": "heart",
@@ -136,7 +146,7 @@ button instead of two, a generic opening line in the hero mockup).
 ## Fields
 
 - `landingPage.design` (optional, object) — explicitly selects the renderer's visual treatment; presentation is never inferred from the persona name.
-  - `variant` (optional, `default`, `signature`, `banking`, or `form-operations`) — `signature` enables the editorial layout; `banking` enables the navy, grid-led governed-banking presentation; `form-operations` enables the simulation-first Sherma information architecture and requires the complete bounded `landingPage.formOperations` object.
+  - `variant` (optional, `default`, `signature`, `banking`, `form-operations`, `logistics-portal`, `cinematic-campaigns`, `recruiting-operations`, `grocery-twin`, `event-introductions`, or `home-introductions`) — each non-default variant selects one registered, versioned presentation and requires its bounded content object. `logistics-portal` enables Emil's governed logistics portal-twin presentation, and `home-introductions` enables Nest's private buyer/seller introduction presentation.
   - `defaultThemeMode` (optional, `light` or `dark`) — initial mode for the landing page and matching chat/embed; a visitor's explicit mode selection still wins.
   - `theme` (optional, theme object) — authored `palette`, required `primaryColor`, and optional `secondaryColor`/`accentColor` used by the landing page.
   - `brand` (optional, object) — bounded exact brand seeds shared by landing, chat, embed, and portalled dialogs. This is the model-generated branding surface; never generate CSS or Tailwind classes.
@@ -144,6 +154,12 @@ button instead of two, a generic opening line in the hero mockup).
     - `colors.light` / `colors.dark` (optional objects) — each accepts normalized six-digit lowercase hex values for `canvas`, `surface`, `sidebar`, `text`, `accent`, and `userBubble`. Dependent hover, muted, border, and contrast-safe foreground tokens are derived by the renderer.
     - `typography.body` / `typography.display` / `typography.label` (optional objects) — either `{ "source": "builtin", "family": "inter" }` using `dm-sans`, `inter`, `system`, `roboto`, `poppins`, or `outfit`; or `{ "source": "google", "family": "TASA Orbiter" }` using a safe Google Font family name.
     - Normal text must reach WCAG AA contrast against both `canvas` and `surface`. Low decorative-accent contrast is reported as a warning.
+- `landingPage.localization` (required on every new landing page; optional only for backward-compatible reads of legacy pages) — public translation and IP-country routing. This is an additive schema-version-2 field; do not bump the landing-page schema version. New pages must set `translation.enabled: true`, `sourceLanguage: "en"`, `defaultLanguage: "en"`, `autoDetectCountryLanguage: true`, `generatedTranslations: []`, and `regionalPages: []` before authored regions or generated variants are added. Do not disable it during creation.
+  - `translation` (optional object) — `{ "enabled": boolean, "sourceLanguage": "en", "defaultLanguage": "en", "autoDetectCountryLanguage": true, "generatedTranslations": [] }`. Languages must use shared-catalogue ids. Enabling it adds the language selector to every registered landing-page header. `autoDetectCountryLanguage` defaults to true and uses the server-resolved request-IP country plus CLDR likely-language data; an explicit matched regional default still wins. The platform—not authored JSON—enforces a maximum of three newly translated target languages per visitor and page in each rolling 24-hour window.
+  - `translation.generatedTranslations` is a compact platform-owned Git manifest. New entries contain `language`, nullable `regionKey`, a 64-character `sourceRevision`, `assetPath`, and optional `generatedAt`. The complete translated page lives in `assets/landing-page.<language>.json`; regional filenames are `assets/landing-page.<regionKey>.<language>.json`. Runtime fetches only the selected file before quota reservation or LLM generation. Legacy inline `page` entries remain readable during migration, but new writers must not create them. Never invent a revision or asset path: generate entries through the platform translation flow or repository tooling.
+  - `regionalPages` (optional array) — each item requires a unique lowercase `key`, an author-facing `label`, one or more unique uppercase ISO alpha-2 `countryCodes`, a catalogue `defaultLanguage`, and `page`.
+  - Each regional `page` is a complete landing-page clone without `localization`; it may select any registered `design.variant`. Never nest localization or reuse a country in another region.
+  - Runtime matching uses the server-resolved request-IP country only. A visitor language preference changes translation, never region selection. Matching regional content replaces the base page before theme, SEO, header, CTA, widget, and embed presentation are derived.
 - `landingPage.header` (optional, object) — authored header content. When present, only configured items render; no menu labels are generated from persona-specific code.
   - `brandMark` (optional, `heart`, `image`, or `initial`).
   - `navItems` (optional, array of `{ label, target }`) — `target` is one of `meet`, `about`, `capabilities`, `use-cases`, `trust`, `how-it-works`, `stories`, `faq`, or `contact`. Items whose target section is absent are hidden automatically.
@@ -158,7 +174,11 @@ button instead of two, a generic opening line in the hero mockup).
 - `landingPage.featureTags` (optional, string array) — a short caption line under the hero buttons, rendered joined with " · ", e.g. `["No swiping", "Mutual consent only"]`.
 - `landingPage.demoConversation` (optional, array of `{ role: "user" | "assistant", text }`) — the scripted messages shown above the (real, functional) input in the hero chat mockup. Keep it to 2–4 short lines that show what talking to this persona actually feels like. Falls back to one generic opening line if omitted.
 - `landingPage.heroChat` (optional, object) — authored chat-preview microcopy: `statusLabel`, `inputPlaceholder`, and `suggestedPrompts` (a short string array).
-- `landingPage.formOperations` (required when `design.variant` is `form-operations`) — the bounded model for the scripted simulation, four-step proof strip, simulation principle and six guarantees, impact cards and percentage bars, six-step process, seven use-case tabs, worked example, controlled-autonomy boundary, local-only lead capture, and footer. The validator requires every nested section, validates `done|active|pending` trace states, `persona|human` actors, `live|next|custom` use-case statuses, percentages from 0–100, supported icons, contact email, media, fonts, colors, accessibility, and the no-emoji rule. This object controls copy and repeated data only; it never accepts CSS, Tailwind classes, layout, animation, or executable code.
+- `landingPage.formOperations` (required when `design.variant` is `form-operations`) — the bounded model for the hero demonstration, four-step proof strip, simulation principle and six guarantees, impact cards and percentage bars, six-step process, seven use-case tabs, worked example, controlled-autonomy boundary, local-only lead capture, and footer. `heroDemo.captureAndFill` may opt into the platform-owned public image-preview runtime using only an enabled registered `commandTrigger`; models may author copy but cannot raise upload, analysis, chat, voice, or expiry limits. The validator checks the trigger syntax, `done|active|pending` trace states, `persona|human` actors, `live|next|custom` use-case statuses, percentages from 0–100, supported icons, contact email, media, fonts, colors, accessibility, and the no-emoji rule (with the copyright symbol permitted in `footer.copyright`). Footer `poweredBy`, `closingStatement`, and `copyright` are optional. This object controls copy and repeated data only; it never accepts CSS, Tailwind classes, layout, animation, or executable code.
+- `landingPage.logisticsPortal` (required when `design.variant` is `logistics-portal`) — bounded copy and repeated data for Emil's fixed black/lime logistics presentation: header, hero, proof items, hero chat, local customs/carrier rehearsal, edge architecture, platform twin, six-step fail-closed process, workflows, pilot, and footer. `hero.rehearsal.commandTrigger` must reference an enabled `operator_action` command and, for the portable Emil model, `workflow.emil.rehearse-filing`. The renderer owns all CSS, layout, motion, authentication handoff, and simulation authority. Models cannot add routes, code, credentials, external queries, or live portal actions.
+- `landingPage.cinematicCampaigns` (required when `design.variant` is `cinematic-campaigns`) — bounded copy and media for Archer's hero, Product Explainer guided preview, three workflow acts, capability marquee, four-film showcase, seven campaign features, workspace specimen, three director principles, two journal cards, five-frame closing strip, and footer. `hero.guidedDemo.commandTrigger` must reference an enabled `operator_action`; the anonymous preview never fetches the supplied URL or runs workflows. Media must be direct HTTPS image/video URLs. Exact array counts preserve the registered source layout. This object never accepts components, JavaScript, CSS, Tailwind classes, routes, executable queries, or runtime limits.
+- `landingPage.recruitingOperations` (required when `design.variant` is `recruiting-operations`) — bounded copy and repeated data for Lina's particle hero, four recruiter-control feature cards, monitored activity timeline, manual-versus-Lina comparison, four-row lead board, five recruiting pillars, three approval guardrails, five FAQs, closing section, and footer. `leads.commandTrigger` must reference an enabled `operator_action`; the renderer accepts only public HTTP(S) hiring-signal URLs and never executes model-provided code. Exact array counts preserve the registered source layout. The object cannot contain components, JavaScript, CSS, Tailwind classes, routes, executable queries, or runtime limits.
+- `landingPage.homeIntroductions` (required when `design.variant` is `home-introductions`) — bounded copy and media for Nest's editorial hero, event/city configurations, buyer and seller tracks, privacy sequence, three-step process, proposal specimens, guarantee, Meet Nest section, legal disclaimers, and footer. `hero.briefDemo.commandTrigger` must reference an enabled `operator_action`. Anonymous visitors may edit only the trusted visible brief fields for at most ten chat turns or one five-minute voice session; the runtime cannot search participants, create proposals, reveal exact addresses/contact details, or persist participant data before authentication. The model cannot author code, CSS, routes, queries, security limits, or executable behavior.
 - `landingPage.features` (optional, array, keep it to 3–6 entries) — rendered as a card grid below the hero. Each entry:
   - `title` (required, string) — a few words.
   - `body` (required, string) — one or two sentences.
@@ -256,12 +276,44 @@ live within seconds, no separate publish/import action needed. The two repos
 are kept in sync by hand (or by whichever agent is editing them); there is no
 CI step that does this automatically yet.
 
+Public translation is the exception for the live parent projection: after a
+safe translation succeeds, the platform appends the source-revisioned result
+to its database projection and schedules the existing parent Persona Git sync.
+That writer externalizes the complete page to the matching language JSON file
+and leaves only its manifest entry in `chat-config.json`. Later visitors fetch
+that one file without another model call or visitor-quota reservation. When
+pre-generating variants in a landing-page-builder child repository, mirror the
+compact manifest and every referenced language file into the parent.
+
+### Pre-generating cached language variants
+
+For every newly created landing page, finish and validate the authored English copy,
+then read `../landing-page-translations/SKILL.md` and run its maintained generator with
+the default 37-language catalogue before the initial Git handoff. That skill owns bulk
+language selection, safe-string extraction, provider authorization, source revisions,
+resumable generation, validation, and child-to-parent mirroring. Prefer its private
+on-device Chrome provider; external providers still require explicit authorization.
+Do not hand-author `generatedTranslations` or invent source revisions in this skill.
+
+After generation, run the generator's `--check`, commit and push a linked child first,
+then commit and push the parent Persona projection. If a provider is unavailable, leave
+dynamic translation and country detection enabled and report which cache languages are
+missing; never turn localization off to make creation appear complete.
+
 ## Validation
 
 Run:
 
 ```bash
 node scripts/validate-landing-page.js assets/landing-page.json
+```
+
+When `formOperations.heroDemo.captureAndFill.enabled` is true, also pass the
+parent persona config so the validator can prove that the selected trigger is
+an enabled, bounded image-attachment operator command:
+
+```bash
+node scripts/validate-landing-page.js assets/landing-page.json ../../../assets/chat-config.json
 ```
 
 The validator rejects a missing `headline`, a feature missing `title`/`body`,

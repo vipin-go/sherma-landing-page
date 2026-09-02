@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "sl",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulacija",
+          "target": "about"
+        },
+        {
+          "label": "Kako deluje",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Primeri uporabe",
+          "target": "use-cases"
+        },
+        {
+          "label": "Kontrola",
+          "target": "trust"
+        },
+        {
+          "label": "Stik",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Spoznaj Shermo"
+    },
+    "badge": "Avtomatizacija simulacije prve oblike",
+    "headline": "Agent, ki izpolni vaše obrazce z najvišjimi vložki in najprej prikaže svoje delo.",
+    "subheadline": "Sherma prebere obrazec, vadi polnilo proti dvojčku, vpraša le tisto, česar še ne ve, in vam natančno pokaže, kaj bo oddano. Nič ne doseže prave oblike, dokler tega ne rečete.",
+    "ctaLabel": "Spoznaj Shermo",
+    "secondaryCtaLabel": "Poglejte, kako deluje",
+    "featureTags": [
+      "vadi, preden je resnično",
+      "Kar odobriš, je tisto, kar gre noter",
+      "zapis vsakega polja"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Živjo, jaz sem Sherma. Pošlji mi obrazec in vadil bom celotno polnilo proti dvojčku, preden bo karkoli resnično."
+      },
+      {
+        "role": "user",
+        "text": "Pokaži mi, kaj si našel."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Na spletu · Simulacijski peskovnik",
+      "inputPlaceholder": "Vprašajte Shermo o obrazcu ...",
+      "suggestedPrompts": [
+        "Prikaži manjkajoča polja",
+        "Predogled dvojčka",
+        "Kako deluje odobritev?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma v svoji pisarni"
+    },
+    "contact": {
+      "heading": "Prinesite en obrazec, ki ga že izpolnite.",
+      "body": "Zaženite Shermo proti pravi obliki iz svojega dela in primerjajte dvojčka s tem, kar je ustvarila vaša ekipa.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "Naslednji obrazec",
+      "heading": "Prinesite en obrazec, ki ga že izpolnite.",
+      "body": "Zaženite Shermo proti pravi obliki iz svojega dela in primerjajte dvojčka s tem, kar je ustvarila vaša ekipa.",
+      "ctaLabel": "Pogovorite se s Shermo"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Vzorčni demo",
+        "demoNote": "Samo ilustrativna simulacija · Ne uporablja se pravih portalov ali osebnih podatkov",
+        "openingReply": "Prebral sem obrazec, zgradil dvojčka in izpolnil 26 od 30 polj iz vašega odobrenega zapisa. Ostajajo štiri vprašanja. Nič se ni dotaknilo prave oblike.",
+        "greetingReply": "Živjo, jaz sem Sherma. Prebral sem obrazec, vadil polnilo proti dvojčku in vam pokazal, kaj točno bi bilo oddano. Nič ne doseže prave oblike, dokler tega ne rečete.",
+        "instructionReply": "Za začetek naložite posnetke zaslona obrazca, ki ga želite izpolniti. JPEG, PNG ali WebP · Do 6 slik. Izluščil bom vprašanja in vam povedal, kaj še potrebujem.",
+        "reviewReply": "Tukaj je dvojček. Je popolna, preverjena in še vedno ločena od obrazca v živo. Tukaj odobrite tisto, kar se izvaja, polje za polje.",
+        "approvedReply": "Odobreno v predstavitvi. Natančno odobreni dvojček je pripravljen za izvedbo in vsako polje ohrani svoj vir.",
+        "escalatedReply": "varno poslal nazaj. Prijave ni bilo.",
+        "fallbackReply": "Prosim samo za informacije, ki resnično manjkajo. Prosite me, da pokažem manjkajoča polja ali si ogledate dvojčka.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Naložite posnetke zaslona obrazca",
+          "uploadHint": "JPEG, PNG ali WebP · do 6 slik",
+          "analyzingLabel": "Preberi obrazec in izlušči njegova vprašanja ...",
+          "questionnaireHeading": "Vaš izvlečen vprašalnik",
+          "questionnaireBody": "Sherma je v vaši obliki našla prava vprašanja. Odgovorite tukaj, z omejenim klepetom ali v eni petminutni glasovni seji.",
+          "answerPlaceholder": "Odgovorite na naslednje vprašanje obrazca …",
+          "voiceLabel": "Odgovor z glasom · 5 min",
+          "reviewLabel": "Preglejte odgovore",
+          "generateLabel": "pregledati in ustvariti",
+          "signInHeading": "Sign in to generate filled copies",
+          "signInBody": "Vaše slike, odgovori in predogled se bodo po prijavi premaknili v eno zasebno sejo Sherma.",
+          "expiryCopy": "Nezahtevani predogledi potečejo po eni uri.",
+          "errorCopy": "Sherma te slike ni mogla varno prebrati. Preizkusite jasnejši posnetek zaslona JPEG, PNG ali WebP."
+        },
+        "trace": {
+          "label": "Sherma · Sledenje seje",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Obrazec prebran",
+              "detail": "30 polj, 4 dokumenti, 2 pogojna dela"
+            },
+            {
+              "state": "done",
+              "title": "Twin Built",
+              "detail": "Delovna kopija, izpolnjena in označena z živo"
+            },
+            {
+              "state": "done",
+              "title": "Izpolnjeno iz vaše evidence",
+              "detail": "26 od 30 · Vsak odgovor nosi svoj vir"
+            },
+            {
+              "state": "active",
+              "title": "Vprašane vrzeli, ne ugibajo",
+              "detail": "4 vprašanja, na katera je odgovoril klepet"
+            },
+            {
+              "state": "pending",
+              "title": "Dvojček pripravljen za pregled",
+              "detail": "Nič se ni dotaknilo prave oblike"
+            }
+          ],
+          "reviewLabel": "Preglejte dvojčka"
+        },
+        "review": {
+          "label": "Vaša odobritev",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Pravna oseba",
+              "value": "Vzorčni odjemalec B.V.",
+              "sourceLabel": "Vir"
+            },
+            {
+              "label": "Davčni identifikator",
+              "value": "NL•••••••B01",
+              "sourceLabel": "Vir"
+            },
+            {
+              "label": "Plačilni pogoji",
+              "value": "30 dni",
+              "sourceLabel": "potrjeno"
+            },
+            {
+              "label": "Pooblaščeni podpisnik",
+              "value": "Finančni direktor",
+              "sourceLabel": "potrjeno"
+            }
+          ],
+          "approveLabel": "Odobri dvojčka",
+          "sendBackLabel": "Pošlji nazaj"
+        },
+        "results": {
+          "approvedTitle": "Odobreno dvojček",
+          "approvedBody": "Odobreni dvojček je pripravljen za izvedbo · Vsak ohranjeni vir",
+          "escalatedTitle": "Varno poslano nazaj",
+          "escalatedBody": "Tek je zaustavljen zaradi človeškega vnosa · Nič ni bilo vloženo"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Vhod",
+          "detail": "Obrazec prevzet"
+        },
+        {
+          "number": "02",
+          "title": "Simulirati",
+          "detail": "Vadite najprej polniti"
+        },
+        {
+          "number": "03",
+          "title": "Odobriti",
+          "detail": "praviš da"
+        },
+        {
+          "number": "04",
+          "title": "Datoteka in dokažite",
+          "detail": "Dokaz se hrani"
+        }
+      ],
+      "principle": {
+        "kicker": "Načelo",
+        "heading": "zgrajena za zaupanje. ki ga ureja simulacija.",
+        "body": "Vsak obrazec se vadi, preden se izpolni. Sherma zgradi dvojčka prave oblike, deluje celotno polnilo proti temu dvojčku in vam ga pokaže popolno. Dvojček, ki ga odobravaš, je tisti, ki izvrši. Ni povzetek tega, ne opis tega. Ista polja, enake vrednosti, v istem vrstnem redu.",
+        "traceLabel": "Sherma Session Trace",
+        "traceId": "SH-2291",
+        "traceMeta": "Seja #SH-2291 · Preteklo 12s",
+        "traceStatus": "Aktiven",
+        "traceBody": "Zgrajeno za vloge, ki si ne morejo privoščiti, da bi bile napačne, ne za demo gledališče.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Zaznan obrazec",
+            "status": "done",
+            "detail": "BTW-Aangifte, 3. četrtletje 2026 — Entiteta odjemalca se ujema.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "ustvarjen vprašalnik",
+            "status": "done",
+            "detail": "26 polj, vnaprej izpolnjenih iz računov. 4 Potrebujete svoj prispevek.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Potrjeni odgovori",
+            "status": "done",
+            "detail": "Zbrano v klepetu v manj kot 3 minutah.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulacija končana",
+            "status": "active",
+            "detail": "Suhi tek proti portalu — najdenih napak 0.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Pripravljen za vložitev",
+          "body": "Digitalni dvojček je pripravljen za pregled, preden je karkoli poslano.",
+          "approveLabel": "Pregledati in odobriti",
+          "escalateLabel": "Stopnjevati"
+        },
+        "guaranteesKicker": "Kako se Sherma obnaša",
+        "guaranteesHeading": "Šest stvari, ki ostanejo resnične na vsaki obliki.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "v obsegu, ki mu je bil dan",
+            "body": "Sherma se dotakne obrazca in zapisov, ki ste mu jih dodelili. Nič drugega v vaših sistemih ni v obsegu."
+          },
+          {
+            "icon": "sparkles",
+            "title": "vadi, preden je resnično",
+            "body": "Celotno polnjenje se najprej zgodi pri dvojčku. Obrazec v živo se enkrat dotakne, odgovor je že znan, da je popoln."
+          },
+          {
+            "icon": "users",
+            "title": "Človeška odobritev na točki brez vrnitve",
+            "body": "Vse, kar je reverzibilno, deluje samodejno. Vse, kar ni mogoče razveljaviti, čaka na osebo."
+          },
+          {
+            "icon": "check",
+            "title": "Dvojček je načrt",
+            "body": "Kar odobrite, je bajt za bajt, kar je poslano. Če se obrazec spodaj spremeni, je odobritev nična in se vrne k vam."
+          },
+          {
+            "icon": "search",
+            "title": "Vsak odgovor ima vir",
+            "body": "Kateri dokument, kateri kolega, kateri datum. Če kdo pozneje vpraša številko, lahko pokažete, od kod je prišla."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Eskalacija, nikoli tiha napaka",
+            "body": "Manjkajoči podatki se ne ugibajo. Sherma poišče, kdo ve, in vpraša, s klepetom ali klicem, in vam pove, ali se je zataknilo."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Kaj se spremeni",
+        "heading": "Premaknite piling z mize, ne z radarja.",
+        "body": "Delo preneha biti nekaj, kar oseba počne, in postane nekaj, kar oseba odobrava. To je celotna razlika.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Odgovorite enkrat, ponovno uporabite povsod",
+            "body": "Kar potrdite, postane del vašega zapisa. Na naslednjo strukturno podobna oblika se začne večinoma odgovorjeno.",
+            "metric": {
+              "label": "FIELDS FILLED WITHOUT ASKING YOU",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Prva oblika, peta oblika, dvajseta oblika. Ilustrativno."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Roki prenehajo biti prepir",
+            "body": "Sherma dela čez noč in ob vikendih. Zadnjih oseminštirideset ur je za pregledovanje, ne za sestavljanje."
+          },
+          {
+            "icon": "lock",
+            "title": "Nadzor se hrani, ne zamenja",
+            "body": "simulacija, izrecna odobritev in zapis vsakega dejanja. Brez tebe se nič ne sproži."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "Postopek",
+        "heading": "Kako Sherma izpolni obrazec, od začetka do konca.",
+        "body": "Šest korakov. Sherma jih vodi štiri, ne da bi vprašala. Dva označena za osebo sta dve, pri katerih odločitve ni mogoče izročiti.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Vhod",
+            "body": "URL obrazca, posredovano e-pošto ali portal, ki ga gleda Sherma. Pobere obliko in jo odpre.",
+            "output": "obrazec, ki se nahaja"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simulirati",
+            "body": "Sherma zgradi dvojčka obrazca in proti njemu opravi celotno polnilo. Terenska pravila, pogojni odseki in zahteve za dokumente se pojavljajo tukaj, ne v roku.",
+            "output": "Twin Built"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Izpolnite iz tega, kar ve",
+            "body": "Vaša evidenca je odgovor na večino. Vsaka vrednost nosi svoj vir, tako da lahko vidite, od kod je prišla figura in kdaj je bila nazadnje potrjena.",
+            "output": "Večina polj je opravljenih"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Vprašajte za vrzeli",
+            "body": "Samo tisto, česar resnično ne ve. S klepetom ali s klicem, če je nujno in nihče ni odgovoril. Preganja, dokler nima odgovora.",
+            "output": "Zaprte vrzeli"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Potrdite dvojčka",
+            "body": "izpolnjen obrazec, kot bo oddan. Spremenite vse, kar želite, nato ga odobrite. To je točka brez vrnitve, zato je vaša.",
+            "output": "Odobreni dvojček"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Izvedite in snemajte",
+            "body": "Sherma izpolni pravi obrazec z odobrenim dvojčkom in vrne zapis o vsakem polju. Če portal potrebuje osebno prijavo, vam izroči končni obrazec, ki ga pošljete.",
+            "output": "Vloženo, v evidenci"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "kjer velja",
+        "heading": "Zgrajeno za obrazce, ki si ne morejo privoščiti, da bi se motili.",
+        "body": "Isti agent, isto načelo. Kar se spremeni, je zapis, iz katerega črpa, in portal, proti kateremu deluje.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Vložitev davka in DDV",
+            "body": "Četrtletna obračuna BTW/GST/DDV, vložena na računih, ki so že v nabiralniku – enak obrazec, vsako četrtletje, za vsako stranko.",
+            "steps": [
+              "Vložitev delovnega mesta je bila odprta od roka",
+              "Računi se ujemajo, obračunani DDV",
+              "Vprašalnik – samo vrzeli",
+              "Vračilo vloženo, digitalni dvojček potrjen"
+            ],
+            "connections": [
+              "Portal za arhiviranje (BTW / GST / DDV)",
+              "Prejeto v računu",
+              "Knjigovodska programska oprema"
+            ],
+            "note": "Davčni portali zahtevajo osebno vladno poverilnico, kot je Eherkenning. Sherma v celoti pripravi vračilo in računovodja ga vloži pod lastno prijavo. Ne bo podpisal kot vi."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Vključitev prodajalca in operaterja",
+            "body": "Vsak kupec in prevoznik ima svoj portal. Isti podatki o podjetju, potrdila in politike, vneseni iz nič za vsakega posebej.",
+            "steps": [
+              "Prejeto povabilo na portal",
+              "Registracija je bila ponovno uporabljena iz predhodnih polnjenj",
+              "Dokumenti, ki so potekli, označeni in osveženi",
+              "Vključevanje je končano, potrditev je ohranjena"
+            ],
+            "connections": [
+              "Portal za kupce in prevoznike",
+              "Registracija, DDV in bančni podatki",
+              "Dokazi o zavarovanju"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Varnostni vprašalniki",
+            "body": "Pregledi varnosti strank, ki ponavljajo enake kontrole, politike in dokaze, medtem ko vsak rok ostaja dokončen.",
+            "steps": [
+              "Vprašalnik, ki ga je prejel od stranke",
+              "Kontrole, ki se ujemajo z odobrenim zapisom",
+              "Vprašalnik – samo vrzeli",
+              "Paket sestavljen, dvojček potrjen"
+            ],
+            "connections": [
+              "Varnostni portali strank",
+              "Knjižnica pravilnikov in nadzora",
+              "Potrdila in revizijska dokazila"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Zahtevki za partnerje in kanal",
+            "body": "Trženje sredstev in sodelovanja z dokazilom o uspešnosti, eno obliko prodajalca naenkrat, pri čemer zamuda okna pomeni izgubo dodelitve.",
+            "steps": [
+              "Obvestilo o skladu, prevzeto iz mape Prejeto",
+              "Dokazilo o zmogljivosti sestavljeno",
+              "Zahtevek se ujema z obliko tega prodajalca",
+              "Zahtevajte pripravljeno, preden se okno zapre"
+            ],
+            "connections": [
+              "Partnerski portali prodajalcev",
+              "Potrdila in dokazila o kampanji",
+              "Dodelitev in sledenje potekom"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Obrazci zavarovanja",
+            "body": "Obnovitve in umestitve, ki so predvidljive, bogate z dokazi in večinoma nespremenjene od zadnje odobrene predložitve.",
+            "steps": [
+              "Prevzeto obvestilo o podaljšanju",
+              "Naloženi so bili lanski odgovori",
+              "Povprašene so bile samo spremembe",
+              "Obrazec pripravljen, zapis posodobljen"
+            ],
+            "connections": [
+              "Posredniški in zavarovalniški portali",
+              "Urniki in dokazi politike",
+              "Zgodovina oddaje iz prejšnjega leta"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Razpisi, donacije in vloge",
+            "body": "Izbirni vprašalniki, vloge za financiranje in vloge, ki ponavljajo organizacijske dokaze, medtem ko vsak rok ostaja dokončen.",
+            "steps": [
+              "Obvestilo se ujema z vašim profilom",
+              "Vsako izvlečeno vprašanje, nobeno ni posneto",
+              "Organizacijski odseki so odgovorili iz evidence",
+              "Paket sestavljen, dvojček potrjen"
+            ],
+            "connections": [
+              "Portali za razpise in finance",
+              "Računi, zavarovanja, potrdila",
+              "Knjižnica pravilnikov"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Vaš primer uporabe",
+            "body": "Ne vidite svojega poteka dela? Opišite obrazec, portal ali vložitev in pregledali bomo Shermo po meri, ki bo potekala okoli njega.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Vnos delovnega toka po meri",
+          "body": "Delite ponavljajoči se obrazec ali portal, ki upočasnjuje vašo ekipo. Ta predstavitev ohranja kratko v vašem brskalniku in pripravi e-poštno predajo.",
+          "ctaLabel": "Pripravite moj Sherma Brief",
+          "note": "Samo vzorec vnosa · S te strani se nič ne prenaša",
+          "successHeading": "Vaš Sherma Brief je pripravljen.",
+          "successBody": "Odprite svoj e-poštni odjemalec, da pošljete vnaprej izpolnjeno poročilo, ko ste pripravljeni.",
+          "editLabel": "Uredite primer uporabe",
+          "emailSubject": "Spoznajte Shermo: Primer uporabe po meri"
+        }
+      },
+      "workedExample": {
+        "kicker": "Delovni primer",
+        "heading": "Vložitev BTW se vrne brez ročnega ponovnega vnosa.",
+        "body": "Enako načelo, ki velja za najbolj ponavljajočo se obliko. Ena predloga, ena entiteta naenkrat, štirikrat na leto, za vedno.",
+        "before": "Nekdo zbere številke, jih ponovno vnese v vračilo, jih preveri glede na knjigo in vloži pred rokom. Vsako četrtletje, za vsako stranko, brez prenesenega ničesar, razen preglednice.",
+        "after": "Sherma odpre opravilo iz koledarja vložitve, zgradi vračilo iz računov, ki so že v mapi Prejeto, vpraša samo o številkah, ki jih ne more izpeljati, in predstavljeno vračilo predstavi kot dvojček.",
+        "linkLabel": "Pogovorite se o svojem koledarju prijave",
+        "emailSubject": "Sherma četrtletno vlaganje dela",
+        "card": {
+          "label": "BTW vrnitev",
+          "period": "3. četrtletje 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Subjekt",
+              "value": "Naročnik B.V."
+            },
+            {
+              "label": "Doba",
+              "value": "3. četrtletje 2026"
+            },
+            {
+              "label": "Računi se ujemajo",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Manjkajoče številke",
+              "value": "3 — Označeno",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Vrni se pripravljen",
+          "summary": "3 Številke potrebujejo vašo potrditev pred vložitvijo.",
+          "actionLabel": "Pregled in datoteka",
+          "actionNote": "Potreben je človeški nadzor",
+          "note": "Ilustrativne figure. Vaše lastno razmerje se meri ob prvem donosu."
+        }
+      },
+      "control": {
+        "kicker": "Nadzorovana avtonomija",
+        "heading": "avtonomija brez izgube odgovornosti.",
+        "body": "AI na vsakem koraku. Oseba vstopi v enem trenutku, ki ga ni mogoče razveljaviti, in šele takrat.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Vse reverzibilno je samodejno",
+            "body": "Branje, simulacija, polnjenje, lovljenje, sestavljanje. Za delo, ki ga je mogoče preprosto obnoviti, ni potrebna odobritev."
+          },
+          {
+            "icon": "lock",
+            "title": "Vse nepopravljivo se ustavi",
+            "body": "Oddaja je točka brez vrnitve, zato vas čaka. Kjer portal potrebuje osebno poverilnico, ga držite, ne Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "Dvojček, ki ga odobravaš, je tisti, ki teče",
+            "body": "Če se obrazec v živo po odobritvi spremeni, je odobritev nična in se vam vseeno vrne, namesto da se izvede."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Zataknjeno je stanje, ne tišina",
+            "body": "Če Sherma nečesa ne more dokončati, vam pove, katero polje in zakaj, s časom, da ukrepate."
+          }
+        ],
+        "boundary": {
+          "label": "Sherma Job Boundary",
+          "badges": [
+            "Polja z obsegom",
+            "Odobrena orodja"
+          ],
+          "steps": [
+            {
+              "label": "Prejeti",
+              "title": "Prejet obrazec"
+            },
+            {
+              "label": "Simulirati",
+              "title": "Vaja proti dvojčku"
+            },
+            {
+              "label": "Polniti",
+              "title": "Uporabljen zapis, vprašal Gaps"
+            },
+            {
+              "label": "Preveriti",
+              "title": "Dvojček dokončan in preverjen"
+            }
+          ],
+          "approvalLabel": "odobriti ali stopnjevati",
+          "executionLabel": "Izvedite in snemajte",
+          "sourceNote": "Vir je zabeležen za vsako polje",
+          "guarantee": "Odobreni dvojček = Kaj se izvaja"
+        }
+      },
+      "leadCapture": {
+        "kicker": "V obsegu",
+        "heading": "Sherma z belo oznako v velikem obsegu.",
+        "body": "Ta povzetek je namenjen organizacijam, ki želijo, da je Sherma White označena v njihov lasten potek dela – tisoč obrazcev hkrati, ne enkratna vloga.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Kam naj teče Sherma in približno koliko oblik?",
+        "ctaLabel": "Pripravite moj Sherma Brief",
+        "successHeading": "Vaša poročila je pripravljena.",
+        "successBody": "Odprite e-poštni odjemalec, da ga pošljete, ko ste pripravljeni.",
+        "emailLabel": "Pošljite poročilo po e-pošti",
+        "privacyNote": "Vaša poročila ostane v tem brskalniku, dokler se ne odločite, da ga pošljete po e-pošti.",
+        "emailSubject": "Bela oznaka Sherma v velikem obsegu"
+      },
+      "footer": {
+        "tagline": "Sherma izpolni vaše obrazce iz tega, kar že imate v datoteki, nato vam pokaže dokončano različico, preden se karkoli pošlje.",
+        "groups": [
+          {
+            "label": "Zmogljivosti",
+            "links": [
+              {
+                "label": "Obrazec vnos",
+                "target": "meet"
+              },
+              {
+                "label": "Simulacija",
+                "target": "about"
+              },
+              {
+                "label": "Odobritev in zapis",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Podjetje",
+            "links": [
+              {
+                "label": "Primeri uporabe",
+                "target": "use-cases"
+              },
+              {
+                "label": "Stik",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Začnite",
+            "links": [
+              {
+                "label": "Spoznaj Shermo",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

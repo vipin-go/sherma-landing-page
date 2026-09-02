@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "da",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulering",
+          "target": "about"
+        },
+        {
+          "label": "Hvordan det virker",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Use cases",
+          "target": "use-cases"
+        },
+        {
+          "label": "Kontrol",
+          "target": "trust"
+        },
+        {
+          "label": "Kontakt",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Mød Sherma"
+    },
+    "badge": "Simulering-første form automatisering",
+    "headline": "En agent, der udfylder dine formularer med størst indsats og viser sit arbejde først.",
+    "subheadline": "Sherma læser formularen, øver fyldet mod en tvilling af den, spørger kun, hvad den ikke allerede ved, og viser dig præcis, hvad der vil blive indsendt. Intet når den rigtige form, før du siger det.",
+    "ctaLabel": "Mød Sherma",
+    "secondaryCtaLabel": "se hvordan det virker",
+    "featureTags": [
+      "øvet før det er ægte",
+      "Det, du godkender, er det, der går ind",
+      "en registrering af hvert felt"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Hej, jeg er Sherma. Send mig en formular, og jeg vil øve hele fyldet mod en tvilling, før noget er ægte."
+      },
+      {
+        "role": "user",
+        "text": "Vis mig, hvad du fandt."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Simuleringssandkasse",
+      "inputPlaceholder": "Spørg Sherma om en form...",
+      "suggestedPrompts": [
+        "Vis manglende felter",
+        "Se forhåndsvisningen af tvillingen",
+        "Hvordan fungerer godkendelse?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma på sit kontor"
+    },
+    "contact": {
+      "heading": "Medbring en formular, du allerede udfylder.",
+      "body": "Kør Sherma mod en rigtig form fra dit eget arbejde, og sammenlign tvillingen med, hvad dit hold producerede.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "den næste form",
+      "heading": "Medbring en formular, du allerede udfylder.",
+      "body": "Kør Sherma mod en rigtig form fra dit eget arbejde, og sammenlign tvillingen med, hvad dit hold producerede.",
+      "ctaLabel": "Tal med Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Eksempel på demo",
+        "demoNote": "Kun illustrativ simulering · Der bruges ingen reel portal eller personlige data",
+        "openingReply": "Jeg læste formularen, byggede en tvilling og udfyldte 26 af 30 felter fra din godkendte journal. Der er fire spørgsmål tilbage. Intet har rørt den rigtige form.",
+        "greetingReply": "Hej, jeg er Sherma. Jeg læser en formular, øver fyldet mod en tvilling af den og viser dig præcis, hvad der ville blive indsendt. Intet når den rigtige form, før du siger det.",
+        "instructionReply": "For at komme i gang skal du uploade skærmbilleder af den formular, du ønsker udfyldt. jpeg, png eller webp · op til 6 billeder. Jeg vil udtrække spørgsmålene og fortælle dig, hvad jeg stadig mangler.",
+        "reviewReply": "Her er tvillingen. Det er komplet, kontrolleret og stadig adskilt fra live-formularen. Det, du godkender her, er det, der udfører, felt for felt.",
+        "approvedReply": "Godkendt i demoen. Den nøjagtige godkendte tvilling er klar til at udføre, og hvert felt beholder sin kilde.",
+        "escalatedReply": "sendt tilbage sikkert. Der skete ingen arkivering.",
+        "fallbackReply": "Jeg beder kun om oplysninger, der virkelig mangler. Bed mig om at vise manglende felter eller se tvillingen.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Upload formular skærmbilleder",
+          "uploadHint": "jpeg, png eller webp · op til 6 billeder",
+          "analyzingLabel": "læse formularen og udtrække dens spørgsmål...",
+          "questionnaireHeading": "Dit udtrukne spørgeskema",
+          "questionnaireBody": "Sherma fandt de rigtige spørgsmål i din form. Svar her, ved begrænset chat eller i en fem-minutters stemmesession.",
+          "answerPlaceholder": "Besvar det næste spørgsmål...",
+          "voiceLabel": "Svar med stemme · 5 min",
+          "reviewLabel": "Gennemgå svar",
+          "generateLabel": "Gennemgå og generer",
+          "signInHeading": "Log ind for at generere udfyldte kopier",
+          "signInBody": "Dine billeder, svar og forhåndsvisning vil flytte ind i én privat Sherma-session efter login.",
+          "expiryCopy": "Uafhentede forhåndsvisninger udløber efter en time.",
+          "errorCopy": "Sherma kunne ikke læse dette billede sikkert. Prøv et klarere JPEG-, PNG- eller WebP-skærmbillede."
+        },
+        "trace": {
+          "label": "Sherma · Sessionsspor",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "formular læst",
+              "detail": "30 felter, 4 dokumenter, 2 betingede sektioner"
+            },
+            {
+              "state": "done",
+              "title": "Tvilling bygget",
+              "detail": "en arbejdskopi fyldt og afkrydset den levende"
+            },
+            {
+              "state": "done",
+              "title": "udfyldt fra din journal",
+              "detail": "26 af 30 · Hvert svar bærer sin kilde"
+            },
+            {
+              "state": "active",
+              "title": "Gaps spurgt, ikke gættet",
+              "detail": "4 spørgsmål besvaret af chat"
+            },
+            {
+              "state": "pending",
+              "title": "Tvilling klar til anmeldelse",
+              "detail": "Intet har rørt den rigtige form"
+            }
+          ],
+          "reviewLabel": "Gennemgå tvillingen"
+        },
+        "review": {
+          "label": "din godkendelse",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Juridisk enhed",
+              "value": "Eksempel på klient B.V.",
+              "sourceLabel": "indkøbt"
+            },
+            {
+              "label": "Skat identifikator",
+              "value": "NL•••••••B01",
+              "sourceLabel": "indkøbt"
+            },
+            {
+              "label": "Betalingsbetingelser",
+              "value": "30 dage",
+              "sourceLabel": "bekræftet"
+            },
+            {
+              "label": "autoriseret underskriver",
+              "value": "Økonomidirektør",
+              "sourceLabel": "bekræftet"
+            }
+          ],
+          "approveLabel": "godkende tvillingen",
+          "sendBackLabel": "Send tilbage"
+        },
+        "results": {
+          "approvedTitle": "Tvilling godkendt",
+          "approvedBody": "Den godkendte tvilling er klar til at udføre · Hver kilde bevares",
+          "escalatedTitle": "sikkert sendt tilbage",
+          "escalatedBody": "Løbet er sat på pause for menneskelig input · Intet blev indgivet"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "indtag",
+          "detail": "formularen afhentes"
+        },
+        {
+          "number": "02",
+          "title": "simulere",
+          "detail": "Øvelse Fyld først"
+        },
+        {
+          "number": "03",
+          "title": "Godkende",
+          "detail": "Du siger ja"
+        },
+        {
+          "number": "04",
+          "title": "Fil og bevis",
+          "detail": "Bevis opbevares"
+        }
+      ],
+      "principle": {
+        "kicker": "princippet",
+        "heading": "bygget til at være tillid til. styret af simulering.",
+        "body": "Hver formular bliver øvet, før den bliver udfyldt. Sherma bygger en tvilling af den rigtige form, arbejder hele fyldet mod den tvilling og viser den til dig komplet. Den tvilling, du godkender, er den, der henretter. Ikke et resumé af det, ikke en beskrivelse af det. De samme felter, de samme værdier, i samme rækkefølge.",
+        "traceLabel": "Sherma Session Trace",
+        "traceId": "SH-2291",
+        "traceMeta": "Session #SH-2291 · 12s forløbet",
+        "traceStatus": "Aktiv",
+        "traceBody": "Bygget til arkiveringer, der ikke har råd til at tage fejl, ikke demoteater.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "form opdaget",
+            "status": "done",
+            "detail": "BTW-AANGIFTE, Q3 2026 — Klientenhed matchet.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Spørgeskema genereret",
+            "status": "done",
+            "detail": "26 felter forududfyldt fra fakturaer. 4 har brug for dit input.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Svar bekræftet",
+            "status": "done",
+            "detail": "indsamlet ved chat på under 3 minutter.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulering fuldført",
+            "status": "active",
+            "detail": "tørløb mod portalen — 0 fejl fundet.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "klar til at arkivere",
+          "body": "Den digitale tvilling er klar til gennemgang, før noget indsendes.",
+          "approveLabel": "Gennemgå og godkend",
+          "escalateLabel": "Eskalere"
+        },
+        "guaranteesKicker": "Hvordan Sherma opfører sig",
+        "guaranteesHeading": "Seks ting, der forbliver sande på enhver form.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "omfattet af den form, den blev givet",
+            "body": "Sherma rører ved formularen og de optegnelser, du har tildelt den. Intet andet i dine systemer er i omfang."
+          },
+          {
+            "icon": "sparkles",
+            "title": "øvet før det er ægte",
+            "body": "Hele fyldet sker først på en tvilling. Live-formularen røres én gang, med et svar, der allerede vides at være komplet."
+          },
+          {
+            "icon": "users",
+            "title": "Menneskelig godkendelse på tidspunktet for ingen tilbagevenden",
+            "body": "Alt vendbart kører automatisk. Alt, der ikke kan fortrydes, venter på en person."
+          },
+          {
+            "icon": "check",
+            "title": "tvillingen er planen",
+            "body": "Det du godkender er byte for byte, hvad der bliver indsendt. Hvis formularen ændres nedenunder, er godkendelsen ugyldig, og den kommer tilbage til dig."
+          },
+          {
+            "icon": "search",
+            "title": "Hvert svar har en kilde",
+            "body": "Hvilket dokument, hvilken kollega, hvilken dato. Hvis nogen spørger om en figur senere, kan du vise, hvor den kom fra."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Eskalering, aldrig tavs fiasko",
+            "body": "Manglende data bliver ikke gættet. Sherma finder, hvem der ved og spørger, ved chat eller ved opkald, og fortæller dig, om det sidder fast."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Hvad ændrer sig",
+        "heading": "Flyt filen fra dit skrivebord, ikke væk fra din radar.",
+        "body": "Arbejdet holder op med at være noget, en person gør og bliver noget, en person godkender. Det er hele forskellen.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "svar én gang, genbrug overalt",
+            "body": "Det, du bekræfter, bliver en del af din journal. Den næste strukturelt lignende form starter for det meste besvaret.",
+            "metric": {
+              "label": "Felter udfyldt uden at spørge dig",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Første form, femte form, tyvende form. illustrativ."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Deadlines holder op med at være en scramble",
+            "body": "Sherma arbejder natten over og i weekenden. De sidste otteogfyrre timer er til gennemgang, ikke at samle."
+          },
+          {
+            "icon": "lock",
+            "title": "kontrol holdes, ikke handles væk",
+            "body": "simulering, en eksplicit godkendelse og en registrering af hver handling. Intet fyrer uden dig."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "Processen",
+        "heading": "Hvordan Sherma udfylder en formular, start til slut.",
+        "body": "Seks trin. Sherma kører fire af dem uden at spørge. De to markeret for en person er de to, hvor afgørelsen ikke kan afsiges.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "indtag",
+            "body": "En formular-URL, en videresendt e-mail eller en portal, Sherma ser på. Den samler formularen op og åbner den.",
+            "output": "form placeret"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "simulere",
+            "body": "Sherma bygger en tvilling af formen og arbejder hele fyldet mod den. Feltregler, betingede sektioner og dokumentkrav dukker alle op her, ikke ved deadline.",
+            "output": "Tvilling bygget"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Fyld fra hvad den ved",
+            "body": "Din rekord svarer på det meste. Hver værdi bærer sin kilde, så du kan se, hvor en figur kom fra, og hvornår den sidst blev bekræftet.",
+            "output": "De fleste felter udført"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Spørg efter hullerne",
+            "body": "kun hvad den virkelig ikke ved. ved chat, eller ved opkald, hvis det haster, og ingen har svaret. Den jagter, indtil den har svaret.",
+            "output": "huller lukket"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Bekræft tvillingen",
+            "body": "den udfyldte formular, som den vil blive indsendt. Skift hvad du vil, og godken det derefter. Dette er point of no return, så det er dit.",
+            "output": "Godkendt tvilling"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "Udfør og optag",
+            "body": "Sherma udfylder den rigtige formular med den godkendte tvilling og returnerer en registrering af hvert felt. Hvor en portal har brug for et personligt login, giver den den færdige formular til dig, som du kan sende.",
+            "output": "Arkiveret, registreret"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "hvor det gælder",
+        "heading": "Bygget til de former, der ikke har råd til at tage fejl.",
+        "body": "Samme agent, samme princip. Det, der ændrer sig, er den post, den trækker fra, og den portal, den modarbejder.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Skat og momsindgivelse",
+            "body": "Kvartalsvis BTW/GST/momsafkast, indgivet fra de fakturaer, der allerede sidder i indbakken - den samme formular, hvert kvartal, for hver klient.",
+            "steps": [
+              "Indleveringsjob åbnet fra deadline",
+              "Fakturaer matchede, moms beregnet",
+              "Spørgeskema — Kun huller",
+              "retur indgivet, digital tvilling bekræftet"
+            ],
+            "connections": [
+              "Arkivportal (BTW / GST / moms)",
+              "Faktura indbakke",
+              "Bogføringssoftware"
+            ],
+            "note": "Skatteportaler kræver en personlig offentlig legitimation såsom Eherkenning. Sherma forbereder returneringen fuldt ud, og revisoren indgiver den under deres eget login. Det vil ikke skrive under som dig."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Sælger og transportør onboarding",
+            "body": "Hver køber og transportør har deres egen portal. De samme firmaoplysninger, certifikater og politikker, indtastet fra bunden for hver enkelt.",
+            "steps": [
+              "Portalinvitation modtaget",
+              "Registrering genbrugt fra tidligere fyldninger",
+              "Udløbne dokumenter markeret og opdateret",
+              "onboarding afsluttet, bekræftelse bevaret"
+            ],
+            "connections": [
+              "Køber- og transportportaler",
+              "registrering, moms og bankoplysninger",
+              "Forsikring og policebevis"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Sikkerhedsspørgeskemaer",
+            "body": "Kundesikkerhedsanmeldelser, der gentager de samme kontroller, politikker og beviser, mens hver deadline forbliver endelig.",
+            "steps": [
+              "Spørgeskema modtaget fra kunden",
+              "Kontroller matchet med den godkendte post",
+              "Spørgeskema — Kun huller",
+              "pakke samlet, tvilling bekræftet"
+            ],
+            "connections": [
+              "Kundesikkerhedsportaler",
+              "Politik- og kontrolbibliotek",
+              "certifikater og revisionsbevis"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Partner- og kanalkrav",
+            "body": "Markedsføringsmidler og andelskrav med bevis for ydeevne, et leverandørformat ad gangen, hvor manglende vinduet betyder at miste tildelingen.",
+            "steps": [
+              "Fondsmeddelelse hentet fra indbakken",
+              "Bevis for ydeevne samlet",
+              "krav matchet til den pågældende leverandørs format",
+              "krav klar, inden vinduet lukkes"
+            ],
+            "connections": [
+              "Leverandørpartnerportaler",
+              "kvitteringer og kampagnebeviser",
+              "allokering og udløbssporing"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Forsikringsskemaer",
+            "body": "Fornyelser og placeringer, der er forudsigelige, evidenstunge og for det meste uændrede fra den sidst godkendte indsendelse.",
+            "steps": [
+              "Meddelelse om fornyelse afhentet",
+              "Sidste års svar indlæst",
+              "Kun ændringerne, der er forespurgt",
+              "Formular klar, optegnelse opdateret"
+            ],
+            "connections": [
+              "Mægler- og forsikringsselskabsportaler",
+              "Politiske tidsplaner og beviser",
+              "Tidligere års indsendelseshistorik"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Tilbud, tilskud og arkivering",
+            "body": "Udvælgelsesspørgeskemaer, finansieringsansøgninger og arkiveringer, der gentager organisatoriske beviser, mens hver deadline forbliver endelig.",
+            "steps": [
+              "Meddelelse matchet til din profil",
+              "hvert spørgsmål udvundet, ingen skummet",
+              "Organisationsafsnit besvaret fra journal",
+              "pakke samlet, tvilling bekræftet"
+            ],
+            "connections": [
+              "udbuds- og funderportaler",
+              "Konti, forsikringer, certificeringer",
+              "Politik og referencebibliotek"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "din use case",
+            "body": "Kan du ikke se din arbejdsgang? Beskriv formularen, portalen eller arkiveringen, og vi vil finde en tilpasset Sherma-løbe rundt om den.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Tilpasset arbejdsgangsindtag",
+          "body": "Del den tilbagevendende formular eller portal, der bremser dit hold. Denne demo holder kort i din browser og forbereder en e-mail-overdragelse.",
+          "ctaLabel": "Forbered min Sherma Brief",
+          "note": "Kun prøveindtag · Intet overføres fra denne side",
+          "successHeading": "Din Sherma Brief er klar.",
+          "successBody": "Åbn din e-mail-klient for at sende den forududfyldte brief, når du er klar.",
+          "editLabel": "Rediger use casen",
+          "emailSubject": "Mød Sherma: Custom Use Case"
+        }
+      },
+      "workedExample": {
+        "kicker": "et bearbejdet eksempel",
+        "heading": "indgivelse af BTW-afkast uden manuel genindtastning.",
+        "body": "Det samme princip, anvendt på den mest gentagne form, der findes. Én skabelon, én enhed ad gangen, fire gange om året, for altid.",
+        "before": "Nogen samler figurerne, indtaster dem i returneringen, tjekker dem i forhold til hovedbogen og arkiverer inden deadline. Hvert kvartal, for hver klient, med intet videreført undtagen et regneark.",
+        "after": "Sherma åbner jobbet fra arkiveringskalenderen, bygger returneringen fra de fakturaer, der allerede er i indbakken, spørger kun om de tal, den ikke kan udlede, og præsenterer den gennemførte returnering som en tvilling.",
+        "linkLabel": "Tal gennem din arkiveringskalender",
+        "emailSubject": "Sherma Quarterly Filing Workflow",
+        "card": {
+          "label": "btw retur",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "enhed",
+              "value": "Klient B.V."
+            },
+            {
+              "label": "Periode",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "Fakturaer matchede",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Manglende figurer",
+              "value": "3 — Flagget",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "retur klar",
+          "summary": "3 figurer skal bekræftes inden indlevering.",
+          "actionLabel": "Anmeldelse og fil",
+          "actionNote": "Menneskelig kontrol påkrævet",
+          "note": "illustrative figurer. Dit eget forhold måles ved første afkast."
+        }
+      },
+      "control": {
+        "kicker": "Kontrolleret autonomi",
+        "heading": "autonomi uden at miste ansvarlighed.",
+        "body": "AI først ved hvert trin. En person kommer ind i det ene øjeblik, der ikke kan fortrydes, og først da.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Alt vendbart er automatisk",
+            "body": "læse, simulere, fylde, jagte, samle. Der kræves ingen godkendelse til arbejde, der blot kan laves om."
+          },
+          {
+            "icon": "lock",
+            "title": "Alt irreversibelt stopper",
+            "body": "Indsendelse er point of no return, så det venter på dig. Hvor en portal har brug for en personlig legitimation, holder du den, ikke Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "den tvilling, du godkender, er den, der kører",
+            "body": "Hvis live-formularen ændres, efter du har godkendt, er godkendelsen ugyldig, og den kommer tilbage til dig i stedet for at udføre alligevel."
+          },
+          {
+            "icon": "question-mark",
+            "title": "fastlåst er en stat, ikke en stilhed",
+            "body": "Hvis Sherma ikke kan afslutte noget, fortæller det dig, hvilket felt og hvorfor, med tid tilbage til at handle på det."
+          }
+        ],
+        "boundary": {
+          "label": "Sherma Jobgrænse",
+          "badges": [
+            "Omfangede felter",
+            "Godkendte værktøjer"
+          ],
+          "steps": [
+            {
+              "label": "Modtage",
+              "title": "formular modtaget"
+            },
+            {
+              "label": "simulere",
+              "title": "øve mod en tvilling"
+            },
+            {
+              "label": "Fylde",
+              "title": "journal ansøgt, huller spurgt"
+            },
+            {
+              "label": "Verificere",
+              "title": "Tvilling komplet og tjekket"
+            }
+          ],
+          "approvalLabel": "godkende eller eskalere",
+          "executionLabel": "Udfør og optag",
+          "sourceNote": "Kilde registreret for hvert felt",
+          "guarantee": "Godkendt tvilling = hvad der udføres"
+        }
+      },
+      "leadCapture": {
+        "kicker": "i skala",
+        "heading": "White-label sherma i skala.",
+        "body": "Denne brief er for organisationer, der ønsker, at Sherma er hvid mærket i deres egen arbejdsgang - tusinde formularer ad gangen, ikke en engangsansøgning.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Hvor skal Sherma løbe, og cirka hvor mange former?",
+        "ctaLabel": "Forbered min Sherma Brief",
+        "successHeading": "Din brief er klar.",
+        "successBody": "Åbn din e-mail-klient for at sende den, når du er klar.",
+        "emailLabel": "Send briefen via e-mail",
+        "privacyNote": "Dine brief forbliver i denne browser, indtil du vælger at e-maile den.",
+        "emailSubject": "white-label sherma i skala"
+      },
+      "footer": {
+        "tagline": "Sherma udfylder dine formularer fra det, du allerede har på filen, og viser dig derefter den færdige version, før der sendes noget.",
+        "groups": [
+          {
+            "label": "Muligheder",
+            "links": [
+              {
+                "label": "formindtag",
+                "target": "meet"
+              },
+              {
+                "label": "Simulering",
+                "target": "about"
+              },
+              {
+                "label": "Godkendelse og registrering",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Selskab",
+            "links": [
+              {
+                "label": "Use cases",
+                "target": "use-cases"
+              },
+              {
+                "label": "Kontakt",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Kom i gang",
+            "links": [
+              {
+                "label": "Mød Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}

@@ -1,0 +1,695 @@
+{
+  "schemaVersion": 1,
+  "language": "it",
+  "regionKey": null,
+  "sourceRevision": "eebb3f9bbfa58fb2841585197ec3569be85053f66bb80ced90dd152bcb5753b5",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulazione",
+          "target": "about"
+        },
+        {
+          "label": "Come funziona",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Casi d'uso",
+          "target": "use-cases"
+        },
+        {
+          "label": "Controllo",
+          "target": "trust"
+        },
+        {
+          "label": "Contatto",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Incontra Sherma"
+    },
+    "badge": "Automazione del primo modulo di simulazione",
+    "headline": "Un agente che riempie i moduli con il massimo livello e mostra prima il suo lavoro.",
+    "subheadline": "Sherma legge il modulo, prova il riempimento contro un gemello, chiede solo ciò che non sa già e ti mostra esattamente cosa verrà inviato. Niente raggiunge la forma reale finché non lo dici tu.",
+    "ctaLabel": "Incontra Sherma",
+    "secondaryCtaLabel": "Guarda come funziona",
+    "featureTags": [
+      "provato prima che sia reale",
+      "Quello che approvi è ciò che entra",
+      "Un record di ogni campo"
+    ],
+    "demoConversation": [
+      {
+        "role": "assistant",
+        "text": "Ciao, sono Sherma. Mandami un modulo e proverò l'intero riempimento contro un gemello prima che qualcosa sia reale."
+      },
+      {
+        "role": "user",
+        "text": "Mostrami cosa hai trovato."
+      }
+    ],
+    "heroChat": {
+      "statusLabel": "Online · Sandbox di simulazione",
+      "inputPlaceholder": "Chiedi a Sherma un modulo...",
+      "suggestedPrompts": [
+        "Mostra campi mancanti",
+        "Anteprima il gemello",
+        "Come funziona l'approvazione?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma nel suo ufficio"
+    },
+    "contact": {
+      "heading": "Porta un modulo che già riempi.",
+      "body": "Corri Sherma contro una forma reale del tuo lavoro e confronta il gemello con quello che la tua squadra ha prodotto.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "la prossima forma",
+      "heading": "Porta un modulo che già riempi.",
+      "body": "Corri Sherma contro una forma reale del tuo lavoro e confronta il gemello con quello che la tua squadra ha prodotto.",
+      "ctaLabel": "Parla con Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Demo di esempio",
+        "demoNote": "Solo simulazione illustrativa · Non vengono utilizzati portali reali o dati personali",
+        "openingReply": "Ho letto il modulo, ho costruito un gemello e ho riempito 26 dei 30 campi dal tuo record approvato. Rimangono quattro domande. Niente ha toccato la forma reale.",
+        "greetingReply": "Ciao, sono Sherma. Ho letto un modulo, provo il riempimento contro un gemello e ti mostro esattamente cosa sarebbe stato inviato. Niente raggiunge la forma reale finché non lo dici tu.",
+        "instructionReply": "Per iniziare, carica gli screenshot del modulo che desideri compilare. JPEG, PNG o WEBP · Fino a 6 immagini. Estrarrò le domande e ti dirò di cosa ho ancora bisogno.",
+        "reviewReply": "Ecco il gemello. È completo, controllato e ancora separato dal modulo live. Quello che approvi qui è ciò che viene eseguito, campo per campo.",
+        "approvedReply": "Approvato nella demo. Il gemello esatto approvato è pronto per l'esecuzione e ogni campo mantiene la sua fonte.",
+        "escalatedReply": "rispedito in sicurezza. Non si è verificato alcun deposito.",
+        "fallbackReply": "Chiedo solo informazioni che mancano davvero. Chiedimi di mostrare i campi mancanti o di visualizzare in anteprima il gemello.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Carica schermate del modulo",
+          "uploadHint": "JPEG, PNG o WEBP · Fino a 6 immagini",
+          "analyzingLabel": "Leggere il modulo ed estrarre le sue domande...",
+          "questionnaireHeading": "Il tuo questionario estratto",
+          "questionnaireBody": "Sherma ha trovato le vere domande nella tua forma. Rispondi qui, tramite chat limitata o in una sessione vocale di cinque minuti.",
+          "answerPlaceholder": "Rispondi alla prossima domanda del modulo...",
+          "voiceLabel": "Risposta a voce · 5 min",
+          "reviewLabel": "Rivedi le risposte",
+          "generateLabel": "rivedere e generare",
+          "signInHeading": "Accedi per generare copie riempite",
+          "signInBody": "Le tue immagini, risposte e anteprima si sposteranno in una sessione privata di Sherma dopo l'accesso.",
+          "expiryCopy": "Le anteprime non reclamate scadono dopo un'ora.",
+          "errorCopy": "Sherma non poteva leggere questa immagine in sicurezza. Prova uno screenshot JPEG, PNG o WebP più chiaro."
+        },
+        "trace": {
+          "label": "Sherma · Traccia della sessione",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Modulo letto",
+              "detail": "30 campi, 4 documenti, 2 sezioni condizionali"
+            },
+            {
+              "state": "done",
+              "title": "Gemello costruito",
+              "detail": "una copia di lavoro riempita e spuntata quella live"
+            },
+            {
+              "state": "done",
+              "title": "riempito dal tuo record",
+              "detail": "26 di 30 · Ogni risposta porta la sua fonte"
+            },
+            {
+              "state": "active",
+              "title": "lacune richieste, non indovinate",
+              "detail": "4 domande con risposta alla chat"
+            },
+            {
+              "state": "pending",
+              "title": "Gemello pronto per la revisione",
+              "detail": "Niente ha toccato la forma reale"
+            }
+          ],
+          "reviewLabel": "Rivedi il gemello"
+        },
+        "review": {
+          "label": "La tua approvazione",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "persona giuridica",
+              "value": "Esempio di client B.V.",
+              "sourceLabel": "proveniente"
+            },
+            {
+              "label": "Identificatore fiscale",
+              "value": "NL•••••••B01",
+              "sourceLabel": "proveniente"
+            },
+            {
+              "label": "Termini di pagamento",
+              "value": "30 giorni",
+              "sourceLabel": "Confermato"
+            },
+            {
+              "label": "firmatario autorizzato",
+              "value": "Direttore delle finanze",
+              "sourceLabel": "Confermato"
+            }
+          ],
+          "approveLabel": "approvare il gemello",
+          "sendBackLabel": "rispedire"
+        },
+        "results": {
+          "approvedTitle": "Gemello approvato",
+          "approvedBody": "Il gemello approvato è pronto per l'esecuzione · Ogni fonte conservata",
+          "escalatedTitle": "rispedito in sicurezza",
+          "escalatedBody": "la corsa viene messa in pausa per l'input umano · non è stato archiviato nulla"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Presa",
+          "detail": "Modulo raccolto"
+        },
+        {
+          "number": "02",
+          "title": "Simulare",
+          "detail": "Esercitati prima di riempire"
+        },
+        {
+          "number": "03",
+          "title": "Approvare",
+          "detail": "Dici di sì"
+        },
+        {
+          "number": "04",
+          "title": "File e dimostrare",
+          "detail": "La prova è conservata"
+        }
+      ],
+      "principle": {
+        "kicker": "Il principio",
+        "heading": "Costruito per fidarsi. governato dalla simulazione.",
+        "body": "Ogni modulo viene provato prima di essere riempito. Sherma costruisce un gemello della forma reale, lavora l'intero riempimento contro quel gemello e te lo mostra completo. Il gemello che approvi è quello che esegue. Non un riassunto di esso, non una descrizione di esso. Gli stessi campi, gli stessi valori, nello stesso ordine.",
+        "traceLabel": "Traccia della sessione di Sherma",
+        "traceId": "SH-2291",
+        "traceMeta": "Sessione #SH-2291 · 12 secondi trascorsi",
+        "traceStatus": "Attivo",
+        "traceBody": "Costruito per i documenti che non possono permettersi di sbagliare, non il teatro demo.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Modulo rilevato",
+            "status": "done",
+            "detail": "BTW-AANGIFTE, Q3 2026 — Entità client abbinata.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Questionario generato",
+            "status": "done",
+            "detail": "26 campi precompilati dalle fatture. 4 Hai bisogno del tuo contributo.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Risposte confermate",
+            "status": "done",
+            "detail": "raccolto in chat in meno di 3 minuti.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulazione completa",
+            "status": "active",
+            "detail": "Esegui a secco contro il portale — 0 errori rilevati.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Pronto da archiviare",
+          "body": "Il gemello digitale è pronto per la revisione prima di inviare qualsiasi cosa.",
+          "approveLabel": "Rivedi e approva",
+          "escalateLabel": "Aumentare"
+        },
+        "guaranteesKicker": "Come si comporta Sherma",
+        "guaranteesHeading": "Sei cose che rimangono vere in ogni forma.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "esaminato al modulo che è stato dato",
+            "body": "Sherma tocca il modulo e i record che gli hai assegnato. Nient'altro nei tuoi sistemi è di portata."
+          },
+          {
+            "icon": "sparkles",
+            "title": "provato prima che sia reale",
+            "body": "L'intero riempimento avviene prima su un gemello. La forma live viene toccata una volta, con una risposta già nota per essere completa."
+          },
+          {
+            "icon": "users",
+            "title": "Approvazione umana al punto di non ritorno",
+            "body": "Tutto ciò che è reversibile viene eseguito automaticamente. Tutto ciò che non può essere annullato aspetta una persona."
+          },
+          {
+            "icon": "check",
+            "title": "Il gemello è il piano",
+            "body": "Ciò che approvi è un byte per byte ciò che viene inviato. Se il modulo cambia sotto, l'approvazione è nulla e ti torna indietro."
+          },
+          {
+            "icon": "search",
+            "title": "Ogni risposta ha una fonte",
+            "body": "Quale documento, quale collega, quale data. Se qualcuno interroga una figura in seguito, puoi mostrare da dove viene."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Escalation, mai fallimento silenzioso",
+            "body": "I dati mancanti non vengono indovinati. Sherma trova chi sa e chiede, in chat o su chiamata, e ti dice se è bloccato."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Cosa cambia",
+        "heading": "Sposta la limatura dalla scrivania, non fuori dal radar.",
+        "body": "Il lavoro smette di essere qualcosa che una persona fa e diventa qualcosa che una persona approva. questa è tutta la differenza.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Rispondi una volta, riutilizza ovunque",
+            "body": "Ciò che confermi diventa parte del tuo record. La prossima forma strutturalmente simile inizia per lo più a rispondere.",
+            "metric": {
+              "label": "campi riempiti senza chiedertelo",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Prima forma, quinta forma, ventesima forma. illustrativo."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "Le scadenze smettono di essere una corsa",
+            "body": "Sherma lavora durante la notte e nei fine settimana. Le ultime quarantotto ore sono per la revisione, non per l'assemblaggio."
+          },
+          {
+            "icon": "lock",
+            "title": "Il controllo è mantenuto, non scambiato",
+            "body": "Simulazione, un'approvazione esplicita e un record di ogni azione. Niente si accende senza di te."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "il processo",
+        "heading": "Come Sherma riempie un modulo, dall'inizio alla fine.",
+        "body": "Sei passi. Sherma ne gestisce quattro senza chiedere. I due contrassegnati per una persona sono i due in cui la decisione non può essere consegnata.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Presa",
+            "body": "Un URL del modulo, un'e-mail inoltrata o un portale Sherma Watches. Raccoglie il modulo e lo apre.",
+            "output": "modulo situato"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simulare",
+            "body": "Sherma costruisce un gemello del modulo e lavora l'intero riempimento contro di esso. Le regole sul campo, le sezioni condizionali e i requisiti del documento emergono tutti qui, non alla scadenza.",
+            "output": "Gemello costruito"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Riempi da quello che sa",
+            "body": "Il tuo record risponde alla maggior parte. Ogni valore porta la sua fonte, così puoi vedere da dove viene una figura e quando è stata confermata l'ultima volta.",
+            "output": "la maggior parte dei campi fatti"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Chiedi le lacune",
+            "body": "Solo ciò che veramente non sa. in chat, o su chiamata se è urgente e nessuno ha risposto. insegue finché non ha la risposta.",
+            "output": "Lacune chiuse"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Conferma il gemello",
+            "body": "il modulo compilato così come verrà presentato. Cambia tutto ciò che vuoi, quindi approvalo. Questo è il punto di non ritorno, quindi è tuo.",
+            "output": "Gemello approvato"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "eseguire e registrare",
+            "body": "Sherma riempie il modulo reale con il gemello approvato e restituisce un record di ogni campo. Laddove un portale ha bisogno di un login personale, ti consegna il modulo finito per l'invio.",
+            "output": "Archiviato, registrato"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "dove si applica",
+        "heading": "Costruito per le forme che non possono permettersi di sbagliare.",
+        "body": "Stesso agente, stesso principio. Ciò che cambia è il record da cui attinge e il portale su cui funziona.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Tasse e deposito IVA",
+            "body": "Ritiro trimestrale/GST/IVA, depositato dalle fatture già presenti nella posta in arrivo: lo stesso modulo, ogni trimestre, per ogni cliente.",
+            "steps": [
+              "deposito di lavoro aperto dalla scadenza",
+              "Fatture abbinate, IVA calcolata",
+              "Questionario: solo lacune",
+              "Restituzione depositata, confermato gemello digitale"
+            ],
+            "connections": [
+              "Portale di archiviazione (BTW / GST / IVA)",
+              "Posta in arrivo della fattura",
+              "Software di contabilità"
+            ],
+            "note": "I portali fiscali richiedono una credenziale governativa personale come EherKenning. Sherma prepara il reso per intero e il contabile lo archivia con il proprio login. Non firmerà come te."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Onboarding del fornitore e del vettore",
+            "body": "Ogni acquirente e vettore ha il proprio portale. Gli stessi dettagli aziendali, certificati e politiche, inseriti da zero per ciascuno.",
+            "steps": [
+              "Invito al portale ricevuto",
+              "Registrazione riutilizzata da riempimenti precedenti",
+              "Documenti scaduti contrassegnati e aggiornati",
+              "Onboarding completato, conferma mantenuta"
+            ],
+            "connections": [
+              "Portali di acquirenti e corriere",
+              "Registrazione, IVA e coordinate bancarie",
+              "Prove di assicurazione e polizza"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Questionari di sicurezza",
+            "body": "Revisioni sulla sicurezza dei clienti che ripetono gli stessi controlli, politiche e prove mentre ogni scadenza rimane definitiva.",
+            "steps": [
+              "questionario ricevuto dal cliente",
+              "Controlli abbinati al record approvato",
+              "Questionario: solo lacune",
+              "Pacchetto assemblato, gemello confermato"
+            ],
+            "connections": [
+              "Portali per la sicurezza dei clienti",
+              "Libreria di politiche e di controllo",
+              "Certificati e prove di audit"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Reclami partner e canale",
+            "body": "Fondi di marketing e reclami cooperativi Con la prova delle prestazioni, un formato fornitore alla volta, in cui mancare la finestra significa perdere l'allocazione.",
+            "steps": [
+              "Avviso di fondo ritirato dalla posta in arrivo",
+              "Prova di prestazioni assemblate",
+              "Affermazione abbinato al formato di quel fornitore",
+              "Reclamo pronto prima della chiusura della finestra"
+            ],
+            "connections": [
+              "Portali per i partner del fornitore",
+              "Ricevute e prove della campagna",
+              "Monitoraggio dell'allocazione e della scadenza"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Moduli assicurativi",
+            "body": "rinnovi e posizionamenti che sono prevedibili, pesanti e per lo più invariati rispetto all'ultima presentazione approvata.",
+            "steps": [
+              "Avviso di rinnovo ritirato",
+              "Caricate le risposte dell'anno scorso",
+              "Solo le modifiche interrogate",
+              "Modulo pronto, record aggiornato"
+            ],
+            "connections": [
+              "Portali broker e assicuratori",
+              "Orari delle politiche e prove",
+              "Cronologia della presentazione dell'anno precedente"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Offerte, sovvenzioni e limature",
+            "body": "Questionari di selezione, domande di finanziamento e documenti che ripetono le prove organizzative mentre ogni scadenza rimane definitiva.",
+            "steps": [
+              "Avviso abbinato al tuo profilo",
+              "Ogni domanda estratta, nessuna scremata",
+              "Sezioni organizzative a cui ha risposto dal record",
+              "Pacchetto assemblato, gemello confermato"
+            ],
+            "connections": [
+              "Portali di gara e finanziatori",
+              "Conti, assicurazioni, certificazioni",
+              "Biblioteca politica e di riferimento"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "Il tuo caso d'uso",
+            "body": "Non vedi il tuo flusso di lavoro? Descrivi il modulo, il portale o l'archiviazione e analizzeremo una corsa Sherma personalizzata attorno ad esso.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Assunzione del flusso di lavoro personalizzato",
+          "body": "Condividi il modulo ricorrente o il portale che sta rallentando il tuo team. Questa demo mantiene il brief nel tuo browser e prepara un handoff e-mail.",
+          "ctaLabel": "Prepara il mio brief di Sherma",
+          "note": "solo assunzione di campioni · nulla viene trasmesso da questa pagina",
+          "successHeading": "Il tuo brief di Sherma è pronto.",
+          "successBody": "Apri il tuo client di posta elettronica per inviare il brief precompilato quando sei pronto.",
+          "editLabel": "Modifica il caso d'uso",
+          "emailSubject": "Incontra Sherma: caso d'uso personalizzato"
+        }
+      },
+      "workedExample": {
+        "kicker": "un esempio lavorato",
+        "heading": "Archiviazione BTW Resi senza il rientro manuale.",
+        "body": "Lo stesso principio, applicato alla forma più ripetuta che ci sia. Un modello, un'entità alla volta, quattro volte l'anno, per sempre.",
+        "before": "Qualcuno raccoglie le cifre, le ri-casseggia nel ritorno, le controlla contro il libro mastro e le facementi prima della scadenza. Ogni trimestre, per ogni cliente, con niente riportato tranne un foglio di calcolo.",
+        "after": "Sherma apre il lavoro dal calendario di archiviazione, costruisce il reso dalle fatture già nella posta in arrivo, chiede solo le cifre che non può derivare e presenta il reso completato come un gemello.",
+        "linkLabel": "Parla attraverso il tuo calendario di archiviazione",
+        "emailSubject": "Flusso di lavoro di archiviazione trimestrale Sherma",
+        "card": {
+          "label": "A proposito, ritorno",
+          "period": "Q3 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Entità",
+              "value": "Cliente B.V."
+            },
+            {
+              "label": "Periodo",
+              "value": "Q3 2026"
+            },
+            {
+              "label": "Fatture abbinate",
+              "value": "41/44"
+            },
+            {
+              "label": "Figure mancanti",
+              "value": "3 — Contrassegnato",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Ritorno pronto",
+          "summary": "3 cifre hanno bisogno della tua conferma prima del deposito.",
+          "actionLabel": "Revisione e file",
+          "actionNote": "Controllo umano richiesto",
+          "note": "figure illustrative. Il tuo rapporto è misurato al primo ritorno."
+        }
+      },
+      "control": {
+        "kicker": "Autonomia controllata",
+        "heading": "autonomia senza perdere la responsabilità.",
+        "body": "Ai prima ad ogni passo. Una persona entra in un momento che non può essere annullata, e solo allora.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Tutto reversibile è automatico",
+            "body": "Leggere, simulare, riempire, inseguire, assemblare. Non è necessaria alcuna approvazione per un lavoro che possa essere semplicemente rifatto."
+          },
+          {
+            "icon": "lock",
+            "title": "Tutto irreversibile si ferma",
+            "body": "La sottomissione è il punto di non ritorno, quindi ti aspetta. Quando un portale ha bisogno di una credenziale personale, lo tieni, non Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "il gemello che approvi è quello che corre",
+            "body": "Se il modulo live cambia dopo l'approvazione, l'approvazione è annullata e ti torna indietro piuttosto che eseguire comunque."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Stuck è uno stato, non un silenzio",
+            "body": "Se Sherma non riesce a finire qualcosa, ti dice quale campo e perché, con il tempo rimasto per agire su di esso."
+          }
+        ],
+        "boundary": {
+          "label": "Confine del lavoro Sherma",
+          "badges": [
+            "Campi con ambito",
+            "Strumenti approvati"
+          ],
+          "steps": [
+            {
+              "label": "Ricevere",
+              "title": "Modulo ricevuto"
+            },
+            {
+              "label": "Simulare",
+              "title": "Prova contro un gemello"
+            },
+            {
+              "label": "Riempire",
+              "title": "Record applicato, lacune richieste"
+            },
+            {
+              "label": "✓ Verifica",
+              "title": "Gemello completo e controllato"
+            }
+          ],
+          "approvalLabel": "approvare o aumentare",
+          "executionLabel": "eseguire e registrare",
+          "sourceNote": "Fonte registrata per ogni campo",
+          "guarantee": "Gemello approvato = cosa esegue"
+        }
+      },
+      "leadCapture": {
+        "kicker": "in scala",
+        "heading": "Sherma bianco-label su scala.",
+        "body": "Questo brief è per le organizzazioni che vogliono che Sherma sia etichettata nel proprio flusso di lavoro, mille forme alla volta, non un deposito una tantum.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Dove dovrebbe correre Sherma e all'incirca quante forme?",
+        "ctaLabel": "Prepara il mio brief di Sherma",
+        "successHeading": "Il tuo brief è pronto.",
+        "successBody": "Apri il tuo client di posta elettronica per inviarlo quando sei pronto.",
+        "emailLabel": "Invia il brief via e-mail",
+        "privacyNote": "Il tuo breve rimane in questo browser finché non scegli di inviarlo via email.",
+        "emailSubject": "Sherma white label su larga scala"
+      },
+      "footer": {
+        "tagline": "Sherma compila i tuoi moduli da quello che hai già in archivio, quindi ti mostra la versione completata prima che venga inviato qualsiasi cosa.",
+        "groups": [
+          {
+            "label": "capacità",
+            "links": [
+              {
+                "label": "modulo di assunzione",
+                "target": "meet"
+              },
+              {
+                "label": "Simulazione",
+                "target": "about"
+              },
+              {
+                "label": "Approvazione e registrazione",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Azienda",
+            "links": [
+              {
+                "label": "Casi d'uso",
+                "target": "use-cases"
+              },
+              {
+                "label": "Contatto",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "INIZIAMO",
+            "links": [
+              {
+                "label": "Incontra Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026 Sherma"
+      }
+    }
+  },
+  "generatedAt": "2026-09-01T15:39:42.299Z"
+}
