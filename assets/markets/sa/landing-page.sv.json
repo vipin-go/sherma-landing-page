@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "sv",
   "regionKey": "sa",
-  "sourceRevision": "5b5276c9f150cc52693169bf818c838527be1399528bb772b814ece841083a66",
+  "sourceRevision": "71059e2923980024844dda1bdeeebd976c123085ff3469368c11d75c2e50194c",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Det du godkänner är vad som går in",
       "En registrering av varje fält"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hej, jag heter Sherma. Skicka mig ett formulär så ska jag repetera hela fyllningen mot en tvilling innan något är verkligt."
-      },
-      {
-        "role": "user",
-        "text": "Visa mig vad du hittade."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simuleringssandlåda",
       "inputPlaceholder": "Fråga Sherma om ett formulär...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "provdemo",
         "demoNote": "Endast illustrativ simulering · Ingen riktig portal eller personuppgifter används",
-        "openingReply": "Jag läste formuläret, byggde en tvilling och fyllde i 26 av 30 fält från ditt godkända register. Fyra frågor återstår. Ingenting har berört den verkliga formen.",
-        "greetingReply": "Hej, jag heter Sherma. Jag läste ett formulär, repeterar fyllningen mot en tvilling av det och visar dig exakt vad som skulle skickas in. Ingenting når den verkliga formen förrän du säger det.",
+        "openingReply": "Hej, jag är Sherma. Vilket formulär vill du ha hjälp med?",
+        "greetingReply": "Hej, jag är Sherma. Vilket formulär vill du ha hjälp med?",
         "instructionReply": "För att komma igång, ladda upp skärmdumpar av formuläret du vill fylla i. JPEG, PNG eller WEBP · Upp till 6 bilder. Jag ska ta fram frågorna och berätta vad jag fortfarande behöver.",
         "reviewReply": "Här är tvillingen. Det är komplett, kontrollerat och fortfarande separat från liveformuläret. Det du godkänner här är vad som körs, fält för fält.",
         "approvedReply": "Godkänd i demon. Den exakta godkända tvillingen är redo att köras och varje fält behåller sin källa.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "8328397a71e7f23acaf04a2876af132bf37aec0822734ec5f48901b1e6f226d8"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "9a1e3bff4f0978256c97132b47baeff0db12740586af08f1a4526b1b7b3d5f26"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "76ab4e8d5bb6541102b71a06961700910452033d98d30ec3d6a1753a9b397caf"
+      "sourceHash": "1e064ba5246b115dc87b851bd51223ac8b842b697efd41a4263102d1d01a6429"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "34e8825dc53a15371dce62b0f50412d55ee3dd700767a0b288cafef97b2585b5"
+      "sourceHash": "1e064ba5246b115dc87b851bd51223ac8b842b697efd41a4263102d1d01a6429"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "06a5e88940aa426f5175793d91aeaa722b752ecc796864078cb87b2ba733091b",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:21:00.886Z"
 }

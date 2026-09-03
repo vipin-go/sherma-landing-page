@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "pt",
   "regionKey": "jp",
-  "sourceRevision": "81e418b4ed12ac0e519da20feca27dc1594f0bcf5c2900f24390c69dde087b64",
+  "sourceRevision": "b24cb106896f8927dadf2d83470f02b7fbd3e55d3d9faaeeb186798a92655dc7",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "O que você aprova é o que entra",
       "Um registro de cada campo"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Olá, sou Sherma. Envie-me um formulário e ensaiarei todo o preenchimento contra um gêmeo antes que qualquer coisa seja real."
-      },
-      {
-        "role": "user",
-        "text": "Mostre-me o que você encontrou."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Sandbox de simulação",
       "inputPlaceholder": "Pergunte a Sherma sobre um formulário…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Exemplo de demonstração",
         "demoNote": "Simulação ilustrativa apenas · Nenhum portal real ou dados pessoais são usados",
-        "openingReply": "Eu li o formulário, construí um gêmeo e preenchi 26 dos 30 campos do seu registro aprovado. Restam quatro questões. Nada tocou a forma real.",
-        "greetingReply": "Olá, sou Sherma. Eu leio um formulário, ensaizo o preenchimento contra um gêmeo dele e mostro exatamente o que seria enviado. Nada atinge a forma real até que você diga.",
+        "openingReply": "Olá, sou Sherma. Com qual formulário você precisa de ajuda?",
+        "greetingReply": "Olá, sou Sherma. Com qual formulário você precisa de ajuda?",
         "instructionReply": "Para começar, faça upload de capturas de tela do formulário que você deseja preencher. JPEG, PNG ou WebP · Até 6 imagens. Vou extrair as perguntas e dizer o que ainda preciso.",
         "reviewReply": "Aqui está o gêmeo. Ele está completo, verificado e ainda separado do formulário ao vivo. O que você aprova aqui é o que executa, campo para campo.",
         "approvedReply": "Aprovado na demonstração. O gêmeo aprovado exato está pronto para ser executado e cada campo retém sua origem.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "38eb83e5da22593056a960081545fa745fee65b3bb973261bf03f6f9a98cbca7"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "629e420f322822f108f4520c62ec1b5f5c4e6ace0937b6e0b5b065aefbb7501b"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "44453618eedeb8fd0f26d7a0d42f17a004286a15def8a31c00144d51a0b50728"
+      "sourceHash": "e9783b3164d7a821e2fc890ed0c701c4a1cb3d1ddbf4b8ef83a0ed1e179e795a"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "b25914513f204d03eb63f94055ae83da2878bd6ab37f6f4e83d3dd66994fa899"
+      "sourceHash": "e9783b3164d7a821e2fc890ed0c701c4a1cb3d1ddbf4b8ef83a0ed1e179e795a"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "c3fb4c6e8d6e0bc666b71c9fabe2bd6808c91eb4c9024a7773b96297c97ef0d0",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:52.163Z"
 }

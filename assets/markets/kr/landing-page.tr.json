@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "tr",
   "regionKey": "kr",
-  "sourceRevision": "f834715fb4f07297fd660b7c811e5566972a94c56a1c3d0638441a8433cf05d4",
+  "sourceRevision": "c139d2dcc4d6450d52e2343fe3a355d7e9c2013aad5aa4c9edf12a08adeff790",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Onayladığın şey, içeri giren şeydir",
       "Her alanın bir kaydı"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Merhaba, ben Sherma. Bana bir form gönder ve her şey gerçek olmadan önce bir ikizin tüm dolgusunu prova edeceğim."
-      },
-      {
-        "role": "user",
-        "text": "Bana ne bulduğunu göster."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Çevrimiçi · Simülasyon Sandbox",
       "inputPlaceholder": "Bir form hakkında Sherma'ya sorun…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Örnek Demo",
         "demoNote": "Yalnızca açıklayıcı simülasyon · Gerçek portal veya kişisel veri kullanılmaz",
-        "openingReply": "Formu okudum, bir ikiz oluşturdum ve onaylı kaydınızdan 30 alandan 26'sını doldurdum. Dört soru kaldı. Hiçbir şey gerçek forma dokunmadı.",
-        "greetingReply": "Merhaba, ben Sherma. Bir form okudum, ikizine karşı dolguyu prova ediyorum ve size tam olarak ne gönderileceğini gösteriyorum. Siz söyleyene kadar hiçbir şey gerçek forma ulaşamaz.",
+        "openingReply": "Merhaba, ben Sherma. Hangi form için yardıma ihtiyacınız var?",
+        "greetingReply": "Merhaba, ben Sherma. Hangi form için yardıma ihtiyacınız var?",
         "instructionReply": "Başlamak için, doldurulmasını istediğiniz formun ekran görüntülerini yükleyin. JPEG, PNG veya WebP · 6 adede kadar resim. Soruları çıkaracağım ve hala ihtiyacım olanı söyleyeceğim.",
         "reviewReply": "İşte ikiz. Doldurulmuş, kontrol edilmiş ve hala canlı formdan ayrıdır. Burada onayladığınız şey, alan için alan olan şeydir.",
         "approvedReply": "demoda onaylandı. Tam onaylı ikiz yürütmeye hazırdır ve her alan kaynağını korur.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "d2ad928f074090d8d3a9bf40c788dc2c2096b0e9af996e16b0efc335b9b79e9a"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "27f6efaedc2b52e6ebfe5ff2b0229876b96cc3e13875810935d53bb0328274f7"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "cfc345a615ed1e5a6f7f6cf49f55a4493ec26a7240b99907d0482b6da4176645"
+      "sourceHash": "f45af8b708549936875cb91c99c8fcce6dbd5d9b3efbb3a2767f6f57ad05a4fc"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "c752d66dd95869cb05b0b662fee7db411d7858dc5c0adbf420db279488a2bad0"
+      "sourceHash": "f45af8b708549936875cb91c99c8fcce6dbd5d9b3efbb3a2767f6f57ad05a4fc"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "880388bd916fca9f11fa9524a9f2792708adab3f16056c4e768dd4a9af9472c6",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:53.644Z"
 }

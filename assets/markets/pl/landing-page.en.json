@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "en",
   "regionKey": "pl",
-  "sourceRevision": "be2e22501c98b86eee8940bbb3f3646243e6cae806c9ba47adce96ca3e12c891",
+  "sourceRevision": "a1910dfa1fadbec44af2caa27efc7925782f6dd2b25113193240dda0aed726e7",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "What you approve is what goes in",
       "A record of every field"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hi, I’m Sherma. Send me a form and I will rehearse the whole fill against a twin before anything is real."
-      },
-      {
-        "role": "user",
-        "text": "Show me what you found."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · simulation sandbox",
       "inputPlaceholder": "Ask Sherma about a form…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "SAMPLE DEMO",
         "demoNote": "Illustrative simulation only · No real portal or personal data is used",
-        "openingReply": "I read the form, built a twin, and filled 26 of 30 fields from your approved record. Four questions remain. Nothing has touched the real form.",
-        "greetingReply": "Hi, I'm Sherma. I read a form, rehearse the fill against a twin of it, and show you exactly what would be submitted. Nothing reaches the real form until you say so.",
+        "openingReply": "Hi, I'm Sherma. What form would you like help with?",
+        "greetingReply": "Hi, I'm Sherma. What form would you like help with?",
         "instructionReply": "To get started, upload screenshots of the form you want filled. JPEG, PNG, or WebP · up to 6 images. I'll extract the questions and tell you what I still need.",
         "reviewReply": "Here is the twin. It is complete, checked, and still separate from the live form. What you approve here is what executes, field for field.",
         "approvedReply": "Approved in the demo. The exact approved twin is ready to execute and every field retains its source.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "fd2f2347bc391721042627c75c1747ac7a459e84ee25f08373decc666e5253bc"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "fdc16873c42d53ae37bd765634f1ac572b5d40918b715da668f217e0331b9312"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "2a4116d9a3781d98a5092a073e411468dc6a73aa9b7366b597fbd0675f2f3124"
+      "sourceHash": "5a2d6c16f4015ee55bfdbcf5fa503a368303fbdc7d903b4badb0324bcd49d886"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "a28cf80869cfa979c3854d8b48037e9711544d1f1ab6909835f6e5f13a213883"
+      "sourceHash": "5a2d6c16f4015ee55bfdbcf5fa503a368303fbdc7d903b4badb0324bcd49d886"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "9c4c99361694b67a1d78821a288af63e73848a67e499c176a2a9a34f8832c8b1",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:59.485Z"
 }

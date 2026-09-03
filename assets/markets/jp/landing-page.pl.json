@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "pl",
   "regionKey": "jp",
-  "sourceRevision": "81e418b4ed12ac0e519da20feca27dc1594f0bcf5c2900f24390c69dde087b64",
+  "sourceRevision": "b24cb106896f8927dadf2d83470f02b7fbd3e55d3d9faaeeb186798a92655dc7",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "To, co zatwierdzasz, to to, co wchodzi",
       "zapis każdego pola"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Cześć, jestem Sherma. Wyślij mi formularz, a przećwiczę całe wypełnienie przeciwko bliźniakowi, zanim cokolwiek stanie się prawdziwe."
-      },
-      {
-        "role": "user",
-        "text": "Pokaż mi, co znalazłeś."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Piaskownica symulacji",
       "inputPlaceholder": "Zapytaj Shermę o formularz…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Przykładowe demo",
         "demoNote": "Tylko symulacja ilustrująca · Nie używa się prawdziwego portalu ani danych osobowych",
-        "openingReply": "Przeczytałem formularz, zbudowałem bliźniąt i wypełniłem 26 z 30 pól z zatwierdzonego rekordu. Pozostają cztery pytania. Nic nie dotknęło prawdziwej formy.",
-        "greetingReply": "Cześć, jestem Sherma. Przeczytałem formularz, ćwiczę wypełnienie z bliźniakiem z jego bliźniakiem i pokażę ci dokładnie, co zostanie przesłane. Nic nie osiągnie prawdziwej formy, dopóki tego nie powiesz.",
+        "openingReply": "Cześć, jestem Sherma. Z którym formularzem potrzebujesz pomocy?",
+        "greetingReply": "Cześć, jestem Sherma. Z którym formularzem potrzebujesz pomocy?",
         "instructionReply": "Aby rozpocząć, prześlij zrzuty ekranu z formularza, który chcesz wypełnić. jpeg, png lub webp · Do 6 obrazów. Wyciągnę pytania i powiem ci, czego wciąż potrzebuję.",
         "reviewReply": "Oto bliźniak. Jest kompletny, sprawdzony i nadal oddzielony od formularza na żywo. To, co tutaj zatwierdzasz, to to, co wykonuje, pole dla pola.",
         "approvedReply": "Zatwierdzone w demo. Dokładnie zatwierdzony bliźniak jest gotowy do wykonania, a każde pole zachowuje swoje źródło.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "38eb83e5da22593056a960081545fa745fee65b3bb973261bf03f6f9a98cbca7"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "629e420f322822f108f4520c62ec1b5f5c4e6ace0937b6e0b5b065aefbb7501b"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "44453618eedeb8fd0f26d7a0d42f17a004286a15def8a31c00144d51a0b50728"
+      "sourceHash": "e9783b3164d7a821e2fc890ed0c701c4a1cb3d1ddbf4b8ef83a0ed1e179e795a"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "b25914513f204d03eb63f94055ae83da2878bd6ab37f6f4e83d3dd66994fa899"
+      "sourceHash": "e9783b3164d7a821e2fc890ed0c701c4a1cb3d1ddbf4b8ef83a0ed1e179e795a"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "c3fb4c6e8d6e0bc666b71c9fabe2bd6808c91eb4c9024a7773b96297c97ef0d0",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:52.347Z"
 }

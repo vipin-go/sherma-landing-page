@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "et",
   "regionKey": "br",
-  "sourceRevision": "43b6da9c91375b313a27450a6de23ab5d54962fded496f3be1f5b9f20b4df0dc",
+  "sourceRevision": "7bae91ccd201fb1c13fd07b29eabff4c401b85318ce66e794f2b9383c8a590c0",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Mida heaks kiidate, see läheb sisse",
       "Iga välja kirje"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Tere, olen Sherma. Saatke mulle veidlapa ja ma harjutan kogu täitmist duubli vastu enne, kui midagi päris saab."
-      },
-      {
-        "role": "user",
-        "text": "Näidake mulle, mida leidsite."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Veebis · simulatsiooni liivakast",
       "inputPlaceholder": "Küsite Shermalt vormist...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "NÄIDIS DEMO",
         "demoNote": "Ainult illustratiivne simulatsioon · Ühtegi päris portaali ega isikuandmeid ei kasutata",
-        "openingReply": "Lugesin vormi, ehitasin duubli ja täitsin 26 välja 30-st teie heakskiidetud kirjest. Neli küsimust jääb. Midagi ei puudutanud päris vormi.",
-        "greetingReply": "Tere, olen Sherma. Loen veidlapu, harjutan selle täitmist duubli vastu ja näitan teile täpselt, mis esitatakse. Midagi ei jõua päris vormini, kuni te seda ütlete.",
+        "openingReply": "Tere, olen Sherma. Millise vormiga vajad abi?",
+        "greetingReply": "Tere, olen Sherma. Millise vormiga vajad abi?",
         "instructionReply": "Alustamiseks laadige üles ekraanipildid vormist, mida soovite täita. JPEG, PNG või WebP · kuni 6 pilti. Ma eraldan küsimused ja ütlen teile, mida mul veel vaja on.",
         "reviewReply": "Siin on duubel. See on täielik, kontrollitud ja endiselt reaalsest vormist eraldiseisvana. Mida te siin heaks kiidate, see on see, mis täidetakse, väli realt väljale.",
         "approvedReply": "Demo heakskiidetud. täpne heakskiidetud duubel on käivitamiseks valmis ja iga väli säilitab oma allika.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "bd71550dfe924a4fc56ba795eae9b220485aca5e7207ea2459ea9ac5298dd067"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "96f6dd0a406917e1d39bb0904962e9cfecb10664d100b6fd51dfc9be3a1db526"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "7adbf9ce314ade607eb8fc23fd47c8a0e44615b9bf939936b5eb78442be5e5da"
+      "sourceHash": "1b8a9b565ff05df23dfce9e3df1d3f3a92634255cafbba0e534f29ae90f413c7"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "239022ce6b66eb4f2d2fc8008cda39c1cebaefd3810874a4e710eabcca89ec72"
+      "sourceHash": "1b8a9b565ff05df23dfce9e3df1d3f3a92634255cafbba0e534f29ae90f413c7"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "ba3b9f7fa3b46ceb8cb0ca5b0cb264b8ce8ccc7382b0413ec73c1b0ebba34e23",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:40.449Z"
 }

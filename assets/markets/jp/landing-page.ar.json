@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "ar",
   "regionKey": "jp",
-  "sourceRevision": "81e418b4ed12ac0e519da20feca27dc1594f0bcf5c2900f24390c69dde087b64",
+  "sourceRevision": "b24cb106896f8927dadf2d83470f02b7fbd3e55d3d9faaeeb186798a92655dc7",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "ما توافق عليه هو ما يدخل",
       "سجل لكل مجال"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "مرحبا انا شيرما. أرسل لي نموذجًا وسأتدرب على التعبئة الكاملة ضد توأم قبل أن يكون أي شيء حقيقيًا."
-      },
-      {
-        "role": "user",
-        "text": "أرني ما وجدته."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "على الإنترنت · محاكاة رمل",
       "inputPlaceholder": "اسأل شيرما عن نموذج ...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "نموذج تجريبي",
         "demoNote": "محاكاة توضيحية فقط · لا توجد بوابة حقيقية أو بيانات شخصية",
-        "openingReply": "قرأت النموذج ، وقمت ببناء توأم ، وملأت 26 حقلاً من 30 حقلاً من سجلك المعتمد. لا يزال هناك أربعة أسئلة. لم يمس أي شيء الشكل الحقيقي.",
-        "greetingReply": "مرحبًا ، أنا شيرما. قرأت نموذجًا ، وأتمرن على التعبئة مقابل توأم ، وأظهر لك بالضبط ما سيتم تقديمه. لا شيء يصل إلى الشكل الحقيقي حتى تقول ذلك.",
+        "openingReply": "مرحبًا، أنا Sherma. ما النموذج الذي تحتاج إلى مساعدة فيه؟",
+        "greetingReply": "مرحبًا، أنا Sherma. ما النموذج الذي تحتاج إلى مساعدة فيه؟",
         "instructionReply": "للبدء ، قم بتحميل لقطات شاشة للنموذج الذي تريد ملؤه. JPEG أو بابوا نيو غينيا أو WebP · ما يصل إلى 6 صور. سأستخرج الأسئلة وأخبرك بما ما زلت بحاجة إليه.",
         "reviewReply": "هنا التوأم. إنه كامل ومدقق ولا يزال منفصلاً عن النموذج المباشر. ما توافق عليه هنا هو ما ينفذ ، مجال الحقل.",
         "approvedReply": "تمت الموافقة عليه في العرض. التوأم المعتمد الدقيق جاهز للتنفيذ ويحتفظ كل مجال بمصدره.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "38eb83e5da22593056a960081545fa745fee65b3bb973261bf03f6f9a98cbca7"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "629e420f322822f108f4520c62ec1b5f5c4e6ace0937b6e0b5b065aefbb7501b"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "44453618eedeb8fd0f26d7a0d42f17a004286a15def8a31c00144d51a0b50728"
+      "sourceHash": "e9783b3164d7a821e2fc890ed0c701c4a1cb3d1ddbf4b8ef83a0ed1e179e795a"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "b25914513f204d03eb63f94055ae83da2878bd6ab37f6f4e83d3dd66994fa899"
+      "sourceHash": "e9783b3164d7a821e2fc890ed0c701c4a1cb3d1ddbf4b8ef83a0ed1e179e795a"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "c3fb4c6e8d6e0bc666b71c9fabe2bd6808c91eb4c9024a7773b96297c97ef0d0",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:52.706Z"
 }

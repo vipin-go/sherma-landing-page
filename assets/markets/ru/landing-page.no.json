@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "no",
   "regionKey": "ru",
-  "sourceRevision": "b84c645d37cc9ecf51dd7e08f994e3f941a1ed666793aace5d6c7c0a4c86d89e",
+  "sourceRevision": "67616c313f8964d9680acc19b068f5985aec1a0c7ac9afd6be106b2018afef70",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Det du godkjenner er det som går inn",
       "en oversikt over hvert felt"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hei, jeg heter Sherma. Send meg et skjema, så skal jeg øve hele fyllet mot en tvilling før noe er ekte."
-      },
-      {
-        "role": "user",
-        "text": "Vis meg hva du fant."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simuleringssandkasse",
       "inputPlaceholder": "Spør Sherma om et skjema...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Eksempel på demo",
         "demoNote": "Kun illustrativ simulering · Ingen reell portal eller personopplysninger brukes",
-        "openingReply": "Jeg leste skjemaet, bygde en tvilling og fylte 26 av 30 felt fra din godkjente post. Fire spørsmål gjenstår. Ingenting har rørt den virkelige formen.",
-        "greetingReply": "Hei, jeg heter Sherma. Jeg leser et skjema, øver på fyllingen mot en tvilling av det, og viser deg nøyaktig hva som skal sendes inn. Ingenting når den virkelige formen før du sier det.",
+        "openingReply": "Hei, jeg er Sherma. Hvilket skjema vil du ha hjelp med?",
+        "greetingReply": "Hei, jeg er Sherma. Hvilket skjema vil du ha hjelp med?",
         "instructionReply": "For å komme i gang, last opp skjermbilder av skjemaet du vil fylle ut. JPEG, PNG eller WEBP · Opptil 6 bilder. Jeg skal trekke ut spørsmålene og fortelle deg hva jeg fortsatt trenger.",
         "reviewReply": "Her er tvillingen. Den er fullstendig, sjekket og fortsatt atskilt fra live-skjemaet. Det du godkjenner her er hva som utføres, felt for felt.",
         "approvedReply": "godkjent i demoen. Den eksakt godkjente tvillingen er klar til å utføres og hvert felt beholder sin kilde.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "e156d04dbb4b2e8dc474679a855431522d5137d581d531703ca6f15a59d4d472"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "d80cfdc1fc8d34c327049e3adf6d5d2590bff1d2dfbddb7b3407228b3165cd32"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "abc0a105bd4dac450b60f9c28d301f12c47b76194e1b24d78c7bb6bbc7f0d5dd"
+      "sourceHash": "e5f2464614b8675d22f9e283fca76a2fb3594937f306f4e2a4afce8f4e59314e"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "3ad402c33f185a5cda2c1a68d6151e47753d5c23f9ef0ef3ab35e0451f983fd1"
+      "sourceHash": "e5f2464614b8675d22f9e283fca76a2fb3594937f306f4e2a4afce8f4e59314e"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "04b5b44c6273873ff5190707c1d184cca61b8021e1bf535ea2516154bc1d4325",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:21:00.669Z"
 }

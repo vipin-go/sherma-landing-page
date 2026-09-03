@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "he",
   "regionKey": "br",
-  "sourceRevision": "43b6da9c91375b313a27450a6de23ab5d54962fded496f3be1f5b9f20b4df0dc",
+  "sourceRevision": "7bae91ccd201fb1c13fd07b29eabff4c401b85318ce66e794f2b9383c8a590c0",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "מה שאתה מאשר זה מה שנכנס",
       "תיעוד של כל תחום"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "היי, אני שרמה. שלח לי טופס ואני אעשה חזרות על כל המילוי נגד תאום לפני שמשהו אמיתי."
-      },
-      {
-        "role": "user",
-        "text": "תראה לי מה מצאת."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "מקוון · ארגז חול סימולציה",
       "inputPlaceholder": "שאל את שרמה לגבי טופס...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "הדגמה לדוגמה",
         "demoNote": "סימולציה המחשה בלבד · לא נעשה שימוש בפורטל אמיתי או בנתונים אישיים",
-        "openingReply": "קראתי את הטופס, בניתי תאום ומילאתי 26 מתוך 30 שדות מהרשומה המאושרת שלך. נותרו ארבע שאלות. שום דבר לא נגע בצורה האמיתית.",
-        "greetingReply": "היי, אני שרמה. אני קורא טופס, עושה חזרות על המילוי נגד תאום שלו, ומראה לך בדיוק מה יישלח. שום דבר לא מגיע לצורה האמיתית עד שאתה אומר זאת.",
+        "openingReply": "שלום, אני Sherma. באיזה טופס דרושה לך עזרה?",
+        "greetingReply": "שלום, אני Sherma. באיזה טופס דרושה לך עזרה?",
         "instructionReply": "כדי להתחיל, העלה צילומי מסך של הטופס שברצונך למלא. JPEG, PNG או WebP · עד 6 תמונות. אני אחלץ את השאלות ואגיד לך מה אני עדיין צריך.",
         "reviewReply": "הנה התאום. הוא שלם, מסומן ועדיין נפרד מהטופס החי. מה שאתה מאשר כאן הוא מה מבצע, שדה עבור שדה.",
         "approvedReply": "אושר בהדגמה. התאום המאושר המדויק מוכן לביצוע וכל שדה שומר על מקורו.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "bd71550dfe924a4fc56ba795eae9b220485aca5e7207ea2459ea9ac5298dd067"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "96f6dd0a406917e1d39bb0904962e9cfecb10664d100b6fd51dfc9be3a1db526"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "7adbf9ce314ade607eb8fc23fd47c8a0e44615b9bf939936b5eb78442be5e5da"
+      "sourceHash": "1b8a9b565ff05df23dfce9e3df1d3f3a92634255cafbba0e534f29ae90f413c7"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "239022ce6b66eb4f2d2fc8008cda39c1cebaefd3810874a4e710eabcca89ec72"
+      "sourceHash": "1b8a9b565ff05df23dfce9e3df1d3f3a92634255cafbba0e534f29ae90f413c7"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "ba3b9f7fa3b46ceb8cb0ca5b0cb264b8ce8ccc7382b0413ec73c1b0ebba34e23",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:40.293Z"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "bg",
   "regionKey": "pl",
-  "sourceRevision": "be2e22501c98b86eee8940bbb3f3646243e6cae806c9ba47adce96ca3e12c891",
+  "sourceRevision": "a1910dfa1fadbec44af2caa27efc7925782f6dd2b25113193240dda0aed726e7",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Това, което одобрявате, е това, което влиза",
       "Запис на всяко поле"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Здравейте, аз съм Шърма. Изпратете ми формуляр и ще репетирам цялото запълване срещу близнак, преди нещо да е истинско."
-      },
-      {
-        "role": "user",
-        "text": "Покажи ми какво намери."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "онлайн · симулация",
       "inputPlaceholder": "Попитайте Шърма за формуляр...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Примерна демонстрация",
         "demoNote": "Само илюстративна симулация · Не се използва реален портал или лични данни",
-        "openingReply": "Прочетох формуляра, създадох близнак и попълних 26 от 30 полета от одобрения ви запис. Остават четири въпроса. Нищо не е докоснало истинската форма.",
-        "greetingReply": "Здравей, аз съм Шърма. Прочетох формуляр, репетирам попълването срещу близнак от него и ви показвам какво точно ще бъде изпратено. Нищо не достига до истинската форма, докато не го кажете.",
+        "openingReply": "Здравейте, аз съм Sherma. С кой формуляр имате нужда от помощ?",
+        "greetingReply": "Здравейте, аз съм Sherma. С кой формуляр имате нужда от помощ?",
         "instructionReply": "За да започнете, качете екранни снимки на формуляра, който искате да попълните. JPEG, PNG или WebP · До 6 изображения. Ще извадя въпросите и ще ви кажа от какво още имам нужда.",
         "reviewReply": "Ето го Близнака. Той е пълен, проверен и все още отделен от живия формуляр. Това, което одобрявате тук, е това, което се изпълнява, поле за поле.",
         "approvedReply": "Одобрен в демонстрацията. Точният одобрен близнак е готов за изпълнение и всяко поле запазва своя източник.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "fd2f2347bc391721042627c75c1747ac7a459e84ee25f08373decc666e5253bc"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "fdc16873c42d53ae37bd765634f1ac572b5d40918b715da668f217e0331b9312"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "2a4116d9a3781d98a5092a073e411468dc6a73aa9b7366b597fbd0675f2f3124"
+      "sourceHash": "5a2d6c16f4015ee55bfdbcf5fa503a368303fbdc7d903b4badb0324bcd49d886"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "a28cf80869cfa979c3854d8b48037e9711544d1f1ab6909835f6e5f13a213883"
+      "sourceHash": "5a2d6c16f4015ee55bfdbcf5fa503a368303fbdc7d903b4badb0324bcd49d886"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "9c4c99361694b67a1d78821a288af63e73848a67e499c176a2a9a34f8832c8b1",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:21:00.055Z"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "it",
   "regionKey": "nl",
-  "sourceRevision": "8de7ea3e757947bfefcac0d7667e512708b1907a9e3045baf8099a3ae9f9d90d",
+  "sourceRevision": "90db3ca94a8b9c424f593536e3b98c2c72a838851e10654ed7a1157682cef689",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Quello che approvi è ciò che entra",
       "Un record di ogni campo"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Ciao, sono Sherma. Mandami un modulo e proverò l'intero riempimento contro un gemello prima che qualcosa sia reale."
-      },
-      {
-        "role": "user",
-        "text": "Mostrami cosa hai trovato."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Sandbox di simulazione",
       "inputPlaceholder": "Chiedi a Sherma un modulo...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Demo di esempio",
         "demoNote": "Solo simulazione illustrativa · Non vengono utilizzati portali reali o dati personali",
-        "openingReply": "Ho letto il modulo, ho costruito un gemello e ho riempito 26 dei 30 campi dal tuo record approvato. Rimangono quattro domande. Niente ha toccato la forma reale.",
-        "greetingReply": "Ciao, sono Sherma. Ho letto un modulo, provo il riempimento contro un gemello e ti mostro esattamente cosa sarebbe stato inviato. Niente raggiunge la forma reale finché non lo dici tu.",
+        "openingReply": "Ciao, sono Sherma. Per quale modulo hai bisogno di aiuto?",
+        "greetingReply": "Ciao, sono Sherma. Per quale modulo hai bisogno di aiuto?",
         "instructionReply": "Per iniziare, carica gli screenshot del modulo che desideri compilare. JPEG, PNG o WEBP · Fino a 6 immagini. Estrarrò le domande e ti dirò di cosa ho ancora bisogno.",
         "reviewReply": "Ecco il gemello. È completo, controllato e ancora separato dal modulo live. Quello che approvi qui è ciò che viene eseguito, campo per campo.",
         "approvedReply": "Approvato nella demo. Il gemello esatto approvato è pronto per l'esecuzione e ogni campo mantiene la sua fonte.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "3b710a8f4888668089fbdac193277b6d73e0ffd4b9b00877a0104cd1025ca788"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "613d3500d083ef71005e1d65b7253bfa0c7cc76c4151b14b32d30aeb5aef83ca"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "960f2bc57318d954a570ce645d25a6c01fb3f9b31e099d2a67c0b42c419b26b9"
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "30f1c305f9425841560afb40f3af8e3992071390d8299bfa33234458d112b019"
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "ca08011ab6f038be983aa837cf82ee196335455120e20439274d60e0edd160d4",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:58.577Z"
 }

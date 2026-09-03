@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "cs",
   "regionKey": "mx",
-  "sourceRevision": "50942429c8d03e143aa7b36fe36687b679f258a99e08339d5fc1f76f04152178",
+  "sourceRevision": "dfd35d51254bee349a074663395ef0bd062ba673325d6b481a78fb1577aca286",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "To, co schvalujete, je to, co jde dovnitř",
       "Záznam každého oboru"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Ahoj, já jsem Sherma. Pošlete mi formulář a já nacvičím celou výplň proti dvojčeti, než bude něco skutečné."
-      },
-      {
-        "role": "user",
-        "text": "Ukaž mi, co jsi našel."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simulační sandbox",
       "inputPlaceholder": "Zeptejte se Shermy na formulář…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Ukázkové demo",
         "demoNote": "Pouze ilustrativní simulace · Nejsou použity žádné skutečné portály nebo osobní údaje",
-        "openingReply": "Přečetl jsem si formulář, postavil dvojče a vyplnil 26 z 30 polí z vašeho schváleného záznamu. Zbývají čtyři otázky. Nic se nedotklo skutečné formy.",
-        "greetingReply": "Ahoj, já jsem Sherma. Přečetl jsem si formulář, nacvičil jsem výplň proti jeho dvojčeti a ukážu vám, co přesně by bylo předloženo. Nic nedosáhne skutečné podoby, dokud to neřeknete.",
+        "openingReply": "Ahoj, jsem Sherma. S jakým formulářem potřebuješ pomoct?",
+        "greetingReply": "Ahoj, jsem Sherma. S jakým formulářem potřebuješ pomoct?",
         "instructionReply": "Chcete-li začít, nahrajte snímky obrazovky formuláře, který chcete vyplnit. jpeg, png nebo webp · až 6 obrázků. Rozbalím otázky a řeknu vám, co ještě potřebuji.",
         "reviewReply": "Tady je dvojče. Je kompletní, zkontrolovaný a stále oddělený od živého formuláře. To, co zde schvalujete, je to, co provede, pole pro pole.",
         "approvedReply": "schváleno v demu. Přesně schválené dvojče je připraveno k provedení a každé pole si ponechává svůj zdroj.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "06612dc1c9afec1eae9557f1d34703a8c362c7c85c6a716a4835e4cc962e3416"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "958e24cc133d2ba91d198e31b56e5400b404db3a0fda0c7e24b4b5bc7e1c12bd"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "7e0e13fdf3784ea5f7da3f85e6e2928d0eaa3df231025996822af34474ee9e0c"
+      "sourceHash": "ad42ad9a92f45f26da028322e22a5453c853ab9dfa64d8db27975321ba297a22"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "8b8edd9dd4bc7286e5a66a4f3f860065440a28da1e55a303f2d62aefd23140ef"
+      "sourceHash": "ad42ad9a92f45f26da028322e22a5453c853ab9dfa64d8db27975321ba297a22"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "2c302711d9b0aa359cdd6741d57eb612acc2a53753ab7b478e477b4f3aca2dbf",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:57.696Z"
 }

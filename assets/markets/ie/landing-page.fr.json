@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "fr",
   "regionKey": "ie",
-  "sourceRevision": "8141670b3cc589bcfb9da5dffeff1d8813c765f4304179d82c012e0f9be455e3",
+  "sourceRevision": "29dafdae0f5ac5dd85409b647bb044981d9579e2edfb7b02428582953f31b453",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Ce que vous approuvez, c'est ce qui se passe",
       "Un enregistrement de chaque champ"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Bonjour, je suis Sherma. Envoyez-moi un formulaire et je répéterai tout le remplissage contre un jumeau avant que quoi que ce soit soit réel."
-      },
-      {
-        "role": "user",
-        "text": "Montre-moi ce que tu as trouvé."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "En ligne · Bac à sable de simulation",
       "inputPlaceholder": "Demandez à Sherma un formulaire…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Exemple de démonstration",
         "demoNote": "Simulation illustrative uniquement · Aucun portail ou données personnelles n'est utilisé",
-        "openingReply": "J'ai lu le formulaire, j'ai construit un jumeau et j'ai rempli 26 des 30 champs à partir de votre dossier approuvé. Il reste quatre questions. Rien n'a touché la forme réelle.",
-        "greetingReply": "Salut, je suis Sherma. J'ai lu un formulaire, je répète le remplissage contre un jumeau et je vous montre exactement ce qui serait soumis. Rien n'atteint la forme réelle jusqu'à ce que vous le disiez.",
+        "openingReply": "Bonjour, je suis Sherma. Pour quel formulaire souhaitez-vous de l’aide ?",
+        "greetingReply": "Bonjour, je suis Sherma. Pour quel formulaire souhaitez-vous de l’aide ?",
         "instructionReply": "Pour commencer, téléchargez des captures d'écran du formulaire que vous souhaitez remplir. JPEG, PNG ou WebP · Jusqu'à 6 images. Je vais extraire les questions et vous dire ce dont j'ai encore besoin.",
         "reviewReply": "Voici le jumeau. Il est complet, vérifié et toujours séparé du formulaire en direct. Ce que vous approuvez ici, c'est ce qui s'exécute, champ pour le champ.",
         "approvedReply": "Approuvé dans la démo. Le jumeau approuvé exact est prêt à être exécuté et chaque champ conserve sa source.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "15b578d50f128a05530b956842d43ffcdf6d3d79be2b945c372421cf9fe421f7"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "0018cdcb190ef39ae4f889fe907075dc25b518e69ae4cf81ceacae0b6bdafdfa"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "9fec978239f13d339843147b216942d8e07f79df24d670fa0f1790483a8af24c"
+      "sourceHash": "5ad7f74de0507ff344479232bc90c78f276e7507ab95d548e1188de32e9d8033"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "5810550c0813746b1436a8540c03c4b1d55907352a15523fb483546091ef9902"
+      "sourceHash": "5ad7f74de0507ff344479232bc90c78f276e7507ab95d548e1188de32e9d8033"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "efa0be875a8651d0ba85b1974ebaa24dc4714a5a5b088954141b828637d75357",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:45.641Z"
 }

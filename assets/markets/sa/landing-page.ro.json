@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "ro",
   "regionKey": "sa",
-  "sourceRevision": "5b5276c9f150cc52693169bf818c838527be1399528bb772b814ece841083a66",
+  "sourceRevision": "71059e2923980024844dda1bdeeebd976c123085ff3469368c11d75c2e50194c",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Ceea ce aprobi este ceea ce intră",
       "o înregistrare a fiecărui câmp"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Bună, sunt Sherma. Trimite-mi un formular și voi repeta întreaga umplere împotriva unui geamăn înainte ca ceva să fie real."
-      },
-      {
-        "role": "user",
-        "text": "Arată-mi ce ai găsit."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simulare Sandbox",
       "inputPlaceholder": "Întrebați-o pe Sherma despre un formular...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Exemplu de demonstrație",
         "demoNote": "Numai simulare ilustrativă · Nu se utilizează portal real sau date personale",
-        "openingReply": "Am citit formularul, am construit un geamăn și am completat 26 din 30 de câmpuri din înregistrarea dvs. aprobată. Rămân patru întrebări. Nimic nu a atins forma reală.",
-        "greetingReply": "Bună, sunt Sherma. Am citit un formular, repet completarea împotriva unui geamăn și vă arăt exact ce ar fi trimis. Nimic nu ajunge la forma reală până când nu spui asta.",
+        "openingReply": "Bună, sunt Sherma. Cu ce formular ai nevoie de ajutor?",
+        "greetingReply": "Bună, sunt Sherma. Cu ce formular ai nevoie de ajutor?",
         "instructionReply": "Pentru a începe, încărcați capturi de ecran ale formularului pe care doriți să îl completați. JPEG, PNG sau WebP · Până la 6 imagini. Voi extrage întrebările și vă voi spune de ce mai am nevoie.",
         "reviewReply": "Aici este geamănul. Este complet, bifat și încă separat de formularul live. Ceea ce aprobați aici este ceea ce se execută, câmp pentru câmp.",
         "approvedReply": "Aprobat în demo. Geamănul exact aprobat este gata de executat și fiecare câmp își păstrează sursa.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "8328397a71e7f23acaf04a2876af132bf37aec0822734ec5f48901b1e6f226d8"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "9a1e3bff4f0978256c97132b47baeff0db12740586af08f1a4526b1b7b3d5f26"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "76ab4e8d5bb6541102b71a06961700910452033d98d30ec3d6a1753a9b397caf"
+      "sourceHash": "1e064ba5246b115dc87b851bd51223ac8b842b697efd41a4263102d1d01a6429"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "34e8825dc53a15371dce62b0f50412d55ee3dd700767a0b288cafef97b2585b5"
+      "sourceHash": "1e064ba5246b115dc87b851bd51223ac8b842b697efd41a4263102d1d01a6429"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "06a5e88940aa426f5175793d91aeaa722b752ecc796864078cb87b2ba733091b",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:21:00.899Z"
 }

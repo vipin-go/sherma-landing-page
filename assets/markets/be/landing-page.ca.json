@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "ca",
   "regionKey": "be",
-  "sourceRevision": "c70241431df7e6b1a2a9dc4e795a22d81dcd5b7587cec2b3d84dd2e5261a5086",
+  "sourceRevision": "1d05b9beced0c8f2e19c5a1bd8ce6affeaf49cb6e85c630589c809da25cd7549",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "El que approveu és el que va dins",
       "Un registre de cada camp"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hola, sóc Sherma. Envieu-me un formulari i assajaré tota l'emplenament contra un besson abans que res sigui real."
-      },
-      {
-        "role": "user",
-        "text": "Mostreu-me el que heu trobat."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "En línia · sandbox de simulació",
       "inputPlaceholder": "Pregunteu a Sherma sobre un formulari...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "DEMO DE MOSTRA",
         "demoNote": "Només simulació il·lustrativa · No s'utilitza cap portal real ni dades personals",
-        "openingReply": "He llegit el formulari, he construït un besson i he emplenat 26 de 30 camps del vostre registre aprovat. Queden quatre preguntes. Res ha tocat el formulari real.",
-        "greetingReply": "Hola, sóc Sherma. Llegeixo un formulari, assajo l'emplenament contra un besson i us mostro exactament el que s'enviarà. Res arriba al formulari real fins que dieu així.",
+        "openingReply": "Hola, soc Sherma. Amb quin formulari necessites ajuda?",
+        "greetingReply": "Hola, soc Sherma. Amb quin formulari necessites ajuda?",
         "instructionReply": "Per començar, pengeu captures de pantalla del formulari que voleu emplenar. JPEG, PNG o WebP · fins a 6 imatges. Extreuré les preguntes i us diré què encara necessito.",
         "reviewReply": "Aquí teniu el besson. És complet, verificat i encara separat del formulari en directe. El que approveu aquí és el que s'executa, camp per camp.",
         "approvedReply": "Aprovat a la demo. El besson exactament aprovat està llest per executar-se i cada camp reté el seu origen.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "3b710a8f4888668089fbdac193277b6d73e0ffd4b9b00877a0104cd1025ca788"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "613d3500d083ef71005e1d65b7253bfa0c7cc76c4151b14b32d30aeb5aef83ca"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "960f2bc57318d954a570ce645d25a6c01fb3f9b31e099d2a67c0b42c419b26b9"
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "30f1c305f9425841560afb40f3af8e3992071390d8299bfa33234458d112b019"
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "a3a9e2550d43f4135ee16cbfe2b75cbe1534106b5f9b1c5b4a331b071a117427",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:39.912Z"
 }

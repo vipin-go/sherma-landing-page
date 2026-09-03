@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "hu",
   "regionKey": "de",
-  "sourceRevision": "b5d2964b65c2ce534284c305514a0a57f9043ee23d8a0f33c06cb95317b23ca1",
+  "sourceRevision": "dbcf7f2a03163df099e540b4c81eac70cc78c4d41a2f2efb94a65bc19e7e0174",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Amit te helyeselsz, az bekerül",
       "Minden mező rekordja"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Szia, Sherma vagyok. Küldj egy űrlapot, és elpróbálom az egész kitöltést egy iker ellen, mielőtt bármi is lenne."
-      },
-      {
-        "role": "user",
-        "text": "Mutasd meg, mit találtál."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Szimulációs homokozó",
       "inputPlaceholder": "Kérdezd meg Shermát egy űrlapról…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "minta bemutató",
         "demoNote": "Csak szemléltető szimuláció · Nincs valódi portál vagy személyes adat",
-        "openingReply": "Elolvastam az űrlapot, felépítettem egy ikertestvért, és 30 mezőből 26-ot kitöltöttem a jóváhagyott nyilvántartásából. Négy kérdés maradt. Semmi sem érintette meg a valódi formát.",
-        "greetingReply": "Szia, Sherma vagyok. Elolvasok egy űrlapot, bepróbálom a kitöltést egy iker ellen, és megmutatom, hogy pontosan mit küldenek be. Semmi sem éri el a valódi formát, amíg nem mondod.",
+        "openingReply": "Üdv, Sherma vagyok. Melyik űrlaphoz szeretnél segítséget?",
+        "greetingReply": "Üdv, Sherma vagyok. Melyik űrlaphoz szeretnél segítséget?",
         "instructionReply": "A kezdéshez töltsön fel képernyőképeket a kitölteni kívánt űrlapról. JPEG, PNG vagy WebP · Akár 6 kép. Kivonom a kérdéseket, és elmondom, mire van még szükségem.",
         "reviewReply": "Itt az iker. Teljes, ellenőrzött, és még mindig elkülönül az élő formától. Amit itt jóváhagysz, az az, ami végrehajtódik, mezőről mezőre.",
         "approvedReply": "jóváhagyva a demóban. A pontosan jóváhagyott iker készen áll a végrehajtásra, és minden mező megőrzi a forrását.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "eacd9215223cc4e8aae5277206d0373fe11b46b3a82a25f0d9fd09b8923104dd"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "1f44d1bedcc02f8f28dfda06c2e90b61bf014c7ae319750424ae7cf1f97fe0dc"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "7e90c918b30bef201da69bd55f6e073a80970a3b226dcfd1badd9aac156b3e1e"
+      "sourceHash": "6631061a215e69beb64f7d31a94cf3bad839c3775cbb50b90669bd00993d9b4f"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "431c03959f25158e0aaefd0da7aae6339bf9dcb6fdb691a1cbc374b03a8eaa6a"
+      "sourceHash": "6631061a215e69beb64f7d31a94cf3bad839c3775cbb50b90669bd00993d9b4f"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "070a0365aeab86b2862b4627ccbfcce4843bb37ad7cb03fc21ed87429fffb649",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:42.036Z"
 }

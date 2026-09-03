@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "sk",
   "regionKey": "se",
-  "sourceRevision": "06fc2c1cdfcdb3a27d88e9e91e36092e6fe0404b5c8583e6b51e000a1412b3ec",
+  "sourceRevision": "8b84946ffd74e7b76771909684e4d7d25725b661f61664c98acade3d5eb87a2f",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "To, čo schvaľujete, je to, čo ide",
       "Záznam z každého poľa"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Ahoj, ja som Sherma. Pošlite mi formulár a ja nacvičím celú výplň proti dvojčaťu skôr, ako bude čokoľvek skutočné."
-      },
-      {
-        "role": "user",
-        "text": "Ukáž mi, čo si našiel."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simulačný sandbox",
       "inputPlaceholder": "Opýtajte sa Shermy na formulár…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "vzorové demo",
         "demoNote": "Iba ilustratívna simulácia · Nepoužívajú sa žiadne skutočné portály alebo osobné údaje",
-        "openingReply": "Prečítal som si formulár, postavil dvojča a vyplnil 26 z 30 polí z vášho schváleného záznamu. Zostávajú štyri otázky. Nič sa nedotklo skutočnej formy.",
-        "greetingReply": "Ahoj, ja som Sherma. Prečítam si formulár, nacvičím výplň proti dvojčaťu a ukážem vám presne to, čo by bolo odoslané. Nič nedosiahne skutočnú podobu, kým to nepoviete.",
+        "openingReply": "Ahoj, som Sherma. S ktorým formulárom potrebuješ pomôcť?",
+        "greetingReply": "Ahoj, som Sherma. S ktorým formulárom potrebuješ pomôcť?",
         "instructionReply": "Ak chcete začať, nahrajte snímky obrazovky formulára, ktorý chcete vyplniť. JPEG, PNG alebo WEBP · Až 6 obrázkov. Vytiahnem otázky a poviem vám, čo ešte potrebujem.",
         "reviewReply": "Tu je dvojča. Je úplná, skontrolovaná a stále oddelená od živej formy. To, čo tu schvaľujete, je to, čo sa vykonáva, pole pre pole.",
         "approvedReply": "Schválené v ukážke. Presné schválené dvojča je pripravené na vykonanie a každé pole si zachová svoj zdroj.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "ca1a1e4516479b48c71332e915ac8455d9837f3e0460b96ce2ca2f59000a33ec"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "4fc653e9a4b1e7bbf545101992a5600ddfaf2d5978ff757142214c6d1f4ba9f7"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "1169836fa2640d1bc8069d073413d345c1306c47109bff63f06355bb80f4f5cd"
+      "sourceHash": "4a890c5d2713e263fb16e49dec447633a523e0767b459df8e7b827b26f8d8a22"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "07ad1da39bfe31bfb35b539e47658cc3f1184ae4e15e06ca6f315c195270002d"
+      "sourceHash": "4a890c5d2713e263fb16e49dec447633a523e0767b459df8e7b827b26f8d8a22"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "278b9953f2057faed2a1fc2725edd87d5d660290771056aa4542e1e9336f5195",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:21:01.400Z"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "zh",
   "regionKey": "kr",
-  "sourceRevision": "f834715fb4f07297fd660b7c811e5566972a94c56a1c3d0638441a8433cf05d4",
+  "sourceRevision": "c139d2dcc4d6450d52e2343fe3a355d7e9c2013aad5aa4c9edf12a08adeff790",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "你赞成的是进去",
       "每个领域的记录"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "嗨，我是谢尔玛。 给我发一份表格，我会在任何事情是真实的情况下排练整个双胞胎的填充物。"
-      },
-      {
-        "role": "user",
-        "text": "告诉我你发现了什么。"
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "在线 · 仿真沙箱",
       "inputPlaceholder": "向 Sherma 询问一份表格……",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "示例演示",
         "demoNote": "仅说明性模拟 · 不使用真实门户或个人数据",
-        "openingReply": "我阅读了表格，建立了双胞胎，并从您批准的记录中填写了 30 个字段中的 26 个字段。 还有四个问题。 没有什么能触及真实的形式。",
-        "greetingReply": "嗨，我是谢尔玛。 我阅读了一份表格，排练了它对双胞胎的填充，并向您展示了将提交的确切内容。 在你这么说之前，没有什么能达到真实的形式。",
+        "openingReply": "你好，我是 Sherma。你需要我帮你处理哪份表单？",
+        "greetingReply": "你好，我是 Sherma。你需要我帮你处理哪份表单？",
         "instructionReply": "首先，上传您想要填写的表格的屏幕截图。 JPEG、PNG 或 WebP · 最多 6 张图像。 我将提取问题并告诉您我仍然需要什么。",
         "reviewReply": "这是双胞胎。 它是完整的，经过检查的，并且仍然与实时表单分开。 您在这里批准的是执行的字段，字段。",
         "approvedReply": "在演示中批准。 完全批准的双胞胎已准备好执行，每个字段都保留其源头。",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "d2ad928f074090d8d3a9bf40c788dc2c2096b0e9af996e16b0efc335b9b79e9a"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "27f6efaedc2b52e6ebfe5ff2b0229876b96cc3e13875810935d53bb0328274f7"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "cfc345a615ed1e5a6f7f6cf49f55a4493ec26a7240b99907d0482b6da4176645"
+      "sourceHash": "f45af8b708549936875cb91c99c8fcce6dbd5d9b3efbb3a2767f6f57ad05a4fc"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "c752d66dd95869cb05b0b662fee7db411d7858dc5c0adbf420db279488a2bad0"
+      "sourceHash": "f45af8b708549936875cb91c99c8fcce6dbd5d9b3efbb3a2767f6f57ad05a4fc"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "880388bd916fca9f11fa9524a9f2792708adab3f16056c4e768dd4a9af9472c6",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:53.702Z"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "fi",
   "regionKey": "nl",
-  "sourceRevision": "8de7ea3e757947bfefcac0d7667e512708b1907a9e3045baf8099a3ae9f9d90d",
+  "sourceRevision": "90db3ca94a8b9c424f593536e3b98c2c72a838851e10654ed7a1157682cef689",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Se, mitä hyväksyt, on se, mikä menee sisään",
       "ennätys jokaisesta kentästä"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hei, olen Sherma. Lähetä minulle lomake, niin harjoittelen koko täyttöä kaksosta vastaan ennen kuin mikään on totta."
-      },
-      {
-        "role": "user",
-        "text": "Näytä mitä löysit."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simulaatio Sandbox",
       "inputPlaceholder": "Kysy Shermalta lomakkeesta…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "näyteesittely",
         "demoNote": "Vain havainnollistava simulaatio · Varsinaista portaalia tai henkilötietoja ei käytetä",
-        "openingReply": "Luin lomakkeen, rakensin kaksosen ja täytin 26 30 kentästä hyväksytystä tietueestasi. Neljä kysymystä on jäljellä. Mikään ei ole koskettanut todellista muotoa.",
-        "greetingReply": "Hei, olen Sherma. Luin lomakkeen, harjoittelen sen kaksosta vastaan ja näytän sinulle tarkalleen, mitä lähetettäisiin. Mikään ei saavuta todellista muotoa ennen kuin sanot niin.",
+        "openingReply": "Hei, olen Sherma. Minkä lomakkeen kanssa tarvitset apua?",
+        "greetingReply": "Hei, olen Sherma. Minkä lomakkeen kanssa tarvitset apua?",
         "instructionReply": "Aloita lataamalla kuvakaappaukset lomakkeesta, jonka haluat täyttää. JPEG, PNG tai WebP · Enintään 6 kuvaa. Poimin kysymykset ja kerron mitä tarvitsen edelleen.",
         "reviewReply": "Tässä on kaksos. Se on täydellinen, tarkastettu ja edelleen erillään live-lomakkeesta. Se, mitä hyväksyt tässä, on se, mikä suorittaa, Field for Field.",
         "approvedReply": "hyväksytty demossa. Tarkka hyväksytty kaksos on valmis suoritettavaksi ja jokainen kenttä säilyttää lähteensä.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "3b710a8f4888668089fbdac193277b6d73e0ffd4b9b00877a0104cd1025ca788"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "613d3500d083ef71005e1d65b7253bfa0c7cc76c4151b14b32d30aeb5aef83ca"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "960f2bc57318d954a570ce645d25a6c01fb3f9b31e099d2a67c0b42c419b26b9"
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "30f1c305f9425841560afb40f3af8e3992071390d8299bfa33234458d112b019"
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "ca08011ab6f038be983aa837cf82ee196335455120e20439274d60e0edd160d4",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:58.881Z"
 }

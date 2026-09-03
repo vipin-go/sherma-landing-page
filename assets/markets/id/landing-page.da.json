@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "da",
   "regionKey": "id",
-  "sourceRevision": "5d36fd594eb4594a05847463f31e7acbd021b35ff2db364c77975652f15ab6e8",
+  "sourceRevision": "921688783622db646bd12fc76671404fa12ec9da24741edb1151e53aa11cc35e",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Det, du godkender, er det, der går ind",
       "en registrering af hvert felt"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hej, jeg er Sherma. Send mig en formular, og jeg vil øve hele fyldet mod en tvilling, før noget er ægte."
-      },
-      {
-        "role": "user",
-        "text": "Vis mig, hvad du fandt."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simuleringssandkasse",
       "inputPlaceholder": "Spørg Sherma om en form...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Eksempel på demo",
         "demoNote": "Kun illustrativ simulering · Der bruges ingen reel portal eller personlige data",
-        "openingReply": "Jeg læste formularen, byggede en tvilling og udfyldte 26 af 30 felter fra din godkendte journal. Der er fire spørgsmål tilbage. Intet har rørt den rigtige form.",
-        "greetingReply": "Hej, jeg er Sherma. Jeg læser en formular, øver fyldet mod en tvilling af den og viser dig præcis, hvad der ville blive indsendt. Intet når den rigtige form, før du siger det.",
+        "openingReply": "Hej, jeg er Sherma. Hvilken formular vil du gerne have hjælp til?",
+        "greetingReply": "Hej, jeg er Sherma. Hvilken formular vil du gerne have hjælp til?",
         "instructionReply": "For at komme i gang skal du uploade skærmbilleder af den formular, du ønsker udfyldt. jpeg, png eller webp · op til 6 billeder. Jeg vil udtrække spørgsmålene og fortælle dig, hvad jeg stadig mangler.",
         "reviewReply": "Her er tvillingen. Det er komplet, kontrolleret og stadig adskilt fra live-formularen. Det, du godkender her, er det, der udfører, felt for felt.",
         "approvedReply": "Godkendt i demoen. Den nøjagtige godkendte tvilling er klar til at udføre, og hvert felt beholder sin kilde.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "ccce46b752dfd269e49811c0f02b5032af56816579df11012b82579ac0dcc32a"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "2215de82a21b9795d3b6d644689386bd2ade82b6758f48382833e8b5c17d7624"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "4c7911822af7d2abd5026ba262cb7af1ad9dc01825dfb4d02bd0296a41d8386b"
+      "sourceHash": "348d08501ec9c5bc0ae04afed91a1270e42360f2d1c1418ec22c5955acdc2db2"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "1d64f60f31d25e5ebe1af3a672dc1f9d2419467e5cab1cc50427ba2ec9615098"
+      "sourceHash": "348d08501ec9c5bc0ae04afed91a1270e42360f2d1c1418ec22c5955acdc2db2"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "1d389f24c495c4483861a87d96c588f668e660cf3f365a866896a5f6b7dfcad7",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:45.248Z"
 }

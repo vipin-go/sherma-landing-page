@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "lt",
   "regionKey": "ru",
-  "sourceRevision": "b84c645d37cc9ecf51dd7e08f994e3f941a1ed666793aace5d6c7c0a4c86d89e",
+  "sourceRevision": "67616c313f8964d9680acc19b068f5985aec1a0c7ac9afd6be106b2018afef70",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Tai, ką jūs patvirtinate, yra tai, kas įeina",
       "Kiekvieno lauko įrašas"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Sveiki, aš esu Sherma. Atsiųskite man formą ir aš repetuosiu visą užpildymą prieš dvynį, kol kas nors nebus tikra."
-      },
-      {
-        "role": "user",
-        "text": "Parodyk man, ką radai."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · simulation sandbox",
       "inputPlaceholder": "Paklauskite Shermos apie formą…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Demonstracinės versijos pavyzdys",
         "demoNote": "Tik iliustratyvus modeliavimas · Nenaudojami tikri portalai ar asmens duomenys",
-        "openingReply": "Perskaičiau formą, sukūriau dvynį ir užpildžiau 26 iš 30 laukų iš jūsų patvirtinto įrašo. Liko keturi klausimai. Niekas nepalietė tikrosios formos.",
-        "greetingReply": "Sveiki, aš esu Šerma. Perskaičiau formą, repetuoju prieš dvynį ir tiksliai parodysiu, kas būtų pateikta. Niekas nepasiekia tikrosios formos, kol to nepasakysi.",
+        "openingReply": "Sveiki, aš Sherma. Su kuria forma jums reikia pagalbos?",
+        "greetingReply": "Sveiki, aš Sherma. Su kuria forma jums reikia pagalbos?",
         "instructionReply": "Norėdami pradėti, įkelkite formos, kurią norite užpildyti, ekrano kopijas. JPEG, PNG arba WebP · Iki 6 vaizdų. Ištrauksiu klausimus ir pasakysiu, ko man dar reikia.",
         "reviewReply": "Čia yra dvynys. Jis pilnas, patikrintas ir vis dar atskirtas nuo tiesioginės formos. Tai, ką čia patvirtinate, yra tai, kas vykdoma, laukas laukui.",
         "approvedReply": "Patvirtinta demonstracijoje. Tiksliai patvirtintas dvynys yra pasirengęs vykdyti ir kiekvienas laukas išlaiko savo šaltinį.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "e156d04dbb4b2e8dc474679a855431522d5137d581d531703ca6f15a59d4d472"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "d80cfdc1fc8d34c327049e3adf6d5d2590bff1d2dfbddb7b3407228b3165cd32"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "abc0a105bd4dac450b60f9c28d301f12c47b76194e1b24d78c7bb6bbc7f0d5dd"
+      "sourceHash": "e5f2464614b8675d22f9e283fca76a2fb3594937f306f4e2a4afce8f4e59314e"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "3ad402c33f185a5cda2c1a68d6151e47753d5c23f9ef0ef3ab35e0451f983fd1"
+      "sourceHash": "e5f2464614b8675d22f9e283fca76a2fb3594937f306f4e2a4afce8f4e59314e"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "04b5b44c6273873ff5190707c1d184cca61b8021e1bf535ea2516154bc1d4325",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:21:00.598Z"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "uk",
   "regionKey": "cn",
-  "sourceRevision": "e13be5a36b9944ccf848be54a94bdd69b5b7e1cc44dc55dcddf9693374a32c6b",
+  "sourceRevision": "aeddbe02b5d904b316af42e13226e016ad513d5dd5464c2d4ea9e4dc20e77bef",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Те, що ви схвалюєте, це те, що входить",
       "Запис кожного поля"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Привіт, я Шерма. Надішліть мені форму, і я відрепетую всю заповнення проти близнюка, перш ніж щось буде реальним."
-      },
-      {
-        "role": "user",
-        "text": "Покажи мені, що ти знайшов."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · simulation sandbox",
       "inputPlaceholder": "Запитайте Шерму про форму…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Зразок демо",
         "demoNote": "Тільки ілюстративне моделювання · Не використовуються реальні портали чи персональні дані",
-        "openingReply": "Я прочитав форму, побудував близнюка і заповнив 26 з 30 полів із вашого затвердженого запису. Залишилося чотири питання. Ніщо не торкнулося справжньої форми.",
-        "greetingReply": "Привіт, я Шерма. Я читаю форму, репетирую заливку проти близнюка і показую вам, що саме буде подано. Ніщо не досягає справжньої форми, поки ви так не скажете.",
+        "openingReply": "Вітаю, я Sherma. З якою формою вам потрібна допомога?",
+        "greetingReply": "Вітаю, я Sherma. З якою формою вам потрібна допомога?",
         "instructionReply": "Щоб розпочати, завантажте знімки екрана потрібної форми. JPEG, PNG або WebP · До 6 зображень. Я витягну запитання і скажу, що мені ще потрібно.",
         "reviewReply": "Ось близнюк. Він повний, перевірений і все ще відокремлений від живої форми. Тут ви схвалюєте те, що виконує, поле для поля.",
         "approvedReply": "Затверджено в демо. Точний затверджений близнюк готовий до виконання, і кожне поле зберігає своє джерело.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "40696b8c3927645c631e7ae7b8982f21193470258adf1ad4f7e84636cc09c64e"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "e45a2a175e34c0d7d682f475b4801bb0340cb12580b5a1428390315f84dbde07"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "c192c1fd1ee7b8db69156957399c03b689fd85aa5e5b6195adff97a30d5a98de"
+      "sourceHash": "59dfd997093b875921f2830ceda67c9ee7b89b5481ab2f3bd42a680250d4741c"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "926d621f7f39b0adc318098d9c92913012cfd644ad30410addb6b0e750d0b405"
+      "sourceHash": "59dfd997093b875921f2830ceda67c9ee7b89b5481ab2f3bd42a680250d4741c"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "64c6bd3bd97808080ed049817e7cd580c4495ba49cf4899d7ae6805bd05a3b39",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:41.601Z"
 }

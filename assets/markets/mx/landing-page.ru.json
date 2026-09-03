@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "ru",
   "regionKey": "mx",
-  "sourceRevision": "50942429c8d03e143aa7b36fe36687b679f258a99e08339d5fc1f76f04152178",
+  "sourceRevision": "dfd35d51254bee349a074663395ef0bd062ba673325d6b481a78fb1577aca286",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "то, что вы одобряете, это то, что входит в",
       "Рекорд каждого поля"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Привет, я Шерма. Пришлите мне форму, и я репетирую всю заливку против близнеца, прежде чем что-то станет настоящим."
-      },
-      {
-        "role": "user",
-        "text": "Покажи мне, что ты нашел."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "онлайн · моделирование песочница",
       "inputPlaceholder": "Спросите Шерму о форме…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Образец демонстрации",
         "demoNote": "Только иллюстративное моделирование · Реальные портал или персональные данные не используются",
-        "openingReply": "Я прочитал форму, построил близнеца и заполнил 26 из 30 полей из вашей утвержденной записи. Остаются четыре вопроса. Ничто не коснулось реальной формы.",
-        "greetingReply": "Привет, я Шерма. Я прочитал форму, репетировал заливку против близнеца и покажу вам, что именно будет представлено. Ничто не достигает реальной формы, пока вы не скажете это.",
+        "openingReply": "Здравствуйте, я Sherma. С какой формой вам нужна помощь?",
+        "greetingReply": "Здравствуйте, я Sherma. С какой формой вам нужна помощь?",
         "instructionReply": "Для начала загрузите скриншоты нужной формы. JPEG, PNG или WebP · До 6 изображений. Я извлечю вопросы и скажу вам, что мне еще нужно.",
         "reviewReply": "Вот близнец. Он завершен, проверен и все еще отделен от живой формы. Здесь вы одобряете то, что выполняет, поле для поля.",
         "approvedReply": "Утверждено в демо. Точный утвержденный близнец готов к выполнению, и каждое поле сохраняет свой источник.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "06612dc1c9afec1eae9557f1d34703a8c362c7c85c6a716a4835e4cc962e3416"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "958e24cc133d2ba91d198e31b56e5400b404db3a0fda0c7e24b4b5bc7e1c12bd"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "7e0e13fdf3784ea5f7da3f85e6e2928d0eaa3df231025996822af34474ee9e0c"
+      "sourceHash": "ad42ad9a92f45f26da028322e22a5453c853ab9dfa64d8db27975321ba297a22"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "8b8edd9dd4bc7286e5a66a4f3f860065440a28da1e55a303f2d62aefd23140ef"
+      "sourceHash": "ad42ad9a92f45f26da028322e22a5453c853ab9dfa64d8db27975321ba297a22"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "2c302711d9b0aa359cdd6741d57eb612acc2a53753ab7b478e477b4f3aca2dbf",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:57.350Z"
 }

@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "hr",
   "regionKey": "pl",
-  "sourceRevision": "be2e22501c98b86eee8940bbb3f3646243e6cae806c9ba47adce96ca3e12c891",
+  "sourceRevision": "a1910dfa1fadbec44af2caa27efc7925782f6dd2b25113193240dda0aed726e7",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Ono što odobravate je ono što ulazi",
       "Zapis svakog polja"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Bok, ja sam Sherma. Pošaljite mi obrazac i uvježbat ću cijelu popunjavanje protiv blizanca prije nego što išta bude stvarno."
-      },
-      {
-        "role": "user",
-        "text": "Pokaži mi što si našao."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · sandbox za simulaciju",
       "inputPlaceholder": "Pitajte Shermu o obrascu…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "uzorak",
         "demoNote": "Samo ilustrativna simulacija · Ne koriste se pravi portal ili osobni podaci",
-        "openingReply": "Pročitao sam obrazac, napravio blizanca i ispunio 26 od 30 polja iz vašeg odobrenog zapisa. Ostaju četiri pitanja. Ništa nije dotaklo pravi oblik.",
-        "greetingReply": "Bok, ja sam Sherma. Pročitao sam obrazac, uvježbao ga protiv blizanca i pokažem vam što bi točno bilo poslano. Ništa ne dopire do pravog oblika dok to ne kažete.",
+        "openingReply": "Bok, ja sam Sherma. S kojim obrascem trebaš pomoć?",
+        "greetingReply": "Bok, ja sam Sherma. S kojim obrascem trebaš pomoć?",
         "instructionReply": "Za početak prenesite snimke zaslona obrasca koji želite ispuniti. JPEG, PNG ili WebP · do 6 slika. Izdvojit ću pitanja i reći vam što mi još treba.",
         "reviewReply": "Evo blizanca. Dovršen je, provjeren i još uvijek odvojen od obrasca uživo. Ono što ovdje odobravate je ono što se izvršava, polje za polje.",
         "approvedReply": "Odobreno u demou. Točno odobreni blizanac spreman je za izvršenje i svako polje zadržava svoj izvor.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "fd2f2347bc391721042627c75c1747ac7a459e84ee25f08373decc666e5253bc"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "fdc16873c42d53ae37bd765634f1ac572b5d40918b715da668f217e0331b9312"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "2a4116d9a3781d98a5092a073e411468dc6a73aa9b7366b597fbd0675f2f3124"
+      "sourceHash": "5a2d6c16f4015ee55bfdbcf5fa503a368303fbdc7d903b4badb0324bcd49d886"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "a28cf80869cfa979c3854d8b48037e9711544d1f1ab6909835f6e5f13a213883"
+      "sourceHash": "5a2d6c16f4015ee55bfdbcf5fa503a368303fbdc7d903b4badb0324bcd49d886"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "9c4c99361694b67a1d78821a288af63e73848a67e499c176a2a9a34f8832c8b1",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:21:00.068Z"
 }

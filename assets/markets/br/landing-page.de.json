@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "de",
   "regionKey": "br",
-  "sourceRevision": "43b6da9c91375b313a27450a6de23ab5d54962fded496f3be1f5b9f20b4df0dc",
+  "sourceRevision": "7bae91ccd201fb1c13fd07b29eabff4c401b85318ce66e794f2b9383c8a590c0",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Was Sie genehmigen ist, was hineingeht",
       "Ein Datensatz jedes Feldes"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hallo, ich bin Sherma. Schicken Sie mir ein Formular und ich werde die ganze Füllung gegen einen Zwilling proben, bevor alles real ist."
-      },
-      {
-        "role": "user",
-        "text": "Zeig mir, was du gefunden hast."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Simulation Sandbox",
       "inputPlaceholder": "Fragen Sie Sherma nach einem Formular…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Beispieldemo",
         "demoNote": "Nur anschauliche Simulation · Es werden keine realen Portal- oder personenbezogenen Daten verwendet",
-        "openingReply": "Ich habe das Formular gelesen, einen Zwilling gebaut und 26 von 30 Feldern aus Ihrem genehmigten Datensatz ausgefüllt. Vier Fragen bleiben. Nichts hat die wahre Form berührt.",
-        "greetingReply": "Hallo, ich bin Sherma. Ich lese ein Formular, probiere die Füllung gegen einen Zwilling und zeige Ihnen genau, was eingereicht werden würde. Nichts erreicht die wahre Form, bis Sie es sagen.",
+        "openingReply": "Hallo, ich bin Sherma. Bei welchem Formular kann ich dir helfen?",
+        "greetingReply": "Hallo, ich bin Sherma. Bei welchem Formular kann ich dir helfen?",
         "instructionReply": "Laden Sie zunächst Screenshots des Formulars hoch, das Sie ausfüllen möchten. JPEG, PNG oder WebP · Bis zu 6 Bilder. Ich werde die Fragen extrahieren und Ihnen sagen, was ich noch brauche.",
         "reviewReply": "Hier ist der Zwilling. Es ist vollständig, überprüft und immer noch vom Live-Formular getrennt. Was Sie hier genehmigen ist, was ausgeführt wird, Feld für Feld.",
         "approvedReply": "in der Demo genehmigt. Der genau zugelassene Zwilling ist einsatzbereit und jedes Feld behält seine Quelle.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "bd71550dfe924a4fc56ba795eae9b220485aca5e7207ea2459ea9ac5298dd067"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "96f6dd0a406917e1d39bb0904962e9cfecb10664d100b6fd51dfc9be3a1db526"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "7adbf9ce314ade607eb8fc23fd47c8a0e44615b9bf939936b5eb78442be5e5da"
+      "sourceHash": "1b8a9b565ff05df23dfce9e3df1d3f3a92634255cafbba0e534f29ae90f413c7"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "239022ce6b66eb4f2d2fc8008cda39c1cebaefd3810874a4e710eabcca89ec72"
+      "sourceHash": "1b8a9b565ff05df23dfce9e3df1d3f3a92634255cafbba0e534f29ae90f413c7"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "ba3b9f7fa3b46ceb8cb0ca5b0cb264b8ce8ccc7382b0413ec73c1b0ebba34e23",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:39.979Z"
 }

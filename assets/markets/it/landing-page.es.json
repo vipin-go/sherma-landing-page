@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "es",
   "regionKey": "it",
-  "sourceRevision": "d23fcba6ef5a7414ee028649fba222afd35ff8c6437dd8fad208e9f6397adfe4",
+  "sourceRevision": "af275b753b2111b3ff0cdc6a952691ea17702d4b24200dab216a9b1cc88f13ee",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "Lo que apruebas es lo que entra",
       "Un registro de cada campo"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "Hola soy Sherma. Envíame un formulario y ensayaré todo el relleno contra un gemelo antes de que algo sea real."
-      },
-      {
-        "role": "user",
-        "text": "Muéstrame lo que encontraste."
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "Online · Sandbox de simulación",
       "inputPlaceholder": "Pregúntale a Sherma sobre un formulario...",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "Ejemplo de demostración",
         "demoNote": "Simulación ilustrativa solamente · No se utiliza ningún portal o datos personales reales",
-        "openingReply": "Leí el formulario, construí un gemelo y llené 26 de 30 campos de su registro aprobado. Quedan cuatro preguntas. Nada ha tocado la forma real.",
-        "greetingReply": "Hola soy Sherma. Leí un formulario, ensayo el relleno contra un gemelo y le muestro exactamente lo que se enviaría. Nada llega a la forma real hasta que tú lo dices.",
+        "openingReply": "Hola, soy Sherma. ¿Con qué formulario necesitas ayuda?",
+        "greetingReply": "Hola, soy Sherma. ¿Con qué formulario necesitas ayuda?",
         "instructionReply": "Para comenzar, cargue capturas de pantalla del formulario que desea completar. JPEG, PNG o WebP · Hasta 6 imágenes. Extraeré las preguntas y te diré lo que todavía necesito.",
         "reviewReply": "Aquí está el gemelo. Está completo, verificado y aún separado del formulario en vivo. Lo que aprueba aquí es lo que se ejecuta, campo para campo.",
         "approvedReply": "Aprobado en la demostración. El gemelo aprobado exacto está listo para ejecutarse y cada campo conserva su fuente.",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "7bd1479306f5248fa16ed987463649a61b8fce15f187dfd175ecf06a95c768a9"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "de86f46624ecd9c1ea7f7be127325fdc1789c30c2c2b59a41210a39445bdf059"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "273c4f8e15c87f0e72091996a1541de1a6052d4f261a238cf093017afab50f6b"
+      "sourceHash": "1b5256cba655cf1a9338966357c0b407ffcdebbaf846e22ce92cbc56c32920de"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "2f86916a632d7b7539799427540a2a0a358b80be0272538b42ff647fd7e94e21"
+      "sourceHash": "1b5256cba655cf1a9338966357c0b407ffcdebbaf846e22ce92cbc56c32920de"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "2b2b0ddca143c4e4935db1e6c80dae3e50c8940b8afd5c0462933616888cf314",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:50.218Z"
 }

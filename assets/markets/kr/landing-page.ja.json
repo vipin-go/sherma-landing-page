@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "ja",
   "regionKey": "kr",
-  "sourceRevision": "f834715fb4f07297fd660b7c811e5566972a94c56a1c3d0638441a8433cf05d4",
+  "sourceRevision": "c139d2dcc4d6450d52e2343fe3a355d7e9c2013aad5aa4c9edf12a08adeff790",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -87,16 +87,7 @@
       "あなたが承認するものは、入ってくるものです",
       "すべてのフィールドの記録"
     ],
-    "demoConversation": [
-      {
-        "role": "assistant",
-        "text": "こんにちは、シェルマです。 私にフォームを送ってください。何かが現実になる前に、双子に対してすべてのフィルをリハーサルします。"
-      },
-      {
-        "role": "user",
-        "text": "あなたが見つけたものを見せてください。"
-      }
-    ],
+    "demoConversation": [],
     "heroChat": {
       "statusLabel": "オンライン · シミュレーション サンドボックス",
       "inputPlaceholder": "Sherma にフォームについて尋ねる…",
@@ -130,8 +121,8 @@
       "heroDemo": {
         "sampleLabel": "サンプル デモ",
         "demoNote": "例示的なシミュレーションのみ ・実際のポータルや個人データは使用されません",
-        "openingReply": "フォームを読み、ツインを作り、承認された記録から 30 フィールド中 26 フィールドを埋めました。 4 つの質問が残っています。 本当の形には何も触れていません。",
-        "greetingReply": "こんにちは、シェルマです。 フォームを読み、その双子に対して記入をリハーサルし、何を提出するかを正確に示します。 あなたがそう言うまで、何も本当の形にはなりません。",
+        "openingReply": "こんにちは、Shermaです。どのフォームについてお手伝いしましょうか？",
+        "greetingReply": "こんにちは、Shermaです。どのフォームについてお手伝いしましょうか？",
         "instructionReply": "開始するには、入力したいフォームのスクリーンショットをアップロードしてください。 JPEG、PNG、または WebP · 最大 6 枚の画像。 質問を抽出して、まだ必要なものを説明します。",
         "reviewReply": "これが双子です。 完全にチェックされ、ライブ フォームとは別のままです。 ここで承認するのは、実行されるもの、フィールドのフィールドです。",
         "approvedReply": "デモで承認されました。 正確に承認されたツインは実行する準備ができており、すべてのフィールドがそのソースを保持します。",
@@ -812,24 +803,6 @@
     {
       "path": [
         "landingPage",
-        "demoConversation",
-        0,
-        "text"
-      ],
-      "sourceHash": "d2ad928f074090d8d3a9bf40c788dc2c2096b0e9af996e16b0efc335b9b79e9a"
-    },
-    {
-      "path": [
-        "landingPage",
-        "demoConversation",
-        1,
-        "text"
-      ],
-      "sourceHash": "27f6efaedc2b52e6ebfe5ff2b0229876b96cc3e13875810935d53bb0328274f7"
-    },
-    {
-      "path": [
-        "landingPage",
         "heroChat",
         "statusLabel"
       ],
@@ -951,7 +924,7 @@
         "heroDemo",
         "openingReply"
       ],
-      "sourceHash": "cfc345a615ed1e5a6f7f6cf49f55a4493ec26a7240b99907d0482b6da4176645"
+      "sourceHash": "f45af8b708549936875cb91c99c8fcce6dbd5d9b3efbb3a2767f6f57ad05a4fc"
     },
     {
       "path": [
@@ -960,7 +933,7 @@
         "heroDemo",
         "greetingReply"
       ],
-      "sourceHash": "c752d66dd95869cb05b0b662fee7db411d7858dc5c0adbf420db279488a2bad0"
+      "sourceHash": "f45af8b708549936875cb91c99c8fcce6dbd5d9b3efbb3a2767f6f57ad05a4fc"
     },
     {
       "path": [
@@ -3763,5 +3736,5 @@
     }
   ],
   "translationContextRevision": "880388bd916fca9f11fa9524a9f2792708adab3f16056c4e768dd4a9af9472c6",
-  "generatedAt": "2026-09-02T14:36:29.058Z"
+  "generatedAt": "2026-09-03T12:20:53.421Z"
 }
