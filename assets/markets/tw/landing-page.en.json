@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Form detected",
             "status": "done",
-            "detail": "營業稅申報書, 2026年7–8月 — client entity matched.",
+            "detail": "營業稅申報書, 2026年7–8月: client entity matched.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation complete",
             "status": "active",
-            "detail": "財政部電子申報繳稅服務網 — Dry run against the portal — 0 errors found.",
+            "detail": "財政部電子申報繳稅服務網: Dry run against the portal found 0 errors.",
             "state": "active"
           }
         ],
@@ -409,11 +409,11 @@
             "number": "01",
             "status": "live",
             "title": "營業稅 return filing",
-            "body": "Recurring 營業稅申報書 filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+            "body": "Recurring 營業稅申報書 filings, prepared from the invoices already in the inbox, using the same controlled workflow for every reporting period and client.",
             "steps": [
               "Filing job opened from deadline",
               "Invoices matched, 營業稅 calculated",
-              "Questionnaire — gaps only",
+              "Questionnaire: gaps only",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
@@ -448,7 +448,7 @@
             "steps": [
               "Questionnaire received from the customer",
               "Controls matched to the approved record",
-              "Questionnaire — gaps only",
+              "Questionnaire: gaps only",
               "Pack assembled, twin confirmed"
             ],
             "connections": [
@@ -533,7 +533,7 @@
         "heading": "Preparing a 營業稅申報書 without the manual re-entry.",
         "body": "The same principle, applied to the most repeated form there is. One template, one entity at a time, four times a year, forever.",
         "before": "Someone gathers the figures, re-keys them into the return, checks them against the ledger, and files before the deadline. Every quarter, for every client, with nothing carried forward except a spreadsheet.",
-        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書 — Sherma opens the job from the filing calendar, builds the return from the invoices already in the inbox, asks only about the figures it cannot derive, and presents the completed return as a twin.",
+        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書. Sherma opens the job from the filing calendar, builds the return from the invoices already in the inbox, asks only about the figures it cannot derive, and presents the completed return as a twin.",
         "linkLabel": "Talk through your filing calendar",
         "emailSubject": "Sherma quarterly filing workflow",
         "card": {
@@ -555,7 +555,7 @@
             },
             {
               "label": "Missing figures",
-              "value": "3 — flagged",
+              "value": "3 flagged",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "AT SCALE",
         "heading": "White-label Sherma at scale.",
-        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow — a thousand forms at a time, not a one-off filing.",
+        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow: a thousand forms at a time, not a one-off filing.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Where should Sherma run, and roughly how many forms?",
         "ctaLabel": "Prepare my Sherma brief",

@@ -248,7 +248,7 @@
             "number": "01",
             "title": "form opdaget",
             "status": "done",
-            "detail": "btw · periodieke btw-aangifte — Indirekte skatteaflevering, kvartal 3 2026 — kliententitet matcher.",
+            "detail": "btw · periodieke btw-aangifte, such as Indirekte skatteaflevering, kvartal 3 2026. Kliententitet matcher.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulering fuldført",
             "status": "active",
-            "detail": "tørløb mod portalen — 0 fejl fundet.",
+            "detail": "tørløb mod portalen: 0 fejl fundet.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "btw · btw — Indirekte skatteindberetning",
-            "body": "btw · periodieke btw-aangifte — Gentagende aflevering af indirekte afgifter, forberedt fra fakturaer allerede i indboksen — den samme kontrollerede arbejdsgang for hver rapporteringsperiode og kunde.",
+            "title": "btw · btw: Indirekte skatteindberetning",
+            "body": "btw · periodieke btw-aangifte, such as Gentagende aflevering af indirekte afgifter, forberedt fra fakturaer allerede i indboksen. Den samme kontrollerede arbejdsgang for hver rapporteringsperiode og kunde.",
             "steps": [
               "Indleveringsjob åbnet fra deadline",
-              "btw — Fakturaer matcher, indirekte skat beregnet",
-              "Spørgeskema — Kun huller",
+              "btw: Fakturaer matcher, indirekte skat beregnet",
+              "Spørgeskema: Kun huller",
               "retur indgivet, digital tvilling bekræftet"
             ],
             "connections": [
-              "btw · Intervat — Offentlig skatteafleveringsportal",
+              "btw · Intervat: Offentlig skatteafleveringsportal",
               "Faktura indbakke",
               "Bogføringssoftware"
             ],
-            "note": "btw · periodieke btw-aangifte · Intervat · CSAM-aanmelding — Offentlige skattekort kan kræve personlige eller organisatorlige statskreds. Sherma udarbejder det fulde skatteopgør, og den autoriserede person indleverer det under deres egen login. Den signerer ikke som dig."
+            "note": "btw · periodieke btw-aangifte · Intervat · CSAM-aanmelding. Offentlige skattekort kan kræve personlige eller organisatorlige statskreds. Sherma udarbejder det fulde skatteopgør, og den autoriserede person indleverer det under deres egen login. Den signerer ikke som dig."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Køber- og transportportaler",
-              "btw — Registrering, skatteoplysninger og bankdetaljer",
+              "btw: Registrering, skatteoplysninger og bankdetaljer",
               "Forsikring og policebevis"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Spørgeskema modtaget fra kunden",
               "Kontroller matchet med den godkendte post",
-              "Spørgeskema — Kun huller",
+              "Spørgeskema: Kun huller",
               "pakke samlet, tvilling bekræftet"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "et bearbejdet eksempel",
-        "heading": "btw · periodieke btw-aangifte — Udlæsning af indirekte skatteretur uden manuel indtastning.",
+        "heading": "btw · periodieke btw-aangifte: Udlæsning af indirekte skatteretur uden manuel indtastning.",
         "body": "Det samme princip, anvendt på den mest gentagne form, der findes. Én skabelon, én enhed ad gangen, fire gange om året, for altid.",
         "before": "Nogen samler figurerne, indtaster dem i returneringen, tjekker dem i forhold til hovedbogen og arkiverer inden deadline. Hvert kvartal, for hver klient, med intet videreført undtagen et regneark.",
         "after": "Sherma åbner jobbet fra arkiveringskalenderen, bygger returneringen fra de fakturaer, der allerede er i indbakken, spørger kun om de tal, den ikke kan udlede, og præsenterer den gennemførte returnering som en tvilling.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Manglende figurer",
-              "value": "3 — Flagget",
+              "value": "3 Flagget",
               "highlight": true
             }
           ],

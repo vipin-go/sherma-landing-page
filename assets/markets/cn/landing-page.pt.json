@@ -248,7 +248,7 @@
             "number": "01",
             "title": "formulário detectado",
             "status": "done",
-            "detail": "增值税 · 增值税申报表 — Declaração de imposto indireto, Q3 2026 — entidade cliente correspondente.",
+            "detail": "增值税 · 增值税申报表, such as Declaração de imposto indireto, Q3 2026. Entidade cliente correspondente.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulação completa",
             "status": "active",
-            "detail": "Dry run contra o portal — 0 erros encontrados.",
+            "detail": "Dry run contra o portal: 0 erros encontrados.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "增值税 — Apresentação de declarações de imposto indireto",
-            "body": "增值税 · 增值税申报表 — Declarações de imposto indireto recorrentes, preparadas a partir das faturas já na caixa de entrada — o mesmo fluxo de trabalho controlado para cada período de relatório e cliente.",
+            "title": "增值税: Apresentação de declarações de imposto indireto",
+            "body": "增值税 · 增值税申报表, such as Declarações de imposto indireto recorrentes, preparadas a partir das faturas já na caixa de entrada. O mesmo fluxo de trabalho controlado para cada período de relatório e cliente.",
             "steps": [
               "Trabalho de arquivamento aberto a partir do prazo",
-              "增值税 — Faturas correspondentes, imposto indireto calculado",
-              "Questionário — apenas lacunas",
+              "增值税: Faturas correspondentes, imposto indireto calculado",
+              "Questionário: apenas lacunas",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
-              "增值税 · 电子税务局 — Portal oficial de apresentação fiscal",
+              "增值税 · 电子税务局: Portal oficial de apresentação fiscal",
               "Caixa de entrada da fatura",
               "Software de contabilidade"
             ],
-            "note": "增值税 · 增值税申报表 · 电子税务局 · 电子税务局 · 电子税务局账户 — Portais fiscais oficiais podem exigir uma credencial governamental pessoal ou organizacional. Sherma prepara a declaração completa e a pessoa autorizada a apresenta com seus próprios dados de login. Não assinará por você."
+            "note": "增值税 · 增值税申报表 · 电子税务局 · 电子税务局 · 电子税务局账户. Portais fiscais oficiais podem exigir uma credencial governamental pessoal ou organizacional. Sherma prepara a declaração completa e a pessoa autorizada a apresenta com seus próprios dados de login. Não assinará por você."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portais do comprador e da operadora",
-              "增值税 — Registro, detalhes fiscais e bancários",
+              "增值税: Registro, detalhes fiscais e bancários",
               "Provas de seguro e seguro"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "questionário recebido do cliente",
               "Controles correspondidos ao registro aprovado",
-              "Questionário — apenas lacunas",
+              "Questionário: apenas lacunas",
               "Pacote montado, gêmeo confirmado"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Um exemplo trabalhado",
-        "heading": "增值税 · 增值税申报表 — Preparando uma declaração de impostos indiretos sem reinserção manual.",
+        "heading": "增值税 · 增值税申报表: Preparando uma declaração de impostos indiretos sem reinserção manual.",
         "body": "O mesmo princípio, aplicado à forma mais repetida que existe. Um modelo, uma entidade de cada vez, quatro vezes por ano, para sempre.",
         "before": "Alguém reúne as figuras, os reinsere na devolução, verifica-os no livro-razão e arquivos antes do prazo. Cada trimestre, para cada cliente, sem nada além de uma planilha.",
         "after": "Sherma abre o trabalho a partir do calendário de arquivamento, cria o retorno das faturas já na caixa de entrada, pergunta apenas sobre os números que não pode derivar e apresenta a devolução concluída como gêmeo.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "faltando figuras",
-              "value": "3 — sinalizado",
+              "value": "3 sinalizado",
               "highlight": true
             }
           ],

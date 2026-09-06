@@ -248,7 +248,7 @@
             "number": "01",
             "title": "양식이 감지되었습니다",
             "status": "done",
-            "detail": "state sales tax return — 간접세 신고, 2026년 3분기 — 클라이언트 법인 매칭 완료.",
+            "detail": "state sales tax return, such as 간접세 신고, 2026년 3분기. 클라이언트 법인 매칭 완료.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "시뮬레이션 완료",
             "status": "active",
-            "detail": "포털에 대한 드라이런 — 0개의 오류가 발견되었습니다.",
+            "detail": "포털에 대한 드라이런: 0개의 오류가 발견되었습니다.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "Sales tax — 간접세 신고 제출",
-            "body": "state sales tax return — 이미 받은 편지함의 송장에서 작성되는 정기 간접세 신고 — 모든 신고 기간과 클라이언트에 동일한 통제된 워크플로우를 적용합니다.",
+            "title": "Sales tax: 간접세 신고 제출",
+            "body": "state sales tax return, such as 이미 받은 편지함의 송장에서 작성되는 정기 간접세 신고. 모든 신고 기간과 클라이언트에 동일한 통제된 워크플로우를 적용합니다.",
             "steps": [
               "마감일부터 접수 작업이 시작되었습니다",
-              "Sales tax — 송장 매칭 및 간접세 계산 완료",
-              "설문지 — 격차만",
+              "Sales tax: 송장 매칭 및 간접세 계산 완료",
+              "설문지: 격차만",
               "반환 제출, 디지털 트윈 확인"
             ],
             "connections": [
-              "Sales tax · state revenue portal — 공식 세무 신고 포털",
+              "Sales tax · state revenue portal: 공식 세무 신고 포털",
               "송장 받은 편지함",
               "부기 소프트웨어"
             ],
-            "note": "state sales tax return · state revenue portal · portal account — 공식 세무 포털은 개인 또는 조직의 정부 인증 수단을 요구할 수 있습니다. Sherma는 신고서를 완벽하게 준비하고, 권한을 가진 담당자가 본인의 로그인으로 제출합니다. Sherma는 사용자를 대신하여 서명하지 않습니다."
+            "note": "state sales tax return · state revenue portal · portal account, 공식 세무 포털은 개인 또는 조직의 정부 인증 수단을 요구할 수 있습니다. Sherma는 신고서를 완벽하게 준비하고, 권한을 가진 담당자가 본인의 로그인으로 제출합니다. Sherma는 사용자를 대신하여 서명하지 않습니다."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "구매자 및 이동통신사 포털",
-              "Sales tax — 등록, 세무 및 은행 정보",
+              "Sales tax: 등록, 세무 및 은행 정보",
               "보험 및 정책 증거"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "고객으로부터 받은 설문지",
               "승인된 레코드와 일치하는 컨트롤",
-              "설문지 — 격차만",
+              "설문지: 격차만",
               "팩 조립, 트윈 확인"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "작업된 예",
-        "heading": "state sales tax return — 수동 재입력 없이 간접세 신고 준비",
+        "heading": "state sales tax return: 수동 재입력 없이 간접세 신고 준비",
         "body": "가장 반복되는 형태에 적용되는 동일한 원칙이 있습니다. 한 번에 하나의 엔터티, 1년에 4번, 영원히 하나의 템플릿.",
         "before": "누군가가 수치를 모아서 리턴으로 다시 키를 누르고 원장에 대해 확인하고 마감일 전에 파일을 확인합니다. 스프레드시트를 제외하고는 이월된 것이 없는 모든 클라이언트에 대해 분기마다.",
         "after": "Sherma는 제출 일정에서 작업을 열고 이미 받은 편지함에 있는 송장에서 반환을 작성하고 파생할 수 없는 수치만 묻고 완료된 보고서를 쌍둥이로 제시합니다.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "누락된 수치",
-              "value": "3 — 플래그가 지정되었습니다",
+              "value": "3 플래그가 지정되었습니다",
               "highlight": true
             }
           ],

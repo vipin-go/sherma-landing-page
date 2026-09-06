@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Form detected",
             "status": "done",
-            "detail": "إقرار ضريبة القيمة المضافة, الربع الثالث 2026 — client entity matched.",
+            "detail": "إقرار ضريبة القيمة المضافة, الربع الثالث 2026: client entity matched.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation complete",
             "status": "active",
-            "detail": "Dry run against the portal — 0 errors found.",
+            "detail": "Dry run against the portal found 0 errors.",
             "state": "active"
           }
         ],
@@ -408,12 +408,12 @@
           {
             "number": "01",
             "status": "live",
-            "title": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة — ضريبة القيمة المضافة return filing",
-            "body": "ضريبة القيمة المضافة — Recurring إقرار ضريبة القيمة المضافة filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+            "title": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة, ضريبة القيمة المضافة return filing",
+            "body": "ضريبة القيمة المضافة, such as Recurring إقرار ضريبة القيمة المضافة filings, prepared from the invoices already in the inbox. The same controlled workflow for every reporting period and client.",
             "steps": [
               "Filing job opened from deadline",
-              "ضريبة القيمة المضافة — Invoices matched, ضريبة القيمة المضافة calculated",
-              "Questionnaire — gaps only",
+              "ضريبة القيمة المضافة: Invoices matched, ضريبة القيمة المضافة calculated",
+              "Questionnaire: gaps only",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
@@ -421,7 +421,7 @@
               "Invoice inbox",
               "Bookkeeping software"
             ],
-            "note": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة — بوابة هيئة الزكاة والضريبة والجمارك may require حساب المكلف. Sherma prepares the إقرار ضريبة القيمة المضافة in full and the authorised person files it under their own login. It will not sign as you."
+            "note": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة, بوابة هيئة الزكاة والضريبة والجمارك may require حساب المكلف. Sherma prepares the إقرار ضريبة القيمة المضافة in full and the authorised person files it under their own login. It will not sign as you."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Buyer and carrier portals",
-              "حساب المكلف — Registration, ضريبة القيمة المضافة and bank details",
+              "حساب المكلف: Registration, ضريبة القيمة المضافة and bank details",
               "Insurance and policy evidence"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Questionnaire received from the customer",
               "Controls matched to the approved record",
-              "Questionnaire — gaps only",
+              "Questionnaire: gaps only",
               "Pack assembled, twin confirmed"
             ],
             "connections": [
@@ -530,14 +530,14 @@
       },
       "workedExample": {
         "kicker": "A WORKED EXAMPLE",
-        "heading": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة — Preparing a إقرار ضريبة القيمة المضافة without the manual re-entry.",
+        "heading": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة. Preparing a إقرار ضريبة القيمة المضافة without the manual re-entry.",
         "body": "The same principle, applied to the most repeated form there is. One template, one entity at a time, four times a year, forever.",
         "before": "Someone gathers the figures, re-keys them into the return, checks them against the ledger, and files before the deadline. Every quarter, for every client, with nothing carried forward except a spreadsheet.",
         "after": "Sherma opens the job from the filing calendar, builds the return from the invoices already in the inbox, asks only about the figures it cannot derive, and presents the completed return as a twin.",
         "linkLabel": "Talk through your filing calendar",
         "emailSubject": "Sherma quarterly filing workflow",
         "card": {
-          "label": "بوابة هيئة الزكاة والضريبة والجمارك — إقرار ضريبة القيمة المضافة",
+          "label": "بوابة هيئة الزكاة والضريبة والجمارك: إقرار ضريبة القيمة المضافة",
           "period": "الربع الثالث 2026",
           "status": "Prepared by Sherma",
           "rows": [
@@ -555,7 +555,7 @@
             },
             {
               "label": "Missing figures",
-              "value": "3 — flagged",
+              "value": "3 flagged",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "AT SCALE",
         "heading": "White-label Sherma at scale.",
-        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow — a thousand forms at a time, not a one-off filing.",
+        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow: a thousand forms at a time, not a one-off filing.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Where should Sherma run, and roughly how many forms?",
         "ctaLabel": "Prepare my Sherma brief",

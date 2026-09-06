@@ -248,7 +248,7 @@
             "number": "01",
             "title": "form upptäckt",
             "status": "done",
-            "detail": "부가가치세 · 부가가치세 신고서 — Indirekt skattedeklaration, Q3 2026 — klientenhet matchad.",
+            "detail": "부가가치세 · 부가가치세 신고서, such as Indirekt skattedeklaration, Q3 2026. Klientenhet matchad.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulering komplett",
             "status": "active",
-            "detail": "Torrkörning mot portalen — 0 fel hittades.",
+            "detail": "Torrkörning mot portalen: 0 fel hittades.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "부가가치세 · 부가가치세 · 부가가치세 신고서 — Indirekt skattedeklaration inlämning",
-            "body": "부가가치세 · 부가가치세 신고서 — Återkommande indirekta skattedeklarationer, förberedda från fakturorna redan i inkorgen — samma kontrollerade arbetsflöde för varje rapporteringsperiod och klient.",
+            "title": "부가가치세 · 부가가치세 · 부가가치세 신고서: Indirekt skattedeklaration inlämning",
+            "body": "부가가치세 · 부가가치세 신고서, such as Återkommande indirekta skattedeklarationer, förberedda från fakturorna redan i inkorgen. Samma kontrollerade arbetsflöde för varje rapporteringsperiod och klient.",
             "steps": [
               "Arkivjobb öppnat från deadline",
-              "부가가치세 — Fakturor matchade, indirekt skatt beräknad",
-              "Frågeformulär — Endast luckor",
+              "부가가치세: Fakturor matchade, indirekt skatt beräknad",
+              "Frågeformulär: Endast luckor",
               "Retur inlämnad, digital tvilling bekräftad"
             ],
             "connections": [
-              "부가가치세 · 홈택스 — Officiell skattedeklarationsportal",
+              "부가가치세 · 홈택스: Officiell skattedeklarationsportal",
               "faktura inkorg",
               "Bokföringsprogram"
             ],
-            "note": "부가가치세 · 부가가치세 · 부가가치세 신고서 · 부가가치세 신고서 · 홈택스 · 홈택스 · 공동인증서 — Officiella skattekällor kan kräva en personlig eller organisatorisk regeringslegitimation. Sherma förbereder deklarationen i sin helhet och den auktoriserade personen lämnar in den under sin egen inloggning. Den kommer inte att underteckna som du."
+            "note": "부가가치세 · 부가가치세 · 부가가치세 신고서 · 부가가치세 신고서 · 홈택스 · 홈택스 · 공동인증서. Officiella skattekällor kan kräva en personlig eller organisatorisk regeringslegitimation. Sherma förbereder deklarationen i sin helhet och den auktoriserade personen lämnar in den under sin egen inloggning. Den kommer inte att underteckna som du."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Köpar- och operatörsportaler",
-              "부가가치세 — Registrering, skatt och bankuppgifter",
+              "부가가치세: Registrering, skatt och bankuppgifter",
               "Försäkring och försäkring"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "frågeformulär mottagits från kunden",
               "Kontroller matchade med det godkända rekordet",
-              "Frågeformulär — Endast luckor",
+              "Frågeformulär: Endast luckor",
               "Pack monterad, tvillingbekräftad"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Ett fungerande exempel",
-        "heading": "부가가치세 · 부가가치세 신고서 — Förbereder en indirekt skattedeklaration utan manuell återinmatning",
+        "heading": "부가가치세 · 부가가치세 신고서: Förbereder en indirekt skattedeklaration utan manuell återinmatning",
         "body": "Samma princip, tillämpad på den mest upprepade formen som finns. En mall, en enhet i taget, fyra gånger om året, för alltid.",
         "before": "Någon samlar in siffrorna, nycklar in dem i returen, kontrollerar dem mot reskontran och arkiverar innan deadline. Varje kvartal, för varje kund, utan att något överförs förutom ett kalkylblad.",
         "after": "Sherma öppnar jobbet från arkivkalendern, bygger returen från fakturorna som redan finns i inkorgen, frågar bara om de siffror som den inte kan härleda och presenterar den ifyllda returen som en tvilling.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Saknade siffror",
-              "value": "3 — flaggad",
+              "value": "3 flaggad",
               "highlight": true
             }
           ],

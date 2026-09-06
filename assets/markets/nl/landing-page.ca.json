@@ -187,7 +187,7 @@
               "sourceLabel": "OBTINGUT"
             },
             {
-              "label": "BTW — Identificador fiscal",
+              "label": "BTW: Identificador fiscal",
               "value": "NL•••••••B01",
               "sourceLabel": "OBTINGUT"
             },
@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulari detectat",
             "status": "done",
-            "detail": "btw-aangifte — Retorn indirect-impost, Q3 2026 — entitat client coincide.",
+            "detail": "btw-aangifte, such as Retorn indirect-impost, Q3 2026. Entitat client coincide.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulació completada",
             "status": "active",
-            "detail": "Execució de prova contra el portal — 0 errors trobats.",
+            "detail": "Execució de prova contra el portal: 0 errors trobats.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "BTW · btw-aangifte — Presentació d'impost indirecte",
-            "body": "btw-aangifte — Retorns indirect-impost recurrents, preparats des dels factures ja ja en l'adreça — el mateix flux controlat per cada període de reportatge i client.",
+            "title": "BTW · btw-aangifte: Presentació d'impost indirecte",
+            "body": "btw-aangifte, such as Retorns indirect-impost recurrents, preparats des dels factures ja ja en l'adreça. El mateix flux controlat per cada període de reportatge i client.",
             "steps": [
               "Feina de presentació oberta des del termini",
-              "BTW — Factures coincide, impost indirect calculat",
-              "Qüestionari — només buits",
+              "BTW: Factures coincide, impost indirect calculat",
+              "Qüestionari: només buits",
               "Declaració presentada, bessó digital confirmat"
             ],
             "connections": [
-              "BTW · Mijn Belastingdienst Zakelijk — Portal d'impost oficial",
+              "BTW · Mijn Belastingdienst Zakelijk: Portal d'impost oficial",
               "Safata d'entrada de factures",
               "Programari de comptabilitat"
             ],
-            "note": "btw-aangifte · Mijn Belastingdienst Zakelijk · eHerkenning of DigiD — Els portals d'impost poden exigir credencials personals o organitzatius governamentals. Sherma prepara la retorn complet i la persona autoritzada el presenta sota el seu propi login. No signara com tu."
+            "note": "btw-aangifte · Mijn Belastingdienst Zakelijk · eHerkenning of DigiD. Els portals d'impost poden exigir credencials personals o organitzatius governamentals. Sherma prepara la retorn complet i la persona autoritzada el presenta sota el seu propi login. No signara com tu."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portals de compradors i transportistes",
-              "BTW — Registre, impost i detalls bancaris",
+              "BTW: Registre, impost i detalls bancaris",
               "Evidència d'assegurances i polítiques"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Qüestionari rebut del client",
               "Controls coincidits amb el registre aprovat",
-              "Qüestionari — només buits",
+              "Qüestionari: només buits",
               "Paquet muntat, bessó confirmat"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "UN EXEMPLE TREBALLAT",
-        "heading": "btw-aangifte — Preparació d'una declaració d'impostos indirectes sense la re-introducció manual.",
+        "heading": "btw-aangifte. Preparació d'una declaració d'impostos indirectes sense la re-introducció manual.",
         "body": "El mateix principi, aplicat al formulari més repetit que existeix. Una plantilla, una entitat a la vegada, quatre vegades l'any, per sempre.",
         "before": "Algú reuneix les xifres, les torna a introduir a la declaració, les comprova amb el llibre major i les presenta abans del termini. Cada trimestre, per a cada client, sense traslladar res endavant tret d’un full de càlcul.",
         "after": "Sherma obre la tasca des del calendari de presentació, construeix la declaració a partir de les factures que ja són a la safata d’entrada, només pregunta per les xifres que no pot deduir i presenta la declaració acabada com una bessona.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Xifres que falten",
-              "value": "3 — marcat",
+              "value": "3 marcat",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "A ESCALA",
         "heading": "Sherma de marca blanca a escala.",
-        "body": "Aquest breu és per a organitzacions que volen Sherma amb marca blanca integrat al seu flux de treball — milers de formularis alhora, no pas una tramitació puntual.",
+        "body": "Aquest breu és per a organitzacions que volen Sherma amb marca blanca integrat al seu flux de treball, milers de formularis alhora, no pas una tramitació puntual.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "On ha de funcionar Sherma, i aproximadament quants formularis?",
         "ctaLabel": "Prepara el meu brief de Sherma",

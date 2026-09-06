@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formular erkannt",
             "status": "done",
-            "detail": "business activity statement (BAS) — Indirekte Steuererklärung, Q3 2026 — Client-Entität übereilig.",
+            "detail": "business activity statement (BAS), such as Indirekte Steuererklärung, Q3 2026. Client-Entität übereilig.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation abgeschlossen",
             "status": "active",
-            "detail": "Trockenlauf gegen das Portal — 0 Fehler gefunden.",
+            "detail": "Trockenlauf gegen das Portal: 0 Fehler gefunden.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "GST — Indirekte Steuererklärung einreichen",
-            "body": "business activity statement (BAS) — Wiederkehrende indirekte Steuererklärungen, basierend auf den Rechnungen, die bereits im Posteingang sind — derselbe kontrollierte Arbeitsablauf für jeden Berichtszeitraum und jeden Kunden.",
+            "title": "GST: Indirekte Steuererklärung einreichen",
+            "body": "business activity statement (BAS), such as Wiederkehrende indirekte Steuererklärungen, basierend auf den Rechnungen, die bereits im Posteingang sind. Derselbe kontrollierte Arbeitsablauf für jeden Berichtszeitraum und jeden Kunden.",
             "steps": [
               "Anmeldeauftrag ab Frist geöffnet",
-              "GST — Rechnungen übereilig, indirekte Steuer berechnet",
-              "Fragebogen — nur Lücken",
+              "GST: Rechnungen übereilig, indirekte Steuer berechnet",
+              "Fragebogen: nur Lücken",
               "Rücksendung abgelegt, digitaler Zwilling bestätigt"
             ],
             "connections": [
-              "GST · Online services for business — Offizielles Steuereinreichungportal",
+              "GST · Online services for business: Offizielles Steuereinreichungportal",
               "Rechnungseingang",
               "Buchhaltungssoftware"
             ],
-            "note": "business activity statement (BAS) · Online services for business · myID — Offizielle Steuereinreichungsportale können eine persönliche oder organisatorische Regierungsanmeldedaten erfordern. Sherma bereitet die Erklärung vollständig vor, und die autorisierte Person reicht sie unter ihrem eigenen Login ein. Es wird nicht als Sie unterschreiben."
+            "note": "business activity statement (BAS) · Online services for business · myID. Offizielle Steuereinreichungsportale können eine persönliche oder organisatorische Regierungsanmeldedaten erfordern. Sherma bereitet die Erklärung vollständig vor, und die autorisierte Person reicht sie unter ihrem eigenen Login ein. Es wird nicht als Sie unterschreiben."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Käufer- und Carrier-Portale",
-              "GST — Registrierung, Steuer- und Bankdetails",
+              "GST: Registrierung, Steuer- und Bankdetails",
               "Versicherungs- und Versicherungsnachweis"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Fragebogen vom Kunden erhalten",
               "Kontrollen, die mit dem genehmigten Datensatz übereinstimmen",
-              "Fragebogen — nur Lücken",
+              "Fragebogen: nur Lücken",
               "Pack zusammengebaut, Twin bestätigt"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Ein bearbeitetes Beispiel",
-        "heading": "business activity statement (BAS) — Erstellung einer indirekten Steuererklärung ohne manuelle Neuerfassung.",
+        "heading": "business activity statement (BAS): Erstellung einer indirekten Steuererklärung ohne manuelle Neuerfassung.",
         "body": "Das gleiche Prinzip gilt für die wiederholte Form, die es gibt. Eine Vorlage, eine Einheit nach der anderen, viermal im Jahr, für immer.",
         "before": "Jemand sammelt die Figuren, gibt sie in die Rücksendung ein, überprüft sie gegen das Hauptbuch und speichert sie vor Ablauf der Frist. Jedes Quartal, für jeden Kunden, mit nichts außer einer Tabelle.",
         "after": "Sherma öffnet den Job aus dem Ablagekalender, erstellt die Rücksendung aus den Rechnungen, die sich bereits im Posteingang befinden, fragt nur nach den Zahlen, die er nicht ableiten kann, und präsentiert die abgeschlossene Rücksendung als Zwilling.",

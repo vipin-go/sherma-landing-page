@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulář zjištěn",
             "status": "done",
-            "detail": "GST · GSTR-3B — Přiznání k nepřímým daním, 3. čtvrtletí 2026 — subjekt klienta spárován.",
+            "detail": "GST · GSTR-3B, such as Přiznání k nepřímým daním, 3. čtvrtletí 2026. Subjekt klienta spárován.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulace dokončena",
             "status": "active",
-            "detail": "Dry Run proti portálu — nalezeno 0 chyb.",
+            "detail": "Dry Run proti portálu: nalezeno 0 chyb.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "GST — Podání přiznání k nepřímým daním",
-            "body": "GST · GSTR-3B — Opakovaná přiznání k nepřímým daním připravovaná z faktur, které již dorazily do schránky — stejný řízený pracovní postup pro každé zúčtovací období a každého klienta.",
+            "title": "GST: Podání přiznání k nepřímým daním",
+            "body": "GST · GSTR-3B, such as Opakovaná přiznání k nepřímým daním připravovaná z faktur, které již dorazily do schránky. Stejný řízený pracovní postup pro každé zúčtovací období a každého klienta.",
             "steps": [
               "Podání úlohy otevřeno od termínu",
-              "GST — Faktury spárovány, nepřímá daň vypočtena",
-              "Dotazník — pouze mezery",
+              "GST: Faktury spárovány, nepřímá daň vypočtena",
+              "Dotazník: pouze mezery",
               "Vrácení podáno, potvrzeno digitální dvojče"
             ],
             "connections": [
-              "GST · GST · GST Portal — Oficiální portál pro podání daňových přiznání",
+              "GST · GST · GST Portal: Oficiální portál pro podání daňových přiznání",
               "Doručená pošta faktury",
               "Účetní software"
             ],
-            "note": "GST · GST · GST · GSTR-3B · GST Portal · GST Portal · GST Portal credentials — Oficiální daňové portály mohou vyžadovat osobní nebo organizační vládní pověření. Sherma připraví přiznání v plném rozsahu a oprávněná osoba jej podá pod svým vlastním přihlášením. Nebude podepisovat za vás."
+            "note": "GST · GST · GST · GSTR-3B · GST Portal · GST Portal · GST Portal credentials. Oficiální daňové portály mohou vyžadovat osobní nebo organizační vládní pověření. Sherma připraví přiznání v plném rozsahu a oprávněná osoba jej podá pod svým vlastním přihlášením. Nebude podepisovat za vás."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portály kupujících a dopravců",
-              "GST — Registrační, daňové a bankovní údaje",
+              "GST: Registrační, daňové a bankovní údaje",
               "Pojištění a pojistka"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "dotazník obdržený od zákazníka",
               "Ovládací prvky odpovídaly schválenému záznamu",
-              "Dotazník — pouze mezery",
+              "Dotazník: pouze mezery",
               "balení sestaveno, dvojče potvrzeno"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Zpracovaný příklad",
-        "heading": "GST · GSTR-3B — Příprava nezávislého daňového přiznání bez ručního znovuzadání.",
+        "heading": "GST · GSTR-3B: Příprava nezávislého daňového přiznání bez ručního znovuzadání.",
         "body": "Stejný princip, aplikovaný na nejopakovanější formu, jaká existuje. Jedna šablona, jedna entita po druhé, čtyřikrát ročně, navždy.",
         "before": "Někdo shromáždí čísla, znovu je zaklíčuje do vrácení, zkontroluje je s účetní knihou a před uzávěrkou založí. Každé čtvrtletí, pro každého klienta, bez nic přeneseného kromě tabulky.",
         "after": "Sherma otevře úlohu z kalendáře podání, sestaví vrácení z faktur již v doručené poště, zeptá se pouze na čísla, která nemůže odvodit, a prezentuje dokončené přiznání jako dvojče.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Chybějící čísla",
-              "value": "3 — Označeno",
+              "value": "3 Označeno",
               "highlight": true
             }
           ],

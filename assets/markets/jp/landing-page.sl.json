@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Zaznan obrazec",
             "status": "done",
-            "detail": "消費税 · 消費税申告書 — Nenapovedna davčna povratnica, kvartal 2026 — entiteta klienta ujem.",
+            "detail": "消費税 · 消費税申告書, such as Nenapovedna davčna povratnica, kvartal 2026. Entiteta klienta ujem.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulacija končana",
             "status": "active",
-            "detail": "Suhi tek proti portalu — najdenih napak 0.",
+            "detail": "Suhi tek proti portalu: najdenih napak 0.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "消費税 — Nenapovedna davčna povratnica",
-            "body": "消費税 · 消費税申告書 — Ponovni nenapovedni davčni povratniki, pripravljeni iz factur, ki so že v vnosu — isti kontrolirani delovni tok za vsako obdobjilo porezne in klient.",
+            "title": "消費税: Nenapovedna davčna povratnica",
+            "body": "消費税 · 消費税申告書, such as Ponovni nenapovedni davčni povratniki, pripravljeni iz factur, ki so že v vnosu. Isti kontrolirani delovni tok za vsako obdobjilo porezne in klient.",
             "steps": [
               "Vložitev delovnega mesta je bila odprta od roka",
-              "消費税 — Upožene facture, izračunana davčna",
+              "消費税: Upožene facture, izračunana davčna",
               "Vprašalnik – samo vrzeli",
               "Vračilo vloženo, digitalni dvojček potrjen"
             ],
             "connections": [
-              "消費税 · e-Tax — Oficialna davčna portal",
+              "消費税 · e-Tax: Oficialna davčna portal",
               "Prejeto v računu",
               "Knjigovodska programska oprema"
             ],
-            "note": "消費税 · 消費税申告書 · e-Tax · 利用者識別番号 — Oficialna davčna portal lahko zahtevajo osebno ali organizacijsko poverilnica. Sherma celotno povratnico pripravi, in ovlaščena osega ga naloži pod svojim prijavo. Ne bo prijavil kot vi."
+            "note": "消費税 · 消費税申告書 · e-Tax · 利用者識別番号. Oficialna davčna portal lahko zahtevajo osebno ali organizacijsko poverilnica. Sherma celotno povratnico pripravi, in ovlaščena osega ga naloži pod svojim prijavo. Ne bo prijavil kot vi."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portal za kupce in prevoznike",
-              "消費税 — Registracija, davčna in banka podrobnosti",
+              "消費税: Registracija, davčna in banka podrobnosti",
               "Dokazi o zavarovanju"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Delovni primer",
-        "heading": "消費税 · 消費税申告書 — Priprava obračuna posrednih davkov brez ročnega ponovnega vnašanja.",
+        "heading": "消費税 · 消費税申告書: Priprava obračuna posrednih davkov brez ročnega ponovnega vnašanja.",
         "body": "Enako načelo, ki velja za najbolj ponavljajočo se obliko. Ena predloga, ena entiteta naenkrat, štirikrat na leto, za vedno.",
         "before": "Nekdo zbere številke, jih ponovno vnese v vračilo, jih preveri glede na knjigo in vloži pred rokom. Vsako četrtletje, za vsako stranko, brez prenesenega ničesar, razen preglednice.",
         "after": "Sherma odpre opravilo iz koledarja vložitve, zgradi vračilo iz računov, ki so že v mapi Prejeto, vpraša samo o številkah, ki jih ne more izpeljati, in predstavljeno vračilo predstavi kot dvojček.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Manjkajoče številke",
-              "value": "3 — Označeno",
+              "value": "3 Označeno",
               "highlight": true
             }
           ],

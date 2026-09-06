@@ -248,7 +248,7 @@
             "number": "01",
             "title": "form opdaget",
             "status": "done",
-            "detail": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة — Indirekte skatteaflevering, kvartal 3 2026 — kliententitet matcher.",
+            "detail": "ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة, such as Indirekte skatteaflevering, kvartal 3 2026. Kliententitet matcher.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulering fuldført",
             "status": "active",
-            "detail": "tørløb mod portalen — 0 fejl fundet.",
+            "detail": "tørløb mod portalen: 0 fejl fundet.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة — Indirekte skatteindberetning",
-            "body": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة — Gentagende aflevering af indirekte afgifter, forberedt fra fakturaer allerede i indboksen — den samme kontrollerede arbejdsgang for hver rapporteringsperiode og kunde.",
+            "title": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة. Indirekte skatteindberetning",
+            "body": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة, such as Gentagende aflevering af indirekte afgifter, forberedt fra fakturaer allerede i indboksen. Den samme kontrollerede arbejdsgang for hver rapporteringsperiode og kunde.",
             "steps": [
               "Indleveringsjob åbnet fra deadline",
-              "ضريبة القيمة المضافة · ضريبة القيمة المضافة — Fakturaer matcher, indirekte skat beregnet",
-              "Spørgeskema — Kun huller",
+              "ضريبة القيمة المضافة · ضريبة القيمة المضافة. Fakturaer matcher, indirekte skat beregnet",
+              "Spørgeskema: Kun huller",
               "retur indgivet, digital tvilling bekræftet"
             ],
             "connections": [
-              "ضريبة القيمة المضافة · بوابة هيئة الزكاة والضريبة والجمارك — Offentlig skatteafleveringsportal",
+              "ضريبة القيمة المضافة · بوابة هيئة الزكاة والضريبة والجمارك. Offentlig skatteafleveringsportal",
               "Faktura indbakke",
               "Bogføringssoftware"
             ],
-            "note": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة · بوابة هيئة الزكاة والضريبة والجمارك · حساب المكلف — Offentlige skattekort kan kræve personlige eller organisatorlige statskreds. Sherma udarbejder det fulde skatteopgør, og den autoriserede person indleverer det under deres egen login. Den signerer ikke som dig."
+            "note": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة · بوابة هيئة الزكاة والضريبة والجمارك · حساب المكلف. Offentlige skattekort kan kræve personlige eller organisatorlige statskreds. Sherma udarbejder det fulde skatteopgør, og den autoriserede person indleverer det under deres egen login. Den signerer ikke som dig."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Køber- og transportportaler",
-              "ضريبة القيمة المضافة · حساب المكلف — Registrering, skatteoplysninger og bankdetaljer",
+              "ضريبة القيمة المضافة · حساب المكلف: Registrering, skatteoplysninger og bankdetaljer",
               "Forsikring og policebevis"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Spørgeskema modtaget fra kunden",
               "Kontroller matchet med den godkendte post",
-              "Spørgeskema — Kun huller",
+              "Spørgeskema: Kun huller",
               "pakke samlet, tvilling bekræftet"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "et bearbejdet eksempel",
-        "heading": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة — Udlæsning af indirekte skatteretur uden manuel indtastning.",
+        "heading": "ضريبة القيمة المضافة · ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة · إقرار ضريبة القيمة المضافة. Udlæsning af indirekte skatteretur uden manuel indtastning.",
         "body": "Det samme princip, anvendt på den mest gentagne form, der findes. Én skabelon, én enhed ad gangen, fire gange om året, for altid.",
         "before": "Nogen samler figurerne, indtaster dem i returneringen, tjekker dem i forhold til hovedbogen og arkiverer inden deadline. Hvert kvartal, for hver klient, med intet videreført undtagen et regneark.",
         "after": "Sherma åbner jobbet fra arkiveringskalenderen, bygger returneringen fra de fakturaer, der allerede er i indbakken, spørger kun om de tal, den ikke kan udlede, og præsenterer den gennemførte returnering som en tvilling.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Manglende figurer",
-              "value": "3 — Flagget",
+              "value": "3 Flagget",
               "highlight": true
             }
           ],

@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Obrazac otkriven",
             "status": "done",
-            "detail": "營業稅 · 營業稅申報書 — Neprekinuta porezna povratnica, kvartal 2026 — klijent entitet usključen.",
+            "detail": "營業稅 · 營業稅申報書, such as Neprekinuta porezna povratnica, kvartal 2026. Klijent entitet usključen.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulacija završena",
             "status": "active",
-            "detail": "財政部電子申報繳稅服務網 — Probno izvršavanje na portalu — 0 grešaka pronađeno.",
+            "detail": "財政部電子申報繳稅服務網, such as Probno izvršavanje na portalu. 0 grešaka pronađeno.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "營業稅 — Neprekinuta porezna povratnica",
-            "body": "營業稅 · 營業稅申報書 — Uždavajuca porezna povratnica, pripremljena iz faktura koja već u uvozu — isti kontrolisani radni tok za svaki period porezne i klijent.",
+            "title": "營業稅: Neprekinuta porezna povratnica",
+            "body": "營業稅 · 營業稅申報書, such as Uždavajuca porezna povratnica, pripremljena iz faktura koja već u uvozu. Isti kontrolisani radni tok za svaki period porezne i klijent.",
             "steps": [
               "Posao podnošenja otvoren iz roka",
-              "營業稅 — Upožet fakture, izračunata porezna",
-              "Upitnik — samo praznine",
+              "營業稅: Upožet fakture, izračunata porezna",
+              "Upitnik: samo praznine",
               "Prijava podneta, digitalni dvojnik potvrđen"
             ],
             "connections": [
-              "營業稅 · 財政部電子申報繳稅服務網 — Oficialna porezna portal",
+              "營業稅 · 財政部電子申報繳稅服務網: Oficialna porezna portal",
               "Prijemno sanduče za fakture",
               "Knjigovodstveni softver"
             ],
-            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼 — Oficialna porezna portal mogu da zahtevaju ličnu ili organizaciono vlasi credentials. Sherma priprema celu u potpunosti, i ovlašćenja osoba ga podnosi pod svojim loginom. Neće se prijaviti kao vi."
+            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼. Oficialna porezna portal mogu da zahtevaju ličnu ili organizaciono vlasi credentials. Sherma priprema celu u potpunosti, i ovlašćenja osoba ga podnosi pod svojim loginom. Neće se prijaviti kao vi."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portali kupaca i prevoznika",
-              "營業稅 — Registracija, porezna i bank detalji",
+              "營業稅: Registracija, porezna i bank detalji",
               "Dokazi osiguranja i polisa"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Upitnik primljen od kupca",
               "Kontrole usklađene sa odobrenim zapisom",
-              "Upitnik — samo praznine",
+              "Upitnik: samo praznine",
               "Paket sastavljen, dvojnik potvrđen"
             ],
             "connections": [
@@ -530,10 +530,10 @@
       },
       "workedExample": {
         "kicker": "PRIMER U RADU",
-        "heading": "營業稅 · 營業稅申報書 — Priprema prijave za indirektne poreze bez ručnog ponovnog unosa.",
+        "heading": "營業稅 · 營業稅申報書: Priprema prijave za indirektne poreze bez ručnog ponovnog unosa.",
         "body": "Isti princip, primenjen na najponovljeniji obrazac koji postoji. Jedan šablon, jedan entitet u datom trenutku, četiri puta godišnje, zauvek.",
         "before": "Neko prikupi podatke, ponovo ih unese u prijavu, proveri ih prema knjigovodstvu i podnese pre roka. Svaki kvartal, za svakog klijenta, bez prenošenja bilo čega osim jedne tabele.",
-        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書 — Sherma otvara posao iz kalendara podnošenja, sastavlja prijavu od faktura koje su već u prijemnom sandučetu, pita samo o podacima koje ne može da izvede i prikazuje završenu prijavu kao bliznakinju.",
+        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書. Sherma otvara posao iz kalendara podnošenja, sastavlja prijavu od faktura koje su već u prijemnom sandučetu, pita samo o podacima koje ne može da izvede i prikazuje završenu prijavu kao bliznakinju.",
         "linkLabel": "Prođite kroz svoj kalendar podnošenja",
         "emailSubject": "Radni tok kvartalnog podnošenja Sherma",
         "card": {
@@ -555,7 +555,7 @@
             },
             {
               "label": "Nedostajući podaci",
-              "value": "3 — označeno",
+              "value": "3 označeno",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "U OBIMU",
         "heading": "Sherma pod belom oznakom u obimu.",
-        "body": "Ovaj brief je za organizacije koje žele Shermu pod sopstvenim brendom u svom toku rada — hiljadu obrazaca odjednom, a ne jednokratnu prijavu.",
+        "body": "Ovaj brief je za organizacije koje žele Shermu pod sopstvenim brendom u svom toku rada, hiljadu obrazaca odjednom, a ne jednokratnu prijavu.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Gde bi Sherma trebalo da radi i otprilike koliko obrazaca?",
         "ctaLabel": "Pripremi moj Sherma brief",

@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Form detected",
             "status": "done",
-            "detail": "부가가치세 신고서, 2026년 제2기 예정 — client entity matched.",
+            "detail": "부가가치세 신고서, 2026년 제2기 예정: client entity matched.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation complete",
             "status": "active",
-            "detail": "Dry run against the portal — 0 errors found.",
+            "detail": "Dry run against the portal found 0 errors.",
             "state": "active"
           }
         ],
@@ -408,12 +408,12 @@
           {
             "number": "01",
             "status": "live",
-            "title": "부가가치세 · 부가가치세 신고서 — 부가가치세 return filing",
-            "body": "Recurring 부가가치세 신고서 filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+            "title": "부가가치세 · 부가가치세 신고서: 부가가치세 return filing",
+            "body": "Recurring 부가가치세 신고서 filings, prepared from the invoices already in the inbox, using the same controlled workflow for every reporting period and client.",
             "steps": [
               "Filing job opened from deadline",
               "Invoices matched, 부가가치세 calculated",
-              "Questionnaire — gaps only",
+              "Questionnaire: gaps only",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
@@ -421,7 +421,7 @@
               "Invoice inbox",
               "Bookkeeping software"
             ],
-            "note": "부가가치세 · 부가가치세 신고서 · 홈택스 — 홈택스 may require 공동인증서. Sherma prepares the 부가가치세 신고서 in full and the authorised person files it under their own login. It will not sign as you."
+            "note": "부가가치세 · 부가가치세 신고서 · 홈택스, 홈택스 may require 공동인증서. Sherma prepares the 부가가치세 신고서 in full and the authorised person files it under their own login. It will not sign as you."
           },
           {
             "number": "02",
@@ -448,7 +448,7 @@
             "steps": [
               "Questionnaire received from the customer",
               "Controls matched to the approved record",
-              "Questionnaire — gaps only",
+              "Questionnaire: gaps only",
               "Pack assembled, twin confirmed"
             ],
             "connections": [
@@ -555,7 +555,7 @@
             },
             {
               "label": "Missing figures",
-              "value": "3 — flagged",
+              "value": "3 flagged",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "AT SCALE",
         "heading": "White-label Sherma at scale.",
-        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow — a thousand forms at a time, not a one-off filing.",
+        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow: a thousand forms at a time, not a one-off filing.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Where should Sherma run, and roughly how many forms?",
         "ctaLabel": "Prepare my Sherma brief",

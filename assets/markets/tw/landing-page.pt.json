@@ -248,7 +248,7 @@
             "number": "01",
             "title": "formulário detectado",
             "status": "done",
-            "detail": "營業稅 · 營業稅申報書 — Declaração de imposto indireto, Q3 2026 — entidade cliente correspondente.",
+            "detail": "營業稅 · 營業稅申報書, such as Declaração de imposto indireto, Q3 2026. Entidade cliente correspondente.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulação completa",
             "status": "active",
-            "detail": "財政部電子申報繳稅服務網 — Dry run contra o portal — 0 erros encontrados.",
+            "detail": "財政部電子申報繳稅服務網, such as Dry run contra o portal. 0 erros encontrados.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "營業稅 — Apresentação de declarações de imposto indireto",
-            "body": "營業稅 · 營業稅申報書 — Declarações de imposto indireto recorrentes, preparadas a partir das faturas já na caixa de entrada — o mesmo fluxo de trabalho controlado para cada período de relatório e cliente.",
+            "title": "營業稅: Apresentação de declarações de imposto indireto",
+            "body": "營業稅 · 營業稅申報書, such as Declarações de imposto indireto recorrentes, preparadas a partir das faturas já na caixa de entrada. O mesmo fluxo de trabalho controlado para cada período de relatório e cliente.",
             "steps": [
               "Trabalho de arquivamento aberto a partir do prazo",
-              "營業稅 — Faturas correspondentes, imposto indireto calculado",
-              "Questionário — apenas lacunas",
+              "營業稅: Faturas correspondentes, imposto indireto calculado",
+              "Questionário: apenas lacunas",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
-              "營業稅 · 財政部電子申報繳稅服務網 — Portal oficial de apresentação fiscal",
+              "營業稅 · 財政部電子申報繳稅服務網: Portal oficial de apresentação fiscal",
               "Caixa de entrada da fatura",
               "Software de contabilidade"
             ],
-            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼 — Portais fiscais oficiais podem exigir uma credencial governamental pessoal ou organizacional. Sherma prepara a declaração completa e a pessoa autorizada a apresenta com seus próprios dados de login. Não assinará por você."
+            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼. Portais fiscais oficiais podem exigir uma credencial governamental pessoal ou organizacional. Sherma prepara a declaração completa e a pessoa autorizada a apresenta com seus próprios dados de login. Não assinará por você."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portais do comprador e da operadora",
-              "營業稅 — Registro, detalhes fiscais e bancários",
+              "營業稅: Registro, detalhes fiscais e bancários",
               "Provas de seguro e seguro"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "questionário recebido do cliente",
               "Controles correspondidos ao registro aprovado",
-              "Questionário — apenas lacunas",
+              "Questionário: apenas lacunas",
               "Pacote montado, gêmeo confirmado"
             ],
             "connections": [
@@ -530,10 +530,10 @@
       },
       "workedExample": {
         "kicker": "Um exemplo trabalhado",
-        "heading": "營業稅 · 營業稅申報書 — Preparando uma declaração de impostos indiretos sem reinserção manual.",
+        "heading": "營業稅 · 營業稅申報書: Preparando uma declaração de impostos indiretos sem reinserção manual.",
         "body": "O mesmo princípio, aplicado à forma mais repetida que existe. Um modelo, uma entidade de cada vez, quatro vezes por ano, para sempre.",
         "before": "Alguém reúne as figuras, os reinsere na devolução, verifica-os no livro-razão e arquivos antes do prazo. Cada trimestre, para cada cliente, sem nada além de uma planilha.",
-        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書 — Sherma abre o trabalho a partir do calendário de arquivamento, cria o retorno das faturas já na caixa de entrada, pergunta apenas sobre os números que não pode derivar e apresenta a devolução concluída como gêmeo.",
+        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書. Sherma abre o trabalho a partir do calendário de arquivamento, cria o retorno das faturas já na caixa de entrada, pergunta apenas sobre os números que não pode derivar e apresenta a devolução concluída como gêmeo.",
         "linkLabel": "Fale através do seu calendário de arquivamentos",
         "emailSubject": "Fluxo de trabalho de arquivamento trimestral de Sherma",
         "card": {
@@ -555,7 +555,7 @@
             },
             {
               "label": "faltando figuras",
-              "value": "3 — sinalizado",
+              "value": "3 sinalizado",
               "highlight": true
             }
           ],

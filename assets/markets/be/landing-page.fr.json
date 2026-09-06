@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulaire détecté",
             "status": "done",
-            "detail": "btw · periodieke btw-aangifte — Déclaration de taxe indirecte, T3 2026 — entité client correspondante.",
+            "detail": "btw · periodieke btw-aangifte, such as Déclaration de taxe indirecte, T3 2026. Entité client correspondante.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation terminée",
             "status": "active",
-            "detail": "Exécution sèche sur le portail — 0 erreurs détectées.",
+            "detail": "Exécution sèche sur le portail: 0 erreurs détectées.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "btw · btw — Dépôt de déclarations de taxe indirecte",
-            "body": "btw · periodieke btw-aangifte — Déclarations de taxe indirecte récurrentes, préparées à partir des factures déjà dans la boîte de réception — le même flux de travail contrôlé pour chaque période de rapport et chaque client.",
+            "title": "btw · btw: Dépôt de déclarations de taxe indirecte",
+            "body": "btw · periodieke btw-aangifte, such as Déclarations de taxe indirecte récurrentes, préparées à partir des factures déjà dans la boîte de réception. Le même flux de travail contrôlé pour chaque période de rapport et chaque client.",
             "steps": [
               "Dépôt ouvert à partir de la date limite",
-              "btw — Factures correspondantes, taxe indirecte calculée",
-              "Questionnaire — écarts uniquement",
+              "btw: Factures correspondantes, taxe indirecte calculée",
+              "Questionnaire: écarts uniquement",
               "Retour déposé, jumeau numérique confirmé"
             ],
             "connections": [
-              "btw · Intervat — Portail officiel de dépôt fiscal",
+              "btw · Intervat: Portail officiel de dépôt fiscal",
               "Boîte de réception des factures",
               "Logiciel de tenue de livres"
             ],
-            "note": "btw · periodieke btw-aangifte · Intervat · CSAM-aanmelding — Les portails fiscaux officiels peuvent exiger un identifiant gouvernemental personnel ou organisationnel. Sherma prépare la déclaration en entier et la personne autorisée la dépose avec ses propres identifiants. Il ne signera pas pour vous."
+            "note": "btw · periodieke btw-aangifte · Intervat · CSAM-aanmelding. Les portails fiscaux officiels peuvent exiger un identifiant gouvernemental personnel ou organisationnel. Sherma prépare la déclaration en entier et la personne autorisée la dépose avec ses propres identifiants. Il ne signera pas pour vous."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portails des acheteurs et des transporteurs",
-              "btw — Enregistrement, coordonnées fiscales et bancaires",
+              "btw: Enregistrement, coordonnées fiscales et bancaires",
               "Assurance et preuves de police"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Questionnaire reçu du client",
               "Contrôles correspondant à l'enregistrement approuvé",
-              "Questionnaire — écarts uniquement",
+              "Questionnaire: écarts uniquement",
               "Pack assemblé, double confirmé"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Un exemple travaillé",
-        "heading": "btw · periodieke btw-aangifte — Préparation d'une déclaration de taxes indirectes sans ressaisie manuelle.",
+        "heading": "btw · periodieke btw-aangifte. Préparation d'une déclaration de taxes indirectes sans ressaisie manuelle.",
         "body": "Le même principe, appliqué à la forme la plus répétée qui existe. Un modèle, une entité à la fois, quatre fois par an, pour toujours.",
         "before": "Quelqu'un rassemble les chiffres, les saisit dans la déclaration, les vérifie par rapport au grand livre et dépose avant la date limite. Chaque trimestre, pour chaque client, sans rien reporté, sauf une feuille de calcul.",
         "after": "Sherma ouvre le travail à partir du calendrier de dépôt, construit le retour des factures déjà dans la boîte de réception, ne demande que les chiffres qu'il ne peut pas dériver et présente le retour terminé comme un jumeau.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "chiffres manquants",
-              "value": "3 — Signalé",
+              "value": "3 Signalé",
               "highlight": true
             }
           ],

@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulář zjištěn",
             "status": "done",
-            "detail": "營業稅 · 營業稅申報書 — Přiznání k nepřímým daním, 3. čtvrtletí 2026 — subjekt klienta spárován.",
+            "detail": "營業稅 · 營業稅申報書, such as Přiznání k nepřímým daním, 3. čtvrtletí 2026. Subjekt klienta spárován.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulace dokončena",
             "status": "active",
-            "detail": "財政部電子申報繳稅服務網 — Dry Run proti portálu — nalezeno 0 chyb.",
+            "detail": "財政部電子申報繳稅服務網, such as Dry Run proti portálu. Nalezeno 0 chyb.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "營業稅 — Podání přiznání k nepřímým daním",
-            "body": "營業稅 · 營業稅申報書 — Opakovaná přiznání k nepřímým daním připravovaná z faktur, které již dorazily do schránky — stejný řízený pracovní postup pro každé zúčtovací období a každého klienta.",
+            "title": "營業稅: Podání přiznání k nepřímým daním",
+            "body": "營業稅 · 營業稅申報書, such as Opakovaná přiznání k nepřímým daním připravovaná z faktur, které již dorazily do schránky. Stejný řízený pracovní postup pro každé zúčtovací období a každého klienta.",
             "steps": [
               "Podání úlohy otevřeno od termínu",
-              "營業稅 — Faktury spárovány, nepřímá daň vypočtena",
-              "Dotazník — pouze mezery",
+              "營業稅: Faktury spárovány, nepřímá daň vypočtena",
+              "Dotazník: pouze mezery",
               "Vrácení podáno, potvrzeno digitální dvojče"
             ],
             "connections": [
-              "營業稅 · 財政部電子申報繳稅服務網 — Oficiální portál pro podání daňových přiznání",
+              "營業稅 · 財政部電子申報繳稅服務網: Oficiální portál pro podání daňových přiznání",
               "Doručená pošta faktury",
               "Účetní software"
             ],
-            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼 — Oficiální daňové portály mohou vyžadovat osobní nebo organizační vládní pověření. Sherma připraví přiznání v plném rozsahu a oprávněná osoba jej podá pod svým vlastním přihlášením. Nebude podepisovat za vás."
+            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼. Oficiální daňové portály mohou vyžadovat osobní nebo organizační vládní pověření. Sherma připraví přiznání v plném rozsahu a oprávněná osoba jej podá pod svým vlastním přihlášením. Nebude podepisovat za vás."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portály kupujících a dopravců",
-              "營業稅 — Registrační, daňové a bankovní údaje",
+              "營業稅: Registrační, daňové a bankovní údaje",
               "Pojištění a pojistka"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "dotazník obdržený od zákazníka",
               "Ovládací prvky odpovídaly schválenému záznamu",
-              "Dotazník — pouze mezery",
+              "Dotazník: pouze mezery",
               "balení sestaveno, dvojče potvrzeno"
             ],
             "connections": [
@@ -530,10 +530,10 @@
       },
       "workedExample": {
         "kicker": "Zpracovaný příklad",
-        "heading": "營業稅 · 營業稅申報書 — Příprava nezávislého daňového přiznání bez ručního znovuzadání.",
+        "heading": "營業稅 · 營業稅申報書: Příprava nezávislého daňového přiznání bez ručního znovuzadání.",
         "body": "Stejný princip, aplikovaný na nejopakovanější formu, jaká existuje. Jedna šablona, jedna entita po druhé, čtyřikrát ročně, navždy.",
         "before": "Někdo shromáždí čísla, znovu je zaklíčuje do vrácení, zkontroluje je s účetní knihou a před uzávěrkou založí. Každé čtvrtletí, pro každého klienta, bez nic přeneseného kromě tabulky.",
-        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書 — Sherma otevře úlohu z kalendáře podání, sestaví vrácení z faktur již v doručené poště, zeptá se pouze na čísla, která nemůže odvodit, a prezentuje dokončené přiznání jako dvojče.",
+        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書. Sherma otevře úlohu z kalendáře podání, sestaví vrácení z faktur již v doručené poště, zeptá se pouze na čísla, která nemůže odvodit, a prezentuje dokončené přiznání jako dvojče.",
         "linkLabel": "Promluvte si ve svém kalendáři podání",
         "emailSubject": "Sherma Quarterly Filing Workflow",
         "card": {
@@ -555,7 +555,7 @@
             },
             {
               "label": "Chybějící čísla",
-              "value": "3 — Označeno",
+              "value": "3 Označeno",
               "highlight": true
             }
           ],

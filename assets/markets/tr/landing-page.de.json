@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formular erkannt",
             "status": "done",
-            "detail": "KDV · KDV1 Beyannamesi — Indirekte Steuererklärung, Q3 2026 — Client-Entität übereilig.",
+            "detail": "KDV · KDV1 Beyannamesi, such as Indirekte Steuererklärung, Q3 2026. Client-Entität übereilig.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation abgeschlossen",
             "status": "active",
-            "detail": "Trockenlauf gegen das Portal — 0 Fehler gefunden.",
+            "detail": "Trockenlauf gegen das Portal: 0 Fehler gefunden.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "KDV — Indirekte Steuererklärung einreichen",
-            "body": "KDV · KDV1 Beyannamesi — Wiederkehrende indirekte Steuererklärungen, basierend auf den Rechnungen, die bereits im Posteingang sind — derselbe kontrollierte Arbeitsablauf für jeden Berichtszeitraum und jeden Kunden.",
+            "title": "KDV: Indirekte Steuererklärung einreichen",
+            "body": "KDV · KDV1 Beyannamesi, such as Wiederkehrende indirekte Steuererklärungen, basierend auf den Rechnungen, die bereits im Posteingang sind. Derselbe kontrollierte Arbeitsablauf für jeden Berichtszeitraum und jeden Kunden.",
             "steps": [
               "Anmeldeauftrag ab Frist geöffnet",
-              "KDV — Rechnungen übereilig, indirekte Steuer berechnet",
-              "Fragebogen — nur Lücken",
+              "KDV: Rechnungen übereilig, indirekte Steuer berechnet",
+              "Fragebogen: nur Lücken",
               "Rücksendung abgelegt, digitaler Zwilling bestätigt"
             ],
             "connections": [
-              "KDV · Dijital Vergi Dairesi — Offizielles Steuereinreichungportal",
+              "KDV · Dijital Vergi Dairesi: Offizielles Steuereinreichungportal",
               "Rechnungseingang",
               "Buchhaltungssoftware"
             ],
-            "note": "KDV · KDV1 Beyannamesi · Dijital Vergi Dairesi · İnteraktif Vergi Dairesi şifresi — Offizielle Steuereinreichungsportale können eine persönliche oder organisatorische Regierungsanmeldedaten erfordern. Sherma bereitet die Erklärung vollständig vor, und die autorisierte Person reicht sie unter ihrem eigenen Login ein. Es wird nicht als Sie unterschreiben."
+            "note": "KDV · KDV1 Beyannamesi · Dijital Vergi Dairesi · İnteraktif Vergi Dairesi şifresi. Offizielle Steuereinreichungsportale können eine persönliche oder organisatorische Regierungsanmeldedaten erfordern. Sherma bereitet die Erklärung vollständig vor, und die autorisierte Person reicht sie unter ihrem eigenen Login ein. Es wird nicht als Sie unterschreiben."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Käufer- und Carrier-Portale",
-              "KDV — Registrierung, Steuer- und Bankdetails",
+              "KDV: Registrierung, Steuer- und Bankdetails",
               "Versicherungs- und Versicherungsnachweis"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Fragebogen vom Kunden erhalten",
               "Kontrollen, die mit dem genehmigten Datensatz übereinstimmen",
-              "Fragebogen — nur Lücken",
+              "Fragebogen: nur Lücken",
               "Pack zusammengebaut, Twin bestätigt"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Ein bearbeitetes Beispiel",
-        "heading": "KDV · KDV1 Beyannamesi — Erstellung einer indirekten Steuererklärung ohne manuelle Neuerfassung.",
+        "heading": "KDV · KDV1 Beyannamesi: Erstellung einer indirekten Steuererklärung ohne manuelle Neuerfassung.",
         "body": "Das gleiche Prinzip gilt für die wiederholte Form, die es gibt. Eine Vorlage, eine Einheit nach der anderen, viermal im Jahr, für immer.",
         "before": "Jemand sammelt die Figuren, gibt sie in die Rücksendung ein, überprüft sie gegen das Hauptbuch und speichert sie vor Ablauf der Frist. Jedes Quartal, für jeden Kunden, mit nichts außer einer Tabelle.",
         "after": "Sherma öffnet den Job aus dem Ablagekalender, erstellt die Rücksendung aus den Rechnungen, die sich bereits im Posteingang befinden, fragt nur nach den Zahlen, die er nicht ableiten kann, und präsentiert die abgeschlossene Rücksendung als Zwilling.",

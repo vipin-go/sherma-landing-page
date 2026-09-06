@@ -248,7 +248,7 @@
             "number": "01",
             "title": "A forma észlelve",
             "status": "done",
-            "detail": "VAT · VAT Return — Közvetett adóbevallás, 2026 Q3 – ügyfél entitás párosítva.",
+            "detail": "VAT · VAT Return: Közvetett adóbevallás, 2026 Q3 – ügyfél entitás párosítva.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "szimuláció befejeződött",
             "status": "active",
-            "detail": "Száraz futás a portál ellen — 0 hibát találtunk.",
+            "detail": "Száraz futás a portál ellen: 0 hibát találtunk.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "VAT — Közvetett adóbevallás benyújtása",
-            "body": "VAT · VAT Return — Ismétlődő közvetett adóbevallások, amelyek a már beérkezett számlák alapján készülnek – ugyanaz az ellenőrzött munkafolyamat minden bevallási időszakra és ügyfélre.",
+            "title": "VAT: Közvetett adóbevallás benyújtása",
+            "body": "VAT · VAT Return. Ismétlődő közvetett adóbevallások, amelyek a már beérkezett számlák alapján készülnek – ugyanaz az ellenőrzött munkafolyamat minden bevallási időszakra és ügyfélre.",
             "steps": [
               "Az iktatási állás határidőtől megnyílt",
-              "VAT — Számlák egyeztetve, közvetett adó kiszámítva",
+              "VAT: Számlák egyeztetve, közvetett adó kiszámítva",
               "Kérdőív – csak hiányosságok",
               "Visszaküldés, digitális iker megerősítve"
             ],
             "connections": [
-              "VAT · HMRC online account — Hivatalos adóbevallási portál",
+              "VAT · HMRC online account: Hivatalos adóbevallási portál",
               "Számlaposta",
               "Könyvelő szoftver"
             ],
-            "note": "VAT · VAT Return · HMRC online account · Government Gateway credentials — A hivatalos adóportálok személyes vagy szervezeti kormányzati hitelesítő adatokat kérhetnek. A Sherma teljes körűen előkészíti a bevallást, és az arra jogosult személy saját bejelentkezésével nyújtja be. Nem ír alá helyetted."
+            "note": "VAT · VAT Return · HMRC online account · Government Gateway credentials. A hivatalos adóportálok személyes vagy szervezeti kormányzati hitelesítő adatokat kérhetnek. A Sherma teljes körűen előkészíti a bevallást, és az arra jogosult személy saját bejelentkezésével nyújtja be. Nem ír alá helyetted."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Vevő és szolgáltató portálok",
-              "VAT — Regisztrációs, adó- és banki adatok",
+              "VAT: Regisztrációs, adó- és banki adatok",
               "Biztosítási és kötvénybizonyítékok"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "egy működő példa",
-        "heading": "VAT · VAT Return — Közvetett adóbevallás előkészítése manuális újrabevitel nélkül",
+        "heading": "VAT · VAT Return: Közvetett adóbevallás előkészítése manuális újrabevitel nélkül",
         "body": "Ugyanez az elv, a legtöbbször ismételt formára vonatkozik. Egy sablon, egy entitás egyszerre, évente négyszer, örökké.",
         "before": "Valaki összegyűjti a számadatokat, újra beírja a visszaküldésbe, ellenőrzi a főkönyvben, és a határidő előtt beadja. Minden negyedévben, minden ügyfélre, egy táblázaton kívül semmi mással.",
         "after": "Sherma megnyitja a feladatot a bejelentési naptárból, összeállítja a bevallást a már beérkezett számlákból, csak azokról a számadatokról kérdez rá, amelyeket nem tud levezetni, és a kitöltött bevallást ikerként mutatja be.",

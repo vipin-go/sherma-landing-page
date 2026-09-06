@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Modulo rilevato",
             "status": "done",
-            "detail": "НДС · декларация по НДС — Dichiarazione dei tributi indiretti, terzo trimestre 2026 — soggetto cliente abbinato.",
+            "detail": "НДС · декларация по НДС, such as Dichiarazione dei tributi indiretti, terzo trimestre 2026. Soggetto cliente abbinato.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulazione completa",
             "status": "active",
-            "detail": "Esegui a secco contro il portale — 0 errori rilevati.",
+            "detail": "Esegui a secco contro il portale: 0 errori rilevati.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "НДС — Invio della dichiarazione dei tributi indiretti",
-            "body": "НДС · декларация по НДС — Dichiarazioni periodiche dei tributi indiretti, predisposte partendo dalle fatture già presenti in casella: lo stesso flusso di lavoro controllato per ogni periodo di rendicontazione e cliente.",
+            "title": "НДС: Invio della dichiarazione dei tributi indiretti",
+            "body": "НДС · декларация по НДС. Dichiarazioni periodiche dei tributi indiretti, predisposte partendo dalle fatture già presenti in casella: lo stesso flusso di lavoro controllato per ogni periodo di rendicontazione e cliente.",
             "steps": [
               "deposito di lavoro aperto dalla scadenza",
-              "НДС — Fatture abbinate, imposta indiretta calcolata",
+              "НДС: Fatture abbinate, imposta indiretta calcolata",
               "Questionario: solo lacune",
               "Restituzione depositata, confermato gemello digitale"
             ],
             "connections": [
-              "НДС · ФНС России — Portale ufficiale per la dichiarazione dei tributi",
+              "НДС · ФНС России: Portale ufficiale per la dichiarazione dei tributi",
               "Posta in arrivo della fattura",
               "Software di contabilità"
             ],
-            "note": "НДС · декларация по НДС · ФНС России · квалифицированная электронная подпись — I portali ufficiali per la dichiarazione dei tributi possono richiedere credenziali governative personali o aziendali. Sherma prepara integralmente la dichiarazione e la persona autorizzata la presenta con il proprio accesso. Non firmerà al posto vostro."
+            "note": "НДС · декларация по НДС · ФНС России · квалифицированная электронная подпись. I portali ufficiali per la dichiarazione dei tributi possono richiedere credenziali governative personali o aziendali. Sherma prepara integralmente la dichiarazione e la persona autorizzata la presenta con il proprio accesso. Non firmerà al posto vostro."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portali di acquirenti e corriere",
-              "НДС — Dati di registrazione, fiscali e bancari",
+              "НДС: Dati di registrazione, fiscali e bancari",
               "Prove di assicurazione e polizza"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "un esempio lavorato",
-        "heading": "НДС · декларация по НДС — Preparazione di una dichiarazione fiscale indiretta senza reinserimento manuale.",
+        "heading": "НДС · декларация по НДС. Preparazione di una dichiarazione fiscale indiretta senza reinserimento manuale.",
         "body": "Lo stesso principio, applicato alla forma più ripetuta che ci sia. Un modello, un'entità alla volta, quattro volte l'anno, per sempre.",
         "before": "Qualcuno raccoglie le cifre, le ri-casseggia nel ritorno, le controlla contro il libro mastro e le facementi prima della scadenza. Ogni trimestre, per ogni cliente, con niente riportato tranne un foglio di calcolo.",
         "after": "Sherma apre il lavoro dal calendario di archiviazione, costruisce il reso dalle fatture già nella posta in arrivo, chiede solo le cifre che non può derivare e presenta il reso completato come un gemello.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Figure mancanti",
-              "value": "3 — Contrassegnato",
+              "value": "3 Contrassegnato",
               "highlight": true
             }
           ],

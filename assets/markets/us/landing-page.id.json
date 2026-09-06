@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulir terdeteksi",
             "status": "done",
-            "detail": "state sales tax return — Pengembalian pajak tidak langsung, K3 2026 — entitas klien cocok.",
+            "detail": "state sales tax return, such as Pengembalian pajak tidak langsung, K3 2026. Entitas klien cocok.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulasi selesai",
             "status": "active",
-            "detail": "Lari kering terhadap portal — 0 kesalahan ditemukan.",
+            "detail": "Lari kering terhadap portal: 0 kesalahan ditemukan.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "Sales tax — Pengajuan pajak tidak langsung",
-            "body": "state sales tax return — Pengembalian pajak tidak langsung berkala, disiapkan dari faktur yang sudah ada di kotak masuk — alur kerja terkontrol yang sama untuk setiap periode pelaporan dan klien.",
+            "title": "Sales tax: Pengajuan pajak tidak langsung",
+            "body": "state sales tax return, such as Pengembalian pajak tidak langsung berkala, disiapkan dari faktur yang sudah ada di kotak masuk. Alur kerja terkontrol yang sama untuk setiap periode pelaporan dan klien.",
             "steps": [
               "Pekerjaan pengajuan dibuka dari batas waktu",
-              "Sales tax — Faktur cocok, pajak tidak langsung dihitung",
+              "Sales tax: Faktur cocok, pajak tidak langsung dihitung",
               "Kuesioner - Kesenjangan saja",
               "Pengembalian Diarsipkan, Digital Twin Dikonfirmasi"
             ],
             "connections": [
-              "Sales tax · state revenue portal — Portal pengajuan pajak resmi",
+              "Sales tax · state revenue portal: Portal pengajuan pajak resmi",
               "Kotak Masuk Faktur",
               "Perangkat lunak pembukuan"
             ],
-            "note": "state sales tax return · state revenue portal · portal account — Portal pajak resmi mungkin memerlukan kredensial pemerintah pribadi atau organisasi. Sherma menyiapkan pengembalian pajak secara lengkap dan orang yang berwenang mengirimkannya menggunakan login mereka sendiri. Sistem tidak akan menandatangani atas nama Anda."
+            "note": "state sales tax return · state revenue portal · portal account. Portal pajak resmi mungkin memerlukan kredensial pemerintah pribadi atau organisasi. Sherma menyiapkan pengembalian pajak secara lengkap dan orang yang berwenang mengirimkannya menggunakan login mereka sendiri. Sistem tidak akan menandatangani atas nama Anda."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portal pembeli dan operator",
-              "Sales tax — Detail pendaftaran, pajak, dan bank",
+              "Sales tax: Detail pendaftaran, pajak, dan bank",
               "Bukti asuransi dan polis"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "contoh yang berhasil",
-        "heading": "state sales tax return — Menyiapkan pengembalian pajak tidak langsung tanpa entri ulang manual.",
+        "heading": "state sales tax return: Menyiapkan pengembalian pajak tidak langsung tanpa entri ulang manual.",
         "body": "Prinsip yang sama, diterapkan pada bentuk yang paling berulang. Satu template, satu entitas pada satu waktu, empat kali setahun, selamanya.",
         "before": "Seseorang mengumpulkan angka-angka, memasukkannya kembali ke dalam pengembalian, memeriksanya terhadap buku besar, dan file sebelum batas waktu. Setiap kuartal, untuk setiap klien, tanpa ada yang dibawa ke depan kecuali spreadsheet.",
         "after": "Sherma membuka pekerjaan dari kalender pengarsipan, membuat pengembalian dari faktur yang sudah ada di kotak masuk, hanya menanyakan tentang angka yang tidak dapat diturunkan, dan menyajikan pengembalian yang telah selesai sebagai kembaran.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Angka yang hilang",
-              "value": "3 — Ditandai",
+              "value": "3 Ditandai",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "pada skala",
         "heading": "Sherma label putih dalam skala besar.",
-        "body": "Ringkasan ini untuk organisasi yang ingin Sherma diberi label putih ke dalam alur kerja mereka sendiri — seribu bentuk sekaligus, bukan pengarsipan satu kali.",
+        "body": "Ringkasan ini untuk organisasi yang ingin Sherma diberi label putih ke dalam alur kerja mereka sendiri, seribu bentuk sekaligus, bukan pengarsipan satu kali.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Di mana Sherma harus berlari, dan kira-kira berapa banyak bentuknya?",
         "ctaLabel": "Persiapkan Sherma Brief saya",

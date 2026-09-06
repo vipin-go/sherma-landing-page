@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Wykryto formularz",
             "status": "done",
-            "detail": "НДС · декларация по НДС — Deklaracja podatku pośredniego, III kwartał 2026 r. — podmiot klienta dopasowany.",
+            "detail": "НДС · декларация по НДС, such as Deklaracja podatku pośredniego, III kwartał 2026 r.. Podmiot klienta dopasowany.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Symulacja zakończona",
             "status": "active",
-            "detail": "Bieg na sucho na portalu — znaleziono 0 błędów.",
+            "detail": "Bieg na sucho na portalu: znaleziono 0 błędów.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "НДС — Złożenie deklaracji podatku pośredniego",
-            "body": "НДС · декларация по НДС — Powtarzalne deklaracje podatku pośredniego, przygotowywane na podstawie faktur znajdujących się już w skrzynce odbiorczej — ten sam kontrolowany przepływ pracy dla każdego okresu sprawozdawczego i klienta.",
+            "title": "НДС: Złożenie deklaracji podatku pośredniego",
+            "body": "НДС · декларация по НДС, such as Powtarzalne deklaracje podatku pośredniego, przygotowywane na podstawie faktur znajdujących się już w skrzynce odbiorczej. Ten sam kontrolowany przepływ pracy dla każdego okresu sprawozdawczego i klienta.",
             "steps": [
               "Praca zgłoszeniowa otwarta od terminu",
-              "НДС — Faktury dopasowane, podatek pośredni obliczony",
-              "Kwestionariusz — tylko luki",
+              "НДС: Faktury dopasowane, podatek pośredni obliczony",
+              "Kwestionariusz: tylko luki",
               "Złożony, cyfrowy bliźniak potwierdzony"
             ],
             "connections": [
-              "НДС · ФНС России — Oficjalny portal do składania deklaracji podatkowych",
+              "НДС · ФНС России: Oficjalny portal do składania deklaracji podatkowych",
               "Skrzynka odbiorcza faktury",
               "Oprogramowanie księgowe"
             ],
-            "note": "НДС · декларация по НДС · ФНС России · квалифицированная электронная подпись — Oficjalne portale podatkowe mogą wymagać osobistych lub organizacyjnych poświadczeń rządowych. Sherma przygotowuje deklarację w całości, a upoważniona osoba składa ją pod własnym loginem. Nie podpisze się za Ciebie."
+            "note": "НДС · декларация по НДС · ФНС России · квалифицированная электронная подпись. Oficjalne portale podatkowe mogą wymagać osobistych lub organizacyjnych poświadczeń rządowych. Sherma przygotowuje deklarację w całości, a upoważniona osoba składa ją pod własnym loginem. Nie podpisze się za Ciebie."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portale kupujące i przewoźnika",
-              "НДС — Dane rejestrowe, podatkowe i bankowe",
+              "НДС: Dane rejestrowe, podatkowe i bankowe",
               "Dowody ubezpieczeniowe i polisy"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Kwestionariusz otrzymany od klienta",
               "Kontrolki dopasowane do zatwierdzonego rekordu",
-              "Kwestionariusz — tylko luki",
+              "Kwestionariusz: tylko luki",
               "Pack assembled, twin confirmed"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Pracowany przykład",
-        "heading": "НДС · декларация по НДС — Przygotowanie deklaracji podatku pośredniego bez ręcznego ponownego wprowadzania danych.",
+        "heading": "НДС · декларация по НДС. Przygotowanie deklaracji podatku pośredniego bez ręcznego ponownego wprowadzania danych.",
         "body": "Ta sama zasada, stosowana do najbardziej powtarzanej formy, jaka istnieje. Jeden szablon, jedna jednostka na raz, cztery razy w roku, na zawsze.",
         "before": "Ktoś zbiera liczby, ponownie wprowadza je do zwrotu, sprawdza je z księgą i składa przed upływem terminu. Co kwartał, dla każdego klienta, bez przenoszenia niczego poza arkuszem kalkulacyjnym.",
         "after": "Sherma otwiera zadanie z kalendarza zgłoszeń, buduje zwrot z faktur już w skrzynce odbiorczej, pyta tylko o liczby, których nie może uzyskać, i przedstawia ukończony zwrot jako bliźniak.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Brakujące figury",
-              "value": "3 — Oznaczone",
+              "value": "3 Oznaczone",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "W skali",
         "heading": "Sherma z białymi etykietami na dużą skalę.",
-        "body": "Niniejszy brief jest przeznaczony dla organizacji, które chcą, aby Sherma została oznaczona na biało we własnym przepływie pracy — tysiąc formularzy na raz, a nie jednorazowe zgłoszenie.",
+        "body": "Niniejszy brief jest przeznaczony dla organizacji, które chcą, aby Sherma została oznaczona na biało we własnym przepływie pracy, tysiąc formularzy na raz, a nie jednorazowe zgłoszenie.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Gdzie powinna biec Sherma i mniej więcej ile form?",
         "ctaLabel": "Przygotuj mój brief sherma",

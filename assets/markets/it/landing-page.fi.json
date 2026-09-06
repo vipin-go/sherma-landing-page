@@ -248,7 +248,7 @@
             "number": "01",
             "title": "muoto havaittu",
             "status": "done",
-            "detail": "IVA · Dichiarazione IVA — Ehdollinen verotus, Q3 2026 — asiakassyyntä osuma.",
+            "detail": "IVA · Dichiarazione IVA, such as Ehdollinen verotus, Q3 2026. Asiakassyyntä osuma.",
             "state": "done"
           },
           {
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "IVA — Ehdollisen verotuksen palautuksen lähettäminen",
-            "body": "IVA · Dichiarazione IVA — Toistuvat ehdolliset verotuksen palautukset, valmisteltu sijoista, jotka ovat jo postikoriin lähetetty – sama tarkistettu työnkulku joka raportointijakso ja asiakas.",
+            "title": "IVA: Ehdollisen verotuksen palautuksen lähettäminen",
+            "body": "IVA · Dichiarazione IVA. Toistuvat ehdolliset verotuksen palautukset, valmisteltu sijoista, jotka ovat jo postikoriin lähetetty – sama tarkistettu työnkulku joka raportointijakso ja asiakas.",
             "steps": [
               "Arkistointityö avattiin määräajasta",
-              "IVA — Invoinnit sijoitettu, ehdollinen vero laskettu",
+              "IVA: Invoinnit sijoitettu, ehdollinen vero laskettu",
               "Kyselylomake – vain aukot",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
-              "IVA · Servizi Telematici — Virallinen verotusportaali",
+              "IVA · Servizi Telematici: Virallinen verotusportaali",
               "laskun postilaatikko",
               "kirjanpitoohjelmisto"
             ],
-            "note": "IVA · Dichiarazione IVA · Servizi Telematici · credenziali Entratel/Fisconline — Viralliset verotusportaalit voivat vaatia henkilöllisen tai organisaation hallitsevan tunnisteen. Sherma valmistaa palautuksen täysin ja valtuutettu henkilö lähettää sen omalla kirjautumisellaan. Se ei allekirjoita sinä puheen. "
+            "note": "IVA · Dichiarazione IVA · Servizi Telematici · credenziali Entratel/Fisconline. Viralliset verotusportaalit voivat vaatia henkilöllisen tai organisaation hallitsevan tunnisteen. Sherma valmistaa palautuksen täysin ja valtuutettu henkilö lähettää sen omalla kirjautumisellaan. Se ei allekirjoita sinä puheen. "
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Ostaja- ja operaattoriportaalit",
-              "IVA — Rekisteröinti, verotus ja pankkitiedot",
+              "IVA: Rekisteröinti, verotus ja pankkitiedot",
               "Todisteet vakuutus- ja"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Toiminut esimerkki",
-        "heading": "IVA · Dichiarazione IVA — Indirekt veropäätöksen valmistelu ilman manuaalista syöttöä.",
+        "heading": "IVA · Dichiarazione IVA: Indirekt veropäätöksen valmistelu ilman manuaalista syöttöä.",
         "body": "Sama periaate, jota sovelletaan kaikkein toistuvimpaan muotoon. Yksi malli, yksi kokonaisuus kerrallaan, neljä kertaa vuodessa, ikuisesti.",
         "before": "Joku kerää luvut, avaa ne uudelleen palautukseen, tarkistaa ne pääkirjaan ja arkistoi ennen määräaikaa. joka vuosineljännes jokaiselle asiakkaalle ilman mitään siirrettyä paitsi laskentataulukko.",
         "after": "Sherma avaa työpaikan arkistointikalenterista, rakentaa palautuksen jo postilaatikossa olevista laskuista, kysyy vain luvuista, joita se ei voi saada, ja esittää valmiin palautuksen kaksosena.",

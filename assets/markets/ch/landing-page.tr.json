@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Form algılandı",
             "status": "done",
-            "detail": "MWST · MWST-Abrechnung — Dolaylı vergi beyannamesi, 2026 üçüncü çeyrek — müşteri tüzel kişiliği eşleştirildi.",
+            "detail": "MWST · MWST-Abrechnung, such as Dolaylı vergi beyannamesi, 2026 üçüncü çeyrek. Müşteri tüzel kişiliği eşleştirildi.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simülasyon Tamamlandı",
             "status": "active",
-            "detail": "Portala karşı kuru çalışma — 0 hata bulundu.",
+            "detail": "Portala karşı kuru çalışma: 0 hata bulundu.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "MWST · MWST · MWST-Abrechnung — Dolaylı vergi beyannamesi verme",
-            "body": "MWST · MWST-Abrechnung — Gelen kutusunda zaten bulunan faturalardan hazırlanan yinelenen dolaylı vergi beyannameleri — her raporlama dönemi ve müşteri için aynı kontrollü iş akışı.",
+            "title": "MWST · MWST · MWST-Abrechnung: Dolaylı vergi beyannamesi verme",
+            "body": "MWST · MWST-Abrechnung, such as Gelen kutusunda zaten bulunan faturalardan hazırlanan yinelenen dolaylı vergi beyannameleri. Her raporlama dönemi ve müşteri için aynı kontrollü iş akışı.",
             "steps": [
               "Dosyalama işi son teslim tarihinden itibaren açıldı",
-              "MWST — Faturalar eşleştirildi, dolaylı vergi hesaplandı",
-              "Anket — Sadece Boşluklar",
+              "MWST: Faturalar eşleştirildi, dolaylı vergi hesaplandı",
+              "Anket: Sadece Boşluklar",
               "İade dosyalandı, dijital ikiz onaylandı"
             ],
             "connections": [
-              "MWST · ESTV-Portal — Resmi vergi beyanname portalı",
+              "MWST · ESTV-Portal: Resmi vergi beyanname portalı",
               "Gelen Kutusu",
               "muhasebe yazılımı"
             ],
-            "note": "MWST · MWST-Abrechnung · ESTV-Portal · AGOV-Konto — Resmi vergi portalları kişisel veya kurumsal bir devlet kimlik bilgisi gerektirebilir. Sherma beyannameyi eksiksiz şekilde hazırlar ve yetkili kişi kendi oturum bilgileriyle beyannameyi sunar. Sizin adınıza imzalamaz."
+            "note": "MWST · MWST-Abrechnung · ESTV-Portal · AGOV-Konto. Resmi vergi portalları kişisel veya kurumsal bir devlet kimlik bilgisi gerektirebilir. Sherma beyannameyi eksiksiz şekilde hazırlar ve yetkili kişi kendi oturum bilgileriyle beyannameyi sunar. Sizin adınıza imzalamaz."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Alıcı ve Taşıyıcı Portalları",
-              "MWST — Kayıt, vergi ve banka bilgileri",
+              "MWST: Kayıt, vergi ve banka bilgileri",
               "Sigorta ve poliçe kanıtı"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Müşteriden alınan anket",
               "Onaylanmış kayıtla eşleşen kontroller",
-              "Anket — Sadece Boşluklar",
+              "Anket: Sadece Boşluklar",
               "Paket monte edildi, ikiz onaylandı"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Çalışılan bir örnek",
-        "heading": "MWST · MWST-Abrechnung — Dolaylı vergi beyannamesinin manuel yeniden giriş olmadan hazırlanması.",
+        "heading": "MWST · MWST-Abrechnung: Dolaylı vergi beyannamesinin manuel yeniden giriş olmadan hazırlanması.",
         "body": "Aynı ilke, en tekrarlanan forma uygulanır. Bir şablon, her seferinde bir varlık, yılda dört kez, sonsuza kadar.",
         "before": "Birisi rakamları toplar, onları iadeye yeniden anahtarlar, deftere karşı kontrol eder ve son teslim tarihinden önce dosyalar. Her çeyrekte, her müşteri için, bir elektronik tablo dışında hiçbir şey taşınmaz.",
         "after": "Sherma işi dosyalama takviminden açar, gelen kutusundaki faturalardan iadeyi oluşturur, sadece elde edemediği rakamları sorar ve tamamlanmış iadeyi ikiz olarak sunar.",

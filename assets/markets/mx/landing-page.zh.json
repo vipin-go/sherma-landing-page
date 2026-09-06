@@ -248,7 +248,7 @@
             "number": "01",
             "title": "检测到表单",
             "status": "done",
-            "detail": "IVA · declaración mensual de IVA — 间接税申报表，2026年第三季度 — 客户实体已匹配。",
+            "detail": "IVA · declaración mensual de IVA, such as 间接税申报表，2026年第三季度. 客户实体已匹配。",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "模拟完成",
             "status": "active",
-            "detail": "针对门户的试运行 — 发现 0 个错误。",
+            "detail": "针对门户的试运行: 发现 0 个错误。",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "IVA — 间接税申报",
-            "body": "IVA · declaración mensual de IVA — 基于收件箱中已有发票准备的周期性间接税申报 — 每个申报期和每位客户均采用相同的受控工作流程。",
+            "title": "IVA: 间接税申报",
+            "body": "IVA · declaración mensual de IVA, such as 基于收件箱中已有发票准备的周期性间接税申报. 每个申报期和每位客户均采用相同的受控工作流程。",
             "steps": [
               "从截止日期开始的归档工作",
-              "IVA — 发票已匹配，间接税已计算",
+              "IVA: 发票已匹配，间接税已计算",
               "问卷 - 仅限差距",
               "归档，数字双胞胎确认"
             ],
             "connections": [
-              "IVA · Portal del SAT — 官方税务申报门户",
+              "IVA · Portal del SAT: 官方税务申报门户",
               "发票收件箱",
               "簿记软件"
             ],
-            "note": "IVA · declaración mensual de IVA · Portal del SAT · Portal del SAT · e.firma o Contraseña · e.firma o Contraseña — 官方税务门户可能需要个人或机构的政府凭证。Sherma 会完整准备申报表，由授权人使用其自己的登录信息提交。系统不会代替您进行签名。"
+            "note": "IVA · declaración mensual de IVA · Portal del SAT · Portal del SAT · e.firma o Contraseña · e.firma o Contraseña, 官方税务门户可能需要个人或机构的政府凭证。Sherma 会完整准备申报表，由授权人使用其自己的登录信息提交。系统不会代替您进行签名。"
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "买方和承运人门户",
-              "IVA — 注册信息、税务和银行详细信息",
+              "IVA: 注册信息、税务和银行详细信息",
               "保险和保单证据"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "一个工作的例子",
-        "heading": "IVA · declaración mensual de IVA — 无需手动重新输入，即可准备间接税申报。",
+        "heading": "IVA · declaración mensual de IVA: 无需手动重新输入，即可准备间接税申报。",
         "body": "同样的原理，适用于最重复的形式。 一个模板，一次一个实体，一年四次，永远。",
         "before": "有人收集数字，将它们重新键入退货，在截止日期前检查它们的分类帐和文件。 每个季度，对于每个客户，除了电子表格外，没有任何结转。",
         "after": "谢尔玛从备案日历中打开工作，从收件箱中已经存在的发票中建立退货，只询问它无法得出的数字，并将完成的退货显示为双胞胎。",
@@ -555,7 +555,7 @@
             },
             {
               "label": "缺少数字",
-              "value": "3 — 标记",
+              "value": "3 标记",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "规模",
         "heading": "大规模的白标谢尔马。",
-        "body": "本简介适用于希望将 Sherma White 标记到自己的工作流程中的组织——一次上千个表格，而不是一次性提交。",
+        "body": "本简介适用于希望将 Sherma White 标记到自己的工作流程中的组织，一次上千个表格，而不是一次性提交。",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "谢尔玛应该在哪里运行，大概有多少种形式？",
         "ctaLabel": "准备我的 Sherma 简介",

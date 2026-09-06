@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulario detectado",
             "status": "done",
-            "detail": "增值税 · 增值税申报表 — Devolución de impuestos indirectos, T3 2026 — entidad cliente coincidente.",
+            "detail": "增值税 · 增值税申报表, such as Devolución de impuestos indirectos, T3 2026. Entidad cliente coincidente.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulación completa",
             "status": "active",
-            "detail": "Ejecución en seco contra el portal — 0 errores encontrados.",
+            "detail": "Ejecución en seco contra el portal: 0 errores encontrados.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "增值税 — Presentación de devoluciones de impuestos indirectos",
-            "body": "增值税 · 增值税申报表 — Devoluciones de impuestos indirectos recurrentes, preparadas a partir de las facturas ya en la bandeja de entrada — el mismo flujo de trabajo controlado para cada período informativo y cliente.",
+            "title": "增值税: Presentación de devoluciones de impuestos indirectos",
+            "body": "增值税 · 增值税申报表, such as Devoluciones de impuestos indirectos recurrentes, preparadas a partir de las facturas ya en la bandeja de entrada. El mismo flujo de trabajo controlado para cada período informativo y cliente.",
             "steps": [
               "Trabajo de presentación abierto desde la fecha límite",
-              "增值税 — Facturas coincidentes, impuesto indirecto calculado",
-              "Cuestionario — Sólo lagunas",
+              "增值税: Facturas coincidentes, impuesto indirecto calculado",
+              "Cuestionario: Sólo lagunas",
               "Declaración presentada, gemela digital confirmada"
             ],
             "connections": [
-              "增值税 · 电子税务局 — Portal oficial de presentación de impuestos",
+              "增值税 · 电子税务局: Portal oficial de presentación de impuestos",
               "Bandeja de entrada de factura",
               "software de contabilidad"
             ],
-            "note": "增值税 · 增值税申报表 · 电子税务局 · 电子税务局 · 电子税务局账户 — Los portales fiscales oficiales pueden exigir una credencial gubernamental personal u organizativa. Sherma prepara la devolución completa y la persona autorizada la presenta con su propio inicio de sesión. No firmará como usted."
+            "note": "增值税 · 增值税申报表 · 电子税务局 · 电子税务局 · 电子税务局账户. Los portales fiscales oficiales pueden exigir una credencial gubernamental personal u organizativa. Sherma prepara la devolución completa y la persona autorizada la presenta con su propio inicio de sesión. No firmará como usted."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portales de compradores y transportistas",
-              "增值税 — Registro, detalles fiscales y bancarios",
+              "增值税: Registro, detalles fiscales y bancarios",
               "Evidencia de seguros y políticas"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Cuestionario recibido del cliente",
               "Controles coincidentes con el registro aprobado",
-              "Cuestionario — Sólo lagunas",
+              "Cuestionario: Sólo lagunas",
               "Paquete ensamblado, gemelo confirmado"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Un ejemplo trabajado",
-        "heading": "增值税 · 增值税申报表 — Preparando una declaración de impuestos indirectos sin el reingreso manual.",
+        "heading": "增值税 · 增值税申报表. Preparando una declaración de impuestos indirectos sin el reingreso manual.",
         "body": "El mismo principio, aplicado a la forma más repetida que existe. Una plantilla, una entidad a la vez, cuatro veces al año, para siempre.",
         "before": "Alguien reúne las cifras, las vuelve a escribir en la devolución, las compara con el libro mayor y los archiva antes de la fecha límite. Cada trimestre, por cada cliente, sin nada que se lleve adelante excepto una hoja de cálculo.",
         "after": "Sherma abre el trabajo desde el calendario de presentación, construye la devolución de las facturas que ya están en la bandeja de entrada, solo pregunta sobre las cifras que no puede derivar y presenta la devolución completa como gemelo.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Figuras faltantes",
-              "value": "3 — Marcado",
+              "value": "3 Marcado",
               "highlight": true
             }
           ],

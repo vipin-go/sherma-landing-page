@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Biểu mẫu được phát hiện",
             "status": "done",
-            "detail": "TVA · déclaration de TVA CA3 — Tờ khai thuế gián thu, quý 3 năm 2026 — thực thể khách hàng đã khớp.",
+            "detail": "TVA · déclaration de TVA CA3, such as Tờ khai thuế gián thu, quý 3 năm 2026. Thực thể khách hàng đã khớp.",
             "state": "done"
           },
           {
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "TVA — Nộp tờ khai thuế gián thu",
-            "body": "TVA · déclaration de TVA CA3 — Các tờ khai thuế gián thu định kỳ được chuẩn bị từ các hóa đơn đã có trong hộp thư đến — cùng một quy trình được kiểm soát cho mọi kỳ báo cáo và mọi khách hàng.",
+            "title": "TVA: Nộp tờ khai thuế gián thu",
+            "body": "TVA · déclaration de TVA CA3, such as Các tờ khai thuế gián thu định kỳ được chuẩn bị từ các hóa đơn đã có trong hộp thư đến. Cùng một quy trình được kiểm soát cho mọi kỳ báo cáo và mọi khách hàng.",
             "steps": [
               "Công việc nộp hồ sơ từ thời hạn",
-              "TVA — Hóa đơn đã khớp, thuế gián thu đã tính",
+              "TVA: Hóa đơn đã khớp, thuế gián thu đã tính",
               "Bảng câu hỏi - Chỉ khoảng trống",
               "Trả lại hồ sơ, Digital Twin xác nhận"
             ],
             "connections": [
-              "TVA · impots.gouv.fr — Cổng nộp tờ khai thuế chính thức",
+              "TVA · impots.gouv.fr: Cổng nộp tờ khai thuế chính thức",
               "Inbox hóa đơn",
               "Phần mềm kế toán"
             ],
-            "note": "TVA · déclaration de TVA CA3 · impots.gouv.fr · espace professionnel — Các cổng thuế chính thức có thể yêu cầu thông tin xác thực của chính phủ cho cá nhân hoặc tổ chức. Sherma sẽ chuẩn bị đầy đủ tờ khai và người được ủy quyền sẽ nộp tờ khai bằng tài khoản đăng nhập của họ. Hệ thống sẽ không ký thay bạn."
+            "note": "TVA · déclaration de TVA CA3 · impots.gouv.fr · espace professionnel. Các cổng thuế chính thức có thể yêu cầu thông tin xác thực của chính phủ cho cá nhân hoặc tổ chức. Sherma sẽ chuẩn bị đầy đủ tờ khai và người được ủy quyền sẽ nộp tờ khai bằng tài khoản đăng nhập của họ. Hệ thống sẽ không ký thay bạn."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Cổng thông tin người mua và nhà cung cấp dịch vụ",
-              "TVA — Thông tin đăng ký, thuế và ngân hàng",
+              "TVA: Thông tin đăng ký, thuế và ngân hàng",
               "Bảo hiểm và bằng chứng chính sách"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "một ví dụ đã làm việc",
-        "heading": "TVA · déclaration de TVA CA3 — Chuẩn bị khai báo thuế gián tiếp mà không cần nhập lại thủ công.",
+        "heading": "TVA · déclaration de TVA CA3: Chuẩn bị khai báo thuế gián tiếp mà không cần nhập lại thủ công.",
         "body": "Nguyên tắc tương tự, được áp dụng cho dạng lặp lại nhiều nhất ở đó. Một mẫu, một thực thể tại một thời điểm, bốn lần một năm, mãi mãi.",
         "before": "Ai đó thu thập các số liệu, khóa lại chúng vào tờ khai, kiểm tra chúng dựa trên sổ cái và nộp hồ sơ trước thời hạn. Mỗi quý, đối với mọi khách hàng, không có gì được chuyển tiếp ngoại trừ một bảng tính.",
         "after": "Sherma mở công việc từ lịch nộp đơn, xây dựng lợi nhuận từ các hóa đơn đã có trong hộp thư đến, chỉ hỏi về những số liệu mà nó không thể lấy được và trình bày lợi nhuận đã hoàn thành là một cặp song sinh.",

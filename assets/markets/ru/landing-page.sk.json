@@ -248,7 +248,7 @@
             "number": "01",
             "title": "rozpoznaný formulár",
             "status": "done",
-            "detail": "НДС · декларация по НДС — Priznanie nepriamej dane, Q3 2026 — entita klienta spárovaná.",
+            "detail": "НДС · декларация по НДС, such as Priznanie nepriamej dane, Q3 2026. Entita klienta spárovaná.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation complete",
             "status": "active",
-            "detail": "Suchý chod proti portálu — 0 nájdených chýb.",
+            "detail": "Suchý chod proti portálu: 0 nájdených chýb.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "НДС — Podanie priznania nepriamej dane",
-            "body": "НДС · декларация по НДС — Pravidelné priznania nepriamej dane, pripravené z faktúr, ktoré sú už v schránke — rovnaký kontrolovaný pracovný postup pre každé obdobie podávania a klienta.",
+            "title": "НДС: Podanie priznania nepriamej dane",
+            "body": "НДС · декларация по НДС, such as Pravidelné priznania nepriamej dane, pripravené z faktúr, ktoré sú už v schránke. Rovnaký kontrolovaný pracovný postup pre každé obdobie podávania a klienta.",
             "steps": [
               "Podanie úlohy bolo otvorené od termínu",
-              "НДС — Faktúry spárované, nepriama daň vypočítaná",
+              "НДС: Faktúry spárované, nepriama daň vypočítaná",
               "Dotazník – iba medzery",
               "Návrat podaný, potvrdené digitálne dvojča"
             ],
             "connections": [
-              "НДС · ФНС России — Oficiálny portál na podávanie daňových priznaní",
+              "НДС · ФНС России: Oficiálny portál na podávanie daňových priznaní",
               "Doručená pošta faktúr",
               "účtovný softvér"
             ],
-            "note": "НДС · декларация по НДС · ФНС России · квалифицированная электронная подпись — Oficiálne daňové portály môžu vyžadovať osobný alebo organizačný vládny identifikátor. Sherma pripraví priznanie v plnom rozsahu a oprávnená osoba ho podá pod svojím vlastným prihlásením. Nebude podpisovať za vás."
+            "note": "НДС · декларация по НДС · ФНС России · квалифицированная электронная подпись. Oficiálne daňové portály môžu vyžadovať osobný alebo organizačný vládny identifikátor. Sherma pripraví priznanie v plnom rozsahu a oprávnená osoba ho podá pod svojím vlastným prihlásením. Nebude podpisovať za vás."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portály kupujúcich a prepravcov",
-              "НДС — Registračné, daňové a bankové údaje",
+              "НДС: Registračné, daňové a bankové údaje",
               "Insurance and policy evidence"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Opracovaný príklad",
-        "heading": "НДС · декларация по НДС — Príprava daňového priznania bez ručného prepisu",
+        "heading": "НДС · декларация по НДС: Príprava daňového priznania bez ručného prepisu",
         "body": "Rovnaký princíp, aplikovaný na najopakovanejšiu formu, existuje. Jedna šablóna, jedna entita naraz, štyrikrát do roka, navždy.",
         "before": "Niekto zhromaždí čísla, znova ich zadá do vrátenia, skontroluje ich s účtovnou knihou a založí ich pred termínom. Každý štvrťrok, pre každého klienta, s ničím preneseným okrem tabuľky.",
         "after": "Sherma otvorí úlohu z kalendára podávania, vytvorí priznanie z faktúr, ktoré sú už v doručenej pošte, pýta sa len na čísla, ktoré nemôže odvodiť, a predloží dokončené vrátenie ako dvojča.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Chýbajúce čísla",
-              "value": "3 — označené",
+              "value": "3 označené",
               "highlight": true
             }
           ],

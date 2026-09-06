@@ -187,7 +187,7 @@
               "sourceLabel": "SOURCED"
             },
             {
-              "label": "BTW — Tax identifier",
+              "label": "BTW: Tax identifier",
               "value": "NL•••••••B01",
               "sourceLabel": "SOURCED"
             },
@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Form detected",
             "status": "done",
-            "detail": "btw-aangifte, 3e kwartaal 2026 — client entity matched.",
+            "detail": "btw-aangifte, 3e kwartaal 2026: client entity matched.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulation complete",
             "status": "active",
-            "detail": "Dry run against the portal — 0 errors found.",
+            "detail": "Dry run against the portal found 0 errors.",
             "state": "active"
           }
         ],
@@ -408,12 +408,12 @@
           {
             "number": "01",
             "status": "live",
-            "title": "btw-aangifte — BTW return filing",
-            "body": "Recurring btw-aangifte filings, prepared from the invoices already in the inbox — the same controlled workflow for every reporting period and client.",
+            "title": "btw-aangifte: BTW return filing",
+            "body": "Recurring btw-aangifte filings, prepared from the invoices already in the inbox, using the same controlled workflow for every reporting period and client.",
             "steps": [
               "Filing job opened from deadline",
               "Invoices matched, BTW calculated",
-              "Questionnaire — gaps only",
+              "Questionnaire: gaps only",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
@@ -448,7 +448,7 @@
             "steps": [
               "Questionnaire received from the customer",
               "Controls matched to the approved record",
-              "Questionnaire — gaps only",
+              "Questionnaire: gaps only",
               "Pack assembled, twin confirmed"
             ],
             "connections": [
@@ -555,7 +555,7 @@
             },
             {
               "label": "Missing figures",
-              "value": "3 — flagged",
+              "value": "3 flagged",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "AT SCALE",
         "heading": "White-label Sherma at scale.",
-        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow — a thousand forms at a time, not a one-off filing.",
+        "body": "This brief is for organisations that want Sherma white-labelled into their own workflow: a thousand forms at a time, not a one-off filing.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Where should Sherma run, and roughly how many forms?",
         "ctaLabel": "Prepare my Sherma brief",

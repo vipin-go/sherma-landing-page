@@ -248,7 +248,7 @@
             "number": "01",
             "title": "skjema oppdaget",
             "status": "done",
-            "detail": "business activity statement (BAS) — Indirekte skatteoppgave, Q3 2026 — klientenhet matchet.",
+            "detail": "business activity statement (BAS), such as Indirekte skatteoppgave, Q3 2026. Klientenhet matchet.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulering fullført",
             "status": "active",
-            "detail": "Tørrløp mot portalen — 0 feil funnet.",
+            "detail": "Tørrløp mot portalen: 0 feil funnet.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "GST — Innlevering av indirekte skatteoppgave",
-            "body": "business activity statement (BAS) — Gjentakende indirekte skatteoppgaver, utarbeidet fra fakturaene som allerede er i innboksen — den samme kontrollerte arbeidsflyten for hver rapporteringsperiode og klient.",
+            "title": "GST: Innlevering av indirekte skatteoppgave",
+            "body": "business activity statement (BAS), such as Gjentakende indirekte skatteoppgaver, utarbeidet fra fakturaene som allerede er i innboksen. Den samme kontrollerte arbeidsflyten for hver rapporteringsperiode og klient.",
             "steps": [
               "Innleveringsjobb åpnet fra fristen",
-              "GST — Fakturaer matchet, indirekte skatt beregnet",
+              "GST: Fakturaer matchet, indirekte skatt beregnet",
               "Spørreskjema – kun hull",
               "retur arkivert, digital tvilling bekreftet"
             ],
             "connections": [
-              "GST · Online services for business — Offentlig portal for skatteinnlevering",
+              "GST · Online services for business: Offentlig portal for skatteinnlevering",
               "Faktura innboks",
               "Bokføringsprogramvare"
             ],
-            "note": "business activity statement (BAS) · Online services for business · myID — Offentlige skatteportaler kan kreve en personlig eller organisatorisk statlig legitimasjon. Sherma utarbeider oppgaven fullstendig, og den bemyndigede personen sender den inn med sin egen pålogging. Den vil ikke signere som deg."
+            "note": "business activity statement (BAS) · Online services for business · myID. Offentlige skatteportaler kan kreve en personlig eller organisatorisk statlig legitimasjon. Sherma utarbeider oppgaven fullstendig, og den bemyndigede personen sender den inn med sin egen pålogging. Den vil ikke signere som deg."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Kjøper- og transportportaler",
-              "GST — Registrerings-, skatte- og bankopplysninger",
+              "GST: Registrerings-, skatte- og bankopplysninger",
               "Forsikring og forsikringsbevis"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Et bearbeidet eksempel",
-        "heading": "business activity statement (BAS) — Forberedelse av skatteoppgave without manuell omregistrering.",
+        "heading": "business activity statement (BAS): Forberedelse av skatteoppgave without manuell omregistrering.",
         "body": "Det samme prinsippet, brukt på den mest gjentatte formen som finnes. Én mal, én enhet om gangen, fire ganger i året, for alltid.",
         "before": "Noen samler tallene, taster dem på nytt i returen, sjekker dem mot hovedboken og arkiverer før fristen. Hvert kvartal, for hver klient, med ingenting videreført bortsett fra et regneark.",
         "after": "Sherma åpner jobben fra arkiveringskalenderen, bygger returen fra fakturaene som allerede er i innboksen, spør kun om tallene den ikke kan utlede, og presenterer den ferdige returen som en tvilling.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Manglende tall",
-              "value": "3 — Flagget",
+              "value": "3 Flagget",
               "highlight": true
             }
           ],

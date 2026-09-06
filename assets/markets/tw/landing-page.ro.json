@@ -248,7 +248,7 @@
             "number": "01",
             "title": "formular detectat",
             "status": "done",
-            "detail": "營業稅 · 營業稅申報書 — Declaraţie impozitivă indirectă, Q3 2026 - entitate client potrivită.",
+            "detail": "營業稅 · 營業稅申報書: Declaraţie impozitivă indirectă, Q3 2026 - entitate client potrivită.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulare finalizată",
             "status": "active",
-            "detail": "財政部電子申報繳稅服務網 — Dry run împotriva portalului - 0 erori găsite.",
+            "detail": "財政部電子申報繳稅服務網: Dry run împotriva portalului - 0 erori găsite.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "營業稅 — Depunerea declaraţiei impozitivă indirectă",
-            "body": "營業稅 · 營業稅申報書 — Întâlnirile impozitive indirecte repetitive, pregătite din facturi deja în poșta de intrare — același controlat flux de lucru pentru fiecare perioadă de raportare și client.",
+            "title": "營業稅: Depunerea declaraţiei impozitivă indirectă",
+            "body": "營業稅 · 營業稅申報書, such as Întâlnirile impozitive indirecte repetitive, pregătite din facturi deja în poșta de intrare. Același controlat flux de lucru pentru fiecare perioadă de raportare și client.",
             "steps": [
               "Locul de muncă deschis de la termenul limită",
-              "營業稅 — Facturi potrivate, impozitiv indirect calculat",
-              "Chestionar — Numai lacune",
+              "營業稅: Facturi potrivate, impozitiv indirect calculat",
+              "Chestionar: Numai lacune",
               "Return filed, digital twin confirmed"
             ],
             "connections": [
-              "營業稅 · 財政部電子申報繳稅服務網 — Portal oficial de depunere a impozitului",
+              "營業稅 · 財政部電子申報繳稅服務網: Portal oficial de depunere a impozitului",
               "Inbox de factură",
               "Software de contabilitate"
             ],
-            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼 — Portalurile oficiale de impozit pot cere credenţe guvernamentale personale sau organizaționale. Sherma completează declaraţia în întregime și persoana autorizată o depune sub propriul ei login. Nu se va semnatura ca și pe numele tău."
+            "note": "營業稅 · 營業稅申報書 · 財政部電子申報繳稅服務網 · 工商憑證或帳號密碼. Portalurile oficiale de impozit pot cere credenţe guvernamentale personale sau organizaționale. Sherma completează declaraţia în întregime și persoana autorizată o depune sub propriul ei login. Nu se va semnatura ca și pe numele tău."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portaluri de cumpărători și transportatori",
-              "營業稅 — Înregistrare, detalii fiscale și bancare",
+              "營業稅: Înregistrare, detalii fiscale și bancare",
               "Dovezi de asigurare și poliță"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Chestionar primit de la client",
               "controalele potrivite cu înregistrarea aprobată",
-              "Chestionar — Numai lacune",
+              "Chestionar: Numai lacune",
               "pachet asamblat, geamăn confirmat"
             ],
             "connections": [
@@ -530,10 +530,10 @@
       },
       "workedExample": {
         "kicker": "Un exemplu lucrat",
-        "heading": "營業稅 · 營業稅申報書 — Prepararea unei declarații de impozit indirect fără reținere manuală.",
+        "heading": "營業稅 · 營業稅申報書: Prepararea unei declarații de impozit indirect fără reținere manuală.",
         "body": "Același principiu, aplicat formei cele mai repetate care există. Un șablon, o entitate la un moment dat, de patru ori pe an, pentru totdeauna.",
         "before": "Cineva adună figurile, le re-cheie în retur, le verifică în registru și fișiere înainte de termenul limită. În fiecare trimestru, pentru fiecare client, fără nimic reportat în afară de o foaie de calcul.",
-        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書 — Sherma deschide jobul din calendarul de depunere, construiește returnarea din facturile aflate deja în căsuța de e-mail, întreabă doar despre cifrele pe care nu le poate obține și prezintă declarația completată ca geamănă.",
+        "after": "營業稅 · 營業稅 · 營業稅申報書 · 營業稅申報書. Sherma deschide jobul din calendarul de depunere, construiește returnarea din facturile aflate deja în căsuța de e-mail, întreabă doar despre cifrele pe care nu le poate obține și prezintă declarația completată ca geamănă.",
         "linkLabel": "Talk through your filing calendar",
         "emailSubject": "Flux de lucru de depunere trimestrial Sherma",
         "card": {
@@ -555,7 +555,7 @@
             },
             {
               "label": "Cifrele lipsă",
-              "value": "3 — Flagged",
+              "value": "3 Flagged",
               "highlight": true
             }
           ],

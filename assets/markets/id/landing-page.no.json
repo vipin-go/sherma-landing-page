@@ -248,7 +248,7 @@
             "number": "01",
             "title": "skjema oppdaget",
             "status": "done",
-            "detail": "PPN · SPT Masa PPN — Mellomliggende skatterettslig rapport, Q3 2026 — klientenheten er matchet.",
+            "detail": "PPN · SPT Masa PPN, such as Mellomliggende skatterettslig rapport, Q3 2026. Klientenheten er matchet.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulering fullført",
             "status": "active",
-            "detail": "Tørrløp mot portalen — 0 feil funnet.",
+            "detail": "Tørrløp mot portalen: 0 feil funnet.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "PPN — Innlevering av mellomliggende skatterettslig rapport",
-            "body": "PPN · SPT Masa PPN — Gjentatte mellomliggende skatterettslige rapporter, utarbeidet fra fakturaene som allerede er i innboksen — den samme kontrollerte arbeidsflyten for hver rapporteringsperiode og klient.",
+            "title": "PPN: Innlevering av mellomliggende skatterettslig rapport",
+            "body": "PPN · SPT Masa PPN, such as Gjentatte mellomliggende skatterettslige rapporter, utarbeidet fra fakturaene som allerede er i innboksen. Den samme kontrollerte arbeidsflyten for hver rapporteringsperiode og klient.",
             "steps": [
               "Innleveringsjobb åpnet fra fristen",
-              "PPN — Fakturaer matchet, mellomliggende skatt beregnet",
+              "PPN: Fakturaer matchet, mellomliggende skatt beregnet",
               "Spørreskjema – kun hull",
               "retur arkivert, digital tvilling bekreftet"
             ],
             "connections": [
-              "PPN · Coretax DJP — Offisiell skatterettslig innleveringsportal",
+              "PPN · Coretax DJP: Offisiell skatterettslig innleveringsportal",
               "Faktura innboks",
               "Bokføringsprogramvare"
             ],
-            "note": "PPN · SPT Masa PPN · Coretax DJP · akun wajib pajak — Offisielle skatterettslige portaler kan kreve en personlig eller organisatorisk regjeringslegitimasjon. Sherma utarbeider rapporten i sin helhet, og den autoriserte personen leverer den under sin egen pålogging. Den vil ikke signere som deg."
+            "note": "PPN · SPT Masa PPN · Coretax DJP · akun wajib pajak. Offisielle skatterettslige portaler kan kreve en personlig eller organisatorisk regjeringslegitimasjon. Sherma utarbeider rapporten i sin helhet, og den autoriserte personen leverer den under sin egen pålogging. Den vil ikke signere som deg."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Kjøper- og transportportaler",
-              "PPN — Registrering, skatterettslige og bankopplysninger",
+              "PPN: Registrering, skatterettslige og bankopplysninger",
               "Forsikring og forsikringsbevis"
             ]
           },
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Et bearbeidet eksempel",
-        "heading": "PPN · SPT Masa PPN — Forberede en merverdiavgiftsoppgave uten manuell nyregistrering.",
+        "heading": "PPN · SPT Masa PPN: Forberede en merverdiavgiftsoppgave uten manuell nyregistrering.",
         "body": "Det samme prinsippet, brukt på den mest gjentatte formen som finnes. Én mal, én enhet om gangen, fire ganger i året, for alltid.",
         "before": "Noen samler tallene, taster dem på nytt i returen, sjekker dem mot hovedboken og arkiverer før fristen. Hvert kvartal, for hver klient, med ingenting videreført bortsett fra et regneark.",
         "after": "Sherma åpner jobben fra arkiveringskalenderen, bygger returen fra fakturaene som allerede er i innboksen, spør kun om tallene den ikke kan utlede, og presenterer den ferdige returen som en tvilling.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Manglende tall",
-              "value": "3 — Flagget",
+              "value": "3 Flagget",
               "highlight": true
             }
           ],

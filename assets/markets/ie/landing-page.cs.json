@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulář zjištěn",
             "status": "done",
-            "detail": "VAT · VAT3 return — Přiznání k nepřímým daním, 3. čtvrtletí 2026 — subjekt klienta spárován.",
+            "detail": "VAT · VAT3 return, such as Přiznání k nepřímým daním, 3. čtvrtletí 2026. Subjekt klienta spárován.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulace dokončena",
             "status": "active",
-            "detail": "Dry Run proti portálu — nalezeno 0 chyb.",
+            "detail": "Dry Run proti portálu: nalezeno 0 chyb.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "VAT — Podání přiznání k nepřímým daním",
-            "body": "VAT · VAT3 return — Opakovaná přiznání k nepřímým daním připravovaná z faktur, které již dorazily do schránky — stejný řízený pracovní postup pro každé zúčtovací období a každého klienta.",
+            "title": "VAT: Podání přiznání k nepřímým daním",
+            "body": "VAT · VAT3 return, such as Opakovaná přiznání k nepřímým daním připravovaná z faktur, které již dorazily do schránky. Stejný řízený pracovní postup pro každé zúčtovací období a každého klienta.",
             "steps": [
               "Podání úlohy otevřeno od termínu",
-              "VAT — Faktury spárovány, nepřímá daň vypočtena",
-              "Dotazník — pouze mezery",
+              "VAT: Faktury spárovány, nepřímá daň vypočtena",
+              "Dotazník: pouze mezery",
               "Vrácení podáno, potvrzeno digitální dvojče"
             ],
             "connections": [
-              "VAT · Revenue Online Service (ROS) — Oficiální portál pro podání daňových přiznání",
+              "VAT · Revenue Online Service (ROS): Oficiální portál pro podání daňových přiznání",
               "Doručená pošta faktury",
               "Účetní software"
             ],
-            "note": "VAT · VAT3 return · Revenue Online Service (ROS) · ROS digital certificate — Oficiální daňové portály mohou vyžadovat osobní nebo organizační vládní pověření. Sherma připraví přiznání v plném rozsahu a oprávněná osoba jej podá pod svým vlastním přihlášením. Nebude podepisovat za vás."
+            "note": "VAT · VAT3 return · Revenue Online Service (ROS) · ROS digital certificate. Oficiální daňové portály mohou vyžadovat osobní nebo organizační vládní pověření. Sherma připraví přiznání v plném rozsahu a oprávněná osoba jej podá pod svým vlastním přihlášením. Nebude podepisovat za vás."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portály kupujících a dopravců",
-              "VAT — Registrační, daňové a bankovní údaje",
+              "VAT: Registrační, daňové a bankovní údaje",
               "Pojištění a pojistka"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "dotazník obdržený od zákazníka",
               "Ovládací prvky odpovídaly schválenému záznamu",
-              "Dotazník — pouze mezery",
+              "Dotazník: pouze mezery",
               "balení sestaveno, dvojče potvrzeno"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Zpracovaný příklad",
-        "heading": "VAT · VAT3 return — Příprava nezávislého daňového přiznání bez ručního znovuzadání.",
+        "heading": "VAT · VAT3 return: Příprava nezávislého daňového přiznání bez ručního znovuzadání.",
         "body": "Stejný princip, aplikovaný na nejopakovanější formu, jaká existuje. Jedna šablona, jedna entita po druhé, čtyřikrát ročně, navždy.",
         "before": "Někdo shromáždí čísla, znovu je zaklíčuje do vrácení, zkontroluje je s účetní knihou a před uzávěrkou založí. Každé čtvrtletí, pro každého klienta, bez nic přeneseného kromě tabulky.",
         "after": "Sherma otevře úlohu z kalendáře podání, sestaví vrácení z faktur již v doručené poště, zeptá se pouze na čísla, která nemůže odvodit, a prezentuje dokončené přiznání jako dvojče.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Chybějící čísla",
-              "value": "3 — Označeno",
+              "value": "3 Označeno",
               "highlight": true
             }
           ],

@@ -187,7 +187,7 @@
               "sourceLabel": "IZGŪTS"
             },
             {
-              "label": "BTW — Nodokļu identifikators",
+              "label": "BTW: Nodokļu identifikators",
               "value": "NL•••••••B01",
               "sourceLabel": "IZGŪTS"
             },
@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Veidlapa noteikta",
             "status": "done",
-            "detail": "btw-aangifte — Korekcējuma nodokļu atskaite, 2026. gada 3. trimestrs — klienta entitāte atbilstīta.",
+            "detail": "btw-aangifte, such as Korekcējuma nodokļu atskaite, 2026. gada 3. trimestrs. Klienta entitāte atbilstīta.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulācija pabeigta",
             "status": "active",
-            "detail": "Izmeģinājuma izpilde portālā — 0 kļūdas atrastas.",
+            "detail": "Izmeģinājuma izpilde portālā: 0 kļūdas atrastas.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "BTW · btw-aangifte — Korekcējuma nodokļu atskaides nodokļu deklarācija",
-            "body": "btw-aangifte — Atkārtoto korekcējuma nodokļu atskaides sagatavošana no jau ieviestām invoicēm inboxā — tas pats kontroldarbs katrai aprakstīšanas periodam un klientam.",
+            "title": "BTW · btw-aangifte: Korekcējuma nodokļu atskaides nodokļu deklarācija",
+            "body": "btw-aangifte, such as Atkārtoto korekcējuma nodokļu atskaides sagatavošana no jau ieviestām invoicēm inboxā. Tas pats kontroldarbs katrai aprakstīšanas periodam un klientam.",
             "steps": [
               "Iesniegšanas darbs atvērts no termiņa",
-              "BTW — Invoicēm atbilstīti, korekcējuma nodoklis aprēķināts",
-              "Aptauja — tikai trūkumi",
+              "BTW: Invoicēm atbilstīti, korekcējuma nodoklis aprēķināts",
+              "Aptauja: tikai trūkumi",
               "Deklarācija iesniegta, digitālais dvojnieks apstiprināts"
             ],
             "connections": [
-              "BTW · Mijn Belastingdienst Zakelijk — Oficiālā nodokļu deklarācijas portāls",
+              "BTW · Mijn Belastingdienst Zakelijk: Oficiālā nodokļu deklarācijas portāls",
               "Rēķinu iesūtne",
               "Grāmatvedības programmatūra"
             ],
-            "note": "btw-aangifte · Mijn Belastingdienst Zakelijk · eHerkenning of DigiD — Oficiālās nodokļu portālās var būt nepieciešami persona vai organizācijas valdības kredenci. Sherma sagatavo atskaiti pilnībā un autorizēta persona to nodokļu deklarāciju aizpilda savā loginā. Tā ne tiks aizpildīt kā jūsu."
+            "note": "btw-aangifte · Mijn Belastingdienst Zakelijk · eHerkenning of DigiD. Oficiālās nodokļu portālās var būt nepieciešami persona vai organizācijas valdības kredenci. Sherma sagatavo atskaiti pilnībā un autorizēta persona to nodokļu deklarāciju aizpilda savā loginā. Tā ne tiks aizpildīt kā jūsu."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Pircēju un pārvadātāju portāli",
-              "BTW — Reģistrācija, nodokļi un bankas detaļi",
+              "BTW: Reģistrācija, nodokļi un bankas detaļi",
               "Apdrošināšanas un politikas pierādījumi"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Aptauja saņemta no klienta",
               "Kontroles saskaņotas ar apstiprināto ierakstu",
-              "Aptauja — tikai trūkumi",
+              "Aptauja: tikai trūkumi",
               "Komplekts sagatavots, dvojnieks apstiprināts"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "PIEMĒRS PRAKSĒ",
-        "heading": "btw-aangifte — Sagatavošana netiešā nodokļa deklarācijai bez manuālas atkārtotas ievadīšanas.",
+        "heading": "btw-aangifte. Sagatavošana netiešā nodokļa deklarācijai bez manuālas atkārtotas ievadīšanas.",
         "body": "Tas pats princips, piemērots atkārtotākajai veidlapai, kāda pastāv. Viena veidne, viens subjekts vienlaikus, četras reizes gadā, mūžīgi.",
         "before": "Kāds apkopo skaitļus, atkārtoti ievada tos deklarācijā, pārbauda tos pret grāmatvedības reģistru un iesniedz pirms termiņa. Katru ceturksni, katram klientam, nekas netiek pārnests uz priekšu, izņemot izklājlapu.",
         "after": "Sherma atver darbu no iesniegšanas kalendāra, izveido deklarāciju no rēķiniem, kas jau ir iesūtnē, vaicā tikai par skaitļiem, ko tas nevar izsecināt, un parāda pabeigto deklarāciju kā dvīni.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Trūkstošie skaitļi",
-              "value": "3 — atzīmēts",
+              "value": "3 atzīmēts",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "PIEMĒROJOT",
         "heading": "Sherma ar balto zīmi pielāgojot.",
-        "body": "Šis apraksts ir domāts organizācijām, kas vēlas Shermu ar savu zīmolu savā darbplūsmā — tūkstošiem veidlapu vienlaikus, nevis vienreizējs iesniegums.",
+        "body": "Šis apraksts ir domāts organizācijām, kas vēlas Shermu ar savu zīmolu savā darbplūsmā, tūkstošiem veidlapu vienlaikus, nevis vienreizējs iesniegums.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "Kur Shermai būtu jādarbojas un aptuveni cik veidlapu?",
         "ctaLabel": "Sagatavot manu Sherma aprakstu",
