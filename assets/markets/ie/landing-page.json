@@ -876,482 +876,274 @@
       }
     },
     "roiCalculator": {
+      "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "AI economics",
-      "heading": "Model the economic impact of Sherma",
-      "headingAccent": "economic impact",
-      "subheading": "Separate repetitive filing burden from the capacity those hours can create, then decide what the change is worth before you run.",
-      "disclaimer": "Figures are modeled estimates from your assumptions. Returned hours are capacity, not an automatic payroll saving, and are not observed customer results.",
+      "kicker": "Business impact",
+      "heading": "ROI Calculator",
+      "subheading": "Start with capacity. Then decide what it could be worth.",
+      "disclaimer": "A scenario built from your assumptions, not observed results or guaranteed savings. Returned hours are capacity, not an automatic payroll reduction.",
       "currency": "EUR",
       "locale": "en-IE",
-      "periodToggle": true,
-      "defaultPeriod": "monthly",
-      "settingsHeading": "Usage & cost settings",
-      "resultsHeading": "Operational impact & economic value",
-      "profileHeading": "Firm profile",
-      "workloadHeading": "Workload",
-      "economicsHeading": "AI economics",
-      "economicsNote": "All-in operating cost is model tokens, tools, and the platform licence, not a salary comparison.",
-      "allocationHeading": "Where returned capacity goes",
-      "allocationHelp": "Hours removed are capacity. Only the shares you assign to cost reduction, extra volume, or higher-value work are given a euro value.",
-      "unusedAllocationLabel": "Held as unused capacity",
-      "operationsHeading": "What physically changes",
-      "valueHeading": "What that change is worth",
-      "frameworkHeading": "How the value is created",
-      "negativeProductivity": {
-        "heading": "Negative productivity removed",
-        "body": "Human effort that was an operating burden: gathering data, portal navigation, chasing missing fields, formatting, and re-entering rejected filings.",
-        "items": [
-          "Data gathering and re-keying",
-          "Portal navigation and formatting",
-          "Chasing missing information",
-          "Correcting rejected submissions"
+      "inputs": [],
+      "metrics": [],
+      "businessImpact": {
+        "defaults": {
+          "volume": 208,
+          "minutes": 30,
+          "automation": 50,
+          "review": 5
+        },
+        "copy": {
+          "navLabel": "ROI",
+          "workloadStep": "Your workload",
+          "costStep": "Operating cost",
+          "valueStep": "Use the capacity",
+          "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
+          "costIntro": "Include the costs needed to run this workload. These are your estimates, not a Gabriel quote.",
+          "valueIntro": "What will you do with the returned hours? Select only outcomes you expect to realize.",
+          "sampleNotice": "Illustrative workload · not observed results",
+          "monthly": "Monthly",
+          "yearly": "Yearly",
+          "next": "Continue",
+          "back": "Back",
+          "reset": "Reset assumptions",
+          "summary": "Your modeled impact",
+          "volume": "Work units modeled",
+          "grossHours": "Repetitive work reduced",
+          "capacity": "Net capacity returned",
+          "retained": "Capacity kept available",
+          "hours": "hours",
+          "days": "days",
+          "percent": "%",
+          "minutes": "minutes",
+          "reviewMode": "Who handles the review?",
+          "teamReview": "Existing team",
+          "paidReview": "Additional paid reviewer",
+          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "totalMode": "Monthly budget",
+          "itemizedMode": "Cost breakdown",
+          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees, and any additional paid review. Do not include unchanged payroll as new spending.",
+          "itemizedNote": "Enter zero for a cost that does not apply. Additional paid review is calculated from review hours and its actual rate.",
+          "paidReviewCost": "Additional paid review cost",
+          "allInCost": "Operating cost",
+          "missing": "Add your assumptions",
+          "cashValue": "Cash spending avoided",
+          "contribution": "Expected contribution",
+          "expectedLoss": "Expected loss reduction",
+          "riskValue": "Uncertain risk value included",
+          "economicValue": "Modeled economic value",
+          "netBenefit": "Net modeled benefit",
+          "multiple": "Economic return multiple",
+          "notApplicable": "Not applicable",
+          "annual": "Annual view",
+          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "method": "How this is calculated",
+          "burdenHeading": "Repetitive work reduced",
+          "opportunityHeading": "Capacity for higher-value work",
+          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings.",
+          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "allocationNote": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value.",
+          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
+          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
+          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
+          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "cycleResult": "Cycle-time improvement",
+          "throughputResult": "Additional work supported by capacity and demand",
+          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
+          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
+          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
+          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
+          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
+          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
+          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
+          "boundsError": "Use values within the displayed limits.",
+          "rangeLabel": "Adjust value",
+          "noCurrencyChange": "Language changes formatting, not your currency or assumptions."
+        },
+        "fields": {
+          "volume": {
+            "label": "Forms prepared each month",
+            "help": "Use a typical month, not a best-case peak."
+          },
+          "minutes": {
+            "label": "Hands-on minutes per unit today",
+            "help": "Active work time, excluding waiting and elapsed calendar time."
+          },
+          "automation": {
+            "label": "Share of that work reduced",
+            "help": "An illustrative assumption to validate in a pilot, not a performance promise."
+          },
+          "review": {
+            "label": "Review minutes per unit",
+            "help": "Human checking still needed after automation."
+          },
+          "budget": {
+            "label": "Estimated monthly operating budget",
+            "help": "Include all models/media, tools, infrastructure, Gabriel fees and additional paid review."
+          },
+          "model_cost": {
+            "label": "Models and media generation",
+            "help": "Your monthly estimate, including images or video where applicable."
+          },
+          "tools_cost": {
+            "label": "Tools and integrations",
+            "help": "Browser sessions, connectors and other metered services."
+          },
+          "infrastructure_cost": {
+            "label": "Infrastructure",
+            "help": "Incremental hosting, storage and compute for this workload."
+          },
+          "platform_cost": {
+            "label": "Gabriel fees",
+            "help": "Use your agreed fee or your own budget assumption; this is not a price quote."
+          },
+          "review_rate": {
+            "label": "Additional paid review per hour",
+            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
+          },
+          "cash_hours": {
+            "label": "Hours that remove paid work",
+            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
+          },
+          "cash_baseline": {
+            "label": "Current monthly spending on that work",
+            "help": "The cash budget from which the reduction will come."
+          },
+          "cash_avoided": {
+            "label": "Monthly spending you would stop",
+            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
+          },
+          "higher_value_hours": {
+            "label": "Hours used for higher-value work",
+            "help": "Hours you can realistically redirect, not the entire capacity by default."
+          },
+          "contribution_rate": {
+            "label": "Incremental contribution per hour",
+            "help": "Revenue less incremental delivery costs, excluding AI costs counted separately. Not salary or gross revenue."
+          },
+          "throughput_hours": {
+            "label": "Hours used for additional volume",
+            "help": "This allocation cannot also be used for advisory work or spending reductions."
+          },
+          "extra_minutes": {
+            "label": "Team minutes per additional unit",
+            "help": "The remaining human effort, including review, needed to deliver one more unit."
+          },
+          "demand": {
+            "label": "Additional units with expected demand",
+            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
+          },
+          "unit_margin": {
+            "label": "Contribution per additional unit",
+            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
+          },
+          "hiring_hours": {
+            "label": "Hours covering the planned hire",
+            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
+          },
+          "planned_hours": {
+            "label": "Monthly hours the planned hire would cover",
+            "help": "The allocated capacity must cover this entire workload."
+          },
+          "hire_cost": {
+            "label": "Monthly hire cost actually deferred",
+            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
+          },
+          "hire_months": {
+            "label": "Months that hire is deferred",
+            "help": "One to twelve months; the annual estimate stops counting savings after this period."
+          },
+          "incidents": {
+            "label": "Expected avoided errors per month",
+            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
+          },
+          "incident_cost": {
+            "label": "Incremental cost per error",
+            "help": "Exclude labor, refunds or other losses already included elsewhere."
+          },
+          "probability_before": {
+            "label": "Monthly loss probability before",
+            "help": "Your estimate, not a guaranteed risk assessment."
+          },
+          "probability_after": {
+            "label": "Monthly loss probability after",
+            "help": "Use the same event and monthly time horizon as the baseline."
+          },
+          "loss": {
+            "label": "Loss exposure for that event",
+            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
+          },
+          "days_before": {
+            "label": "Cycle time before, in days",
+            "help": "Elapsed time from start to completion, separate from hands-on effort."
+          },
+          "days_after": {
+            "label": "Cycle time after, in days",
+            "help": "Shown as an operational change only, without an assumed monetary value."
+          }
+        },
+        "burden": [
+          "Repeated form preparation and entry",
+          "Chasing missing fields and correcting errors"
+        ],
+        "opportunity": [
+          "Additional processing capacity",
+          "Client advisory and review time"
+        ],
+        "outcomes": [
+          {
+            "id": "higher_value",
+            "label": "Do higher-value work",
+            "help": "Use part of the capacity for work with incremental contribution."
+          },
+          {
+            "id": "throughput",
+            "label": "Handle more volume",
+            "help": "Match available capacity with actual expected demand."
+          },
+          {
+            "id": "cash",
+            "label": "Stop actual spending",
+            "help": "Reduce overtime, contractors or paid processing—not unchanged salaries."
+          },
+          {
+            "id": "hiring",
+            "label": "Defer a planned hire",
+            "help": "Cover a specific, genuinely planned workload for a stated period."
+          },
+          {
+            "id": "error",
+            "label": "Avoid errors and rework",
+            "help": "Estimate distinct incidents and their incremental cost."
+          },
+          {
+            "id": "cycle_time",
+            "label": "Finish sooner",
+            "help": "Show elapsed days improved without automatically attaching a monetary value."
+          }
         ]
-      },
-      "positiveProductivity": {
-        "heading": "Potential positive productivity",
-        "body": "The same hours become capacity. Value them only according to how this firm actually uses them.",
-        "items": [
-          "Take on more client entities",
-          "Advisory and higher-margin work",
-          "Grow without another operations hire"
-        ]
-      },
-      "producesHeading": "What Sherma produces",
-      "produces": [
-        "Ready-to-file returns",
-        "Review trail",
-        "Client-ready summary"
-      ],
-      "breakdownHeading": "Classified economic value",
-      "projectionHeading": "Projected 12-month economic value",
-      "yearOneCostLabel": "Year one AI cost",
-      "yearOneValueLabel": "Year one economic value",
-      "yearOneReturnLabel": "Year one economic return",
-      "scenarios": [
-        {
-          "id": "conservative",
-          "label": "Conservative",
-          "multiplier": 0.7
-        },
-        {
-          "id": "base",
-          "label": "Base",
-          "multiplier": 1
-        },
-        {
-          "id": "optimistic",
-          "label": "Optimistic",
-          "multiplier": 1.3
-        }
-      ],
-      "defaultScenarioId": "base",
-      "inputs": [
-        {
-          "id": "client_entities",
-          "label": "Client entities",
-          "type": "slider",
-          "min": 20,
-          "max": 2000,
-          "step": 10,
-          "defaultValue": 500,
-          "format": "integer",
-          "group": "profile",
-          "profile": true,
-          "profileIcon": "users"
-        },
-        {
-          "id": "team_members",
-          "label": "Team members on this work",
-          "type": "slider",
-          "min": 1,
-          "max": 80,
-          "step": 1,
-          "defaultValue": 12,
-          "format": "integer",
-          "group": "profile",
-          "profile": true,
-          "profileIcon": "users"
-        },
-        {
-          "id": "capacity_rate",
-          "label": "Shadow price of staff capacity / hr",
-          "help": "Used for throughput and genuine cost-elimination only. Not a claim that salary expense falls by this amount.",
-          "type": "slider",
-          "min": 20,
-          "max": 250,
-          "step": 5,
-          "defaultValue": 85,
-          "format": "currency",
-          "group": "profile",
-          "profile": true
-        },
-        {
-          "id": "forms_per_client_per_year",
-          "label": "Forms per client per year",
-          "type": "slider",
-          "min": 1,
-          "max": 24,
-          "step": 1,
-          "defaultValue": 5,
-          "format": "integer",
-          "group": "workload"
-        },
-        {
-          "id": "minutes_per_form",
-          "label": "Average hands-on time per form today",
-          "type": "slider",
-          "min": 5,
-          "max": 180,
-          "step": 5,
-          "defaultValue": 30,
-          "format": "number",
-          "unit": "min",
-          "group": "workload"
-        },
-        {
-          "id": "automation_share",
-          "label": "Share of this work automated",
-          "type": "slider",
-          "min": 10,
-          "max": 90,
-          "step": 5,
-          "defaultValue": 50,
-          "format": "percent",
-          "group": "workload"
-        },
-        {
-          "id": "tokens_per_unit",
-          "label": "Estimated tokens per automated hour",
-          "type": "slider",
-          "min": 10000,
-          "max": 250000,
-          "step": 5000,
-          "defaultValue": 40000,
-          "format": "tokens",
-          "group": "economics"
-        },
-        {
-          "id": "input_price",
-          "label": "Model input price / 1M tokens",
-          "type": "number",
-          "min": 0,
-          "max": 50,
-          "step": 0.25,
-          "defaultValue": 2,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "output_price",
-          "label": "Model output price / 1M tokens",
-          "type": "number",
-          "min": 0,
-          "max": 80,
-          "step": 0.25,
-          "defaultValue": 10,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "output_share",
-          "label": "Share of tokens that are output",
-          "type": "slider",
-          "min": 5,
-          "max": 50,
-          "step": 1,
-          "defaultValue": 20,
-          "format": "percent",
-          "group": "economics"
-        },
-        {
-          "id": "license",
-          "label": "Platform licence per month",
-          "type": "slider",
-          "min": 0,
-          "max": 6000,
-          "step": 50,
-          "defaultValue": 1500,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "allocation_volume",
-          "label": "Share used to absorb more volume",
-          "help": "Throughput: extra work the same team can take. Valued as capacity creation, not cash leaving payroll.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 50,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "allocation_billable",
-          "label": "Share used for higher-value / billable work",
-          "help": "Positive productivity: advisory, selling, or other contribution-margin work.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 25,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "allocation_cost_reduction",
-          "label": "Share that is genuine cost reduction",
-          "help": "Negative productivity removed as cash: overtime, contractors, or work you would otherwise pay for.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 17,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "contribution_rate",
-          "label": "Contribution margin / hour of higher-value work",
-          "help": "Used only for the billable/advisory share. This is not an hourly salary.",
-          "type": "slider",
-          "min": 20,
-          "max": 400,
-          "step": 5,
-          "defaultValue": 150,
-          "format": "currency",
-          "group": "allocation"
-        },
-        {
-          "id": "expected_error_cost",
-          "label": "Expected monthly error / rework cost today",
-          "type": "slider",
-          "min": 0,
-          "max": 20000,
-          "step": 50,
-          "defaultValue": 800,
-          "format": "currency",
-          "group": "workload"
-        },
-        {
-          "id": "error_reduction_share",
-          "label": "Share of that error cost avoided",
-          "type": "slider",
-          "min": 0,
-          "max": 90,
-          "step": 5,
-          "defaultValue": 35,
-          "format": "percent",
-          "group": "workload"
-        }
-      ],
-      "metrics": [
-        {
-          "id": "hours_removed",
-          "label": "Repetitive work automated",
-          "formula": "(client_entities * forms_per_client_per_year / 12) * (minutes_per_form / 60) * (automation_share / 100)",
-          "format": "hours",
-          "kind": "card",
-          "layer": "operations",
-          "productivity": "negative",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Negative productivity: operating burden removed."
-        },
-        {
-          "id": "hours_returned",
-          "label": "Capacity returned to the team",
-          "formula": "hours_removed",
-          "format": "hours",
-          "kind": "card",
-          "layer": "operations",
-          "productivity": "positive",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Positive productivity: hours now available for better work."
-        },
-        {
-          "id": "work_units",
-          "label": "Forms handled each month",
-          "formula": "client_entities * forms_per_client_per_year / 12",
-          "format": "integer",
-          "kind": "card",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "unused_share",
-          "label": "Unused capacity share",
-          "formula": "100 - allocation_volume - allocation_billable - allocation_cost_reduction",
-          "format": "percent",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": false,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "volume_hours",
-          "label": "Hours allocated to more volume",
-          "formula": "hours_returned * (allocation_volume / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "billable_hours",
-          "label": "Hours allocated to higher-value work",
-          "formula": "hours_returned * (allocation_billable / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "cost_hours",
-          "label": "Hours that become genuine cost reduction",
-          "formula": "hours_returned * (allocation_cost_reduction / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "unused_hours",
-          "label": "Hours held as unused capacity",
-          "formula": "hours_returned * (unused_share / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "monthly_tokens",
-          "label": "Tokens per month",
-          "formula": "hours_removed * tokens_per_unit",
-          "format": "tokens",
-          "kind": "hidden",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "model_cost",
-          "label": "AI model cost (est.)",
-          "formula": "(monthly_tokens * (1 - output_share / 100) / 1000000) * input_price + (monthly_tokens * (output_share / 100) / 1000000) * output_price",
-          "format": "currency",
-          "kind": "breakdown-cost",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "all_in_cost",
-          "label": "All-in AI cost",
-          "formula": "model_cost + license",
-          "format": "currency",
-          "kind": "summary-cost",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "cost_elimination",
-          "label": "Genuine cost eliminated",
-          "formula": "cost_hours * capacity_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "cost-elimination",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Overtime, contractors, or other spend you would actually stop."
-        },
-        {
-          "id": "revenue_productivity",
-          "label": "Contribution from higher-value work",
-          "formula": "billable_hours * contribution_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "revenue-productivity",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": true,
-          "note": "Valued at contribution margin, not salary."
-        },
-        {
-          "id": "throughput_value",
-          "label": "Capacity to take more volume",
-          "formula": "volume_hours * capacity_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "throughput",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": true,
-          "note": "Shadow price of extra throughput, not a payroll saving."
-        },
-        {
-          "id": "error_value",
-          "label": "Expected error and rework avoided",
-          "formula": "expected_error_cost * (error_reduction_share / 100)",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "error-avoidance",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "economic_value",
-          "label": "Modeled economic value",
-          "formula": "cost_elimination + revenue_productivity + throughput_value + error_value",
-          "format": "currency",
-          "kind": "summary-benefit",
-          "layer": "value",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "net_value",
-          "label": "Economic value after AI cost",
-          "formula": "economic_value - all_in_cost",
-          "format": "currency",
-          "kind": "card",
-          "layer": "value",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "return_multiple",
-          "label": "Economic return on all-in AI cost",
-          "formula": "economic_value / all_in_cost",
-          "format": "multiplier",
-          "kind": "summary-roi",
-          "layer": "value",
-          "scalesWithPeriod": false,
-          "scalesWithScenario": false
-        }
-      ],
-      "projection": {
-        "months": 12,
-        "costMetricId": "all_in_cost",
-        "benefitMetricId": "net_value",
-        "yearOneLabel": "Year one economic value after AI cost",
-        "costLabel": "AI cost (all-in)",
-        "benefitLabel": "Economic value after cost"
       },
       "cta": {
         "primaryLabel": "Run a simulation with Sherma",
         "secondaryLabel": "See a sample output",
         "primaryTarget": "contact",
-        "privacyNote": "Your data stays private. Hours are capacity. Euros are classified modeled value, not observed results."
+        "privacyNote": "Your data stays private. Hours are capacity. Financial amounts are modeled estimates, not observed results.",
+        "secondaryTarget": "how-it-works"
+      },
+      "currencyCopy": {
+        "native": "Amounts in {currency}.",
+        "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
+        "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
+        "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
+        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+      },
+      "costCopy": {
+        "breakdown": "How the all-in AI cost is built",
+        "perUnit": "{amount} per work unit (average)",
+        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
+        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "remainder": "Other included operating costs",
+        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
       }
     }
   }

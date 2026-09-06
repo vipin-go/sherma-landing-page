@@ -876,482 +876,274 @@
       }
     },
     "roiCalculator": {
+      "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "AI economics",
-      "heading": "Model the economic impact of Sherma",
-      "headingAccent": "economic impact",
-      "subheading": "Separate repetitive filing burden from the capacity those hours can create, then decide what the change is worth before you run.",
-      "disclaimer": "Figures are modeled estimates from your assumptions. Returned hours are capacity, not an automatic payroll saving, and are not observed customer results.",
+      "kicker": "İş etkisi",
+      "heading": "ROI Hesaplayıcı",
+      "subheading": "Kapasiteyle başlayın. Daha sonra değerinin ne olabileceğine karar verin.",
+      "disclaimer": "Gözlemlenen sonuçlardan veya garanti edilen tasarruflardan değil, varsayımlarınızdan oluşturulan bir senaryo. İade edilen saatler kapasitedir, otomatik bordro kesintisi değildir.",
       "currency": "TRY",
       "locale": "tr-TR",
-      "periodToggle": true,
-      "defaultPeriod": "monthly",
-      "settingsHeading": "Usage & cost settings",
-      "resultsHeading": "Operational impact & economic value",
-      "profileHeading": "Firm profile",
-      "workloadHeading": "Workload",
-      "economicsHeading": "AI economics",
-      "economicsNote": "All-in operating cost is model tokens, tools, and the platform licence, not a salary comparison.",
-      "allocationHeading": "Where returned capacity goes",
-      "allocationHelp": "Hours removed are capacity. Only the shares you assign to cost reduction, extra volume, or higher-value work are given a euro value.",
-      "unusedAllocationLabel": "Held as unused capacity",
-      "operationsHeading": "What physically changes",
-      "valueHeading": "What that change is worth",
-      "frameworkHeading": "How the value is created",
-      "negativeProductivity": {
-        "heading": "Negative productivity removed",
-        "body": "Human effort that was an operating burden: gathering data, portal navigation, chasing missing fields, formatting, and re-entering rejected filings.",
-        "items": [
-          "Data gathering and re-keying",
-          "Portal navigation and formatting",
-          "Chasing missing information",
-          "Correcting rejected submissions"
+      "inputs": [],
+      "metrics": [],
+      "businessImpact": {
+        "defaults": {
+          "volume": 208,
+          "minutes": 30,
+          "automation": 50,
+          "review": 5
+        },
+        "copy": {
+          "navLabel": "ROI",
+          "workloadStep": "İş yükünüz",
+          "costStep": "İşletme maliyeti",
+          "valueStep": "Kapasiteyi kullanın",
+          "workloadIntro": "Model formu hazırlama, düzeltmeler ve insan incelemesi—otomatik canlı dosyalama veya garantili kabul değil.",
+          "costIntro": "Bu iş yükünü çalıştırmak için gereken maliyetleri ekleyin. Bunlar sizin tahminlerinizdir, Gabriel alıntısı değil.",
+          "valueIntro": "Geri dönen saatlerle ne yapacaksınız? Yalnızca gerçekleştirmeyi beklediğiniz sonuçları seçin.",
+          "sampleNotice": "Örnek iş yükü · gözlemlenmeyen sonuçlar",
+          "monthly": "Aylık",
+          "yearly": "yıllık",
+          "next": "Devam et",
+          "back": "Geri",
+          "reset": "Varsayımları sıfırla",
+          "summary": "Modellenmiş etkiniz",
+          "volume": "Modellenen iş birimleri",
+          "grossHours": "Tekrarlayan işler azaltıldı",
+          "capacity": "Net kapasite geri döndü",
+          "retained": "Kapasite mevcut tutuldu",
+          "hours": "saat",
+          "days": "günler",
+          "percent": "%",
+          "minutes": "dakika",
+          "reviewMode": "İncelemeyi kim yönetiyor?",
+          "teamReview": "Mevcut ekip",
+          "paidReview": "Ek ücretli incelemeci",
+          "reviewNote": "Mevcut ekip incelemesi, döndürülen kapasiteyi kullanır. Ek ücretli inceleme, işletme maliyetine dahil edilir, ekip kapasitesinden tekrar düşülmez.",
+          "totalMode": "Aylık bütçe",
+          "itemizedMode": "Maliyet dökümü",
+          "budgetNote": "Bütçe, modelleri/medyayı, araçları, altyapıyı, Gabriel ücretlerini ve her türlü ek ücretli incelemeyi içermelidir. Değişmeyen maaş bordrosunu yeni harcama olarak dahil etmeyin.",
+          "itemizedNote": "Geçerli olmayan bir maliyet için sıfır girin. Ek ücretli inceleme, inceleme saatleri ve gerçek ücreti üzerinden hesaplanır.",
+          "paidReviewCost": "Ek ücretli inceleme maliyeti",
+          "allInCost": "İşletme maliyeti",
+          "missing": "Varsayımlarınızı ekleyin",
+          "cashValue": "Nakit harcamalardan kaçınıldı",
+          "contribution": "Beklenen katkı",
+          "expectedLoss": "Beklenen kayıp azalması",
+          "riskValue": "Belirsiz risk değeri dahil",
+          "economicValue": "Modellenen ekonomik değer",
+          "netBenefit": "Net modellenmiş fayda",
+          "multiple": "Ekonomik getiri çoklu",
+          "notApplicable": "Geçerli değil",
+          "annual": "Yıllık görünüm",
+          "annualNote": "Büyüme veya bileşik olmadan aynı aylık varsayımlar. İşe alım tasarrufları yalnızca girilen dönem boyunca sürer.",
+          "method": "Bu nasıl hesaplanır?",
+          "burdenHeading": "Tekrarlayan işler azaltıldı",
+          "opportunityHeading": "Daha yüksek değerli iş kapasitesi",
+          "methodBody": "İşletim yükünün ortadan kalkması (negatif üretkenlik) kapasiteyi geri getirir. Daha yüksek değerli iş (potansiyel pozitif üretkenlik), ancak bu kapasite kullanıldığında ekonomik değer yaratır. Saatler tek başına nakit tasarrufu anlamına gelmez.",
+          "formulaLabel": "Ekonomik değer ÷ işletme maliyeti = ekonomik getiri çarpanı. Net fayda, işletme maliyetini bir kez düşürür.",
+          "allocationNote": "İade edilen saatler otomatik tasarruf değil, kapasitedir. Yalnızca fiili harcama azaltmalarına veya ek katkıya atadığınız kısımlar parasal bir değer alır.",
+          "overlapLabel": "Bu faydalar farklıdır; Başka yerlerde sayılan maliyetleri ve kayıpları hariç tuttum.",
+          "overlapNote": "Hata ve risk tahminleri iş gücü tasarruflarını kapsamaz ve aynı olayın her iki kategoride de ortaya çıkmaması gerekir. Katkı payına ayrı olarak düşülen yapay zeka maliyetleri dahil değildir.",
+          "hiringLabel": "Bu işe alım gerçekten planlanmıştı ve tahsis edilen kapasite işi karşılayabilecek kapasitedeydi.",
+          "reviewedLabel": "Sonuçlarımı gözden geçirdim; seçilmemiş sonuçların bu tahminde hiçbir mali değeri yoktur.",
+          "cycleResult": "Döngü süresi iyileştirmesi",
+          "throughputResult": "Kapasite ve talebe göre desteklenen ek işler",
+          "assumptionsIncomplete": "Mali değeri hesaplamak için seçilen varsayımları tamamlayın.",
+          "allocationError": "Tahsis edilen saatler mevcut net kapasiteyi aşıyor. Tahsisleri azaltın.",
+          "reviewError": "İnceleme, işin azaltılmasından daha fazla zaman alır. Bu varsayımlarda pozitif kapasite mevcut değildir.",
+          "cashError": "Kaçınılan harcamalar, mevcut harcamaları aşamaz veya tahsis edilen saat olmadan pozitif değere sahip olamaz.",
+          "hiringError": "Tahsis edilen kapasite planlanan kiralama saatlerini kapsamalıdır. Planlanan işe alım süresini ve süresini onaylayın.",
+          "riskError": "Bir kayıp azaltma tahmini için sonraki olasılık, önceki olasılığı aşamaz.",
+          "overlapError": "Faydaları finansal sonuca dahil etmeden önce, faydaların örtüşmediğini doğrulayın.",
+          "boundsError": "Görüntülenen sınırlar dahilindeki değerleri kullanın.",
+          "rangeLabel": "Değeri ayarla",
+          "noCurrencyChange": "Dil, para biriminizi veya varsayımlarınızı değil, biçimlendirmeyi değiştirir."
+        },
+        "fields": {
+          "volume": {
+            "label": "Her ay hazırlanan formlar",
+            "help": "En iyi senaryonun zirvesini değil, tipik bir ayı kullanın."
+          },
+          "minutes": {
+            "label": "Bugün ünite başına uygulamalı dakikalar",
+            "help": "Bekleme ve geçen takvim süresi hariç aktif çalışma süresi."
+          },
+          "automation": {
+            "label": "Bu işin payı azaltıldı",
+            "help": "Bir performans vaadi değil, pilot uygulamada doğrulanacak açıklayıcı bir varsayım."
+          },
+          "review": {
+            "label": "Birim başına dakikaları gözden geçirin",
+            "help": "Otomasyondan sonra da insan kontrolüne ihtiyaç duyuluyor."
+          },
+          "budget": {
+            "label": "Tahmini aylık işletme bütçesi",
+            "help": "Tüm modelleri/medyayı, araçları, altyapıyı, Gabriel ücretlerini ve ek ücretli incelemeyi ekleyin."
+          },
+          "model_cost": {
+            "label": "Modeller ve medya üretimi",
+            "help": "Geçerli olduğu durumlarda görseller veya videolar da dahil olmak üzere aylık tahmininiz."
+          },
+          "tools_cost": {
+            "label": "Araçlar ve entegrasyonlar",
+            "help": "Tarayıcı oturumları, bağlayıcılar ve diğer ölçülü hizmetler."
+          },
+          "infrastructure_cost": {
+            "label": "Altyapı",
+            "help": "Bu iş yükü için artımlı barındırma, depolama ve bilgi işlem."
+          },
+          "platform_cost": {
+            "label": "Gabriel ücretler",
+            "help": "Anlaştığınız ücreti veya kendi bütçe varsayımınızı kullanın; bu bir fiyat teklifi değildir."
+          },
+          "review_rate": {
+            "label": "Saat başına ek ücretli inceleme",
+            "help": "Değişmeyen bir çalışanın maaşı değil, gerçek ekstra inceleme harcaması."
+          },
+          "cash_hours": {
+            "label": "Ücretli çalışmayı kaldıran saatler",
+            "help": "Yalnızca fazla mesai, yüklenici veya işleme harcamaları fiilen duracak işleri tahsis edin."
+          },
+          "cash_baseline": {
+            "label": "Bu işteki mevcut aylık harcama",
+            "help": "İndirimin geleceği nakit bütçesi."
+          },
+          "cash_avoided": {
+            "label": "Durduracağınız aylık harcamalar",
+            "help": "Saatin maaşla çarpımı değil, açık bir miktar; ayrı olarak girilen planlı işe alım tasarruflarını hariç tutun."
+          },
+          "higher_value_hours": {
+            "label": "Daha yüksek değerli işler için kullanılan saatler",
+            "help": "Varsayılan olarak kapasitenin tamamını değil, gerçekçi bir şekilde yeniden yönlendirebileceğiniz saatler."
+          },
+          "contribution_rate": {
+            "label": "Saat başına artan katkı",
+            "help": "Ayrı sayılan yapay zeka maliyetleri hariç, gelirden artımlı teslimat maliyetleri düşüldükten sonra. Maaş veya brüt gelir değil."
+          },
+          "throughput_hours": {
+            "label": "Ek hacim için kullanılan saatler",
+            "help": "Bu tahsis aynı zamanda danışmanlık çalışmaları veya harcama kesintileri için de kullanılamaz."
+          },
+          "extra_minutes": {
+            "label": "Ek birim başına takım dakikaları",
+            "help": "İnceleme de dahil olmak üzere geri kalan insan çabasının bir ünite daha teslim etmesi gerekiyordu."
+          },
+          "demand": {
+            "label": "Beklenen talebe sahip ek üniteler",
+            "help": "Kapasite tek başına talep değildir. Almayı beklediğiniz ekstra aylık işi girin."
+          },
+          "unit_margin": {
+            "label": "Ek birim başına katkı",
+            "help": "Artan gelir eksi teslimat maliyetleri; AI işletim maliyetleri ayrı olarak düşülür."
+          },
+          "hiring_hours": {
+            "label": "Planlanan işe alım süresini kapsayan saatler",
+            "help": "Kapasiteyi genel bir tam zamanlı eşdeğer tahmine değil, belirli planlı çalışmalara tahsis edin."
+          },
+          "planned_hours": {
+            "label": "Planlanan işe alımın kapsayacağı aylık saatler",
+            "help": "Tahsis edilen kapasitenin bu iş yükünün tamamını kapsaması gerekir."
+          },
+          "hire_cost": {
+            "label": "Aylık kiralama maliyeti fiilen ertelendi",
+            "help": "Halihazırda çalışan birinin maaşını değil, gerçekten planlanmış bir işe almanın maliyetini kullanın."
+          },
+          "hire_months": {
+            "label": "Kiralamanın ertelendiği aylar",
+            "help": "Bir ila on iki ay; yıllık tahmin bu dönemden sonra tasarrufları saymayı bırakır."
+          },
+          "incidents": {
+            "label": "Aylık beklenen kaçınılan hatalar",
+            "help": "Başlangıç noktanızı ve beklenen azalmanızı kullanın. Risk azaltma olarak da sayılan olayları hariç tutun."
+          },
+          "incident_cost": {
+            "label": "Hata başına artan maliyet",
+            "help": "Halihazırda başka bir yerde yer alan işçiliği, geri ödemeleri veya diğer kayıpları hariç tutun."
+          },
+          "probability_before": {
+            "label": "Önceki aylık kayıp olasılığı",
+            "help": "Tahmininiz, garantili bir risk değerlendirmesi değil."
+          },
+          "probability_after": {
+            "label": "Sonrasında aylık kayıp olasılığı",
+            "help": "Temel olarak aynı olayı ve aylık zaman ufkunu kullanın."
+          },
+          "loss": {
+            "label": "Bu olay için kayıp riski",
+            "help": "Hatalı olayları ve zaten sayılan harcamaları hariç tutun. Bu, tasarruf edilen nakit değil, belirsiz beklenen değerdir."
+          },
+          "days_before": {
+            "label": "Gün cinsinden önceki döngü süresi",
+            "help": "Uygulamalı çabadan ayrı olarak, başlangıçtan bitişe kadar geçen süre."
+          },
+          "days_after": {
+            "label": "Sonraki döngü süresi (gün olarak)",
+            "help": "Sadece operasyonel bir değişiklik olarak gösterilir, varsayılan parasal bir değer olmaksızın."
+          }
+        },
+        "burden": [
+          "Tekrarlanan form hazırlama ve giriş",
+          "Eksik alanları kovalamak ve hataları düzeltmek"
+        ],
+        "opportunity": [
+          "Ek işlem kapasitesi",
+          "Müşteri Danışmanlığı ve İnceleme Süresi"
+        ],
+        "outcomes": [
+          {
+            "id": "higher_value",
+            "label": "Daha yüksek değerli işler yapın",
+            "help": "Kapasitenin bir kısmını artan katkıyla çalışmak için kullanın."
+          },
+          {
+            "id": "throughput",
+            "label": "Daha fazla ses seviyesini yönetin",
+            "help": "Mevcut kapasiteyi gerçek beklenen taleple eşleştirin."
+          },
+          {
+            "id": "cash",
+            "label": "Gerçek harcamaları durdurun",
+            "help": "Fazla mesaiyi, yüklenicileri veya ücretli işlemleri azaltın; maaşları değiştirmeyin."
+          },
+          {
+            "id": "hiring",
+            "label": "Planlanan bir işe alımı erteleyin",
+            "help": "Belirli bir süre için spesifik, gerçekten planlanmış bir iş yükünü kapsayın."
+          },
+          {
+            "id": "error",
+            "label": "Hatalardan kaçının ve yeniden çalışma",
+            "help": "Farklı olayları ve bunların artan maliyetlerini tahmin edin."
+          },
+          {
+            "id": "cycle_time",
+            "label": "Daha erken bitir",
+            "help": "Parasal bir değer otomatik olarak eklemeden iyileştirilen geçen günleri gösterin."
+          }
         ]
-      },
-      "positiveProductivity": {
-        "heading": "Potential positive productivity",
-        "body": "The same hours become capacity. Value them only according to how this firm actually uses them.",
-        "items": [
-          "Take on more client entities",
-          "Advisory and higher-margin work",
-          "Grow without another operations hire"
-        ]
-      },
-      "producesHeading": "What Sherma produces",
-      "produces": [
-        "Ready-to-file returns",
-        "Review trail",
-        "Client-ready summary"
-      ],
-      "breakdownHeading": "Classified economic value",
-      "projectionHeading": "Projected 12-month economic value",
-      "yearOneCostLabel": "Year one AI cost",
-      "yearOneValueLabel": "Year one economic value",
-      "yearOneReturnLabel": "Year one economic return",
-      "scenarios": [
-        {
-          "id": "conservative",
-          "label": "Conservative",
-          "multiplier": 0.7
-        },
-        {
-          "id": "base",
-          "label": "Base",
-          "multiplier": 1
-        },
-        {
-          "id": "optimistic",
-          "label": "Optimistic",
-          "multiplier": 1.3
-        }
-      ],
-      "defaultScenarioId": "base",
-      "inputs": [
-        {
-          "id": "client_entities",
-          "label": "Client entities",
-          "type": "slider",
-          "min": 20,
-          "max": 2000,
-          "step": 10,
-          "defaultValue": 500,
-          "format": "integer",
-          "group": "profile",
-          "profile": true,
-          "profileIcon": "users"
-        },
-        {
-          "id": "team_members",
-          "label": "Team members on this work",
-          "type": "slider",
-          "min": 1,
-          "max": 80,
-          "step": 1,
-          "defaultValue": 12,
-          "format": "integer",
-          "group": "profile",
-          "profile": true,
-          "profileIcon": "users"
-        },
-        {
-          "id": "capacity_rate",
-          "label": "Shadow price of staff capacity / hr",
-          "help": "Used for throughput and genuine cost-elimination only. Not a claim that salary expense falls by this amount.",
-          "type": "slider",
-          "min": 20,
-          "max": 250,
-          "step": 5,
-          "defaultValue": 85,
-          "format": "currency",
-          "group": "profile",
-          "profile": true
-        },
-        {
-          "id": "forms_per_client_per_year",
-          "label": "Forms per client per year",
-          "type": "slider",
-          "min": 1,
-          "max": 24,
-          "step": 1,
-          "defaultValue": 5,
-          "format": "integer",
-          "group": "workload"
-        },
-        {
-          "id": "minutes_per_form",
-          "label": "Average hands-on time per form today",
-          "type": "slider",
-          "min": 5,
-          "max": 180,
-          "step": 5,
-          "defaultValue": 30,
-          "format": "number",
-          "unit": "min",
-          "group": "workload"
-        },
-        {
-          "id": "automation_share",
-          "label": "Share of this work automated",
-          "type": "slider",
-          "min": 10,
-          "max": 90,
-          "step": 5,
-          "defaultValue": 50,
-          "format": "percent",
-          "group": "workload"
-        },
-        {
-          "id": "tokens_per_unit",
-          "label": "Estimated tokens per automated hour",
-          "type": "slider",
-          "min": 10000,
-          "max": 250000,
-          "step": 5000,
-          "defaultValue": 40000,
-          "format": "tokens",
-          "group": "economics"
-        },
-        {
-          "id": "input_price",
-          "label": "Model input price / 1M tokens",
-          "type": "number",
-          "min": 0,
-          "max": 50,
-          "step": 0.25,
-          "defaultValue": 2,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "output_price",
-          "label": "Model output price / 1M tokens",
-          "type": "number",
-          "min": 0,
-          "max": 80,
-          "step": 0.25,
-          "defaultValue": 10,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "output_share",
-          "label": "Share of tokens that are output",
-          "type": "slider",
-          "min": 5,
-          "max": 50,
-          "step": 1,
-          "defaultValue": 20,
-          "format": "percent",
-          "group": "economics"
-        },
-        {
-          "id": "license",
-          "label": "Platform licence per month",
-          "type": "slider",
-          "min": 0,
-          "max": 6000,
-          "step": 50,
-          "defaultValue": 1500,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "allocation_volume",
-          "label": "Share used to absorb more volume",
-          "help": "Throughput: extra work the same team can take. Valued as capacity creation, not cash leaving payroll.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 50,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "allocation_billable",
-          "label": "Share used for higher-value / billable work",
-          "help": "Positive productivity: advisory, selling, or other contribution-margin work.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 25,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "allocation_cost_reduction",
-          "label": "Share that is genuine cost reduction",
-          "help": "Negative productivity removed as cash: overtime, contractors, or work you would otherwise pay for.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 17,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "contribution_rate",
-          "label": "Contribution margin / hour of higher-value work",
-          "help": "Used only for the billable/advisory share. This is not an hourly salary.",
-          "type": "slider",
-          "min": 20,
-          "max": 400,
-          "step": 5,
-          "defaultValue": 150,
-          "format": "currency",
-          "group": "allocation"
-        },
-        {
-          "id": "expected_error_cost",
-          "label": "Expected monthly error / rework cost today",
-          "type": "slider",
-          "min": 0,
-          "max": 20000,
-          "step": 50,
-          "defaultValue": 800,
-          "format": "currency",
-          "group": "workload"
-        },
-        {
-          "id": "error_reduction_share",
-          "label": "Share of that error cost avoided",
-          "type": "slider",
-          "min": 0,
-          "max": 90,
-          "step": 5,
-          "defaultValue": 35,
-          "format": "percent",
-          "group": "workload"
-        }
-      ],
-      "metrics": [
-        {
-          "id": "hours_removed",
-          "label": "Repetitive work automated",
-          "formula": "(client_entities * forms_per_client_per_year / 12) * (minutes_per_form / 60) * (automation_share / 100)",
-          "format": "hours",
-          "kind": "card",
-          "layer": "operations",
-          "productivity": "negative",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Negative productivity: operating burden removed."
-        },
-        {
-          "id": "hours_returned",
-          "label": "Capacity returned to the team",
-          "formula": "hours_removed",
-          "format": "hours",
-          "kind": "card",
-          "layer": "operations",
-          "productivity": "positive",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Positive productivity: hours now available for better work."
-        },
-        {
-          "id": "work_units",
-          "label": "Forms handled each month",
-          "formula": "client_entities * forms_per_client_per_year / 12",
-          "format": "integer",
-          "kind": "card",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "unused_share",
-          "label": "Unused capacity share",
-          "formula": "100 - allocation_volume - allocation_billable - allocation_cost_reduction",
-          "format": "percent",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": false,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "volume_hours",
-          "label": "Hours allocated to more volume",
-          "formula": "hours_returned * (allocation_volume / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "billable_hours",
-          "label": "Hours allocated to higher-value work",
-          "formula": "hours_returned * (allocation_billable / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "cost_hours",
-          "label": "Hours that become genuine cost reduction",
-          "formula": "hours_returned * (allocation_cost_reduction / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "unused_hours",
-          "label": "Hours held as unused capacity",
-          "formula": "hours_returned * (unused_share / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "monthly_tokens",
-          "label": "Tokens per month",
-          "formula": "hours_removed * tokens_per_unit",
-          "format": "tokens",
-          "kind": "hidden",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "model_cost",
-          "label": "AI model cost (est.)",
-          "formula": "(monthly_tokens * (1 - output_share / 100) / 1000000) * input_price + (monthly_tokens * (output_share / 100) / 1000000) * output_price",
-          "format": "currency",
-          "kind": "breakdown-cost",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "all_in_cost",
-          "label": "All-in AI cost",
-          "formula": "model_cost + license",
-          "format": "currency",
-          "kind": "summary-cost",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "cost_elimination",
-          "label": "Genuine cost eliminated",
-          "formula": "cost_hours * capacity_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "cost-elimination",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Overtime, contractors, or other spend you would actually stop."
-        },
-        {
-          "id": "revenue_productivity",
-          "label": "Contribution from higher-value work",
-          "formula": "billable_hours * contribution_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "revenue-productivity",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": true,
-          "note": "Valued at contribution margin, not salary."
-        },
-        {
-          "id": "throughput_value",
-          "label": "Capacity to take more volume",
-          "formula": "volume_hours * capacity_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "throughput",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": true,
-          "note": "Shadow price of extra throughput, not a payroll saving."
-        },
-        {
-          "id": "error_value",
-          "label": "Expected error and rework avoided",
-          "formula": "expected_error_cost * (error_reduction_share / 100)",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "error-avoidance",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "economic_value",
-          "label": "Modeled economic value",
-          "formula": "cost_elimination + revenue_productivity + throughput_value + error_value",
-          "format": "currency",
-          "kind": "summary-benefit",
-          "layer": "value",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "net_value",
-          "label": "Economic value after AI cost",
-          "formula": "economic_value - all_in_cost",
-          "format": "currency",
-          "kind": "card",
-          "layer": "value",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "return_multiple",
-          "label": "Economic return on all-in AI cost",
-          "formula": "economic_value / all_in_cost",
-          "format": "multiplier",
-          "kind": "summary-roi",
-          "layer": "value",
-          "scalesWithPeriod": false,
-          "scalesWithScenario": false
-        }
-      ],
-      "projection": {
-        "months": 12,
-        "costMetricId": "all_in_cost",
-        "benefitMetricId": "net_value",
-        "yearOneLabel": "Year one economic value after AI cost",
-        "costLabel": "AI cost (all-in)",
-        "benefitLabel": "Economic value after cost"
       },
       "cta": {
-        "primaryLabel": "Run a simulation with Sherma",
-        "secondaryLabel": "See a sample output",
+        "primaryLabel": "Sherma ile bir simülasyon çalıştırın",
+        "secondaryLabel": "örnek çıktı görmek",
         "primaryTarget": "contact",
-        "privacyNote": "Your data stays private. Hours are capacity. Euros are classified modeled value, not observed results."
+        "privacyNote": "Verileriniz gizli kalır. Saatler kapasitedir. Finansal tutarlar modellenmiş tahminlerdir, gözlemlenmiş sonuçlar değildir.",
+        "secondaryTarget": "how-it-works"
+      },
+      "currencyCopy": {
+        "native": "Miktarlar {currency} cinsindendir.",
+        "loading": "Yerel para birimi kontrol ediliyor. Bir kur mevcut olana kadar miktarlar {currency} cinsinden kalacaktır.",
+        "unavailable": "Güncel bir yerel döviz kuru mevcut değil. Miktarlar {currency} cinsinden kalacaktır.",
+        "converted": "Miktarlar {date} tarihli referans kur kullanılarak {base} biriminden {currency} birimine çevrilmiştir.",
+        "basis": "Para birimi dönüştürme, yerel maliyet araştırması değildir. Kendi yerel maliyetlerinizi ve katkı varsayımlarınızı girin. Dil değişiklikleri miktarları değiştirmez."
+      },
+      "costCopy": {
+        "breakdown": "Tümleşik yapay zeka maliyeti nasıl oluşturulur?",
+        "perUnit": "İş birimi başına {amount} (ortalama)",
+        "budgetOnly": "Bu sizin toplam bütçenizdir. Kalemlere ayırmak için Maliyet dökümüne geçin; herhangi bir ayrım varsayılmamıştır.",
+        "benefitNotice": "Modellenen faydalar, ücretler değil. Üzeri çizili miktarlar, yapay zeka faturasında indirim değil, kaçınmayı beklediğiniz harcamalardır.",
+        "remainder": "Dahil edilen diğer işletme maliyetleri",
+        "allocation": "İade edilen saatler otomatik tasarruf değil, kapasitedir. Yalnızca fiili harcama azaltmalarına veya ek katkıya atadığınız kısımlar parasal bir değer alır."
       }
     }
   }

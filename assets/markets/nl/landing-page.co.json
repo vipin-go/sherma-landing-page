@@ -1,0 +1,5606 @@
+{
+  "schemaVersion": 2,
+  "language": "co",
+  "regionKey": "nl",
+  "sourceRevision": "bbbe259ccf572b479d0545b00daf16e5e34fd88ba5ce6e719ce4188dc3ec64bb",
+  "landingPage": {
+    "design": {
+      "variant": "form-operations",
+      "defaultThemeMode": "light",
+      "theme": {
+        "palette": "slate",
+        "primaryColor": "indigo",
+        "secondaryColor": "slate",
+        "accentColor": "blue",
+        "fontFamily": "inter"
+      },
+      "brand": {
+        "presetRevision": 1,
+        "colors": {
+          "light": {
+            "canvas": "#fafaf8",
+            "surface": "#ffffff",
+            "sidebar": "#0f1220",
+            "text": "#12131c",
+            "accent": "#4053c7",
+            "userBubble": "#4053c7"
+          },
+          "dark": {
+            "canvas": "#0b0d16",
+            "surface": "#141827",
+            "sidebar": "#0f1220",
+            "text": "#f4f5fb",
+            "accent": "#8494e6",
+            "userBubble": "#4053c7"
+          }
+        },
+        "typography": {
+          "body": {
+            "source": "google",
+            "family": "Inter"
+          },
+          "display": {
+            "source": "google",
+            "family": "Fraunces"
+          },
+          "label": {
+            "source": "google",
+            "family": "JetBrains Mono"
+          }
+        }
+      }
+    },
+    "header": {
+      "brandMark": "image",
+      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "navItems": [
+        {
+          "label": "Simulazione",
+          "target": "about"
+        },
+        {
+          "label": "Cumu funziona",
+          "target": "how-it-works"
+        },
+        {
+          "label": "Casi d'usu",
+          "target": "use-cases"
+        },
+        {
+          "label": "Cuntrollu",
+          "target": "trust"
+        },
+        {
+          "label": "Cuntattu",
+          "target": "contact"
+        }
+      ],
+      "ctaLabel": "Incontra Sherma"
+    },
+    "badge": "Automazione di forma prima di simulazione",
+    "headline": "Un agente chì riempie i vostri moduli cù a più alta diligenza è mostra u so travagliu prima.",
+    "subheadline": "Sherma leghje u furmulariu, ripete u riempimentu contr'à un gemellu, dumanda solu ciò chì ùn sà ancu, è vi mostra esattamente ciò chì serà sottumessu. Nunda ghjunghje à a forma vera finu à chì dite.",
+    "ctaLabel": "Incontra Sherma",
+    "secondaryCtaLabel": "Vede cumu funziona",
+    "featureTags": [
+      "Ripetutu prima ch'ellu sia veru",
+      "Ciò chì appruvate hè ciò chì entra",
+      "Un registru di ogni campu"
+    ],
+    "demoConversation": [],
+    "heroChat": {
+      "statusLabel": "Online · Sandbox di Simulazione",
+      "inputPlaceholder": "Dumandate à Sherma nantu à un furmulariu...",
+      "suggestedPrompts": [
+        "Mostra i campi mancanti",
+        "Preview di u gemellu",
+        "Cumu funziona l'approvazione?"
+      ]
+    },
+    "heroCharacterImage": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/sherma-no-wings.png",
+    "backgroundImage": {
+      "src": "/landing-pages/sherma/sherma-office.jpg",
+      "alt": ""
+    },
+    "seoImage": {
+      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
+      "alt": "Sherma in u so uffiziu"
+    },
+    "contact": {
+      "heading": "Pigliate un furmulariu chì avete digià riempitu.",
+      "body": "Eseguite Sherma contr'à una forma vera di u vostru propiu travagliu è paragunate u gemellu cù ciò chì a vostra squadra hà pruduttu.",
+      "email": "vipin@gabrieloperator.com"
+    },
+    "closing": {
+      "kicker": "U prossimu furmulariu",
+      "heading": "Pigliate un furmulariu chì avete digià riempitu.",
+      "body": "Eseguite Sherma contr'à una forma vera di u vostru propiu travagliu è paragunate u gemellu cù ciò chì a vostra squadra hà pruduttu.",
+      "ctaLabel": "Parlate cù Sherma"
+    },
+    "formOperations": {
+      "heroDemo": {
+        "sampleLabel": "Demo d'esempiu",
+        "demoNote": "Simulazione solu illustrativa · Nisun portale reale o dati persunali utilizati",
+        "openingReply": "Salute, sò Sherma. Cù quale furmulariu possu aiutà?",
+        "greetingReply": "Salute, sò Sherma. Cù quale furmulariu possu aiutà?",
+        "instructionReply": "Per cumincià, caricate screenshots di u furmulariu chì vulete riempie. JPEG, PNG o WebP · finu à 6 imagine. Estraraghju e dumande è vi dicu ciò chì mi manca sempre.",
+        "reviewReply": "Eccu u gemellu. Hè cumpletu, verificatu è sempre siparatu da u furmulariu in diretta. Ciò chì appruvate quì hè ciò chì serà eseguitu, campu per campu.",
+        "approvedReply": "Appruvatu in a demo. U gemellu esattamente appruvatu hè prontu à eseguisce è ogni campu conserva a so fonte.",
+        "escalatedReply": "Riturnatu in modu sicuru. Nisun schedariu hè statu fattu.",
+        "fallbackReply": "Dumandu solu infurmazione chì manca veramente. Dumandatemi di vede i campi mancanti o di vede u gemellu.",
+        "captureAndFill": {
+          "enabled": true,
+          "commandTrigger": "capture-and-fill",
+          "uploadLabel": "Caricate screenshots di u furmulariu",
+          "uploadHint": "JPEG, PNG o WebP · finu à 6 imagine",
+          "analyzingLabel": "Lettura di u furmulariu è estrazione di e dumande...",
+          "questionnaireHeading": "U vostru questionariu estrattu",
+          "questionnaireBody": "Sherma hà trovu e dumande vere in u vostru furmulariu. Rispondi quì, per chat limitatu o in una sessione di voce di cinque minuti.",
+          "answerPlaceholder": "Rispondi à a prossima dumanda di u furmulariu...",
+          "voiceLabel": "Rispondi cù a voce · 5 min",
+          "reviewLabel": "Vede e risposte",
+          "generateLabel": "Revisione è generazione",
+          "signInHeading": "Accedi per generà copie riempite",
+          "signInBody": "E vostre imagine, risposte è preview andaranu à una sessione privata di Sherma dopu l'accessu.",
+          "expiryCopy": "E preview micca reclamate scadenu dopu un'ora.",
+          "errorCopy": "Sherma ùn pudia micca leghje sta maghjina in modu sicuru. Pruvate un screenshot JPEG, PNG o WebP più chjaru."
+        },
+        "trace": {
+          "label": "Sherma · Traccia di sessione",
+          "status": "ACTIVE",
+          "steps": [
+            {
+              "state": "done",
+              "title": "Formulariu lettu",
+              "detail": "30 campi, 4 documenti, 2 sezioni cundiziunali"
+            },
+            {
+              "state": "done",
+              "title": "Gemellu custruitu",
+              "detail": "Una copia di travagliu riempita è verificata in diretta"
+            },
+            {
+              "state": "done",
+              "title": "Riempitu da u vostru schedariu",
+              "detail": "26 di 30 · Ogni risposta porta a so fonte"
+            },
+            {
+              "state": "active",
+              "title": "Buchi dumandati, micca indovinati",
+              "detail": "4 dumande risposte per chat"
+            },
+            {
+              "state": "pending",
+              "title": "Gemellu prontu per a revisione",
+              "detail": "Nunda hà toccu a forma vera"
+            }
+          ],
+          "reviewLabel": "Vede u gemellu"
+        },
+        "review": {
+          "label": "A vostra appruvazione",
+          "status": "REVIEW",
+          "fields": [
+            {
+              "label": "Entità legale",
+              "value": "Esempiu Cliente B.V.",
+              "sourceLabel": "Origine"
+            },
+            {
+              "label": "ID di BTW",
+              "value": "NL••••••••B01",
+              "sourceLabel": "Origine"
+            },
+            {
+              "label": "Cundizioni di pagamentu",
+              "value": "30 ghjorni",
+              "sourceLabel": "Ostinatu"
+            },
+            {
+              "label": "firmatariu autorizatu",
+              "value": "Direttore Finanziariu",
+              "sourceLabel": "Ostinatu"
+            }
+          ],
+          "approveLabel": "appruvà u gemellu",
+          "sendBackLabel": "Rimandà"
+        },
+        "results": {
+          "approvedTitle": "Gemellu appruvatu",
+          "approvedBody": "U gemellu appruvatu hè prontu à eseguisce · ogni risorsa cunservata",
+          "escalatedTitle": "Rimandatu in modu sicuru",
+          "escalatedBody": "a corsa hè in pausa per l'input umanu · nunda hè statu sottumessu"
+        }
+      },
+      "proofItems": [
+        {
+          "number": "01",
+          "title": "Assorbimentu",
+          "detail": "Formulariu recuperatu"
+        },
+        {
+          "number": "02",
+          "title": "Simulà",
+          "detail": "Praticà prima di riempie"
+        },
+        {
+          "number": "03",
+          "title": "Appruvà",
+          "detail": "Dite di sì"
+        },
+        {
+          "number": "04",
+          "title": "File & Prova",
+          "detail": "A prova hè cunservata"
+        }
+      ],
+      "principle": {
+        "kicker": "U principiu",
+        "heading": "custruitu per esse fidatu. guvernatu da simulazione.",
+        "body": "Ogni furmulariu hè praticatu prima di esse riempitu. Sherma custruisce un gemellu di a forma vera, travaglia tuttu u riempimentu contru à quellu gemellu, è vi mostra cumpletu. U gemellu chì appruvate hè quellu chì hè eseguitu. Nisun riassuntu di questu, nisuna descrizzione di questu. i stessi campi, i stessi valori, in u stessu ordine.",
+        "traceLabel": "Traccia di Sessione Sherma",
+        "traceId": "SH-2291",
+        "traceMeta": "Sessione #SH-2291 · 12s passati",
+        "traceStatus": "Attivu",
+        "traceBody": "Custruitu per i schedari chì ùn ponu micca permette di esse sbagliati, micca per u teatru demo.",
+        "traceSteps": [
+          {
+            "number": "01",
+            "title": "Forma rilevata",
+            "status": "done",
+            "detail": "Dichjarazione BTW, 3u trimestre 2026: entità cliente currispondente.",
+            "state": "done"
+          },
+          {
+            "number": "02",
+            "title": "Questionariu generatu",
+            "status": "done",
+            "detail": "26 campi pre-compilati da fatture. 4 U vostru input necessariu.",
+            "state": "done"
+          },
+          {
+            "number": "03",
+            "title": "Risposte cunfirmate",
+            "status": "done",
+            "detail": "Raccolti da chat in menu di 3 minuti.",
+            "state": "done"
+          },
+          {
+            "number": "04",
+            "title": "Simulazione cumpleta",
+            "status": "active",
+            "detail": "Corsa à seccu contr'à u portale - 0 errori truvati.",
+            "state": "active"
+          }
+        ],
+        "traceAction": {
+          "title": "Prontu à sottumette",
+          "body": "U Gemellu Digitale hè prontu per a revisione prima di sottumette qualcosa.",
+          "approveLabel": "Rivedi è appruvà",
+          "escalateLabel": "Espansione"
+        },
+        "guaranteesKicker": "Cumu si comporta Sherma",
+        "guaranteesHeading": "Sei cose chì restanu vere in ogni forma.",
+        "guarantees": [
+          {
+            "icon": "shield-check",
+            "title": "puntu à a forma chì hà ricevutu",
+            "body": "Sherma tocca u furmulariu è i registri chì l'avete assignatu. Nunda altru in i vostri sistemi hè in u scopu."
+          },
+          {
+            "icon": "sparkles",
+            "title": "Ripetutu prima ch'ellu sia veru",
+            "body": "Tuttu u riempimentu hè fattu prima nantu à un gemellu. U furmulariu in diretta hè toccu una volta, cù una risposta digià cunnisciuta per esse cumpleta."
+          },
+          {
+            "icon": "users",
+            "title": "Appruvazione umana à u puntu di micca ritornu",
+            "body": "Tuttu ciò chì hè reversibile corre automaticamente. Tuttu ciò chì ùn pò micca esse annullatu aspetta una persona."
+          },
+          {
+            "icon": "check",
+            "title": "U gemellu hè u pianu",
+            "body": "Ciò chì appruvate hè byte per byte ciò chì hè sottumessu. Se u furmulariu sottu cambia, l'approvazione hè nulla è torna à voi."
+          },
+          {
+            "icon": "search",
+            "title": "Ogni risposta hà una fonte",
+            "body": "Quale documentu, quale cullega, quale data. Se qualchissia dumanda un numeru dopu, pudete vede da induve vene."
+          },
+          {
+            "icon": "question-mark",
+            "title": "escalation, mai fallimentu silenziu",
+            "body": "I dati mancanti ùn sò micca indovinati. Sherma trova quellu chì sà è dumanda, per chat o per telefunu, è vi dice s'ellu hè bluccatu."
+          }
+        ]
+      },
+      "impact": {
+        "kicker": "Chì cambia?",
+        "heading": "Spostate l'archiviazione da u vostru scrivania, micca da u vostru radar.",
+        "body": "U travagliu cessa di esse qualcosa chì una persona face è diventa qualcosa chì una persona appruva. Hè tutta a diffarenza.",
+        "items": [
+          {
+            "icon": "sparkles",
+            "title": "Rispondi una volta, riutilizate in ogni locu",
+            "body": "Ciò chì cunfirmate diventa parte di u vostru schedariu. A prossima forma strutturalmente simile principia à esse rispostu in gran parte.",
+            "metric": {
+              "label": "campi riempiti senza dumandà",
+              "values": [
+                54,
+                78,
+                91
+              ],
+              "note": "Prima forma, quinta forma, vintesima forma. Illustrativu."
+            }
+          },
+          {
+            "icon": "calendar",
+            "title": "I termini ùn sò più una corsa",
+            "body": "Sherma travaglia di notte è di fine settimana. L'ultime quarantottu ore sò per riviseghjà, micca per assemblà."
+          },
+          {
+            "icon": "lock",
+            "title": "U cuntrollu hè tenutu, micca scambiatu",
+            "body": "simulazione, una appruvazioni esplicita è un registru di ogni azzione. Nunda si spara senza voi."
+          }
+        ]
+      },
+      "process": {
+        "kicker": "u prucessu",
+        "heading": "Cumu Sherma compie un furmulariu, da u principiu à a fine.",
+        "body": "Sei passi. Sherma ne gestisce quattru senza dumandà. I dui marcati per una persona sò i dui induve a decisione ùn pò micca esse delegata.",
+        "steps": [
+          {
+            "number": "01",
+            "actor": "persona",
+            "icon": "sparkles",
+            "title": "Assorbimentu",
+            "body": "Un URL di furmulariu, un email inoltratu, o un portale chì Sherma guarda. Piglia u furmulariu è l'apre.",
+            "output": "Furmulariu stabilitu"
+          },
+          {
+            "number": "02",
+            "actor": "persona",
+            "icon": "shield-check",
+            "title": "Simulà",
+            "body": "Sherma custruisce un gemellu di u furmulariu è travaglia tuttu u riempimentu contru à ellu. Regule di campu, sezioni cundiziunali è esigenze di documenti venenu tutti à a luce, micca à u termini.",
+            "output": "Gemellu custruitu"
+          },
+          {
+            "number": "03",
+            "actor": "persona",
+            "icon": "search",
+            "title": "Riempite da ciò chì sà",
+            "body": "U vostru schedariu risponde à a maiò parte. Ogni valore porta a so fonte, cusì pudete vede da induve vene un numeru è quandu hè statu cunfirmatu l'ultima volta.",
+            "output": "a maiò parte di i campi pronti"
+          },
+          {
+            "number": "04",
+            "actor": "persona",
+            "icon": "chat",
+            "title": "Dumandate i buchi",
+            "body": "Solu ciò chì ùn sà micca veramente. via chat, o chjamendu s'ellu hè urgente è nimu hà rispostu. Caccia finu à avè a risposta.",
+            "output": "buchi chjusi"
+          },
+          {
+            "number": "05",
+            "actor": "human",
+            "icon": "users",
+            "title": "Cunfirmà u gemellu",
+            "body": "u furmulariu cumpletu cum'è serà sottumessu. Cambia tuttu ciò chì vulete, dopu appruvà. Questu hè u puntu di micca ritornu, cusì hè u vostru.",
+            "output": "appruvatu"
+          },
+          {
+            "number": "06",
+            "actor": "persona",
+            "icon": "check",
+            "title": "eseguite è registrate",
+            "body": "Sherma compie u veru furmulariu cù u gemellu appruvatu è torna un registru di ogni campu. Quandu un portale richiede un login persunale, vi dà u furmulariu cumpletu per invià.",
+            "output": "Archiviatu, in registru"
+          }
+        ]
+      },
+      "useCases": {
+        "kicker": "induve si applica",
+        "heading": "Custruitu per e forme chì ùn ponu micca permette di esse sbagliate.",
+        "body": "Stessu agente, stessu principiu. Ciò chì cambia hè u registru da quale tira è u portale contru à quale travaglia.",
+        "items": [
+          {
+            "number": "01",
+            "status": "live",
+            "title": "Dichjarazione BTW BTW",
+            "body": "Dichjarazioni BTW recurrenti, preparate da e fatture digià in a casella di posta, u stessu flussu di travagliu cuntrullatu per ogni periodu di rapportu è ogni cliente.",
+            "steps": [
+              "travagliu di sottumissione apertu da u termini",
+              "Fatture trattate, BTW calculata",
+              "Questionariu: solu lacune",
+              "ritornu archiviatu, gemellu digitale cunfirmatu"
+            ],
+            "connections": [
+              "Mijn Belastingdienst Zakelijk (BTW)",
+              "Casella di posta di fattura",
+              "Software di contabilità"
+            ],
+            "note": "Per Mijn Belastingdienst Zakelijk, eHerkenning o DigiD pò esse richiestu. Sherma prepara cumplettamente a dichjarazione BTW è l'agente autorizatu a sottumette cù u so propiu login. Sherma ùn firma micca per voi."
+          },
+          {
+            "number": "02",
+            "status": "live",
+            "title": "Onboarding di fornitore è trasportatore",
+            "body": "Ogni cumpratore è trasportatore hà u so propiu portale. I stessi dati di l'impresa, certificati è pulitiche, chì sò stati inseriti da zero per ognunu di elli.",
+            "steps": [
+              "Invitu à u portale ricevutu",
+              "Registrazione riutilizata da riempimenti precedenti",
+              "Documenti scaduti marcati è rinnuvati",
+              "Onboarding cumpletu, cunferma salvata"
+            ],
+            "connections": [
+              "Portali di cumpratore è trasportatore",
+              "Registrazione, BTW è dati bancari",
+              "Prova d'assicuranza è di pulitica"
+            ]
+          },
+          {
+            "number": "03",
+            "status": "live",
+            "title": "Questionarii di sicurezza",
+            "body": "Valutazioni di sicurezza di i clienti chì ripete i stessi cuntrolli, pulitiche è evidenza, mentre ogni termini resta finale.",
+            "steps": [
+              "questionariu ricevutu da u cliente",
+              "Cuntrolli allineati cù u registru appruvatu",
+              "Questionariu: solu lacune",
+              "Pacchettu assemblatu, gemellu cunfirmatu"
+            ],
+            "connections": [
+              "Portali di sicurezza di i clienti",
+              "Biblioteca di pulitiche è cuntrolli",
+              "Certificati è infurmazione di auditu"
+            ]
+          },
+          {
+            "number": "04",
+            "status": "live",
+            "title": "Reclamazione di partenariu è di canali",
+            "body": "Fondi di marketing è rivendicazioni di cooperazione cù prova di prestazione, un formatu di venditore à volta, induve mancà a finestra significa perde l'allocazione.",
+            "steps": [
+              "Messaghju di fondu recuperatu da a casella di posta",
+              "Prova di prestazione assemblata",
+              "reclamazione chì currisponde à u formatu di quellu venditore",
+              "Reclamazione pronta prima chì a finestra si chjude"
+            ],
+            "connections": [
+              "Portali di partenarii di venditori",
+              "Ricevute è prova di campagna",
+              "Seguitu di l'assignazione è di a scadenza"
+            ]
+          },
+          {
+            "number": "05",
+            "status": "next",
+            "title": "Formulari d'assicuranza",
+            "body": "Rinnovi è piazzamenti chì sò prevedibili, carichi di prove, è generalmente invariati da l'ultima sottumissione appruvata.",
+            "steps": [
+              "Avvisu di rinnuvamentu recuperatu",
+              "Risposte di l'annu passatu caricate",
+              "Solu i cambiamenti interrugati",
+              "Formulariu prontu, registru aghjurnatu"
+            ],
+            "connections": [
+              "Portali di broker è assicuratori",
+              "Schemi di pulitica è evidenza",
+              "Storia di sottumissione di l'annu precedente"
+            ]
+          },
+          {
+            "number": "06",
+            "status": "next",
+            "title": "Offerte, cuncessioni è depositi",
+            "body": "Questionarii di selezzione, applicazioni di finanziamentu è schedarii chì ripete l'evidenza organizzativa mentre ogni scadenza ferma finale.",
+            "steps": [
+              "Avvisu currispondente à u vostru prufilu",
+              "Ogni quistione estratta, nimu skimmed",
+              "Sezioni organizzative risposte da u registru",
+              "Pacchettu assemblatu, gemellu cunfirmatu"
+            ],
+            "connections": [
+              "Portali di offerta è finanziamentu",
+              "Cunti, assicurazioni, certificazioni",
+              "Pulitica è biblioteca di riferimentu"
+            ]
+          },
+          {
+            "number": "07",
+            "status": "custom",
+            "title": "U vostru casu d'usu",
+            "body": "Ùn vede micca u vostru flussu di travagliu? Descrive u furmulariu, u portale o u schedariu è rivederemu un sherma persunalizatu.",
+            "steps": [],
+            "connections": []
+          }
+        ],
+        "customIntake": {
+          "heading": "Ingaghjamentu di u flussu di travagliu persunalizatu",
+          "body": "Sparte u furmulariu recurrente o u portale chì rallenta a vostra squadra. Questa demo a mantene corta in u vostru navigatore è prepara una sovrascrittura di e-mail.",
+          "ctaLabel": "Prepara u mo incaricu sherma",
+          "note": "Ingaghjamentu di mostra solu · Nunda hè mandatu da sta pagina",
+          "successHeading": "U vostru briefing sherma hè prontu.",
+          "successBody": "Aprite u vostru cliente di e-mail per mandà u briefing pre-populatu quandu site prontu.",
+          "editLabel": "Edità u casu d'usu",
+          "emailSubject": "Incontra Sherma: casu d'usu persunalizatu"
+        }
+      },
+      "workedExample": {
+        "kicker": "un esempiu editatu",
+        "heading": "Preparazione di una dichjarazione di TVA senza trascrizzione manuale di dati.",
+        "body": "u listessu principiu, applicatu à a forma più ripetuta chì ci hè. Un mudellu, una entità à volta, quattru volte à l'annu, per sempre.",
+        "before": "Qualchissia raccoglie i numeri, li ripete in a dichjarazione, li verifica cù u libru maestru è i schedarii prima di a scadenza. Ogni trimestre, per ogni cliente, senza nunda trasferitu eccettu una foglia di calculu.",
+        "after": "Sherma apre u compitu da u calendariu di l'archiviu, custruisce a dichjarazione da e fatture digià in a casella di posta, dumanda solu i numeri chì ùn pò micca deduce, è presenta a dichjarazione cumpleta cum'è un gemellu.",
+        "linkLabel": "Parlate à u vostru calendariu di l'archiviu",
+        "emailSubject": "Flussu di travagliu di presentazione trimestrale di Sherma",
+        "card": {
+          "label": "Dichjarazione di TVA",
+          "period": "3u trimestre 2026",
+          "status": "Prepared by Sherma",
+          "rows": [
+            {
+              "label": "Totale",
+              "value": "€ 124.820,00"
+            },
+            {
+              "label": "Periodu",
+              "value": "3u trimestre 2026"
+            },
+            {
+              "label": "Fatture currispondenti",
+              "value": "41 / 44"
+            },
+            {
+              "label": "Numeri mancanti",
+              "value": "3 marcati",
+              "highlight": true
+            }
+          ],
+          "summaryLabel": "Ritornu prontu",
+          "summary": "3 cifre necessitanu a vostra cunferma prima di presentà.",
+          "actionLabel": "Revisione è Archiviu",
+          "actionNote": "Verificazione umana necessaria",
+          "note": "figure illustrative. U vostru propiu rapportu serà misuratu nantu à u primu ritornu."
+        }
+      },
+      "control": {
+        "kicker": "Autonomia cuntrullata",
+        "heading": "autonomia senza perde a rispunsabilità.",
+        "body": "AI prima à ogni passu. Una persona entra in l'unicu mumentu chì ùn pò micca esse annullatu, è solu allora.",
+        "points": [
+          {
+            "icon": "sparkles",
+            "title": "Tuttu ciò chì hè reversibile hè automaticu",
+            "body": "Leghje, simulà, riempie, caccià, assemble. Nisuna appruvazione hè necessaria per u travagliu chì pò esse solu rinnuvatu."
+          },
+          {
+            "icon": "lock",
+            "title": "Tuttu ciò chì hè irreversibile si ferma",
+            "body": "A sottumissione hè u puntu di micca ritornu, cusì vi aspetta. Induve un portale hà bisognu di una riferenza persunale, a tenete, micca Sherma."
+          },
+          {
+            "icon": "check",
+            "title": "U gemellu chì appruvate hè quellu chì corre",
+            "body": "Se u furmulariu in diretta cambia dopu avè appruvatu, l'appruvazione hè invalida è torna à voi invece di eseguisce in ogni modu."
+          },
+          {
+            "icon": "question-mark",
+            "title": "Bloccatu hè un statu, micca silenziu",
+            "body": "Se Sherma ùn pò micca finisce qualcosa, vi dice quale campu è perchè, cù u tempu per agisce nantu à questu."
+          }
+        ],
+        "boundary": {
+          "label": "Limitu di Sherma",
+          "badges": [
+            "Campi di scopu",
+            "Strumentu appruvatu"
+          ],
+          "steps": [
+            {
+              "label": "Ricivutu",
+              "title": "Forma ricevuta"
+            },
+            {
+              "label": "Simulà",
+              "title": "Ripetite contr'à un gemellu"
+            },
+            {
+              "label": "Empie",
+              "title": "Record applicatu, lacune dumandate"
+            },
+            {
+              "label": "Verificà",
+              "title": "Gemellu cumpletu è verificatu"
+            }
+          ],
+          "approvalLabel": "Appruvà o escalate",
+          "executionLabel": "eseguite è registrate",
+          "sourceNote": "Fonte registrata per ogni campu",
+          "guarantee": "Gemellu appruvatu = ciò chì hè eseguitu"
+        }
+      },
+      "leadCapture": {
+        "kicker": "À scala",
+        "heading": "Sherma in etichetta bianca à scala.",
+        "body": "Stu brief hè per l'urganisazioni chì volenu sherma in etichetta bianca in u so propiu flussu di travagliu - mille forme à tempu, micca una sola sottumissione.",
+        "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
+        "formLabel": "Induve deve esse Sherma, è quante forme circa?",
+        "ctaLabel": "Prepara u mo incaricu sherma",
+        "successHeading": "U vostru brief hè prontu.",
+        "successBody": "Aprite u vostru cliente di e-mail per mandà quandu site prontu.",
+        "emailLabel": "Mandate u brief per e-mail",
+        "privacyNote": "U vostru brief ferma in stu navigatore finu à chì sceglite di mandà per e-mail.",
+        "emailSubject": "Sherma in etichetta bianca à scala"
+      },
+      "footer": {
+        "tagline": "Sherma compie i vostri formi da ciò chì avete digià in u schedariu è vi mostra a versione cumpleta prima chì qualcosa sia mandatu.",
+        "groups": [
+          {
+            "label": "Capacità",
+            "links": [
+              {
+                "label": "Ingaghjamentu di forma",
+                "target": "meet"
+              },
+              {
+                "label": "Simulazione",
+                "target": "about"
+              },
+              {
+                "label": "Appruvazione è registrazione",
+                "target": "trust"
+              }
+            ]
+          },
+          {
+            "label": "Cumpagnia",
+            "links": [
+              {
+                "label": "Casi d'usu",
+                "target": "use-cases"
+              },
+              {
+                "label": "Cuntattu",
+                "target": "contact"
+              }
+            ]
+          },
+          {
+            "label": "Principià",
+            "links": [
+              {
+                "label": "Incontra Sherma",
+                "target": "contact"
+              }
+            ]
+          }
+        ],
+        "copyright": "© 2026"
+      }
+    },
+    "roiCalculator": {
+      "methodologyVersion": 2,
+      "enabled": true,
+      "kicker": "Impattu cummerciale",
+      "heading": "Calculatore di ROI",
+      "subheading": "Cumincià cù a capacità. Allora determinate ciò chì puderia valerà.",
+      "disclaimer": "Un scenariu custruitu nantu à e vostre ipotesi, micca nantu à i risultati osservati o risparmi garantiti. L'ore restituite sò capacità, micca una riduzione automatica di u salariu.",
+      "currency": "EUR",
+      "locale": "nl-NL",
+      "inputs": [],
+      "metrics": [],
+      "businessImpact": {
+        "defaults": {
+          "volume": 208,
+          "minutes": 30,
+          "automation": 50,
+          "review": 5
+        },
+        "copy": {
+          "navLabel": "ROI",
+          "workloadStep": "U vostru caricu di travagliu",
+          "costStep": "Costi operativi",
+          "valueStep": "Aduprate a capacità",
+          "workloadIntro": "Preparazione di mudelli, currezzione è rivisione umana - micca archiviazione automatica in diretta o accettazione garantita.",
+          "costIntro": "Includite i costi necessarii per eseguisce stu caricu di travagliu. Queste sò e vostre stime, micca una citazione di Gabriel.",
+          "valueIntro": "Chì farete cù l'ore restituite? Selezziunate solu i risultati chì aspettate di rializà.",
+          "sampleNotice": "Caricu di travagliu illustrativu · micca risultati osservati",
+          "monthly": "Mensile",
+          "yearly": "Annuale",
+          "next": "Cuntinuà",
+          "back": "Daretu",
+          "reset": "Resettate l'ipotesi",
+          "summary": "U vostru impattu modellatu",
+          "volume": "Unità di travagliu mudellate",
+          "grossHours": "Travagliu ripetitivu ridottu",
+          "capacity": "Capacità netta restituita",
+          "retained": "Capacità dispunibule",
+          "hours": "ore",
+          "days": "ghjorni",
+          "percent": "%",
+          "minutes": "minuti",
+          "reviewMode": "Quale face a rivisione?",
+          "teamReview": "Squadra esistente",
+          "paidReview": "Revisore pagatu supplementu",
+          "reviewNote": "A rivisione da una squadra esistente usa a capacità restituita. E rivisioni pagate supplementari sò incluse in i costi operativi è ùn sò micca dedutte di novu da a capacità di a squadra.",
+          "totalMode": "Budget mensile",
+          "itemizedMode": "Ripartizioni di i costi",
+          "budgetNote": "U bilanciu deve include mudelli/media, strumenti, infrastruttura, costi Gabriel è qualsiasi valutazione pagata supplementaria. Ùn include micca e paghe invariate cum'è nova spesa.",
+          "itemizedNote": "Inserite zero per i costi chì ùn sò micca applicabili. E valutazioni pagate supplementari sò calculate nantu à l'ore di valutazione è a tarifa attuale.",
+          "paidReviewCost": "Costi di valutazione pagati supplementari",
+          "allInCost": "Costi operativi",
+          "missing": "Aghjunghjite e vostre assunzioni",
+          "cashValue": "Spese in contanti evitate",
+          "contribution": "Cuntribuzione prevista",
+          "expectedLoss": "Riduzzione di perdita prevista",
+          "riskValue": "Valore di risicu incertu inclusu",
+          "economicValue": "Valore ecunomicu modellatu",
+          "netBenefit": "Benefiziu nettu modellatu",
+          "multiple": "Multiplu di rendimentu ecunomicu",
+          "notApplicable": "Micca applicabile",
+          "annual": "Riepilogu annuale",
+          "annualNote": "Stesse assunzioni mensili, senza crescita o deterioramentu. I risparmi di assunzione sò solu per u periodu inseritu.",
+          "method": "Cumu si calcula",
+          "burdenHeading": "Travagliu ripetitivu ridottu",
+          "opportunityHeading": "Capacità per travagliu di valore più altu",
+          "methodBody": "I carichi operativi eliminati (produttività negativa) restituiscenu capacità. U travagliu di valore più altu (produttività potenzialmente positiva) crea valore ecunomicu solu se quella capacità hè aduprata. L'ore solu ùn sò micca un risparmiu di soldi.",
+          "formulaLabel": "Valore ecunomicu ÷ costi operativi = multiplu di rendimentu ecunomicu. U benefiziu nettu sottrae i costi operativi una volta.",
+          "allocationNote": "L'ore restituite sò capacità, micca risparmi automatici. Solu e parte chì assignate à riduzioni di spesa effettive o cuntribuzioni supplementari ricevenu un valore monetariu.",
+          "overlapLabel": "Questi benefici sò distinti; aghju esclusu i costi è e perdite digià cuntate in altrò.",
+          "overlapNote": "E stime di errore è di risicu escludenu i risparmi di travagliu è u stessu incidente ùn deve micca apparisce in e duie categurie. A cuntribuzione esclude i costi di l'IA, questi sò dedotti separatamente.",
+          "hiringLabel": "Questa assunzione era veramente prevista è a capacità attribuita pò copre u travagliu.",
+          "reviewedLabel": "Aghju rivisatu i mo risultati; i risultati micca selezziunati ùn anu micca valore finanziariu in questa stima.",
+          "cycleResult": "Migliuramentu di u tempu di ciclu",
+          "throughputResult": "Travagliu supplementu supportatu da capacità è dumanda",
+          "assumptionsIncomplete": "Cumplete l'assunzioni selezziunate per calculà u valore finanziariu.",
+          "allocationError": "L'ore attribuite superanu a capacità netta dispunibule. Riduce l'attribuzioni.",
+          "reviewError": "A valutazione piglia più tempu chè a quantità di travagliu ridutta. Cù queste assunzioni, ùn ci hè micca capacità positiva dispunibule.",
+          "cashError": "E spese evitate ùn ponu micca superà e spese attuali o avè un valore pusitivu senza ore attribuite.",
+          "hiringError": "A capacità attribuita deve copre l'ore di assunzione previste. Cunfirmate l'assunzione prevista è a so durata.",
+          "riskError": "A probabilità dopu ùn pò micca esse più grande di a probabilità prima in una stima di riduzzione di perdita.",
+          "overlapError": "Verificate chì i benefici ùn si sovrapponenu micca prima di includeli in u risultatu finanziariu.",
+          "boundsError": "Aduprate valori in i limiti mostrati.",
+          "rangeLabel": "Aghjustà u valore",
+          "noCurrencyChange": "A lingua cambia u furmatu, micca a vostra valuta o assunzioni."
+        },
+        "fields": {
+          "volume": {
+            "label": "Formulari preparati ogni mese",
+            "help": "Aduprate un mese normale, micca un piccu in u megliu casu."
+          },
+          "minutes": {
+            "label": "Minuti pratici per unità oghje",
+            "help": "Tempu di travagliu attivu, escludendu u tempu d'attesa è u tempu di calendariu trascuratu."
+          },
+          "automation": {
+            "label": "A parte di quellu travagliu hè diminuita",
+            "help": "Un'assunzione illustrativa da validà in un pilotu, micca una prumessa di prestazione."
+          },
+          "review": {
+            "label": "Rivedi i minuti per unità",
+            "help": "U cuntrollu umanu hè sempre necessariu dopu l'automatizazione."
+          },
+          "budget": {
+            "label": "Bilanciu operativu mensile stimatu",
+            "help": "Include tutti i mudelli/media, strumenti, infrastruttura, costi Gabriel è valutazioni pagate supplementari."
+          },
+          "model_cost": {
+            "label": "Generazione di mudelli è media",
+            "help": "A vostra stima mensile, cumprese l'imaghjini o video se applicabile."
+          },
+          "tools_cost": {
+            "label": "Strumenti è integrazioni",
+            "help": "Sessioni di navigatore, connettori è altri servizii misurati."
+          },
+          "infrastructure_cost": {
+            "label": "Infrastruttura",
+            "help": "Hosting incrementale, almacenamentu è putenza di calculu per stu caricu di travagliu."
+          },
+          "platform_cost": {
+            "label": "Costi Gabriel",
+            "help": "Aduprate a vostra tarifa accunsentita o a vostra propria assunzione di bilanciu; questa ùn hè micca una citazione."
+          },
+          "review_rate": {
+            "label": "Valutazione pagata supplementare per ora",
+            "help": "Spese supplementari attuali per i revisori, micca u salariu di un impiegatu invariatu."
+          },
+          "cash_hours": {
+            "label": "Ore chì eliminanu u travagliu pagatu",
+            "help": "Attribuite solu u travagliu induve l'ore supplementari, i cuntrattori o e spese di trasfurmazioni si fermanu veramente."
+          },
+          "cash_baseline": {
+            "label": "Spese mensili attuali per quellu travagliu",
+            "help": "U bilanciu in contanti da quale vene a riduzzione."
+          },
+          "cash_avoided": {
+            "label": "Spese mensili chì fermeresti",
+            "help": "Una quantità esplicita, micca ore multiplicate per u salariu; esclude ogni risparmiu di affittu pianificatu inseritu separatamente."
+          },
+          "higher_value_hours": {
+            "label": "Ore aduprate per travagliu di valore più altu",
+            "help": "Ore chì pudete realisticamente redirige, micca a capacità sana per difettu."
+          },
+          "contribution_rate": {
+            "label": "Cuntribuzione oraria incrementale",
+            "help": "Ingressu menu u costu di consegna incrementale, escludendu i costi AI cuntati separatamente. Nisun salariu o ingressu grossu."
+          },
+          "throughput_hours": {
+            "label": "Ore aduprate per volume supplementu",
+            "help": "Questa allocazione ùn pò micca esse aduprata ancu per u travagliu di cunsulenza o i taglii di spesa."
+          },
+          "extra_minutes": {
+            "label": "Minuti di squadra per unità supplementu",
+            "help": "U sforzu umanu restante, cumpresa a rivisione, necessariu per furnisce un'altra unità."
+          },
+          "demand": {
+            "label": "Unità supplementari cù dumanda prevista",
+            "help": "A capacità solu ùn hè micca dumanda. Inserite u travagliu mensile supplementu chì aspettate di fà."
+          },
+          "unit_margin": {
+            "label": "Cuntribuzione per unità supplementu",
+            "help": "Ingressu incrementale menu i costi di consegna; i costi operativi di l'AI sò deduti separatamente."
+          },
+          "hiring_hours": {
+            "label": "Ore chì coprenu l'affittu pianificatu",
+            "help": "Assignate a capacità à un travagliu specificu pianificatu, micca una stima generica di l'equivalente à tempu pienu."
+          },
+          "planned_hours": {
+            "label": "Ore mensili chì l'affittu pianificatu copreria",
+            "help": "A capacità assignata deve copre stu travagliu sanu."
+          },
+          "hire_cost": {
+            "label": "I costi di affittu mensili sò veramente posposti",
+            "help": "Aduprate u costu di un impiegu veramente pianificatu, micca u salariu di qualchissia digià impiegatu."
+          },
+          "hire_months": {
+            "label": "Mesi in cui l'affittu hè pospostu",
+            "help": "Da unu à dodici mesi; a stima annuale cessa di cuntà i risparmi dopu stu periodu."
+          },
+          "incidents": {
+            "label": "Errori evitati previsti per mese",
+            "help": "Aduprate a vostra basa è a riduzione prevista. L'esclusione di l'incidenti conta ancu cum'è riduzione di risicu."
+          },
+          "incident_cost": {
+            "label": "Costi incrementali per errore",
+            "help": "Esclude u travagliu, i rimborsi o altre perdite digià incluse in altrò."
+          },
+          "probability_before": {
+            "label": "Probabilità di perdita mensile prima",
+            "help": "A vostra stima, micca una valutazione di risicu garantita."
+          },
+          "probability_after": {
+            "label": "Probabilità di perdita mensile dopu",
+            "help": "Aduprate u stessu avvenimentu è l'orizzonte di tempu mensile cum'è a basa."
+          },
+          "loss": {
+            "label": "Esposizione à a perdita per quellu avvenimentu",
+            "help": "Esclude l'incidenti di errore è e spese digià cuntate. Questu hè un valore previstu incertu, micca soldi risparmiati."
+          },
+          "days_before": {
+            "label": "Tempu di ciclu prima, in ghjorni",
+            "help": "U tempu passatu da u principiu à a fine, indipendentemente da u sforzu praticu."
+          },
+          "days_after": {
+            "label": "Tempu di ciclu dopu, in ghjorni",
+            "help": "Mustratu solu cum'è un cambiamentu operativu, senza un valore monetariu presuntu."
+          }
+        },
+        "burden": [
+          "Preparazione è inserimentu di forme ripetute",
+          "Caccia i campi mancanti è corregge l'errori"
+        ],
+        "opportunity": [
+          "Capacità di trasfurmazioni supplementari",
+          "Cunsigliu di u cliente è tempu di rivisione"
+        ],
+        "outcomes": [
+          {
+            "id": "higher_value",
+            "label": "Fate un travagliu più preziosu",
+            "help": "Aduprate una parte di a capacità per u travagliu cù una cuntribuzione incrementale."
+          },
+          {
+            "id": "throughput",
+            "label": "Fornite più volumi",
+            "help": "Match a capacità dispunibule cù a dumanda veramente prevista."
+          },
+          {
+            "id": "cash",
+            "label": "Fermate e spese attuali",
+            "help": "Riduce l'ore straordinarie, i cuntrattori o l'attività di trasfurmazioni pagate - micca i salarii invariati."
+          },
+          {
+            "id": "hiring",
+            "label": "Posponi un affittu pianificatu",
+            "help": "Copre un travagliu specificu, veramente pianificatu per un periudu di tempu."
+          },
+          {
+            "id": "error",
+            "label": "Evite errori è rilavorazione",
+            "help": "Stimate diversi incidenti è i so costi incrementali."
+          },
+          {
+            "id": "cycle_time",
+            "label": "Finitu prima",
+            "help": "Mostra i ghjorni passati migliorati senza aghjunghje automaticamente un valore monetariu."
+          }
+        ]
+      },
+      "cta": {
+        "primaryLabel": "Eseguite una simulazione cù Sherma",
+        "secondaryLabel": "Vede un esempiu di output",
+        "primaryTarget": "contact",
+        "privacyNote": "I vostri dati fermanu privati. L'ore sò capacità. I monti finanziarii sò stimi mudellati, micca risultati osservati.",
+        "secondaryTarget": "how-it-works"
+      },
+      "currencyCopy": {
+        "native": "Quantità in {currency}.",
+        "loading": "Verificà a valuta lucale. E quantità fermanu in {currency} finu à chì un tassu sia dispunibule.",
+        "unavailable": "Un tassu di scambiu lucale attuale ùn hè micca dispunibule. E quantità fermanu in {currency}.",
+        "converted": "Quantità cunvertite da {base} à {currency} aduprendu u tassu di riferimentu datatu {date}.",
+        "basis": "A cunversione di valuta ùn hè micca una ricerca di costi lucali. Inserite i vostri costi lucali è assunzioni di cuntribuzione. I cambiamenti di lingua ùn cambianu micca e quantità."
+      },
+      "costCopy": {
+        "breakdown": "Cumu hè custruitu u costu tutale di l'IA",
+        "perUnit": "{amount} per unità di travagliu (media)",
+        "budgetOnly": "Questu hè u vostru bilanciu tutale. Passate à a ripartizione di i costi per detallà lu; nisuna divisione hè stata assunta.",
+        "benefitNotice": "Benefici mudellati, micca carichi. E quantità barrate sò spese chì aspettate di evità, micca sconti nantu à a fattura di l'IA.",
+        "remainder": "Altri costi operativi inclusi",
+        "allocation": "L'ore restituite sò capacità, micca risparmi automatici. Solu e parte chì assignate à riduzioni di spesa effettive o cuntribuzioni supplementari ricevenu un valore monetariu."
+      }
+    }
+  },
+  "translationIndex": [
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "ctaLabel"
+      ],
+      "sourceHash": "baf010c59a7e79529276f533b7cae8ca9c3fa1aafdc99dc884d71435c37bab11"
+    },
+    {
+      "path": [
+        "landingPage",
+        "badge"
+      ],
+      "sourceHash": "3207670ea000f76802512fa1d98904419dda5f62a6b6e82104ff97a016d81bd5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "headline"
+      ],
+      "sourceHash": "8f83396202e984d9ea6f733f0acf035aa7a401464757f2d3894b27490b35cda2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "subheadline"
+      ],
+      "sourceHash": "a700e1f4581e193e7b0049446aa30511dac1f9eaf5ad42cb82b73f305ec61720"
+    },
+    {
+      "path": [
+        "landingPage",
+        "ctaLabel"
+      ],
+      "sourceHash": "baf010c59a7e79529276f533b7cae8ca9c3fa1aafdc99dc884d71435c37bab11"
+    },
+    {
+      "path": [
+        "landingPage",
+        "secondaryCtaLabel"
+      ],
+      "sourceHash": "0ef9a34bdca80f47c8295ac165b33b8772e6c19f36336b239fd44998e5e5d54e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "featureTags",
+        0
+      ],
+      "sourceHash": "f1510d11abee10b3f52e4badb1e0e96d0d9cd8338fd6db4263162ee0a693037c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "featureTags",
+        1
+      ],
+      "sourceHash": "4eda8d99c6d7e7af9eabf47cec383314cac7253435927a4ec9a8c0049be6120a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "featureTags",
+        2
+      ],
+      "sourceHash": "33d7afab0bf85fc49fe7110485104df3e74430b6f5d25b40d37386c757538598"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "statusLabel"
+      ],
+      "sourceHash": "55461a6b3dc2540369e4adab56786c1a5cf02554557373994a4d7d3a875b834f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "inputPlaceholder"
+      ],
+      "sourceHash": "b81ad9789041ab1f694d376a4d4f8318c868a9fe72fdd3eb559714442f1b3a5b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "suggestedPrompts",
+        0
+      ],
+      "sourceHash": "13818b20d44dc1e6a31d2aa2899f93b2e34bfcef7009890ca5ddb1351836ac71"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "suggestedPrompts",
+        1
+      ],
+      "sourceHash": "eda9007c0527187bedbd8b61c8a4312aca907566bf02d9e4c5c97735a3360ae7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "heroChat",
+        "suggestedPrompts",
+        2
+      ],
+      "sourceHash": "45ffbc1cd010f50353d5c92fc8031a9d46562580bb716d9664bba54b2dd2cb66"
+    },
+    {
+      "path": [
+        "landingPage",
+        "seoImage",
+        "alt"
+      ],
+      "sourceHash": "ea4b197afe05f581acd2dfc8df4ca62f66df7d281ef04ee2ca8774231b931843"
+    },
+    {
+      "path": [
+        "landingPage",
+        "contact",
+        "heading"
+      ],
+      "sourceHash": "677b6431fb69dc6cb4dddd71e66d4b89c9d1b51617e0cd193941da30e8a95b10"
+    },
+    {
+      "path": [
+        "landingPage",
+        "contact",
+        "body"
+      ],
+      "sourceHash": "71fdb8d52712016bbad151ab6cf618d4feca04a335c5e04a0d4b42592c7dc74c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "kicker"
+      ],
+      "sourceHash": "a1ca4c0f9263c75137db908833e9995b72e4953af10c6c3af8899cfb6fd7c394"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "heading"
+      ],
+      "sourceHash": "677b6431fb69dc6cb4dddd71e66d4b89c9d1b51617e0cd193941da30e8a95b10"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "body"
+      ],
+      "sourceHash": "71fdb8d52712016bbad151ab6cf618d4feca04a335c5e04a0d4b42592c7dc74c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "closing",
+        "ctaLabel"
+      ],
+      "sourceHash": "348bdee88b259e606bbb42d0df63791d4cb92a1daebfde6e85fef2d02758d7ee"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "sampleLabel"
+      ],
+      "sourceHash": "037c352c8d4a60d15bed92d723fcfeaeca2528c8ac3168f5d46041aad95ab7ab"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "demoNote"
+      ],
+      "sourceHash": "efdfffd43000244a75403f43b3603bacbf544049f5fb819f5911b3358528cc39"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "openingReply"
+      ],
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "greetingReply"
+      ],
+      "sourceHash": "d0f423d99d9763d6271936badde1b64783ed988642d099eedcc878b6387553d2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "instructionReply"
+      ],
+      "sourceHash": "c4beafc41bfdb3e9495dbef28bb1bd8952539cb4dcb1e93d7c2e3cbd56e13d49"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "reviewReply"
+      ],
+      "sourceHash": "c389b5abb67474a1d0d635c0d8750cea558d25229b42fecc604b8f39df03e1ac"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "approvedReply"
+      ],
+      "sourceHash": "ca2f0c88d77a15809ab310f41dc50bc00cbbde2f69d4879c80a68d922c7af677"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "escalatedReply"
+      ],
+      "sourceHash": "69351dc401809e1a40a1b0a8a62726200100bc64671df7a27ef3603f4b8f4ef7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "fallbackReply"
+      ],
+      "sourceHash": "3f4e27ad0dded85db34ab88aab3583d866b91ef6a1468fb94461de2244e3ed75"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "uploadLabel"
+      ],
+      "sourceHash": "a24f6f2ce7600e202a827cb0b0c62ba4bad5a4adb670eabf593f73e1d4bdc5d4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "uploadHint"
+      ],
+      "sourceHash": "487a4dbbfff0f06840ef41f2d4d0454976589773d8671d74b83f20df4e0879a4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "analyzingLabel"
+      ],
+      "sourceHash": "6ccfca942d068ca0b79c4d71fddc11a15106912250bb9e7f93ae55e97e172244"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "questionnaireHeading"
+      ],
+      "sourceHash": "7640a34f7fd90c2ec68c5569b0a62f6c705c343c60f4819ed4078aa34fa1ef76"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "questionnaireBody"
+      ],
+      "sourceHash": "8e22d28e188619aedc071507b753e346409132f1e0facd6b27d81d010984834d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "answerPlaceholder"
+      ],
+      "sourceHash": "39138317171c1533a55665e9a7a2af35353c829bc21f2a47c2deb050e5e27acf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "voiceLabel"
+      ],
+      "sourceHash": "80172800fa0cd2b48a4aed1bea2ea6054e79814744562f0297171d393e8d5c02"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "reviewLabel"
+      ],
+      "sourceHash": "18c8bf8c95f3d91a70db37afef08462012f1a38b912ec399486084355e815a9e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "generateLabel"
+      ],
+      "sourceHash": "e15b548d4247ed97bd43d974df2e7cc105c0c113b0e8ebf352dad327b2d19ea8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "signInHeading"
+      ],
+      "sourceHash": "98445dce0fefc78b8bbbcefb1954f7c1f109d26e338cd2668db5711f759cd0f7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "signInBody"
+      ],
+      "sourceHash": "c8b7abb1482b229d859b61f27cf73547b88eb31708b38600c58bf98aa7f5dcec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "expiryCopy"
+      ],
+      "sourceHash": "2469b2eb80b03ca355099a7d45853b26fa7249ca3407a185656594870878c0b6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "captureAndFill",
+        "errorCopy"
+      ],
+      "sourceHash": "ee0258e5ae4542e690d9bf0bd923e361efc43aff779bc9961eb85bd565a8d1a3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "label"
+      ],
+      "sourceHash": "1ca2934f1186a2ac7a24df00e15297b9afa1c9a79a774a8ded8566e9524bf4ee"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        0,
+        "title"
+      ],
+      "sourceHash": "788996a7adfa48dd7c89b5b4fd7f49218368189330c52bd896d5fa8f38bf2194"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        0,
+        "detail"
+      ],
+      "sourceHash": "5cca4873bb89f06aa00a03f658e393128ab4b3cff7fffa620ea9f7c4650f06d4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        1,
+        "title"
+      ],
+      "sourceHash": "1542d05434e46d271d070e885f49ad43cffb0d9bb83685b7f51a00ef8409b6e9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        1,
+        "detail"
+      ],
+      "sourceHash": "c6e9e213a633e6c553183b8d5946356b58f3c1e73219ed5a6020f3a5254f4b4e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        2,
+        "title"
+      ],
+      "sourceHash": "f24ca9fea6d19cb457e82dbdae2b8438849c77084ca7625ed1ff290ed5f7356b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        2,
+        "detail"
+      ],
+      "sourceHash": "4f849ccc0bab1d0446c42ba2e3855aa02568fd6eb1ed65c95623139bd427e886"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        3,
+        "title"
+      ],
+      "sourceHash": "5b16619bd062d5e4dae33dc9bb78418bf95ec24140a1cbdf60f957ebe07a8ee1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        3,
+        "detail"
+      ],
+      "sourceHash": "d2a61ac96ca2306687ed6fc25cafc97da7c004c173ecf4655dee1eb2f9deebd6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        4,
+        "title"
+      ],
+      "sourceHash": "f53be3fa5eea705081edcd2329931a5107095d57291d11047db8253b42e0b879"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "steps",
+        4,
+        "detail"
+      ],
+      "sourceHash": "e4e07d97507e294747a7e7fc690324394259e3df6ae819e1148f45af7e3a51e6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "trace",
+        "reviewLabel"
+      ],
+      "sourceHash": "0fc827dd4d305334d485e893750582d94ec8c2a54022c87f504614c21949ae96"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "label"
+      ],
+      "sourceHash": "4fceedd8fca02c2121ae7ef574441fdce8291a2c08b0b699b8d85a826dfe5f7c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        0,
+        "label"
+      ],
+      "sourceHash": "20b71b66f3751526a2aab3eb19991467660be7e59ab94b4045c5a7bd8863da3a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        0,
+        "value"
+      ],
+      "sourceHash": "55cbcc293567686f4cc94cc18fd8f0084bee9da1e25ed9ca275bc435da1109e0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        0,
+        "sourceLabel"
+      ],
+      "sourceHash": "3154204f3c2c6595cb11123b9083984aeccf76617538a4c22501fdfaae45c967"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        1,
+        "label"
+      ],
+      "sourceHash": "feb9ccfe86756193ea12b13a171156c50a6d51f5b79047c8a904df9e43033707"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        1,
+        "value"
+      ],
+      "sourceHash": "e8be79b6507c996ba700c9498154a02924350bca78951db41573fc6a7d569a17"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        1,
+        "sourceLabel"
+      ],
+      "sourceHash": "3154204f3c2c6595cb11123b9083984aeccf76617538a4c22501fdfaae45c967"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        2,
+        "label"
+      ],
+      "sourceHash": "ea567f11c67cb75d9af961dca97e5bb3b4a6f4ff66b64666eda31428d82d24bd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        2,
+        "value"
+      ],
+      "sourceHash": "083e5663a1dc134065f9bb15d3b142512fbea6caf79e4218c5bc3c800fc4fa67"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        2,
+        "sourceLabel"
+      ],
+      "sourceHash": "9d374bf50e8e30c1f48095516fd0549036acfe0ce52bec043ad4b09b4e655d5c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        3,
+        "label"
+      ],
+      "sourceHash": "9de3935f08f2141dffea05d093836e7a2783246e4e93e01f17c2180ecf303c34"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        3,
+        "value"
+      ],
+      "sourceHash": "000c92eda9f794a98f769e0a52fb3c188db0918d10af7b6f61ce0d46db15d0c3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "fields",
+        3,
+        "sourceLabel"
+      ],
+      "sourceHash": "9d374bf50e8e30c1f48095516fd0549036acfe0ce52bec043ad4b09b4e655d5c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "approveLabel"
+      ],
+      "sourceHash": "d6581703a2b07adc0d85b48242dc0ab3c789c9fbc1df6db131fc6fe308a20ddf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "review",
+        "sendBackLabel"
+      ],
+      "sourceHash": "1edc0eca1bcb6679dd2abae938471959dc3922e25eaba052e6dc93364b8d4e2b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "approvedTitle"
+      ],
+      "sourceHash": "60ed57e639e1b8d7752df0676d298f2a11af18c4518aa1a91ec3704fa80df8e4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "approvedBody"
+      ],
+      "sourceHash": "58e9894ec51a091b24caf622e0a6de1d7bd4fef8c9acece4c29a6b2c27a99bf8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "escalatedTitle"
+      ],
+      "sourceHash": "a3b29bda702be3d9e8aff422fc384538fcdb33d327e2b727276e32c1c1425780"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "heroDemo",
+        "results",
+        "escalatedBody"
+      ],
+      "sourceHash": "5bda046675b5ad7b763d83573707c7b7918f8509fbd1909d4d651b59f4a98464"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        0,
+        "title"
+      ],
+      "sourceHash": "83d38b8495e5edf6eb2250ce9e82975da0472657522f6507a2d963c2fd70c1a1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        0,
+        "detail"
+      ],
+      "sourceHash": "03f551e8e3f364de050724611eccbef476229515fc9401e1a7844b62abf7b53d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        1,
+        "title"
+      ],
+      "sourceHash": "4cfda67a5b6d1f2553faa6c5cd68d45a34b50afa6aac15c1f4f90c2efc4699e8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        1,
+        "detail"
+      ],
+      "sourceHash": "3c27d36f29ecbe154f8c979b2d863edb9c7707bb53a7346ee0d2cb9d97c56585"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        2,
+        "title"
+      ],
+      "sourceHash": "984b9d3829d966a03111141e2340351a90f6e05bb4ccd3712e5c9f56302571e3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        2,
+        "detail"
+      ],
+      "sourceHash": "3f537f557e83eea800bed33339a36a80b7b770b7444790aadf4e00e0afefaa2c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        3,
+        "title"
+      ],
+      "sourceHash": "e64125c15a26f350ba021e01a89bc324df357a540f611cbdc33942ef4d685653"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "proofItems",
+        3,
+        "detail"
+      ],
+      "sourceHash": "e32ab12f76631190345dbfd64be224d5f7a11b6d6fb60651bbdfc46fff5692e3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "kicker"
+      ],
+      "sourceHash": "87224a586d793009c5195b156d63fd0ea052351ab05245d1e455572f7b002597"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "heading"
+      ],
+      "sourceHash": "aaf940e53814cd5160b342c5daad6dabece43002c629bca31537c287df89ddad"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "body"
+      ],
+      "sourceHash": "8eb9e5b96741098055a32b37d1fc0293e6e7b9702a8ba50cbda45ec888932912"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceLabel"
+      ],
+      "sourceHash": "a6323f5e8e4986eb02079bf173ff5221b728cb922badc27ba9a59dd6bede9d38"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceMeta"
+      ],
+      "sourceHash": "79d61e057e57d73bee6d58c2d58289fe81f1bf6a5ea922c601cbf54b3478f137"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceStatus"
+      ],
+      "sourceHash": "de9f5d2dd16fa56bc228c7c994b1f3fec75c74d49f83e7927f72ca99866a8ced"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceBody"
+      ],
+      "sourceHash": "2a44438de23ca507f4c79602bb5b9dc28a5d31c27a7212800744cf9690fa1756"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "title"
+      ],
+      "sourceHash": "c12c9f4d462da8033b717b6bab5ddea84246457f3fe6efed5ebb46146296b15b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        0,
+        "detail"
+      ],
+      "sourceHash": "14c89abd49ef7911e209574309c02ed34aaf463c078a710e893d76443b6cabc8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        1,
+        "title"
+      ],
+      "sourceHash": "e191c6730c324666e8d252e370684ba881b04131aef9a7e8e4ca9ffee90b163e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        1,
+        "detail"
+      ],
+      "sourceHash": "68876031b000980cd1299419ea565243ec0db79d179e5ce4976f40bdbbe070ac"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        2,
+        "title"
+      ],
+      "sourceHash": "ead9799c6e245ab0cd460017091e85a6c98c826e90abd5eb1fa15c106b11d56b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        2,
+        "detail"
+      ],
+      "sourceHash": "418872ca8120b86dd89f85f3024647b8df82adb7c82f3b42b6d638ce0acd8ce8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        3,
+        "title"
+      ],
+      "sourceHash": "3f8caba4258accc1e272f171794fdd01b2e1b7c6cb0c78458746004160992bc2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceSteps",
+        3,
+        "detail"
+      ],
+      "sourceHash": "d9112da326ababc7a4fd87ab7528adbc3e85e4891bba2af8e99310f35a36df8b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "title"
+      ],
+      "sourceHash": "9b9b6cd9bdafd710938ca97c8fde32a84db1a4bd49267cb8c6fe28b3ef484e2f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "body"
+      ],
+      "sourceHash": "dcd6ceb096fe75799a192724ddabca92495f19acf7bc6d935507f1cd2646010d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "approveLabel"
+      ],
+      "sourceHash": "16067e6f5261b192b790a7115ea0b2dbb5d5d3a4f03224470717ded5424afb4a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "traceAction",
+        "escalateLabel"
+      ],
+      "sourceHash": "24330e0f62ff8fc6157bb58fdb6ff0ac0debc8bd8e6cc45e9a680b8c9a61b9bf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guaranteesKicker"
+      ],
+      "sourceHash": "2214af013035e3455bc2fcec8cde0af29986f22660c820d4f048006157d9d3b1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guaranteesHeading"
+      ],
+      "sourceHash": "b5cc39ace72478651405429dbf1faa1e4676f47167801ff9c3d6ab59be3b5dbe"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        0,
+        "title"
+      ],
+      "sourceHash": "3ef28cff2c840c9c89d6d645f4e35e2de1c6f199207b945f7b75e68fad73c725"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        0,
+        "body"
+      ],
+      "sourceHash": "99c6d4eb95997e7315ee03aae327f465aff0cdef3d5dbb831c3693c8ee76f93f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        1,
+        "title"
+      ],
+      "sourceHash": "f1510d11abee10b3f52e4badb1e0e96d0d9cd8338fd6db4263162ee0a693037c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        1,
+        "body"
+      ],
+      "sourceHash": "38645ba0f8e092f87ee04cff2d8bfde32287bb27c1ac09d431665f74e151a20c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        2,
+        "title"
+      ],
+      "sourceHash": "22bbb9961347b568a953df5eabdf0be2886629c0d68f354f686a109f95d094ed"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        2,
+        "body"
+      ],
+      "sourceHash": "04a5254c22d9c3b0457ab0b6a3175827eb4363b906b10f7e6212e5d0447e64d9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        3,
+        "title"
+      ],
+      "sourceHash": "e05891c644c340613ffcdb7d7924d6c7a8196784754457efd1f03893c69e5119"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        3,
+        "body"
+      ],
+      "sourceHash": "daf10ba417824e367f93ca25a38ae75dd40445ea46ed392373d93032083dac75"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        4,
+        "title"
+      ],
+      "sourceHash": "a6ba1eda9af47dece790b8f77a953b8393e107e37127309837a1f6c78c3943c1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        4,
+        "body"
+      ],
+      "sourceHash": "8531cfac29dd82708cd01e2a2d727120ebd2d60c7a8c7a7aee45974b3ed2493e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        5,
+        "title"
+      ],
+      "sourceHash": "6f1f9115596eb165d78ef5cbd6d7953b3cad15ef687fd1bf885f532d242fae8a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "principle",
+        "guarantees",
+        5,
+        "body"
+      ],
+      "sourceHash": "e8d839d9cbcc2142e235fc9cd7f98c56a35f8d0a1734b7cdd5aa328b200c4306"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "kicker"
+      ],
+      "sourceHash": "2654548b130de6db858f506fd99e162adb77883b17fda53e8d84d92c57f38a19"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "heading"
+      ],
+      "sourceHash": "c367ae9f33368860cf4b0ab84ab11bf36e10b2b5e2c8c775bdd64efa64d73d35"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "body"
+      ],
+      "sourceHash": "20f820eeba83a152a5089d842523189bfc3c4f4d1346f49ac4a4d5071f2689e8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "title"
+      ],
+      "sourceHash": "fa19a69106f1350ab9e6926f919ce30bf9a8100306709d67878a5474e593c673"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "body"
+      ],
+      "sourceHash": "46cdc3d84b2fda70a3ff0631eff390990b06a9fe79022cca55fbc6e15f692ec4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "metric",
+        "label"
+      ],
+      "sourceHash": "1cad1a673902e756e61675cc1ed9cec7913aa7095580fa12714005c03c54d341"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        0,
+        "metric",
+        "note"
+      ],
+      "sourceHash": "783fbef62254ee7f3fe93339400b11a88a030a242c4eb8f8e9d5cdc2b328cbeb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        1,
+        "title"
+      ],
+      "sourceHash": "7f67335ea7e629966272fddb358e01d1c6770d90f6eb0f51fd24224bfb2ecba0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        1,
+        "body"
+      ],
+      "sourceHash": "f9cc58e43ab7adcc642aa388e8e26cbe23e253fbc69cd9202c793a8602d9eeb1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        2,
+        "title"
+      ],
+      "sourceHash": "9d1f7a37ce892feddcaaa5bd7a394f4e9e6c68b57d1ac087946b73b0dfd1465e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "impact",
+        "items",
+        2,
+        "body"
+      ],
+      "sourceHash": "8cb13ac20834ee702b231bbca12f5ae6686ee5d9719af2e2f7a281bd2784029a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "kicker"
+      ],
+      "sourceHash": "c49ab060704eca9708fbbcd6243c46af576ded60ec0630c6338a5f45c91042d7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "heading"
+      ],
+      "sourceHash": "04011bdb88e17070c1f54446671c5ee7ef5e0af2f52102d044bcfb50bd234b02"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "body"
+      ],
+      "sourceHash": "14f6c73143167d2ee04383edc301955a0033a5d9ea47f353c74a86550e63b566"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        0,
+        "title"
+      ],
+      "sourceHash": "83d38b8495e5edf6eb2250ce9e82975da0472657522f6507a2d963c2fd70c1a1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        0,
+        "body"
+      ],
+      "sourceHash": "56aeb8d04388b993e36ef07a1695ea68b8d4d37f6e8e3c3973ac2351bedeba03"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        0,
+        "output"
+      ],
+      "sourceHash": "23ac5bc3758292a88236f910c169e97cd406613b5aa10334bae7db46d7950bec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        1,
+        "title"
+      ],
+      "sourceHash": "4cfda67a5b6d1f2553faa6c5cd68d45a34b50afa6aac15c1f4f90c2efc4699e8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        1,
+        "body"
+      ],
+      "sourceHash": "d38e9645d3bb25f9fa2e6f2827200c1b96aa438aa0c0809f8357eb29b05886a3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        1,
+        "output"
+      ],
+      "sourceHash": "1542d05434e46d271d070e885f49ad43cffb0d9bb83685b7f51a00ef8409b6e9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        2,
+        "title"
+      ],
+      "sourceHash": "94aa057a2b9a672a2660f5053dd6226db26fe1464e707f455fef933faa482248"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        2,
+        "body"
+      ],
+      "sourceHash": "b6a61ff557ff32a6c8842c4b9d0749618643742cad4f66e6ef09ce4f0b589c6e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        2,
+        "output"
+      ],
+      "sourceHash": "ef7b8db13cffe4b3aab4735eb6353f92a494579b5edf82576f8e7c893e023e40"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        3,
+        "title"
+      ],
+      "sourceHash": "c79a0625ef9eac83de1b70ca5d278c681690d37d5e90eb517f6c60d6b0bae010"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        3,
+        "body"
+      ],
+      "sourceHash": "b4c0c5a9f2bb687e8cb060ff771f3eeaba65e319fec8adfbee4a9a72ff5f49ec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        3,
+        "output"
+      ],
+      "sourceHash": "dd66ec817e6fb8c94a4e0bf579e2cea0d7a0e03f818c6ea4d9a89a3a5b1de298"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        4,
+        "title"
+      ],
+      "sourceHash": "eecfdfb3ab5a457b1f48b0e3e59318aafdf616d96049a0899312725b9d517941"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        4,
+        "body"
+      ],
+      "sourceHash": "bc56c231dafe11b770b4bd67ac22ed7a614430b788aaa55e9a16dc36807e94df"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        4,
+        "output"
+      ],
+      "sourceHash": "e6cde3a70c75a19f4a89b25395a71a4d329c7b18bb75d16f4117dab88ad89302"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        5,
+        "title"
+      ],
+      "sourceHash": "09374dab3469a068b0a913e4e7d1934d0bec971ffefea46220e9ae1ef8146186"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        5,
+        "body"
+      ],
+      "sourceHash": "17038b4302374f75de7c8dd54ce8c4a63558066f7da9c18b01b4c64519ce2bff"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "process",
+        "steps",
+        5,
+        "output"
+      ],
+      "sourceHash": "98e81d4d32b9ac125039b9508846cf9eb08fffeb4f98b23a5f7c90a01ec9e682"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "kicker"
+      ],
+      "sourceHash": "e5688f1d10ae810dd0b19aa1d4e34c282bc34b72733bf1da7a8fe56499338041"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "heading"
+      ],
+      "sourceHash": "59ec77e43c581a3992ae734cd15f3877185f16b0ec37bdca158417978a3c4f67"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "body"
+      ],
+      "sourceHash": "7a4330b0b01ccb2b537c3d6ff0c713cf387e998c5690a9369950a859b835cd7e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "title"
+      ],
+      "sourceHash": "65d9eed0f5456861685c0f37d99740d27134c2e3ac7bd59691930728401c6f39"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "body"
+      ],
+      "sourceHash": "771857f2758697c170fc022ec007a7879dd9209d671fd36014e2faba2bcca9f3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        0
+      ],
+      "sourceHash": "1da9c98b0e9b085763282f8110a8eb3dd5a570c3f92f7b47cd030955a7ced17f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        1
+      ],
+      "sourceHash": "b7fc7a4dba93845aa20f68e8269757e258cdb934606744abeedac7a4a84ac292"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        2
+      ],
+      "sourceHash": "02da2e0c2d5db927a32effd2800ad123638a3369fe09833bbe435dc5109d6bab"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "steps",
+        3
+      ],
+      "sourceHash": "88c0c913c93acbf52e97826bd446a8aba6e5d6b6fdbd0db842e74a3fe6435b7a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        0
+      ],
+      "sourceHash": "877b290263cd28d0c10057b32d3dbf263e0ee25bbc490536580bdab9a0830555"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        1
+      ],
+      "sourceHash": "c10c2cb84ac6c946aa111869008a9be891d4f4a252d65f75906b00374665e946"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "connections",
+        2
+      ],
+      "sourceHash": "ad0dbfacdff9a1b2e5434d8fc933b168cce1d5b79087a4f852a892c7eec73683"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        0,
+        "note"
+      ],
+      "sourceHash": "3caf730faf58bcedea76784573476131b62ec9a369a57186b1b062e4301f747b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "title"
+      ],
+      "sourceHash": "6fbf9084533889bc09a59774bf7c3f68157d7e1d69db1278540250cc50bfc0bc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "body"
+      ],
+      "sourceHash": "ca4137ef242414a9638e1627239b348a98eabd6017235a9868930a59169d692b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        0
+      ],
+      "sourceHash": "c0a9d0cf75dae98cc5dd2524682b68ef8888696c36b38d6ae9f81ee95aef617b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        1
+      ],
+      "sourceHash": "e89e487421c1524c67e131f92f579e30917a4c8e9d358cc3beeedb07438afaa1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        2
+      ],
+      "sourceHash": "504b0a62db60e24a79e081df13a7e3f5a7c892f062dffd7dc124eb199aee86c3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "steps",
+        3
+      ],
+      "sourceHash": "c60405e2777fe41749e37bc000eb7d60c1921f6bf456c9366ef6e7996c126c05"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        0
+      ],
+      "sourceHash": "d292d0005b2428d193004470dfff2d5643338fbae7b9d76c91b211a6d25eb2c6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        1
+      ],
+      "sourceHash": "70bb7510310019337c9813bc4d79880c37be6893dba062e8fee895e83d79905f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        1,
+        "connections",
+        2
+      ],
+      "sourceHash": "2bef967c3a274617b6ddeec44ee855d32d4d1754bd71637764bbedad8e6b6765"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "title"
+      ],
+      "sourceHash": "7de1622824087d1b2e361c9f313e958f527c0473f69d58ddd0dfc23c6de0fe3e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "body"
+      ],
+      "sourceHash": "9dd69f8e3e3ba2f574903e5e3f066da73b622804c3b6d0e2b06ff821b409a61e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        0
+      ],
+      "sourceHash": "1f49980aede068e3fea8bcd804938c56dd9d7f9ed2c4773977f8a3f4c46b7d5a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        1
+      ],
+      "sourceHash": "4b183ed9a42cdd5006da2511d4ccc686eb018bac15a70992e84497d47e7b2a35"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        2
+      ],
+      "sourceHash": "02da2e0c2d5db927a32effd2800ad123638a3369fe09833bbe435dc5109d6bab"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "steps",
+        3
+      ],
+      "sourceHash": "d02c74dca7b311d12ea1fa11ebddc37b5e784326535f22ad0f7f253ff623dc10"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "connections",
+        0
+      ],
+      "sourceHash": "68d1bf3d6cd637c35f620fd552934ef4df9ae88a7adc0bc4adc67b77089ec68a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "connections",
+        1
+      ],
+      "sourceHash": "55deed1781f11aa50062b1221c1a119e976d3dd862e80c501d5023cf12e9197f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        2,
+        "connections",
+        2
+      ],
+      "sourceHash": "10682f867e5040658c574c35a6eab8c5ab7891c4ade2febf847d1e45d87fa561"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "title"
+      ],
+      "sourceHash": "21cca8d5e71e29d5691dc50315a8a2c0830980ff45ba4bab1eab22940dc98033"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "body"
+      ],
+      "sourceHash": "0960cc691a2969174f9233ec22d6a749d67180745e9efed25c04fafba6c6c674"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        0
+      ],
+      "sourceHash": "4ee6fc974551129fdc2476ee7ee29755175b926b32be602a2c3194003a2fe267"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        1
+      ],
+      "sourceHash": "a0d1c6c2a91d7479cb4edaa759ccfeeb2ff33b2254a0dcbf454a3e333f7f8600"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        2
+      ],
+      "sourceHash": "16779a9901ac1f04f589b7fb347915e388fe07c89c4acf6ed2cfd63fda4dd3b9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "steps",
+        3
+      ],
+      "sourceHash": "472de47435add10239cc2c86870000d3a93d7369a4e16ecd4f99779c6bcdcaf4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "connections",
+        0
+      ],
+      "sourceHash": "81fe939e54beec94dfddf94a397491a0e113f6ecc5a00e7e3c66c61ff8807526"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "connections",
+        1
+      ],
+      "sourceHash": "2d387da19bb0e42e1c6c4e4d5cc0dfa1531aeef9f190dba203d7968f24e1cc33"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        3,
+        "connections",
+        2
+      ],
+      "sourceHash": "012feb8ffaf1ea3aa20e1e3c39d35a6cfcfb65db1c74b45b3754f4cef08f37d9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "title"
+      ],
+      "sourceHash": "53cebfc8490c99a2e87020ca129ab1dcade4cbaf6affdcb5e1ff259aa01fe768"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "body"
+      ],
+      "sourceHash": "5318496df481413495501991b648f8c85d0018671c2a32e95b4bf583943b692b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        0
+      ],
+      "sourceHash": "7e5109d0b146528c6313eb9a2b82c2424f9265dbc35b8056e02920057bcac0b7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        1
+      ],
+      "sourceHash": "b7fe1611721a9bdc3c3a95a2711e5375ab911e3e2c1b8d41161abc697337fe49"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        2
+      ],
+      "sourceHash": "831b00f7e18449a1ea26668bc00578e5757b38f95cb9835fe0eccf852407d315"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "steps",
+        3
+      ],
+      "sourceHash": "c377360006d61cc39bb064df38d6b9dd01134c3851bfc7a8fc00f96739fb5641"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "connections",
+        0
+      ],
+      "sourceHash": "d5ca6e8dd2ee745ff00aa7d06ca854e12642b8644fecb38288c9f6af88554368"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "connections",
+        1
+      ],
+      "sourceHash": "38442fad780455b7c25184760241aca724a56d66917259eeffed6a6e2349efe1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        4,
+        "connections",
+        2
+      ],
+      "sourceHash": "8bcb40ca4dbb40a8f1956a86533e126dc28cf066ee9aa139010df33f6e86a8e2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "title"
+      ],
+      "sourceHash": "24962f0f51f477284955dd500e21f8d4640e26b1110f58f3efdfe3e9c0d06954"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "body"
+      ],
+      "sourceHash": "c4712735110d4acb24250b287912d3e960d12ac45d9e2cb4e8ca9a48c568d389"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        0
+      ],
+      "sourceHash": "d392fceb940f4223c961db0ebd0887b51b12702ccc06b672fd0c7551e0b65256"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        1
+      ],
+      "sourceHash": "dbe03809d30f83b88cfdc806e609e73385b8543aa0d87b0f4cdc6a77562dc268"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        2
+      ],
+      "sourceHash": "6d2ccdfe4add22ab7eae2c0ad36d3824b8d2bb1d8a12192f29643ae42b211139"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "steps",
+        3
+      ],
+      "sourceHash": "d02c74dca7b311d12ea1fa11ebddc37b5e784326535f22ad0f7f253ff623dc10"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "connections",
+        0
+      ],
+      "sourceHash": "d6c6903e357a053ceae7c2a94109548768662957f881f87d48d10532358c31c5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "connections",
+        1
+      ],
+      "sourceHash": "41d565c0bc809cc5f7c79bd85bf4df5b223ad9cf745d5e8304bfbd7fdcf6614a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        5,
+        "connections",
+        2
+      ],
+      "sourceHash": "a8e0b135317bed0020ca0ca56e1c96a949ff607adcc4d033e3b11dbd4d4882d0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        6,
+        "title"
+      ],
+      "sourceHash": "c8dceec2f1e2ca5baeaa3811ab432759aa591e62ea6dc535c862ede068e3b39a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "items",
+        6,
+        "body"
+      ],
+      "sourceHash": "64303d9df5a9c4f51a6bb3fe0ba61f18e959c5d11fc2fbe885941b3e1f547306"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "heading"
+      ],
+      "sourceHash": "b84e55e041b09d4982e9b5ba4a1dc8c3091a355150240e9b0c5327af13913e93"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "body"
+      ],
+      "sourceHash": "f6c50e2119f4f373fd3b784e009df185ec0b5e1ade83c77e0763b08c214c7231"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "ctaLabel"
+      ],
+      "sourceHash": "4441954746fc71145f13cf5823bf8d7aa41b152936dd8dbfb35bd16276f9ffec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "note"
+      ],
+      "sourceHash": "ff38588dc9647b080427d306e36611a6bc4dbdb15d8238ffbdc2d1a83e43991b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "successHeading"
+      ],
+      "sourceHash": "bd2d43290652be9d1c8c8059b458a01129e1457829fb4bf2b6cd0491ad8336d5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "successBody"
+      ],
+      "sourceHash": "bbe93e485be0e0cc756c5e7989b1e5e98f5399cb481475094867254b4de416dd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "editLabel"
+      ],
+      "sourceHash": "65e14133df97c6278ec234be49df25df4d9da28a60108e85d993f73cc531898f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "useCases",
+        "customIntake",
+        "emailSubject"
+      ],
+      "sourceHash": "0b4085b88a612c6a0276d53a59d9668f348e4b01fa22c261f03d13b0569420ed"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "kicker"
+      ],
+      "sourceHash": "46f6c8e771f07c04b68c556e2f01a56f0ad5a3c7799873d671d60aa99913069a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "heading"
+      ],
+      "sourceHash": "b7161ad7c79045c39d4d660872cefd3c57c9d691ca3e66f26d805fc57b8f0290"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "body"
+      ],
+      "sourceHash": "651e243e0fc321589cdf0c9f198557cbdfda4207c0c4a37ae4ff1f35bbf7e2fe"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "before"
+      ],
+      "sourceHash": "8bf86fe903a2efa0b9c559efa16b4634949ece85745d6b1027ee4640222c04c0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "after"
+      ],
+      "sourceHash": "29c44f3b1435dd1513a38c26c7a889178c108230b1b365d2dac359c9d6336c77"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "linkLabel"
+      ],
+      "sourceHash": "ecc4b118093a3ee65133055aacce42de4526e9f85e0925ad816e743185df2b51"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "emailSubject"
+      ],
+      "sourceHash": "53f665ab396fd95e5f0936122e6cf508aac5b58cc4e1193cb459b8e40e4cd344"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "label"
+      ],
+      "sourceHash": "16e6c055018bad8fe86b581c8f7e183e75274dd7500dd114b31c85a6794437f0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "period"
+      ],
+      "sourceHash": "c67b3579fb0f100ed634c325ffd32d832e7000a4b13da13138336d6c0ecb607b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "label"
+      ],
+      "sourceHash": "d056c1746709690c190d4321b69945a769bee429cca2a7e6bad0a274773f2e32"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        0,
+        "value"
+      ],
+      "sourceHash": "ab3c69b270235e3d44d08db6e469a98826f1ceee11060844e59158f521a0dfd5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "label"
+      ],
+      "sourceHash": "7514b2438ec728d78c8270eb5366d02c4e587809d4680df73cea337fe107773d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        1,
+        "value"
+      ],
+      "sourceHash": "c67b3579fb0f100ed634c325ffd32d832e7000a4b13da13138336d6c0ecb607b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        2,
+        "label"
+      ],
+      "sourceHash": "41e4e6346234ed2554ab7b7800eddffdcda612c52d7a8e21284232989ce9b8e4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        2,
+        "value"
+      ],
+      "sourceHash": "9d68f009d5957810cdce1afc8c45f9f0e232e3e764fa02996fd897745f7e1f49"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        3,
+        "label"
+      ],
+      "sourceHash": "cfdba5becb9c71c489711f0a92f47608d3ad4c42a123c4a578081ac8a5a7469d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "rows",
+        3,
+        "value"
+      ],
+      "sourceHash": "a5c5a3e708da0a56157bec4f903d3e01e9aadc977bc41bed72a216faedff2c71"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "summaryLabel"
+      ],
+      "sourceHash": "0bed655a893491c533d6a55584df4a3dfdb305d2e9ed3dbdcaa80c38832b4b8b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "summary"
+      ],
+      "sourceHash": "51f5ca10134c5aa18eebf4b2f29e02e739ee839910e942f61f1b2640b8179daa"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "actionLabel"
+      ],
+      "sourceHash": "24ad151cf3c2765929e676754c8894e8c485e9af4da44afbc04227d9ad90f7eb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "actionNote"
+      ],
+      "sourceHash": "540bd8abe9cdd3c5442cf0d1058e111e451eaecf125a0f35202656eeb834b0ee"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "workedExample",
+        "card",
+        "note"
+      ],
+      "sourceHash": "ca730913fbdcbc3c36609c3949f50374863e4bb852ffcbc0c49f708f7061e8dd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "kicker"
+      ],
+      "sourceHash": "6c2ddee9160d86ffc558486a30eec15043c9c55cf6c06291271b2a0ad76b5432"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "heading"
+      ],
+      "sourceHash": "72411b4ee16facac2b72c9cffa15f66b038fe8b8676df6cb05a20b651b30e3d0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "body"
+      ],
+      "sourceHash": "6038ef64fe27b95a88add097ffa4d5f2fd9a94252e6f61fd8432d073e57cb39c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        0,
+        "title"
+      ],
+      "sourceHash": "fa15ae67863e605a8e8aa70e025a7c6b37e22add19cc6090a5afd5fe215e3deb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        0,
+        "body"
+      ],
+      "sourceHash": "b2a9ae637b331e7ac3710207c9d3eccd668eba5d1b2a93420e95ddc4f5228930"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        1,
+        "title"
+      ],
+      "sourceHash": "ea734961f706ba65f246401182f1e715e838b1a9f4276205d00171e332b32d9c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        1,
+        "body"
+      ],
+      "sourceHash": "8b69639c4efc9d388a2c1c3a3ac9aeee9a5b9dc3d435bc9888d4dc4b3edebd85"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        2,
+        "title"
+      ],
+      "sourceHash": "112ba26697171fccf6f7a48c6063efb0758e3610c280e5acbb5817748c57d84f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        2,
+        "body"
+      ],
+      "sourceHash": "b51d8502037cdffb14d35326247ba1886db3d8e9e175c285c6fde0d1dd25f6b3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        3,
+        "title"
+      ],
+      "sourceHash": "cc3128d786a3282c66d91b055c623049193ef115233aff99c32e08967fa790dd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "points",
+        3,
+        "body"
+      ],
+      "sourceHash": "86abc394eec30bd0b6199c921c1bd3985eff3a487d7febb9debe17b7c8992061"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "label"
+      ],
+      "sourceHash": "46b0e6f1eea0146a70b3263873dea3b8beda20e8540aa2b51be8b50b0b1d488c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "badges",
+        0
+      ],
+      "sourceHash": "74ef5638954c2d9f9849d0f0d4b6073c55a74eeaf263ad65fb73caa986bba20e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "badges",
+        1
+      ],
+      "sourceHash": "ac8cbd53cf4b5f17fa5d7683bdcb774f5d8d8a3bed6935820d853956738ff331"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        0,
+        "label"
+      ],
+      "sourceHash": "b3fa228e4395db8e708506ccf71becc66437703f85e5ce92081b71a7d9af8ca2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        0,
+        "title"
+      ],
+      "sourceHash": "6bd41e97ee2bb161e5643b164388eda003111f0b1c816e675bf9f21e27b49e3b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        1,
+        "label"
+      ],
+      "sourceHash": "4cfda67a5b6d1f2553faa6c5cd68d45a34b50afa6aac15c1f4f90c2efc4699e8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        1,
+        "title"
+      ],
+      "sourceHash": "df927dc87f9a6253692b7996f08d39fc3c0aa195e76ccafd23d58147f90b332c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        2,
+        "label"
+      ],
+      "sourceHash": "2c78c0f9c75767e7295c6486aad4374e2fe850d7c30eda00920765d1f6dbaf6e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        2,
+        "title"
+      ],
+      "sourceHash": "675aa6a7e125f64213355df87c790fcc4912fc412bf39132163e15c6f2c4a0be"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        3,
+        "label"
+      ],
+      "sourceHash": "df216552352378ab52125268063d17eab907594d789ce58b85e1fe72125fe694"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "steps",
+        3,
+        "title"
+      ],
+      "sourceHash": "366daca1a0351b94bc225ad3a99339ae6f74e1c4fc2be4ccfde47896d54d2877"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "approvalLabel"
+      ],
+      "sourceHash": "ce8a2b7672328f42bee1b95d9389b5eb3f5b73fcb520d6331e18d844af8a323a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "executionLabel"
+      ],
+      "sourceHash": "09374dab3469a068b0a913e4e7d1934d0bec971ffefea46220e9ae1ef8146186"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "sourceNote"
+      ],
+      "sourceHash": "fd96d2f445733a81a58ca3bce450c5b84fd9ee7aa5448ad47917d2692d552f53"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "control",
+        "boundary",
+        "guarantee"
+      ],
+      "sourceHash": "29a3c09ee831524c80ced4a14f1fb5b73f4a3f01c1e01f353b34114eccc26077"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "kicker"
+      ],
+      "sourceHash": "7d1c3ce881283a891f21128f71ffaa2c3883b21291213e9aa8ae28f9e1342d97"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "heading"
+      ],
+      "sourceHash": "4028fe48cb68e50eda33ae943e03e50066a61a9f1a5f0787bb5f0140f6ae06e0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "body"
+      ],
+      "sourceHash": "3e781de0ccdf00441669133ac62d1fd4306f74e42998779addee683efcdaa4b3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "formLabel"
+      ],
+      "sourceHash": "a8abedccd77522cc4d2b327adcab6fc656e153322ae6ab945ee2fac269f93e1e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "ctaLabel"
+      ],
+      "sourceHash": "4441954746fc71145f13cf5823bf8d7aa41b152936dd8dbfb35bd16276f9ffec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "successHeading"
+      ],
+      "sourceHash": "eae942642ea0bb3db2387638740d091fac642ebaeebe0d72eb51b4d3ae9f2c9e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "successBody"
+      ],
+      "sourceHash": "7a4fca71f8a77936a120ef48e1125fb9d2c0b805e19abaa1d12f3bcf4faf4ea5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "emailLabel"
+      ],
+      "sourceHash": "b71a2444037cec5d8984eb6144bf7136f681e4d5dea78f51a7ab9696fb84d7d0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "privacyNote"
+      ],
+      "sourceHash": "8c4f0ec0a5d7a22edc2f03440e18b779330896b14019d08b42cb371fc4976505"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "leadCapture",
+        "emailSubject"
+      ],
+      "sourceHash": "e846e2f5468c7a75fac40deae01eed32128253711814d99189c82a0b61148e1c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "tagline"
+      ],
+      "sourceHash": "558782a6afbfca32914a44549cf81b8a8a90ee9b20cd6124d3e3345d0eea66d7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "label"
+      ],
+      "sourceHash": "44d687258e51ee9f5ef7a4b679f6cbfc303e77d7419538de521012569bc2d204"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "links",
+        0,
+        "label"
+      ],
+      "sourceHash": "9e44d189fa7fca20444cb42a60cf75968ba1c05ff2cbd8e49b8142deeb87935f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "links",
+        1,
+        "label"
+      ],
+      "sourceHash": "d7b9456333e85dfb14f301dfa03b51f3a2e6da7e5351ace940eab7fba6bd9282"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        0,
+        "links",
+        2,
+        "label"
+      ],
+      "sourceHash": "60c58d6b7c895f77c70e4b4abcfb029fc9c0e20ef90e6b5ce639d839e53a2d1f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        1,
+        "label"
+      ],
+      "sourceHash": "2fd421661187f496083bc9fcd82b89c3f8877d2408fe4c8e8d9d692b4baf8486"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        1,
+        "links",
+        0,
+        "label"
+      ],
+      "sourceHash": "bdb25f2077053e427b310888b6e85e4a200bc42173f5b68fa6d1b509625c4ce1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        1,
+        "links",
+        1,
+        "label"
+      ],
+      "sourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        2,
+        "label"
+      ],
+      "sourceHash": "09b538d1d0faee759e943120333491a6c0c394d65e836a0de6f06c45e6b0b635"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "groups",
+        2,
+        "links",
+        0,
+        "label"
+      ],
+      "sourceHash": "baf010c59a7e79529276f533b7cae8ca9c3fa1aafdc99dc884d71435c37bab11"
+    },
+    {
+      "path": [
+        "landingPage",
+        "formOperations",
+        "footer",
+        "copyright"
+      ],
+      "sourceHash": "9fe35c618503b67f10ada92996224c1de242aa31c66500f5ea41aab539ab09c7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "kicker"
+      ],
+      "sourceHash": "65ce8fc42e0aa7c47f6dbc41cc0031d990c34ae8337e6e558ee74ca06d6c478c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "subheading"
+      ],
+      "sourceHash": "b334757f1699e9cd785312f94a62fed67cac2f5c4eb4bd6fcc8355fa974b73f1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "disclaimer"
+      ],
+      "sourceHash": "a35a78bf788f1997115213a9a1f810b0b58a968c5353c0853868aad89823ad53"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "workloadStep"
+      ],
+      "sourceHash": "75338655fa1bf40fb5dc2aaeccc1b2c47803e8030c02df965f85e27cdef7c811"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "costStep"
+      ],
+      "sourceHash": "002d3e9984e382a1d9851062b4a8162d6b064283011ce49abf9a0e0abf9b9fcf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "valueStep"
+      ],
+      "sourceHash": "6f9386b03b63aaa0335d3dc805b4aefd4f71640a2a26136fc3a1b89d8b9e3ebb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "workloadIntro"
+      ],
+      "sourceHash": "80738a5c6a21ab58c82f4b32046df00a785e1dbcf5cafdff501d5eaa95718449"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "costIntro"
+      ],
+      "sourceHash": "2653a49e047b256baee779282b8368b484cfa8d8978eb0fe867d03af0029c007"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "valueIntro"
+      ],
+      "sourceHash": "8c7cd0110eda6628b8d2eb05edb1b803d412519e11bdf1bc8ad1a1bced0fc04e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "sampleNotice"
+      ],
+      "sourceHash": "eac64d7cb379944764631e686d68a0a233d7911e9d6fc0fb79253c1897c5771e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "monthly"
+      ],
+      "sourceHash": "4f0d0cf8390fe049c97d262db245598abafae2443d5eeb5269535c8058544c87"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "yearly"
+      ],
+      "sourceHash": "b1657f043490113ddaaf1a9b5ce10e7eb9518be5d8cccc5e5ac974572838a590"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "next"
+      ],
+      "sourceHash": "2b724f640456fb94428bf4f06e08163413f99722887a7f92b4915ffcce5226c0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "back"
+      ],
+      "sourceHash": "ebf6cf719cfa302bc08a07790d4d5706b3a627b0a17067c8a0d1df630c3af2e3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reset"
+      ],
+      "sourceHash": "1680628bd6a81280536d8733ffe41f76b164ab6e35cbf6574ef3cc0a68fb163b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "summary"
+      ],
+      "sourceHash": "a361cc40acfc0b764fa43bfc730f4781dff56e6d05162aaff5f3a6ee572a3b62"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "volume"
+      ],
+      "sourceHash": "d4a3c7401670421eac47cc8fa44542303ca0dcdfbc7b21e7410fe358320ea16f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "grossHours"
+      ],
+      "sourceHash": "dee8c8055ba826ecacfa3c6d825d63928c5a79d7de4b2f76c9a984849a95c796"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "capacity"
+      ],
+      "sourceHash": "da215ed6c60a2171d437f8c1372290fb89deeefcbe7fa704b5d7c6f4b7891eb9"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "retained"
+      ],
+      "sourceHash": "bfc41274e913456ee2682930c8c01f96da1f3e0ab1cbc40cdc2d33c640c5ff1d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "hours"
+      ],
+      "sourceHash": "a043c4e4e93fe2ae930e1120a63631cd0bb9f021837e41fbeb14e024453c4b65"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "days"
+      ],
+      "sourceHash": "27227a6d826e3cdb39e6ccc35a3bfc23db0799ea4002ace6ad4fb91ef940b655"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "percent"
+      ],
+      "sourceHash": "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "minutes"
+      ],
+      "sourceHash": "473893d11244f2cecddc7272c18633fdedf60fee952be8c92fc985b954589982"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewMode"
+      ],
+      "sourceHash": "d3a372652622b6fc8dd3ca2673d36c3c745400a79b2a729f0b2d3c1f08ac547b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "teamReview"
+      ],
+      "sourceHash": "d3bbe07ab0dee1a73c7c106659e6036b997a1f215acae3efeca9daf7c35ff6dc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "paidReview"
+      ],
+      "sourceHash": "f6b3026d296b552d0c2969bb80c9c804c0466b168f055d18ba0902a31a8f9bad"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewNote"
+      ],
+      "sourceHash": "bc1b2d7d739e33698316b758865fe371c1098781d5b29d2267f4b0d8dd7fc7a7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "totalMode"
+      ],
+      "sourceHash": "8aea645aa9eca08ae9a29c7daec7342c8f5e6954ca3c27d5eed9ac16a44a3618"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "itemizedMode"
+      ],
+      "sourceHash": "9997da4c6c22784fd2d5c168b811f680895426bed87f6989f8b3bdfe7fac3548"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "budgetNote"
+      ],
+      "sourceHash": "cf66ebc0cc1b9a6a719381f13c6211c66dbbb46067c043d9d2226d299a1900c0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "itemizedNote"
+      ],
+      "sourceHash": "699ea8a2457009c64d448b5ebb49db183846a5ce54c5409008896dc9bbd47ec4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "paidReviewCost"
+      ],
+      "sourceHash": "1b53d1589717961dc9be0347df2dbc8cab1224635519c78e460320b74b151b78"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "allInCost"
+      ],
+      "sourceHash": "002d3e9984e382a1d9851062b4a8162d6b064283011ce49abf9a0e0abf9b9fcf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "missing"
+      ],
+      "sourceHash": "8a6de76c2fe5c5d3605171b0efd36706dff908a3533cd2007bebd4be4804c772"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "cashValue"
+      ],
+      "sourceHash": "f6f58c848ac53887cc85db5a91c9dfb6f7c66bde64d8eb5ffe69bdc29accc348"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "contribution"
+      ],
+      "sourceHash": "fc4ee3d6fa99defbdce0bd687a5ddd156687a60fdd385df0b3fe70be5c5fe349"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "expectedLoss"
+      ],
+      "sourceHash": "5707c19b638cbff467f992dcd9bf53d468cae478a5296a2d568e26d9c8ea4b94"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "riskValue"
+      ],
+      "sourceHash": "0b231b5a3469dae29fb352f83e522c5ebd66a822e04b8520da916e1fc1435f55"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "economicValue"
+      ],
+      "sourceHash": "bca9c50533c624efa5510d985baad8ff9cd6c98425c47c91516517d9c59361e0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "netBenefit"
+      ],
+      "sourceHash": "c195d6483d8b7c2c5a2da67ad053d2c4f3feefa7c0e7bacaf50096c1b7e92834"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "multiple"
+      ],
+      "sourceHash": "3bc037e96f5eaff71ad6bcfe41998fe5541e87f1550f89af056494585e95fe8e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "notApplicable"
+      ],
+      "sourceHash": "5a32f7183d2aae3c9c0887768e4c4216d33d0ad58b02689cafa525c7dd618d92"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "annual"
+      ],
+      "sourceHash": "75a47f108b21660eef1c155f2a95272817f9c168dfa194d83aba2081de0844bf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "annualNote"
+      ],
+      "sourceHash": "9c9b2cb2da80710533d9232f9c8e7b668f41d87577c3bee719b454959804be89"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "method"
+      ],
+      "sourceHash": "771222e72371dbcfad2dcfc109a531df83734ad9bdaf08735949c2839c9e1c0d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "burdenHeading"
+      ],
+      "sourceHash": "dee8c8055ba826ecacfa3c6d825d63928c5a79d7de4b2f76c9a984849a95c796"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "opportunityHeading"
+      ],
+      "sourceHash": "2795f87a949b51f6961e0b0c0ef1503149f2742bee5a17f3a3e3f50ed0ea51e3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "methodBody"
+      ],
+      "sourceHash": "d404a1a3afd2738dcdcb7cc8d480ebbcaa09f0b49e5c917d2b09fb6d542f7b3b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "formulaLabel"
+      ],
+      "sourceHash": "87c0eb15fafcd3fedfa5a0151ca59e297256fb533aa52a0ec4d7c641a9eaa6af"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "overlapLabel"
+      ],
+      "sourceHash": "f1906a075895afae12d8bfe895d909601839f183663791088898aec8e0ab850b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "overlapNote"
+      ],
+      "sourceHash": "40e345bea65c7c487a0c757e536168204c6b2af840efad008b1d431927e09bcc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "hiringLabel"
+      ],
+      "sourceHash": "32af391ac3ea17c6d142b0705e69a71ed7e628a69128c1b424494effb093218d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewedLabel"
+      ],
+      "sourceHash": "7b70278c7af18ba26fae306729849d7c3c9596d2d3712f7091a8886ccd7f993a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "cycleResult"
+      ],
+      "sourceHash": "8bc39272dd3d8aeafc80e9090434416b1cf48b36326560eb4e8785c52201c0ab"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "throughputResult"
+      ],
+      "sourceHash": "ebd1a1539c29b44b12407ca26a289881e20cd107592586c17e2a6e32086a9873"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "assumptionsIncomplete"
+      ],
+      "sourceHash": "c6736fbe93c3cfdda253e62141ca1262347f1e195ae0633c5ee71e9fc8f5cb9c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "allocationError"
+      ],
+      "sourceHash": "659934c8a44ffc12f8a58b4d3b0abe8c218759a4ffa2c8928bc81949fc1d8667"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewError"
+      ],
+      "sourceHash": "c2b60c474a64fd5b967d26af09a8778f315281489465f22ab9450823a88fd83b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "cashError"
+      ],
+      "sourceHash": "25e591e8754ea15615d2b4cad2397ae2608f6d228e251906fa9bc59d1ea6a8de"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "hiringError"
+      ],
+      "sourceHash": "81334cce28901699925e94ff776a0ab871c18f4c8d6d74f2cda3d350ab43851d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "riskError"
+      ],
+      "sourceHash": "20e3c1884b2a6091d8523dabad14e62896693eae9cef22c857a73b44c9d2128d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "overlapError"
+      ],
+      "sourceHash": "b0bb47fc41401dffcd32079fce06e5278c14e84c516c8bac6317b0f438ddc01e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "boundsError"
+      ],
+      "sourceHash": "ed0bcbebc9c1a994100b576b57d5bb273fa1603a7723e80cee6645a6562448cd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "rangeLabel"
+      ],
+      "sourceHash": "168eca099795d6a1cb5b9473d32e26435feb3260a6a8dbba2bd3f6ca1ecd9699"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "noCurrencyChange"
+      ],
+      "sourceHash": "3b51a5556b6ca1c5b2cf55254ce748ae2f32ecc1cdb8112725116da11bf22bde"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "volume",
+        "label"
+      ],
+      "sourceHash": "f8880efb3ab6e3795d7437abe18230193b8841abc2d12667cf08a5d05eaa1372"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "volume",
+        "help"
+      ],
+      "sourceHash": "9dae70d902240be533dc810cf0c5377d8709a806ebe84fc159f3bb9a89b49a6a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "minutes",
+        "label"
+      ],
+      "sourceHash": "f6724da6163ee0f11ad0a96286feec074cd69620d8c50c1cf6a0075e3193c791"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "minutes",
+        "help"
+      ],
+      "sourceHash": "caa744cab8e53c1f165fe16564ec5149899bccb9329b67d07f3a9dfa72af353f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "automation",
+        "label"
+      ],
+      "sourceHash": "a64a42622f684efed38b520066cecb4bc17abe1bc0baf7ff7df4c2e6a6f8ba8c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "automation",
+        "help"
+      ],
+      "sourceHash": "f240595d223d08109bd36c0a1348ac8efc82cf2160c0774e615fc9924bdb7ad1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review",
+        "label"
+      ],
+      "sourceHash": "ff64b40099bfbc43728d47e62ff710ddb4dd1b911f7c2217ddc8091c54d7d18e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review",
+        "help"
+      ],
+      "sourceHash": "1759ccd6776bd234f83f82a4c9e3e317d3086420d6856df9c2575b58f6c9bd65"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "budget",
+        "label"
+      ],
+      "sourceHash": "e757dde25b51f01a4952942b696318460e358ba47cc8994d1a09692b898aac01"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "budget",
+        "help"
+      ],
+      "sourceHash": "ba2239155b96f430534481ddef5f34afeef6c1c54a8e49169abe40483e2fb5af"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "model_cost",
+        "label"
+      ],
+      "sourceHash": "b76731ab1177a947162420876a1f2fb040546a70807f0a6e5f8b4cfe86851056"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "model_cost",
+        "help"
+      ],
+      "sourceHash": "6fb5bee18f57146ad2c6da660984d7e87186573c3bdc9dea377c88634e702e49"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "tools_cost",
+        "label"
+      ],
+      "sourceHash": "31eb3138faf5a94714effbf02f198645b6bc86e24e5ae4ed539163c005bc8be8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "tools_cost",
+        "help"
+      ],
+      "sourceHash": "d47a0fbd13378dcf383d8f234b4f40e7c18a3f021256e255d962c2b121bcc7e5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "infrastructure_cost",
+        "label"
+      ],
+      "sourceHash": "5bfd83855905a318da6416d1e468b1322a3fee390109c96b1548feb81141c43a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "infrastructure_cost",
+        "help"
+      ],
+      "sourceHash": "c449c4d1fde7a4887ba729a0b5ff2f4b624f36a6382d56098ab3e18d9ad102f6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "platform_cost",
+        "label"
+      ],
+      "sourceHash": "a28d7ae8ee734d071c1f804ab154d59809092d7d5cca09f91075a3cdda3a4394"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "platform_cost",
+        "help"
+      ],
+      "sourceHash": "07f7bb14e99071bef17783b4316831def0e96d9bc7d6f974f0803c959014ebd6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review_rate",
+        "label"
+      ],
+      "sourceHash": "cd0589c0b93b2a116f9af0e8870652c9eb57dc6d8662ba1073a8ca5d8e20f083"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review_rate",
+        "help"
+      ],
+      "sourceHash": "e786e6f72a750c74f8c1d28e8da7eab155f71ff6639544bf8d954132843f3ff4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_hours",
+        "label"
+      ],
+      "sourceHash": "c2a716f278d89a2e848ae84c73d670d9d5e8de413dd3e911ebdbf4557524083d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_hours",
+        "help"
+      ],
+      "sourceHash": "583d3692cb67ee39e96080e5febb63fc18e7d5d6cdf7e95c3e48126538631368"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_baseline",
+        "label"
+      ],
+      "sourceHash": "9a38852ebff1fdcdbc2af9f39aace34670ed941ce3c2b64f6c41b41bb421b297"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_baseline",
+        "help"
+      ],
+      "sourceHash": "e6d966752279163704e7f79e35d57ec0e5856221714848a5513d6fed07b090a4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_avoided",
+        "label"
+      ],
+      "sourceHash": "9c1cbddafbadafdee01eeb603aec8f39777fee93e40b98b921a6fdba1171948e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_avoided",
+        "help"
+      ],
+      "sourceHash": "b99adaf5d9f94147d67afd69de5475524d3bbe598acec3b801631aefe6c28428"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "higher_value_hours",
+        "label"
+      ],
+      "sourceHash": "1e7e4ca03dc764d506aea3d395c3c0d39aebc097ce01920eb04b2c8bdc18eb80"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "higher_value_hours",
+        "help"
+      ],
+      "sourceHash": "9832e2369b9700bce657e8f35753ac5c8763e2b8192529f63a79330897569d88"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "contribution_rate",
+        "label"
+      ],
+      "sourceHash": "9a9a49382b13e22a3e453d0908ed86718714277a2400bffa39eb18d72f9b5545"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "contribution_rate",
+        "help"
+      ],
+      "sourceHash": "ce66dd6d3a5a7dab529cce694c70d4b0c4441a554306664d75edff1d4f8e6bd8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "throughput_hours",
+        "label"
+      ],
+      "sourceHash": "b7d10c740f6a30dc0cdc0cb11892c3727a3484752e6641276be30c099e7d9e7d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "throughput_hours",
+        "help"
+      ],
+      "sourceHash": "76667d99fd2926142e79059e8d8c44c806fd5b44a9558efd42ae56929b88c5a4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "extra_minutes",
+        "label"
+      ],
+      "sourceHash": "e39ad754b07c372a27a288eb70dcb8a4faca0ae3433b740b802b1d1c1d2a0181"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "extra_minutes",
+        "help"
+      ],
+      "sourceHash": "81473964a7c3567e6273b098b2b096c467f0d22c27cfd16830d479839008c35f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "demand",
+        "label"
+      ],
+      "sourceHash": "6bbda4b7357a68c838fc77e0f4c15ea7d89654332f09f476ca564f3b8909446d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "demand",
+        "help"
+      ],
+      "sourceHash": "ea3f4a2e53cac5bdcaf293767fa44780395bdb6c5b4adcc37a2281f9415dcfc8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "unit_margin",
+        "label"
+      ],
+      "sourceHash": "826c49a85441fa9bf4bb8d233900a78c0ccfaa71c558032d11cf312b1d3be389"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "unit_margin",
+        "help"
+      ],
+      "sourceHash": "c37e5f430883f929e8bcc4115fca698d12f54241c1771b0f1dd943a2ba454565"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hiring_hours",
+        "label"
+      ],
+      "sourceHash": "9a6853f0fe18856ad649152c9df2e2003a726f243aeeb2b2d461af4879f60b32"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hiring_hours",
+        "help"
+      ],
+      "sourceHash": "6b2d1feadd0aa88089e69665acf3fd06f25ebc66cc9d25f5d722490b7fd94d69"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "planned_hours",
+        "label"
+      ],
+      "sourceHash": "a9b5d351ee70b854b47ebe4cd448c14341778f294339a3ba7e052258a15b0965"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "planned_hours",
+        "help"
+      ],
+      "sourceHash": "8047455cf53475a0c45d69c10da2b7fba2108ac0aab3005d2397329ad667ddfc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_cost",
+        "label"
+      ],
+      "sourceHash": "4670b1f1671331188bf88487d309e6a6af6207ab34986d9956dc08abe0aa15a1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_cost",
+        "help"
+      ],
+      "sourceHash": "262790d27c72855d80f4c322f88540261a3e7df893180997071cf961e872820b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_months",
+        "label"
+      ],
+      "sourceHash": "eee725d224d2b0036aa5c38c818a84c5ef676c2f9c4ddbc03768482882c6d0d5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_months",
+        "help"
+      ],
+      "sourceHash": "2cc0270583f82ed3f53435f98283103306ccfd35f6e94ff2811c6c566cf17843"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incidents",
+        "label"
+      ],
+      "sourceHash": "5a225e8ab6fba3860ec0c63c397c40c3cd2056c70675d2e391d40f3509db9879"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incidents",
+        "help"
+      ],
+      "sourceHash": "52d6247269341e0e612e0f8c1e11724ed777519b5d5d3b4d76eb5f7d1eaa4c23"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incident_cost",
+        "label"
+      ],
+      "sourceHash": "203b8702fd808aefee4da2c2f2ddc8f6550c355d2f40c248984dc9c7ec22d268"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incident_cost",
+        "help"
+      ],
+      "sourceHash": "23a71339a383143e340b5e1ddee7b887d4eb2423e7c8a2fbae4e1eb784da1721"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_before",
+        "label"
+      ],
+      "sourceHash": "ef2cc19dbf263f531f7e7a8af175ad1769e9ef97a4fb28827f7ec94ad2cc63a7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_before",
+        "help"
+      ],
+      "sourceHash": "42b3e50f93da491b86bd076e661be68d9f72edfbfe3be2282ad82331e42bbc26"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_after",
+        "label"
+      ],
+      "sourceHash": "4ed497d25cca05dda29598f9f617afcd7ff61f917adecab0ba5f5c1433d3cf22"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_after",
+        "help"
+      ],
+      "sourceHash": "c1cc3fdc50b231157e1adadc037972547ca50cbf6198bc7b2a1f68db2f347991"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "loss",
+        "label"
+      ],
+      "sourceHash": "91d39ce55175023b5af687ca60564cacc5773b0320a64696613fed7c424c4cd4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "loss",
+        "help"
+      ],
+      "sourceHash": "5d91fb8b539cd7f027cc9fd27a039cc2390fa01c4fa911ea885bd04af307b7d8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_before",
+        "label"
+      ],
+      "sourceHash": "4872c21cf06703b6633bf00dce25a9ad9f1ea2c40d51f57c7d836aa1c616067e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_before",
+        "help"
+      ],
+      "sourceHash": "4e480eb65dfc1a832122ffe34843297e5ad41645f79e898f8f7c7127c3c3926e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_after",
+        "label"
+      ],
+      "sourceHash": "0badd505d3dd350bcb5829ae87cd13f2add0230cb70369b53e7aea55f37733a7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "burden",
+        0
+      ],
+      "sourceHash": "4a8fa0c78333593404991780660377ceda666755397bbaf9d23065105a2516d7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "burden",
+        1
+      ],
+      "sourceHash": "455d46bb06c32d9d0fe957631b81949be92c1ea8e6dea526bf0c382078179b02"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "opportunity",
+        0
+      ],
+      "sourceHash": "861de41589b21e86eaa74d3e0cb4cfa755044c0cab0fbdc654cb859dcf519b84"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "opportunity",
+        1
+      ],
+      "sourceHash": "5f6f87aea1cac9eb01d9c39578b7598937811dd48ff5ab3d3e4ba580f4d6d013"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        0,
+        "label"
+      ],
+      "sourceHash": "98516c24a069ae74135011701ca2094a241a63c4cb0bddd374fb20b5b58fef1f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        1,
+        "label"
+      ],
+      "sourceHash": "8f607350b98c8cdbf8a083175b4ebf6b8af01ff55e02b3b712beb6331c8b3b56"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        2,
+        "label"
+      ],
+      "sourceHash": "a3d029471be2141d4f8345e13d8584468c80261c26a9e6c4d94bd9952f9fd589"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        3,
+        "label"
+      ],
+      "sourceHash": "0e3d2f3af75e64f4c62ec7f7d84f4197d3d6c50be28e5d7ed5d6be33852c92f4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        4,
+        "label"
+      ],
+      "sourceHash": "a6ff58456c6217b721d83539cdaf06941a25987e476138bfea26893778a79423"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        5,
+        "label"
+      ],
+      "sourceHash": "a356fd8bf582acf8ea1b707d0261d8ff8eae702f80acfd490c1d6ce2abcfdd14"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "cta",
+        "primaryLabel"
+      ],
+      "sourceHash": "39c0143f45a60b409c683b63fd7e074b4d5f48e3adc54d1350ecafed5e112b84"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "cta",
+        "secondaryLabel"
+      ],
+      "sourceHash": "0db4fa70040719ce75e378a9a17b89f832c96470cbb84aeb68b9dcca0c5ad1ea"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        0,
+        "label"
+      ],
+      "sourceHash": "d7b9456333e85dfb14f301dfa03b51f3a2e6da7e5351ace940eab7fba6bd9282"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        1,
+        "label"
+      ],
+      "sourceHash": "7ebd9aeba31cd8554bb7ac0ad334fcbfb68701b1ab8cf68c979b26ee7e9aade5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        2,
+        "label"
+      ],
+      "sourceHash": "bdb25f2077053e427b310888b6e85e4a200bc42173f5b68fa6d1b509625c4ce1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        3,
+        "label"
+      ],
+      "sourceHash": "4808fa8bb9f5a9dff37421848e4757361ea0a39d984ade8c8e1d70b0144bed06"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        4,
+        "label"
+      ],
+      "sourceHash": "2b5c3d26721ae9c350cf3009318b626f0fc8a90b4a2ac0ca8099c05aa849282e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "heading"
+      ],
+      "sourceHash": "295ef7361ee49e2d64551c4ba79eb9cd192bc94bd75fcf1f00d9beebb7c5f615"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "navLabel"
+      ],
+      "sourceHash": "5bb1092e45d12cf344ec810103fd96adc18943f70e30d02a092a40f74fe906b0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "allocationNote"
+      ],
+      "sourceHash": "f8de262a4c122514871d021d9e1ee2d7056fbb7c4554074fe4ebbc3cfbb91b78"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_after",
+        "help"
+      ],
+      "sourceHash": "601a9013c532e4a6fef1c6b95efd82dcd47b4ec6cfa9776f464130e8559cac50"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        0,
+        "help"
+      ],
+      "sourceHash": "2f7956ec6ac2254c6661286535b8926af4b293653e88e12c286233d64afee37d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        1,
+        "help"
+      ],
+      "sourceHash": "94a1d8a008eae771565143e5dc0ea29f13f8dbf245330f1abf2de4d03ddbf61d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        2,
+        "help"
+      ],
+      "sourceHash": "e1433c473c4274026cd5850c309b77ae540e00bab66cb7e3b1ec01415b70366c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        3,
+        "help"
+      ],
+      "sourceHash": "480d82f08466767acdc5362661c6c7ff42f9c9fd99ba84ff70db5ca3e9c39a44"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        4,
+        "help"
+      ],
+      "sourceHash": "d64f9ce0423532fba3008348254c1a560a460e3cef889ad135cf84cde439c0fa"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        5,
+        "help"
+      ],
+      "sourceHash": "5beb3e00f12ae65b26a3b75a1b21a5905e57dba6ccb353f0101b76dfce512c52"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "cta",
+        "privacyNote"
+      ],
+      "sourceHash": "a2374f1cb549057ea6b39b033be4876d4f1892cba1b93be953a49ad22a681732"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "basis"
+      ],
+      "sourceHash": "cc621af060a698c522666766c5caac36e04c3d2761a440b25edc17f4cc0ff55b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "breakdown"
+      ],
+      "sourceHash": "31291b6ea5ce83350f2acac062afee64e59bbd8b9967b29d3f8d6208af317cec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "budgetOnly"
+      ],
+      "sourceHash": "bd3314c0af1f5c0c65dad89301372ee963d4bf9705881df2a196c72ebab019d7"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "benefitNotice"
+      ],
+      "sourceHash": "a3d7328f55791b4a7c439601c55584da52b7311082c91907e5b90265df211ccf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "remainder"
+      ],
+      "sourceHash": "6967c55d452c1cadb4cfef803f5f00f78028a877048032dbfe0bf25608071f1d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "allocation"
+      ],
+      "sourceHash": "f8de262a4c122514871d021d9e1ee2d7056fbb7c4554074fe4ebbc3cfbb91b78"
+    }
+  ],
+  "translationContextRevision": "ca08011ab6f038be983aa837cf82ee196335455120e20439274d60e0edd160d4",
+  "generatedAt": "2026-09-06T19:17:05.847Z"
+}

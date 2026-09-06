@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "es",
   "regionKey": "de",
-  "sourceRevision": "dbcf7f2a03163df099e540b4c81eac70cc78c4d41a2f2efb94a65bc19e7e0174",
+  "sourceRevision": "5c0005230bae3db3bf2fc2eaa3c82c7b14d79bdd558160282ce34dcc2f75041e",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -248,7 +248,7 @@
             "number": "01",
             "title": "Formulario detectado",
             "status": "done",
-            "detail": "UStVA, such as Devolución de impuestos indirectos, T3 2026. Entidad cliente coincidente.",
+            "detail": "UStVA — Declaración de impuestos indirectos, tercer trimestre de 2026: entidad de cliente coincidente.",
             "state": "done"
           },
           {
@@ -269,7 +269,7 @@
             "number": "04",
             "title": "Simulación completa",
             "status": "active",
-            "detail": "Ejecución en seco contra el portal: 0 errores encontrados.",
+            "detail": "La prueba en seco contra el portal no encontró errores.",
             "state": "active"
           }
         ],
@@ -408,20 +408,20 @@
           {
             "number": "01",
             "status": "live",
-            "title": "Umsatzsteuer: Presentación de devoluciones de impuestos indirectos",
-            "body": "UStVA, such as Devoluciones de impuestos indirectos recurrentes, preparadas a partir de las facturas ya en la bandeja de entrada. El mismo flujo de trabajo controlado para cada período informativo y cliente.",
+            "title": "Umsatzsteuer — Presentación de devoluciones de impuestos indirectos",
+            "body": "UStVA — Declaraciones periódicas de impuestos indirectos, preparadas a partir de las facturas ya en la bandeja de entrada, utilizando el mismo flujo de trabajo controlado para cada período de informe y cliente.",
             "steps": [
               "Trabajo de presentación abierto desde la fecha límite",
-              "Umsatzsteuer: Facturas coincidentes, impuesto indirecto calculado",
-              "Cuestionario: Sólo lagunas",
+              "Umsatzsteuer — Facturas coincidentes, impuesto indirecto calculado",
+              "Cuestionario: solo brechas",
               "Declaración presentada, gemela digital confirmada"
             ],
             "connections": [
-              "Umsatzsteuer · Mein ELSTER: Portal oficial de presentación de impuestos",
+              "Umsatzsteuer · Mein ELSTER — Portal oficial de presentación de impuestos",
               "Bandeja de entrada de factura",
               "software de contabilidad"
             ],
-            "note": "UStVA · Mein ELSTER · ELSTER-Zertifikat. Los portales fiscales oficiales pueden exigir una credencial gubernamental personal u organizativa. Sherma prepara la devolución completa y la persona autorizada la presenta con su propio inicio de sesión. No firmará como usted."
+            "note": "UStVA · Mein ELSTER · ELSTER-Zertifikat — Los portales fiscales oficiales pueden exigir una credencial gubernamental personal u organizativa. Sherma prepara la devolución completa y la persona autorizada la presenta con su propio inicio de sesión. No firmará como usted."
           },
           {
             "number": "02",
@@ -436,7 +436,7 @@
             ],
             "connections": [
               "Portales de compradores y transportistas",
-              "Umsatzsteuer: Registro, detalles fiscales y bancarios",
+              "Umsatzsteuer — Registro, detalles fiscales y bancarios",
               "Evidencia de seguros y políticas"
             ]
           },
@@ -448,7 +448,7 @@
             "steps": [
               "Cuestionario recibido del cliente",
               "Controles coincidentes con el registro aprobado",
-              "Cuestionario: Sólo lagunas",
+              "Cuestionario: solo brechas",
               "Paquete ensamblado, gemelo confirmado"
             ],
             "connections": [
@@ -530,7 +530,7 @@
       },
       "workedExample": {
         "kicker": "Un ejemplo trabajado",
-        "heading": "UStVA. Preparando una declaración de impuestos indirectos sin el reingreso manual.",
+        "heading": "UStVA — Preparando una declaración de impuestos indirectos sin el reingreso manual.",
         "body": "El mismo principio, aplicado a la forma más repetida que existe. Una plantilla, una entidad a la vez, cuatro veces al año, para siempre.",
         "before": "Alguien reúne las cifras, las vuelve a escribir en la devolución, las compara con el libro mayor y los archiva antes de la fecha límite. Cada trimestre, por cada cliente, sin nada que se lleve adelante excepto una hoja de cálculo.",
         "after": "Sherma abre el trabajo desde el calendario de presentación, construye la devolución de las facturas que ya están en la bandeja de entrada, solo pregunta sobre las cifras que no puede derivar y presenta la devolución completa como gemelo.",
@@ -555,7 +555,7 @@
             },
             {
               "label": "Figuras faltantes",
-              "value": "3 Marcado",
+              "value": "3 marcados",
               "highlight": true
             }
           ],
@@ -625,7 +625,7 @@
       "leadCapture": {
         "kicker": "a escala",
         "heading": "Sherma de marca blanca a escala.",
-        "body": "Este informe es para las organizaciones que desean que Sherma esté marcada en su propio flujo de trabajo: mil formularios a la vez, no una presentación única.",
+        "body": "Este resumen es para organizaciones que desean que Sherma se integre con su propio flujo de trabajo con marca blanca: mil formularios a la vez, no una presentación única.",
         "selfServeNote": "For any other form, {login} or {talk}. Once you are signed in, Sherma is self-service: she will guide you through making and running your own forms.",
         "formLabel": "¿Dónde debería correr Sherma, y aproximadamente cuántas formas?",
         "ctaLabel": "Prepare mi breve Sherma",
@@ -680,59 +680,280 @@
         ],
         "copyright": "© 2026"
       }
+    },
+    "roiCalculator": {
+      "methodologyVersion": 2,
+      "enabled": true,
+      "kicker": "Impacto empresarial",
+      "heading": "Calculadora de ROI",
+      "subheading": "Comience con la capacidad. Luego decida cuánto podría valer.",
+      "disclaimer": "Un escenario construido a partir de sus suposiciones, no de resultados observados ni de ahorros garantizados. Las horas devueltas son capacidad, no una reducción automática de nómina.",
+      "currency": "EUR",
+      "locale": "de-DE",
+      "inputs": [],
+      "metrics": [],
+      "businessImpact": {
+        "defaults": {
+          "volume": 208,
+          "minutes": 30,
+          "automation": 50,
+          "review": 5
+        },
+        "copy": {
+          "navLabel": "ROI",
+          "workloadStep": "Tu carga de trabajo",
+          "costStep": "Costo operativo",
+          "valueStep": "Usa la capacidad",
+          "workloadIntro": "Preparación de formularios de modelo, correcciones y revisión humana, no presentación automática en vivo o aceptación garantizada.",
+          "costIntro": "Incluya los costos necesarios para ejecutar esta carga de trabajo. Estas son sus estimaciones, no una cotización Gabriel.",
+          "valueIntro": "¿Qué harás con las horas devueltas? Seleccione sólo los resultados que espera obtener.",
+          "sampleNotice": "Carga de trabajo ilustrativa · resultados no observados",
+          "monthly": "Mensual",
+          "yearly": "Anual",
+          "next": "Continuar",
+          "back": "Atrás",
+          "reset": "Restablecer supuestos",
+          "summary": "Tu impacto modelado",
+          "volume": "Unidades de trabajo modeladas",
+          "grossHours": "Trabajo repetitivo reducido",
+          "capacity": "Capacidad neta devuelta",
+          "retained": "Capacidad mantenida disponible",
+          "hours": "horas",
+          "days": "dias",
+          "percent": "%",
+          "minutes": "minutos",
+          "reviewMode": "¿Quién se encarga de la revisión?",
+          "teamReview": "Equipo existente",
+          "paidReview": "Revisor pagado adicional",
+          "reviewNote": "La revisión del equipo existente utiliza la capacidad devuelta. La revisión paga adicional se incluye en el costo operativo y no se deduce nuevamente de la capacidad del equipo.",
+          "totalMode": "Presupuesto mensual",
+          "itemizedMode": "Desglose de costos",
+          "budgetNote": "El presupuesto debe incluir modelos/medios, herramientas, infraestructura, tarifas de Gabriel y cualquier revisión paga adicional. No incluya la nómina sin cambios como nuevo gasto.",
+          "itemizedNote": "Ingrese cero para un costo que no aplica. La revisión paga adicional se calcula a partir de las horas de revisión y su tarifa real.",
+          "paidReviewCost": "Costo adicional de revisión pagada",
+          "allInCost": "Costo operativo",
+          "missing": "Añade tus suposiciones",
+          "cashValue": "Se evita el gasto en efectivo",
+          "contribution": "Contribución esperada",
+          "expectedLoss": "Reducción de pérdidas esperadas",
+          "riskValue": "Valor de riesgo incierto incluido",
+          "economicValue": "Valor económico modelado",
+          "netBenefit": "Beneficio neto modelado",
+          "multiple": "Múltiplo de rentabilidad económica",
+          "notApplicable": "No aplicable",
+          "annual": "Vista anual",
+          "annualNote": "Los mismos supuestos mensuales, sin crecimiento ni capitalización. Los ahorros en contratación duran sólo durante el período ingresado.",
+          "method": "¿Cómo se calcula esto?",
+          "burdenHeading": "Trabajo repetitivo reducido",
+          "opportunityHeading": "Capacidad para trabajos de mayor valor",
+          "methodBody": "La carga operativa eliminada (productividad negativa) devuelve la capacidad. El trabajo de mayor valor (productividad positiva potencial) crea valor económico sólo si se utiliza esa capacidad. Las horas por sí solas no son ahorros en efectivo.",
+          "formulaLabel": "Valor económico ÷ costo operativo = múltiplo de retorno económico. El beneficio neto resta el costo operativo una vez.",
+          "allocationNote": "Las horas recuperadas son capacidad, no ahorros automáticos. Solo las porciones que asigne a reducciones de gastos reales o contribuciones adicionales reciben un valor monetario.",
+          "overlapLabel": "Estos beneficios son distintos; He excluido los costos y pérdidas ya contabilizados en otros lugares.",
+          "overlapNote": "Las estimaciones de errores y riesgos excluyen los ahorros de mano de obra y el mismo incidente no debe aparecer en ambas categorías. La contribución excluye los costos de IA, que se deducen por separado.",
+          "hiringLabel": "Este alquiler fue realmente planificado y la capacidad asignada puede cubrir el trabajo.",
+          "reviewedLabel": "He revisado mis resultados; Los resultados no seleccionados no tienen valor financiero en esta estimación.",
+          "cycleResult": "Mejora del tiempo de ciclo",
+          "throughputResult": "Trabajo adicional respaldado por capacidad y demanda.",
+          "assumptionsIncomplete": "Complete los supuestos seleccionados para calcular el valor financiero.",
+          "allocationError": "Las horas asignadas superan la capacidad neta disponible. Reducir las asignaciones.",
+          "reviewError": "La revisión lleva más tiempo que el trabajo reducido. No hay capacidad positiva disponible bajo estos supuestos.",
+          "cashError": "El gasto evitado no puede exceder el gasto actual ni tener un valor positivo sin horas asignadas.",
+          "hiringError": "La capacidad asignada debe cubrir las horas de alquiler previstas. Confirmar el alquiler previsto y su duración.",
+          "riskError": "La probabilidad posterior no puede exceder la probabilidad anterior para una estimación de reducción de pérdidas.",
+          "overlapError": "Confirme que los beneficios no se superpongan antes de incluirlos en el resultado financiero.",
+          "boundsError": "Utilice valores dentro de los límites mostrados.",
+          "rangeLabel": "Ajustar valor",
+          "noCurrencyChange": "El idioma cambia el formato, no la moneda ni las suposiciones."
+        },
+        "fields": {
+          "volume": {
+            "label": "Formularios preparados cada mes",
+            "help": "Utilice un mes típico, no un pico en el mejor de los casos."
+          },
+          "minutes": {
+            "label": "Minutos prácticos por unidad hoy",
+            "help": "Tiempo de trabajo activo, excluyendo espera y tiempo calendario transcurrido."
+          },
+          "automation": {
+            "label": "Parte de ese trabajo reducida",
+            "help": "Un supuesto ilustrativo para validar en un piloto, no una promesa de desempeño."
+          },
+          "review": {
+            "label": "Revisar minutos por unidad",
+            "help": "La verificación humana aún es necesaria después de la automatización."
+          },
+          "budget": {
+            "label": "Presupuesto operativo mensual estimado",
+            "help": "Incluya todos los modelos/medios, herramientas, infraestructura, Gabriel tarifas y revisión paga adicional."
+          },
+          "model_cost": {
+            "label": "Modelos y generación de medios.",
+            "help": "Su estimación mensual, incluidas imágenes o videos cuando corresponda."
+          },
+          "tools_cost": {
+            "label": "Herramientas e integraciones",
+            "help": "Sesiones de navegador, conectores y otros servicios medidos."
+          },
+          "infrastructure_cost": {
+            "label": "Infraestructura",
+            "help": "Alojamiento, almacenamiento y computación incrementales para esta carga de trabajo."
+          },
+          "platform_cost": {
+            "label": "Gabriel tarifas",
+            "help": "Utilice su tarifa acordada o su propio presupuesto; Esta no es una cotización de precio."
+          },
+          "review_rate": {
+            "label": "Revisión paga adicional por hora",
+            "help": "Gasto adicional real del revisor, no el salario de un empleado sin cambios."
+          },
+          "cash_hours": {
+            "label": "Horas que eliminan el trabajo remunerado",
+            "help": "Asigne únicamente trabajos cuyo gasto en horas extras, contratistas o procesamiento realmente se detendrá."
+          },
+          "cash_baseline": {
+            "label": "Gasto mensual actual en ese trabajo.",
+            "help": "El presupuesto de caja del que procederá la reducción."
+          },
+          "cash_avoided": {
+            "label": "Gasto mensual que dejarías",
+            "help": "Una cantidad explícita, no horas multiplicadas por el salario; excluya cualquier ahorro por contratación planificada ingresado por separado."
+          },
+          "higher_value_hours": {
+            "label": "Horas utilizadas para trabajos de mayor valor",
+            "help": "Horas que puedes redirigir de manera realista, no toda la capacidad de forma predeterminada."
+          },
+          "contribution_rate": {
+            "label": "Contribución incremental por hora",
+            "help": "Ingresos menos costos de entrega incrementales, excluyendo los costos de IA contabilizados por separado. Ni salario ni ingresos brutos."
+          },
+          "throughput_hours": {
+            "label": "Horas utilizadas para volumen adicional",
+            "help": "Esta asignación tampoco puede utilizarse para trabajos de asesoramiento o reducciones de gastos."
+          },
+          "extra_minutes": {
+            "label": "Minutos de equipo por unidad adicional",
+            "help": "El esfuerzo humano restante, incluida la revisión, era necesario para entregar una unidad más."
+          },
+          "demand": {
+            "label": "Unidades adicionales con demanda esperada",
+            "help": "La capacidad por sí sola no es demanda. Ingrese el trabajo mensual adicional que espera realizar."
+          },
+          "unit_margin": {
+            "label": "Contribución por unidad adicional",
+            "help": "Ingresos incrementales menos costos de entrega; Los costos operativos de la IA se deducen por separado."
+          },
+          "hiring_hours": {
+            "label": "Horas que cubren la contratación prevista",
+            "help": "Asignar capacidad a trabajos planificados específicos, no a una estimación genérica equivalente a tiempo completo."
+          },
+          "planned_hours": {
+            "label": "Horas mensuales que cubriría la contratación planificada",
+            "help": "La capacidad asignada debe cubrir toda esta carga de trabajo."
+          },
+          "hire_cost": {
+            "label": "Costo de alquiler mensual realmente diferido",
+            "help": "Utilice el coste de una contratación realmente planificada, no el salario de alguien que ya está empleado."
+          },
+          "hire_months": {
+            "label": "Meses que se aplaza la contratación",
+            "help": "De uno a doce meses; la estimación anual deja de contar los ahorros después de este período."
+          },
+          "incidents": {
+            "label": "Errores evitados esperados por mes",
+            "help": "Utilice su punto de referencia y la reducción esperada. Excluir incidentes también cuenta como reducción de riesgos."
+          },
+          "incident_cost": {
+            "label": "Costo incremental por error",
+            "help": "Excluya mano de obra, reembolsos u otras pérdidas ya incluidas en otros lugares."
+          },
+          "probability_before": {
+            "label": "Probabilidad de pérdida mensual antes",
+            "help": "Su estimación, no una evaluación de riesgos garantizada."
+          },
+          "probability_after": {
+            "label": "Probabilidad de pérdida mensual después",
+            "help": "Utilice el mismo evento y horizonte temporal mensual como base."
+          },
+          "loss": {
+            "label": "Exposición a pérdidas por ese evento",
+            "help": "Excluir incidencias de error y gastos ya contabilizados. Se trata de un valor esperado incierto, no de dinero ahorrado."
+          },
+          "days_before": {
+            "label": "Tiempo del ciclo antes, en días",
+            "help": "Tiempo transcurrido desde el inicio hasta la finalización, separado del esfuerzo práctico."
+          },
+          "days_after": {
+            "label": "Tiempo del ciclo posterior, en días",
+            "help": "Se muestra solo como un cambio operativo, sin un valor monetario asumido."
+          }
+        },
+        "burden": [
+          "Preparación y entrada de formularios repetidos",
+          "Persiguiendo campos faltantes y corrección de errores"
+        ],
+        "opportunity": [
+          "Capacidad de procesamiento adicional",
+          "Asesoramiento al cliente y tiempo de revisión"
+        ],
+        "outcomes": [
+          {
+            "id": "higher_value",
+            "label": "Hacer un trabajo de mayor valor",
+            "help": "Utilizar parte de la capacidad para trabajo con contribución incremental."
+          },
+          {
+            "id": "throughput",
+            "label": "Manejar más volumen",
+            "help": "Haga coincidir la capacidad disponible con la demanda esperada real."
+          },
+          {
+            "id": "cash",
+            "label": "Detener el gasto real",
+            "help": "Reduzca las horas extras, los contratistas o el procesamiento pagado, no los salarios sin cambios."
+          },
+          {
+            "id": "hiring",
+            "label": "Aplazar una contratación planificada",
+            "help": "Cubrir una carga de trabajo específica y realmente planificada durante un período determinado."
+          },
+          {
+            "id": "error",
+            "label": "Evitar errores y retrabajo",
+            "help": "Estimar incidentes distintos y su costo incremental."
+          },
+          {
+            "id": "cycle_time",
+            "label": "Terminar antes",
+            "help": "Mostrar los días transcurridos mejorados sin adjuntar automáticamente un valor monetario."
+          }
+        ]
+      },
+      "cta": {
+        "primaryLabel": "Ejecute una simulación con Sherma",
+        "secondaryLabel": "Ver una salida de muestra",
+        "primaryTarget": "contact",
+        "privacyNote": "Sus datos permanecen privados. Las horas son capacidad. Los montos financieros son estimaciones modeladas, no resultados observados.",
+        "secondaryTarget": "how-it-works"
+      },
+      "currencyCopy": {
+        "native": "Importes en {currency}.",
+        "loading": "Comprobando la moneda local. Los importes permanecen en {currency} hasta que haya un tipo de cambio disponible.",
+        "unavailable": "No se dispone de un tipo de cambio local actual. Los importes permanecen en {currency}.",
+        "converted": "Importes convertidos de {base} a {currency} utilizando el tipo de referencia con fecha {date}.",
+        "basis": "La conversión de moneda no es una investigación de costos locales. Introduzca sus propios costos locales y supuestos de contribución. Los cambios de idioma no cambian los importes."
+      },
+      "costCopy": {
+        "breakdown": "Cómo se construye el costo total de la IA",
+        "perUnit": "{amount} por unidad de trabajo (promedio)",
+        "budgetOnly": "Este es su presupuesto total. Cambie a Desglose de costos para detallarlo; no se ha asumido ninguna división.",
+        "benefitNotice": "Beneficios modelados, no cargos. Las cantidades tachadas son gastos que espera evitar, no descuentos en la factura de IA.",
+        "remainder": "Otros costos operativos incluidos",
+        "allocation": "Las horas recuperadas son capacidad, no ahorros automáticos. Solo las porciones que asigne a reducciones de gastos reales o contribuciones adicionales reciben un valor monetario."
+      }
     }
   },
   "translationIndex": [
-    {
-      "path": [
-        "landingPage",
-        "header",
-        "navItems",
-        0,
-        "label"
-      ],
-      "sourceHash": "45314e97b0c26a862b5411d0a943d801583e13bb5d104382ed7a2f4773969e66"
-    },
-    {
-      "path": [
-        "landingPage",
-        "header",
-        "navItems",
-        1,
-        "label"
-      ],
-      "sourceHash": "ebb0911eb7c5ad44b6bfc7d748ddf800ce7f4e63f187a1ed44216f5a7937644c"
-    },
-    {
-      "path": [
-        "landingPage",
-        "header",
-        "navItems",
-        2,
-        "label"
-      ],
-      "sourceHash": "3fc2b5dbb1e05b00acc8fd833421e319eaca23ef490f49dbc203968f801f0fdc"
-    },
-    {
-      "path": [
-        "landingPage",
-        "header",
-        "navItems",
-        3,
-        "label"
-      ],
-      "sourceHash": "4045fd1653e65619ac76cbe787a138056a9cdc22dad5e71a22aa3eafe6d3c473"
-    },
-    {
-      "path": [
-        "landingPage",
-        "header",
-        "navItems",
-        4,
-        "label"
-      ],
-      "sourceHash": "325eecf9d30156c2e6f261e611c40f571de28ad8924b6b2167b2aa78a3d9dadb"
-    },
     {
       "path": [
         "landingPage",
@@ -1627,7 +1848,7 @@
         0,
         "detail"
       ],
-      "sourceHash": "48db306a19d3bd77a139afcc0fd8b07979c51f218dc75c1f4ddf923d3f4a12f8"
+      "sourceHash": "930c68d675c4d297406797dae22fc2c68c1c0de89404aded0345410550573087"
     },
     {
       "path": [
@@ -1693,7 +1914,7 @@
         3,
         "detail"
       ],
-      "sourceHash": "bca4a9852a618ceb06b7c236e1a412acef9800e4d708352dc3785f61d17f71be"
+      "sourceHash": "dacb325824fead4b10755570d0f2b014181a7b4c6c0ebc38b69b34d1c48a4f7d"
     },
     {
       "path": [
@@ -2274,7 +2495,7 @@
         0,
         "body"
       ],
-      "sourceHash": "333b601fd8dac2715c4a3307722aff42ea46242f1fb898161b1d99d2b4668deb"
+      "sourceHash": "8ab754d1ee037873a70559a41240d829516eb897ef78ebe7ff9a22a216a863cb"
     },
     {
       "path": [
@@ -2310,7 +2531,7 @@
         "steps",
         2
       ],
-      "sourceHash": "5e267c7b150e2ab29db700cd484d43d461f42e6a6c457203c75e5df59253ef77"
+      "sourceHash": "9a0b158dd067eb9bf27410a5682ef2684cb4fa5275175174adbc12f2bdc359cc"
     },
     {
       "path": [
@@ -2533,7 +2754,7 @@
         "steps",
         2
       ],
-      "sourceHash": "5e267c7b150e2ab29db700cd484d43d461f42e6a6c457203c75e5df59253ef77"
+      "sourceHash": "9a0b158dd067eb9bf27410a5682ef2684cb4fa5275175174adbc12f2bdc359cc"
     },
     {
       "path": [
@@ -3733,8 +3954,1653 @@
         "copyright"
       ],
       "sourceHash": "a206fbb93a7b73a412f504fbeb51f93e4e2e54fc69fea371b800d29bd607d266"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "kicker"
+      ],
+      "sourceHash": "56e2fc69f24fdbd675127c32327ff87b184a9117326bb0d35182bd983ae0d368"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "subheading"
+      ],
+      "sourceHash": "1356d4f765d19dd855054c5c82a2fb0b4056ddc3ba53119f574e4bb4d035a0c4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "disclaimer"
+      ],
+      "sourceHash": "0fdd5f3b6c2b3ccc371ac3672613ab060473cc856ff747f5a54e1a5768d2bf5e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "workloadStep"
+      ],
+      "sourceHash": "ce66bbeb6256709b22ef17a88ac5da766845fd734c6b08d0086b0e4e54b31bb3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "costStep"
+      ],
+      "sourceHash": "ba605a0ddb543bdc1a742175c68664ee3e7378a811e4770a1ffa0d1cc2b0da18"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "valueStep"
+      ],
+      "sourceHash": "0a00a93de914c79f00dc83bfc6f39a6e7545bd3c1a03e20f250051b3b5a9718b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "workloadIntro"
+      ],
+      "sourceHash": "dbcecdc0c6f808856868163d856e9d7d364bbe4064ffde50ee620b2987804a6a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "costIntro"
+      ],
+      "sourceHash": "b61aaf32fd251fa6dbdcb5f0ea023303f25704e805e54199947cba71f511205a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "valueIntro"
+      ],
+      "sourceHash": "cfa6640692fadf9d9f197a8fa4cf026be483aa1332b99863225120921cdc0cec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "sampleNotice"
+      ],
+      "sourceHash": "51545b7c1b2d55f40ce02b3387f8ac719a117512a38d95b3e8e26eca684a6094"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "monthly"
+      ],
+      "sourceHash": "fd0039eccd62fd0d470bf47c0a57df6fe066f6d4112c63b84c7d73409975cd99"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "yearly"
+      ],
+      "sourceHash": "71c2c31bbc342a9fd1a2174cd002254e485bae97cae02b4338765ba44dd002a3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "next"
+      ],
+      "sourceHash": "1e14bdf34c3bdead780c582d28dc480c41fd5ccff905feece9f57b962f726eb2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "back"
+      ],
+      "sourceHash": "548611ce58f71a173404d9cfc99816457f97ad25b814310374f5c3f096546ee8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reset"
+      ],
+      "sourceHash": "05ee89ec5eeb801fd3496f7f483042f25b2db2a9c2d3062d69313e3e13e7cb1b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "summary"
+      ],
+      "sourceHash": "3eb2612440722e29724e931ce199167feff50a2f3c046ad1fccffb0add962e88"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "volume"
+      ],
+      "sourceHash": "2f4c81bf3b770fc37d03643e17b9859dad0344926640c90f5fa91cf134ecf2b6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "grossHours"
+      ],
+      "sourceHash": "75b4f30faadcc82699d4f96e77e638f53fe9c56d81d9f1954358997e0b1beb91"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "capacity"
+      ],
+      "sourceHash": "780da6bef0a8380c88e31c1c5bbf5d84a411f6dd8094a2644443241ed18b5d79"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "retained"
+      ],
+      "sourceHash": "0c45b57fde9450c39c342bc16129480eb8226955ac822302f816e1b9716befe1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "hours"
+      ],
+      "sourceHash": "b26b52378d4f204797ae7eabb0237382262805dd3ccd1ba950dc7cf897aae102"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "days"
+      ],
+      "sourceHash": "6770c319ff7b63020e6330f5a2b1b114b73df40b1d8c87e536978604d27c540b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "percent"
+      ],
+      "sourceHash": "bbf3f11cb5b43e700273a78d12de55e4a7eab741ed2abf13787a4d2dc832b8ec"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "minutes"
+      ],
+      "sourceHash": "135cc4d303fb5a345704fed6d8ee682f0e9e17748a57764ee11aa9110a84b71c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewMode"
+      ],
+      "sourceHash": "3d9f54f4894b87ae092a6df858d90e90fc96be415a0919022301e521c1220794"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "teamReview"
+      ],
+      "sourceHash": "da0163a2dde0bff7f4d8e0f99dcd1732ec9302775336e478fb8192242f49ecba"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "paidReview"
+      ],
+      "sourceHash": "37bf11cd2ec6f580d8f3c5b94bd96639137ce4b3427492b70537e7bf85d4a23c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewNote"
+      ],
+      "sourceHash": "417befadecc4c6c5651f985b34d0dcc4f6c599f170e10ab7218178921a4cf670"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "totalMode"
+      ],
+      "sourceHash": "4824970176a878c3b5aad351f7c084842b0a8ab580c5c06f6a36a7a8e6f9c797"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "itemizedMode"
+      ],
+      "sourceHash": "245d08816602481e3fa8620dc96622bc55f534f485c1c3768666348ac6178a52"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "budgetNote"
+      ],
+      "sourceHash": "4e63a47a52698a684a67c0e279843c64740624166535e9764703426eff83d64e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "itemizedNote"
+      ],
+      "sourceHash": "dbbadd426d75bbc94bd9ff6f728cca2aa04030099c2bc7cf039c915d1d9aace6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "paidReviewCost"
+      ],
+      "sourceHash": "1a00140807e461e582c9b1c3ee53799fd4d449688ae978e6bd60903fa6139228"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "allInCost"
+      ],
+      "sourceHash": "ba605a0ddb543bdc1a742175c68664ee3e7378a811e4770a1ffa0d1cc2b0da18"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "missing"
+      ],
+      "sourceHash": "a7448f3684b6c657c545158907e010b31b6aa6e35251ab36e32e912bc97e7f68"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "cashValue"
+      ],
+      "sourceHash": "7e085255271d1598687bd4dfcdf15ee5f70669d2bbaf93bd83493454d5eee688"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "contribution"
+      ],
+      "sourceHash": "5fb58f6bd8192ac6df0a22c195c75d2dfca2921e20d02162879e45d03c265b67"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "expectedLoss"
+      ],
+      "sourceHash": "d9f36594d759e3f31e803c2b4ebdd07de0b59b88a5fbc88f572fd7b3674ee049"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "riskValue"
+      ],
+      "sourceHash": "bf3b7f6b026e9f4f7e87db92e34b26165a5dcf271386be29f99aa1067622f65f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "economicValue"
+      ],
+      "sourceHash": "b93f0632b23bc1dfb32e4d142c84f9edd131eb447a7bf9a9fc93952e4b11e97f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "netBenefit"
+      ],
+      "sourceHash": "6cd86df7e17d1e25897394fa7f33737300fa6052946d49370d3e68766483934f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "multiple"
+      ],
+      "sourceHash": "5f7a1b69f9c3e7ca7a3ecbb6067dab9158eca5401a95755624890ca5dbd10de3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "notApplicable"
+      ],
+      "sourceHash": "522857a2f06a96faa0831f1f8b8eebaad0ec32283bcbe14ba5319d2687bb0024"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "annual"
+      ],
+      "sourceHash": "2128f73b9126dd762993a33bc0f41bc558c0a8a98225ba399f6578f81fd15cce"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "annualNote"
+      ],
+      "sourceHash": "08779312e2bd448a38d9014a13ad41e171dd9892fda28d9cf91d9d4e9906e6bf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "method"
+      ],
+      "sourceHash": "d55c4bef183a398d3b1dd305a78e94040a4c0c159611c0470b927f9a72022dc3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "burdenHeading"
+      ],
+      "sourceHash": "75b4f30faadcc82699d4f96e77e638f53fe9c56d81d9f1954358997e0b1beb91"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "opportunityHeading"
+      ],
+      "sourceHash": "78e076e3489650d58cfbcec31d5a8e83ea53dd8a00022158f56f243641a6e4ca"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "methodBody"
+      ],
+      "sourceHash": "d4bf936eb7e33ee1a20bd9612c16bcca9711fde1c0b0869c3af307de34fc9726"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "formulaLabel"
+      ],
+      "sourceHash": "18dd967fb55700b190cc2d57e7b65e6571b092a813277ccd246890084f1f965b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "overlapLabel"
+      ],
+      "sourceHash": "4d956beb701d810ca91a294b59e923904ce0c751f3a322a1b7d6e3c0cc8f1f60"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "overlapNote"
+      ],
+      "sourceHash": "fd4ef09ca95fd6fc36e5b51db670d2112027e3085ffbffc29620c7116129afa5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "hiringLabel"
+      ],
+      "sourceHash": "4489ba78fe4e30a2237178e82df9886fb50720575b7807471e8035954e6f6168"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewedLabel"
+      ],
+      "sourceHash": "58c946ec98ce92710fd9b8d7a107ae87dce5adf88038151fd3afff80ee9e4557"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "cycleResult"
+      ],
+      "sourceHash": "46f0dc6b00a73eeff5c88bd5975c7e09a5ec786e09d7dd71f401779c805a0be0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "throughputResult"
+      ],
+      "sourceHash": "b112f1f52160dc4df13c6ea73a18694a15e3be5d7728956fd79bf31e2984afee"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "assumptionsIncomplete"
+      ],
+      "sourceHash": "aadd5edac75425bd81daa51ad3b125c8323b8463fbf7d40fe5d4506271fc87f5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "allocationError"
+      ],
+      "sourceHash": "baebe6be833a1601c7d1f2348e65c98ceb4f5e2235c9ba7962cf3b889961bc3a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "reviewError"
+      ],
+      "sourceHash": "a9a654fcf1a5098b280faca0f4bf79b9faafec9107573bf539e6d1a32cd63c35"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "cashError"
+      ],
+      "sourceHash": "abf562e1a2340bd957c6bd88423cbb58c45f86d0b95edc49c6c1e8a90a4499fc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "hiringError"
+      ],
+      "sourceHash": "4914d42da71f2d1ed7d1ceaa76c3c70e13566057b53bb03ab4ae18cffcc8ca26"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "riskError"
+      ],
+      "sourceHash": "03d47e5b58deb43f9149edd14987e3ed982cbbd52aec577843fd635c9bfd1eb6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "overlapError"
+      ],
+      "sourceHash": "5020289ce0dbd6aabe7db746b8c664616ee3bf9ce9d0af57c5d9291c7a5ba157"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "boundsError"
+      ],
+      "sourceHash": "2bf9081f7675539a6ede149879082ab2ee7e3e441aa20ce1637c7ae96c767e4a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "rangeLabel"
+      ],
+      "sourceHash": "06675bbae0b716f7d46ceb9e74b402d16bf9f52b98902b2ece6c7c2634362f4b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "noCurrencyChange"
+      ],
+      "sourceHash": "1bbc9de076a83c3f26e595d25d148db4730f5620323781dcd1491b4b937d9ba0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "volume",
+        "label"
+      ],
+      "sourceHash": "3377e685ee3c3511a4e7e4877e29283be0c0f51dd05b30d0233caab383095e32"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "volume",
+        "help"
+      ],
+      "sourceHash": "f24a1fadbfabdd5858ef6482da3c397a44d285e097e14954c1a7f8fa21b7085c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "minutes",
+        "label"
+      ],
+      "sourceHash": "a9dfffd79819086115976018a52b1de12f11f35a7d5b6abaebcb8ca668a00128"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "minutes",
+        "help"
+      ],
+      "sourceHash": "69b76a3aed13a2dcaca91197cca341e7aa9fb9c414a851a09dc44b8eeae974b4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "automation",
+        "label"
+      ],
+      "sourceHash": "69f8927585f4b92f9b461b773b5de7c73b273210cfdd47994593b84636a82a43"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "automation",
+        "help"
+      ],
+      "sourceHash": "8629dc67c919ee2fe1364b2c7674a502a0dbb13fc7a842bc42dfecfa31de8236"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review",
+        "label"
+      ],
+      "sourceHash": "7ae822b3ee8555b1a72beb97483fe0102278e2258185fbc6361f157b50faa5a3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review",
+        "help"
+      ],
+      "sourceHash": "09148884fcdf1d137ed7b6ef3e84367471d01f4d1df3a663623d355eb3abcbc2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "budget",
+        "label"
+      ],
+      "sourceHash": "cfe6faa87b31523a4df81c4fe9a449c4abd8aa9c411ae907acfbad1394ccacd0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "budget",
+        "help"
+      ],
+      "sourceHash": "4c1f3d119e543c5344e81cce46b76d98815e468095d70e037014b68e8bd1f43d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "model_cost",
+        "label"
+      ],
+      "sourceHash": "973974804a71a898f5b01fc980fc39f99bcfb53582be7c59d0af6cdd3db32841"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "model_cost",
+        "help"
+      ],
+      "sourceHash": "01f2d8cbd51c8caa627909f7f2c0558b8384a47c9ad4ba0cf00c26a2438ba0fc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "tools_cost",
+        "label"
+      ],
+      "sourceHash": "9fb324e6925bba338e529e73e720ebfc0b0da22ddf11b3d793f68a9a55a2ea52"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "tools_cost",
+        "help"
+      ],
+      "sourceHash": "d09e77d77a2f26fc1d292bc6d10b7060db42c827a3a1817bda10897996b3d6f5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "infrastructure_cost",
+        "label"
+      ],
+      "sourceHash": "dae1d23fd764cfb8e94f99ef5e39b5fb645ca5487bb2cfedcf7e2a0effa4cb39"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "infrastructure_cost",
+        "help"
+      ],
+      "sourceHash": "5323ac0146a4049fd35edfe623e571d0afa2758b6b6ec4a00f5d2d7ae531e7cf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "platform_cost",
+        "label"
+      ],
+      "sourceHash": "0e6b24cee73103d75ac18c5a3c81f6ca0f3c96fc46f5dd5f995ff7835c453d99"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "platform_cost",
+        "help"
+      ],
+      "sourceHash": "d5c9b6dd826eb150ed924285f51c67109698266af82650681570c98bfcfd165e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review_rate",
+        "label"
+      ],
+      "sourceHash": "415089df25075cb32afb83e325aa0149ab501ba4fa67fbbb0b1794db3094d435"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "review_rate",
+        "help"
+      ],
+      "sourceHash": "b7dc39c167ee31ea8764ad9e8cbab8792dc8a20771704485477db6a0269c6f17"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_hours",
+        "label"
+      ],
+      "sourceHash": "a561de2f06353fada06c517c77df6185daefd110f07465a5be908a0301854e2e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_hours",
+        "help"
+      ],
+      "sourceHash": "e00cd85806c02b2ffc04a08252dc8f4c4d4642743429c362470e5da5dd71dc98"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_baseline",
+        "label"
+      ],
+      "sourceHash": "552c6ff52f699e090232287979ee4390e22153478db6bf8b281282791321329f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_baseline",
+        "help"
+      ],
+      "sourceHash": "58b76c9bb7abf33b3c1d6c1d9d47f6002b04aa393b1cbcf669fdadb88b2a5f8e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_avoided",
+        "label"
+      ],
+      "sourceHash": "02fc1c08784a1108520db15d59b85623cbf9dce73109710f2a15e57ea666b4c6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "cash_avoided",
+        "help"
+      ],
+      "sourceHash": "ae9e172967934fabb5934bdeb6b1e253b0cf4186cf65f787a8138a91020d6e3f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "higher_value_hours",
+        "label"
+      ],
+      "sourceHash": "72df0c0f404d733a7f0bee07fb0cfd9d3b8f94030d179f55949906e4584ea546"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "higher_value_hours",
+        "help"
+      ],
+      "sourceHash": "5a9748eff3f9875fbca2b787b4169a84dffecb95619afa6b0cabe903905d06dc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "contribution_rate",
+        "label"
+      ],
+      "sourceHash": "f6f07cd0035f2372c4d26cbbf659a8766697da22bb9d968a5bc5e19906b142c3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "contribution_rate",
+        "help"
+      ],
+      "sourceHash": "74993adcc4c022b00c99cc234ac7750eff34e8e5dc37b6e127f4f792cd677a3f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "throughput_hours",
+        "label"
+      ],
+      "sourceHash": "e890716a13198178fda0affbcc7795c0f4e7a2d05d7cde88626bac6cbcfd4afc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "throughput_hours",
+        "help"
+      ],
+      "sourceHash": "0baeb73db1d510b9221c996f2226ce0fb77c58d52730de4479a41c16442a170e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "extra_minutes",
+        "label"
+      ],
+      "sourceHash": "3ddf6230e6a5fdebfe1cd55ed21b84741c2fea30e11d19bdc272e5f11143ce02"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "extra_minutes",
+        "help"
+      ],
+      "sourceHash": "53c4969cb44cc05ba40585182ef1ff821f0b9ccf9b29110f87ea239c09790d8f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "demand",
+        "label"
+      ],
+      "sourceHash": "6f58ef34ee8e1e166c408638176fd6cd65eaffcf3197c9b8c43648e00240916a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "demand",
+        "help"
+      ],
+      "sourceHash": "ed9cd608214a5f76bd82bdca8cab3fdd763f0d7369d5d6633d9b7cd6eba76d8a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "unit_margin",
+        "label"
+      ],
+      "sourceHash": "cdb1cb6683fb6908fa4886915d66b94814a7b2bb737aa073a6d094a76f2e3513"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "unit_margin",
+        "help"
+      ],
+      "sourceHash": "8ac8bc07519c164afe2f8e59b505d763462990f6813925b14412c831aaaa59da"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hiring_hours",
+        "label"
+      ],
+      "sourceHash": "cb6eaadd5e031d502901e789c07e464f45c12f1c4476fcccee5fe8e2d10580e8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hiring_hours",
+        "help"
+      ],
+      "sourceHash": "8d6c2a4f9afde705c824c8407c2a2932ce6076b9be7ff850d245ae872ff75ed8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "planned_hours",
+        "label"
+      ],
+      "sourceHash": "7c433003caad332e87b2f7aecf09dfb83c0d4307e75d14f4d3f83d3c56ef7e04"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "planned_hours",
+        "help"
+      ],
+      "sourceHash": "d0a10ff18d34a52a99d12a8f350fdd9f1085ebabbb7ad52d0b59e79b1ba95ad2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_cost",
+        "label"
+      ],
+      "sourceHash": "ffaa369951d450d5f466c2a4703117274ed96c96946c84ff83a6682f07d5ac36"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_cost",
+        "help"
+      ],
+      "sourceHash": "cd11e38fff6c41b3ed2854da9280bfc7dfde4ae93efe1fcbdca5f2556510383d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_months",
+        "label"
+      ],
+      "sourceHash": "0377b4a16394d82aa963f37e2b9ea9937d192207c40f22b1a8bb12e6d7fc684c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "hire_months",
+        "help"
+      ],
+      "sourceHash": "726eaddb61a9ff5d50acb86c27ae18ee4c91457496df5ce8ecf22d19ed43b0d0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incidents",
+        "label"
+      ],
+      "sourceHash": "8d28b38c02557ec4a003078a038d6a409dfaba4074a495d476b281633d468bcc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incidents",
+        "help"
+      ],
+      "sourceHash": "06175daf6a6c3502eebd79389cf7002835b51c0a2d14b5e84e4fcbac6fe310f1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incident_cost",
+        "label"
+      ],
+      "sourceHash": "402917450ff56947c4dbe42ed084134aa0a84e45a8064daf18a83b79934d688a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "incident_cost",
+        "help"
+      ],
+      "sourceHash": "5cf376550aa9d17e2eb917b23a1dcc6b418ff70214ec17cf3b26c33a4d031052"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_before",
+        "label"
+      ],
+      "sourceHash": "2728b2b12fb63fd05b08c522d6687bc469a2d1d52e1e3013f38ca23a93670d98"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_before",
+        "help"
+      ],
+      "sourceHash": "93e816e998951736555b9d0d2507a5ae91bbb90e0f487d2892c356bb1a9b5c22"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_after",
+        "label"
+      ],
+      "sourceHash": "bdf59d28858bff1fa412e4f2496fedd909ff983341219c9a89086ab103ba75bb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "probability_after",
+        "help"
+      ],
+      "sourceHash": "1f13d69b8608804b01e31fd9445d794ea2872adb3e1944ff8945d92f58dd5afb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "loss",
+        "label"
+      ],
+      "sourceHash": "63ef399317226eb641f54b4b601d6c10f97d17e14aceb19421cf97e3d3893f51"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "loss",
+        "help"
+      ],
+      "sourceHash": "202c61a501f972aec604c21b6e9ff6128aadb9297aac17a34e4e18a96755b0ee"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_before",
+        "label"
+      ],
+      "sourceHash": "595b253a696c891422878acbcc451368bfe083055de428aa270d5b2214177b7e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_before",
+        "help"
+      ],
+      "sourceHash": "68b1ef22bdd787ede3596cdab8e50ab6acdd1bb6ae53f05884f34e976deca1f1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_after",
+        "label"
+      ],
+      "sourceHash": "9c1234d1ad72f9fd13830700313402c76113ae9b7a841c4b456b1ce6af06efdf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "burden",
+        0
+      ],
+      "sourceHash": "f4e611b19bcc8caf1c98b7b11d249199ab85e187f37251c34a829671575428fc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "burden",
+        1
+      ],
+      "sourceHash": "0ba1c24891f6e80eeab7b7d273ad6c86fdbacbc618f62fc4bf21b8f5446189f6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "opportunity",
+        0
+      ],
+      "sourceHash": "9b454fcde28d4204255cab430cc41a7eff7608fb7fc7b6ae28d54ea2b8496a78"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "opportunity",
+        1
+      ],
+      "sourceHash": "60afde3cbf43dab73ba2e6abf8b8016dda020dd9bf603512f5497c80250b2904"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        0,
+        "label"
+      ],
+      "sourceHash": "238618e8c370d78097fa7dac6bfb92f2a44f01775d5f875b52e8892aa8605a0e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        1,
+        "label"
+      ],
+      "sourceHash": "57985bf9531c9e29b286242f6d8f6edc01a6d6c129d90d03905a4bca323face3"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        2,
+        "label"
+      ],
+      "sourceHash": "706fa405f3c6249e3a3e2df519fd07ac209006bd4bca1b262642e799769442ce"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        3,
+        "label"
+      ],
+      "sourceHash": "9ea86bb5395d063184a09ed0149c76a75bcd6f55e7ee974d80292ce608113364"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        4,
+        "label"
+      ],
+      "sourceHash": "4c5a0c6b31d67be6b3d0138b98415532618d9aa5bb8db695a40212ab750a1535"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        5,
+        "label"
+      ],
+      "sourceHash": "c403a345922988360712cf84a67f3b5903a26374d85f1f2ef3492029e91891c2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "cta",
+        "primaryLabel"
+      ],
+      "sourceHash": "c8fa9a8547d857a67fa7bc405ea4b555df4da5024afcd7d9589dc50d128babe0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "cta",
+        "secondaryLabel"
+      ],
+      "sourceHash": "117281048e214af9b8d9c0b6b4cea359ea3b46b90b4adc910262c68b84b6a244"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        0,
+        "label"
+      ],
+      "sourceHash": "45314e97b0c26a862b5411d0a943d801583e13bb5d104382ed7a2f4773969e66"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        1,
+        "label"
+      ],
+      "sourceHash": "ebb0911eb7c5ad44b6bfc7d748ddf800ce7f4e63f187a1ed44216f5a7937644c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        2,
+        "label"
+      ],
+      "sourceHash": "3fc2b5dbb1e05b00acc8fd833421e319eaca23ef490f49dbc203968f801f0fdc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        3,
+        "label"
+      ],
+      "sourceHash": "4045fd1653e65619ac76cbe787a138056a9cdc22dad5e71a22aa3eafe6d3c473"
+    },
+    {
+      "path": [
+        "landingPage",
+        "header",
+        "navItems",
+        4,
+        "label"
+      ],
+      "sourceHash": "325eecf9d30156c2e6f261e611c40f571de28ad8924b6b2167b2aa78a3d9dadb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "heading"
+      ],
+      "sourceHash": "3ef7ade6f5a78124e91a491981e0d08c90e1369ad40ddd25bbbc338a6f11080c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "navLabel"
+      ],
+      "sourceHash": "5bb1092e45d12cf344ec810103fd96adc18943f70e30d02a092a40f74fe906b0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "copy",
+        "allocationNote"
+      ],
+      "sourceHash": "c13707b61410cca235951fed0c1633429a13e8436b1cb72ca3678047052b5251"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "fields",
+        "days_after",
+        "help"
+      ],
+      "sourceHash": "766ea20f632e3466039ab06d76da606f8766651a930a0455126d3454d74b0e72"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        0,
+        "help"
+      ],
+      "sourceHash": "1a26de00c7639c16f28c8d0f82708e2570645956a5dd16d21fa9bfe1f7ec7676"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        1,
+        "help"
+      ],
+      "sourceHash": "f2397cf4793236ef1af06a08d96697ad0dc3769df5608a54e449543b9999d929"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        2,
+        "help"
+      ],
+      "sourceHash": "f5aafd07afcd8200a0fad0cb359a449777d702808bac55c8db033cb9f948f775"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        3,
+        "help"
+      ],
+      "sourceHash": "51e7993536b4c593a2dc104b052a7687fa0fefb733fc27ed6e710f4f914719eb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        4,
+        "help"
+      ],
+      "sourceHash": "9b8d746371a300186814214a8fc8133564a52887929e863e1562fe087726a670"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "businessImpact",
+        "outcomes",
+        5,
+        "help"
+      ],
+      "sourceHash": "5df06f11643ae624c656de1beecadc9a0925f8d03e14681308d6c7d11e09a1c5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "cta",
+        "privacyNote"
+      ],
+      "sourceHash": "d75d42ba292132c8dcb2771603b3722f232d3ccf55a0a78d4d99068d3ecf1ff8"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "basis"
+      ],
+      "sourceHash": "95f13cfa501930b9c45a1d1a7b29ccaf8ced2be46adb847c1e0cb2ae603dfaf2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "breakdown"
+      ],
+      "sourceHash": "f1408092260d4869308207a6423c2809fe7ba04e8521e0c65e2b6da873e94bbd"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "budgetOnly"
+      ],
+      "sourceHash": "ec91ddd102c8eb744eb99bc0d56f28ff88c4b812111fe2238792e6315302a527"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "benefitNotice"
+      ],
+      "sourceHash": "c35c9d35ad28cb39d856321529565ead948dfd937c14866847a8a4d90cc168a2"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "remainder"
+      ],
+      "sourceHash": "1964d41218cc8f921391898e88e63c14ef0e53bdecba89558f3e4a1b0b981c61"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "allocation"
+      ],
+      "sourceHash": "c13707b61410cca235951fed0c1633429a13e8436b1cb72ca3678047052b5251"
     }
   ],
   "translationContextRevision": "070a0365aeab86b2862b4627ccbfcce4843bb37ad7cb03fc21ed87429fffb649",
-  "generatedAt": "2026-09-03T12:20:41.825Z"
+  "generatedAt": "2026-09-06T19:17:05.847Z"
 }

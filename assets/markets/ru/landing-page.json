@@ -876,482 +876,274 @@
       }
     },
     "roiCalculator": {
+      "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "AI economics",
-      "heading": "Model the economic impact of Sherma",
-      "headingAccent": "economic impact",
-      "subheading": "Separate repetitive filing burden from the capacity those hours can create, then decide what the change is worth before you run.",
-      "disclaimer": "Figures are modeled estimates from your assumptions. Returned hours are capacity, not an automatic payroll saving, and are not observed customer results.",
+      "kicker": "Влияние на бизнес",
+      "heading": "Калькулятор ROI",
+      "subheading": "Начните с мощности. Затем решите, чего это может стоить.",
+      "disclaimer": "Сценарий, построенный на ваших предположениях, а не на наблюдаемых результатах или гарантированной экономии. Возвращенные часы — это мощность, а не автоматическое сокращение заработной платы.",
       "currency": "RUB",
       "locale": "ru-RU",
-      "periodToggle": true,
-      "defaultPeriod": "monthly",
-      "settingsHeading": "Usage & cost settings",
-      "resultsHeading": "Operational impact & economic value",
-      "profileHeading": "Firm profile",
-      "workloadHeading": "Workload",
-      "economicsHeading": "AI economics",
-      "economicsNote": "All-in operating cost is model tokens, tools, and the platform licence, not a salary comparison.",
-      "allocationHeading": "Where returned capacity goes",
-      "allocationHelp": "Hours removed are capacity. Only the shares you assign to cost reduction, extra volume, or higher-value work are given a euro value.",
-      "unusedAllocationLabel": "Held as unused capacity",
-      "operationsHeading": "What physically changes",
-      "valueHeading": "What that change is worth",
-      "frameworkHeading": "How the value is created",
-      "negativeProductivity": {
-        "heading": "Negative productivity removed",
-        "body": "Human effort that was an operating burden: gathering data, portal navigation, chasing missing fields, formatting, and re-entering rejected filings.",
-        "items": [
-          "Data gathering and re-keying",
-          "Portal navigation and formatting",
-          "Chasing missing information",
-          "Correcting rejected submissions"
+      "inputs": [],
+      "metrics": [],
+      "businessImpact": {
+        "defaults": {
+          "volume": 208,
+          "minutes": 30,
+          "automation": 50,
+          "review": 5
+        },
+        "copy": {
+          "navLabel": "ROI",
+          "workloadStep": "Ваша рабочая нагрузка",
+          "costStep": "Эксплуатационные расходы",
+          "valueStep": "Используйте емкость",
+          "workloadIntro": "Подготовка формы модели, исправления и человеческая проверка, а не автоматические подачу в режиме реального времени или гарантированное принятие.",
+          "costIntro": "Включите затраты, необходимые для выполнения этой рабочей нагрузки. Это ваши оценки, а не цитата Gabriel.",
+          "valueIntro": "Что вы будете делать с возвращенными часами? Выбирайте только те результаты, которых вы ожидаете достичь.",
+          "sampleNotice": "Показательная рабочая нагрузка · не наблюдаемые результаты",
+          "monthly": "Ежемесячно",
+          "yearly": "Ежегодно",
+          "next": "Продолжить",
+          "back": "Назад",
+          "reset": "Сбросить предположения",
+          "summary": "Ваше смоделированное воздействие",
+          "volume": "Смоделированные рабочие единицы",
+          "grossHours": "Повторяющаяся работа уменьшена",
+          "capacity": "Чистая емкость возвращена",
+          "retained": "Емкость остается доступной",
+          "hours": "часы",
+          "days": "дни",
+          "percent": "%",
+          "minutes": "минуты",
+          "reviewMode": "Кто занимается рассмотрением?",
+          "teamReview": "Существующая команда",
+          "paidReview": "Дополнительный платный рецензент",
+          "reviewNote": "При проверке существующей командой используются возвращенные мощности. Дополнительная платная проверка включена в эксплуатационные расходы и не вычитается повторно из возможностей команды.",
+          "totalMode": "Ежемесячный бюджет",
+          "itemizedMode": "Разбивка затрат",
+          "budgetNote": "Бюджет должен включать модели/медиа, инструменты, инфраструктуру, Gabriel сборы и любые дополнительные платные проверки. Не включайте неизмененный фонд заработной платы в качестве новых расходов.",
+          "itemizedNote": "Введите ноль для неприменимой стоимости. Дополнительный платный обзор рассчитывается исходя из часов просмотра и его фактической стоимости.",
+          "paidReviewCost": "Дополнительная платная стоимость обзора",
+          "allInCost": "Эксплуатационные расходы",
+          "missing": "Добавьте свои предположения",
+          "cashValue": "Денежные траты избегаются",
+          "contribution": "Ожидаемый вклад",
+          "expectedLoss": "Ожидаемое сокращение потерь",
+          "riskValue": "Неопределенная стоимость риска включена",
+          "economicValue": "Смоделированная экономическая ценность",
+          "netBenefit": "Чистая смоделированная выгода",
+          "multiple": "Экономическая доходность, кратная",
+          "notApplicable": "Не применимо",
+          "annual": "Годовой просмотр",
+          "annualNote": "Те же ежемесячные предположения, без роста или начисления процентов. Экономия на найме действительна только в течение введенного периода.",
+          "method": "Как это рассчитывается",
+          "burdenHeading": "Повторяющаяся работа уменьшена",
+          "opportunityHeading": "Способность к более ценной работе",
+          "methodBody": "Снятие операционной нагрузки (отрицательная производительность) возвращает мощность. Работа с более высокой ценностью (потенциальная положительная производительность) создает экономическую ценность только в том случае, если эта мощность используется. Часы сами по себе не являются экономией денег.",
+          "formulaLabel": "Экономическая ценность ÷ эксплуатационные затраты = кратная экономическая отдача. Из чистой прибыли один раз вычитаются эксплуатационные расходы.",
+          "allocationNote": "Возвращенные часы — это потенциал, а не автоматическая экономия. Денежную ценность получают только те части, которые вы направляете на фактическое сокращение расходов или дополнительный вклад.",
+          "overlapLabel": "Эти преимущества различны; Я исключил затраты и потери, уже подсчитанные в других местах.",
+          "overlapNote": "Оценки ошибок и рисков исключают экономию труда, и один и тот же инцидент не должен появляться в обеих категориях. Взнос не включает затраты на ИИ, которые вычитаются отдельно.",
+          "hiringLabel": "Этот найм был действительно запланирован, и выделенные мощности могут покрыть эту работу.",
+          "reviewedLabel": "Я просмотрел свои результаты; невыбранные результаты не имеют финансовой ценности в этой оценке.",
+          "cycleResult": "Улучшение времени цикла",
+          "throughputResult": "Дополнительная работа, поддерживаемая возможностями и спросом",
+          "assumptionsIncomplete": "Завершите выбранные допущения для расчета финансовой стоимости.",
+          "allocationError": "Выделенные часы превышают доступную чистую мощность. Сократите ассигнования.",
+          "reviewError": "Проверка занимает больше времени, чем сокращается работа. При этих предположениях положительная емкость невозможна.",
+          "cashError": "Расходы, которых удалось избежать, не могут превышать текущие расходы или иметь положительную ценность без отведенных часов.",
+          "hiringError": "Выделенная мощность должна покрывать запланированные часы аренды. Подтвердите запланированный прокат и его продолжительность.",
+          "riskError": "Вероятность «после» не может превышать вероятность «до» для оценки сокращения потерь.",
+          "overlapError": "Прежде чем включать их в финансовый результат, убедитесь, что выгоды не пересекаются.",
+          "boundsError": "Используйте значения в пределах отображаемых пределов.",
+          "rangeLabel": "Отрегулировать значение",
+          "noCurrencyChange": "Язык меняет форматирование, а не вашу валюту или предположения."
+        },
+        "fields": {
+          "volume": {
+            "label": "Формы, подготовленные каждый месяц",
+            "help": "Используйте типичный месяц, а не пик в лучшем случае."
+          },
+          "minutes": {
+            "label": "Минуты практических занятий за единицу сегодня",
+            "help": "Активное рабочее время, без учета ожидания и истекшего календарного времени."
+          },
+          "automation": {
+            "label": "Доля этой работы сократилась",
+            "help": "Наглядное предположение, которое необходимо проверить в ходе пилотного проекта, а не обещание производительности."
+          },
+          "review": {
+            "label": "Просмотр минут на единицу",
+            "help": "Человеческая проверка по-прежнему необходима после автоматизации."
+          },
+          "budget": {
+            "label": "Ориентировочный ежемесячный операционный бюджет",
+            "help": "Включите все модели/медиа, инструменты, инфраструктуру, Gabriel сборы и дополнительный платный обзор."
+          },
+          "model_cost": {
+            "label": "Модели и медиагенерация",
+            "help": "Ваша ежемесячная оценка, включая изображения или видео, где это применимо."
+          },
+          "tools_cost": {
+            "label": "Инструменты и интеграции",
+            "help": "Сеансы браузера, коннекторы и другие измеряемые службы."
+          },
+          "infrastructure_cost": {
+            "label": "Инфраструктура",
+            "help": "Дополнительный хостинг, хранилище и вычислительные ресурсы для этой рабочей нагрузки."
+          },
+          "platform_cost": {
+            "label": "Gabriel сборы",
+            "help": "Используйте согласованную плату или собственное бюджетное предположение; это не ценовое предложение."
+          },
+          "review_rate": {
+            "label": "Дополнительный платный обзор в час",
+            "help": "Фактические дополнительные расходы рецензента, а не зарплата неизменного сотрудника."
+          },
+          "cash_hours": {
+            "label": "Часы, которые удаляют оплачиваемую работу",
+            "help": "Выделяйте только те работы, затраты на сверхурочную работу, работу подрядчиков или обработку которых фактически прекратятся."
+          },
+          "cash_baseline": {
+            "label": "Текущие ежемесячные расходы на эту работу",
+            "help": "Денежный бюджет, из которого будет происходить сокращение."
+          },
+          "cash_avoided": {
+            "label": "Ежемесячные расходы, которые вы бы прекратили",
+            "help": "Одна конкретная сумма, а не часы, умноженные на зарплату; исключить любую запланированную экономию найма, введенную отдельно."
+          },
+          "higher_value_hours": {
+            "label": "Часы, потраченные на более ценную работу",
+            "help": "Часы реально можно перенаправить, а не всю емкость по умолчанию."
+          },
+          "contribution_rate": {
+            "label": "Дополнительный вклад в час",
+            "help": "Доход за вычетом дополнительных затрат на доставку, исключая затраты на ИИ, учитываемые отдельно. Ни зарплата, ни валовой доход."
+          },
+          "throughput_hours": {
+            "label": "Часы, использованные для дополнительного объема",
+            "help": "Эти ассигнования также не могут быть использованы для консультативной работы или сокращения расходов."
+          },
+          "extra_minutes": {
+            "label": "Командные минуты на дополнительную единицу",
+            "help": "Оставшиеся человеческие усилия, включая проверку, потребовались для доставки еще одного устройства."
+          },
+          "demand": {
+            "label": "Дополнительные единицы с ожидаемым спросом",
+            "help": "Сами по себе мощности еще не являются спросом. Введите дополнительную ежемесячную работу, которую вы ожидаете выполнить."
+          },
+          "unit_margin": {
+            "label": "Взнос за дополнительную единицу",
+            "help": "Дополнительный доход за вычетом затрат на доставку; Эксплуатационные расходы ИИ вычитаются отдельно."
+          },
+          "hiring_hours": {
+            "label": "Часы, охватывающие запланированный прием на работу",
+            "help": "Распределяйте мощности для конкретной запланированной работы, а не для общей оценки, эквивалентной полной занятости."
+          },
+          "planned_hours": {
+            "label": "Ежемесячные часы, которые запланированный найм будет охватывать",
+            "help": "Выделенная мощность должна покрывать всю эту рабочую нагрузку."
+          },
+          "hire_cost": {
+            "label": "Ежемесячная стоимость аренды фактически отложена",
+            "help": "Используйте стоимость действительно запланированного найма, а не зарплату уже трудоустроенного сотрудника."
+          },
+          "hire_months": {
+            "label": "Месяцы, в течение которых прием на работу откладывается",
+            "help": "От одного до двенадцати месяцев; годовая смета перестает учитывать сбережения после этого периода."
+          },
+          "incidents": {
+            "label": "Ожидаемое количество предотвращенных ошибок в месяц",
+            "help": "Используйте базовый уровень и ожидаемое сокращение. Исключение инцидентов также считается снижением риска."
+          },
+          "incident_cost": {
+            "label": "Дополнительные затраты за ошибку",
+            "help": "Исключите оплату труда, возмещение или другие потери, уже включенные в другие разделы."
+          },
+          "probability_before": {
+            "label": "Ежемесячная вероятность убытка до",
+            "help": "Ваша оценка, а не гарантированная оценка риска."
+          },
+          "probability_after": {
+            "label": "Ежемесячная вероятность убытка после",
+            "help": "Используйте те же события и месячный временной горизонт, что и в качестве базового плана."
+          },
+          "loss": {
+            "label": "Риск убытков по этому событию",
+            "help": "Исключите случаи ошибок и уже подсчитанные расходы. Это неопределенная ожидаемая ценность, а не сэкономленные деньги."
+          },
+          "days_before": {
+            "label": "Продолжительность цикла до, в днях",
+            "help": "Время, прошедшее от начала до завершения, отдельно от практических усилий."
+          },
+          "days_after": {
+            "label": "Время цикла после, в днях",
+            "help": "Показано только как операционное изменение, без предполагаемой денежной стоимости."
+          }
+        },
+        "burden": [
+          "Повторная подготовка формы и вход",
+          "В погоне за отсутствующими полями и исправлением ошибок"
+        ],
+        "opportunity": [
+          "Дополнительная обрабатывающая способность",
+          "Консультирование клиента и время проверки"
+        ],
+        "outcomes": [
+          {
+            "id": "higher_value",
+            "label": "Делайте более ценную работу",
+            "help": "Используйте часть возможностей для работы с дополнительным вкладом."
+          },
+          {
+            "id": "throughput",
+            "label": "Управляйте большим объемом",
+            "help": "Сопоставьте доступную мощность с фактическим ожидаемым спросом."
+          },
+          {
+            "id": "cash",
+            "label": "Остановите реальные траты",
+            "help": "Сократите сверхурочную работу, подрядчиков или оплачиваемую обработку, а не неизменную зарплату."
+          },
+          {
+            "id": "hiring",
+            "label": "Отложить запланированный прием на работу",
+            "help": "Охватите конкретную, действительно запланированную рабочую нагрузку на определенный период."
+          },
+          {
+            "id": "error",
+            "label": "Избегайте ошибок и переделайте",
+            "help": "Оцените отдельные инциденты и их дополнительные затраты."
+          },
+          {
+            "id": "cycle_time",
+            "label": "Закончи скорее",
+            "help": "Показать улучшение по количеству прошедших дней без автоматического присвоения денежной стоимости."
+          }
         ]
-      },
-      "positiveProductivity": {
-        "heading": "Potential positive productivity",
-        "body": "The same hours become capacity. Value them only according to how this firm actually uses them.",
-        "items": [
-          "Take on more client entities",
-          "Advisory and higher-margin work",
-          "Grow without another operations hire"
-        ]
-      },
-      "producesHeading": "What Sherma produces",
-      "produces": [
-        "Ready-to-file returns",
-        "Review trail",
-        "Client-ready summary"
-      ],
-      "breakdownHeading": "Classified economic value",
-      "projectionHeading": "Projected 12-month economic value",
-      "yearOneCostLabel": "Year one AI cost",
-      "yearOneValueLabel": "Year one economic value",
-      "yearOneReturnLabel": "Year one economic return",
-      "scenarios": [
-        {
-          "id": "conservative",
-          "label": "Conservative",
-          "multiplier": 0.7
-        },
-        {
-          "id": "base",
-          "label": "Base",
-          "multiplier": 1
-        },
-        {
-          "id": "optimistic",
-          "label": "Optimistic",
-          "multiplier": 1.3
-        }
-      ],
-      "defaultScenarioId": "base",
-      "inputs": [
-        {
-          "id": "client_entities",
-          "label": "Client entities",
-          "type": "slider",
-          "min": 20,
-          "max": 2000,
-          "step": 10,
-          "defaultValue": 500,
-          "format": "integer",
-          "group": "profile",
-          "profile": true,
-          "profileIcon": "users"
-        },
-        {
-          "id": "team_members",
-          "label": "Team members on this work",
-          "type": "slider",
-          "min": 1,
-          "max": 80,
-          "step": 1,
-          "defaultValue": 12,
-          "format": "integer",
-          "group": "profile",
-          "profile": true,
-          "profileIcon": "users"
-        },
-        {
-          "id": "capacity_rate",
-          "label": "Shadow price of staff capacity / hr",
-          "help": "Used for throughput and genuine cost-elimination only. Not a claim that salary expense falls by this amount.",
-          "type": "slider",
-          "min": 20,
-          "max": 250,
-          "step": 5,
-          "defaultValue": 85,
-          "format": "currency",
-          "group": "profile",
-          "profile": true
-        },
-        {
-          "id": "forms_per_client_per_year",
-          "label": "Forms per client per year",
-          "type": "slider",
-          "min": 1,
-          "max": 24,
-          "step": 1,
-          "defaultValue": 5,
-          "format": "integer",
-          "group": "workload"
-        },
-        {
-          "id": "minutes_per_form",
-          "label": "Average hands-on time per form today",
-          "type": "slider",
-          "min": 5,
-          "max": 180,
-          "step": 5,
-          "defaultValue": 30,
-          "format": "number",
-          "unit": "min",
-          "group": "workload"
-        },
-        {
-          "id": "automation_share",
-          "label": "Share of this work automated",
-          "type": "slider",
-          "min": 10,
-          "max": 90,
-          "step": 5,
-          "defaultValue": 50,
-          "format": "percent",
-          "group": "workload"
-        },
-        {
-          "id": "tokens_per_unit",
-          "label": "Estimated tokens per automated hour",
-          "type": "slider",
-          "min": 10000,
-          "max": 250000,
-          "step": 5000,
-          "defaultValue": 40000,
-          "format": "tokens",
-          "group": "economics"
-        },
-        {
-          "id": "input_price",
-          "label": "Model input price / 1M tokens",
-          "type": "number",
-          "min": 0,
-          "max": 50,
-          "step": 0.25,
-          "defaultValue": 2,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "output_price",
-          "label": "Model output price / 1M tokens",
-          "type": "number",
-          "min": 0,
-          "max": 80,
-          "step": 0.25,
-          "defaultValue": 10,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "output_share",
-          "label": "Share of tokens that are output",
-          "type": "slider",
-          "min": 5,
-          "max": 50,
-          "step": 1,
-          "defaultValue": 20,
-          "format": "percent",
-          "group": "economics"
-        },
-        {
-          "id": "license",
-          "label": "Platform licence per month",
-          "type": "slider",
-          "min": 0,
-          "max": 6000,
-          "step": 50,
-          "defaultValue": 1500,
-          "format": "currency",
-          "group": "economics"
-        },
-        {
-          "id": "allocation_volume",
-          "label": "Share used to absorb more volume",
-          "help": "Throughput: extra work the same team can take. Valued as capacity creation, not cash leaving payroll.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 50,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "allocation_billable",
-          "label": "Share used for higher-value / billable work",
-          "help": "Positive productivity: advisory, selling, or other contribution-margin work.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 25,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "allocation_cost_reduction",
-          "label": "Share that is genuine cost reduction",
-          "help": "Negative productivity removed as cash: overtime, contractors, or work you would otherwise pay for.",
-          "type": "slider",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "defaultValue": 17,
-          "format": "percent",
-          "group": "allocation"
-        },
-        {
-          "id": "contribution_rate",
-          "label": "Contribution margin / hour of higher-value work",
-          "help": "Used only for the billable/advisory share. This is not an hourly salary.",
-          "type": "slider",
-          "min": 20,
-          "max": 400,
-          "step": 5,
-          "defaultValue": 150,
-          "format": "currency",
-          "group": "allocation"
-        },
-        {
-          "id": "expected_error_cost",
-          "label": "Expected monthly error / rework cost today",
-          "type": "slider",
-          "min": 0,
-          "max": 20000,
-          "step": 50,
-          "defaultValue": 800,
-          "format": "currency",
-          "group": "workload"
-        },
-        {
-          "id": "error_reduction_share",
-          "label": "Share of that error cost avoided",
-          "type": "slider",
-          "min": 0,
-          "max": 90,
-          "step": 5,
-          "defaultValue": 35,
-          "format": "percent",
-          "group": "workload"
-        }
-      ],
-      "metrics": [
-        {
-          "id": "hours_removed",
-          "label": "Repetitive work automated",
-          "formula": "(client_entities * forms_per_client_per_year / 12) * (minutes_per_form / 60) * (automation_share / 100)",
-          "format": "hours",
-          "kind": "card",
-          "layer": "operations",
-          "productivity": "negative",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Negative productivity: operating burden removed."
-        },
-        {
-          "id": "hours_returned",
-          "label": "Capacity returned to the team",
-          "formula": "hours_removed",
-          "format": "hours",
-          "kind": "card",
-          "layer": "operations",
-          "productivity": "positive",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Positive productivity: hours now available for better work."
-        },
-        {
-          "id": "work_units",
-          "label": "Forms handled each month",
-          "formula": "client_entities * forms_per_client_per_year / 12",
-          "format": "integer",
-          "kind": "card",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "unused_share",
-          "label": "Unused capacity share",
-          "formula": "100 - allocation_volume - allocation_billable - allocation_cost_reduction",
-          "format": "percent",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": false,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "volume_hours",
-          "label": "Hours allocated to more volume",
-          "formula": "hours_returned * (allocation_volume / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "billable_hours",
-          "label": "Hours allocated to higher-value work",
-          "formula": "hours_returned * (allocation_billable / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "cost_hours",
-          "label": "Hours that become genuine cost reduction",
-          "formula": "hours_returned * (allocation_cost_reduction / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "unused_hours",
-          "label": "Hours held as unused capacity",
-          "formula": "hours_returned * (unused_share / 100)",
-          "format": "hours",
-          "kind": "hidden",
-          "layer": "operations",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "monthly_tokens",
-          "label": "Tokens per month",
-          "formula": "hours_removed * tokens_per_unit",
-          "format": "tokens",
-          "kind": "hidden",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "model_cost",
-          "label": "AI model cost (est.)",
-          "formula": "(monthly_tokens * (1 - output_share / 100) / 1000000) * input_price + (monthly_tokens * (output_share / 100) / 1000000) * output_price",
-          "format": "currency",
-          "kind": "breakdown-cost",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "all_in_cost",
-          "label": "All-in AI cost",
-          "formula": "model_cost + license",
-          "format": "currency",
-          "kind": "summary-cost",
-          "layer": "economics",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "cost_elimination",
-          "label": "Genuine cost eliminated",
-          "formula": "cost_hours * capacity_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "cost-elimination",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false,
-          "note": "Overtime, contractors, or other spend you would actually stop."
-        },
-        {
-          "id": "revenue_productivity",
-          "label": "Contribution from higher-value work",
-          "formula": "billable_hours * contribution_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "revenue-productivity",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": true,
-          "note": "Valued at contribution margin, not salary."
-        },
-        {
-          "id": "throughput_value",
-          "label": "Capacity to take more volume",
-          "formula": "volume_hours * capacity_rate",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "throughput",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": true,
-          "note": "Shadow price of extra throughput, not a payroll saving."
-        },
-        {
-          "id": "error_value",
-          "label": "Expected error and rework avoided",
-          "formula": "expected_error_cost * (error_reduction_share / 100)",
-          "format": "currency",
-          "kind": "breakdown-benefit",
-          "layer": "value",
-          "valueClass": "error-avoidance",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "economic_value",
-          "label": "Modeled economic value",
-          "formula": "cost_elimination + revenue_productivity + throughput_value + error_value",
-          "format": "currency",
-          "kind": "summary-benefit",
-          "layer": "value",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "net_value",
-          "label": "Economic value after AI cost",
-          "formula": "economic_value - all_in_cost",
-          "format": "currency",
-          "kind": "card",
-          "layer": "value",
-          "scalesWithPeriod": true,
-          "scalesWithScenario": false
-        },
-        {
-          "id": "return_multiple",
-          "label": "Economic return on all-in AI cost",
-          "formula": "economic_value / all_in_cost",
-          "format": "multiplier",
-          "kind": "summary-roi",
-          "layer": "value",
-          "scalesWithPeriod": false,
-          "scalesWithScenario": false
-        }
-      ],
-      "projection": {
-        "months": 12,
-        "costMetricId": "all_in_cost",
-        "benefitMetricId": "net_value",
-        "yearOneLabel": "Year one economic value after AI cost",
-        "costLabel": "AI cost (all-in)",
-        "benefitLabel": "Economic value after cost"
       },
       "cta": {
-        "primaryLabel": "Run a simulation with Sherma",
-        "secondaryLabel": "See a sample output",
+        "primaryLabel": "Запустите моделирование с помощью Sherma",
+        "secondaryLabel": "См. образец вывода",
         "primaryTarget": "contact",
-        "privacyNote": "Your data stays private. Hours are capacity. Euros are classified modeled value, not observed results."
+        "privacyNote": "Ваши данные остаются конфиденциальными. Часы — это производительность. Финансовые суммы являются смоделированными оценками, а не наблюдаемыми результатами.",
+        "secondaryTarget": "how-it-works"
+      },
+      "currencyCopy": {
+        "native": "Суммы в {currency}.",
+        "loading": "Проверка местной валюты. Суммы остаются в {currency}, пока курс не станет доступен.",
+        "unavailable": "Текущий местный обменный курс недоступен. Суммы остаются в {currency}.",
+        "converted": "Суммы конвертированы из {base} в {currency} по справочному курсу от {date}.",
+        "basis": "Конвертация валюты не является исследованием местных затрат. Введите свои собственные местные затраты и предположения о вкладе. Изменения языка не меняют суммы."
+      },
+      "costCopy": {
+        "breakdown": "Как формируется общая стоимость ИИ",
+        "perUnit": "{amount} за единицу работы (в среднем)",
+        "budgetOnly": "Это ваш общий бюджет. Переключитесь на раздел «Разбивка затрат», чтобы детализировать его; разделение не предполагалось.",
+        "benefitNotice": "Моделируемые выгоды, а не расходы. Зачеркнутые суммы — это расходы, которых вы ожидаете избежать, а не скидки на счет за ИИ.",
+        "remainder": "Прочие включенные операционные расходы",
+        "allocation": "Возвращенные часы — это потенциал, а не автоматическая экономия. Денежную ценность получают только те части, которые вы направляете на фактическое сокращение расходов или дополнительный вклад."
       }
     }
   }
