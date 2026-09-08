@@ -878,11 +878,26 @@
     "roiCalculator": {
       "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "Affärspåverkan",
-      "heading": "ROI-kalkylator",
-      "subheading": "Börja med kapacitet. Bestäm sedan vad det kan vara värt.",
-      "disclaimer": "Ett scenario byggt utifrån dina antaganden, inte observerade resultat eller garanterade besparingar. Returnerade timmar är kapacitet, inte en automatisk lönesänkning.",
+      "kicker": "Business impact",
+      "heading": "ROI Calculator",
+      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
+      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
       "currency": "SEK",
+      "currencyCopy": {
+        "native": "Amounts in {currency}.",
+        "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
+        "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
+        "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
+        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+      },
+      "costCopy": {
+        "breakdown": "How the all-in AI cost is built",
+        "perUnit": "{amount} per work unit (average)",
+        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
+        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "remainder": "Other included operating costs",
+        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+      },
       "locale": "sv-SE",
       "inputs": [],
       "metrics": [],
@@ -891,259 +906,317 @@
           "volume": 208,
           "minutes": 30,
           "automation": 50,
-          "review": 5
+          "review": 5,
+          "tokens_per_output": 5000,
+          "model_cost": 0,
+          "tools_cost": 0,
+          "infrastructure_cost": 0,
+          "platform_cost": 1500,
+          "higher_value_hours": 34.6,
+          "contribution_rate": 180
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "Din arbetsbörda",
-          "costStep": "Driftskostnad",
-          "valueStep": "Använd kapaciteten",
-          "workloadIntro": "Förberedelse av modellformulär, korrigeringar och mänsklig granskning – inte automatisk live-arkivering eller garanterad acceptans.",
-          "costIntro": "Inkludera de kostnader som krävs för att driva denna arbetsbörda. Det här är dina uppskattningar, inte ett Gabriel offert.",
-          "valueIntro": "Vad kommer du att göra med de returnerade timmarna? Välj bara resultat du förväntar dig att uppnå.",
-          "sampleNotice": "Illustrativ arbetsbelastning · ej observerade resultat",
-          "monthly": "Månadsvis",
-          "yearly": "Årligen",
-          "next": "Fortsätt",
-          "back": "Tillbaka",
-          "reset": "Återställ antaganden",
-          "summary": "Din modellerade inverkan",
-          "volume": "Arbetsenheter modellerade",
-          "grossHours": "Repetitivt arbete minskat",
-          "capacity": "Nettokapacitet återförd",
-          "retained": "Kapacitet hålls tillgänglig",
-          "hours": "timmar",
-          "days": "dagar",
+          "workloadStep": "Forms this month",
+          "costStep": "Token usage",
+          "valueStep": "What you keep in-house",
+          "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
+          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
+          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
+          "sampleNotice": "Typical usage · not observed results",
+          "monthly": "Monthly",
+          "yearly": "Yearly",
+          "next": "Continue",
+          "back": "Back",
+          "reset": "Reset assumptions",
+          "summary": "Your modeled impact",
+          "volume": "Forms modeled",
+          "grossHours": "Repetitive work reduced",
+          "capacity": "Reviewer hours returned",
+          "retained": "Capacity kept available",
+          "hours": "hours",
+          "days": "days",
           "percent": "%",
-          "minutes": "minuter",
-          "reviewMode": "Vem sköter granskningen?",
-          "teamReview": "Befintligt team",
-          "paidReview": "Ytterligare betald granskare",
-          "reviewNote": "Befintlig teamgranskning använder returnerad kapacitet. Ytterligare betald recension ingår i driftskostnaden, dras inte av igen från teamkapaciteten.",
-          "totalMode": "Månadsbudget",
-          "itemizedMode": "Kostnadsfördelning",
-          "budgetNote": "Budgeten måste inkludera modeller/media, verktyg, infrastruktur, Gabriel avgifter och eventuell ytterligare betald recension. Inkludera inte oförändrad lönesumma som nya utgifter.",
-          "itemizedNote": "Ange noll för en kostnad som inte gäller. Ytterligare betald recension beräknas utifrån recensionstimmar och dess faktiska pris.",
-          "paidReviewCost": "Ytterligare betald recensionskostnad",
-          "allInCost": "Driftskostnad",
-          "missing": "Lägg till dina antaganden",
-          "cashValue": "Kontantutgifter undviks",
-          "contribution": "Förväntat bidrag",
-          "expectedLoss": "Förväntad förlustminskning",
-          "riskValue": "Osäkert riskvärde ingår",
-          "economicValue": "Modellerat ekonomiskt värde",
-          "netBenefit": "Nettomodellerad förmån",
-          "multiple": "Ekonomisk avkastning multipel",
-          "notApplicable": "Ej tillämpligt",
-          "annual": "Årsvy",
-          "annualNote": "Samma månatliga antaganden, utan tillväxt eller sammansättning. Anställningsbesparingar varar endast under den angivna perioden.",
-          "method": "Hur detta beräknas",
-          "burdenHeading": "Repetitivt arbete minskat",
-          "opportunityHeading": "Kapacitet för mer värdefullt arbete",
-          "methodBody": "Driftsbördan tas bort (negativ produktivitet) ger tillbaka kapacitet. Arbete med högre värde (potentiell positiv produktivitet) skapar ekonomiskt värde endast om den kapaciteten används. Bara timmar är inte kontantbesparingar.",
-          "formulaLabel": "Ekonomiskt värde ÷ driftskostnad = ekonomisk avkastningsmultipel. Nettonyttan drar av driftskostnaden en gång.",
-          "allocationNote": "Återförda timmar är kapacitet, inte automatiska besparingar. Endast de delar du tilldelar faktiska kostnadsminskningar eller ytterligare bidrag får ett monetärt värde.",
-          "overlapLabel": "Dessa fördelar är distinkta; Jag har exkluderat kostnader och förluster som redan räknats på annat håll.",
-          "overlapNote": "Fel- och riskuppskattningar utesluter arbetsbesparingar och samma incident får inte förekomma i båda kategorierna. Bidraget exkluderar AI-kostnader, som dras av separat.",
-          "hiringLabel": "Denna hyra var genuint planerad och den tilldelade kapaciteten kan täcka arbetet.",
-          "reviewedLabel": "Jag har granskat mina resultat; ej valda utfall har inget ekonomiskt värde i denna uppskattning.",
-          "cycleResult": "Förbättring av cykeltiden",
-          "throughputResult": "Merarbete med stöd av kapacitet och efterfrågan",
-          "assumptionsIncomplete": "Fyll i de valda antagandena för att beräkna ekonomiskt värde.",
-          "allocationError": "Tilldelade timmar överstiger den tillgängliga nettokapaciteten. Minska anslagen.",
-          "reviewError": "Granskning tar längre tid än arbetet minskat. Ingen positiv kapacitet är tillgänglig vid dessa antaganden.",
-          "cashError": "Undvikda utgifter får inte överstiga nuvarande utgifter eller ha ett positivt värde utan några timmar.",
-          "hiringError": "Tilldelad kapacitet ska täcka de planerade hyrtimmar. Bekräfta den planerade anställningen och dess varaktighet.",
-          "riskError": "Sannolikheten efter kan inte överstiga före-sannolikheten för en förlustreduktionsuppskattning.",
-          "overlapError": "Bekräfta att fördelarna inte överlappar varandra innan du inkluderar dem i det ekonomiska resultatet.",
-          "boundsError": "Använd värden inom de visade gränserna.",
-          "rangeLabel": "Justera värdet",
-          "noCurrencyChange": "Språket ändrar formateringen, inte din valuta eller dina antaganden."
+          "minutes": "minutes",
+          "tokens": "tokens",
+          "monthlyTokens": "Monthly tokens",
+          "tokenCost": "Token usage",
+          "packageLabel": "Usage package",
+          "packageBase": "Base",
+          "packageMedium": "Medium",
+          "packageCustom": "Custom",
+          "reviewMode": "Who handles the review?",
+          "teamReview": "Existing team",
+          "paidReview": "Additional paid reviewer",
+          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "totalMode": "Monthly budget",
+          "itemizedMode": "Cost breakdown",
+          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
+          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "paidReviewCost": "Additional paid review cost",
+          "allInCost": "Operating cost",
+          "missing": "Add your assumptions",
+          "cashValue": "Cash spending avoided",
+          "contribution": "Expected contribution",
+          "expectedLoss": "Expected loss reduction",
+          "riskValue": "Uncertain risk value included",
+          "economicValue": "Modeled economic value",
+          "netBenefit": "Net modeled benefit",
+          "multiple": "Economic return multiple",
+          "notApplicable": "Not applicable",
+          "annual": "Annual view",
+          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "method": "How this is calculated",
+          "burdenHeading": "Repetitive work reduced",
+          "opportunityHeading": "Capacity for higher-value work",
+          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
+          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
+          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
+          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
+          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "cycleResult": "Cycle-time improvement",
+          "throughputResult": "Additional work supported by capacity and demand",
+          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
+          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
+          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
+          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
+          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
+          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
+          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
+          "boundsError": "Use values within the displayed limits.",
+          "rangeLabel": "Adjust value",
+          "noCurrencyChange": "Language changes formatting, not your currency or assumptions."
         },
         "fields": {
           "volume": {
-            "label": "Blanketter utarbetade varje månad",
-            "help": "Använd en typisk månad, inte en topp i bästa fall."
+            "label": "Forms prepared each month",
+            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
           },
           "minutes": {
-            "label": "Hands-on minuter per enhet idag",
-            "help": "Aktiv arbetstid, exklusive väntetid och förfluten kalendertid."
+            "label": "Minutes to prepare one form today",
+            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
           },
           "automation": {
-            "label": "Andelen av det arbetet minskade",
-            "help": "Ett illustrativt antagande att validera i en pilot, inte ett prestationslöfte."
+            "label": "Share of that preparation Sherma handles",
+            "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "Granska minuter per enhet",
-            "help": "Mänsklig kontroll behövs fortfarande efter automatisering."
+            "label": "Minutes a person still spends on each form",
+            "help": "Human review still required before anything is filed."
+          },
+          "tokens_per_output": {
+            "label": "Tokens to prepare one form",
+            "help": "Modeled tokens to extract, fill and check one typical form."
           },
           "budget": {
-            "label": "Beräknad månatlig driftsbudget",
-            "help": "Inkludera alla modeller/media, verktyg, infrastruktur, Gabriel avgifter och ytterligare betald recension."
+            "label": "Estimated monthly operating budget",
+            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
           },
           "model_cost": {
-            "label": "Modeller och mediagenerering",
-            "help": "Din månatliga uppskattning, inklusive bilder eller video där tillämpligt."
+            "label": "Extra models and media",
+            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
           },
           "tools_cost": {
-            "label": "Verktyg och integrationer",
-            "help": "Webbläsarsessioner, anslutningar och andra mättjänster."
+            "label": "Tools and integrations",
+            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
           },
           "infrastructure_cost": {
-            "label": "Infrastruktur",
-            "help": "Inkrementell värd, lagring och beräkning för denna arbetsbelastning."
+            "label": "Infrastructure",
+            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel avgifter",
-            "help": "Använd din överenskomna avgift eller ditt eget budgetantagande; detta är inte en prisuppgift."
+            "label": "Gabriel platform fee",
+            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
           },
           "review_rate": {
-            "label": "Ytterligare betald recension per timme",
-            "help": "Faktiska extra granskarutgifter, inte lönen för en oförändrad anställd."
+            "label": "Additional paid review per hour",
+            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
           },
           "cash_hours": {
-            "label": "Timmar som tar bort betalt arbete",
-            "help": "Tilldela endast arbete vars övertid, entreprenör eller bearbetningsutgifter faktiskt kommer att upphöra."
+            "label": "Hours that remove paid work",
+            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
           },
           "cash_baseline": {
-            "label": "Aktuella månatliga utgifter för det arbetet",
-            "help": "Den kassabudget som minskningen kommer ifrån."
+            "label": "Current monthly spending on that work",
+            "help": "The cash budget from which the reduction will come."
           },
           "cash_avoided": {
-            "label": "Månatliga utgifter du skulle sluta",
-            "help": "Ett uttryckligt belopp, inte timmar multiplicerat med lön; exkludera eventuella planerade hyresbesparingar som anges separat."
+            "label": "Monthly spending you would stop",
+            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
           },
           "higher_value_hours": {
-            "label": "Timmar som används för mer värdefullt arbete",
-            "help": "Timmar som du realistiskt kan omdirigera, inte hela kapaciteten som standard."
+            "label": "Hours kept for advisory review",
+            "help": "Hours your existing team can spend on clients instead of re-keying."
           },
           "contribution_rate": {
-            "label": "Inkrementellt bidrag per timme",
-            "help": "Intäkter minus inkrementella leveranskostnader, exklusive AI-kostnader räknade separat. Inte lön eller bruttointäkter."
+            "label": "Contribution of that advisory hour",
+            "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "Timmar som används för extra volym",
-            "help": "Detta anslag kan inte även användas för rådgivningsarbete eller utgiftsminskningar."
+            "label": "Hours used for additional volume",
+            "help": "This allocation cannot also be used for advisory work or spending reductions."
           },
           "extra_minutes": {
-            "label": "Lagminuter per extra enhet",
-            "help": "Den återstående mänskliga ansträngningen, inklusive granskning, behövde leverera ytterligare en enhet."
+            "label": "Team minutes per additional unit",
+            "help": "The remaining human effort, including review, needed to deliver one more unit."
           },
           "demand": {
-            "label": "Ytterligare enheter med förväntad efterfrågan",
-            "help": "Enbart kapacitet är inte efterfrågan. Ange det extra månatliga arbete du förväntar dig att ta på dig."
+            "label": "Additional units with expected demand",
+            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
           },
           "unit_margin": {
-            "label": "Bidrag per ytterligare enhet",
-            "help": "Inkrementella intäkter minus leveranskostnader; Driftskostnader för AI dras av separat."
+            "label": "Contribution per additional unit",
+            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
           },
           "hiring_hours": {
-            "label": "Timmar som täcker den planerade hyran",
-            "help": "Tilldela kapacitet till specifikt planerat arbete, inte en generisk heltidsekvivalent uppskattning."
+            "label": "Hours covering the planned hire",
+            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
           },
           "planned_hours": {
-            "label": "Månadstimmar som den planerade hyran skulle täcka",
-            "help": "Den tilldelade kapaciteten måste täcka hela denna arbetsbörda."
+            "label": "Monthly hours the planned hire would cover",
+            "help": "The allocated capacity must cover this entire workload."
           },
           "hire_cost": {
-            "label": "Månatlig hyra kostnad faktiskt uppskjuten",
-            "help": "Använd kostnaden för en genuint planerad anställning, inte lönen för någon som redan är anställd."
+            "label": "Monthly hire cost actually deferred",
+            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
           },
           "hire_months": {
-            "label": "Månader som hyran skjuts upp",
-            "help": "En till tolv månader; den årliga uppskattningen slutar räkna besparingar efter denna period."
+            "label": "Months that hire is deferred",
+            "help": "One to twelve months; the annual estimate stops counting savings after this period."
           },
           "incidents": {
-            "label": "Förväntade undvikade fel per månad",
-            "help": "Använd din baslinje och förväntade minskning. Exkludera incidenter som också räknas som riskminskning."
+            "label": "Expected avoided errors per month",
+            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
           },
           "incident_cost": {
-            "label": "Inkrementell kostnad per fel",
-            "help": "Uteslut arbete, återbetalningar eller andra förluster som redan ingår någon annanstans."
+            "label": "Incremental cost per error",
+            "help": "Exclude labor, refunds or other losses already included elsewhere."
           },
           "probability_before": {
-            "label": "Månatlig förlustsannolikhet innan",
-            "help": "Din uppskattning, inte en garanterad riskbedömning."
+            "label": "Monthly loss probability before",
+            "help": "Your estimate, not a guaranteed risk assessment."
           },
           "probability_after": {
-            "label": "Månatlig förlustsannolikhet efter",
-            "help": "Använd samma händelse och månatliga tidshorisont som baslinjen."
+            "label": "Monthly loss probability after",
+            "help": "Use the same event and monthly time horizon as the baseline."
           },
           "loss": {
-            "label": "Förlustexponering för den händelsen",
-            "help": "Uteslut felincidenter och redan räknade utgifter. Detta är ett osäkert förväntat värde, inte sparade pengar."
+            "label": "Loss exposure for that event",
+            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
           },
           "days_before": {
-            "label": "Cykeltid före, i dagar",
-            "help": "Förfluten tid från start till slutförande, separat från praktisk ansträngning."
+            "label": "Cycle time before, in days",
+            "help": "Elapsed time from start to completion, separate from hands-on effort."
           },
           "days_after": {
-            "label": "Cykeltid efter, i dagar",
-            "help": "Visas endast som en operativ förändring, utan ett antaget monetärt värde."
+            "label": "Cycle time after, in days",
+            "help": "Shown as an operational change only, without an assumed monetary value."
           }
         },
         "burden": [
-          "Upprepad formulärförberedelse och inträde",
-          "Jagar saknade fält och korrigerar fel"
+          "Repeated form preparation and entry",
+          "Chasing missing fields and correcting errors"
         ],
         "opportunity": [
-          "Ytterligare bearbetningskapacitet",
-          "Kundrådgivning och granskningstid"
+          "Additional processing capacity",
+          "Client advisory and review time"
         ],
+        "usagePackages": {
+          "base": {
+            "volume": 104,
+            "tokensPerOutput": 5000,
+            "platform_cost": 990,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 17.3,
+            "contribution_rate": 180
+          },
+          "medium": {
+            "volume": 208,
+            "tokensPerOutput": 5000,
+            "platform_cost": 1500,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 34.6,
+            "contribution_rate": 180
+          }
+        },
+        "defaultPackage": "medium",
+        "costMode": "itemized",
+        "reviewMode": "team",
+        "selected": [
+          "higher_value"
+        ],
+        "confirmations": {
+          "overlap": true,
+          "hiring": true,
+          "outcomes": true,
+          "hide": true
+        },
+        "hero": {
+          "kind": "volume",
+          "label": "Review-ready forms"
+        },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "Gör ett arbete med högre värde",
-            "help": "Använd en del av arbetskapaciteten med inkrementell insats."
+            "label": "Keep reviewers on advisory work",
+            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+          }
+        ],
+        "tabs": [
+          {
+            "id": "forms",
+            "label": "Forms this month",
+            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "fields": [
+              "volume",
+              "minutes",
+              "automation",
+              "review"
+            ],
+            "showPackage": true,
+            "showReview": true
           },
           {
-            "id": "throughput",
-            "label": "Hantera mer volym",
-            "help": "Matcha tillgänglig kapacitet med faktisk förväntad efterfrågan."
+            "id": "tokens",
+            "label": "Token usage",
+            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "fields": [
+              "tokens_per_output",
+              "platform_cost",
+              "model_cost",
+              "tools_cost",
+              "infrastructure_cost"
+            ],
+            "showPackage": true
           },
           {
-            "id": "cash",
-            "label": "Stoppa faktiska utgifter",
-            "help": "Minska övertid, entreprenörer eller betald handläggning – inte oförändrade löner."
-          },
-          {
-            "id": "hiring",
-            "label": "Skjut upp en planerad anställning",
-            "help": "Täck en specifik, genuint planerad arbetsbelastning under en angiven period."
-          },
-          {
-            "id": "error",
-            "label": "Undvik fel och omarbetning",
-            "help": "Uppskatta olika incidenter och deras inkrementella kostnad."
-          },
-          {
-            "id": "cycle_time",
-            "label": "Avsluta tidigare",
-            "help": "Visa förbättrade förflutna dagar utan att automatiskt koppla ett monetärt värde."
+            "id": "kept",
+            "label": "What you keep in-house",
+            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
+            "fields": [],
+            "showPackage": true,
+            "showOutcomes": true
           }
         ]
       },
       "cta": {
-        "primaryLabel": "Kör en simulering med Sherma",
-        "secondaryLabel": "Se ett exempel på utdata",
+        "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "contact",
-        "privacyNote": "Din data förblir privat. Timmar är kapacitet. Finansiella belopp är modellerade uppskattningar, inte observerade resultat.",
+        "secondaryLabel": "See a sample output",
+        "privacyNote": "Your data stays private. Hours are capacity. Financial amounts are modeled estimates, not observed results.",
         "secondaryTarget": "how-it-works"
-      },
-      "currencyCopy": {
-        "native": "Belopp i {currency}.",
-        "loading": "Kontrollerar lokal valuta. Beloppen förblir i {currency} tills en kurs är tillgänglig.",
-        "unavailable": "En aktuell lokal växelkurs är inte tillgänglig. Beloppen förblir i {currency}.",
-        "converted": "Belopp konverterade från {base} till {currency} med referenskursen daterad {date}.",
-        "basis": "Valutakonvertering är inte lokal kostnadsforskning. Ange dina egna lokala kostnader och bidragsantaganden. Språkändringar ändrar inte belopp."
-      },
-      "costCopy": {
-        "breakdown": "Så här byggs den totala AI-kostnaden upp",
-        "perUnit": "{amount} per arbetsenhet (genomsnitt)",
-        "budgetOnly": "Detta är din totala budget. Växla till Kostnadsfördelning för att specificera den; ingen uppdelning har antagits.",
-        "benefitNotice": "Modellerade förmåner, inte avgifter. Överstrukna belopp är utgifter du förväntar dig att undvika, inte rabatter på AI-fakturan.",
-        "remainder": "Andra inkluderade driftskostnader",
-        "allocation": "Återförda timmar är kapacitet, inte automatiska besparingar. Endast de delar du tilldelar faktiska kostnadsminskningar eller ytterligare bidrag får ett monetärt värde."
       }
     }
   }

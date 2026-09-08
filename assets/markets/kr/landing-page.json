@@ -878,11 +878,26 @@
     "roiCalculator": {
       "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "비즈니스 영향",
-      "heading": "ROI 계산기",
-      "subheading": "용량부터 시작하세요. 그런 다음 그 가치가 무엇인지 결정하십시오.",
-      "disclaimer": "관찰된 결과나 보장된 절감액이 아닌 가정을 바탕으로 구축된 시나리오입니다. 반환된 시간은 능력에 따른 것이며 자동 급여 삭감이 아닙니다.",
+      "kicker": "Business impact",
+      "heading": "ROI Calculator",
+      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
+      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
       "currency": "KRW",
+      "currencyCopy": {
+        "native": "Amounts in {currency}.",
+        "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
+        "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
+        "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
+        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+      },
+      "costCopy": {
+        "breakdown": "How the all-in AI cost is built",
+        "perUnit": "{amount} per work unit (average)",
+        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
+        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "remainder": "Other included operating costs",
+        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+      },
       "locale": "ko-KR",
       "inputs": [],
       "metrics": [],
@@ -891,259 +906,317 @@
           "volume": 208,
           "minutes": 30,
           "automation": 50,
-          "review": 5
+          "review": 5,
+          "tokens_per_output": 5000,
+          "model_cost": 0,
+          "tools_cost": 0,
+          "infrastructure_cost": 0,
+          "platform_cost": 1500,
+          "higher_value_hours": 34.6,
+          "contribution_rate": 180
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "귀하의 작업량",
-          "costStep": "운영 비용",
-          "valueStep": "용량을 활용하세요",
-          "workloadIntro": "모델 양식 준비, 수정 및 인적 검토 - 자동 라이브 제출 또는 수락 보장이 아닙니다.",
-          "costIntro": "이 워크로드를 실행하는 데 필요한 비용을 포함합니다. 이는 Gabriel 견적이 아닌 귀하의 추정치입니다.",
-          "valueIntro": "반환된 시간으로 무엇을 하시겠습니까? 실현할 것으로 예상되는 결과만 선택하세요.",
-          "sampleNotice": "예시적인 작업량 · 관찰되지 않은 결과",
-          "monthly": "월간",
-          "yearly": "매년",
-          "next": "계속",
-          "back": "뒤로",
-          "reset": "가정 재설정",
-          "summary": "모델링된 영향",
-          "volume": "모델링된 작업 단위",
-          "grossHours": "반복작업 감소",
-          "capacity": "반환된 순 용량",
-          "retained": "사용 가능한 용량 유지",
-          "hours": "시간",
-          "days": "일",
+          "workloadStep": "Forms this month",
+          "costStep": "Token usage",
+          "valueStep": "What you keep in-house",
+          "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
+          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
+          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
+          "sampleNotice": "Typical usage · not observed results",
+          "monthly": "Monthly",
+          "yearly": "Yearly",
+          "next": "Continue",
+          "back": "Back",
+          "reset": "Reset assumptions",
+          "summary": "Your modeled impact",
+          "volume": "Forms modeled",
+          "grossHours": "Repetitive work reduced",
+          "capacity": "Reviewer hours returned",
+          "retained": "Capacity kept available",
+          "hours": "hours",
+          "days": "days",
           "percent": "%",
-          "minutes": "분",
-          "reviewMode": "검토는 누가 담당하나요?",
-          "teamReview": "기존 팀",
-          "paidReview": "추가 유료 리뷰어",
-          "reviewNote": "기존 팀 검토에서는 반환된 용량을 사용합니다. 추가 유료 리뷰는 운영 비용에 포함되며 팀 용량에서 다시 공제되지 않습니다.",
-          "totalMode": "월예산",
-          "itemizedMode": "비용 분석",
-          "budgetNote": "예산에는 모델/미디어, 도구, 인프라, Gabriel 수수료 및 추가 유료 리뷰가 포함되어야 합니다. 변경되지 않은 급여를 새로운 지출로 포함하지 마십시오.",
-          "itemizedNote": "적용되지 않는 비용은 0을 입력하세요. 추가 유료 리뷰는 리뷰 시간과 실제 요율로 계산됩니다.",
-          "paidReviewCost": "추가 유료 리뷰 비용",
-          "allInCost": "운영 비용",
-          "missing": "가정을 추가하세요",
-          "cashValue": "현금 지출 방지",
-          "contribution": "예상 기여도",
-          "expectedLoss": "손실 감소 기대",
-          "riskValue": "불확실한 위험 값이 포함됨",
-          "economicValue": "모델링된 경제적 가치",
-          "netBenefit": "순 모델링 이익",
-          "multiple": "경제적 수익 배수",
-          "notApplicable": "해당 없음",
-          "annual": "연간 보기",
-          "annualNote": "성장이나 복리 없이 동일한 월별 가정. 채용 비용 절감은 입력한 기간 동안만 지속됩니다.",
-          "method": "계산 방법",
-          "burdenHeading": "반복작업 감소",
-          "opportunityHeading": "더 높은 가치의 작업을 위한 역량",
-          "methodBody": "운영 부담이 제거되어(음의 생산성) 용량을 반환합니다. 더 높은 가치의 작업(잠재적 긍정적 생산성)은 해당 용량이 사용되는 경우에만 경제적 가치를 창출합니다. 시간만으로는 현금을 절약할 수 없습니다.",
-          "formulaLabel": "경제적 가치 ¼ 운영 비용 = 경제적 수익 배수. 순 이익에서 운영 비용을 한 번 뺍니다.",
-          "allocationNote": "환수된 시간은 자동 절감이 아닌 역량입니다. 실제 지출 감소 또는 추가 기여에 할당된 부분에 한해 금전적 가치를 인정합니다.",
-          "overlapLabel": "이러한 이점은 뚜렷합니다. 다른 곳에서 이미 계산된 비용과 손실은 제외했습니다.",
-          "overlapNote": "오류 및 위험 추정치는 인건비 절감을 제외하며 동일한 사고가 두 범주 모두에 나타나서는 안 됩니다. 기여금에는 별도로 공제되는 AI 비용이 제외됩니다.",
-          "hiringLabel": "이번 고용은 진정으로 계획된 것이며 할당된 역량으로 작업을 감당할 수 있습니다.",
-          "reviewedLabel": "나는 내 결과를 검토했습니다. 선택되지 않은 결과는 이 추정치에 금전적 가치가 없습니다.",
-          "cycleResult": "사이클타임 개선",
-          "throughputResult": "용량 및 수요에 따라 지원되는 추가 작업",
-          "assumptionsIncomplete": "재정적 가치를 계산하려면 선택한 가정을 완료하세요.",
-          "allocationError": "할당된 시간이 사용 가능한 순 용량을 초과합니다. 할당을 줄입니다.",
-          "reviewError": "검토 작업은 줄어든 작업보다 시간이 더 걸립니다. 이러한 가정에서는 양의 용량을 사용할 수 없습니다.",
-          "cashError": "회피된 지출은 현재 지출을 초과할 수 없으며 할당된 시간이 없을 때 양수 값을 가질 수 없습니다.",
-          "hiringError": "할당된 용량은 계획된 고용 시간을 포함해야 합니다. 계획된 고용과 기간을 확인합니다.",
-          "riskError": "이후 확률은 손실 감소 추정에 대한 이전 확률을 초과할 수 없습니다.",
-          "overlapError": "재무 결과에 포함하기 전에 혜택이 중복되지 않는지 확인하세요.",
-          "boundsError": "표시된 한계 내의 값을 사용하십시오.",
-          "rangeLabel": "값 조정",
-          "noCurrencyChange": "언어는 통화나 가정이 아니라 형식을 변경합니다."
+          "minutes": "minutes",
+          "tokens": "tokens",
+          "monthlyTokens": "Monthly tokens",
+          "tokenCost": "Token usage",
+          "packageLabel": "Usage package",
+          "packageBase": "Base",
+          "packageMedium": "Medium",
+          "packageCustom": "Custom",
+          "reviewMode": "Who handles the review?",
+          "teamReview": "Existing team",
+          "paidReview": "Additional paid reviewer",
+          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "totalMode": "Monthly budget",
+          "itemizedMode": "Cost breakdown",
+          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
+          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "paidReviewCost": "Additional paid review cost",
+          "allInCost": "Operating cost",
+          "missing": "Add your assumptions",
+          "cashValue": "Cash spending avoided",
+          "contribution": "Expected contribution",
+          "expectedLoss": "Expected loss reduction",
+          "riskValue": "Uncertain risk value included",
+          "economicValue": "Modeled economic value",
+          "netBenefit": "Net modeled benefit",
+          "multiple": "Economic return multiple",
+          "notApplicable": "Not applicable",
+          "annual": "Annual view",
+          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "method": "How this is calculated",
+          "burdenHeading": "Repetitive work reduced",
+          "opportunityHeading": "Capacity for higher-value work",
+          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
+          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
+          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
+          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
+          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "cycleResult": "Cycle-time improvement",
+          "throughputResult": "Additional work supported by capacity and demand",
+          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
+          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
+          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
+          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
+          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
+          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
+          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
+          "boundsError": "Use values within the displayed limits.",
+          "rangeLabel": "Adjust value",
+          "noCurrencyChange": "Language changes formatting, not your currency or assumptions."
         },
         "fields": {
           "volume": {
-            "label": "매달 준비된 양식",
-            "help": "최상의 피크가 아닌 일반적인 월을 사용합니다."
+            "label": "Forms prepared each month",
+            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
           },
           "minutes": {
-            "label": "오늘 단위당 실습 시간(분)",
-            "help": "대기 및 경과된 달력 시간을 제외한 활성 작업 시간입니다."
+            "label": "Minutes to prepare one form today",
+            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
           },
           "automation": {
-            "label": "해당 작업의 비율이 감소함",
-            "help": "성능 약속이 아닌 파일럿에서 검증하기 위한 예시적인 가정입니다."
+            "label": "Share of that preparation Sherma handles",
+            "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "단위당 검토 시간(분)",
-            "help": "자동화 후에도 여전히 사람의 확인이 필요합니다."
+            "label": "Minutes a person still spends on each form",
+            "help": "Human review still required before anything is filed."
+          },
+          "tokens_per_output": {
+            "label": "Tokens to prepare one form",
+            "help": "Modeled tokens to extract, fill and check one typical form."
           },
           "budget": {
-            "label": "예상 월별 운영예산",
-            "help": "모든 모델/미디어, 도구, 인프라, Gabriel 수수료 및 추가 유료 리뷰를 포함합니다."
+            "label": "Estimated monthly operating budget",
+            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
           },
           "model_cost": {
-            "label": "모델 및 미디어 생성",
-            "help": "해당되는 경우 이미지 또는 비디오를 포함한 월별 추정치입니다."
+            "label": "Extra models and media",
+            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
           },
           "tools_cost": {
-            "label": "도구 및 통합",
-            "help": "브라우저 세션, 커넥터 및 기타 측정 서비스."
+            "label": "Tools and integrations",
+            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
           },
           "infrastructure_cost": {
-            "label": "인프라",
-            "help": "이 워크로드를 위한 증분 호스팅, 스토리지 및 컴퓨팅."
+            "label": "Infrastructure",
+            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel 수수료",
-            "help": "합의된 수수료 또는 자체 예산 가정을 사용하십시오. 이것은 가격 견적이 아닙니다."
+            "label": "Gabriel platform fee",
+            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
           },
           "review_rate": {
-            "label": "시간당 추가 유료 리뷰",
-            "help": "변경되지 않은 직원의 급여가 아닌 실제 추가 검토자 지출입니다."
+            "label": "Additional paid review per hour",
+            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
           },
           "cash_hours": {
-            "label": "유급 작업을 제거하는 시간",
-            "help": "초과 근무, 계약자 또는 처리 비용이 실제로 중단되는 작업만 할당하십시오."
+            "label": "Hours that remove paid work",
+            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
           },
           "cash_baseline": {
-            "label": "해당 작업에 대한 현재 월별 지출",
-            "help": "감소가 발생하는 현금 예산입니다."
+            "label": "Current monthly spending on that work",
+            "help": "The cash budget from which the reduction will come."
           },
           "cash_avoided": {
-            "label": "월간 지출을 중단할 수 있습니다.",
-            "help": "시간에 급여를 곱한 것이 아니라 하나의 명시적인 금액입니다. 별도로 입력된 계획된 고용 절감액은 제외됩니다."
+            "label": "Monthly spending you would stop",
+            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
           },
           "higher_value_hours": {
-            "label": "더 높은 가치의 작업에 사용되는 시간",
-            "help": "기본적으로 전체 용량이 아닌 현실적으로 리디렉션할 수 있는 시간입니다."
+            "label": "Hours kept for advisory review",
+            "help": "Hours your existing team can spend on clients instead of re-keying."
           },
           "contribution_rate": {
-            "label": "시간당 증분 기여",
-            "help": "별도로 계산된 AI 비용을 제외한 증분 배송 비용을 뺀 수익입니다. 급여나 총 수익이 아닙니다."
+            "label": "Contribution of that advisory hour",
+            "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "추가 볼륨에 사용된 시간",
-            "help": "이 할당은 자문 작업이나 지출 절감에도 사용할 수 없습니다."
+            "label": "Hours used for additional volume",
+            "help": "This allocation cannot also be used for advisory work or spending reductions."
           },
           "extra_minutes": {
-            "label": "추가 단위당 팀 시간",
-            "help": "검토를 포함한 남은 인간의 노력은 하나의 단위를 더 제공하는 데 필요했습니다."
+            "label": "Team minutes per additional unit",
+            "help": "The remaining human effort, including review, needed to deliver one more unit."
           },
           "demand": {
-            "label": "수요가 예상되는 추가 유닛",
-            "help": "용량만으로는 수요가 없습니다. 수행할 것으로 예상되는 추가 월별 작업을 입력하세요."
+            "label": "Additional units with expected demand",
+            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
           },
           "unit_margin": {
-            "label": "추가 단위당 기여도",
-            "help": "배송 비용을 제외한 추가 수익; AI 운영 비용은 별도로 공제됩니다."
+            "label": "Contribution per additional unit",
+            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
           },
           "hiring_hours": {
-            "label": "계획된 고용 시간",
-            "help": "일반적인 정규직 추정이 아닌 특정 계획 작업에 용량을 할당합니다."
+            "label": "Hours covering the planned hire",
+            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
           },
           "planned_hours": {
-            "label": "계획된 고용에 포함되는 월별 시간",
-            "help": "할당된 용량은 이 전체 워크로드를 포괄해야 합니다."
+            "label": "Monthly hours the planned hire would cover",
+            "help": "The allocated capacity must cover this entire workload."
           },
           "hire_cost": {
-            "label": "실제로 월 임대료가 연기되었습니다.",
-            "help": "이미 고용된 사람의 급여가 아닌 실제로 계획된 고용 비용을 사용하십시오."
+            "label": "Monthly hire cost actually deferred",
+            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
           },
           "hire_months": {
-            "label": "고용이 연기되는 달",
-            "help": "1~12개월; 이 기간 이후에는 연간 추정치에서 절감액 계산이 중단됩니다."
+            "label": "Months that hire is deferred",
+            "help": "One to twelve months; the annual estimate stops counting savings after this period."
           },
           "incidents": {
-            "label": "월별 예상 방지 오류",
-            "help": "기준선과 예상 감소량을 사용하세요. 사고도 위험 감소로 간주하여 제외합니다."
+            "label": "Expected avoided errors per month",
+            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
           },
           "incident_cost": {
-            "label": "오류당 증분 비용",
-            "help": "다른 곳에 이미 포함된 인건비, 환불 또는 기타 손실은 제외하세요."
+            "label": "Incremental cost per error",
+            "help": "Exclude labor, refunds or other losses already included elsewhere."
           },
           "probability_before": {
-            "label": "월별 손실 확률 이전",
-            "help": "보장된 위험 평가가 아닌 귀하의 추정치입니다."
+            "label": "Monthly loss probability before",
+            "help": "Your estimate, not a guaranteed risk assessment."
           },
           "probability_after": {
-            "label": "이후 월별 손실 확률",
-            "help": "동일한 이벤트 및 월별 기간을 기준으로 사용합니다."
+            "label": "Monthly loss probability after",
+            "help": "Use the same event and monthly time horizon as the baseline."
           },
           "loss": {
-            "label": "해당 이벤트에 대한 손실 노출",
-            "help": "이미 계산된 오류 사고 및 지출을 제외합니다. 이는 저장된 현금이 아닌 불확실한 기대 가치입니다."
+            "label": "Loss exposure for that event",
+            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
           },
           "days_before": {
-            "label": "이전 주기 시간(일)",
-            "help": "직접 작업한 작업과 별개로 시작부터 완료까지 경과된 시간입니다."
+            "label": "Cycle time before, in days",
+            "help": "Elapsed time from start to completion, separate from hands-on effort."
           },
           "days_after": {
-            "label": "이후 주기 시간(일)",
-            "help": "가정된 금전적 가치 없이 운영상의 변경으로만 표시됩니다."
+            "label": "Cycle time after, in days",
+            "help": "Shown as an operational change only, without an assumed monetary value."
           }
         },
         "burden": [
-          "반복되는 양식 준비 및 입력",
-          "누락된 필드를 쫓고 오류를 수정합니다"
+          "Repeated form preparation and entry",
+          "Chasing missing fields and correcting errors"
         ],
         "opportunity": [
-          "추가 처리 용량",
-          "고객 권고 및 검토 시간"
+          "Additional processing capacity",
+          "Client advisory and review time"
         ],
+        "usagePackages": {
+          "base": {
+            "volume": 104,
+            "tokensPerOutput": 5000,
+            "platform_cost": 990,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 17.3,
+            "contribution_rate": 180
+          },
+          "medium": {
+            "volume": 208,
+            "tokensPerOutput": 5000,
+            "platform_cost": 1500,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 34.6,
+            "contribution_rate": 180
+          }
+        },
+        "defaultPackage": "medium",
+        "costMode": "itemized",
+        "reviewMode": "team",
+        "selected": [
+          "higher_value"
+        ],
+        "confirmations": {
+          "overlap": true,
+          "hiring": true,
+          "outcomes": true,
+          "hide": true
+        },
+        "hero": {
+          "kind": "volume",
+          "label": "Review-ready forms"
+        },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "더 높은 가치의 일을 하세요",
-            "help": "증분 기여로 작업 용량의 일부를 사용하십시오."
+            "label": "Keep reviewers on advisory work",
+            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+          }
+        ],
+        "tabs": [
+          {
+            "id": "forms",
+            "label": "Forms this month",
+            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "fields": [
+              "volume",
+              "minutes",
+              "automation",
+              "review"
+            ],
+            "showPackage": true,
+            "showReview": true
           },
           {
-            "id": "throughput",
-            "label": "더 많은 볼륨 처리",
-            "help": "가용 용량을 실제 예상 수요와 일치시킵니다."
+            "id": "tokens",
+            "label": "Token usage",
+            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "fields": [
+              "tokens_per_output",
+              "platform_cost",
+              "model_cost",
+              "tools_cost",
+              "infrastructure_cost"
+            ],
+            "showPackage": true
           },
           {
-            "id": "cash",
-            "label": "실제 지출을 중단하세요",
-            "help": "초과 근무, 계약자 또는 유급 처리를 줄입니다. 급여는 그대로 유지됩니다."
-          },
-          {
-            "id": "hiring",
-            "label": "계획된 채용 연기",
-            "help": "명시된 기간 동안 구체적이고 실제로 계획된 워크로드를 처리합니다."
-          },
-          {
-            "id": "error",
-            "label": "오류를 피하고 재작업하십시오",
-            "help": "고유한 사고와 증분 비용을 추정합니다."
-          },
-          {
-            "id": "cycle_time",
-            "label": "더 빨리 끝내기",
-            "help": "금전적 가치를 자동으로 부여하지 않고 개선된 경과 일수를 표시합니다."
+            "id": "kept",
+            "label": "What you keep in-house",
+            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
+            "fields": [],
+            "showPackage": true,
+            "showOutcomes": true
           }
         ]
       },
       "cta": {
-        "primaryLabel": "Sherma 으로 시뮬레이션을 실행하십시오",
-        "secondaryLabel": "샘플 출력을 참조하십시오",
+        "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "contact",
-        "privacyNote": "귀하의 데이터는 비공개로 유지됩니다. 시간은 용량입니다. 재정 금액은 관찰된 결과가 아닌 모델링된 추정치입니다.",
+        "secondaryLabel": "See a sample output",
+        "privacyNote": "Your data stays private. Hours are capacity. Financial amounts are modeled estimates, not observed results.",
         "secondaryTarget": "how-it-works"
-      },
-      "currencyCopy": {
-        "native": "금액은 {currency}입니다.",
-        "loading": "현지 통화를 확인 중입니다. 환율을 사용할 수 있을 때까지 금액은 {currency}로 유지됩니다.",
-        "unavailable": "현재 현지 환율을 사용할 수 없습니다. 금액은 {currency}로 유지됩니다.",
-        "converted": "{date} 날짜의 기준 환율을 사용하여 금액이 {base}에서 {currency}로 변환되었습니다.",
-        "basis": "환율 변환은 현지 비용 조사가 아닙니다. 현지 비용 및 기여 가정을 직접 입력하십시오. 언어 변경은 금액을 변경하지 않습니다."
-      },
-      "costCopy": {
-        "breakdown": "총 AI 비용이 구성되는 방식",
-        "perUnit": "작업 단위당 {amount} (평균)",
-        "budgetOnly": "이것은 총 예산입니다. 항목별로 분류하려면 비용 분석으로 전환하십시오. 분할은 가정되지 않았습니다.",
-        "benefitNotice": "모델링된 혜택이며 청구 금액이 아닙니다. 취소선이 그어진 금액은 AI 청구서 할인이 아니라 피할 것으로 예상되는 지출입니다.",
-        "remainder": "기타 포함된 운영 비용",
-        "allocation": "환수된 시간은 자동 절감이 아닌 역량입니다. 실제 지출 감소 또는 추가 기여에 할당된 부분에 한해 금전적 가치를 인정합니다."
       }
     }
   }

@@ -878,11 +878,26 @@
     "roiCalculator": {
       "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "Zakelijke impact",
-      "heading": "ROI-calculator",
-      "subheading": "Begin met capaciteit. Bepaal vervolgens wat het waard kan zijn.",
-      "disclaimer": "Een scenario dat is opgebouwd op basis van uw aannames, niet op basis van waargenomen resultaten of gegarandeerde besparingen. Teruggegeven uren zijn capaciteit, geen automatische loonsverlaging.",
+      "kicker": "Business impact",
+      "heading": "ROI Calculator",
+      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
+      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
       "currency": "EUR",
+      "currencyCopy": {
+        "native": "Amounts in {currency}.",
+        "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
+        "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
+        "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
+        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+      },
+      "costCopy": {
+        "breakdown": "How the all-in AI cost is built",
+        "perUnit": "{amount} per work unit (average)",
+        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
+        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "remainder": "Other included operating costs",
+        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+      },
       "locale": "nl-NL",
       "inputs": [],
       "metrics": [],
@@ -891,259 +906,317 @@
           "volume": 208,
           "minutes": 30,
           "automation": 50,
-          "review": 5
+          "review": 5,
+          "tokens_per_output": 5000,
+          "model_cost": 0,
+          "tools_cost": 0,
+          "infrastructure_cost": 0,
+          "platform_cost": 1500,
+          "higher_value_hours": 34.6,
+          "contribution_rate": 180
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "Jouw werklast",
-          "costStep": "Bedrijfskosten",
-          "valueStep": "Gebruik de capaciteit",
-          "workloadIntro": "Modelvoorbereiding, correcties en menselijke beoordeling - niet automatisch live archiveren of gegarandeerde acceptatie.",
-          "costIntro": "Neem de kosten op die nodig zijn om deze werklast uit te voeren. Dit zijn uw schattingen, geen Gabriel citaat.",
-          "valueIntro": "Wat gaat u met de teruggegeven uren doen? Selecteer alleen resultaten die u verwacht te realiseren.",
-          "sampleNotice": "Illustratieve werklast · niet waargenomen resultaten",
-          "monthly": "Maandelijks",
-          "yearly": "Jaarlijks",
-          "next": "Ga door",
-          "back": "Terug",
-          "reset": "Aannames opnieuw instellen",
-          "summary": "Jouw gemodelleerde impact",
-          "volume": "Werkeenheden gemodelleerd",
-          "grossHours": "Repetitief werk verminderd",
-          "capacity": "Nettocapaciteit geretourneerd",
-          "retained": "Capaciteit beschikbaar gehouden",
-          "hours": "uur",
-          "days": "dagen",
+          "workloadStep": "Forms this month",
+          "costStep": "Token usage",
+          "valueStep": "What you keep in-house",
+          "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
+          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
+          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
+          "sampleNotice": "Typical usage · not observed results",
+          "monthly": "Monthly",
+          "yearly": "Yearly",
+          "next": "Continue",
+          "back": "Back",
+          "reset": "Reset assumptions",
+          "summary": "Your modeled impact",
+          "volume": "Forms modeled",
+          "grossHours": "Repetitive work reduced",
+          "capacity": "Reviewer hours returned",
+          "retained": "Capacity kept available",
+          "hours": "hours",
+          "days": "days",
           "percent": "%",
-          "minutes": "minuten",
-          "reviewMode": "Wie verzorgt de beoordeling?",
-          "teamReview": "Bestaande ploeg",
-          "paidReview": "Extra betaalde recensent",
-          "reviewNote": "Bij de beoordeling door een bestaand team wordt gebruikgemaakt van geretourneerde capaciteit. Extra betaalde beoordelingen zijn inbegrepen in de bedrijfskosten en worden niet opnieuw afgetrokken van de teamcapaciteit.",
-          "totalMode": "Maandelijks budget",
-          "itemizedMode": "Uitsplitsing van de kosten",
-          "budgetNote": "Het budget moet modellen/media, tools, infrastructuur, Gabriel kosten en eventuele aanvullende betaalde beoordelingen omvatten. Neem ongewijzigde loonlijsten niet op als nieuwe uitgaven.",
-          "itemizedNote": "Vul nul in voor kosten die niet van toepassing zijn. Extra betaalde beoordelingen worden berekend op basis van de beoordelingsuren en het werkelijke tarief.",
-          "paidReviewCost": "Extra betaalde beoordelingskosten",
-          "allInCost": "Bedrijfskosten",
-          "missing": "Voeg je aannames toe",
-          "cashValue": "Contante uitgaven vermeden",
-          "contribution": "Verwachte bijdrage",
-          "expectedLoss": "Verwachte verliesreductie",
-          "riskValue": "Onzekere risicowaarde inbegrepen",
-          "economicValue": "Gemodelleerde economische waarde",
-          "netBenefit": "Netto gemodelleerd voordeel",
-          "multiple": "Economisch rendement veelvoud",
-          "notApplicable": "Niet van toepassing",
-          "annual": "Jaaroverzicht",
-          "annualNote": "Dezelfde maandelijkse aannames, zonder groei of verslechtering. Het inhuurbesparingen gelden alleen voor de ingevoerde periode.",
-          "method": "Hoe dit wordt berekend",
-          "burdenHeading": "Repetitief werk verminderd",
-          "opportunityHeading": "Capaciteit voor werk met een hogere waarde",
-          "methodBody": "Weggenomen operationele lasten (negatieve productiviteit) geven capaciteit terug. Werk met een hogere waarde (potentieel positieve productiviteit) creëert alleen economische waarde als die capaciteit wordt gebruikt. Uren alleen zijn geen geldbesparing.",
-          "formulaLabel": "Economische waarde ÷ bedrijfskosten = veelvoud van economisch rendement. Het nettovoordeel trekt één keer de bedrijfskosten af.",
-          "allocationNote": "De teruggekregen uren zijn capaciteit, geen automatische besparingen. Alleen de gedeelten die u toewijst aan daadwerkelijke uitgavenvermindering of extra bijdrage ontvangen een geldelijke waarde.",
-          "overlapLabel": "Deze voordelen zijn verschillend; Ik heb de kosten en verliezen die al elders zijn geteld, uitgesloten.",
-          "overlapNote": "Fouten- en risicoschattingen sluiten arbeidsbesparingen uit en hetzelfde incident mag niet in beide categorieën voorkomen. Bijdrage is exclusief AI-kosten, deze worden apart in mindering gebracht.",
-          "hiringLabel": "Deze aanwerving was echt gepland en de toegewezen capaciteit kan de werkzaamheden dekken.",
-          "reviewedLabel": "Ik heb mijn resultaten beoordeeld; niet-geselecteerde uitkomsten hebben in deze schatting geen financiële waarde.",
-          "cycleResult": "Verbetering van de cyclustijd",
-          "throughputResult": "Extra werk ondersteund door capaciteit en vraag",
-          "assumptionsIncomplete": "Voltooi de geselecteerde aannames om de financiële waarde te berekenen.",
-          "allocationError": "De toegekende uren overschrijden de netto beschikbare capaciteit. Verminder de toewijzingen.",
-          "reviewError": "Beoordeling kost meer tijd dan de hoeveelheid werk die wordt verminderd. Bij deze aannames is er geen positieve capaciteit beschikbaar.",
-          "cashError": "Vermeden uitgaven kunnen de huidige uitgaven niet overschrijden of een positieve waarde hebben zonder toegewezen uren.",
-          "hiringError": "De toegewezen capaciteit moet de geplande huururen dekken. Bevestig de geplande huur en de duur ervan.",
-          "riskError": "De na-kans kan bij een schatting van de verliesvermindering niet groter zijn dan de vóór-kans.",
-          "overlapError": "Controleer of de voordelen elkaar niet overlappen voordat u ze opneemt in het financiële resultaat.",
-          "boundsError": "Gebruik waarden binnen de weergegeven grenzen.",
-          "rangeLabel": "Waarde aanpassen",
-          "noCurrencyChange": "Taal verandert de opmaak, niet uw valuta of aannames."
+          "minutes": "minutes",
+          "tokens": "tokens",
+          "monthlyTokens": "Monthly tokens",
+          "tokenCost": "Token usage",
+          "packageLabel": "Usage package",
+          "packageBase": "Base",
+          "packageMedium": "Medium",
+          "packageCustom": "Custom",
+          "reviewMode": "Who handles the review?",
+          "teamReview": "Existing team",
+          "paidReview": "Additional paid reviewer",
+          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "totalMode": "Monthly budget",
+          "itemizedMode": "Cost breakdown",
+          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
+          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "paidReviewCost": "Additional paid review cost",
+          "allInCost": "Operating cost",
+          "missing": "Add your assumptions",
+          "cashValue": "Cash spending avoided",
+          "contribution": "Expected contribution",
+          "expectedLoss": "Expected loss reduction",
+          "riskValue": "Uncertain risk value included",
+          "economicValue": "Modeled economic value",
+          "netBenefit": "Net modeled benefit",
+          "multiple": "Economic return multiple",
+          "notApplicable": "Not applicable",
+          "annual": "Annual view",
+          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "method": "How this is calculated",
+          "burdenHeading": "Repetitive work reduced",
+          "opportunityHeading": "Capacity for higher-value work",
+          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
+          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
+          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
+          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
+          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "cycleResult": "Cycle-time improvement",
+          "throughputResult": "Additional work supported by capacity and demand",
+          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
+          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
+          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
+          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
+          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
+          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
+          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
+          "boundsError": "Use values within the displayed limits.",
+          "rangeLabel": "Adjust value",
+          "noCurrencyChange": "Language changes formatting, not your currency or assumptions."
         },
         "fields": {
           "volume": {
-            "label": "Formulieren die elke maand worden voorbereid",
-            "help": "Gebruik een normale maand, geen piek in het beste geval."
+            "label": "Forms prepared each month",
+            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
           },
           "minutes": {
-            "label": "Hands-on minuten per eenheid vandaag",
-            "help": "Actieve werktijd, exclusief wacht- en verstreken kalendertijd."
+            "label": "Minutes to prepare one form today",
+            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
           },
           "automation": {
-            "label": "Het aandeel van dat werk is afgenomen",
-            "help": "Een illustratieve aanname die in een pilot moet worden gevalideerd, geen prestatiebelofte."
+            "label": "Share of that preparation Sherma handles",
+            "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "Bekijk minuten per eenheid",
-            "help": "Menselijke controle is na automatisering nog steeds nodig."
+            "label": "Minutes a person still spends on each form",
+            "help": "Human review still required before anything is filed."
+          },
+          "tokens_per_output": {
+            "label": "Tokens to prepare one form",
+            "help": "Modeled tokens to extract, fill and check one typical form."
           },
           "budget": {
-            "label": "Geschat maandelijks operationeel budget",
-            "help": "Inclusief alle modellen/media, tools, infrastructuur, Gabriel kosten en aanvullende betaalde beoordelingen."
+            "label": "Estimated monthly operating budget",
+            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
           },
           "model_cost": {
-            "label": "Modellen en mediageneratie",
-            "help": "Uw maandelijkse schatting, inclusief afbeeldingen of video indien van toepassing."
+            "label": "Extra models and media",
+            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
           },
           "tools_cost": {
-            "label": "Tools en integraties",
-            "help": "Browsersessies, connectoren en andere gemeten diensten."
+            "label": "Tools and integrations",
+            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
           },
           "infrastructure_cost": {
-            "label": "Infrastructuur",
-            "help": "Incrementele hosting, opslag en rekenkracht voor deze workload."
+            "label": "Infrastructure",
+            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel kosten",
-            "help": "Gebruik uw overeengekomen honorarium of uw eigen budgetaanname; dit is geen prijsopgave."
+            "label": "Gabriel platform fee",
+            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
           },
           "review_rate": {
-            "label": "Extra betaalde beoordeling per uur",
-            "help": "Feitelijke extra uitgaven voor reviewers, niet het salaris van een ongewijzigde medewerker."
+            "label": "Additional paid review per hour",
+            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
           },
           "cash_hours": {
-            "label": "Uren die betaald werk wegnemen",
-            "help": "Wijs alleen werk toe waarvan de overuren, aannemers- of verwerkingsuitgaven daadwerkelijk stoppen."
+            "label": "Hours that remove paid work",
+            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
           },
           "cash_baseline": {
-            "label": "Huidige maandelijkse uitgaven voor dat werk",
-            "help": "Het contante budget waaruit de verlaging zal komen."
+            "label": "Current monthly spending on that work",
+            "help": "The cash budget from which the reduction will come."
           },
           "cash_avoided": {
-            "label": "Maandelijkse uitgaven zou je stoppen",
-            "help": "Eén expliciet bedrag, geen uren vermenigvuldigd met salaris; sluit eventuele afzonderlijk ingevoerde besparingen op geplande huur uit."
+            "label": "Monthly spending you would stop",
+            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
           },
           "higher_value_hours": {
-            "label": "Uren die worden gebruikt voor werk met een hogere waarde",
-            "help": "Uren kunt u realistisch omleiden, niet standaard de gehele capaciteit."
+            "label": "Hours kept for advisory review",
+            "help": "Hours your existing team can spend on clients instead of re-keying."
           },
           "contribution_rate": {
-            "label": "Oplopende bijdrage per uur",
-            "help": "Opbrengst minus de incrementele leveringskosten, exclusief AI-kosten die afzonderlijk worden geteld. Geen salaris of bruto-omzet."
+            "label": "Contribution of that advisory hour",
+            "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "Uren gebruikt voor extra volume",
-            "help": "Deze toewijzing kan niet tevens worden aangewend voor advieswerk of bezuinigingen."
+            "label": "Hours used for additional volume",
+            "help": "This allocation cannot also be used for advisory work or spending reductions."
           },
           "extra_minutes": {
-            "label": "Teamminuten per extra eenheid",
-            "help": "De resterende menselijke inspanning, inclusief de beoordeling, was nodig om nog een eenheid op te leveren."
+            "label": "Team minutes per additional unit",
+            "help": "The remaining human effort, including review, needed to deliver one more unit."
           },
           "demand": {
-            "label": "Extra eenheden met verwachte vraag",
-            "help": "Capaciteit alleen is geen vraag. Vul de extra maandelijkse werkzaamheden in die u verwacht te verrichten."
+            "label": "Additional units with expected demand",
+            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
           },
           "unit_margin": {
-            "label": "Bijdrage per extra eenheid",
-            "help": "Incrementele omzet minus bezorgkosten; De exploitatiekosten van AI worden afzonderlijk afgetrokken."
+            "label": "Contribution per additional unit",
+            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
           },
           "hiring_hours": {
-            "label": "Uren die de geplande huur dekken",
-            "help": "Wijs capaciteit toe aan specifiek gepland werk, en niet aan een generieke schatting van het voltijdsequivalent."
+            "label": "Hours covering the planned hire",
+            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
           },
           "planned_hours": {
-            "label": "Maandelijkse uren die de geplande huur zou dekken",
-            "help": "De toegewezen capaciteit moet deze gehele werklast dekken."
+            "label": "Monthly hours the planned hire would cover",
+            "help": "The allocated capacity must cover this entire workload."
           },
           "hire_cost": {
-            "label": "Maandelijkse huurkosten worden daadwerkelijk uitgesteld",
-            "help": "Gebruik de kosten van een werkelijk geplande aanstelling, niet het salaris van iemand die al in dienst is."
+            "label": "Monthly hire cost actually deferred",
+            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
           },
           "hire_months": {
-            "label": "Maanden waarin de huur wordt uitgesteld",
-            "help": "Eén tot twaalf maanden; de jaarlijkse schatting houdt na deze periode op met het tellen van de besparingen."
+            "label": "Months that hire is deferred",
+            "help": "One to twelve months; the annual estimate stops counting savings after this period."
           },
           "incidents": {
-            "label": "Verwacht vermeden fouten per maand",
-            "help": "Gebruik uw basislijn en verwachte reductie. Incidenten uitsluiten telt ook mee als risicoreductie."
+            "label": "Expected avoided errors per month",
+            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
           },
           "incident_cost": {
-            "label": "Incrementele kosten per fout",
-            "help": "Sluit arbeid, terugbetalingen of andere verliezen uit die al elders zijn inbegrepen."
+            "label": "Incremental cost per error",
+            "help": "Exclude labor, refunds or other losses already included elsewhere."
           },
           "probability_before": {
-            "label": "Maandelijkse verlieskans voorheen",
-            "help": "Uw schatting, geen gegarandeerde risicobeoordeling."
+            "label": "Monthly loss probability before",
+            "help": "Your estimate, not a guaranteed risk assessment."
           },
           "probability_after": {
-            "label": "Maandelijkse verlieskans daarna",
-            "help": "Gebruik dezelfde gebeurtenis en maandelijkse tijdshorizon als de basislijn."
+            "label": "Monthly loss probability after",
+            "help": "Use the same event and monthly time horizon as the baseline."
           },
           "loss": {
-            "label": "Blootstelling aan verlies voor die gebeurtenis",
-            "help": "Sluit foutincidenten en reeds getelde uitgaven uit. Dit is een onzekere verwachte waarde, geen bespaard geld."
+            "label": "Loss exposure for that event",
+            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
           },
           "days_before": {
-            "label": "Cyclustijd ervoor, in dagen",
-            "help": "De verstreken tijd vanaf het begin tot aan de voltooiing, los van de praktische inspanning."
+            "label": "Cycle time before, in days",
+            "help": "Elapsed time from start to completion, separate from hands-on effort."
           },
           "days_after": {
-            "label": "Cyclustijd erna, in dagen",
-            "help": "Wordt alleen weergegeven als een operationele wijziging, zonder een veronderstelde geldelijke waarde."
+            "label": "Cycle time after, in days",
+            "help": "Shown as an operational change only, without an assumed monetary value."
           }
         },
         "burden": [
-          "Herhaalde formuliervoorbereiding en invoer",
-          "Ontbrekende velden najagen en fouten corrigeren"
+          "Repeated form preparation and entry",
+          "Chasing missing fields and correcting errors"
         ],
         "opportunity": [
-          "Extra verwerkingscapaciteit",
-          "Klantadvies en beoordelingstijd"
+          "Additional processing capacity",
+          "Client advisory and review time"
         ],
+        "usagePackages": {
+          "base": {
+            "volume": 104,
+            "tokensPerOutput": 5000,
+            "platform_cost": 990,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 17.3,
+            "contribution_rate": 180
+          },
+          "medium": {
+            "volume": 208,
+            "tokensPerOutput": 5000,
+            "platform_cost": 1500,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 34.6,
+            "contribution_rate": 180
+          }
+        },
+        "defaultPackage": "medium",
+        "costMode": "itemized",
+        "reviewMode": "team",
+        "selected": [
+          "higher_value"
+        ],
+        "confirmations": {
+          "overlap": true,
+          "hiring": true,
+          "outcomes": true,
+          "hide": true
+        },
+        "hero": {
+          "kind": "volume",
+          "label": "Review-ready forms"
+        },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "Doe waardevoller werk",
-            "help": "Gebruik een deel van de capaciteit voor werk met een incrementele bijdrage."
+            "label": "Keep reviewers on advisory work",
+            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+          }
+        ],
+        "tabs": [
+          {
+            "id": "forms",
+            "label": "Forms this month",
+            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "fields": [
+              "volume",
+              "minutes",
+              "automation",
+              "review"
+            ],
+            "showPackage": true,
+            "showReview": true
           },
           {
-            "id": "throughput",
-            "label": "Zorg voor meer volume",
-            "help": "Match de beschikbare capaciteit met de daadwerkelijk verwachte vraag."
+            "id": "tokens",
+            "label": "Token usage",
+            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "fields": [
+              "tokens_per_output",
+              "platform_cost",
+              "model_cost",
+              "tools_cost",
+              "infrastructure_cost"
+            ],
+            "showPackage": true
           },
           {
-            "id": "cash",
-            "label": "Stop met daadwerkelijke uitgaven",
-            "help": "Verminder overuren, aannemers of betaalde verwerkingsactiviteiten – geen ongewijzigde salarissen."
-          },
-          {
-            "id": "hiring",
-            "label": "Een geplande huur uitstellen",
-            "help": "Bestrijk een specifieke, werkelijk geplande werklast voor een bepaalde periode."
-          },
-          {
-            "id": "error",
-            "label": "Vermijd fouten en herwerk",
-            "help": "Schat verschillende incidenten en hun incrementele kosten."
-          },
-          {
-            "id": "cycle_time",
-            "label": "Eerder klaar",
-            "help": "Toon het aantal verbeterde verstreken dagen zonder automatisch een geldelijke waarde toe te kennen."
+            "id": "kept",
+            "label": "What you keep in-house",
+            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
+            "fields": [],
+            "showPackage": true,
+            "showOutcomes": true
           }
         ]
       },
       "cta": {
-        "primaryLabel": "Voer een simulatie uit met Sherma",
-        "secondaryLabel": "Een voorbeelduitvoer bekijken",
+        "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "contact",
-        "privacyNote": "Uw gegevens blijven privé. Uren staan voor capaciteit. Financiële bedragen zijn gemodelleerde schattingen, geen waargenomen resultaten.",
+        "secondaryLabel": "See a sample output",
+        "privacyNote": "Your data stays private. Hours are capacity. Financial amounts are modeled estimates, not observed results.",
         "secondaryTarget": "how-it-works"
-      },
-      "currencyCopy": {
-        "native": "Bedragen in {currency}.",
-        "loading": "Lokale valuta wordt gecontroleerd. Bedragen blijven in {currency} totdat een koers beschikbaar is.",
-        "unavailable": "Een actuele lokale wisselkoers is niet beschikbaar. Bedragen blijven in {currency}.",
-        "converted": "Bedragen omgerekend van {base} naar {currency} met de referentiekoers van {date}.",
-        "basis": "Valutaconversie is geen lokaal kostenonderzoek. Voer uw eigen lokale kosten en bijdrageaannames in. Taalwijzigingen wijzigen geen bedragen."
-      },
-      "costCopy": {
-        "breakdown": "Hoe de all-in AI-kosten zijn opgebouwd",
-        "perUnit": "{amount} per werkeenheid (gemiddeld)",
-        "budgetOnly": "Dit is uw totale budget. Schakel over naar Kostenoverzicht om het te specificeren; er is geen splitsing aangenomen.",
-        "benefitNotice": "Gemanipuleerde voordelen, geen kosten. Doorgestreepte bedragen zijn uitgaven die u verwacht te vermijden, geen kortingen op de AI-factuur.",
-        "remainder": "Overige inbegrepen bedrijfskosten",
-        "allocation": "De teruggekregen uren zijn capaciteit, geen automatische besparingen. Alleen de gedeelten die u toewijst aan daadwerkelijke uitgavenvermindering of extra bijdrage ontvangen een geldelijke waarde."
       }
     }
   }

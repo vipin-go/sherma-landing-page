@@ -878,11 +878,26 @@
     "roiCalculator": {
       "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "Dampak bisnis",
-      "heading": "Kalkulator ROI",
-      "subheading": "Mulailah dengan kapasitas. Kemudian putuskan berapa nilainya.",
-      "disclaimer": "Skenario yang dibangun berdasarkan asumsi Anda, bukan hasil observasi atau jaminan penghematan. Jam kerja yang dikembalikan adalah kapasitas, bukan pengurangan gaji otomatis.",
+      "kicker": "Business impact",
+      "heading": "ROI Calculator",
+      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
+      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
       "currency": "IDR",
+      "currencyCopy": {
+        "native": "Amounts in {currency}.",
+        "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
+        "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
+        "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
+        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+      },
+      "costCopy": {
+        "breakdown": "How the all-in AI cost is built",
+        "perUnit": "{amount} per work unit (average)",
+        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
+        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "remainder": "Other included operating costs",
+        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+      },
       "locale": "id-ID",
       "inputs": [],
       "metrics": [],
@@ -891,259 +906,317 @@
           "volume": 208,
           "minutes": 30,
           "automation": 50,
-          "review": 5
+          "review": 5,
+          "tokens_per_output": 5000,
+          "model_cost": 0,
+          "tools_cost": 0,
+          "infrastructure_cost": 0,
+          "platform_cost": 1500,
+          "higher_value_hours": 34.6,
+          "contribution_rate": 180
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "Beban kerja Anda",
-          "costStep": "Biaya operasional",
-          "valueStep": "Gunakan kapasitasnya",
-          "workloadIntro": "Persiapan formulir model, koreksi, dan tinjauan manusia—bukan pengarsipan langsung otomatis atau penerimaan yang dijamin.",
-          "costIntro": "Sertakan biaya yang diperlukan untuk menjalankan beban kerja ini. Ini adalah perkiraan Anda, bukan kutipan Gabriel.",
-          "valueIntro": "Apa yang akan Anda lakukan dengan jam pulang? Pilih hanya hasil yang ingin Anda wujudkan.",
-          "sampleNotice": "Beban kerja ilustratif · hasil tidak teramati",
-          "monthly": "Bulanan",
-          "yearly": "Tahunan",
-          "next": "Lanjutkan",
-          "back": "Kembali",
-          "reset": "Atur ulang asumsi",
-          "summary": "Dampak yang Anda contohkan",
-          "volume": "Unit kerja dimodelkan",
-          "grossHours": "Pekerjaan berulang berkurang",
-          "capacity": "Kapasitas bersih dikembalikan",
-          "retained": "Kapasitas tetap tersedia",
-          "hours": "jam",
-          "days": "hari",
+          "workloadStep": "Forms this month",
+          "costStep": "Token usage",
+          "valueStep": "What you keep in-house",
+          "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
+          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
+          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
+          "sampleNotice": "Typical usage · not observed results",
+          "monthly": "Monthly",
+          "yearly": "Yearly",
+          "next": "Continue",
+          "back": "Back",
+          "reset": "Reset assumptions",
+          "summary": "Your modeled impact",
+          "volume": "Forms modeled",
+          "grossHours": "Repetitive work reduced",
+          "capacity": "Reviewer hours returned",
+          "retained": "Capacity kept available",
+          "hours": "hours",
+          "days": "days",
           "percent": "%",
-          "minutes": "menit",
-          "reviewMode": "Siapa yang menangani peninjauan?",
-          "teamReview": "Tim yang ada",
-          "paidReview": "Peninjau berbayar tambahan",
-          "reviewNote": "Tinjauan tim yang ada menggunakan kapasitas yang dikembalikan. Tambahan tinjauan berbayar sudah termasuk dalam biaya operasional, tidak dipotong lagi dari kapasitas tim.",
-          "totalMode": "Anggaran bulanan",
-          "itemizedMode": "Rincian biaya",
-          "budgetNote": "Anggaran harus mencakup model/media, alat, infrastruktur, biaya Gabriel, dan ulasan berbayar tambahan. Jangan sertakan gaji yang tidak berubah sebagai pengeluaran baru.",
-          "itemizedNote": "Masukkan nol untuk biaya yang tidak berlaku. Tambahan ulasan berbayar dihitung dari jam ulasan dan tarif aktualnya.",
-          "paidReviewCost": "Biaya ulasan berbayar tambahan",
-          "allInCost": "Biaya operasional",
-          "missing": "Tambahkan asumsi Anda",
-          "cashValue": "Pengeluaran tunai dihindari",
-          "contribution": "Kontribusi yang diharapkan",
-          "expectedLoss": "Pengurangan kerugian yang diharapkan",
-          "riskValue": "Termasuk nilai risiko yang tidak pasti",
-          "economicValue": "Nilai ekonomi yang dimodelkan",
-          "netBenefit": "Manfaat model bersih",
-          "multiple": "Pengembalian ekonomi berlipat ganda",
-          "notApplicable": "Tidak berlaku",
-          "annual": "Tampilan tahunan",
-          "annualNote": "Asumsi bulanan yang sama, tanpa pertumbuhan atau penambahan. Tabungan sewa hanya berlaku untuk periode yang dimasukkan.",
-          "method": "Bagaimana hal ini dihitung",
-          "burdenHeading": "Pekerjaan berulang berkurang",
-          "opportunityHeading": "Kapasitas untuk pekerjaan bernilai lebih tinggi",
-          "methodBody": "Beban operasional dihilangkan (produktivitas negatif) mengembalikan kapasitas. Pekerjaan bernilai lebih tinggi (potensi produktivitas positif) menciptakan nilai ekonomi hanya jika kapasitas tersebut digunakan. Jam kerja saja bukanlah penghematan uang tunai.",
-          "formulaLabel": "Nilai ekonomi ± biaya operasional = kelipatan keuntungan ekonomi. Manfaat bersih dikurangi biaya operasional satu kali.",
-          "allocationNote": "Jam yang dikembalikan adalah kapasitas, bukan penghematan otomatis. Hanya bagian yang Anda alokasikan untuk pengurangan pengeluaran aktual atau kontribusi tambahan yang menerima nilai moneter.",
-          "overlapLabel": "Manfaat-manfaat ini berbeda; Saya telah mengecualikan biaya dan kerugian yang sudah dihitung di tempat lain.",
-          "overlapNote": "Perkiraan kesalahan dan risiko tidak termasuk penghematan tenaga kerja dan insiden yang sama tidak boleh muncul di kedua kategori. Kontribusi tidak termasuk biaya AI, yang dipotong secara terpisah.",
-          "hiringLabel": "Penyewaan ini benar-benar direncanakan dan kapasitas yang dialokasikan dapat menutupi pekerjaan tersebut.",
-          "reviewedLabel": "Saya telah meninjau hasil saya; hasil yang tidak dipilih tidak memiliki nilai finansial dalam perkiraan ini.",
-          "cycleResult": "Peningkatan waktu siklus",
-          "throughputResult": "Pekerjaan tambahan didukung oleh kapasitas dan permintaan",
-          "assumptionsIncomplete": "Lengkapi asumsi yang dipilih untuk menghitung nilai finansial.",
-          "allocationError": "Jam yang dialokasikan melebihi kapasitas bersih yang tersedia. Kurangi alokasinya.",
-          "reviewError": "Peninjauan membutuhkan lebih banyak waktu daripada pengurangan pekerjaan. Tidak ada kapasitas positif yang tersedia pada asumsi ini.",
-          "cashError": "Pengeluaran yang dihindari tidak boleh melebihi pengeluaran saat ini atau mempunyai nilai positif tanpa alokasi jam kerja.",
-          "hiringError": "Kapasitas yang dialokasikan harus mencakup jam kerja yang direncanakan. Konfirmasikan rencana sewa dan durasinya.",
-          "riskError": "Probabilitas setelahnya tidak boleh melebihi probabilitas sebelum untuk estimasi pengurangan kerugian.",
-          "overlapError": "Pastikan manfaatnya tidak tumpang tindih sebelum memasukkannya ke dalam hasil keuangan.",
-          "boundsError": "Gunakan nilai dalam batas yang ditampilkan.",
-          "rangeLabel": "Sesuaikan nilai",
-          "noCurrencyChange": "Bahasa mengubah format, bukan mata uang atau asumsi Anda."
+          "minutes": "minutes",
+          "tokens": "tokens",
+          "monthlyTokens": "Monthly tokens",
+          "tokenCost": "Token usage",
+          "packageLabel": "Usage package",
+          "packageBase": "Base",
+          "packageMedium": "Medium",
+          "packageCustom": "Custom",
+          "reviewMode": "Who handles the review?",
+          "teamReview": "Existing team",
+          "paidReview": "Additional paid reviewer",
+          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "totalMode": "Monthly budget",
+          "itemizedMode": "Cost breakdown",
+          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
+          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "paidReviewCost": "Additional paid review cost",
+          "allInCost": "Operating cost",
+          "missing": "Add your assumptions",
+          "cashValue": "Cash spending avoided",
+          "contribution": "Expected contribution",
+          "expectedLoss": "Expected loss reduction",
+          "riskValue": "Uncertain risk value included",
+          "economicValue": "Modeled economic value",
+          "netBenefit": "Net modeled benefit",
+          "multiple": "Economic return multiple",
+          "notApplicable": "Not applicable",
+          "annual": "Annual view",
+          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "method": "How this is calculated",
+          "burdenHeading": "Repetitive work reduced",
+          "opportunityHeading": "Capacity for higher-value work",
+          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
+          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
+          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
+          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
+          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "cycleResult": "Cycle-time improvement",
+          "throughputResult": "Additional work supported by capacity and demand",
+          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
+          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
+          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
+          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
+          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
+          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
+          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
+          "boundsError": "Use values within the displayed limits.",
+          "rangeLabel": "Adjust value",
+          "noCurrencyChange": "Language changes formatting, not your currency or assumptions."
         },
         "fields": {
           "volume": {
-            "label": "Formulir disiapkan setiap bulan",
-            "help": "Gunakan bulan biasa, bukan puncak kasus terbaik."
+            "label": "Forms prepared each month",
+            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
           },
           "minutes": {
-            "label": "Menit praktik per unit hari ini",
-            "help": "Waktu kerja aktif, tidak termasuk waktu tunggu dan waktu kalender yang telah berlalu."
+            "label": "Minutes to prepare one form today",
+            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
           },
           "automation": {
-            "label": "Bagian dari pekerjaan itu berkurang",
-            "help": "Asumsi ilustratif untuk divalidasi dalam uji coba, bukan janji kinerja."
+            "label": "Share of that preparation Sherma handles",
+            "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "Tinjau menit per unit",
-            "help": "Pemeriksaan manusia masih diperlukan setelah otomatisasi."
+            "label": "Minutes a person still spends on each form",
+            "help": "Human review still required before anything is filed."
+          },
+          "tokens_per_output": {
+            "label": "Tokens to prepare one form",
+            "help": "Modeled tokens to extract, fill and check one typical form."
           },
           "budget": {
-            "label": "Perkiraan anggaran operasional bulanan",
-            "help": "Sertakan semua model/media, alat, infrastruktur, biaya Gabriel dan ulasan berbayar tambahan."
+            "label": "Estimated monthly operating budget",
+            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
           },
           "model_cost": {
-            "label": "Model dan generasi media",
-            "help": "Perkiraan bulanan Anda, termasuk gambar atau video jika berlaku."
+            "label": "Extra models and media",
+            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
           },
           "tools_cost": {
-            "label": "Alat dan integrasi",
-            "help": "Sesi browser, konektor, dan layanan terukur lainnya."
+            "label": "Tools and integrations",
+            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
           },
           "infrastructure_cost": {
-            "label": "Infrastruktur",
-            "help": "Hosting, penyimpanan, dan komputasi tambahan untuk beban kerja ini."
+            "label": "Infrastructure",
+            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel biaya",
-            "help": "Gunakan biaya yang Anda sepakati atau asumsi anggaran Anda sendiri; ini bukan penawaran harga."
+            "label": "Gabriel platform fee",
+            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
           },
           "review_rate": {
-            "label": "Ulasan berbayar tambahan per jam",
-            "help": "Pengeluaran ekstra reviewer sebenarnya, bukan gaji karyawan yang tidak berubah."
+            "label": "Additional paid review per hour",
+            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
           },
           "cash_hours": {
-            "label": "Jam yang menghapus pekerjaan berbayar",
-            "help": "Alokasikan hanya pekerjaan yang pengeluaran lembur, kontraktor, atau pemrosesannya akan benar-benar dihentikan."
+            "label": "Hours that remove paid work",
+            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
           },
           "cash_baseline": {
-            "label": "Pengeluaran bulanan saat ini untuk pekerjaan itu",
-            "help": "Anggaran kas dari mana pengurangan akan terjadi."
+            "label": "Current monthly spending on that work",
+            "help": "The cash budget from which the reduction will come."
           },
           "cash_avoided": {
-            "label": "Pengeluaran bulanan Anda akan berhenti",
-            "help": "Satu jumlah yang jelas, bukan jam dikalikan gaji; mengecualikan penghematan sewa yang direncanakan yang dimasukkan secara terpisah."
+            "label": "Monthly spending you would stop",
+            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
           },
           "higher_value_hours": {
-            "label": "Jam yang digunakan untuk pekerjaan yang bernilai lebih tinggi",
-            "help": "Jam yang dapat Anda alihkan secara realistis, bukan seluruh kapasitas secara default."
+            "label": "Hours kept for advisory review",
+            "help": "Hours your existing team can spend on clients instead of re-keying."
           },
           "contribution_rate": {
-            "label": "Kontribusi tambahan per jam",
-            "help": "Pendapatan dikurangi biaya pengiriman tambahan, tidak termasuk biaya AI dihitung secara terpisah. Bukan gaji atau pendapatan kotor."
+            "label": "Contribution of that advisory hour",
+            "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "Jam digunakan untuk volume tambahan",
-            "help": "Alokasi ini juga tidak dapat digunakan untuk pekerjaan konsultasi atau pengurangan belanja."
+            "label": "Hours used for additional volume",
+            "help": "This allocation cannot also be used for advisory work or spending reductions."
           },
           "extra_minutes": {
-            "label": "Menit tim per unit tambahan",
-            "help": "Upaya manusia yang tersisa, termasuk peninjauan, diperlukan untuk menghasilkan satu unit lagi."
+            "label": "Team minutes per additional unit",
+            "help": "The remaining human effort, including review, needed to deliver one more unit."
           },
           "demand": {
-            "label": "Unit tambahan dengan permintaan yang diharapkan",
-            "help": "Kapasitas saja bukanlah permintaan. Masukkan pekerjaan tambahan bulanan yang ingin Anda lakukan."
+            "label": "Additional units with expected demand",
+            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
           },
           "unit_margin": {
-            "label": "Kontribusi per unit tambahan",
-            "help": "Pendapatan tambahan dikurangi biaya pengiriman; Biaya operasional AI dipotong secara terpisah."
+            "label": "Contribution per additional unit",
+            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
           },
           "hiring_hours": {
-            "label": "Jam yang mencakup sewa yang direncanakan",
-            "help": "Alokasikan kapasitas untuk pekerjaan terencana tertentu, bukan perkiraan umum yang setara dengan pekerjaan penuh waktu."
+            "label": "Hours covering the planned hire",
+            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
           },
           "planned_hours": {
-            "label": "Jam bulanan yang akan dicakup oleh sewa yang direncanakan",
-            "help": "Kapasitas yang dialokasikan harus mencakup seluruh beban kerja ini."
+            "label": "Monthly hours the planned hire would cover",
+            "help": "The allocated capacity must cover this entire workload."
           },
           "hire_cost": {
-            "label": "Biaya sewa bulanan sebenarnya ditangguhkan",
-            "help": "Gunakan biaya sewa yang benar-benar direncanakan, bukan gaji seseorang yang sudah bekerja."
+            "label": "Monthly hire cost actually deferred",
+            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
           },
           "hire_months": {
-            "label": "Bulan-bulan perekrutan ditangguhkan",
-            "help": "Satu sampai dua belas bulan; perkiraan tahunan berhenti menghitung tabungan setelah periode ini."
+            "label": "Months that hire is deferred",
+            "help": "One to twelve months; the annual estimate stops counting savings after this period."
           },
           "incidents": {
-            "label": "Diharapkan menghindari kesalahan per bulan",
-            "help": "Gunakan baseline Anda dan pengurangan yang diharapkan. Kecualikan insiden juga dihitung sebagai pengurangan risiko."
+            "label": "Expected avoided errors per month",
+            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
           },
           "incident_cost": {
-            "label": "Biaya tambahan per kesalahan",
-            "help": "Tidak termasuk tenaga kerja, pengembalian uang, atau kerugian lain yang sudah termasuk di tempat lain."
+            "label": "Incremental cost per error",
+            "help": "Exclude labor, refunds or other losses already included elsewhere."
           },
           "probability_before": {
-            "label": "Kemungkinan kerugian bulanan sebelumnya",
-            "help": "Perkiraan Anda, bukan penilaian risiko yang dijamin."
+            "label": "Monthly loss probability before",
+            "help": "Your estimate, not a guaranteed risk assessment."
           },
           "probability_after": {
-            "label": "Kemungkinan kerugian bulanan setelahnya",
-            "help": "Gunakan peristiwa dan jangka waktu bulanan yang sama sebagai garis dasar."
+            "label": "Monthly loss probability after",
+            "help": "Use the same event and monthly time horizon as the baseline."
           },
           "loss": {
-            "label": "Eksposur kerugian untuk kejadian tersebut",
-            "help": "Kecualikan insiden kesalahan dan pengeluaran sudah dihitung. Ini adalah nilai yang diperkirakan tidak pasti, bukan uang tunai yang dihemat."
+            "label": "Loss exposure for that event",
+            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
           },
           "days_before": {
-            "label": "Waktu siklus sebelumnya, dalam beberapa hari",
-            "help": "Waktu yang berlalu dari awal hingga selesai, terpisah dari upaya langsung."
+            "label": "Cycle time before, in days",
+            "help": "Elapsed time from start to completion, separate from hands-on effort."
           },
           "days_after": {
-            "label": "Waktu siklus setelahnya, dalam beberapa hari",
-            "help": "Ditampilkan sebagai perubahan operasional saja, tanpa nilai moneter yang diasumsikan."
+            "label": "Cycle time after, in days",
+            "help": "Shown as an operational change only, without an assumed monetary value."
           }
         },
         "burden": [
-          "Persiapan dan entri formulir berulang",
-          "Mengejar bidang yang hilang dan memperbaiki kesalahan"
+          "Repeated form preparation and entry",
+          "Chasing missing fields and correcting errors"
         ],
         "opportunity": [
-          "Kapasitas pemrosesan tambahan",
-          "Penasihat dan waktu peninjauan klien"
+          "Additional processing capacity",
+          "Client advisory and review time"
         ],
+        "usagePackages": {
+          "base": {
+            "volume": 104,
+            "tokensPerOutput": 5000,
+            "platform_cost": 990,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 17.3,
+            "contribution_rate": 180
+          },
+          "medium": {
+            "volume": 208,
+            "tokensPerOutput": 5000,
+            "platform_cost": 1500,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 34.6,
+            "contribution_rate": 180
+          }
+        },
+        "defaultPackage": "medium",
+        "costMode": "itemized",
+        "reviewMode": "team",
+        "selected": [
+          "higher_value"
+        ],
+        "confirmations": {
+          "overlap": true,
+          "hiring": true,
+          "outcomes": true,
+          "hide": true
+        },
+        "hero": {
+          "kind": "volume",
+          "label": "Review-ready forms"
+        },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "Lakukan pekerjaan yang bernilai lebih tinggi",
-            "help": "Gunakan sebagian kapasitas untuk bekerja dengan kontribusi tambahan."
+            "label": "Keep reviewers on advisory work",
+            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+          }
+        ],
+        "tabs": [
+          {
+            "id": "forms",
+            "label": "Forms this month",
+            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "fields": [
+              "volume",
+              "minutes",
+              "automation",
+              "review"
+            ],
+            "showPackage": true,
+            "showReview": true
           },
           {
-            "id": "throughput",
-            "label": "Tangani lebih banyak volume",
-            "help": "Cocokkan kapasitas yang tersedia dengan permintaan aktual yang diharapkan."
+            "id": "tokens",
+            "label": "Token usage",
+            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "fields": [
+              "tokens_per_output",
+              "platform_cost",
+              "model_cost",
+              "tools_cost",
+              "infrastructure_cost"
+            ],
+            "showPackage": true
           },
           {
-            "id": "cash",
-            "label": "Hentikan pengeluaran sebenarnya",
-            "help": "Mengurangi lembur, kontraktor, atau pemrosesan berbayar—bukan gaji yang tidak berubah."
-          },
-          {
-            "id": "hiring",
-            "label": "Tunda perekrutan yang direncanakan",
-            "help": "Mencakup beban kerja yang spesifik dan benar-benar direncanakan untuk jangka waktu tertentu."
-          },
-          {
-            "id": "error",
-            "label": "Hindari kesalahan dan pengerjaan ulang",
-            "help": "Perkirakan insiden yang berbeda dan biaya tambahannya."
-          },
-          {
-            "id": "cycle_time",
-            "label": "Selesaikan lebih cepat",
-            "help": "Tampilkan peningkatan hari yang berlalu tanpa secara otomatis melampirkan nilai moneter."
+            "id": "kept",
+            "label": "What you keep in-house",
+            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
+            "fields": [],
+            "showPackage": true,
+            "showOutcomes": true
           }
         ]
       },
       "cta": {
-        "primaryLabel": "Jalankan simulasi dengan Sherma",
-        "secondaryLabel": "lihat contoh keluaran",
+        "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "contact",
-        "privacyNote": "Data Anda tetap pribadi. Jam adalah kapasitas. Jumlah finansial adalah estimasi model, bukan hasil yang diamati.",
+        "secondaryLabel": "See a sample output",
+        "privacyNote": "Your data stays private. Hours are capacity. Financial amounts are modeled estimates, not observed results.",
         "secondaryTarget": "how-it-works"
-      },
-      "currencyCopy": {
-        "native": "Jumlah dalam {currency}.",
-        "loading": "Memeriksa mata uang lokal. Jumlah tetap dalam {currency} hingga nilai tukar tersedia.",
-        "unavailable": "Nilai tukar lokal saat ini tidak tersedia. Jumlah tetap dalam {currency}.",
-        "converted": "Jumlah dikonversi dari {base} ke {currency} menggunakan nilai referensi tanggal {date}.",
-        "basis": "Konversi mata uang bukanlah riset biaya lokal. Masukkan biaya lokal dan asumsi kontribusi Anda sendiri. Perubahan bahasa tidak mengubah jumlah."
-      },
-      "costCopy": {
-        "breakdown": "Bagaimana biaya AI all-in dibangun",
-        "perUnit": "{amount} per unit kerja (rata-rata)",
-        "budgetOnly": "Ini adalah total anggaran Anda. Beralih ke Rincian biaya untuk menguraikannya; tidak ada pembagian yang diasumsikan.",
-        "benefitNotice": "Manfaat yang dimodelkan, bukan biaya. Jumlah yang dicoret adalah pengeluaran yang Anda harapkan dapat dihindari, bukan diskon pada tagihan AI.",
-        "remainder": "Biaya operasional lain yang termasuk",
-        "allocation": "Jam yang dikembalikan adalah kapasitas, bukan penghematan otomatis. Hanya bagian yang Anda alokasikan untuk pengurangan pengeluaran aktual atau kontribusi tambahan yang menerima nilai moneter."
       }
     }
   }

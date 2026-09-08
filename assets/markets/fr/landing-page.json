@@ -878,11 +878,26 @@
     "roiCalculator": {
       "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "Impact commercial",
-      "heading": "Calculateur de ROI",
-      "subheading": "Commencez par la capacité. Décidez ensuite de ce que cela pourrait valoir.",
-      "disclaimer": "Un scénario construit à partir de vos hypothèses, pas de résultats observés ni d'économies garanties. Les heures restituées correspondent à la capacité et non à une réduction automatique de la masse salariale.",
+      "kicker": "Business impact",
+      "heading": "ROI Calculator",
+      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
+      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
       "currency": "EUR",
+      "currencyCopy": {
+        "native": "Amounts in {currency}.",
+        "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
+        "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
+        "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
+        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+      },
+      "costCopy": {
+        "breakdown": "How the all-in AI cost is built",
+        "perUnit": "{amount} per work unit (average)",
+        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
+        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "remainder": "Other included operating costs",
+        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+      },
       "locale": "fr-FR",
       "inputs": [],
       "metrics": [],
@@ -891,259 +906,317 @@
           "volume": 208,
           "minutes": 30,
           "automation": 50,
-          "review": 5
+          "review": 5,
+          "tokens_per_output": 5000,
+          "model_cost": 0,
+          "tools_cost": 0,
+          "infrastructure_cost": 0,
+          "platform_cost": 1500,
+          "higher_value_hours": 34.6,
+          "contribution_rate": 180
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "Votre charge de travail",
-          "costStep": "Coût d'exploitation",
-          "valueStep": "Utiliser la capacité",
-          "workloadIntro": "Préparation du formulaire du modèle, corrections et examens humains, pas de dépôt automatique en direct ou d'acceptation garantie.",
-          "costIntro": "Incluez les coûts nécessaires à l’exécution de cette charge de travail. Ce sont vos estimations, pas un devis Gabriel.",
-          "valueIntro": "Que ferez-vous des heures restituées ? Sélectionnez uniquement les résultats que vous espérez obtenir.",
-          "sampleNotice": "Charge de travail illustrative · résultats non observés",
-          "monthly": "Mensuel",
-          "yearly": "Annuel",
-          "next": "Continuer",
-          "back": "Retour",
-          "reset": "Réinitialiser les hypothèses",
-          "summary": "Votre impact modélisé",
-          "volume": "Unités de travail modélisées",
-          "grossHours": "Travail répétitif réduit",
-          "capacity": "Capacité nette restituée",
-          "retained": "Capacité maintenue disponible",
-          "hours": "heures",
-          "days": "jours",
+          "workloadStep": "Forms this month",
+          "costStep": "Token usage",
+          "valueStep": "What you keep in-house",
+          "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
+          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
+          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
+          "sampleNotice": "Typical usage · not observed results",
+          "monthly": "Monthly",
+          "yearly": "Yearly",
+          "next": "Continue",
+          "back": "Back",
+          "reset": "Reset assumptions",
+          "summary": "Your modeled impact",
+          "volume": "Forms modeled",
+          "grossHours": "Repetitive work reduced",
+          "capacity": "Reviewer hours returned",
+          "retained": "Capacity kept available",
+          "hours": "hours",
+          "days": "days",
           "percent": "%",
           "minutes": "minutes",
-          "reviewMode": "Qui gère la révision ?",
-          "teamReview": "Équipe existante",
-          "paidReview": "Évaluateur payant supplémentaire",
-          "reviewNote": "La révision par l’équipe existante utilise la capacité restituée. Les évaluations payantes supplémentaires sont incluses dans les coûts de fonctionnement et ne sont plus déduites de la capacité de l'équipe.",
-          "totalMode": "Budget mensuel",
-          "itemizedMode": "Répartition des coûts",
-          "budgetNote": "Le budget doit inclure les modèles/médias, les outils, l'infrastructure, les frais Gabriel et tout avis payant supplémentaire. N’incluez pas la masse salariale inchangée dans les nouvelles dépenses.",
-          "itemizedNote": "Entrez zéro pour un coût qui ne s'applique pas. Les avis payants supplémentaires sont calculés à partir des heures d’avis et de leur tarif réel.",
-          "paidReviewCost": "Coût d'évaluation supplémentaire payé",
-          "allInCost": "Coût d'exploitation",
-          "missing": "Ajoutez vos hypothèses",
-          "cashValue": "Dépenses en espèces évitées",
-          "contribution": "Contribution attendue",
-          "expectedLoss": "Réduction des pertes attendue",
-          "riskValue": "Valeur de risque incertaine incluse",
-          "economicValue": "Valeur économique modélisée",
-          "netBenefit": "Bénéfice net modélisé",
-          "multiple": "Multiple de rendement économique",
-          "notApplicable": "Sans objet",
-          "annual": "Vue annuelle",
-          "annualNote": "Les mêmes hypothèses mensuelles, sans croissance ni capitalisation. L'épargne à l'embauche ne dure que pour la période saisie.",
-          "method": "Comment cela est calculé",
-          "burdenHeading": "Travail répétitif réduit",
-          "opportunityHeading": "Capacité à effectuer un travail à plus forte valeur ajoutée",
-          "methodBody": "La charge d’exploitation supprimée (productivité négative) restitue la capacité. Un travail à plus forte valeur ajoutée (productivité positive potentielle) ne crée de la valeur économique que si cette capacité est utilisée. Les heures à elles seules ne constituent pas des économies d'argent.",
-          "formulaLabel": "Valeur économique ÷ coût d'exploitation = multiple de rendement économique. Le bénéfice net soustrait les coûts d’exploitation une fois.",
-          "allocationNote": "Les heures retournées représentent une capacité, et non des économies automatiques. Seules les portions que vous attribuez à des réductions de dépenses réelles ou à une contribution supplémentaire reçoivent une valeur monétaire.",
-          "overlapLabel": "Ces avantages sont distincts ; J'ai exclu les coûts et les pertes déjà comptabilisés ailleurs.",
-          "overlapNote": "Les estimations d’erreurs et de risques excluent les économies de main d’œuvre et le même incident ne doit pas apparaître dans les deux catégories. La contribution exclut les coûts de l'IA, qui sont déduits séparément.",
-          "hiringLabel": "Cette location a été véritablement planifiée et la capacité allouée peut couvrir les travaux.",
-          "reviewedLabel": "J'ai révisé mes résultats ; les résultats non sélectionnés n’ont aucune valeur financière dans cette estimation.",
-          "cycleResult": "Amélioration du temps de cycle",
-          "throughputResult": "Travaux supplémentaires soutenus par la capacité et la demande",
-          "assumptionsIncomplete": "Complétez les hypothèses sélectionnées pour calculer la valeur financière.",
-          "allocationError": "Les heures allouées dépassent la capacité nette disponible. Réduisez les allocations.",
-          "reviewError": "La révision prend plus de temps que le travail n’en réduit. Aucune capacité positive n’est disponible selon ces hypothèses.",
-          "cashError": "Les dépenses évitées ne peuvent pas dépasser les dépenses actuelles ni avoir une valeur positive sans heures allouées.",
-          "hiringError": "La capacité allouée doit couvrir les heures de location prévues. Confirmez la location prévue et sa durée.",
-          "riskError": "La probabilité après ne peut pas dépasser la probabilité avant pour une estimation de réduction des pertes.",
-          "overlapError": "Confirmez que les avantages ne se chevauchent pas avant de les inclure dans le résultat financier.",
-          "boundsError": "Utilisez les valeurs dans les limites affichées.",
-          "rangeLabel": "Ajuster la valeur",
-          "noCurrencyChange": "La langue change le formatage, pas votre devise ou vos hypothèses."
+          "tokens": "tokens",
+          "monthlyTokens": "Monthly tokens",
+          "tokenCost": "Token usage",
+          "packageLabel": "Usage package",
+          "packageBase": "Base",
+          "packageMedium": "Medium",
+          "packageCustom": "Custom",
+          "reviewMode": "Who handles the review?",
+          "teamReview": "Existing team",
+          "paidReview": "Additional paid reviewer",
+          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "totalMode": "Monthly budget",
+          "itemizedMode": "Cost breakdown",
+          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
+          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "paidReviewCost": "Additional paid review cost",
+          "allInCost": "Operating cost",
+          "missing": "Add your assumptions",
+          "cashValue": "Cash spending avoided",
+          "contribution": "Expected contribution",
+          "expectedLoss": "Expected loss reduction",
+          "riskValue": "Uncertain risk value included",
+          "economicValue": "Modeled economic value",
+          "netBenefit": "Net modeled benefit",
+          "multiple": "Economic return multiple",
+          "notApplicable": "Not applicable",
+          "annual": "Annual view",
+          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "method": "How this is calculated",
+          "burdenHeading": "Repetitive work reduced",
+          "opportunityHeading": "Capacity for higher-value work",
+          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
+          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
+          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
+          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
+          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "cycleResult": "Cycle-time improvement",
+          "throughputResult": "Additional work supported by capacity and demand",
+          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
+          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
+          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
+          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
+          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
+          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
+          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
+          "boundsError": "Use values within the displayed limits.",
+          "rangeLabel": "Adjust value",
+          "noCurrencyChange": "Language changes formatting, not your currency or assumptions."
         },
         "fields": {
           "volume": {
-            "label": "Formulaires préparés chaque mois",
-            "help": "Utilisez un mois typique, et non un pic dans le meilleur des cas."
+            "label": "Forms prepared each month",
+            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
           },
           "minutes": {
-            "label": "Minutes pratiques par unité aujourd'hui",
-            "help": "Temps de travail actif, hors temps d'attente et temps calendaire écoulé."
+            "label": "Minutes to prepare one form today",
+            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
           },
           "automation": {
-            "label": "Part de ce travail réduite",
-            "help": "Une hypothèse illustrative à valider dans un pilote, pas une promesse de performance."
+            "label": "Share of that preparation Sherma handles",
+            "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "Examiner les minutes par unité",
-            "help": "Une vérification humaine est toujours nécessaire après l'automatisation."
+            "label": "Minutes a person still spends on each form",
+            "help": "Human review still required before anything is filed."
+          },
+          "tokens_per_output": {
+            "label": "Tokens to prepare one form",
+            "help": "Modeled tokens to extract, fill and check one typical form."
           },
           "budget": {
-            "label": "Budget de fonctionnement mensuel estimé",
-            "help": "Incluez tous les modèles/médias, outils, infrastructures, frais Gabriel et avis payants supplémentaires."
+            "label": "Estimated monthly operating budget",
+            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
           },
           "model_cost": {
-            "label": "Modèles et génération de médias",
-            "help": "Votre estimation mensuelle, comprenant des images ou des vidéos le cas échéant."
+            "label": "Extra models and media",
+            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
           },
           "tools_cost": {
-            "label": "Outils et intégrations",
-            "help": "Sessions de navigateur, connecteurs et autres services facturés."
+            "label": "Tools and integrations",
+            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
           },
           "infrastructure_cost": {
-            "label": "Infrastructures",
-            "help": "Hébergement, stockage et calcul incrémentiels pour cette charge de travail."
+            "label": "Infrastructure",
+            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel frais",
-            "help": "Utilisez vos honoraires convenus ou votre propre hypothèse budgétaire ; ce n'est pas un devis."
+            "label": "Gabriel platform fee",
+            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
           },
           "review_rate": {
-            "label": "Examen payant supplémentaire par heure",
-            "help": "Dépenses supplémentaires réelles des évaluateurs, et non le salaire d'un employé inchangé."
+            "label": "Additional paid review per hour",
+            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
           },
           "cash_hours": {
-            "label": "Des heures qui suppriment le travail rémunéré",
-            "help": "Attribuez uniquement le travail dont les heures supplémentaires, les dépenses de sous-traitant ou de traitement s'arrêteront réellement."
+            "label": "Hours that remove paid work",
+            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
           },
           "cash_baseline": {
-            "label": "Dépenses mensuelles actuelles pour ce travail",
-            "help": "Le budget de trésorerie à partir duquel proviendra la réduction."
+            "label": "Current monthly spending on that work",
+            "help": "The cash budget from which the reduction will come."
           },
           "cash_avoided": {
-            "label": "Dépenses mensuelles que tu arrêterais",
-            "help": "Un montant explicite, pas d'heures multipliées par le salaire ; exclure toute économie de location prévue saisie séparément."
+            "label": "Monthly spending you would stop",
+            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
           },
           "higher_value_hours": {
-            "label": "Heures utilisées pour un travail à plus forte valeur ajoutée",
-            "help": "Des heures que vous pouvez rediriger de manière réaliste, et non la totalité de la capacité par défaut."
+            "label": "Hours kept for advisory review",
+            "help": "Hours your existing team can spend on clients instead of re-keying."
           },
           "contribution_rate": {
-            "label": "Contribution supplémentaire par heure",
-            "help": "Revenus moins les coûts de livraison supplémentaires, à l'exclusion des coûts d'IA comptabilisés séparément. Pas de salaire ou de revenu brut."
+            "label": "Contribution of that advisory hour",
+            "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "Heures utilisées pour le volume supplémentaire",
-            "help": "Cette allocation ne peut pas non plus être utilisée pour des travaux de conseil ou des réductions de dépenses."
+            "label": "Hours used for additional volume",
+            "help": "This allocation cannot also be used for advisory work or spending reductions."
           },
           "extra_minutes": {
-            "label": "Minutes d'équipe par unité supplémentaire",
-            "help": "L'effort humain restant, y compris l'examen, était nécessaire pour livrer une unité supplémentaire."
+            "label": "Team minutes per additional unit",
+            "help": "The remaining human effort, including review, needed to deliver one more unit."
           },
           "demand": {
-            "label": "Unités supplémentaires avec demande attendue",
-            "help": "La capacité à elle seule ne constitue pas une demande. Entrez le travail mensuel supplémentaire que vous comptez effectuer."
+            "label": "Additional units with expected demand",
+            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
           },
           "unit_margin": {
-            "label": "Cotisation par unité supplémentaire",
-            "help": "Revenus supplémentaires moins les coûts de livraison ; Les frais de fonctionnement de l’IA sont déduits séparément."
+            "label": "Contribution per additional unit",
+            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
           },
           "hiring_hours": {
-            "label": "Horaires couvrant la location prévue",
-            "help": "Allouez la capacité à des travaux planifiés spécifiques, et non à une estimation générique d’équivalent temps plein."
+            "label": "Hours covering the planned hire",
+            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
           },
           "planned_hours": {
-            "label": "Heures mensuelles couvertes par l'embauche prévue",
-            "help": "La capacité allouée doit couvrir l’intégralité de cette charge de travail."
+            "label": "Monthly hours the planned hire would cover",
+            "help": "The allocated capacity must cover this entire workload."
           },
           "hire_cost": {
-            "label": "Coût de location mensuel effectivement différé",
-            "help": "Utilisez le coût d’une embauche véritablement planifiée, et non le salaire d’une personne déjà employée."
+            "label": "Monthly hire cost actually deferred",
+            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
           },
           "hire_months": {
-            "label": "Mois pendant lesquels l'embauche est différée",
-            "help": "Un à douze mois ; l'estimation annuelle ne prend plus en compte les économies passées après cette période."
+            "label": "Months that hire is deferred",
+            "help": "One to twelve months; the annual estimate stops counting savings after this period."
           },
           "incidents": {
-            "label": "Erreurs évitées attendues par mois",
-            "help": "Utilisez votre référence et la réduction attendue. Exclure les incidents également comptabilisés comme réduction des risques."
+            "label": "Expected avoided errors per month",
+            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
           },
           "incident_cost": {
-            "label": "Coût incrémental par erreur",
-            "help": "Excluez la main-d'œuvre, les remboursements ou autres pertes déjà incluses ailleurs."
+            "label": "Incremental cost per error",
+            "help": "Exclude labor, refunds or other losses already included elsewhere."
           },
           "probability_before": {
-            "label": "Probabilité de perte mensuelle avant",
-            "help": "Votre estimation, pas une évaluation des risques garantie."
+            "label": "Monthly loss probability before",
+            "help": "Your estimate, not a guaranteed risk assessment."
           },
           "probability_after": {
-            "label": "Probabilité de perte mensuelle après",
-            "help": "Utilisez le même événement et le même horizon temporel mensuel comme référence."
+            "label": "Monthly loss probability after",
+            "help": "Use the same event and monthly time horizon as the baseline."
           },
           "loss": {
-            "label": "Exposition aux pertes pour cet événement",
-            "help": "Excluez les incidents d’erreur et les dépenses déjà comptabilisées. Il s’agit d’une valeur attendue incertaine, et non d’argent économisé."
+            "label": "Loss exposure for that event",
+            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
           },
           "days_before": {
-            "label": "Temps de cycle avant, en jours",
-            "help": "Temps écoulé du début à la fin, distinct des efforts pratiques."
+            "label": "Cycle time before, in days",
+            "help": "Elapsed time from start to completion, separate from hands-on effort."
           },
           "days_after": {
-            "label": "Temps de cycle après, en jours",
-            "help": "Présenté comme un changement opérationnel uniquement, sans valeur monétaire supposée."
+            "label": "Cycle time after, in days",
+            "help": "Shown as an operational change only, without an assumed monetary value."
           }
         },
         "burden": [
-          "Préparation et entrée de formulaires répétées",
-          "Chasser les champs manquants et corriger les erreurs"
+          "Repeated form preparation and entry",
+          "Chasing missing fields and correcting errors"
         ],
         "opportunity": [
-          "Capacité de traitement supplémentaire",
-          "Conseil et temps de révision des clients"
+          "Additional processing capacity",
+          "Client advisory and review time"
         ],
+        "usagePackages": {
+          "base": {
+            "volume": 104,
+            "tokensPerOutput": 5000,
+            "platform_cost": 990,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 17.3,
+            "contribution_rate": 180
+          },
+          "medium": {
+            "volume": 208,
+            "tokensPerOutput": 5000,
+            "platform_cost": 1500,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 34.6,
+            "contribution_rate": 180
+          }
+        },
+        "defaultPackage": "medium",
+        "costMode": "itemized",
+        "reviewMode": "team",
+        "selected": [
+          "higher_value"
+        ],
+        "confirmations": {
+          "overlap": true,
+          "hiring": true,
+          "outcomes": true,
+          "hide": true
+        },
+        "hero": {
+          "kind": "volume",
+          "label": "Review-ready forms"
+        },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "Effectuez un travail à plus forte valeur ajoutée",
-            "help": "Utiliser une partie de la capacité de travail avec une contribution supplémentaire."
+            "label": "Keep reviewers on advisory work",
+            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+          }
+        ],
+        "tabs": [
+          {
+            "id": "forms",
+            "label": "Forms this month",
+            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "fields": [
+              "volume",
+              "minutes",
+              "automation",
+              "review"
+            ],
+            "showPackage": true,
+            "showReview": true
           },
           {
-            "id": "throughput",
-            "label": "Gérer plus de volume",
-            "help": "Faites correspondre la capacité disponible avec la demande réelle attendue."
+            "id": "tokens",
+            "label": "Token usage",
+            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "fields": [
+              "tokens_per_output",
+              "platform_cost",
+              "model_cost",
+              "tools_cost",
+              "infrastructure_cost"
+            ],
+            "showPackage": true
           },
           {
-            "id": "cash",
-            "label": "Arrêtez les dépenses réelles",
-            "help": "Réduisez les heures supplémentaires, les sous-traitants ou le traitement rémunéré, et non les salaires inchangés."
-          },
-          {
-            "id": "hiring",
-            "label": "Reporter une embauche prévue",
-            "help": "Couvrir une charge de travail spécifique et véritablement planifiée pour une période déterminée."
-          },
-          {
-            "id": "error",
-            "label": "Évitez les erreurs et retravaillez",
-            "help": "Estimer des incidents distincts et leur coût différentiel."
-          },
-          {
-            "id": "cycle_time",
-            "label": "Terminer plus tôt",
-            "help": "Afficher les jours écoulés améliorés sans attribuer automatiquement une valeur monétaire."
+            "id": "kept",
+            "label": "What you keep in-house",
+            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
+            "fields": [],
+            "showPackage": true,
+            "showOutcomes": true
           }
         ]
       },
       "cta": {
-        "primaryLabel": "Exécutez une simulation avec Sherma",
-        "secondaryLabel": "Voir un exemple de sortie",
+        "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "contact",
-        "privacyNote": "Vos données restent privées. Les heures représentent la capacité. Les montants financiers sont des estimations modélisées, et non des résultats observés.",
+        "secondaryLabel": "See a sample output",
+        "privacyNote": "Your data stays private. Hours are capacity. Financial amounts are modeled estimates, not observed results.",
         "secondaryTarget": "how-it-works"
-      },
-      "currencyCopy": {
-        "native": "Montants en {currency}.",
-        "loading": "Vérification de la devise locale. Les montants restent en {currency} jusqu'à ce qu'un taux soit disponible.",
-        "unavailable": "Un taux de change local actuel n'est pas disponible. Les montants restent en {currency}.",
-        "converted": "Montants convertis de {base} à {currency} en utilisant le taux de référence daté du {date}.",
-        "basis": "La conversion de devises n'est pas une recherche de coûts locaux. Saisissez vos propres coûts locaux et hypothèses de contribution. Les changements de langue ne modifient pas les montants."
-      },
-      "costCopy": {
-        "breakdown": "Comment le coût total de l'IA est construit",
-        "perUnit": "{amount} par unité de travail (moyenne)",
-        "budgetOnly": "Ceci est votre budget total. Passez à la répartition des coûts pour le détailler ; aucune répartition n'a été supposée.",
-        "benefitNotice": "Avantages modélisés, pas des frais. Les montants barrés sont des dépenses que vous prévoyez d'éviter, pas des réductions sur la facture de l'IA.",
-        "remainder": "Autres coûts d'exploitation inclus",
-        "allocation": "Les heures retournées représentent une capacité, et non des économies automatiques. Seules les portions que vous attribuez à des réductions de dépenses réelles ou à une contribution supplémentaire reçoivent une valeur monétaire."
       }
     }
   }

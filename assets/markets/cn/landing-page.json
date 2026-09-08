@@ -878,11 +878,26 @@
     "roiCalculator": {
       "methodologyVersion": 2,
       "enabled": true,
-      "kicker": "业务影响",
-      "heading": "ROI计算器",
-      "subheading": "从容量开始。然后决定它的价值。",
-      "disclaimer": "根据您的假设构建的场景，而不是观察到的结果或保证的节省。返回的工时是产能，而不是自动减少工资。",
+      "kicker": "Business impact",
+      "heading": "ROI Calculator",
+      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
+      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
       "currency": "CNY",
+      "currencyCopy": {
+        "native": "Amounts in {currency}.",
+        "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
+        "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
+        "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
+        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+      },
+      "costCopy": {
+        "breakdown": "How the all-in AI cost is built",
+        "perUnit": "{amount} per work unit (average)",
+        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
+        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "remainder": "Other included operating costs",
+        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+      },
       "locale": "zh-CN",
       "inputs": [],
       "metrics": [],
@@ -891,259 +906,317 @@
           "volume": 208,
           "minutes": 30,
           "automation": 50,
-          "review": 5
+          "review": 5,
+          "tokens_per_output": 5000,
+          "model_cost": 0,
+          "tools_cost": 0,
+          "infrastructure_cost": 0,
+          "platform_cost": 1500,
+          "higher_value_hours": 34.6,
+          "contribution_rate": 180
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "你的工作量",
-          "costStep": "运营成本",
-          "valueStep": "使用容量",
-          "workloadIntro": "模型表单准备、更正和人工审查——不是自动实时归档或保证接受。",
-          "costIntro": "包括运行此工作负载所需的成本。这些是您的估计，而不是 Gabriel 报价。",
-          "valueIntro": "您将如何处理返回的时间？仅选择您期望实现的结果。",
-          "sampleNotice": "说明性工作量 · 未观察到的结果",
-          "monthly": "每月",
-          "yearly": "每年",
-          "next": "继续",
-          "back": "返回",
-          "reset": "重置假设",
-          "summary": "您的建模影响",
-          "volume": "工作单位建模",
-          "grossHours": "减少重复性工作",
-          "capacity": "返回的净容量",
-          "retained": "保持可用容量",
-          "hours": "小时",
-          "days": "天",
+          "workloadStep": "Forms this month",
+          "costStep": "Token usage",
+          "valueStep": "What you keep in-house",
+          "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
+          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
+          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
+          "sampleNotice": "Typical usage · not observed results",
+          "monthly": "Monthly",
+          "yearly": "Yearly",
+          "next": "Continue",
+          "back": "Back",
+          "reset": "Reset assumptions",
+          "summary": "Your modeled impact",
+          "volume": "Forms modeled",
+          "grossHours": "Repetitive work reduced",
+          "capacity": "Reviewer hours returned",
+          "retained": "Capacity kept available",
+          "hours": "hours",
+          "days": "days",
           "percent": "%",
-          "minutes": "分钟",
-          "reviewMode": "谁负责审核？",
-          "teamReview": "现有团队",
-          "paidReview": "额外付费审稿人",
-          "reviewNote": "现有团队审查使用返回的容量。额外的付费审核包含在运营成本中，不会再次从团队能力中扣除。",
-          "totalMode": "每月预算",
-          "itemizedMode": "成本明细",
-          "budgetNote": "预算必须包括模型/媒体、工具、基础设施、Gabriel 费用以及任何额外的付费评论。不要将不变的工资单计为新支出。",
-          "itemizedNote": "对于不适用的成本输入零。额外付费审阅根据审阅时间及其实际费率计算。",
-          "paidReviewCost": "额外付费审稿费用",
-          "allInCost": "运营成本",
-          "missing": "添加您的假设",
-          "cashValue": "避免现金支出",
-          "contribution": "预期贡献",
-          "expectedLoss": "预期损失减少",
-          "riskValue": "包含不确定的风险值",
-          "economicValue": "经济价值模型",
-          "netBenefit": "净模型效益",
-          "multiple": "经济回报倍数",
-          "notApplicable": "不适用",
-          "annual": "年鉴",
-          "annualNote": "相同的每月假设，没有增长或复利。招聘节省仅在输入的期间有效。",
-          "method": "这是如何计算的",
-          "burdenHeading": "减少重复性工作",
-          "opportunityHeading": "从事更高价值工作的能力",
-          "methodBody": "运营负担消除（负生产力），恢复产能。只有利用这种能力，更高价值的工作（潜在的积极生产力）才能创造经济价值。仅靠时间并不能节省现金。",
-          "formulaLabel": "经济价值÷运营成本=经济回报倍数。净收益减去运营成本一次。",
-          "allocationNote": "节省的时间是产能，而非自动节省。只有您分配用于实际开支减少或额外贡献的部分才能获得货币价值。",
-          "overlapLabel": "这些好处各不相同；我已经排除了其他地方已经计算的成本和损失。",
-          "overlapNote": "错误和风险估计不包括节省的劳动力，并且同一事件不得出现在两个类别中。贡献不包括人工智能成本，人工智能成本需单独扣除。",
-          "hiringLabel": "这次招聘是经过真正计划的，分配的能力可以满足这项工作。",
-          "reviewedLabel": "我已经审查了我的结果；未选择的结果在此估计中没有财务价值。",
-          "cycleResult": "周期时间改进",
-          "throughputResult": "由能力和需求支持的额外工作",
-          "assumptionsIncomplete": "完成选定的假设以计算财务价值。",
-          "allocationError": "分配的小时数超出了可用的净容量。减少拨款。",
-          "reviewError": "审查所花费的时间比减少的工作量还要多。在这些假设下，没有可用的正容量。",
-          "cashError": "避免的支出不能超过当前支出，或者在没有分配时间的情况下具有正值。",
-          "hiringError": "分配的容量必须覆盖计划的雇用时间。确认计划的雇佣及其持续时间。",
-          "riskError": "对于损失减少估计，事后概率不能超过事前概率。",
-          "overlapError": "在将其纳入财务结果之前，请确认收益不会重叠。",
-          "boundsError": "使用显示限制内的值。",
-          "rangeLabel": "调整值",
-          "noCurrencyChange": "语言改变格式，而不是你的货币或假设。"
+          "minutes": "minutes",
+          "tokens": "tokens",
+          "monthlyTokens": "Monthly tokens",
+          "tokenCost": "Token usage",
+          "packageLabel": "Usage package",
+          "packageBase": "Base",
+          "packageMedium": "Medium",
+          "packageCustom": "Custom",
+          "reviewMode": "Who handles the review?",
+          "teamReview": "Existing team",
+          "paidReview": "Additional paid reviewer",
+          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "totalMode": "Monthly budget",
+          "itemizedMode": "Cost breakdown",
+          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
+          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "paidReviewCost": "Additional paid review cost",
+          "allInCost": "Operating cost",
+          "missing": "Add your assumptions",
+          "cashValue": "Cash spending avoided",
+          "contribution": "Expected contribution",
+          "expectedLoss": "Expected loss reduction",
+          "riskValue": "Uncertain risk value included",
+          "economicValue": "Modeled economic value",
+          "netBenefit": "Net modeled benefit",
+          "multiple": "Economic return multiple",
+          "notApplicable": "Not applicable",
+          "annual": "Annual view",
+          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "method": "How this is calculated",
+          "burdenHeading": "Repetitive work reduced",
+          "opportunityHeading": "Capacity for higher-value work",
+          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
+          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
+          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
+          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
+          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "cycleResult": "Cycle-time improvement",
+          "throughputResult": "Additional work supported by capacity and demand",
+          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
+          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
+          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
+          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
+          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
+          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
+          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
+          "boundsError": "Use values within the displayed limits.",
+          "rangeLabel": "Adjust value",
+          "noCurrencyChange": "Language changes formatting, not your currency or assumptions."
         },
         "fields": {
           "volume": {
-            "label": "每个月准备的表格",
-            "help": "使用典型的月份，而不是最佳情况的峰值。"
+            "label": "Forms prepared each month",
+            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
           },
           "minutes": {
-            "label": "今天每个单元的实践分钟数",
-            "help": "有效工作时间，不包括等待时间和已用日历时间。"
+            "label": "Minutes to prepare one form today",
+            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
           },
           "automation": {
-            "label": "该工作的份额减少",
-            "help": "在试点中验证的说明性假设，而不是性能承诺。"
+            "label": "Share of that preparation Sherma handles",
+            "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "每单元复习分钟数",
-            "help": "自动化后仍需人工检查。"
+            "label": "Minutes a person still spends on each form",
+            "help": "Human review still required before anything is filed."
+          },
+          "tokens_per_output": {
+            "label": "Tokens to prepare one form",
+            "help": "Modeled tokens to extract, fill and check one typical form."
           },
           "budget": {
-            "label": "预计每月运营预算",
-            "help": "包括所有模型/媒体、工具、基础设施、Gabriel 费用和额外付费评论。"
+            "label": "Estimated monthly operating budget",
+            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
           },
           "model_cost": {
-            "label": "模型和媒体生成",
-            "help": "您的每月估算，包括适用的图像或视频。"
+            "label": "Extra models and media",
+            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
           },
           "tools_cost": {
-            "label": "工具和集成",
-            "help": "浏览器会话、连接器和其他计量服务。"
+            "label": "Tools and integrations",
+            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
           },
           "infrastructure_cost": {
-            "label": "基础设施",
-            "help": "此工作负载的增量托管、存储和计算。"
+            "label": "Infrastructure",
+            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel 费用",
-            "help": "使用您商定的费用或您自己的预算假设；这不是报价。"
+            "label": "Gabriel platform fee",
+            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
           },
           "review_rate": {
-            "label": "每小时额外付费评论",
-            "help": "实际的额外审稿人支出，而不是不变员工的工资。"
+            "label": "Additional paid review per hour",
+            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
           },
           "cash_hours": {
-            "label": "消除有偿工作的时间",
-            "help": "仅分配加班、承包商或加工支出实际上会停止的工作。"
+            "label": "Hours that remove paid work",
+            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
           },
           "cash_baseline": {
-            "label": "目前该工作的每月支出",
-            "help": "减少的现金预算。"
+            "label": "Current monthly spending on that work",
+            "help": "The cash budget from which the reduction will come."
           },
           "cash_avoided": {
-            "label": "你会停止的每月支出",
-            "help": "一个明确的金额，而不是工时乘以工资；排除任何单独输入的计划雇用节省。"
+            "label": "Monthly spending you would stop",
+            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
           },
           "higher_value_hours": {
-            "label": "用于高价值工作的时间",
-            "help": "您可以实际重定向的时间，而不是默认情况下的全部容量。"
+            "label": "Hours kept for advisory review",
+            "help": "Hours your existing team can spend on clients instead of re-keying."
           },
           "contribution_rate": {
-            "label": "每小时增量贡献",
-            "help": "收入减去增量交付成本，不包括单独计算的人工智能成本。不是工资或总收入。"
+            "label": "Contribution of that advisory hour",
+            "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "用于额外容量的小时数",
-            "help": "该拨款也不能用于咨询工作或削减支出。"
+            "label": "Hours used for additional volume",
+            "help": "This allocation cannot also be used for advisory work or spending reductions."
           },
           "extra_minutes": {
-            "label": "每增加一个单位的团队分钟数",
-            "help": "剩余的人力工作（包括审核）需要再交付一个单元。"
+            "label": "Team minutes per additional unit",
+            "help": "The remaining human effort, including review, needed to deliver one more unit."
           },
           "demand": {
-            "label": "预计需求的额外单位",
-            "help": "容量本身并不是需求。输入您预计每月承担的额外工作量。"
+            "label": "Additional units with expected demand",
+            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
           },
           "unit_margin": {
-            "label": "每增加单位的贡献",
-            "help": "增量收入减去交付成本； AI运营成本单独扣除。"
+            "label": "Contribution per additional unit",
+            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
           },
           "hiring_hours": {
-            "label": "计划雇用的时间",
-            "help": "将能力分配给具体的计划工作，而不是一般的全职等效估计。"
+            "label": "Hours covering the planned hire",
+            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
           },
           "planned_hours": {
-            "label": "计划雇用的每月工时",
-            "help": "分配的容量必须覆盖整个工作负载。"
+            "label": "Monthly hours the planned hire would cover",
+            "help": "The allocated capacity must cover this entire workload."
           },
           "hire_cost": {
-            "label": "实际递延的每月租金费用",
-            "help": "使用真正计划的雇用成本，而不是已经雇用的人的工资。"
+            "label": "Monthly hire cost actually deferred",
+            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
           },
           "hire_months": {
-            "label": "推迟雇用的月份",
-            "help": "一到十二个月；在此期间之后，年度估算将停止计算节余。"
+            "label": "Months that hire is deferred",
+            "help": "One to twelve months; the annual estimate stops counting savings after this period."
           },
           "incidents": {
-            "label": "每月预期避免的错误",
-            "help": "使用您的基线和预期减少量。排除事件也算作风险降低。"
+            "label": "Expected avoided errors per month",
+            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
           },
           "incident_cost": {
-            "label": "每次错误的增量成本",
-            "help": "不包括其他地方已包含的人工、退款或其他损失。"
+            "label": "Incremental cost per error",
+            "help": "Exclude labor, refunds or other losses already included elsewhere."
           },
           "probability_before": {
-            "label": "之前的月损失概率",
-            "help": "您的估计，不是保证的风险评估。"
+            "label": "Monthly loss probability before",
+            "help": "Your estimate, not a guaranteed risk assessment."
           },
           "probability_after": {
-            "label": "之后的月损失概率",
-            "help": "使用相同的事件和每月时间范围作为基线。"
+            "label": "Monthly loss probability after",
+            "help": "Use the same event and monthly time horizon as the baseline."
           },
           "loss": {
-            "label": "该事件的损失风险",
-            "help": "排除错误事件和已计算的支出。这是不确定的预期价值，而不是节省的现金。"
+            "label": "Loss exposure for that event",
+            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
           },
           "days_before": {
-            "label": "之前的周期时间（以天为单位）",
-            "help": "从开始到完成所花费的时间，与实际操作的努力无关。"
+            "label": "Cycle time before, in days",
+            "help": "Elapsed time from start to completion, separate from hands-on effort."
           },
           "days_after": {
-            "label": "之后的周期时间（以天为单位）",
-            "help": "仅显示为运营变更，不含假定货币价值。"
+            "label": "Cycle time after, in days",
+            "help": "Shown as an operational change only, without an assumed monetary value."
           }
         },
         "burden": [
-          "重复表单准备和输入",
-          "追逐缺失的字段和纠正错误"
+          "Repeated form preparation and entry",
+          "Chasing missing fields and correcting errors"
         ],
         "opportunity": [
-          "额外的处理能力",
-          "客户咨询和审查时间"
+          "Additional processing capacity",
+          "Client advisory and review time"
         ],
+        "usagePackages": {
+          "base": {
+            "volume": 104,
+            "tokensPerOutput": 5000,
+            "platform_cost": 990,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 17.3,
+            "contribution_rate": 180
+          },
+          "medium": {
+            "volume": 208,
+            "tokensPerOutput": 5000,
+            "platform_cost": 1500,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 34.6,
+            "contribution_rate": 180
+          }
+        },
+        "defaultPackage": "medium",
+        "costMode": "itemized",
+        "reviewMode": "team",
+        "selected": [
+          "higher_value"
+        ],
+        "confirmations": {
+          "overlap": true,
+          "hiring": true,
+          "outcomes": true,
+          "hide": true
+        },
+        "hero": {
+          "kind": "volume",
+          "label": "Review-ready forms"
+        },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "做更高价值的工作",
-            "help": "使用部分能力进行增量贡献的工作。"
+            "label": "Keep reviewers on advisory work",
+            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+          }
+        ],
+        "tabs": [
+          {
+            "id": "forms",
+            "label": "Forms this month",
+            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "fields": [
+              "volume",
+              "minutes",
+              "automation",
+              "review"
+            ],
+            "showPackage": true,
+            "showReview": true
           },
           {
-            "id": "throughput",
-            "label": "处理更多音量",
-            "help": "将可用容量与实际预期需求相匹配。"
+            "id": "tokens",
+            "label": "Token usage",
+            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "fields": [
+              "tokens_per_output",
+              "platform_cost",
+              "model_cost",
+              "tools_cost",
+              "infrastructure_cost"
+            ],
+            "showPackage": true
           },
           {
-            "id": "cash",
-            "label": "停止实际支出",
-            "help": "减少加班、承包商或付费加工——而不是保持工资不变。"
-          },
-          {
-            "id": "hiring",
-            "label": "推迟计划的雇用",
-            "help": "涵盖规定时期内具体的、真正计划的工作量。"
-          },
-          {
-            "id": "error",
-            "label": "避免错误和返工",
-            "help": "估计不同的事件及其增量成本。"
-          },
-          {
-            "id": "cycle_time",
-            "label": "早点完成",
-            "help": "显示改进的天数，不自动附加货币价值。"
+            "id": "kept",
+            "label": "What you keep in-house",
+            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
+            "fields": [],
+            "showPackage": true,
+            "showOutcomes": true
           }
         ]
       },
       "cta": {
-        "primaryLabel": "使用 Sherma 运行模拟",
-        "secondaryLabel": "查看示例输出",
+        "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "contact",
-        "privacyNote": "您的数据将保持私密。工时代表产能。财务金额为模型估算值，而非观测结果。",
+        "secondaryLabel": "See a sample output",
+        "privacyNote": "Your data stays private. Hours are capacity. Financial amounts are modeled estimates, not observed results.",
         "secondaryTarget": "how-it-works"
-      },
-      "currencyCopy": {
-        "native": "金额单位：{currency}。",
-        "loading": "正在检查当地货币。在汇率可用之前，金额仍以{currency}显示。",
-        "unavailable": "当前当地汇率不可用。金额仍以{currency}显示。",
-        "converted": "金额已使用{date}的参考汇率从{base}转换为{currency}。",
-        "basis": "货币换算并非本地成本研究。请输入您自己的本地成本和贡献假设。语言更改不会改变金额。"
-      },
-      "costCopy": {
-        "breakdown": "一体化AI成本的构成",
-        "perUnit": "每工作单位{amount}（平均）",
-        "budgetOnly": "这是您的总预算。切换到“成本明细”以列出具体项目；未假设任何拆分。",
-        "benefitNotice": "模拟收益，而非费用。划掉的金额是您预期避免的支出，而非AI账单折扣。",
-        "remainder": "其他包含的运营成本",
-        "allocation": "节省的时间是产能，而非自动节省。只有您分配用于实际开支减少或额外贡献的部分才能获得货币价值。"
       }
     }
   }

@@ -481,3 +481,7 @@ the binding is absent or the target backend has not activated the package.
 Do not enable a binding merely because its JSON validates. Check backend handler
 and continuation support, configured locale catalogues, and the domain's live
 guest/login acceptance first. Never treat a local test as production deployment.
+
+## Business impact methodology v2
+
+For new calculators, read [references/business-impact.md](references/business-impact.md) before authoring. Use methodologyVersion: 2 with persona-specific tabs, Base/Medium packages, and typical usage already filled. Tokens per output drive operating cost. Monetary defaults are allowed. Never equate returned hours with payroll savings. The localized navigation label is ROI, using the unchanged roi-calculator target. This supersedes older ROI calculator guidance in this file. Do not migrate unrelated personas without authorization.
