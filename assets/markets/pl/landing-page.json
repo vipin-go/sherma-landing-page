@@ -880,8 +880,8 @@
       "enabled": true,
       "kicker": "Business impact",
       "heading": "ROI Calculator",
-      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
-      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
+      "subheading": "For finance and sales-operations teams at growing EU suppliers completing recurring customer onboarding portals.",
+      "disclaimer": "Modelled supplier-onboarding usage, not observed customer results. Sherma prepares and checks a pack; your authorised person approves and submits it in the customer portal. Acceptance remains the destination organisation’s decision.",
       "currency": "PLN",
       "currencyCopy": {
         "native": "Amounts in {currency}.",
@@ -903,7 +903,7 @@
       "metrics": [],
       "businessImpact": {
         "defaults": {
-          "volume": 208,
+          "volume": 1,
           "minutes": 30,
           "automation": 50,
           "review": 5,
@@ -912,12 +912,13 @@
           "tools_cost": 0,
           "infrastructure_cost": 0,
           "platform_cost": 1500,
-          "higher_value_hours": 34.6,
-          "contribution_rate": 180
+          "higher_value_hours": 0.1,
+          "contribution_rate": 0,
+          "customer_price": 25
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "Forms this month",
+          "workloadStep": "Onboarding packs this month",
           "costStep": "Token usage",
           "valueStep": "What you keep in-house",
           "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
@@ -930,7 +931,7 @@
           "back": "Back",
           "reset": "Reset assumptions",
           "summary": "Your modeled impact",
-          "volume": "Forms modeled",
+          "volume": "Packs modelled",
           "grossHours": "Repetitive work reduced",
           "capacity": "Reviewer hours returned",
           "retained": "Capacity kept available",
@@ -960,9 +961,12 @@
           "contribution": "Expected contribution",
           "expectedLoss": "Expected loss reduction",
           "riskValue": "Uncertain risk value included",
-          "economicValue": "Modeled economic value",
+          "economicValue": "Modelled benefit under your chosen conversion",
           "netBenefit": "Net modeled benefit",
-          "multiple": "Economic return multiple",
+          "multiple": "Internal delivery multiple",
+          "customerBenefit": "Modelled customer benefit",
+          "customerRoi": "Customer ROI",
+          "payback": "Customer payback period",
           "notApplicable": "Not applicable",
           "annual": "Annual view",
           "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
@@ -970,7 +974,7 @@
           "burdenHeading": "Repetitive work reduced",
           "opportunityHeading": "Capacity for higher-value work",
           "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
-          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "formulaLabel": "Customer ROI = (customer benefit − customer price) ÷ customer price. Payback = customer price ÷ monthly customer benefit. Internal delivery value is not customer ROI.",
           "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
           "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
           "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
@@ -991,24 +995,32 @@
         },
         "fields": {
           "volume": {
-            "label": "Forms prepared each month",
-            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
+            "label": "Onboarding packs this month",
+            "help": "Count recurring customer-onboarding packs your supplier team actually prepares in a typical month."
+          },
+          "accepted_rate": {
+            "label": "Expected acceptance rate",
+            "help": "Optional modeled share of prepared outputs accepted by the recipient. This is not a guarantee or observed result."
           },
           "minutes": {
-            "label": "Minutes to prepare one form today",
-            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
+            "label": "Minutes to prepare one pack today",
+            "help": "Active preparation and correction time, excluding portal waiting and calendar elapsed time."
           },
           "automation": {
             "label": "Share of that preparation Sherma handles",
             "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "Minutes a person still spends on each form",
-            "help": "Human review still required before anything is filed."
+            "label": "Human review minutes per pack",
+            "help": "Human review still required before an authorised person submits to the customer portal."
+          },
+          "cycles_per_unit": {
+            "label": "Cycles per unit each month",
+            "help": "How many recurring order, review or processing cycles each unit runs in a typical month."
           },
           "tokens_per_output": {
-            "label": "Tokens to prepare one form",
-            "help": "Modeled tokens to extract, fill and check one typical form."
+            "label": "Tokens to prepare one pack",
+            "help": "Modelled tokens to extract, fill and check one typical onboarding pack."
           },
           "budget": {
             "label": "Estimated monthly operating budget",
@@ -1027,8 +1039,16 @@
             "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel platform fee",
-            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
+            "label": "Other delivery and support cost",
+            "help": "Modeled hosting, storage, monitoring and support cost, separate from the customer price."
+          },
+          "customer_price": {
+            "label": "Monthly customer price",
+            "help": "€25 for one pack per month, equivalent to €1,000 divided by 40. This is a modeled offer, separate from delivery cost."
+          },
+          "personal_value_per_hour": {
+            "label": "Optional value you assign to an hour",
+            "help": "An optional personal comparison only. This is not salary, wages or guaranteed cash savings."
           },
           "review_rate": {
             "label": "Additional paid review per hour",
@@ -1116,16 +1136,16 @@
           }
         },
         "burden": [
-          "Repeated form preparation and entry",
-          "Chasing missing fields and correcting errors"
+          "Repeating supplier details across customer portals",
+          "Chasing missing fields and correcting onboarding packs"
         ],
         "opportunity": [
-          "Additional processing capacity",
-          "Client advisory and review time"
+          "Additional onboarding capacity",
+          "Higher-value finance and sales-operations work"
         ],
         "usagePackages": {
           "base": {
-            "volume": 104,
+            "volume": 1,
             "tokensPerOutput": 5000,
             "platform_cost": 990,
             "minutes": 30,
@@ -1134,11 +1154,12 @@
             "model_cost": 0,
             "tools_cost": 0,
             "infrastructure_cost": 0,
-            "higher_value_hours": 17.3,
-            "contribution_rate": 180
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
           },
           "medium": {
-            "volume": 208,
+            "volume": 1,
             "tokensPerOutput": 5000,
             "platform_cost": 1500,
             "minutes": 30,
@@ -1147,8 +1168,9 @@
             "model_cost": 0,
             "tools_cost": 0,
             "infrastructure_cost": 0,
-            "higher_value_hours": 34.6,
-            "contribution_rate": 180
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
           }
         },
         "defaultPackage": "medium",
@@ -1165,20 +1187,20 @@
         },
         "hero": {
           "kind": "volume",
-          "label": "Review-ready forms"
+          "label": "Review-ready onboarding packs"
         },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "Keep reviewers on advisory work",
-            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+            "label": "Keep reviewers on higher-value work",
+            "help": "Assign returned capacity to finance or sales-operations work with an explicitly entered contribution."
           }
         ],
         "tabs": [
           {
             "id": "forms",
-            "label": "Forms this month",
-            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "label": "Onboarding packs this month",
+            "intro": "How many recurring customer-onboarding packs your supplier team prepares, the hands-on time today, and the share Sherma prepares before human review.",
             "fields": [
               "volume",
               "minutes",
@@ -1191,7 +1213,7 @@
           {
             "id": "tokens",
             "label": "Token usage",
-            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "intro": "Modelled tokens to prepare one onboarding pack, plus platform and any separately paid tools or review.",
             "fields": [
               "tokens_per_output",
               "platform_cost",
@@ -1204,12 +1226,25 @@
           {
             "id": "kept",
             "label": "What you keep in-house",
-            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
-            "fields": [],
+            "intro": "Returned reviewer hours remain capacity until you choose an explicit conversion to avoided spend, additional billable volume, or higher-value work.",
+            "fields": [
+              "customer_price"
+            ],
             "showPackage": true,
             "showOutcomes": true
           }
-        ]
+        ],
+        "pricing": {
+          "basis": "fixed",
+          "annualPrice": 300,
+          "label": "Sherma monthly price hypothesis",
+          "help": "Modelled equivalent for one pack: €25/month. The working volume hypothesis is €1,000/month for up to 40 packs, with €20 per additional pack. A four-week pilot is €2,500 plus any agreed setup."
+        },
+        "presentation": {
+          "financial": "optional",
+          "showCustomerEconomics": true,
+          "hideEconomicMultiple": true
+        }
       },
       "cta": {
         "primaryLabel": "Run a simulation with Sherma",

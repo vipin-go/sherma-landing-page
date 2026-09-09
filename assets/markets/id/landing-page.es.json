@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "es",
   "regionKey": "id",
-  "sourceRevision": "7ea9c146e44d5ccefefeed68c86699b2260215ca491b19024bbd8010d871b6b7",
+  "sourceRevision": "9e27117e5e86a00ec2b73a6b065af8dd0e9860a441cbf027ea889d53430ef023",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -686,8 +686,8 @@
       "enabled": true,
       "kicker": "Business impact",
       "heading": "ROI Calculator",
-      "subheading": "A typical filing desk: 208 review-ready forms. Switch to Base if you start smaller.",
-      "disclaimer": "A scenario built from typical form-preparation usage, not observed results. Sherma prepares and corrects; a person still files. This is not automatic live filing or guaranteed acceptance.",
+      "subheading": "For finance and sales-operations teams at growing EU suppliers completing recurring customer onboarding portals.",
+      "disclaimer": "Modelled supplier-onboarding usage, not observed customer results. Sherma prepares and checks a pack; your authorised person approves and submits it in the customer portal. Acceptance remains the destination organisation’s decision.",
       "currency": "IDR",
       "currencyCopy": {
         "native": "Amounts in {currency}.",
@@ -709,7 +709,7 @@
       "metrics": [],
       "businessImpact": {
         "defaults": {
-          "volume": 208,
+          "volume": 1,
           "minutes": 30,
           "automation": 50,
           "review": 5,
@@ -718,12 +718,13 @@
           "tools_cost": 0,
           "infrastructure_cost": 0,
           "platform_cost": 1500,
-          "higher_value_hours": 34.6,
-          "contribution_rate": 180
+          "higher_value_hours": 0.1,
+          "contribution_rate": 0,
+          "customer_price": 25
         },
         "copy": {
           "navLabel": "ROI",
-          "workloadStep": "Forms this month",
+          "workloadStep": "Onboarding packs this month",
           "costStep": "Token usage",
           "valueStep": "What you keep in-house",
           "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
@@ -736,7 +737,7 @@
           "back": "Back",
           "reset": "Reset assumptions",
           "summary": "Your modeled impact",
-          "volume": "Forms modeled",
+          "volume": "Packs modelled",
           "grossHours": "Repetitive work reduced",
           "capacity": "Reviewer hours returned",
           "retained": "Capacity kept available",
@@ -766,9 +767,12 @@
           "contribution": "Expected contribution",
           "expectedLoss": "Expected loss reduction",
           "riskValue": "Uncertain risk value included",
-          "economicValue": "Modeled economic value",
+          "economicValue": "Modelled benefit under your chosen conversion",
           "netBenefit": "Net modeled benefit",
-          "multiple": "Economic return multiple",
+          "multiple": "Internal delivery multiple",
+          "customerBenefit": "Modelled customer benefit",
+          "customerRoi": "Customer ROI",
+          "payback": "Customer payback period",
           "notApplicable": "Not applicable",
           "annual": "Annual view",
           "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
@@ -776,7 +780,7 @@
           "burdenHeading": "Repetitive work reduced",
           "opportunityHeading": "Capacity for higher-value work",
           "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
-          "formulaLabel": "Economic value ÷ operating cost = economic return multiple. Net benefit subtracts operating cost once.",
+          "formulaLabel": "Customer ROI = (customer benefit − customer price) ÷ customer price. Payback = customer price ÷ monthly customer benefit. Internal delivery value is not customer ROI.",
           "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
           "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
           "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
@@ -797,24 +801,32 @@
         },
         "fields": {
           "volume": {
-            "label": "Forms prepared each month",
-            "help": "Count forms your team actually prepares in a typical month, not a peak week annualized."
+            "label": "Onboarding packs this month",
+            "help": "Count recurring customer-onboarding packs your supplier team actually prepares in a typical month."
+          },
+          "accepted_rate": {
+            "label": "Expected acceptance rate",
+            "help": "Optional modeled share of prepared outputs accepted by the recipient. This is not a guarantee or observed result."
           },
           "minutes": {
-            "label": "Minutes to prepare one form today",
-            "help": "Active preparation and correction time, not waiting on a portal or the calendar elapsed."
+            "label": "Minutes to prepare one pack today",
+            "help": "Active preparation and correction time, excluding portal waiting and calendar elapsed time."
           },
           "automation": {
             "label": "Share of that preparation Sherma handles",
             "help": "An illustrative share of the hands-on work, not a promise of unattended filing."
           },
           "review": {
-            "label": "Minutes a person still spends on each form",
-            "help": "Human review still required before anything is filed."
+            "label": "Human review minutes per pack",
+            "help": "Human review still required before an authorised person submits to the customer portal."
+          },
+          "cycles_per_unit": {
+            "label": "Cycles per unit each month",
+            "help": "How many recurring order, review or processing cycles each unit runs in a typical month."
           },
           "tokens_per_output": {
-            "label": "Tokens to prepare one form",
-            "help": "Modeled tokens to extract, fill and check one typical form."
+            "label": "Tokens to prepare one pack",
+            "help": "Modelled tokens to extract, fill and check one typical onboarding pack."
           },
           "budget": {
             "label": "Estimated monthly operating budget",
@@ -833,8 +845,16 @@
             "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
           },
           "platform_cost": {
-            "label": "Gabriel platform fee",
-            "help": "Typical monthly access for this usage package. This is a modeled assumption, not a price quote."
+            "label": "Other delivery and support cost",
+            "help": "Modeled hosting, storage, monitoring and support cost, separate from the customer price."
+          },
+          "customer_price": {
+            "label": "Monthly customer price",
+            "help": "€25 for one pack per month, equivalent to €1,000 divided by 40. This is a modeled offer, separate from delivery cost."
+          },
+          "personal_value_per_hour": {
+            "label": "Optional value you assign to an hour",
+            "help": "An optional personal comparison only. This is not salary, wages or guaranteed cash savings."
           },
           "review_rate": {
             "label": "Additional paid review per hour",
@@ -922,16 +942,16 @@
           }
         },
         "burden": [
-          "Repeated form preparation and entry",
-          "Chasing missing fields and correcting errors"
+          "Repeating supplier details across customer portals",
+          "Chasing missing fields and correcting onboarding packs"
         ],
         "opportunity": [
-          "Additional processing capacity",
-          "Client advisory and review time"
+          "Additional onboarding capacity",
+          "Higher-value finance and sales-operations work"
         ],
         "usagePackages": {
           "base": {
-            "volume": 104,
+            "volume": 1,
             "tokensPerOutput": 5000,
             "platform_cost": 990,
             "minutes": 30,
@@ -940,11 +960,12 @@
             "model_cost": 0,
             "tools_cost": 0,
             "infrastructure_cost": 0,
-            "higher_value_hours": 17.3,
-            "contribution_rate": 180
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
           },
           "medium": {
-            "volume": 208,
+            "volume": 1,
             "tokensPerOutput": 5000,
             "platform_cost": 1500,
             "minutes": 30,
@@ -953,8 +974,9 @@
             "model_cost": 0,
             "tools_cost": 0,
             "infrastructure_cost": 0,
-            "higher_value_hours": 34.6,
-            "contribution_rate": 180
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
           }
         },
         "defaultPackage": "medium",
@@ -971,20 +993,20 @@
         },
         "hero": {
           "kind": "volume",
-          "label": "Review-ready forms"
+          "label": "Review-ready onboarding packs"
         },
         "outcomes": [
           {
             "id": "higher_value",
-            "label": "Keep reviewers on advisory work",
-            "help": "Use returned capacity for client review and advice, not for re-keying forms."
+            "label": "Keep reviewers on higher-value work",
+            "help": "Assign returned capacity to finance or sales-operations work with an explicitly entered contribution."
           }
         ],
         "tabs": [
           {
             "id": "forms",
-            "label": "Forms this month",
-            "intro": "How many forms a typical desk prepares, how long each one takes today, and the share Sherma can take on before a person reviews.",
+            "label": "Onboarding packs this month",
+            "intro": "How many recurring customer-onboarding packs your supplier team prepares, the hands-on time today, and the share Sherma prepares before human review.",
             "fields": [
               "volume",
               "minutes",
@@ -997,7 +1019,7 @@
           {
             "id": "tokens",
             "label": "Token usage",
-            "intro": "Tokens to prepare one form, plus the Gabriel fee for this package. Extra tools stay at zero unless you pay for them separately.",
+            "intro": "Modelled tokens to prepare one onboarding pack, plus platform and any separately paid tools or review.",
             "fields": [
               "tokens_per_output",
               "platform_cost",
@@ -1010,12 +1032,25 @@
           {
             "id": "kept",
             "label": "What you keep in-house",
-            "intro": "Returned hours stay with your reviewers and advisors. This is capacity, not a payroll cut.",
-            "fields": [],
+            "intro": "Returned reviewer hours remain capacity until you choose an explicit conversion to avoided spend, additional billable volume, or higher-value work.",
+            "fields": [
+              "customer_price"
+            ],
             "showPackage": true,
             "showOutcomes": true
           }
-        ]
+        ],
+        "pricing": {
+          "basis": "fixed",
+          "annualPrice": 300,
+          "label": "Sherma monthly price hypothesis",
+          "help": "Modelled equivalent for one pack: €25/month. The working volume hypothesis is €1,000/month for up to 40 packs, with €20 per additional pack. A four-week pilot is €2,500 plus any agreed setup."
+        },
+        "presentation": {
+          "financial": "optional",
+          "showCustomerEconomics": true,
+          "hideEconomicMultiple": true
+        }
       },
       "cta": {
         "primaryLabel": "Run a simulation with Sherma",
@@ -4100,7 +4135,7 @@
         "roiCalculator",
         "subheading"
       ],
-      "sourceHash": "24e00f49c8173eda9d62c8a2dd267befe35c673cb302de7ce53a74092827c633"
+      "sourceHash": "1ec7a71fa48482882cce41d7f9b56a015b10ffdc096d2ff704fe3a4f891d2fc6"
     },
     {
       "path": [
@@ -4108,7 +4143,7 @@
         "roiCalculator",
         "disclaimer"
       ],
-      "sourceHash": "e29da7ef2ef7473427d53d696e72a0f3a5ca95714584f1a5e83839aecb451e3b"
+      "sourceHash": "dd7003174215a04e426930e7d1f62ecf56ce39a3a64b73925fa84553a23df241"
     },
     {
       "path": [
@@ -4182,7 +4217,7 @@
         "copy",
         "workloadStep"
       ],
-      "sourceHash": "635b66ccbb9aeac05266c77731dc48780ccf72a7961278538df493bc88080f5e"
+      "sourceHash": "4efd093b849bb8de43f754416276ccfa78a6d374815959711b7c333fa551f5b9"
     },
     {
       "path": [
@@ -4312,7 +4347,7 @@
         "copy",
         "volume"
       ],
-      "sourceHash": "1a24bc287fd765e947b7baaf28eabb52794e73bebdebb1ae263aa9d7d7124552"
+      "sourceHash": "64718e47094a83f2001aa213f32a486277987b58ef61c68a028dd1b520bbb6d5"
     },
     {
       "path": [
@@ -4612,7 +4647,7 @@
         "copy",
         "economicValue"
       ],
-      "sourceHash": "c4402679b0bd01837904090e68038db886c05ed3b1402e58296074c1cb135a57"
+      "sourceHash": "e17e6fae96e8ce233787bf3484dedcff74af3b25e295d9d989deeae9f2051cea"
     },
     {
       "path": [
@@ -4632,7 +4667,7 @@
         "copy",
         "multiple"
       ],
-      "sourceHash": "10006b13cdfc279e8c6ce0e3d277d084ff911a5d6f8e8c191c738e90c286f6d3"
+      "sourceHash": "1571168233291e18b902725c874a5d5c25a4223e126d0a443cb52f78b5a0df33"
     },
     {
       "path": [
@@ -4712,7 +4747,7 @@
         "copy",
         "formulaLabel"
       ],
-      "sourceHash": "056d3a33de02c97f5733e1f2589835715f6915396b6ee9e44e0ed9a6a465c4c5"
+      "sourceHash": "0237f3c40f3e7bc38c6c0b2aeb23b9e6bafa3507191bd554985fbb5086222dc1"
     },
     {
       "path": [
@@ -4893,7 +4928,7 @@
         "volume",
         "label"
       ],
-      "sourceHash": "28bc3f8a00f7738c5df04690fc040a873177bc5faccbf4b628ae2e384d693eb2"
+      "sourceHash": "4efd093b849bb8de43f754416276ccfa78a6d374815959711b7c333fa551f5b9"
     },
     {
       "path": [
@@ -4904,7 +4939,7 @@
         "volume",
         "help"
       ],
-      "sourceHash": "4241f2ba85f75c71a3023331074fd60bf693241f846f292033ed8eb320951683"
+      "sourceHash": "02c2b50892f4d76e8974677b9cdbf118f673fe4e2a4e69572dede30c0ffd6610"
     },
     {
       "path": [
@@ -4915,7 +4950,7 @@
         "minutes",
         "label"
       ],
-      "sourceHash": "f98702c2e7341cb3c37bd83b7c0bef7a8d4e36b30bb9a1a94ebf385b8ae5d65d"
+      "sourceHash": "23238b22c877067ae53f13940a921c8f3bc8018adc73e51f42bb51f0e8b85133"
     },
     {
       "path": [
@@ -4926,7 +4961,7 @@
         "minutes",
         "help"
       ],
-      "sourceHash": "ce9e6a98921ac2ab957979365ce0e6fef8bc010c909c4f22cce992dcafca519d"
+      "sourceHash": "c837eea404c97e1d5951d4f54125bd6c518d99bd44592bb8c30b2988e25e42ed"
     },
     {
       "path": [
@@ -4959,7 +4994,7 @@
         "review",
         "label"
       ],
-      "sourceHash": "c246080995db630a5c8987a2a6b673f2c5b5b2102e63e1747582d1274e7937b4"
+      "sourceHash": "75ad6acee44d1cb198c0c79a3fb685220ecc7eb15f764de3a4dc10a5f54f33e7"
     },
     {
       "path": [
@@ -4970,7 +5005,7 @@
         "review",
         "help"
       ],
-      "sourceHash": "61d447c3d8eb3e1364ae1a1b6525919938ad0f1f4d018d7d29adbef0da14466f"
+      "sourceHash": "b65ab6b4412f1a224b7e7490366231b7ecbee15dde16725e25d21cace44d6e85"
     },
     {
       "path": [
@@ -4981,7 +5016,7 @@
         "tokens_per_output",
         "label"
       ],
-      "sourceHash": "456f72dac47f2c354924c1303e3c6ef17d3e07991cd50f7c87bb5cd258f5411c"
+      "sourceHash": "bbb9395d1a3548a7ab7d9a891ff89dde714a72cfcd391ab7e2511b47bc7ac58e"
     },
     {
       "path": [
@@ -4992,7 +5027,7 @@
         "tokens_per_output",
         "help"
       ],
-      "sourceHash": "95ade855a9a6bb23bf3f3daa44774677f5b82e34a31c8ada50df22e5c8483d3c"
+      "sourceHash": "f78e9c1acad63d0e8222dbe4421528f567e567947a2b3d31125f7e909510144b"
     },
     {
       "path": [
@@ -5091,7 +5126,7 @@
         "platform_cost",
         "label"
       ],
-      "sourceHash": "a6fcdd0b18bc1948c3d24b297f450e4a3e2c5067229cdd3e11bc43d89f8867b9"
+      "sourceHash": "879bc5433e23785c45e1fa0a349f108a6ad79fb35677603499c5a2b476e716fa"
     },
     {
       "path": [
@@ -5102,7 +5137,7 @@
         "platform_cost",
         "help"
       ],
-      "sourceHash": "6e9cc2bd308b9760c3e8c2fe9e311a11d6e100bd3c60f5c4763640168e8a1422"
+      "sourceHash": "d9e0ea9472566cefb05632557f2d4f35cd8cb8742e1e577ca3aa9202c4cb7d9d"
     },
     {
       "path": [
@@ -5574,7 +5609,7 @@
         "burden",
         0
       ],
-      "sourceHash": "ede111a64ce12c47e91b8962021a8a56ab7804114a08f2defa9ccb54a09c3469"
+      "sourceHash": "6d402dff1c24a2f568b6861ef8fc23c201e72c2a033b68b4da21ef83e176e895"
     },
     {
       "path": [
@@ -5584,7 +5619,7 @@
         "burden",
         1
       ],
-      "sourceHash": "ce6eff06b5140450b47ce2659e93ceaf3fb1b26edfb75adbe79f14ad83fe36ca"
+      "sourceHash": "6708e55453e8e57bb2d20cc2a4456175b20f436d8e78d0a87644e544dcb9b5b1"
     },
     {
       "path": [
@@ -5594,7 +5629,7 @@
         "opportunity",
         0
       ],
-      "sourceHash": "8cf99d90de59cc1549db7a569b49246213c7f8f94493a19253cb082adb97276c"
+      "sourceHash": "0425639948e840eaeb778171f0aee6af81e6e2a191c5c6bd012bfbbe137e9e3c"
     },
     {
       "path": [
@@ -5604,7 +5639,7 @@
         "opportunity",
         1
       ],
-      "sourceHash": "575ffb13cb156d9d9ef38087dde041cecc1e75b8f89c11e54312f6b194e94044"
+      "sourceHash": "07c8422b89a59988710fccee02e15505d73f6078a6640f88d773e44900f6fbe7"
     },
     {
       "path": [
@@ -5651,7 +5686,7 @@
         "hero",
         "label"
       ],
-      "sourceHash": "313e46824c4c5e3b7ee83b7ab498750f5c90d18a606a5392ad94acdb49c06d6f"
+      "sourceHash": "541a74a67d55b994d14122db70fa8d7d7276f44696792c0874a143710c5d188b"
     },
     {
       "path": [
@@ -5662,7 +5697,7 @@
         0,
         "label"
       ],
-      "sourceHash": "2e200a07e643726a06d8b157f3b332a9b02061d46b0c85c1ce101fb2dc7d1f32"
+      "sourceHash": "597cf025b60c4f2332650b679503741f244c6a9de9cd0362f55ed368c0a71fa8"
     },
     {
       "path": [
@@ -5673,7 +5708,7 @@
         0,
         "help"
       ],
-      "sourceHash": "3f0fac183028adb8c4ba36507d614de3485f9a06f16aa0ab99a9e10bf9bea180"
+      "sourceHash": "55184d2cf6d0686bd1ba5b905bfabec8de3a20b1436d476cb0924857365bc4cb"
     },
     {
       "path": [
@@ -5684,7 +5719,7 @@
         0,
         "label"
       ],
-      "sourceHash": "635b66ccbb9aeac05266c77731dc48780ccf72a7961278538df493bc88080f5e"
+      "sourceHash": "4efd093b849bb8de43f754416276ccfa78a6d374815959711b7c333fa551f5b9"
     },
     {
       "path": [
@@ -5695,7 +5730,7 @@
         0,
         "intro"
       ],
-      "sourceHash": "4b34d85286d4d5fd8f2b0d790f931df8d2164d341398971f72f696552e8b429c"
+      "sourceHash": "c17b1e5fbc6c741ca67556716c79826b648114c356239d674b5f25d6e25b0aec"
     },
     {
       "path": [
@@ -5765,7 +5800,7 @@
         1,
         "intro"
       ],
-      "sourceHash": "1a9306967a3d0d11023ceb65d700d264298b2e123b3244d710edb3a7071b4dca"
+      "sourceHash": "84a4840105d43023833f6493098a92c39a35554da82d2fc857b32887a0dfe59b"
     },
     {
       "path": [
@@ -5847,7 +5882,7 @@
         2,
         "intro"
       ],
-      "sourceHash": "cd9f2a5c7217f2825ee06d8882ceb051b9c2e6099d6b2564b9988a62b18443c1"
+      "sourceHash": "cbdfd2f496bca9b7d95a786acaea676866a9f30dc78a926a0110a0e4b48a9638"
     },
     {
       "path": [
