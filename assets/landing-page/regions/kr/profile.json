@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "ko-KR",
+  "currency": "KRW",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "부가가치세",
+      "preserve": true,
+      "evidence": [
+        "kr-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "부가가치세 신고서",
+      "preserve": true,
+      "evidence": [
+        "kr-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "홈택스",
+      "preserve": true,
+      "evidence": [
+        "kr-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "공동인증서",
+      "preserve": true,
+      "evidence": [
+        "kr-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "2026년 제2기 예정",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "₩184,200,000",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "kr-official-tax-source",
+      "title": "Filing Returns",
+      "publisher": "National Tax Service",
+      "url": "https://www.nts.go.kr/english/cm/cntnts/cntntsView.do?cntntsId=238886&mi=40008",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

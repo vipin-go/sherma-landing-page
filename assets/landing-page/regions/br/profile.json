@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "pt-BR",
+  "currency": "BRL",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "ICMS/IPI",
+      "preserve": true,
+      "evidence": [
+        "br-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "EFD ICMS/IPI",
+      "preserve": true,
+      "evidence": [
+        "br-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "SPED",
+      "preserve": true,
+      "evidence": [
+        "br-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "certificado digital ICP-Brasil",
+      "preserve": true,
+      "evidence": [
+        "br-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "3º trimestre de 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "R$ 124.820,00",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "br-official-tax-source",
+      "title": "Escrituração Fiscal Digital - EFD ICMS IPI",
+      "publisher": "Receita Federal",
+      "url": "https://www.gov.br/sped/pt-br/assuntos/escrituracoes-digitais/efd-icms-ipi",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

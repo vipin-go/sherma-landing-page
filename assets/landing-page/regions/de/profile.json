@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "de-DE",
+  "currency": "EUR",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "Umsatzsteuer",
+      "preserve": true,
+      "evidence": [
+        "de-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "UStVA",
+      "preserve": true,
+      "evidence": [
+        "de-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "Mein ELSTER",
+      "preserve": true,
+      "evidence": [
+        "de-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "ELSTER-Zertifikat",
+      "preserve": true,
+      "evidence": [
+        "de-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "3. Quartal 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "124.820,00 €",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "de-official-tax-source",
+      "title": "Umsatzsteuer-Voranmeldung",
+      "publisher": "ELSTER",
+      "url": "https://www.elster.de/eportal/formulare-leistungen/alleformulare/ustvaeru",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

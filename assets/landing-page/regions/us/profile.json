@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-US",
+  "currency": "USD",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "Sales tax",
+      "preserve": true,
+      "evidence": [
+        "us-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "state sales tax return",
+      "preserve": true,
+      "evidence": [
+        "us-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "state revenue portal",
+      "preserve": true,
+      "evidence": [
+        "us-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "portal account",
+      "preserve": true,
+      "evidence": [
+        "us-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "Q3 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "$124,820.00",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "us-official-tax-source",
+      "title": "Manage your business taxes",
+      "publisher": "U.S. Small Business Administration",
+      "url": "https://www.sba.gov/business-guide/manage-your-business/pay-taxes",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

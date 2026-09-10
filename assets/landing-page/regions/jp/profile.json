@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "ja-JP",
+  "currency": "JPY",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "消費税",
+      "preserve": true,
+      "evidence": [
+        "jp-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "消費税申告書",
+      "preserve": true,
+      "evidence": [
+        "jp-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "e-Tax",
+      "preserve": true,
+      "evidence": [
+        "jp-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "利用者識別番号",
+      "preserve": true,
+      "evidence": [
+        "jp-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "2026年第3四半期",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "¥18,420,000",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "jp-official-tax-source",
+      "title": "Consumption tax return forms",
+      "publisher": "National Tax Agency",
+      "url": "https://www.nta.go.jp/taxes/tetsuzuki/shinsei/shinkoku/shohi/06.htm",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

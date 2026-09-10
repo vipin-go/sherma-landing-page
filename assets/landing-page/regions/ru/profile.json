@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "ru-RU",
+  "currency": "RUB",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "НДС",
+      "preserve": true,
+      "evidence": [
+        "ru-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "декларация по НДС",
+      "preserve": true,
+      "evidence": [
+        "ru-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "ФНС России",
+      "preserve": true,
+      "evidence": [
+        "ru-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "квалифицированная электронная подпись",
+      "preserve": true,
+      "evidence": [
+        "ru-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "3 квартал 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "12 482 000 ₽",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ru-official-tax-source",
+      "title": "Налог на добавленную стоимость",
+      "publisher": "Федеральная налоговая служба",
+      "url": "https://www.nalog.gov.ru/rn77/taxation/taxes/nds/",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

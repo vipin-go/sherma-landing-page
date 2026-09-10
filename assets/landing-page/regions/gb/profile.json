@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-GB",
+  "currency": "GBP",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "VAT",
+      "preserve": true,
+      "evidence": [
+        "gb-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "VAT Return",
+      "preserve": true,
+      "evidence": [
+        "gb-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "HMRC online account",
+      "preserve": true,
+      "evidence": [
+        "gb-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "Government Gateway credentials",
+      "preserve": true,
+      "evidence": [
+        "gb-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "Q3 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "£124,820.00",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "gb-official-tax-source",
+      "title": "Submit a VAT Return",
+      "publisher": "HM Revenue & Customs",
+      "url": "https://www.gov.uk/submit-vat-return/when-to-do-a-vat-return",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

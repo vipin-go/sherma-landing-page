@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "ar-SA",
+  "currency": "SAR",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "ضريبة القيمة المضافة",
+      "preserve": true,
+      "evidence": [
+        "sa-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "إقرار ضريبة القيمة المضافة",
+      "preserve": true,
+      "evidence": [
+        "sa-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "بوابة هيئة الزكاة والضريبة والجمارك",
+      "preserve": true,
+      "evidence": [
+        "sa-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "حساب المكلف",
+      "preserve": true,
+      "evidence": [
+        "sa-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "الربع الثالث 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "482,000.00 ر.س",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "sa-official-tax-source",
+      "title": "VAT Guidelines",
+      "publisher": "Zakat, Tax and Customs Authority",
+      "url": "https://www.zatca.gov.sa/en/RulesRegulations/VAT/Documents/VAT%20%20Real%20Guidelines%20English%20Web.pdf",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

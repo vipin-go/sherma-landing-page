@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "de-CH",
+  "currency": "CHF",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "MWST",
+      "preserve": true,
+      "evidence": [
+        "ch-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "MWST-Abrechnung",
+      "preserve": true,
+      "evidence": [
+        "ch-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "ESTV-Portal",
+      "preserve": true,
+      "evidence": [
+        "ch-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "AGOV-Konto",
+      "preserve": true,
+      "evidence": [
+        "ch-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "3. Quartal 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "CHF 124’820.00",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ch-official-tax-source",
+      "title": "Mehrwertsteuer online abrechnen",
+      "publisher": "Eidgenössische Steuerverwaltung",
+      "url": "https://www.estv.admin.ch/de/mwst-online-abrechnen",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

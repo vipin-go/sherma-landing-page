@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "es-ES",
+  "currency": "EUR",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "IVA",
+      "preserve": true,
+      "evidence": [
+        "es-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "Modelo 303",
+      "preserve": true,
+      "evidence": [
+        "es-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "Sede electrónica de la Agencia Tributaria",
+      "preserve": true,
+      "evidence": [
+        "es-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "certificado electrónico o Cl@ve",
+      "preserve": true,
+      "evidence": [
+        "es-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "3.er trimestre de 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "124.820,00 €",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "es-official-tax-source",
+      "title": "Modelo 303. IVA. Autoliquidación",
+      "publisher": "Agencia Tributaria",
+      "url": "https://sede.agenciatributaria.gob.es/Sede/procedimientoini/G414.shtml",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

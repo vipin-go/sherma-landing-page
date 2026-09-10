@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "en-CA",
+  "currency": "CAD",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "GST/HST",
+      "preserve": true,
+      "evidence": [
+        "ca-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "GST/HST return",
+      "preserve": true,
+      "evidence": [
+        "ca-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "CRA My Business Account",
+      "preserve": true,
+      "evidence": [
+        "ca-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "CRA account credentials",
+      "preserve": true,
+      "evidence": [
+        "ca-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "Q3 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "CA$124,820.00",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ca-official-tax-source",
+      "title": "How to file a GST/HST return",
+      "publisher": "Canada Revenue Agency",
+      "url": "https://www.canada.ca/en/revenue-agency/services/tax/businesses/topics/gst-hst-businesses/file-gst-hst-return/how-file.html",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

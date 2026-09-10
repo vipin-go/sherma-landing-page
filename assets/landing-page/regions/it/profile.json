@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "it-IT",
+  "currency": "EUR",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "IVA",
+      "preserve": true,
+      "evidence": [
+        "it-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "Dichiarazione IVA",
+      "preserve": true,
+      "evidence": [
+        "it-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "Servizi Telematici",
+      "preserve": true,
+      "evidence": [
+        "it-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "credenziali Entratel/Fisconline",
+      "preserve": true,
+      "evidence": [
+        "it-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "3º trimestre 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "124.820,00 €",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "it-official-tax-source",
+      "title": "Presentazione dei modelli di dichiarazione IVA 2026",
+      "publisher": "Agenzia delle Entrate",
+      "url": "https://telematici.agenziaentrate.gov.it/Main/Avviso?id=20260129124644",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

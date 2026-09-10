@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "zh-CN",
+  "currency": "CNY",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "增值税",
+      "preserve": true,
+      "evidence": [
+        "cn-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "增值税申报表",
+      "preserve": true,
+      "evidence": [
+        "cn-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "电子税务局",
+      "preserve": true,
+      "evidence": [
+        "cn-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "电子税务局账户",
+      "preserve": true,
+      "evidence": [
+        "cn-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "2026年第3季度",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "¥898,000.00",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "cn-official-tax-source",
+      "title": "Value-added tax filing information",
+      "publisher": "State Taxation Administration",
+      "url": "https://www.chinatax.gov.cn/eng/c101276/c101278/c5099656/content.html",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}

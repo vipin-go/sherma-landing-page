@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "locale": "pl-PL",
+  "currency": "PLN",
+  "inheritBaseTranslations": true,
+  "glossary": [
+    {
+      "id": "tax.indirect.term",
+      "term": "VAT",
+      "preserve": true,
+      "evidence": [
+        "pl-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.return.name",
+      "term": "JPK_V7M",
+      "preserve": true,
+      "evidence": [
+        "pl-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.name",
+      "term": "e-Urząd Skarbowy",
+      "preserve": true,
+      "evidence": [
+        "pl-official-tax-source"
+      ]
+    },
+    {
+      "id": "tax.portal.credential",
+      "term": "podpis kwalifikowany lub Profil Zaufany",
+      "preserve": true,
+      "evidence": [
+        "pl-official-tax-source"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "id": "example.period",
+      "value": "lipiec 2026",
+      "unit": "text"
+    },
+    {
+      "id": "example.amount",
+      "value": "482 000,00 zł",
+      "unit": "text"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "pl-official-tax-source",
+      "title": "JPK VAT files",
+      "publisher": "Ministerstwo Finansów",
+      "url": "https://www.podatki.gov.pl/jednolity-plik-kontrolny/jpk-vat/pliki-do-pobrania-jpk-vat",
+      "accessedAt": "2026-09-02"
+    }
+  ],
+  "review": {
+    "status": "reviewed",
+    "by": "legacy market migration",
+    "at": "2026-09-10"
+  }
+}
