@@ -46,10 +46,11 @@ section, use `methodologyVersion: 2` and read
 [`references/business-impact.md`](references/business-impact.md) **before authoring
 its copy or defaults**. Start from the persona's real work unit, not its employee's
 salary. Separate operational capacity, operating cost, and explicitly modeled value.
-The platform owns the three-step interaction and deterministic calculations; the
-landing-page child owns the bounded workload defaults, outcome selection, and all
-translated labels and explanations. Start financial assumptions unset. Do not
-invent savings, prices, conversion rates, risk reductions, or customer outcomes.
+The platform owns the live calculator tabs, Base/Medium packages, token cost mix and
+deterministic calculations; the landing-page child owns persona-specific tab labels,
+typical usage numbers, outcome selection, and all translated labels and explanations.
+Prefill a typical consumer of this persona. Do not invent observed savings, provider
+quotes, or guaranteed customer outcomes.
 
 Keep this as a live, slider-driven calculator: input tabs and auto-updating results,
 not a form-submit/results replacement. Use direct numeric entry alongside sliders.
@@ -254,6 +255,7 @@ valuation rules and translate both configurations independently.
   - When set, every other section's background becomes translucent so the video reads through continuously as the visitor scrolls — this is automatic, nothing else to configure.
   - `backgroundImage` and `backgroundVideo` are mutually exclusive; choose one.
 - `landingPage.closing` (optional, object) — authored final-section `heading`, optional `kicker`/`body`, and optional `ctaLabel`. Newlines in `heading` are preserved.
+- `landingPage.agentAccess` (optional, object) — the hero "Also works with" coding-agent button. It shows only agent icons (the label appears as a tooltip); a click reveals `curl -fsSL <origin>/chat/<slug>/install.sh | bash -s -- --agent <agent>`, with agent icons to switch the command. It is shown by default in every presentation template's hero for public, published, non-password-protected personas. Set `enabled: false` to hide it, or `label` (at most 80 characters) to change the tooltip.
 
 Write in the persona's own voice — read `assets/chat-config.json`'s
 `publishedConfig.systemPrompt`/`name`/`description` first so the headline and
@@ -296,10 +298,11 @@ the translation generator before committing. It reuses unchanged strings from hi
 assets and translates only the delta. The validator recomputes source revisions and must
 reject a syntactically valid but stale manifest.
 
-When the region changes jurisdictional content rather than only language, read
-`../landing-page-markets/SKILL.md` and run that skill. It owns canonical market language,
-locale, authoritative glossary/evidence, market context revision, and country-directory
-translations. Do not use direct translation to invent market tax or regulatory terms.
+When the region changes jurisdictional content or ROI assumptions rather than only language,
+read `../landing-page-regions/SKILL.md` and run that skill. It owns region profiles (locale,
+currency, glossary, facts and evidence), per-section companion prompts, and the generated
+region sections and their translations. Do not use direct translation to invent market tax or
+regulatory terms.
 
 When this skill is materialized as a Git repository for one persona's landing
 page, the repo contains this scaffold plus `assets/landing-page.json`. Edit
@@ -465,9 +468,9 @@ curl -fsSL https://raw.githubusercontent.com/go-code-bot/landing-page-builder/ma
 ## Workflow-owned capability preview binding
 
 Landing-page schema version 2 additionally accepts an optional root binding:
-`capabilityPreview: { enabled: true, commandTrigger: "<existing-trigger>" }`.
-It must resolve to an enabled `operator_action` command with `workflowRef` and
-`workflowSkill`. These are the only binding fields: no URLs, models, credentials,
+`capabilityPreview: { enabled: true, commandId: "<existing-command-id>" }`.
+It must resolve to an enabled command with a `guidedJourney` package; Operator
+commands additionally require a portable `workflowRef`. These are the only binding fields: no URLs, triggers, models, credentials,
 private stages, graph definitions, or executable behavior belong here.
 
 Author the binding in the landing-page child and mirror it into the parent's
@@ -481,7 +484,3 @@ the binding is absent or the target backend has not activated the package.
 Do not enable a binding merely because its JSON validates. Check backend handler
 and continuation support, configured locale catalogues, and the domain's live
 guest/login acceptance first. Never treat a local test as production deployment.
-
-## Business impact methodology v2
-
-For new calculators, read [references/business-impact.md](references/business-impact.md) before authoring. Use methodologyVersion: 2 with persona-specific tabs, Base/Medium packages, and typical usage already filled. Tokens per output drive operating cost. Monetary defaults are allowed. Never equate returned hours with payroll savings. The localized navigation label is ROI, using the unchanged roi-calculator target. This supersedes older ROI calculator guidance in this file. Do not migrate unrelated personas without authorization.
