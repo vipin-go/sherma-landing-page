@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "zh",
   "regionKey": null,
-  "sourceRevision": "2e1c1742d116ac87630c2cce5fc47b879829f63b49738308fe0d2c8c5ca722c7",
+  "sourceRevision": "6a7b833ab17df9f0ed3d3debb61e90e5888945bf9b694103af06922e8ad17521",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -85,7 +85,7 @@
     "headline": "一个代理人，填写您的最高风险表格，并首先展示其工作。",
     "subheadline": "Sherma 阅读表格，排练对双胞胎的填充物，只询问它不知道的内容，并准确地向您展示将提交的内容。 在你这么说之前，没有什么能达到真实的形式。",
     "ctaLabel": "认识谢尔玛",
-    "secondaryCtaLabel": "看看它是如何工作的",
+    "secondaryCtaLabel": "See how it works",
     "featureTags": [
       "在它是真实的之前排练过",
       "你赞成的是进去",
@@ -107,8 +107,8 @@
       "alt": ""
     },
     "seoImage": {
-      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
-      "alt": "谢尔玛在她的办公室"
+      "src": "https://gabrieloperator.com/api/page-builder/media/0227f9c0-2318-4d09-afae-a2ccd728ead3/20f5f600-98a1-46df-b5b4-345565830f31/content/sherma-form-operations-og-banner-v2-20f5f600-98a1-46df-b5b4-345565830f31.webp",
+      "alt": "Sherma 表单操作：靛蓝色文档工具、已审核表单和石灰色勾选标记"
     },
     "contact": {
       "heading": "带上一张你已经填写的表格。",
@@ -689,24 +689,24 @@
       "methodologyVersion": 2,
       "enabled": true,
       "kicker": "Business impact",
-      "heading": "ROI Calculator",
-      "subheading": "For finance and sales-operations teams at growing EU suppliers completing recurring customer onboarding portals.",
-      "disclaimer": "Modelled supplier-onboarding usage, not observed customer results. Sherma prepares and checks a pack; your authorised person approves and submits it in the customer portal. Acceptance remains the destination organisation’s decision.",
+      "heading": "定价与 ROI",
+      "subheading": "您的投入，您的预估回报。",
+      "disclaimer": "规划估算与实测 ROI 分开。实测回报仅以认可的成果及可比较的已记录成本为依据。",
       "currency": "EUR",
       "currencyCopy": {
         "native": "Amounts in {currency}.",
         "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
         "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
         "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
-        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+        "basis": "货币换算不是本地成本研究。输入您自己的当地成本和贡献假设。语言的变化不会改变数量。"
       },
       "costCopy": {
-        "breakdown": "How the all-in AI cost is built",
+        "breakdown": "人工智能的总体成本是如何构建的",
         "perUnit": "{amount} per work unit (average)",
-        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
-        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "budgetOnly": "这是您的总预算。切换到成本细分以逐项列出；假设没有分裂。",
+        "benefitNotice": "建模福利，而不是收费。划掉的金额是您希望避免的支出，而不是人工智能账单上的折扣。",
         "remainder": "Other included operating costs",
-        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+        "allocation": "返回的小时数是容量，而不是自动节省的时间。只有您分配给实际支出减少或额外捐款的部分才会获得货币价值。"
       },
       "locale": "en-GB",
       "inputs": [],
@@ -724,7 +724,7 @@
           "platform_cost": 25,
           "higher_value_hours": 0.1,
           "contribution_rate": 0,
-          "customer_price": 25
+          "customer_price": 19
         },
         "copy": {
           "navLabel": "定价",
@@ -732,9 +732,9 @@
           "costStep": "Token usage",
           "valueStep": "What you keep in-house",
           "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
-          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
-          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
-          "sampleNotice": "Typical usage · not observed results",
+          "costIntro": "典型的代币消耗和平台费用是为普通用户预先填充的。如果您的用法不同，请编辑它们。",
+          "valueIntro": "这是针对该典型用途的模拟输出和容量。如果假设与您的工作不匹配，请编辑它们。",
+          "sampleNotice": "典型用法·未观察到的结果",
           "monthly": "Monthly",
           "yearly": "Yearly",
           "next": "Continue",
@@ -759,11 +759,11 @@
           "reviewMode": "Who handles the review?",
           "teamReview": "Existing team",
           "paidReview": "Additional paid reviewer",
-          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "reviewNote": "现有团队审查使用返回的容量。额外的付费审核包含在运营成本中，不会再次从团队能力中扣除。",
           "totalMode": "Monthly budget",
           "itemizedMode": "Cost breakdown",
-          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
-          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "budgetNote": "预算必须包括模型/媒体、工具、基础设施、Gabriel 费用和额外的付费审查。不要将不变的工资单计为新支出。",
+          "itemizedNote": "代币使用量是根据每个输出的数量 × 代币数计算得出的。除非适用，否则额外的媒体、工具和基础设施将保持为零。额外付费审阅根据审阅时间及其费率计算。",
           "paidReviewCost": "Additional paid review cost",
           "allInCost": "Operating cost",
           "missing": "Add your assumptions",
@@ -779,40 +779,40 @@
           "payback": "客户回收期",
           "notApplicable": "Not applicable",
           "annual": "Annual view",
-          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "annualNote": "相同的每月假设，没有增长或复利。招聘节省仅在输入的期间有效。",
           "method": "How this is calculated",
           "burdenHeading": "Repetitive work reduced",
           "opportunityHeading": "Capacity for higher-value work",
-          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "methodBody": "运营负担消除（负生产力），恢复产能。只有利用这种能力，更高价值的工作（潜在的积极生产力）才能创造经济价值。仅靠时间并不能节省现金。代币成本使用建模的输入/输出组合，而不是提供商报价。",
           "formulaLabel": "Customer ROI = (customer benefit − customer price) ÷ customer price. Payback = customer price ÷ monthly customer benefit. Internal delivery value is not customer ROI.",
-          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
-          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
-          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
-          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
-          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "allocationNote": "每个小时可以分配一次。未分配的时间仍然是容量，没有货币价值。",
+          "overlapLabel": "这些好处各不相同；我已经排除了其他地方已经计算的成本和损失。",
+          "overlapNote": "错误和风险估计不包括节省的劳动力，并且同一事件不得出现在两个类别中。贡献不包括人工智能成本，人工智能成本需单独扣除。",
+          "hiringLabel": "这次招聘是经过真正计划的，分配的能力可以满足这项工作。",
+          "reviewedLabel": "我已经审查了我的结果；未选择的结果在此估计中没有财务价值。",
           "cycleResult": "Cycle-time improvement",
-          "throughputResult": "Additional work supported by capacity and demand",
-          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
-          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
-          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
-          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
-          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
-          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
-          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
-          "boundsError": "Use values within the displayed limits.",
+          "throughputResult": "由能力和需求支持的额外工作",
+          "assumptionsIncomplete": "完成选定的假设以计算财务价值。",
+          "allocationError": "分配的小时数超出了可用的净容量。减少拨款。",
+          "reviewError": "审查所花费的时间比减少的工作量还要多。在这些假设下，没有可用的正容量。",
+          "cashError": "避免的支出不能超过当前支出，或者在没有分配时间的情况下具有正值。",
+          "hiringError": "分配的容量必须覆盖计划的雇用时间。确认计划的雇佣及其持续时间。",
+          "riskError": "对于损失减少估计，事后概率不能超过事前概率。",
+          "overlapError": "在将其纳入财务结果之前，请确认收益不会重叠。",
+          "boundsError": "使用显示限制内的值。",
           "rangeLabel": "Adjust value",
-          "noCurrencyChange": "Language changes formatting, not your currency or assumptions.",
-          "currentPreparation": "当前准备工时",
-          "reviewHours": "人工审核工时",
-          "reworkHours": "避免或增加的返工工时",
-          "capacityValue": "建模产能价值",
-          "acceptedUnits": "已接受单元",
-          "attendedUnits": "已处理单元",
-          "costPerAttended": "每单元处理成本",
-          "benefitCost": "收益成本倍数",
-          "firstYearCost": "首年成本",
-          "firstYearRoi": "首年投资回报率",
-          "paybackOutsideTerm": "在建模期限内未收回",
+          "noCurrencyChange": "语言改变格式，而不是你的货币或假设。",
+          "currentPreparation": "目前的准备时间",
+          "reviewHours": "人工审核时间",
+          "reworkHours": "避免或增加返工时间",
+          "capacityValue": "建模容量值",
+          "acceptedUnits": "接受单位",
+          "attendedUnits": "参会单位",
+          "costPerAttended": "每参加单位的成本",
+          "benefitCost": "效益成本倍数",
+          "firstYearCost": "第一年费用",
+          "firstYearRoi": "第一年投资回报率",
+          "paybackOutsideTerm": "在建模期限内未恢复",
           "months": "months"
         },
         "fields": {
@@ -846,19 +846,19 @@
           },
           "budget": {
             "label": "Estimated monthly operating budget",
-            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
+            "help": "包括代币使用、模型/媒体、工具、基础设施、Gabriel 费用和额外付费评论。"
           },
           "model_cost": {
             "label": "Extra models and media",
-            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
+            "help": "仅图像、视频或其他生成与代币使用分开收费。如果没有则输入零。"
           },
           "tools_cost": {
             "label": "Tools and integrations",
-            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
+            "help": "浏览器会话、连接器和其他计量服务。如果没有则输入零。"
           },
           "infrastructure_cost": {
             "label": "Infrastructure",
-            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
+            "help": "此工作负载的增量托管、存储和计算。如果没有则输入零。"
           },
           "platform_cost": {
             "label": "Other delivery and support cost",
@@ -873,20 +873,20 @@
             "help": "仅为可选的个人对比。这不是工资、薪酬或保证的现金储蓄。"
           },
           "review_rate": {
-            "label": "Additional paid review per hour",
-            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
+            "label": "每小时额外付费评论",
+            "help": "实际的额外审稿人支出，而不是不变员工的工资。"
           },
           "cash_hours": {
-            "label": "Hours that remove paid work",
-            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
+            "label": "消除有偿工作的时间",
+            "help": "仅分配加班、承包商或加工支出实际上会停止的工作。"
           },
           "cash_baseline": {
-            "label": "Current monthly spending on that work",
-            "help": "The cash budget from which the reduction will come."
+            "label": "目前该工作的每月支出",
+            "help": "减少的现金预算。"
           },
           "cash_avoided": {
-            "label": "Monthly spending you would stop",
-            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
+            "label": "你会停止的每月支出",
+            "help": "一个明确的金额，而不是工时乘以工资；排除任何单独输入的计划雇用节省。"
           },
           "higher_value_hours": {
             "label": "Hours kept for advisory review",
@@ -897,64 +897,64 @@
             "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "Hours used for additional volume",
-            "help": "This allocation cannot also be used for advisory work or spending reductions."
+            "label": "用于额外容量的小时数",
+            "help": "该拨款也不能用于咨询工作或削减支出。"
           },
           "extra_minutes": {
-            "label": "Team minutes per additional unit",
-            "help": "The remaining human effort, including review, needed to deliver one more unit."
+            "label": "每增加一个单位的团队分钟数",
+            "help": "剩余的人力工作（包括审核）需要再交付一个单元。"
           },
           "demand": {
-            "label": "Additional units with expected demand",
-            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
+            "label": "预计需求的额外单位",
+            "help": "容量本身并不是需求。输入您预计每月承担的额外工作量。"
           },
           "unit_margin": {
             "label": "Contribution per additional unit",
-            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
+            "help": "增量收入减去交付成本； AI运营成本单独扣除。"
           },
           "hiring_hours": {
-            "label": "Hours covering the planned hire",
-            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
+            "label": "计划雇用的时间",
+            "help": "将能力分配给具体的计划工作，而不是一般的全职等效估计。"
           },
           "planned_hours": {
-            "label": "Monthly hours the planned hire would cover",
-            "help": "The allocated capacity must cover this entire workload."
+            "label": "计划雇用的每月工时",
+            "help": "分配的容量必须覆盖整个工作负载。"
           },
           "hire_cost": {
-            "label": "Monthly hire cost actually deferred",
-            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
+            "label": "实际递延的每月租金费用",
+            "help": "使用真正计划的雇用成本，而不是已经雇用的人的工资。"
           },
           "hire_months": {
-            "label": "Months that hire is deferred",
-            "help": "One to twelve months; the annual estimate stops counting savings after this period."
+            "label": "推迟雇用的月份",
+            "help": "一到十二个月；在此期间之后，年度估算将停止计算节余。"
           },
           "incidents": {
-            "label": "Expected avoided errors per month",
-            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
+            "label": "每月预期避免的错误",
+            "help": "使用您的基线和预期减少量。排除事件也算作风险降低。"
           },
           "incident_cost": {
             "label": "Incremental cost per error",
-            "help": "Exclude labor, refunds or other losses already included elsewhere."
+            "help": "不包括其他地方已包含的人工、退款或其他损失。"
           },
           "probability_before": {
             "label": "Monthly loss probability before",
-            "help": "Your estimate, not a guaranteed risk assessment."
+            "help": "您的估计，不是保证的风险评估。"
           },
           "probability_after": {
             "label": "Monthly loss probability after",
-            "help": "Use the same event and monthly time horizon as the baseline."
+            "help": "使用相同的事件和每月时间范围作为基线。"
           },
           "loss": {
-            "label": "Loss exposure for that event",
-            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
+            "label": "该事件的损失风险",
+            "help": "排除错误事件和已计算的支出。这是不确定的预期价值，而不是节省的现金。"
           },
           "days_before": {
-            "label": "Cycle time before, in days",
-            "help": "Elapsed time from start to completion, separate from hands-on effort."
+            "label": "之前的周期时间（以天为单位）",
+            "help": "从开始到完成所花费的时间，与实际操作的努力无关。"
           },
           "days_after": {
-            "label": "Cycle time after, in days",
-            "help": "Shown as an operational change only, without an assumed monetary value."
+            "label": "之后的周期时间（以天为单位）",
+            "help": "仅显示为运营变化，没有假定的货币价值。"
           }
         },
         "burden": [
@@ -965,37 +965,6 @@
           "Additional onboarding capacity",
           "Higher-value finance and sales-operations work"
         ],
-        "usagePackages": {
-          "base": {
-            "volume": 1,
-            "tokensPerOutput": 5000,
-            "platform_cost": 25,
-            "minutes": 30,
-            "automation": 50,
-            "review": 5,
-            "model_cost": 0,
-            "tools_cost": 0,
-            "infrastructure_cost": 0,
-            "higher_value_hours": 0.1,
-            "contribution_rate": 0,
-            "customer_price": 25
-          },
-          "medium": {
-            "volume": 1,
-            "tokensPerOutput": 5000,
-            "platform_cost": 25,
-            "minutes": 30,
-            "automation": 50,
-            "review": 5,
-            "model_cost": 0,
-            "tools_cost": 0,
-            "infrastructure_cost": 0,
-            "higher_value_hours": 0.1,
-            "contribution_rate": 0,
-            "customer_price": 25
-          }
-        },
-        "defaultPackage": "medium",
         "costMode": "itemized",
         "reviewMode": "team",
         "selected": [
@@ -1058,8 +1027,7 @@
         ],
         "pricing": {
           "basis": "fixed",
-          "annualPrice": 300,
-          "label": "Sherma 月度价格假设",
+          "label": "定价",
           "help": "单包建模等值：€25/月。工作量假设为每月 €1,000，最多 40 包，每增加一包 €20。四周试运行 €2,500 加约定安装费。"
         },
         "presentation": {
@@ -1071,6 +1039,97 @@
       "cta": {
         "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "meet"
+      },
+      "compact": {
+        "schemaVersion": 1,
+        "defaultProfileId": "starter",
+        "copy": {
+          "navLabel": "定价",
+          "heading": "定价与 ROI",
+          "intro": "您的投入，您的预估回报。",
+          "monthly": "月",
+          "weekly": "周",
+          "daily": "日",
+          "cost": "您支付",
+          "benefit": "预估回报",
+          "net": "净收益",
+          "roi": "预计 ROI",
+          "timeBenefit": "预计时间价值",
+          "timeRoi": "时间价值 ROI",
+          "timeBack": "节省小时数",
+          "missing": "添加输入数据",
+          "noRatio": "Not applicable",
+          "method": "计算方法",
+          "reset": "重置",
+          "audience": "受众",
+          "includedVat": "含 VAT",
+          "excludedVat": "不含 VAT",
+          "perMonth": "每月",
+          "equivalents": "按月计费。每日和每周数字为平均值，并非日费、周费或保证回报。",
+          "timeNote": "时间价值是你的可选估算，并非实收现金或薪资支出减少。净分钟数包含你的检查和批准时间。",
+          "estimateNote": "规划估算与实测 ROI 分开。实测回报仅以认可的成果及可比较的已记录成本为依据。",
+          "limitNote": "如需更多用量或单独报价的工作，请联系我们。本估算仅涵盖所含套餐。",
+          "timeFormula": "时间价值 = 单位数 × 净节省分钟数 ÷ 60 × 你的小时价值。",
+          "profitFormula": "贡献利润 = 符合条件的推荐会话数 × 转化提升幅度 ÷ 100 × 每笔新增订单利润。",
+          "proceedsFormula": "增量收入 = 批次或取件次数 ×（之后净收入 − 之前净收入）。",
+          "roiFormula": "净值 = 收益 − 应用订阅费用。ROI = 净值 ÷ 应用订阅费用 × 100。免费套餐无 ROI 百分比。"
+        },
+        "profiles": [
+          {
+            "id": "starter",
+            "label": "入门版",
+            "model": "time_value",
+            "unitsPerWorkload": 1,
+            "inputs": [
+              {
+                "id": "units",
+                "label": "每月表单包数量",
+                "help": "你预计一个月内审核的工作量，须在所含额度内。",
+                "defaultValue": 5,
+                "min": 0,
+                "max": 5,
+                "step": 1,
+                "format": "number"
+              },
+              {
+                "id": "minutes_saved",
+                "label": "节省分钟数",
+                "help": "扣除检查、批准及返工后的估算。负值表示额外投入。",
+                "defaultValue": 10,
+                "min": -1440,
+                "max": 1440,
+                "step": 0.1,
+                "format": "number"
+              },
+              {
+                "id": "hourly_value",
+                "label": "每小时价值",
+                "help": "由你自行选择估值，并非承诺现金节省或薪资减少。",
+                "defaultValue": null,
+                "min": 0,
+                "max": 1000,
+                "step": 0.01,
+                "format": "currency"
+              }
+            ],
+            "offer": {
+              "monthlyPrice": 19,
+              "basis": "fixed",
+              "unit": "入门版",
+              "vatIncluded": false,
+              "includedUnits": 5,
+              "allowance": "5 个包 / 15 页",
+              "extras": "额外用量和专业服务另行报价。"
+            },
+            "assumptions": [
+              "初始净用时 10 分钟仅为示例性的准备时间估算，并非实测结果。",
+              "净分钟数包含客户审核时间。时间的货币价值由你提供，并非实收现金。"
+            ],
+            "loop": "出现新表单或缺失文档提示 → 准备并检查表单包 → 客户审核 → 记录获认可的表单包及审核投入。",
+            "ctaLabel": "试用演示",
+            "ctaTarget": "meet"
+          }
+        ]
       }
     }
   },
@@ -1251,7 +1310,7 @@
         "seoImage",
         "alt"
       ],
-      "sourceHash": "355a4ba7327347a5467fa3f727ec98179e78b6d37bdf6258cb18537a4944c562"
+      "sourceHash": "3692b6001f7e301cf3bb4b5a456d91f6c15c400b4cbdf441636e6171e0d3a0e3"
     },
     {
       "path": [
@@ -4150,7 +4209,7 @@
         "roiCalculator",
         "heading"
       ],
-      "sourceHash": "c63420eca3f95b8917c99f3a5cf72f000ab237bc6c658765b2176ebdd7b311be"
+      "sourceHash": "f605f95a678fe3249ebf6201cbc21b86ea72d7f4bc395cab6e017b8b91a674d6"
     },
     {
       "path": [
@@ -4158,7 +4217,7 @@
         "roiCalculator",
         "subheading"
       ],
-      "sourceHash": "1ec7a71fa48482882cce41d7f9b56a015b10ffdc096d2ff704fe3a4f891d2fc6"
+      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
     },
     {
       "path": [
@@ -4166,7 +4225,16 @@
         "roiCalculator",
         "disclaimer"
       ],
-      "sourceHash": "dd7003174215a04e426930e7d1f62ecf56ce39a3a64b73925fa84553a23df241"
+      "sourceHash": "28bd6e46023484d9a6b075ba5e7539842d6a2e920782ed0979f21366d56ae02f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "basis"
+      ],
+      "sourceHash": "17cc8491fcdfe8ddd4f8dec6a3859229ecacffb562b383e1283f1c0be0019806"
     },
     {
       "path": [
@@ -5888,37 +5956,9 @@
         "landingPage",
         "roiCalculator",
         "businessImpact",
-        "defaultPackage"
-      ],
-      "sourceHash": "c082456a7766e23a18db084cd34b6ff510baef506548b897cc80e9b7d3e121c8"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
-        "costMode"
-      ],
-      "sourceHash": "0257609b2e009aa6c788941fbcaeee13877465889a94aaf0444c7d4159ee616c"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
         "reviewMode"
       ],
       "sourceHash": "ca8b22d0db83a22db163b560b3e4e51527e533d31d067b614a0c33c4d2df8432"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
-        "selected",
-        0
-      ],
-      "sourceHash": "c8333158bd18b91a71842cfd38c2d6ddab471bda158b19286d96d4a4ed973ac4"
     },
     {
       "path": [
@@ -6026,7 +6066,7 @@
         "pricing",
         "label"
       ],
-      "sourceHash": "445307550df3a1f22b351466798ba569b2adb052eb7fb1db446a4e083a5709ab"
+      "sourceHash": "dfe95783edfef7918760312f94edd764f4ce3ffd38b90c2c955a0cc3b250f040"
     },
     {
       "path": [
@@ -6046,7 +6086,468 @@
         "primaryLabel"
       ],
       "sourceHash": "99c566fd1c02740637dd385f18f5388e3a8dad09567a039b494c1e27e9ef9cb6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "navLabel"
+      ],
+      "sourceHash": "dfe95783edfef7918760312f94edd764f4ce3ffd38b90c2c955a0cc3b250f040"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "heading"
+      ],
+      "sourceHash": "f605f95a678fe3249ebf6201cbc21b86ea72d7f4bc395cab6e017b8b91a674d6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "intro"
+      ],
+      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "monthly"
+      ],
+      "sourceHash": "310ca503ef36f177ddbc760463fcaec1edc6eca12bfd590ad7bb244b31e59543"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "weekly"
+      ],
+      "sourceHash": "e78041ab51a818a22e2cfea6c15fe72e9e20092246f496f1670f7be3e42177a6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "daily"
+      ],
+      "sourceHash": "8f2364e11b8be3ff008f32b3dedb54e659362429bcc9e3eb6acb6070de4ffbff"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "cost"
+      ],
+      "sourceHash": "16c6e032c6d9e64e841b58a0298260d9f548fcbe3a8ad8dc475bd977b602898f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "benefit"
+      ],
+      "sourceHash": "a7f9c107913bba92d233f27fbfa5c4c52e4435a763a727214089505b9519d2dc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "net"
+      ],
+      "sourceHash": "d32a3b8a970a1c2a790bdd47a4a86f208f6ff655d8e9269dcda5776b156d6039"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "roi"
+      ],
+      "sourceHash": "bd75a04bf54fbb79e68559c37be0a8752efacfe4f5b9a326b87143c8d5c87dcc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeBenefit"
+      ],
+      "sourceHash": "cedc575743fa43d9e724db8bd1d54037d41369448eb826b63e1efba54e81c2a4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeRoi"
+      ],
+      "sourceHash": "4b0df8181ded668923d1da293e0fc8ca4d0ac21eed3f933b32891615e67d1f6a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeBack"
+      ],
+      "sourceHash": "92947077a2792fb311280e55e4d39fbeb1fbb152e76b389dee5a53697ea548ef"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "missing"
+      ],
+      "sourceHash": "4b11bc702fcdb172c2f88f4af465a9d05ac206b7f7e6304fcded04eb92cccde6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "noRatio"
+      ],
+      "sourceHash": "5237c96ac1a23b98eb13770503afe986b088acd6627fa7649a5afdcbc4bb8e99"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "method"
+      ],
+      "sourceHash": "b79afe297bec4d00ab3a70a61b5e8b607a423a123f23a2fa9ccf8d6af6bcd157"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "reset"
+      ],
+      "sourceHash": "daee7606b339f3c339076fe2c9f372a3ff40c8ee896005d829c7481b64ca5303"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "audience"
+      ],
+      "sourceHash": "545c02357695a6ffed97b01a94a46b9aeb4686f4480173da6d0faeae8eb85053"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "includedVat"
+      ],
+      "sourceHash": "3e366dcdda082eda14db7eab30381a2fcc424c43d183d0e6d7a4b15c9b567d7d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "excludedVat"
+      ],
+      "sourceHash": "744120dab44d48957b4580cadd00fca1f91383823125d1400984a3cf62a76441"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "perMonth"
+      ],
+      "sourceHash": "88b1d1a67e34a269fec10b917a624817de854eeadb142640ab17c8199ab6bdae"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "equivalents"
+      ],
+      "sourceHash": "4a546022be02a950fc59270741b8e4784ca51f74da16e286c77e3f5a371aff38"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeNote"
+      ],
+      "sourceHash": "d7c17f23c52c1d9cf5be7fcb5a537017a0a09529bfde38e6b692afa2ecbf453f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "estimateNote"
+      ],
+      "sourceHash": "28bd6e46023484d9a6b075ba5e7539842d6a2e920782ed0979f21366d56ae02f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "limitNote"
+      ],
+      "sourceHash": "61108708047a1a834e46f1ca557d7518e3a63263a8ec7e7aa4301db230beacff"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeFormula"
+      ],
+      "sourceHash": "4cf3d8fcb0fa4b9c36d9869e709ba0cbabcd41083c7ff8cf77e9fe32066eacdb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "profitFormula"
+      ],
+      "sourceHash": "e286f3af8c8f706f737502c898e1ba90c6bbc7680c380bba844ec4f3874b5bc4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "proceedsFormula"
+      ],
+      "sourceHash": "9de390391c62a87b44f2c9bf74e5223e5d34c5a74cd5e12575f5e1452881a46e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "roiFormula"
+      ],
+      "sourceHash": "00f9b4df25ca733c11a00e762ab8d95f6e9c9364ce202a6c22ff95c3613e3fcb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "label"
+      ],
+      "sourceHash": "262b4ff6afdd7baafc6dbf8690c1d7fbb0e95cff4700306c9b76077b4cf6c000"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        0,
+        "label"
+      ],
+      "sourceHash": "89845ca5d069c187e20a9f64eeabf65fa47b336bc95020baf40a3a6c46faff19"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        0,
+        "help"
+      ],
+      "sourceHash": "a8cff02d43e6c0371644e73ec0de532d8ac6ae2eb169301a6e3605e3cb010ab0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        1,
+        "label"
+      ],
+      "sourceHash": "9f135e34cc7bc32cafb416bcbf7ef6af035cdb444c22e90cccd0587ba3db19df"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        1,
+        "help"
+      ],
+      "sourceHash": "d99a99ab817eea4a3a70ded599d0744a02fe8de95ab0b7c6a0fc9d5cb72c400d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        2,
+        "label"
+      ],
+      "sourceHash": "4b5674419c1cb29206fb7d1486e6492bb74df9523dbc3bd5cdb875a309486100"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        2,
+        "help"
+      ],
+      "sourceHash": "310e52c988a868b67de05d75913bc83fea7f2ff3d06b15cb07adf6c22d1f94f1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "unit"
+      ],
+      "sourceHash": "262b4ff6afdd7baafc6dbf8690c1d7fbb0e95cff4700306c9b76077b4cf6c000"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "allowance"
+      ],
+      "sourceHash": "a5d5585795e5657bfb5e58e554e25801e46797850ae97656747d062bc9fa68ae"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "extras"
+      ],
+      "sourceHash": "2dde78d0a4b34a797ac41efa8426f1e98874a7e9bfc38db869338b90175c0a63"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        0
+      ],
+      "sourceHash": "481bd7cafc916114b1fe4547d099ccb51865ae1b2f37553789066f29890402e0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        1
+      ],
+      "sourceHash": "989a9fcc887e91c895fb2d3cdee45f5d8279d36705594e66f19d87e172656e0e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "loop"
+      ],
+      "sourceHash": "9448e74c3b6ea2f5a164fb6ecbaacbbe2dbedafab7ce769b82b4e4162222fd80"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "ctaLabel"
+      ],
+      "sourceHash": "6e5fe4ca7c07142fa81eef400c342dea7f8ba0422aa331c3880e6604db8d52a7"
     }
   ],
-  "generatedAt": "2026-09-11T05:49:03.270Z"
+  "generatedAt": "2026-10-13T14:20:17.840Z"
 }

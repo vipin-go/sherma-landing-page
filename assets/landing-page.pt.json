@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "pt",
   "regionKey": null,
-  "sourceRevision": "2e1c1742d116ac87630c2cce5fc47b879829f63b49738308fe0d2c8c5ca722c7",
+  "sourceRevision": "6a7b833ab17df9f0ed3d3debb61e90e5888945bf9b694103af06922e8ad17521",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -85,7 +85,7 @@
     "headline": "Um agente que preenche seus formulários mais caros e mostra seu trabalho primeiro.",
     "subheadline": "Sherma lê o formulário, ensaia o preenchimento contra um gêmeo, pergunta apenas o que ele ainda não sabe e mostra exatamente o que será enviado. Nada atinge a forma real até que você diga.",
     "ctaLabel": "Conheça Sherma",
-    "secondaryCtaLabel": "Veja como funciona",
+    "secondaryCtaLabel": "See how it works",
     "featureTags": [
       "ensaiado antes de ser real",
       "O que você aprova é o que entra",
@@ -107,8 +107,8 @@
       "alt": ""
     },
     "seoImage": {
-      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
-      "alt": "Sherma em seu escritório"
+      "src": "https://gabrieloperator.com/api/page-builder/media/0227f9c0-2318-4d09-afae-a2ccd728ead3/20f5f600-98a1-46df-b5b4-345565830f31/content/sherma-form-operations-og-banner-v2-20f5f600-98a1-46df-b5b4-345565830f31.webp",
+      "alt": "Gestão de formulários Sherma: ferramentas índigo, formulários revistos e visto de pedra"
     },
     "contact": {
       "heading": "Traga um formulário que você já preenche.",
@@ -689,24 +689,24 @@
       "methodologyVersion": 2,
       "enabled": true,
       "kicker": "Business impact",
-      "heading": "ROI Calculator",
-      "subheading": "For finance and sales-operations teams at growing EU suppliers completing recurring customer onboarding portals.",
-      "disclaimer": "Modelled supplier-onboarding usage, not observed customer results. Sherma prepares and checks a pack; your authorised person approves and submits it in the customer portal. Acceptance remains the destination organisation’s decision.",
+      "heading": "Preços e ROI",
+      "subheading": "Os seus dados. O seu retorno estimado.",
+      "disclaimer": "Previsões diferem do ROI medido. Só resultados aceitos e custos registrados comparáveis sustentam retornos medidos.",
       "currency": "EUR",
       "currencyCopy": {
         "native": "Amounts in {currency}.",
         "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
         "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
         "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
-        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+        "basis": "A conversão de moeda não é uma pesquisa de custos locais. Insira seus próprios custos locais e suposições de contribuição. As alterações de idioma não alteram os valores."
       },
       "costCopy": {
-        "breakdown": "How the all-in AI cost is built",
+        "breakdown": "Como o custo total da IA é construído",
         "perUnit": "{amount} per work unit (average)",
-        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
-        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "budgetOnly": "Este é o seu orçamento total. Mude para o detalhamento de custos para listá-lo; nenhuma divisão foi assumida.",
+        "benefitNotice": "Benefícios modelados, não encargos. Os valores riscados são gastos que você espera evitar, e não descontos na conta de IA.",
         "remainder": "Other included operating costs",
-        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+        "allocation": "As horas retornadas são capacidade, não economias automáticas. Somente as parcelas que você atribui a reduções reais de gastos ou contribuições adicionais recebem um valor monetário."
       },
       "locale": "en-GB",
       "inputs": [],
@@ -724,7 +724,7 @@
           "platform_cost": 25,
           "higher_value_hours": 0.1,
           "contribution_rate": 0,
-          "customer_price": 25
+          "customer_price": 19
         },
         "copy": {
           "navLabel": "Avaliação",
@@ -732,9 +732,9 @@
           "costStep": "Token usage",
           "valueStep": "What you keep in-house",
           "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
-          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
-          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
-          "sampleNotice": "Typical usage · not observed results",
+          "costIntro": "O consumo típico de tokens e a taxa da plataforma são pré-preenchidos para um usuário médio. Edite-os se o seu uso for diferente.",
+          "valueIntro": "Esta é a saída e a capacidade modeladas para esse uso típico. Edite as suposições se elas não corresponderem ao seu trabalho.",
+          "sampleNotice": "Uso típico · resultados não observados",
           "monthly": "Monthly",
           "yearly": "Yearly",
           "next": "Continue",
@@ -759,11 +759,11 @@
           "reviewMode": "Who handles the review?",
           "teamReview": "Existing team",
           "paidReview": "Additional paid reviewer",
-          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "reviewNote": "A revisão da equipe existente usa a capacidade retornada. A revisão paga adicional está incluída no custo operacional e não é deduzida novamente da capacidade da equipe.",
           "totalMode": "Monthly budget",
           "itemizedMode": "Cost breakdown",
-          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
-          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "budgetNote": "O orçamento deve incluir modelos/mídia, ferramentas, infraestrutura, taxas Gabriel e revisão paga adicional. Não inclua a folha de pagamento inalterada como novos gastos.",
+          "itemizedNote": "O uso de token é calculado a partir do volume × tokens por saída. Mídia, ferramentas e infraestrutura extras permanecem em zero, a menos que sejam aplicadas. A revisão paga adicional é calculada a partir das horas de revisão e sua taxa.",
           "paidReviewCost": "Additional paid review cost",
           "allInCost": "Operating cost",
           "missing": "Add your assumptions",
@@ -776,32 +776,32 @@
           "multiple": "Internal delivery multiple",
           "customerBenefit": "Benefício do cliente modelado",
           "customerRoi": "ROI do cliente",
-          "payback": "Período de retorno do cliente",
+          "payback": "Prazo de retorno/cliente",
           "notApplicable": "Not applicable",
           "annual": "Annual view",
-          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "annualNote": "As mesmas premissas mensais, sem crescimento ou capitalização. A poupança de contratação dura apenas pelo período informado.",
           "method": "How this is calculated",
           "burdenHeading": "Repetitive work reduced",
           "opportunityHeading": "Capacity for higher-value work",
-          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "methodBody": "A remoção da carga operacional (produtividade negativa) devolve capacidade. O trabalho de maior valor (produtividade potencial positiva) só cria valor económico se essa capacidade for utilizada. As horas por si só não são economia de dinheiro. O custo do token usa um mix de entrada/saída modelado, não uma cotação do fornecedor.",
           "formulaLabel": "Customer ROI = (customer benefit − customer price) ÷ customer price. Payback = customer price ÷ monthly customer benefit. Internal delivery value is not customer ROI.",
-          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
-          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
-          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
-          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
-          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "allocationNote": "Cada hora pode ser alocada uma vez. As horas não alocadas permanecem em capacidade, sem valor monetário.",
+          "overlapLabel": "Esses benefícios são distintos; Excluí custos e perdas já contabilizados em outros lugares.",
+          "overlapNote": "As estimativas de erros e riscos excluem poupanças de mão-de-obra e o mesmo incidente não deve aparecer em ambas as categorias. A contribuição exclui custos de IA, que são deduzidos separadamente.",
+          "hiringLabel": "Esta contratação foi genuinamente planejada e a capacidade alocada pode cobrir a obra.",
+          "reviewedLabel": "Eu revi meus resultados; os resultados não selecionados não têm valor financeiro nesta estimativa.",
           "cycleResult": "Cycle-time improvement",
-          "throughputResult": "Additional work supported by capacity and demand",
-          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
-          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
-          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
-          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
-          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
-          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
-          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
-          "boundsError": "Use values within the displayed limits.",
+          "throughputResult": "Trabalho adicional apoiado pela capacidade e demanda",
+          "assumptionsIncomplete": "Complete as premissas selecionadas para calcular o valor financeiro.",
+          "allocationError": "As horas alocadas excedem a capacidade líquida disponível. Reduza as alocações.",
+          "reviewError": "A revisão leva mais tempo do que o trabalho reduzido. Nenhuma capacidade positiva está disponível nessas premissas.",
+          "cashError": "Os gastos evitados não podem exceder os gastos atuais ou ter valor positivo sem horas alocadas.",
+          "hiringError": "A capacidade alocada deve cobrir as horas de locação planejadas. Confirme a contratação planejada e sua duração.",
+          "riskError": "A probabilidade posterior não pode exceder a probabilidade anterior para uma estimativa de redução de perdas.",
+          "overlapError": "Confirme se os benefícios não se sobrepõem antes de incluí-los no resultado financeiro.",
+          "boundsError": "Use valores dentro dos limites exibidos.",
           "rangeLabel": "Adjust value",
-          "noCurrencyChange": "Language changes formatting, not your currency or assumptions.",
+          "noCurrencyChange": "O idioma altera a formatação, não sua moeda ou suposições.",
           "currentPreparation": "Horário de preparação atual",
           "reviewHours": "Horas de revisão humana",
           "reworkHours": "horas de retrabalho evitadas ou adicionadas",
@@ -822,7 +822,7 @@
           },
           "accepted_rate": {
             "label": "Taxa de aceitação esperada",
-            "help": "Compartilhamento modelado opcional de saídas preparadas aceitas pelo destinatário. Este não é uma garantia ou resultado observado."
+            "help": "Quota opcional modelada de conteúdos preparados aceites pelo destinatário. Não é garantia nem resultado observado."
           },
           "minutes": {
             "label": "Minutes to prepare one pack today",
@@ -837,8 +837,8 @@
             "help": "Human review still required before an authorised person submits to the customer portal."
           },
           "cycles_per_unit": {
-            "label": "Ciclos por unidade de cada mês",
-            "help": "Quantos ciclos recorrentes de pedidos, análises ou processamentos são executados em um mês típico."
+            "label": "Ciclos mensais por unidade",
+            "help": "Quantos ciclos de encomenda, revisão ou processamento cada unidade executa num mês típico."
           },
           "tokens_per_output": {
             "label": "Tokens to prepare one pack",
@@ -846,19 +846,19 @@
           },
           "budget": {
             "label": "Estimated monthly operating budget",
-            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
+            "help": "Inclui uso de token, modelos/mídia, ferramentas, infraestrutura, taxas Gabriel e revisão paga adicional."
           },
           "model_cost": {
             "label": "Extra models and media",
-            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
+            "help": "Somente imagem, vídeo ou outra geração cobrada separadamente do uso do token. Digite zero se nenhum."
           },
           "tools_cost": {
             "label": "Tools and integrations",
-            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
+            "help": "Sessões do navegador, conectores e outros serviços medidos. Digite zero se nenhum."
           },
           "infrastructure_cost": {
             "label": "Infrastructure",
-            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
+            "help": "Hospedagem, armazenamento e computação incrementais para esta carga de trabalho. Digite zero se nenhum."
           },
           "platform_cost": {
             "label": "Other delivery and support cost",
@@ -870,23 +870,23 @@
           },
           "personal_value_per_hour": {
             "label": "Valor opcional que você atribui a uma hora",
-            "help": "Uma comparação pessoal opcional apenas. Isso não é salário, salários ou economia garantida de dinheiro."
+            "help": "Só uma comparação pessoal opcional. Não é salário, remuneração ou poupança monetária garantida."
           },
           "review_rate": {
-            "label": "Additional paid review per hour",
-            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
+            "label": "Revisão paga adicional por hora",
+            "help": "Gastos extras reais do revisor, não o salário de um funcionário inalterado."
           },
           "cash_hours": {
-            "label": "Hours that remove paid work",
-            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
+            "label": "Horas que eliminam o trabalho remunerado",
+            "help": "Aloque apenas trabalhos cujos gastos com horas extras, empreiteiros ou processamento serão realmente interrompidos."
           },
           "cash_baseline": {
-            "label": "Current monthly spending on that work",
-            "help": "The cash budget from which the reduction will come."
+            "label": "Gastos mensais atuais nesse trabalho",
+            "help": "O orçamento de caixa do qual virá a redução."
           },
           "cash_avoided": {
-            "label": "Monthly spending you would stop",
-            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
+            "label": "Gastos mensais você pararia",
+            "help": "Um valor explícito, não horas multiplicadas pelo salário; excluir qualquer economia de contratação planejada inserida separadamente."
           },
           "higher_value_hours": {
             "label": "Hours kept for advisory review",
@@ -897,64 +897,64 @@
             "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "Hours used for additional volume",
-            "help": "This allocation cannot also be used for advisory work or spending reductions."
+            "label": "Horas usadas para volume adicional",
+            "help": "Esta dotação também não pode ser utilizada para trabalhos de consultoria ou para reduções de despesas."
           },
           "extra_minutes": {
-            "label": "Team minutes per additional unit",
-            "help": "The remaining human effort, including review, needed to deliver one more unit."
+            "label": "Minutos de equipe por unidade adicional",
+            "help": "O esforço humano restante, incluindo a revisão, precisava entregar mais uma unidade."
           },
           "demand": {
-            "label": "Additional units with expected demand",
-            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
+            "label": "Unidades adicionais com demanda esperada",
+            "help": "Capacidade por si só não é demanda. Insira o trabalho mensal extra que você espera realizar."
           },
           "unit_margin": {
             "label": "Contribution per additional unit",
-            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
+            "help": "Receita incremental menos custos de entrega; Os custos operacionais da IA ​​são deduzidos separadamente."
           },
           "hiring_hours": {
-            "label": "Hours covering the planned hire",
-            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
+            "label": "Horas cobrindo a locação planejada",
+            "help": "Alocar capacidade para trabalho planejado específico e não para uma estimativa genérica equivalente a tempo integral."
           },
           "planned_hours": {
-            "label": "Monthly hours the planned hire would cover",
-            "help": "The allocated capacity must cover this entire workload."
+            "label": "Horas mensais que a contratação planejada cobriria",
+            "help": "A capacidade alocada deve cobrir toda essa carga de trabalho."
           },
           "hire_cost": {
-            "label": "Monthly hire cost actually deferred",
-            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
+            "label": "Custo de aluguel mensal realmente diferido",
+            "help": "Use o custo de uma contratação genuinamente planejada, e não o salário de alguém já empregado."
           },
           "hire_months": {
-            "label": "Months that hire is deferred",
-            "help": "One to twelve months; the annual estimate stops counting savings after this period."
+            "label": "Meses em que a contratação é adiada",
+            "help": "Um a doze meses; a estimativa anual deixa de contabilizar as poupanças após este período."
           },
           "incidents": {
-            "label": "Expected avoided errors per month",
-            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
+            "label": "Erros evitados esperados por mês",
+            "help": "Use sua linha de base e a redução esperada. Excluir incidentes também contados como redução de risco."
           },
           "incident_cost": {
             "label": "Incremental cost per error",
-            "help": "Exclude labor, refunds or other losses already included elsewhere."
+            "help": "Exclui mão de obra, reembolsos ou outras perdas já incluídas em outros lugares."
           },
           "probability_before": {
             "label": "Monthly loss probability before",
-            "help": "Your estimate, not a guaranteed risk assessment."
+            "help": "Sua estimativa, não uma avaliação de risco garantida."
           },
           "probability_after": {
             "label": "Monthly loss probability after",
-            "help": "Use the same event and monthly time horizon as the baseline."
+            "help": "Use o mesmo evento e horizonte temporal mensal da linha de base."
           },
           "loss": {
-            "label": "Loss exposure for that event",
-            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
+            "label": "Exposição à perda para esse evento",
+            "help": "Exclua incidentes de erros e gastos já contabilizados. Este é um valor esperado incerto, e não dinheiro economizado."
           },
           "days_before": {
-            "label": "Cycle time before, in days",
-            "help": "Elapsed time from start to completion, separate from hands-on effort."
+            "label": "Tempo de ciclo antes, em dias",
+            "help": "Tempo decorrido desde o início até a conclusão, independente do esforço prático."
           },
           "days_after": {
-            "label": "Cycle time after, in days",
-            "help": "Shown as an operational change only, without an assumed monetary value."
+            "label": "Tempo de ciclo depois, em dias",
+            "help": "Mostrado apenas como uma mudança operacional, sem valor monetário assumido."
           }
         },
         "burden": [
@@ -965,37 +965,6 @@
           "Additional onboarding capacity",
           "Higher-value finance and sales-operations work"
         ],
-        "usagePackages": {
-          "base": {
-            "volume": 1,
-            "tokensPerOutput": 5000,
-            "platform_cost": 25,
-            "minutes": 30,
-            "automation": 50,
-            "review": 5,
-            "model_cost": 0,
-            "tools_cost": 0,
-            "infrastructure_cost": 0,
-            "higher_value_hours": 0.1,
-            "contribution_rate": 0,
-            "customer_price": 25
-          },
-          "medium": {
-            "volume": 1,
-            "tokensPerOutput": 5000,
-            "platform_cost": 25,
-            "minutes": 30,
-            "automation": 50,
-            "review": 5,
-            "model_cost": 0,
-            "tools_cost": 0,
-            "infrastructure_cost": 0,
-            "higher_value_hours": 0.1,
-            "contribution_rate": 0,
-            "customer_price": 25
-          }
-        },
-        "defaultPackage": "medium",
         "costMode": "itemized",
         "reviewMode": "team",
         "selected": [
@@ -1058,8 +1027,7 @@
         ],
         "pricing": {
           "basis": "fixed",
-          "annualPrice": 300,
-          "label": "Hipótese do preço mensal de Sherma",
+          "label": "Avaliação",
           "help": "Equivalente modelado para um pacote: € 25/mês. A hipótese do volume de trabalho é de € 1.000/mês para até 40 pacotes, com € 20 por pacote adicional. Um piloto de quatro semanas é de € 2.500 mais qualquer configuração acordada."
         },
         "presentation": {
@@ -1071,6 +1039,97 @@
       "cta": {
         "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "meet"
+      },
+      "compact": {
+        "schemaVersion": 1,
+        "defaultProfileId": "starter",
+        "copy": {
+          "navLabel": "Avaliação",
+          "heading": "Preços e ROI",
+          "intro": "Os seus dados. O seu retorno estimado.",
+          "monthly": "Mês",
+          "weekly": "Semana",
+          "daily": "Dia",
+          "cost": "Paga",
+          "benefit": "Retorno estimado",
+          "net": "Ganho neto",
+          "roi": "ROI estimado",
+          "timeBenefit": "Tempo: valor estimado",
+          "timeRoi": "ROI do tempo",
+          "timeBack": "Horas poupadas",
+          "missing": "Insira seus dados",
+          "noRatio": "Not applicable",
+          "method": "Como é calculado",
+          "reset": "Repor",
+          "audience": "Público",
+          "includedVat": "Inclui VAT",
+          "excludedVat": "Sem VAT",
+          "perMonth": "por mês",
+          "equivalents": "Cobrança mensal. Valores diários e semanais são médias, não cobranças nem retornos garantidos.",
+          "timeNote": "Valor do tempo: estimativa opcional, não dinheiro recebido ou corte salarial. Minutos líquidos incluem sua revisão e aprovação.",
+          "estimateNote": "Previsões diferem do ROI medido. Só resultados aceitos e custos registrados comparáveis sustentam retornos medidos.",
+          "limitNote": "Para uso maior ou serviço sob orçamento, contate-nos. A estimativa cobre apenas o plano incluído.",
+          "timeFormula": "Valor do tempo = unidades × min. líquidos poupados ÷ 60 × seu valor/h",
+          "profitFormula": "Margem = sessões de recomendação elegíveis × aumento da conversão ÷ 100 × lucro por pedido adicional.",
+          "proceedsFormula": "Receita adicional = lotes ou coletas × (receita líquida posterior − receita líquida anterior).",
+          "roiFormula": "Saldo = ganho − assinatura do app. ROI = saldo ÷ assinatura do app × 100. Planos grátis não têm percentual de ROI."
+        },
+        "profiles": [
+          {
+            "id": "starter",
+            "label": "Inicial",
+            "model": "time_value",
+            "unitsPerWorkload": 1,
+            "inputs": [
+              {
+                "id": "units",
+                "label": "Pacotes de fichas/mês",
+                "help": "Trabalho que espera revisar em um mês, dentro da franquia incluída.",
+                "defaultValue": 5,
+                "min": 0,
+                "max": 5,
+                "step": 1,
+                "format": "number"
+              },
+              {
+                "id": "minutes_saved",
+                "label": "Minutos ganhos",
+                "help": "Sua estimativa após revisão, aprovação e retrabalho. Valores negativos indicam esforço extra.",
+                "defaultValue": 10,
+                "min": -1440,
+                "max": 1440,
+                "step": 0.1,
+                "format": "number"
+              },
+              {
+                "id": "hourly_value",
+                "label": "Valor por hora",
+                "help": "Sua avaliação opcional. Não é promessa de economia em dinheiro nem de redução salarial.",
+                "defaultValue": null,
+                "min": 0,
+                "max": 1000,
+                "step": 0.01,
+                "format": "currency"
+              }
+            ],
+            "offer": {
+              "monthlyPrice": 19,
+              "basis": "fixed",
+              "unit": "Inicial",
+              "vatIncluded": false,
+              "includedUnits": 5,
+              "allowance": "5 pacotes / 15 págs.",
+              "extras": "Uso adicional e serviços profissionais têm orçamento separado."
+            },
+            "assumptions": [
+              "Os 10 minutos líquidos iniciais são uma estimativa ilustrativa de preparo, não um resultado medido.",
+              "Minutos líquidos incluem revisão do cliente. Você define o valor do tempo; não é dinheiro recebido."
+            ],
+            "loop": "Novo formulário ou documento em falta → preparar e verificar pacote → cliente revê → registar pacote aceite e esforço de revisão.",
+            "ctaLabel": "Ver a demo",
+            "ctaTarget": "meet"
+          }
+        ]
       }
     }
   },
@@ -1251,7 +1310,7 @@
         "seoImage",
         "alt"
       ],
-      "sourceHash": "355a4ba7327347a5467fa3f727ec98179e78b6d37bdf6258cb18537a4944c562"
+      "sourceHash": "3692b6001f7e301cf3bb4b5a456d91f6c15c400b4cbdf441636e6171e0d3a0e3"
     },
     {
       "path": [
@@ -4150,7 +4209,7 @@
         "roiCalculator",
         "heading"
       ],
-      "sourceHash": "c63420eca3f95b8917c99f3a5cf72f000ab237bc6c658765b2176ebdd7b311be"
+      "sourceHash": "f605f95a678fe3249ebf6201cbc21b86ea72d7f4bc395cab6e017b8b91a674d6"
     },
     {
       "path": [
@@ -4158,7 +4217,7 @@
         "roiCalculator",
         "subheading"
       ],
-      "sourceHash": "1ec7a71fa48482882cce41d7f9b56a015b10ffdc096d2ff704fe3a4f891d2fc6"
+      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
     },
     {
       "path": [
@@ -4166,7 +4225,16 @@
         "roiCalculator",
         "disclaimer"
       ],
-      "sourceHash": "dd7003174215a04e426930e7d1f62ecf56ce39a3a64b73925fa84553a23df241"
+      "sourceHash": "28bd6e46023484d9a6b075ba5e7539842d6a2e920782ed0979f21366d56ae02f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "basis"
+      ],
+      "sourceHash": "17cc8491fcdfe8ddd4f8dec6a3859229ecacffb562b383e1283f1c0be0019806"
     },
     {
       "path": [
@@ -5888,37 +5956,9 @@
         "landingPage",
         "roiCalculator",
         "businessImpact",
-        "defaultPackage"
-      ],
-      "sourceHash": "c082456a7766e23a18db084cd34b6ff510baef506548b897cc80e9b7d3e121c8"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
-        "costMode"
-      ],
-      "sourceHash": "0257609b2e009aa6c788941fbcaeee13877465889a94aaf0444c7d4159ee616c"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
         "reviewMode"
       ],
       "sourceHash": "ca8b22d0db83a22db163b560b3e4e51527e533d31d067b614a0c33c4d2df8432"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
-        "selected",
-        0
-      ],
-      "sourceHash": "c8333158bd18b91a71842cfd38c2d6ddab471bda158b19286d96d4a4ed973ac4"
     },
     {
       "path": [
@@ -6026,7 +6066,7 @@
         "pricing",
         "label"
       ],
-      "sourceHash": "445307550df3a1f22b351466798ba569b2adb052eb7fb1db446a4e083a5709ab"
+      "sourceHash": "dfe95783edfef7918760312f94edd764f4ce3ffd38b90c2c955a0cc3b250f040"
     },
     {
       "path": [
@@ -6046,7 +6086,468 @@
         "primaryLabel"
       ],
       "sourceHash": "99c566fd1c02740637dd385f18f5388e3a8dad09567a039b494c1e27e9ef9cb6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "navLabel"
+      ],
+      "sourceHash": "dfe95783edfef7918760312f94edd764f4ce3ffd38b90c2c955a0cc3b250f040"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "heading"
+      ],
+      "sourceHash": "f605f95a678fe3249ebf6201cbc21b86ea72d7f4bc395cab6e017b8b91a674d6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "intro"
+      ],
+      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "monthly"
+      ],
+      "sourceHash": "310ca503ef36f177ddbc760463fcaec1edc6eca12bfd590ad7bb244b31e59543"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "weekly"
+      ],
+      "sourceHash": "e78041ab51a818a22e2cfea6c15fe72e9e20092246f496f1670f7be3e42177a6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "daily"
+      ],
+      "sourceHash": "8f2364e11b8be3ff008f32b3dedb54e659362429bcc9e3eb6acb6070de4ffbff"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "cost"
+      ],
+      "sourceHash": "16c6e032c6d9e64e841b58a0298260d9f548fcbe3a8ad8dc475bd977b602898f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "benefit"
+      ],
+      "sourceHash": "a7f9c107913bba92d233f27fbfa5c4c52e4435a763a727214089505b9519d2dc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "net"
+      ],
+      "sourceHash": "d32a3b8a970a1c2a790bdd47a4a86f208f6ff655d8e9269dcda5776b156d6039"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "roi"
+      ],
+      "sourceHash": "bd75a04bf54fbb79e68559c37be0a8752efacfe4f5b9a326b87143c8d5c87dcc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeBenefit"
+      ],
+      "sourceHash": "cedc575743fa43d9e724db8bd1d54037d41369448eb826b63e1efba54e81c2a4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeRoi"
+      ],
+      "sourceHash": "4b0df8181ded668923d1da293e0fc8ca4d0ac21eed3f933b32891615e67d1f6a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeBack"
+      ],
+      "sourceHash": "92947077a2792fb311280e55e4d39fbeb1fbb152e76b389dee5a53697ea548ef"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "missing"
+      ],
+      "sourceHash": "4b11bc702fcdb172c2f88f4af465a9d05ac206b7f7e6304fcded04eb92cccde6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "noRatio"
+      ],
+      "sourceHash": "5237c96ac1a23b98eb13770503afe986b088acd6627fa7649a5afdcbc4bb8e99"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "method"
+      ],
+      "sourceHash": "b79afe297bec4d00ab3a70a61b5e8b607a423a123f23a2fa9ccf8d6af6bcd157"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "reset"
+      ],
+      "sourceHash": "daee7606b339f3c339076fe2c9f372a3ff40c8ee896005d829c7481b64ca5303"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "audience"
+      ],
+      "sourceHash": "545c02357695a6ffed97b01a94a46b9aeb4686f4480173da6d0faeae8eb85053"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "includedVat"
+      ],
+      "sourceHash": "3e366dcdda082eda14db7eab30381a2fcc424c43d183d0e6d7a4b15c9b567d7d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "excludedVat"
+      ],
+      "sourceHash": "744120dab44d48957b4580cadd00fca1f91383823125d1400984a3cf62a76441"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "perMonth"
+      ],
+      "sourceHash": "88b1d1a67e34a269fec10b917a624817de854eeadb142640ab17c8199ab6bdae"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "equivalents"
+      ],
+      "sourceHash": "4a546022be02a950fc59270741b8e4784ca51f74da16e286c77e3f5a371aff38"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeNote"
+      ],
+      "sourceHash": "d7c17f23c52c1d9cf5be7fcb5a537017a0a09529bfde38e6b692afa2ecbf453f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "estimateNote"
+      ],
+      "sourceHash": "28bd6e46023484d9a6b075ba5e7539842d6a2e920782ed0979f21366d56ae02f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "limitNote"
+      ],
+      "sourceHash": "61108708047a1a834e46f1ca557d7518e3a63263a8ec7e7aa4301db230beacff"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeFormula"
+      ],
+      "sourceHash": "4cf3d8fcb0fa4b9c36d9869e709ba0cbabcd41083c7ff8cf77e9fe32066eacdb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "profitFormula"
+      ],
+      "sourceHash": "e286f3af8c8f706f737502c898e1ba90c6bbc7680c380bba844ec4f3874b5bc4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "proceedsFormula"
+      ],
+      "sourceHash": "9de390391c62a87b44f2c9bf74e5223e5d34c5a74cd5e12575f5e1452881a46e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "roiFormula"
+      ],
+      "sourceHash": "00f9b4df25ca733c11a00e762ab8d95f6e9c9364ce202a6c22ff95c3613e3fcb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "label"
+      ],
+      "sourceHash": "262b4ff6afdd7baafc6dbf8690c1d7fbb0e95cff4700306c9b76077b4cf6c000"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        0,
+        "label"
+      ],
+      "sourceHash": "89845ca5d069c187e20a9f64eeabf65fa47b336bc95020baf40a3a6c46faff19"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        0,
+        "help"
+      ],
+      "sourceHash": "a8cff02d43e6c0371644e73ec0de532d8ac6ae2eb169301a6e3605e3cb010ab0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        1,
+        "label"
+      ],
+      "sourceHash": "9f135e34cc7bc32cafb416bcbf7ef6af035cdb444c22e90cccd0587ba3db19df"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        1,
+        "help"
+      ],
+      "sourceHash": "d99a99ab817eea4a3a70ded599d0744a02fe8de95ab0b7c6a0fc9d5cb72c400d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        2,
+        "label"
+      ],
+      "sourceHash": "4b5674419c1cb29206fb7d1486e6492bb74df9523dbc3bd5cdb875a309486100"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        2,
+        "help"
+      ],
+      "sourceHash": "310e52c988a868b67de05d75913bc83fea7f2ff3d06b15cb07adf6c22d1f94f1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "unit"
+      ],
+      "sourceHash": "262b4ff6afdd7baafc6dbf8690c1d7fbb0e95cff4700306c9b76077b4cf6c000"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "allowance"
+      ],
+      "sourceHash": "a5d5585795e5657bfb5e58e554e25801e46797850ae97656747d062bc9fa68ae"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "extras"
+      ],
+      "sourceHash": "2dde78d0a4b34a797ac41efa8426f1e98874a7e9bfc38db869338b90175c0a63"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        0
+      ],
+      "sourceHash": "481bd7cafc916114b1fe4547d099ccb51865ae1b2f37553789066f29890402e0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        1
+      ],
+      "sourceHash": "989a9fcc887e91c895fb2d3cdee45f5d8279d36705594e66f19d87e172656e0e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "loop"
+      ],
+      "sourceHash": "9448e74c3b6ea2f5a164fb6ecbaacbbe2dbedafab7ce769b82b4e4162222fd80"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "ctaLabel"
+      ],
+      "sourceHash": "6e5fe4ca7c07142fa81eef400c342dea7f8ba0422aa331c3880e6604db8d52a7"
     }
   ],
-  "generatedAt": "2026-09-11T05:49:03.270Z"
+  "generatedAt": "2026-10-13T14:20:17.840Z"
 }

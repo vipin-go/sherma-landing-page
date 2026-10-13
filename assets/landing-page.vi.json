@@ -2,7 +2,7 @@
   "schemaVersion": 2,
   "language": "vi",
   "regionKey": null,
-  "sourceRevision": "2e1c1742d116ac87630c2cce5fc47b879829f63b49738308fe0d2c8c5ca722c7",
+  "sourceRevision": "6a7b833ab17df9f0ed3d3debb61e90e5888945bf9b694103af06922e8ad17521",
   "landingPage": {
     "design": {
       "variant": "form-operations",
@@ -63,11 +63,11 @@
           "target": "how-it-works"
         },
         {
-          "label": "Các trường hợp sử dụng",
+          "label": "Ứng dụng",
           "target": "use-cases"
         },
         {
-          "label": "Giá cả",
+          "label": "Định giá",
           "target": "roi-calculator"
         },
         {
@@ -85,7 +85,7 @@
     "headline": "Một đại lý điền vào các biểu mẫu có cổ phần cao nhất của bạn và hiển thị công việc của nó trước.",
     "subheadline": "Sherma đọc biểu mẫu, diễn tập điền vào một cặp song sinh của nó, chỉ hỏi những gì nó chưa biết và cho bạn thấy chính xác những gì sẽ được gửi. Không có gì đạt được hình thức thực cho đến khi bạn nói như vậy.",
     "ctaLabel": "Gặp Sherma",
-    "secondaryCtaLabel": "Xem nó hoạt động như thế nào",
+    "secondaryCtaLabel": "See how it works",
     "featureTags": [
       "diễn tập trước khi nó là thật",
       "Những gì bạn chấp thuận là những gì đi vào",
@@ -107,8 +107,8 @@
       "alt": ""
     },
     "seoImage": {
-      "src": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/seo-banner.jpg",
-      "alt": "Sherma trong văn phòng của cô ấy"
+      "src": "https://gabrieloperator.com/api/page-builder/media/0227f9c0-2318-4d09-afae-a2ccd728ead3/20f5f600-98a1-46df-b5b4-345565830f31/content/sherma-form-operations-og-banner-v2-20f5f600-98a1-46df-b5b4-345565830f31.webp",
+      "alt": "Nghiệp vụ biểu mẫu Sherma: công cụ tài liệu màu chàm, mẫu đã duyệt và dấu kiểm bằng đá"
     },
     "contact": {
       "heading": "Mang theo một biểu mẫu bạn đã điền.",
@@ -663,7 +663,7 @@
             "label": "Công ty",
             "links": [
               {
-                "label": "Các trường hợp sử dụng",
+                "label": "Ứng dụng",
                 "target": "use-cases"
               },
               {
@@ -689,24 +689,24 @@
       "methodologyVersion": 2,
       "enabled": true,
       "kicker": "Business impact",
-      "heading": "ROI Calculator",
-      "subheading": "For finance and sales-operations teams at growing EU suppliers completing recurring customer onboarding portals.",
-      "disclaimer": "Modelled supplier-onboarding usage, not observed customer results. Sherma prepares and checks a pack; your authorised person approves and submits it in the customer portal. Acceptance remains the destination organisation’s decision.",
+      "heading": "Giá & ROI",
+      "subheading": "Bạn nhập liệu. Ước tính lợi ích.",
+      "disclaimer": "Ước tính kế hoạch tách biệt với ROI đo được. Lợi nhuận đo được chỉ dựa trên kết quả đã chấp nhận và chi phí đã ghi có thể so sánh.",
       "currency": "EUR",
       "currencyCopy": {
         "native": "Amounts in {currency}.",
         "loading": "Checking the local currency. Amounts remain in {currency} until a rate is available.",
         "unavailable": "A current local exchange rate is unavailable. Amounts remain in {currency}.",
         "converted": "Amounts converted from {base} to {currency} using the reference rate dated {date}.",
-        "basis": "Currency conversion is not local cost research. Enter your own local costs and contribution assumptions. Language changes do not change amounts."
+        "basis": "Chuyển đổi tiền tệ không phải là nghiên cứu chi phí địa phương. Nhập chi phí địa phương của bạn và các giả định đóng góp. Thay đổi ngôn ngữ không thay đổi số lượng."
       },
       "costCopy": {
-        "breakdown": "How the all-in AI cost is built",
+        "breakdown": "Chi phí AI tổng thể được xây dựng như thế nào",
         "perUnit": "{amount} per work unit (average)",
-        "budgetOnly": "This is your total budget. Switch to Cost breakdown to itemize it; no split has been assumed.",
-        "benefitNotice": "Modeled benefits, not charges. Crossed-out amounts are spending you expect to avoid, not discounts on the AI bill.",
+        "budgetOnly": "Đây là tổng ngân sách của bạn. Chuyển sang Phân tích chi phí để chia thành từng khoản; không có sự phân chia nào được giả định.",
+        "benefitNotice": "Lợi ích được mô hình hóa, không phải phí. Số tiền bị gạch bỏ là khoản chi tiêu mà bạn mong muốn tránh, không phải khoản giảm giá trên hóa đơn AI.",
         "remainder": "Other included operating costs",
-        "allocation": "Returned hours are capacity, not automatic savings. Only the portions you assign to actual spending reductions or additional contribution receive a monetary value."
+        "allocation": "Số giờ trả về là công suất chứ không phải tiết kiệm tự động. Chỉ những phần bạn chỉ định cho việc cắt giảm chi tiêu thực tế hoặc đóng góp bổ sung mới nhận được giá trị bằng tiền."
       },
       "locale": "en-GB",
       "inputs": [],
@@ -724,17 +724,17 @@
           "platform_cost": 25,
           "higher_value_hours": 0.1,
           "contribution_rate": 0,
-          "customer_price": 25
+          "customer_price": 19
         },
         "copy": {
-          "navLabel": "Giá cả",
+          "navLabel": "Định giá",
           "workloadStep": "Onboarding packs this month",
           "costStep": "Token usage",
           "valueStep": "What you keep in-house",
           "workloadIntro": "Model form preparation, corrections and human review—not automatic live filing or guaranteed acceptance.",
-          "costIntro": "Typical token consumption and the platform fee are prefilled for an average user. Edit them if your usage differs.",
-          "valueIntro": "This is the modeled output and capacity for that typical usage. Edit the assumptions if they do not match your work.",
-          "sampleNotice": "Typical usage · not observed results",
+          "costIntro": "Mức tiêu thụ mã thông báo thông thường và phí nền tảng được điền trước cho người dùng trung bình. Chỉnh sửa chúng nếu cách sử dụng của bạn khác.",
+          "valueIntro": "Đây là sản lượng và công suất được mô hình hóa cho cách sử dụng thông thường đó. Chỉnh sửa các giả định nếu chúng không phù hợp với công việc của bạn.",
+          "sampleNotice": "Cách sử dụng điển hình · kết quả không được quan sát",
           "monthly": "Monthly",
           "yearly": "Yearly",
           "next": "Continue",
@@ -759,11 +759,11 @@
           "reviewMode": "Who handles the review?",
           "teamReview": "Existing team",
           "paidReview": "Additional paid reviewer",
-          "reviewNote": "Existing-team review uses returned capacity. Additional paid review is included in operating cost, not deducted again from team capacity.",
+          "reviewNote": "Đánh giá của nhóm hiện tại sử dụng năng lực được trả lại. Đánh giá trả phí bổ sung được bao gồm trong chi phí vận hành, không được khấu trừ lại vào năng lực của nhóm.",
           "totalMode": "Monthly budget",
           "itemizedMode": "Cost breakdown",
-          "budgetNote": "The budget must include models/media, tools, infrastructure, Gabriel fees and additional paid review. Do not include unchanged payroll as new spending.",
-          "itemizedNote": "Token usage is calculated from volume × tokens per output. Extra media, tools and infrastructure stay at zero unless they apply. Additional paid review is calculated from review hours and its rate.",
+          "budgetNote": "Ngân sách phải bao gồm các mô hình/phương tiện truyền thông, công cụ, cơ sở hạ tầng, phí Gabriel và đánh giá trả phí bổ sung. Không bao gồm bảng lương không thay đổi như chi tiêu mới.",
+          "itemizedNote": "Việc sử dụng mã thông báo được tính từ khối lượng × mã thông báo trên mỗi đầu ra. Phương tiện, công cụ và cơ sở hạ tầng bổ sung luôn ở mức 0 trừ khi chúng được áp dụng. Đánh giá trả phí bổ sung được tính từ số giờ đánh giá và tỷ lệ của nó.",
           "paidReviewCost": "Additional paid review cost",
           "allInCost": "Operating cost",
           "missing": "Add your assumptions",
@@ -775,44 +775,44 @@
           "netBenefit": "Net modeled benefit",
           "multiple": "Internal delivery multiple",
           "customerBenefit": "Lợi ích mô hình hóa cho khách hàng",
-          "customerRoi": "ROI khách hàng",
-          "payback": "Thời gian hoàn vốn khách hàng",
+          "customerRoi": "ROI của khách hàng",
+          "payback": "Kỳ hoàn vốn của khách",
           "notApplicable": "Not applicable",
           "annual": "Annual view",
-          "annualNote": "The same monthly assumptions, without growth or compounding. Hiring savings last only for the entered period.",
+          "annualNote": "Các giả định hàng tháng giống nhau, không có tăng trưởng hoặc gộp. Tiền tiết kiệm thuê chỉ kéo dài trong khoảng thời gian đã nhập.",
           "method": "How this is calculated",
           "burdenHeading": "Repetitive work reduced",
           "opportunityHeading": "Capacity for higher-value work",
-          "methodBody": "Operating burden removed (negative productivity) returns capacity. Higher-value work (potential positive productivity) creates economic value only if that capacity is used. Hours alone are not cash savings. Token cost uses a modeled input/output mix, not a provider quote.",
+          "methodBody": "Gánh nặng vận hành được loại bỏ (năng suất âm) sẽ trả lại năng suất. Công việc có giá trị cao hơn (năng suất tích cực tiềm năng) chỉ tạo ra giá trị kinh tế nếu năng lực đó được sử dụng. Chỉ tính giờ thôi thì không phải là tiết kiệm tiền mặt. Giá mã thông báo sử dụng kết hợp đầu vào/đầu ra được mô hình hóa, không phải báo giá của nhà cung cấp.",
           "formulaLabel": "Customer ROI = (customer benefit − customer price) ÷ customer price. Payback = customer price ÷ monthly customer benefit. Internal delivery value is not customer ROI.",
-          "allocationNote": "Each hour can be allocated once. Unallocated hours remain capacity, with no monetary value.",
-          "overlapLabel": "These benefits are distinct; I have excluded costs and losses already counted elsewhere.",
-          "overlapNote": "Error and risk estimates exclude labor savings and the same incident must not appear in both categories. Contribution excludes AI costs, which are deducted separately.",
-          "hiringLabel": "This hire was genuinely planned and the allocated capacity can cover the work.",
-          "reviewedLabel": "I have reviewed my outcomes; unselected outcomes have no financial value in this estimate.",
+          "allocationNote": "Mỗi giờ có thể được phân bổ một lần. Số giờ chưa được phân bổ vẫn là năng lực, không có giá trị tiền tệ.",
+          "overlapLabel": "Những lợi ích này là khác biệt; Tôi đã loại trừ chi phí và tổn thất đã được tính ở nơi khác.",
+          "overlapNote": "Ước tính sai sót và rủi ro không bao gồm tiết kiệm lao động và sự cố giống nhau không được xuất hiện ở cả hai loại. Khoản đóng góp không bao gồm chi phí AI, được khấu trừ riêng.",
+          "hiringLabel": "Việc thuê này đã được lên kế hoạch thực sự và năng lực được phân bổ có thể đáp ứng được công việc.",
+          "reviewedLabel": "Tôi đã xem lại kết quả của mình; kết quả không được chọn không có giá trị tài chính trong ước tính này.",
           "cycleResult": "Cycle-time improvement",
-          "throughputResult": "Additional work supported by capacity and demand",
-          "assumptionsIncomplete": "Complete the selected assumptions to calculate financial value.",
-          "allocationError": "Allocated hours exceed the net capacity available. Reduce the allocations.",
-          "reviewError": "Review takes more time than the work reduced. No positive capacity is available at these assumptions.",
-          "cashError": "Avoided spending cannot exceed current spending or have positive value with no hours allocated.",
-          "hiringError": "Allocated capacity must cover the planned hire hours. Confirm the planned hire and its duration.",
-          "riskError": "The after probability cannot exceed the before probability for a loss-reduction estimate.",
-          "overlapError": "Confirm the benefits do not overlap before including them in the financial result.",
-          "boundsError": "Use values within the displayed limits.",
+          "throughputResult": "Công việc bổ sung được hỗ trợ theo năng lực và nhu cầu",
+          "assumptionsIncomplete": "Hoàn thành các giả định đã chọn để tính giá trị tài chính.",
+          "allocationError": "Số giờ được phân bổ vượt quá công suất thực hiện có. Giảm phân bổ.",
+          "reviewError": "Việc xem xét mất nhiều thời gian hơn công việc giảm bớt. Không có khả năng tích cực có sẵn tại các giả định này.",
+          "cashError": "Chi tiêu tránh được không được vượt quá chi tiêu hiện tại hoặc có giá trị dương khi không phân bổ số giờ.",
+          "hiringError": "Công suất được phân bổ phải bao gồm số giờ thuê theo kế hoạch. Xác nhận việc thuê theo kế hoạch và thời hạn của nó.",
+          "riskError": "Xác suất sau không thể vượt quá xác suất trước để ước tính mức giảm tổn thất.",
+          "overlapError": "Xác nhận các lợi ích không trùng lặp trước khi đưa chúng vào kết quả tài chính.",
+          "boundsError": "Sử dụng các giá trị trong giới hạn được hiển thị.",
           "rangeLabel": "Adjust value",
-          "noCurrencyChange": "Language changes formatting, not your currency or assumptions.",
-          "currentPreparation": "Số giờ chuẩn bị hiện tại",
-          "reviewHours": "Số giờ xem xét của con người",
-          "reworkHours": "Số giờ làm lại tránh được hoặc thêm vào",
-          "capacityValue": "Giá trị năng lực mô hình hóa",
+          "noCurrencyChange": "Ngôn ngữ thay đổi định dạng, không phải đơn vị tiền tệ hoặc giả định của bạn.",
+          "currentPreparation": "Giờ chuẩn bị hiện tại",
+          "reviewHours": "Giờ đánh giá con người",
+          "reworkHours": "Đã tránh hoặc thêm giờ làm lại",
+          "capacityValue": "Giá trị công suất mô hình",
           "acceptedUnits": "Đơn vị được chấp nhận",
-          "attendedUnits": "Đơn vị được phục vụ",
-          "costPerAttended": "Chi phí trên mỗi đơn vị được phục vụ",
-          "benefitCost": "Bội số lợi ích trên chi phí",
+          "attendedUnits": "Đơn vị tham dự",
+          "costPerAttended": "Chi phí cho mỗi đơn vị tham dự",
+          "benefitCost": "Hệ số lợi ích-chi phí",
           "firstYearCost": "Chi phí năm đầu tiên",
           "firstYearRoi": "ROI năm đầu tiên",
-          "paybackOutsideTerm": "Không được hoàn trả trong thời gian mô hình hóa",
+          "paybackOutsideTerm": "Không được phục hồi trong thời hạn được mô hình hóa",
           "months": "months"
         },
         "fields": {
@@ -822,7 +822,7 @@
           },
           "accepted_rate": {
             "label": "Tỷ lệ chấp nhận dự kiến",
-            "help": "Tỷ lệ chấp nhận tùy chọn được mô hình hóa của các đầu ra đã chuẩn bị được người nhận chấp nhận. Đây không phải là cam kết hay kết quả quan sát được."
+            "help": "Tỷ lệ mô phỏng tùy chọn các đầu ra được bên nhận chấp nhận. Không phải cam kết hay kết quả quan sát."
           },
           "minutes": {
             "label": "Minutes to prepare one pack today",
@@ -837,8 +837,8 @@
             "help": "Human review still required before an authorised person submits to the customer portal."
           },
           "cycles_per_unit": {
-            "label": "Số chu kỳ trên mỗi đơn vị mỗi tháng",
-            "help": "Mỗi đơn vị thực hiện bao nhiêu chu kỳ đặt hàng, xem xét hoặc xử lý lặp lại trong một tháng điển hình."
+            "label": "Chu kỳ/đơn vị mỗi tháng",
+            "help": "Số chu kỳ đặt hàng, rà soát hoặc xử lý định kỳ mỗi đơn vị thực hiện trong một tháng điển hình."
           },
           "tokens_per_output": {
             "label": "Tokens to prepare one pack",
@@ -846,19 +846,19 @@
           },
           "budget": {
             "label": "Estimated monthly operating budget",
-            "help": "Include token usage, models/media, tools, infrastructure, Gabriel fees and additional paid review."
+            "help": "Bao gồm việc sử dụng mã thông báo, mô hình/phương tiện, công cụ, cơ sở hạ tầng, phí Gabriel và đánh giá trả phí bổ sung."
           },
           "model_cost": {
             "label": "Extra models and media",
-            "help": "Only image, video or other generation charged separately from token usage. Enter zero if none."
+            "help": "Chỉ hình ảnh, video hoặc thế hệ khác được tính phí riêng biệt với việc sử dụng mã thông báo. Nhập số 0 nếu không có."
           },
           "tools_cost": {
             "label": "Tools and integrations",
-            "help": "Browser sessions, connectors and other metered services. Enter zero if none."
+            "help": "Phiên trình duyệt, trình kết nối và các dịch vụ đo lường khác. Nhập số 0 nếu không có."
           },
           "infrastructure_cost": {
             "label": "Infrastructure",
-            "help": "Incremental hosting, storage and compute for this workload. Enter zero if none."
+            "help": "Lưu trữ, lưu trữ và tính toán gia tăng cho khối lượng công việc này. Nhập số 0 nếu không có."
           },
           "platform_cost": {
             "label": "Other delivery and support cost",
@@ -870,23 +870,23 @@
           },
           "personal_value_per_hour": {
             "label": "Giá trị tùy chọn bạn gán cho một giờ",
-            "help": "Chỉ là một phép so sánh cá nhân tùy chọn. Đây không phải là lương, tiền lương hay khoản tiết kiệm tiền mặt được đảm bảo."
+            "help": "Chỉ để so sánh cá nhân tùy chọn. Không phải lương, tiền công hay khoản tiết kiệm tiền được đảm bảo."
           },
           "review_rate": {
-            "label": "Additional paid review per hour",
-            "help": "Actual extra reviewer spending, not the salary of an unchanged employee."
+            "label": "Đánh giá trả phí bổ sung mỗi giờ",
+            "help": "Thực tế chi tiêu thêm của người đánh giá chứ không phải tiền lương của một nhân viên không thay đổi."
           },
           "cash_hours": {
-            "label": "Hours that remove paid work",
-            "help": "Allocate only work whose overtime, contractor or processing spend will actually stop."
+            "label": "Số giờ loại bỏ công việc được trả lương",
+            "help": "Chỉ phân bổ công việc mà chi phí làm thêm giờ, nhà thầu hoặc xử lý sẽ thực sự dừng lại."
           },
           "cash_baseline": {
-            "label": "Current monthly spending on that work",
-            "help": "The cash budget from which the reduction will come."
+            "label": "Chi tiêu hàng tháng hiện tại cho công việc đó",
+            "help": "Ngân sách tiền mặt mà từ đó sẽ có sự cắt giảm."
           },
           "cash_avoided": {
-            "label": "Monthly spending you would stop",
-            "help": "One explicit amount, not hours multiplied by salary; exclude any planned-hire saving entered separately."
+            "label": "Chi tiêu hàng tháng bạn sẽ dừng lại",
+            "help": "Một số tiền rõ ràng, không phải số giờ nhân với tiền lương; loại trừ bất kỳ khoản tiết kiệm thuê theo kế hoạch nào được nhập riêng."
           },
           "higher_value_hours": {
             "label": "Hours kept for advisory review",
@@ -897,64 +897,64 @@
             "help": "Incremental value of an hour of reviewer time on client work, not a salary saving."
           },
           "throughput_hours": {
-            "label": "Hours used for additional volume",
-            "help": "This allocation cannot also be used for advisory work or spending reductions."
+            "label": "Số giờ sử dụng cho khối lượng bổ sung",
+            "help": "Việc phân bổ này cũng không thể được sử dụng cho công việc tư vấn hoặc cắt giảm chi tiêu."
           },
           "extra_minutes": {
-            "label": "Team minutes per additional unit",
-            "help": "The remaining human effort, including review, needed to deliver one more unit."
+            "label": "Số phút nhóm cho mỗi đơn vị bổ sung",
+            "help": "Nỗ lực còn lại của con người, bao gồm cả việc xem xét, cần thiết để cung cấp thêm một đơn vị nữa."
           },
           "demand": {
-            "label": "Additional units with expected demand",
-            "help": "Capacity alone is not demand. Enter the extra monthly work you expect to take on."
+            "label": "Các đơn vị bổ sung có nhu cầu dự kiến",
+            "help": "Chỉ riêng năng lực không phải là nhu cầu. Nhập công việc làm thêm hàng tháng mà bạn mong muốn đảm nhận."
           },
           "unit_margin": {
             "label": "Contribution per additional unit",
-            "help": "Incremental revenue less delivery costs; AI operating costs are deducted separately."
+            "help": "Doanh thu tăng thêm ít chi phí giao hàng; Chi phí vận hành AI được khấu trừ riêng."
           },
           "hiring_hours": {
-            "label": "Hours covering the planned hire",
-            "help": "Allocate capacity to specific planned work, not a generic full-time-equivalent estimate."
+            "label": "Số giờ bao gồm việc thuê theo kế hoạch",
+            "help": "Phân bổ năng lực cho công việc đã được lên kế hoạch cụ thể, không phải ước tính chung về thời gian tương đương."
           },
           "planned_hours": {
-            "label": "Monthly hours the planned hire would cover",
-            "help": "The allocated capacity must cover this entire workload."
+            "label": "Số giờ thuê hàng tháng theo kế hoạch sẽ bao gồm",
+            "help": "Năng lực được phân bổ phải đáp ứng toàn bộ khối lượng công việc này."
           },
           "hire_cost": {
-            "label": "Monthly hire cost actually deferred",
-            "help": "Use the cost of a genuinely planned hire, not the salary of someone already employed."
+            "label": "Chi phí thuê hàng tháng thực tế được hoãn lại",
+            "help": "Sử dụng chi phí thuê nhân công đã được lên kế hoạch thực sự chứ không phải tiền lương của người đã được tuyển dụng."
           },
           "hire_months": {
-            "label": "Months that hire is deferred",
-            "help": "One to twelve months; the annual estimate stops counting savings after this period."
+            "label": "Số tháng thuê được hoãn lại",
+            "help": "Một đến mười hai tháng; ước tính hàng năm ngừng tính số tiền tiết kiệm sau khoảng thời gian này."
           },
           "incidents": {
-            "label": "Expected avoided errors per month",
-            "help": "Use your baseline and expected reduction. Exclude incidents also counted as risk reduction."
+            "label": "Các lỗi dự kiến tránh được mỗi tháng",
+            "help": "Sử dụng mức cơ bản và mức giảm dự kiến của bạn. Loại trừ sự cố cũng được tính là giảm rủi ro."
           },
           "incident_cost": {
             "label": "Incremental cost per error",
-            "help": "Exclude labor, refunds or other losses already included elsewhere."
+            "help": "Loại trừ chi phí nhân công, tiền hoàn lại hoặc các tổn thất khác đã được tính ở nơi khác."
           },
           "probability_before": {
             "label": "Monthly loss probability before",
-            "help": "Your estimate, not a guaranteed risk assessment."
+            "help": "Ước tính của bạn, không phải là đánh giá rủi ro được đảm bảo."
           },
           "probability_after": {
             "label": "Monthly loss probability after",
-            "help": "Use the same event and monthly time horizon as the baseline."
+            "help": "Sử dụng cùng một sự kiện và khoảng thời gian hàng tháng làm đường cơ sở."
           },
           "loss": {
-            "label": "Loss exposure for that event",
-            "help": "Exclude error incidents and spending already counted. This is uncertain expected value, not cash saved."
+            "label": "Khả năng mất mát cho sự kiện đó",
+            "help": "Loại trừ các sự cố lỗi và chi tiêu đã được tính. Đây là giá trị kỳ vọng không chắc chắn, không phải tiền mặt tiết kiệm được."
           },
           "days_before": {
-            "label": "Cycle time before, in days",
-            "help": "Elapsed time from start to completion, separate from hands-on effort."
+            "label": "Thời gian chu kỳ trước, tính bằng ngày",
+            "help": "Thời gian trôi qua từ khi bắt đầu đến khi hoàn thành, tách biệt với nỗ lực thực hành."
           },
           "days_after": {
-            "label": "Cycle time after, in days",
-            "help": "Shown as an operational change only, without an assumed monetary value."
+            "label": "Thời gian chu kỳ sau, tính bằng ngày",
+            "help": "Chỉ được hiển thị dưới dạng thay đổi hoạt động, không có giá trị tiền tệ giả định."
           }
         },
         "burden": [
@@ -965,37 +965,6 @@
           "Additional onboarding capacity",
           "Higher-value finance and sales-operations work"
         ],
-        "usagePackages": {
-          "base": {
-            "volume": 1,
-            "tokensPerOutput": 5000,
-            "platform_cost": 25,
-            "minutes": 30,
-            "automation": 50,
-            "review": 5,
-            "model_cost": 0,
-            "tools_cost": 0,
-            "infrastructure_cost": 0,
-            "higher_value_hours": 0.1,
-            "contribution_rate": 0,
-            "customer_price": 25
-          },
-          "medium": {
-            "volume": 1,
-            "tokensPerOutput": 5000,
-            "platform_cost": 25,
-            "minutes": 30,
-            "automation": 50,
-            "review": 5,
-            "model_cost": 0,
-            "tools_cost": 0,
-            "infrastructure_cost": 0,
-            "higher_value_hours": 0.1,
-            "contribution_rate": 0,
-            "customer_price": 25
-          }
-        },
-        "defaultPackage": "medium",
         "costMode": "itemized",
         "reviewMode": "team",
         "selected": [
@@ -1058,8 +1027,7 @@
         ],
         "pricing": {
           "basis": "fixed",
-          "annualPrice": 300,
-          "label": "Giả thuyết giá hàng tháng của Sherma",
+          "label": "Định giá",
           "help": "Tương đương mô hình hóa cho một gói: €25/tháng. Giả thuyết khối lượng công việc là €1,000/tháng cho tối đa 40 gói, với €20 cho mỗi gói bổ sung. Một chương trình thử nghiệm bốn tuần là €2.500 cộng thêm bất kỳ thiết lập nào được thỏa thuận."
         },
         "presentation": {
@@ -1071,6 +1039,97 @@
       "cta": {
         "primaryLabel": "Run a simulation with Sherma",
         "primaryTarget": "meet"
+      },
+      "compact": {
+        "schemaVersion": 1,
+        "defaultProfileId": "starter",
+        "copy": {
+          "navLabel": "Định giá",
+          "heading": "Giá & ROI",
+          "intro": "Bạn nhập liệu. Ước tính lợi ích.",
+          "monthly": "Tháng",
+          "weekly": "Tuần",
+          "daily": "Ngày",
+          "cost": "Bạn trả",
+          "benefit": "Lợi ích ước tính",
+          "net": "Lãi ròng",
+          "roi": "ROI ước tính",
+          "timeBenefit": "Giá trị giờ ước tính",
+          "timeRoi": "ROI từ thời gian",
+          "timeBack": "Giờ lấy lại",
+          "missing": "Nhập dữ liệu",
+          "noRatio": "Not applicable",
+          "method": "Cách tính",
+          "reset": "Đặt lại",
+          "audience": "Khán giả",
+          "includedVat": "Gồm VAT",
+          "excludedVat": "Chưa gồm VAT",
+          "perMonth": "mỗi tháng",
+          "equivalents": "Thu phí tháng. Số ngày/tuần là trung bình, không phải phí ngày/tuần hay lợi nhuận đảm bảo.",
+          "timeNote": "Giá trị thời gian là ước tính tùy chọn, không phải tiền nhận hay giảm quỹ lương. Số phút ròng tính cả thời gian kiểm tra và duyệt.",
+          "estimateNote": "Ước tính kế hoạch tách biệt với ROI đo được. Lợi nhuận đo được chỉ dựa trên kết quả đã chấp nhận và chi phí đã ghi có thể so sánh.",
+          "limitNote": "Cần dùng thêm hay việc báo giá riêng, hãy liên hệ. Ước tính chỉ gồm gói hiện có.",
+          "timeFormula": "Giá trị thời gian=số đơn vị×phút tiết kiệm ròng÷60×giá trị/giờ của bạn",
+          "profitFormula": "Lãi đóng góp = phiên gợi ý đủ điều kiện × mức tăng chuyển đổi ÷ 100 × lãi mỗi đơn thêm.",
+          "proceedsFormula": "Thu tăng thêm = số lô hoặc lượt lấy × (thu ròng sau − thu ròng trước).",
+          "roiFormula": "Ròng = lợi ích − phí đăng ký ứng dụng. ROI = ròng ÷ phí đăng ký ứng dụng × 100. Gói miễn phí không có tỷ lệ ROI."
+        },
+        "profiles": [
+          {
+            "id": "starter",
+            "label": "Khởi đầu",
+            "model": "time_value",
+            "unitsPerWorkload": 1,
+            "inputs": [
+              {
+                "id": "units",
+                "label": "Bộ biểu mẫu mỗi tháng",
+                "help": "Việc bạn dự kiến duyệt trong tháng, trong hạn mức gói.",
+                "defaultValue": 5,
+                "min": 0,
+                "max": 5,
+                "step": 1,
+                "format": "number"
+              },
+              {
+                "id": "minutes_saved",
+                "label": "Phút tiết kiệm",
+                "help": "Ước tính sau kiểm tra, duyệt và làm lại. Giá trị âm nghĩa là thêm công sức.",
+                "defaultValue": 10,
+                "min": -1440,
+                "max": 1440,
+                "step": 0.1,
+                "format": "number"
+              },
+              {
+                "id": "hourly_value",
+                "label": "Giá trị/giờ",
+                "help": "Định giá tùy chọn của bạn, không phải cam kết tiết kiệm tiền hay giảm lương.",
+                "defaultValue": null,
+                "min": 0,
+                "max": 1000,
+                "step": 0.01,
+                "format": "currency"
+              }
+            ],
+            "offer": {
+              "monthlyPrice": 19,
+              "basis": "fixed",
+              "unit": "Khởi đầu",
+              "vatIncluded": false,
+              "includedUnits": 5,
+              "allowance": "5 bộ / 15 trang",
+              "extras": "Báo giá riêng cho sử dụng thêm và dịch vụ chuyên môn."
+            },
+            "assumptions": [
+              "10 phút thực ban đầu là ước tính minh họa cho khâu chuẩn bị, không phải kết quả đo được.",
+              "Phút ròng gồm khách hàng kiểm duyệt. Bạn tự định giá thời gian bằng tiền; đó không phải tiền nhận."
+            ],
+            "loop": "Có mẫu mới hoặc báo thiếu tài liệu → soạn và kiểm tra bộ mẫu → khách duyệt → ghi nhận bộ được chấp nhận và công sức duyệt.",
+            "ctaLabel": "Dùng thử demo",
+            "ctaTarget": "meet"
+          }
+        ]
       }
     }
   },
@@ -1251,7 +1310,7 @@
         "seoImage",
         "alt"
       ],
-      "sourceHash": "355a4ba7327347a5467fa3f727ec98179e78b6d37bdf6258cb18537a4944c562"
+      "sourceHash": "3692b6001f7e301cf3bb4b5a456d91f6c15c400b4cbdf441636e6171e0d3a0e3"
     },
     {
       "path": [
@@ -4150,7 +4209,7 @@
         "roiCalculator",
         "heading"
       ],
-      "sourceHash": "c63420eca3f95b8917c99f3a5cf72f000ab237bc6c658765b2176ebdd7b311be"
+      "sourceHash": "f605f95a678fe3249ebf6201cbc21b86ea72d7f4bc395cab6e017b8b91a674d6"
     },
     {
       "path": [
@@ -4158,7 +4217,7 @@
         "roiCalculator",
         "subheading"
       ],
-      "sourceHash": "1ec7a71fa48482882cce41d7f9b56a015b10ffdc096d2ff704fe3a4f891d2fc6"
+      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
     },
     {
       "path": [
@@ -4166,7 +4225,16 @@
         "roiCalculator",
         "disclaimer"
       ],
-      "sourceHash": "dd7003174215a04e426930e7d1f62ecf56ce39a3a64b73925fa84553a23df241"
+      "sourceHash": "28bd6e46023484d9a6b075ba5e7539842d6a2e920782ed0979f21366d56ae02f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "basis"
+      ],
+      "sourceHash": "17cc8491fcdfe8ddd4f8dec6a3859229ecacffb562b383e1283f1c0be0019806"
     },
     {
       "path": [
@@ -5888,37 +5956,9 @@
         "landingPage",
         "roiCalculator",
         "businessImpact",
-        "defaultPackage"
-      ],
-      "sourceHash": "c082456a7766e23a18db084cd34b6ff510baef506548b897cc80e9b7d3e121c8"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
-        "costMode"
-      ],
-      "sourceHash": "0257609b2e009aa6c788941fbcaeee13877465889a94aaf0444c7d4159ee616c"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
         "reviewMode"
       ],
       "sourceHash": "ca8b22d0db83a22db163b560b3e4e51527e533d31d067b614a0c33c4d2df8432"
-    },
-    {
-      "path": [
-        "landingPage",
-        "roiCalculator",
-        "businessImpact",
-        "selected",
-        0
-      ],
-      "sourceHash": "c8333158bd18b91a71842cfd38c2d6ddab471bda158b19286d96d4a4ed973ac4"
     },
     {
       "path": [
@@ -6026,7 +6066,7 @@
         "pricing",
         "label"
       ],
-      "sourceHash": "445307550df3a1f22b351466798ba569b2adb052eb7fb1db446a4e083a5709ab"
+      "sourceHash": "dfe95783edfef7918760312f94edd764f4ce3ffd38b90c2c955a0cc3b250f040"
     },
     {
       "path": [
@@ -6046,7 +6086,468 @@
         "primaryLabel"
       ],
       "sourceHash": "99c566fd1c02740637dd385f18f5388e3a8dad09567a039b494c1e27e9ef9cb6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "navLabel"
+      ],
+      "sourceHash": "dfe95783edfef7918760312f94edd764f4ce3ffd38b90c2c955a0cc3b250f040"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "heading"
+      ],
+      "sourceHash": "f605f95a678fe3249ebf6201cbc21b86ea72d7f4bc395cab6e017b8b91a674d6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "intro"
+      ],
+      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "monthly"
+      ],
+      "sourceHash": "310ca503ef36f177ddbc760463fcaec1edc6eca12bfd590ad7bb244b31e59543"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "weekly"
+      ],
+      "sourceHash": "e78041ab51a818a22e2cfea6c15fe72e9e20092246f496f1670f7be3e42177a6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "daily"
+      ],
+      "sourceHash": "8f2364e11b8be3ff008f32b3dedb54e659362429bcc9e3eb6acb6070de4ffbff"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "cost"
+      ],
+      "sourceHash": "16c6e032c6d9e64e841b58a0298260d9f548fcbe3a8ad8dc475bd977b602898f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "benefit"
+      ],
+      "sourceHash": "a7f9c107913bba92d233f27fbfa5c4c52e4435a763a727214089505b9519d2dc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "net"
+      ],
+      "sourceHash": "d32a3b8a970a1c2a790bdd47a4a86f208f6ff655d8e9269dcda5776b156d6039"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "roi"
+      ],
+      "sourceHash": "bd75a04bf54fbb79e68559c37be0a8752efacfe4f5b9a326b87143c8d5c87dcc"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeBenefit"
+      ],
+      "sourceHash": "cedc575743fa43d9e724db8bd1d54037d41369448eb826b63e1efba54e81c2a4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeRoi"
+      ],
+      "sourceHash": "4b0df8181ded668923d1da293e0fc8ca4d0ac21eed3f933b32891615e67d1f6a"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeBack"
+      ],
+      "sourceHash": "92947077a2792fb311280e55e4d39fbeb1fbb152e76b389dee5a53697ea548ef"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "missing"
+      ],
+      "sourceHash": "4b11bc702fcdb172c2f88f4af465a9d05ac206b7f7e6304fcded04eb92cccde6"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "noRatio"
+      ],
+      "sourceHash": "5237c96ac1a23b98eb13770503afe986b088acd6627fa7649a5afdcbc4bb8e99"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "method"
+      ],
+      "sourceHash": "b79afe297bec4d00ab3a70a61b5e8b607a423a123f23a2fa9ccf8d6af6bcd157"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "reset"
+      ],
+      "sourceHash": "daee7606b339f3c339076fe2c9f372a3ff40c8ee896005d829c7481b64ca5303"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "audience"
+      ],
+      "sourceHash": "545c02357695a6ffed97b01a94a46b9aeb4686f4480173da6d0faeae8eb85053"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "includedVat"
+      ],
+      "sourceHash": "3e366dcdda082eda14db7eab30381a2fcc424c43d183d0e6d7a4b15c9b567d7d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "excludedVat"
+      ],
+      "sourceHash": "744120dab44d48957b4580cadd00fca1f91383823125d1400984a3cf62a76441"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "perMonth"
+      ],
+      "sourceHash": "88b1d1a67e34a269fec10b917a624817de854eeadb142640ab17c8199ab6bdae"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "equivalents"
+      ],
+      "sourceHash": "4a546022be02a950fc59270741b8e4784ca51f74da16e286c77e3f5a371aff38"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeNote"
+      ],
+      "sourceHash": "d7c17f23c52c1d9cf5be7fcb5a537017a0a09529bfde38e6b692afa2ecbf453f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "estimateNote"
+      ],
+      "sourceHash": "28bd6e46023484d9a6b075ba5e7539842d6a2e920782ed0979f21366d56ae02f"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "limitNote"
+      ],
+      "sourceHash": "61108708047a1a834e46f1ca557d7518e3a63263a8ec7e7aa4301db230beacff"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "timeFormula"
+      ],
+      "sourceHash": "4cf3d8fcb0fa4b9c36d9869e709ba0cbabcd41083c7ff8cf77e9fe32066eacdb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "profitFormula"
+      ],
+      "sourceHash": "e286f3af8c8f706f737502c898e1ba90c6bbc7680c380bba844ec4f3874b5bc4"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "proceedsFormula"
+      ],
+      "sourceHash": "9de390391c62a87b44f2c9bf74e5223e5d34c5a74cd5e12575f5e1452881a46e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "copy",
+        "roiFormula"
+      ],
+      "sourceHash": "00f9b4df25ca733c11a00e762ab8d95f6e9c9364ce202a6c22ff95c3613e3fcb"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "label"
+      ],
+      "sourceHash": "262b4ff6afdd7baafc6dbf8690c1d7fbb0e95cff4700306c9b76077b4cf6c000"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        0,
+        "label"
+      ],
+      "sourceHash": "89845ca5d069c187e20a9f64eeabf65fa47b336bc95020baf40a3a6c46faff19"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        0,
+        "help"
+      ],
+      "sourceHash": "a8cff02d43e6c0371644e73ec0de532d8ac6ae2eb169301a6e3605e3cb010ab0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        1,
+        "label"
+      ],
+      "sourceHash": "9f135e34cc7bc32cafb416bcbf7ef6af035cdb444c22e90cccd0587ba3db19df"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        1,
+        "help"
+      ],
+      "sourceHash": "d99a99ab817eea4a3a70ded599d0744a02fe8de95ab0b7c6a0fc9d5cb72c400d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        2,
+        "label"
+      ],
+      "sourceHash": "4b5674419c1cb29206fb7d1486e6492bb74df9523dbc3bd5cdb875a309486100"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "inputs",
+        2,
+        "help"
+      ],
+      "sourceHash": "310e52c988a868b67de05d75913bc83fea7f2ff3d06b15cb07adf6c22d1f94f1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "unit"
+      ],
+      "sourceHash": "262b4ff6afdd7baafc6dbf8690c1d7fbb0e95cff4700306c9b76077b4cf6c000"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "allowance"
+      ],
+      "sourceHash": "a5d5585795e5657bfb5e58e554e25801e46797850ae97656747d062bc9fa68ae"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "extras"
+      ],
+      "sourceHash": "2dde78d0a4b34a797ac41efa8426f1e98874a7e9bfc38db869338b90175c0a63"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        0
+      ],
+      "sourceHash": "481bd7cafc916114b1fe4547d099ccb51865ae1b2f37553789066f29890402e0"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        1
+      ],
+      "sourceHash": "989a9fcc887e91c895fb2d3cdee45f5d8279d36705594e66f19d87e172656e0e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "loop"
+      ],
+      "sourceHash": "9448e74c3b6ea2f5a164fb6ecbaacbbe2dbedafab7ce769b82b4e4162222fd80"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "ctaLabel"
+      ],
+      "sourceHash": "6e5fe4ca7c07142fa81eef400c342dea7f8ba0422aa331c3880e6604db8d52a7"
     }
   ],
-  "generatedAt": "2026-09-11T05:49:03.270Z"
+  "generatedAt": "2026-10-13T14:20:17.840Z"
 }
