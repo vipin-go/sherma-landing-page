@@ -2,8 +2,12 @@
   "schemaVersion": 2,
   "language": "da",
   "regionKey": null,
-  "sourceRevision": "6a7b833ab17df9f0ed3d3debb61e90e5888945bf9b694103af06922e8ad17521",
+  "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
   "landingPage": {
+    "capabilityPreview": {
+      "enabled": true,
+      "commandId": "capture-and-fill"
+    },
     "design": {
       "variant": "form-operations",
       "defaultThemeMode": "light",
@@ -690,7 +694,7 @@
       "enabled": true,
       "kicker": "Business impact",
       "heading": "Priser og ROI",
-      "subheading": "Dine input. Dit anslåede afkast.",
+      "subheading": "Vælg et abonnement. Se din prognose.",
       "disclaimer": "Planskøn er adskilt fra målt ROI. Kun godkendte resultater og sammenlignelige, registrerede omkostninger underbygger målt afkast.",
       "currency": "EUR",
       "currencyCopy": {
@@ -1046,7 +1050,7 @@
         "copy": {
           "navLabel": "prissætning",
           "heading": "Priser og ROI",
-          "intro": "Dine input. Dit anslåede afkast.",
+          "intro": "Vælg et abonnement. Se din prognose.",
           "monthly": "Måned",
           "weekly": "Uge",
           "daily": "Dag",
@@ -1057,7 +1061,7 @@
           "timeBenefit": "Anslået tidsværdi",
           "timeRoi": "ROI af tidsværdi",
           "timeBack": "Sparede timer",
-          "missing": "Angiv dine input",
+          "missing": "Prognose ikke tilgængelig",
           "noRatio": "Not applicable",
           "method": "Sådan beregnes det",
           "reset": "Nulstil",
@@ -1066,10 +1070,10 @@
           "excludedVat": "Ekskl. moms",
           "perMonth": "pr. måned",
           "equivalents": "Betales månedligt. Dag- og ugetal er gennemsnit, ikke daglig eller ugentlig betaling eller garanteret afkast.",
-          "timeNote": "Tidsværdi er dit valgfrie skøn, ikke modtagne penge eller lavere lønudgifter. Nettominutter omfatter din tid til kontrol og godkendelse.",
+          "timeNote": "Prognosens tidsværdi er frigjort kapacitet, ikke udbetalte penge eller lavere lønudgifter. Nettominutter inkluderer kontrol og godkendelse.",
           "estimateNote": "Planskøn er adskilt fra målt ROI. Kun godkendte resultater og sammenlignelige, registrerede omkostninger underbygger målt afkast.",
           "limitNote": "Kontakt os om mere forbrug eller særskilt prissat arbejde. Skønnet dækker kun det inkluderede abonnement.",
-          "timeFormula": "Tidsværdi = enheder × sparede nettominutter ÷ 60 × din timeværdi.",
+          "timeFormula": "Prognosens tidsværdi = inkluderet arbejde × faste frigjorte nettominutter ÷ 60 × referencetimeværdi.",
           "profitFormula": "Dækningsbidrag = relevante anbefalingssessioner × konverteringsløft ÷ 100 × fortjeneste pr. ekstra ordre.",
           "proceedsFormula": "Ekstra provenu = partier eller afhentninger × (nettoprovenu efter − nettoprovenu før).",
           "roiFormula": "Netto = gevinst − appabonnement. ROI = netto ÷ appabonnement × 100. Gratis abonnementer har ingen ROI-procent."
@@ -1084,7 +1088,7 @@
               {
                 "id": "units",
                 "label": "Formularpakker pr. md.",
-                "help": "Arbejde, du vil gennemgå på en måned, inden for den inkluderede kvote.",
+                "help": "Prognosen forudsætter, at den inkluderede månedlige kvote bruges. Højere foreslåede abonnementstrin øger både kapacitet og pris.",
                 "defaultValue": 5,
                 "min": 0,
                 "max": 5,
@@ -1094,8 +1098,8 @@
               {
                 "id": "minutes_saved",
                 "label": "Minutter sparet",
-                "help": "Dit skøn efter kontrol, godkendelse og rettelser. Negative værdier betyder ekstra arbejde.",
-                "defaultValue": 10,
+                "help": "Fast prognose efter forberedelse, kontrol, godkendelse og omarbejde; ikke en målt besparelse.",
+                "defaultValue": 8,
                 "min": -1440,
                 "max": 1440,
                 "step": 0.1,
@@ -1104,8 +1108,8 @@
               {
                 "id": "hourly_value",
                 "label": "Timeværdi",
-                "help": "Din egen valgfrie værdiansættelse. Ingen lovet kontant besparelse eller reduktion af løn.",
-                "defaultValue": null,
+                "help": "Fast referenceværdi for frigjort kapacitet; ikke udbetalte penge eller en lønreduktion.",
+                "defaultValue": 34.9,
                 "min": 0,
                 "max": 1000,
                 "step": 0.01,
@@ -1119,11 +1123,21 @@
               "vatIncluded": false,
               "includedUnits": 5,
               "allowance": "5 pakker / 15 sider",
-              "extras": "Ekstra forbrug og professionelle ydelser prissættes særskilt."
+              "extras": "Ekstra forbrug og professionelle ydelser prissættes særskilt.",
+              "free": {
+                "includedUnits": 1,
+                "allowance": "Gratis · 1 pakke / 3 sider"
+              },
+              "trialDays": 7,
+              "trialLabel": "7-dages prøveperiode · derefter månedspris"
             },
             "assumptions": [
-              "De første 10 nettominutter er et illustrativt skøn over forberedelsen, ikke et målt resultat.",
-              "Nettominutter omfatter kundens gennemgang. Du angiver tidsværdien i penge; den er ikke modtagne penge."
+              "Prognoserevision 2026-10-13. Fuld brug af kvoten, tilgængeligt arbejde og et lineært kapacitetsscenarie på 1×/2×/3×; ingen garanti for ekstra efterspørgsel.",
+              "Opstillet tidsbudget: 40 manuelle minutter mod 32 menneskelige minutter med assistance pr. arbejdsenhed, inklusive kontrol, godkendelse og omarbejde. De 8 nettominutter (20%) er et scenarie, ikke observerede resultater for personaen.",
+              "Scenariet med 20% tidsreduktion er baseret på forskning i AI-assisterede vidensopgaver. Resultaterne dokumenterer ikke besparelser for denne persona eller for alle opgaver: https://aiinstitute.hbs.edu/navigating-the-jagged-technological-frontier/",
+              "Frigjort erhvervskapacitet værdisættes til €34.90/time, EU's reference for lønomkostninger pr. time i hele økonomien i 2025. Det er ikke en fagspecifik sats eller en lønbesparelse: https://ec.europa.eu/eurostat/en/web/products-eurostat-news/w/ddn-20260331-2",
+              "Alle tal er prognoser. Opsætning, oplæring og eventuelle ekstra tjenester er ikke medregnet; det faktiske nettoudbytte kan være lavere eller negativt. Salg, jobformidling, finansiering, læringsresultater og sociale resultater tillægges ingen pengeværdi.",
+              "Gratis adgang fornyes månedligt med den viste basiskvote. Premiummedier, integrationer og ekstra forbrug er ikke inkluderet. Betalte abonnementstrin har en syvdages prøveperiode; prøveforbruget er begrænset til én gratis basiskvote, ikke en ekstra fuld månedskvote. De viste priser er løbende priser efter prøveperioden. Dette er udarbejdede tilbudsforslag; beregneren tildeler ikke adgangsrettigheder og ændrer ikke faktureringen."
             ],
             "loop": "Ny formular eller dokumentmangel → klargør og tjek formularpakke → kunden gennemgår → registrér godkendt pakke og kontrolindsats.",
             "ctaLabel": "Prøv demoen",
@@ -4217,7 +4231,7 @@
         "roiCalculator",
         "subheading"
       ],
-      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
+      "sourceHash": "7e0335f15435324d6c9561bc41d72ac01fac940e282a3812a2a08f88ca4dd0d8"
     },
     {
       "path": [
@@ -6115,7 +6129,7 @@
         "copy",
         "intro"
       ],
-      "sourceHash": "22fd8ffe8dbddd46f41fb690f262f66466bb343bae0b359e4c64dfd2f2f127a5"
+      "sourceHash": "7e0335f15435324d6c9561bc41d72ac01fac940e282a3812a2a08f88ca4dd0d8"
     },
     {
       "path": [
@@ -6225,7 +6239,7 @@
         "copy",
         "missing"
       ],
-      "sourceHash": "4b11bc702fcdb172c2f88f4af465a9d05ac206b7f7e6304fcded04eb92cccde6"
+      "sourceHash": "31f441cdeb7260c189ff3872cc0cf5eafa1389efb13fdc53bd705ae8851f9e24"
     },
     {
       "path": [
@@ -6315,7 +6329,7 @@
         "copy",
         "timeNote"
       ],
-      "sourceHash": "d7c17f23c52c1d9cf5be7fcb5a537017a0a09529bfde38e6b692afa2ecbf453f"
+      "sourceHash": "b2b5695beb66ae51219045b8b89a8c8203c74f556f2b14252fb6b3f4f201d4c7"
     },
     {
       "path": [
@@ -6345,7 +6359,7 @@
         "copy",
         "timeFormula"
       ],
-      "sourceHash": "4cf3d8fcb0fa4b9c36d9869e709ba0cbabcd41083c7ff8cf77e9fe32066eacdb"
+      "sourceHash": "7a72bb01ee78a5c39b77c2529b7e8a7cc72544f4034c6b52caa8cbcffc9d487d"
     },
     {
       "path": [
@@ -6412,7 +6426,7 @@
         0,
         "help"
       ],
-      "sourceHash": "a8cff02d43e6c0371644e73ec0de532d8ac6ae2eb169301a6e3605e3cb010ab0"
+      "sourceHash": "6081b0b981fb170b4a06ecb33199787e85f172ff8e778e8aec6b3241045cc6ff"
     },
     {
       "path": [
@@ -6438,7 +6452,7 @@
         1,
         "help"
       ],
-      "sourceHash": "d99a99ab817eea4a3a70ded599d0744a02fe8de95ab0b7c6a0fc9d5cb72c400d"
+      "sourceHash": "7c28dd88f074ddbd0a8b4aa2f439957660aa7eac68736cfe1b2a65e27204ee93"
     },
     {
       "path": [
@@ -6464,7 +6478,7 @@
         2,
         "help"
       ],
-      "sourceHash": "310e52c988a868b67de05d75913bc83fea7f2ff3d06b15cb07adf6c22d1f94f1"
+      "sourceHash": "33750d80c52f18680269d5e6b913abeb0f2a0f1a550c24e09a031f8732097c97"
     },
     {
       "path": [
@@ -6509,10 +6523,35 @@
         "compact",
         "profiles",
         0,
+        "offer",
+        "free",
+        "allowance"
+      ],
+      "sourceHash": "fd1fffa2ae1506fda87dbe93287adc6873012efceeb2b602048f92666986d530"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "offer",
+        "trialLabel"
+      ],
+      "sourceHash": "baa96265c9efe648589a6be0a7e489d2afb6ce4aeab71ffc2e67b53cefcdb97b"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
         "assumptions",
         0
       ],
-      "sourceHash": "481bd7cafc916114b1fe4547d099ccb51865ae1b2f37553789066f29890402e0"
+      "sourceHash": "fda1ac9a57ab4191beebef559208e63a82d97ba0a74c030f2eb4658f776a8d6d"
     },
     {
       "path": [
@@ -6524,7 +6563,55 @@
         "assumptions",
         1
       ],
-      "sourceHash": "989a9fcc887e91c895fb2d3cdee45f5d8279d36705594e66f19d87e172656e0e"
+      "sourceHash": "dc52049609a7258cb2f1214f9fe1db37c49282e0aa4b27c9b8b871db8714f24c"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        2
+      ],
+      "sourceHash": "490d4e3b3e91d2a741133ae4ba19dc41e2444a57992c8d9ea5208eeb94e0aa07"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        3
+      ],
+      "sourceHash": "657ba73c2f83806a89ec3c7ceab83bc0665381866b29d91484962500c9aac45e"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        4
+      ],
+      "sourceHash": "5ec19ed8b04acf63c229e10b9a11a54f571fd18e6059561fb67523472a5cee50"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "compact",
+        "profiles",
+        0,
+        "assumptions",
+        5
+      ],
+      "sourceHash": "9bbe0ab3486f8b9872cce1c65b3561bfaab7782beffd18708e43b4340813cd7d"
     },
     {
       "path": [
