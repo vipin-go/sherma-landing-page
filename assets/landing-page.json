@@ -55,7 +55,7 @@
     },
     "header": {
       "brandMark": "image",
-      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "logoImageUrl": "https://gabrieloperator.com/assets/gabriel-twins/brand-marks/sherma.webp",
       "navItems": [
         {
           "label": "Simulation",
@@ -110,7 +110,7 @@
       "alt": ""
     },
     "seoImage": {
-      "src": "https://gabrieloperator.com/api/page-builder/media/0227f9c0-2318-4d09-afae-a2ccd728ead3/20f5f600-98a1-46df-b5b4-345565830f31/content/sherma-form-operations-og-banner-v2-20f5f600-98a1-46df-b5b4-345565830f31.webp",
+      "src": "https://gabrieloperator.com/landing-pages/sherma/sherma-form-operations-og-banner-v2.webp",
       "alt": "Sherma form operations: indigo document tools, reviewed forms and a stone checkmark"
     },
     "contact": {
@@ -692,9 +692,9 @@
       "methodologyVersion": 2,
       "enabled": true,
       "kicker": "Business impact",
-      "heading": "Pricing & ROI",
-      "subheading": "Choose a plan. See your forecast.",
-      "disclaimer": "Planning estimates are separate from measured ROI. Only accepted outcomes and comparable recorded costs support measured returns.",
+      "heading": "ROI Calculator",
+      "subheading": "For finance and sales-operations teams at growing EU suppliers completing recurring customer onboarding portals.",
+      "disclaimer": "Modelled supplier-onboarding usage, not observed customer results. Sherma prepares and checks a pack; your authorised person approves and submits it in the customer portal. Acceptance remains the destination organisation’s decision.",
       "currency": "EUR",
       "currencyCopy": {
         "native": "Amounts in {currency}.",
@@ -727,7 +727,7 @@
           "platform_cost": 25,
           "higher_value_hours": 0.1,
           "contribution_rate": 0,
-          "customer_price": 19
+          "customer_price": 25
         },
         "copy": {
           "navLabel": "Pricing",
@@ -1030,14 +1030,46 @@
         ],
         "pricing": {
           "basis": "fixed",
-          "label": "Pricing",
-          "help": "Modelled equivalent for one pack: €25/month. The working volume hypothesis is €1,000/month for up to 40 packs, with €20 per additional pack. A four-week pilot is €2,500 plus any agreed setup."
+          "label": "Sherma monthly price hypothesis",
+          "help": "Modelled equivalent for one pack: €25/month. The working volume hypothesis is €1,000/month for up to 40 packs, with €20 per additional pack. A four-week pilot is €2,500 plus any agreed setup.",
+          "annualPrice": 300
         },
         "presentation": {
           "financial": "optional",
           "showCustomerEconomics": true,
           "hideEconomicMultiple": true
-        }
+        },
+        "usagePackages": {
+          "base": {
+            "volume": 1,
+            "tokensPerOutput": 5000,
+            "platform_cost": 25,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
+          },
+          "medium": {
+            "volume": 1,
+            "tokensPerOutput": 5000,
+            "platform_cost": 25,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
+          }
+        },
+        "defaultPackage": "medium"
       },
       "cta": {
         "primaryLabel": "Run one onboarding pack with Sherma",
@@ -1155,7 +1187,7 @@
           {
             "language": "ar",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.ar.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1163,7 +1195,7 @@
           {
             "language": "bg",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.bg.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1171,7 +1203,7 @@
           {
             "language": "ca",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.ca.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1179,7 +1211,7 @@
           {
             "language": "cs",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.cs.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1187,7 +1219,7 @@
           {
             "language": "da",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.da.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1195,15 +1227,15 @@
           {
             "language": "de",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.de.json",
             "assetSchemaVersion": 2,
-            "generatedAt": "2026-10-13T14:20:17.840Z"
+            "generatedAt": "2026-10-20T16:38:22.495Z"
           },
           {
             "language": "el",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.el.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1211,7 +1243,7 @@
           {
             "language": "es",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.es.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1219,7 +1251,7 @@
           {
             "language": "et",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.et.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1227,7 +1259,7 @@
           {
             "language": "fa",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.fa.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1235,7 +1267,7 @@
           {
             "language": "fi",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.fi.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1243,7 +1275,7 @@
           {
             "language": "fr",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.fr.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1251,7 +1283,7 @@
           {
             "language": "he",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.he.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1259,7 +1291,7 @@
           {
             "language": "hi",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.hi.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1267,7 +1299,7 @@
           {
             "language": "hr",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.hr.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1275,7 +1307,7 @@
           {
             "language": "hu",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.hu.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1283,7 +1315,7 @@
           {
             "language": "id",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.id.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1291,7 +1323,7 @@
           {
             "language": "it",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.it.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1299,7 +1331,7 @@
           {
             "language": "ja",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.ja.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1307,7 +1339,7 @@
           {
             "language": "ko",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.ko.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1315,7 +1347,7 @@
           {
             "language": "lt",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.lt.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1323,7 +1355,7 @@
           {
             "language": "lv",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.lv.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1331,7 +1363,7 @@
           {
             "language": "nb",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.nb.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1339,15 +1371,15 @@
           {
             "language": "nl",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.nl.json",
             "assetSchemaVersion": 2,
-            "generatedAt": "2026-10-13T14:20:17.840Z"
+            "generatedAt": "2026-10-20T11:55:51.518Z"
           },
           {
             "language": "no",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.no.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1355,7 +1387,7 @@
           {
             "language": "pl",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.pl.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1363,7 +1395,7 @@
           {
             "language": "pt",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.pt.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1371,7 +1403,7 @@
           {
             "language": "ro",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.ro.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1379,7 +1411,7 @@
           {
             "language": "ru",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.ru.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1387,7 +1419,7 @@
           {
             "language": "sk",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.sk.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1395,7 +1427,7 @@
           {
             "language": "sl",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.sl.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1403,7 +1435,7 @@
           {
             "language": "sr",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.sr.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1411,7 +1443,7 @@
           {
             "language": "sv",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.sv.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1419,7 +1451,7 @@
           {
             "language": "th",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.th.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1427,7 +1459,7 @@
           {
             "language": "tr",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.tr.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1435,7 +1467,7 @@
           {
             "language": "uk",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.uk.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1443,7 +1475,7 @@
           {
             "language": "vi",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.vi.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"
@@ -1451,7 +1483,7 @@
           {
             "language": "zh",
             "regionKey": null,
-            "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+            "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
             "assetPath": "assets/landing-page.zh.json",
             "assetSchemaVersion": 2,
             "generatedAt": "2026-10-13T14:20:17.840Z"

@@ -2,12 +2,8 @@
   "schemaVersion": 2,
   "language": "bg",
   "regionKey": null,
-  "sourceRevision": "6e2cb38fdedf0c7f4fe285b12f8b14ca8685412a663da479f321ddeb4a90502d",
+  "sourceRevision": "de46adbe549b82cd33e5d8408f55dbdb7cde48c91a67674666dc5b579ae9c8c3",
   "landingPage": {
-    "capabilityPreview": {
-      "enabled": true,
-      "commandId": "capture-and-fill"
-    },
     "design": {
       "variant": "form-operations",
       "defaultThemeMode": "light",
@@ -56,7 +52,7 @@
     },
     "header": {
       "brandMark": "image",
-      "logoImageUrl": "https://raw.githubusercontent.com/vipin-go/sherma-landing-page/main/assets/media/favicon.jpg",
+      "logoImageUrl": "https://gabrieloperator.com/assets/gabriel-twins/brand-marks/sherma.webp",
       "navItems": [
         {
           "label": "Симулация",
@@ -111,7 +107,7 @@
       "alt": ""
     },
     "seoImage": {
-      "src": "https://gabrieloperator.com/api/page-builder/media/0227f9c0-2318-4d09-afae-a2ccd728ead3/20f5f600-98a1-46df-b5b4-345565830f31/content/sherma-form-operations-og-banner-v2-20f5f600-98a1-46df-b5b4-345565830f31.webp",
+      "src": "https://gabrieloperator.com/landing-pages/sherma/sherma-form-operations-og-banner-v2.webp",
       "alt": "Sherma: индигови инструменти за документи, прегледани формуляри и каменна отметка"
     },
     "contact": {
@@ -693,9 +689,9 @@
       "methodologyVersion": 2,
       "enabled": true,
       "kicker": "Business impact",
-      "heading": "Цени и ROI",
-      "subheading": "Изберете план. Вижте прогнозата си.",
-      "disclaimer": "Прогнозите са отделни от измерения ROI. Измерената възвръщаемост изисква приети резултати и съпоставими отчетени разходи.",
+      "heading": "ROI Calculator",
+      "subheading": "For finance and sales-operations teams at growing EU suppliers completing recurring customer onboarding portals.",
+      "disclaimer": "Modelled supplier-onboarding usage, not observed customer results. Sherma prepares and checks a pack; your authorised person approves and submits it in the customer portal. Acceptance remains the destination organisation’s decision.",
       "currency": "EUR",
       "currencyCopy": {
         "native": "Amounts in {currency}.",
@@ -728,7 +724,7 @@
           "platform_cost": 25,
           "higher_value_hours": 0.1,
           "contribution_rate": 0,
-          "customer_price": 19
+          "customer_price": 25
         },
         "copy": {
           "navLabel": "Поставяне на цена",
@@ -1031,14 +1027,46 @@
         ],
         "pricing": {
           "basis": "fixed",
-          "label": "Поставяне на цена",
-          "help": "Моделиран еквивалент за една опаковка: €25/месец. Хипотезата за работния обем е 1000 евро/месец за до 40 опаковки, с 20 евро за допълнителна опаковка. Четириседмичен пилот е 2500 евро плюс всяка договорена настройка."
+          "label": "Хипотеза за месечна цена на Шърма",
+          "help": "Моделиран еквивалент за една опаковка: €25/месец. Хипотезата за работния обем е 1000 евро/месец за до 40 опаковки, с 20 евро за допълнителна опаковка. Четириседмичен пилот е 2500 евро плюс всяка договорена настройка.",
+          "annualPrice": 300
         },
         "presentation": {
           "financial": "optional",
           "showCustomerEconomics": true,
           "hideEconomicMultiple": true
-        }
+        },
+        "usagePackages": {
+          "base": {
+            "volume": 1,
+            "tokensPerOutput": 5000,
+            "platform_cost": 25,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
+          },
+          "medium": {
+            "volume": 1,
+            "tokensPerOutput": 5000,
+            "platform_cost": 25,
+            "minutes": 30,
+            "automation": 50,
+            "review": 5,
+            "model_cost": 0,
+            "tools_cost": 0,
+            "infrastructure_cost": 0,
+            "higher_value_hours": 0.1,
+            "contribution_rate": 0,
+            "customer_price": 25
+          }
+        },
+        "defaultPackage": "medium"
       },
       "cta": {
         "primaryLabel": "Run a simulation with Sherma",
@@ -4223,7 +4251,7 @@
         "roiCalculator",
         "heading"
       ],
-      "sourceHash": "f605f95a678fe3249ebf6201cbc21b86ea72d7f4bc395cab6e017b8b91a674d6"
+      "sourceHash": "c63420eca3f95b8917c99f3a5cf72f000ab237bc6c658765b2176ebdd7b311be"
     },
     {
       "path": [
@@ -4231,7 +4259,7 @@
         "roiCalculator",
         "subheading"
       ],
-      "sourceHash": "7e0335f15435324d6c9561bc41d72ac01fac940e282a3812a2a08f88ca4dd0d8"
+      "sourceHash": "1ec7a71fa48482882cce41d7f9b56a015b10ffdc096d2ff704fe3a4f891d2fc6"
     },
     {
       "path": [
@@ -4239,7 +4267,43 @@
         "roiCalculator",
         "disclaimer"
       ],
-      "sourceHash": "28bd6e46023484d9a6b075ba5e7539842d6a2e920782ed0979f21366d56ae02f"
+      "sourceHash": "dd7003174215a04e426930e7d1f62ecf56ce39a3a64b73925fa84553a23df241"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "native"
+      ],
+      "sourceHash": "cd2604270cd9656f4abdccbee7bf11038b88a1ae5a8657f9933a807fdcdff8bf"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "loading"
+      ],
+      "sourceHash": "efc980d9dce429c644a6dce658df91cdacbff328ea38504d8ce80bfe9b76b32d"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "unavailable"
+      ],
+      "sourceHash": "b01a152edb76137a0a16fe29cc942fa282d98fbdc4123b830397f9fde7f85095"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "currencyCopy",
+        "converted"
+      ],
+      "sourceHash": "450c38574200c1402496596e9f8177d31fd0e64cf58d9468c350eb3ba2c60d10"
     },
     {
       "path": [
@@ -4258,6 +4322,15 @@
         "breakdown"
       ],
       "sourceHash": "895373aa73d1d5e90f508f353e090c0f393107e6048b39988897eb9bfbbe1bb1"
+    },
+    {
+      "path": [
+        "landingPage",
+        "roiCalculator",
+        "costCopy",
+        "perUnit"
+      ],
+      "sourceHash": "33a7392ed7a854ce80cfe00cf67970a5e6cf1ee5b928d58568c72903f5def993"
     },
     {
       "path": [
@@ -6080,7 +6153,7 @@
         "pricing",
         "label"
       ],
-      "sourceHash": "dfe95783edfef7918760312f94edd764f4ce3ffd38b90c2c955a0cc3b250f040"
+      "sourceHash": "445307550df3a1f22b351466798ba569b2adb052eb7fb1db446a4e083a5709ab"
     },
     {
       "path": [
